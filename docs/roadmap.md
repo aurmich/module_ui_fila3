@@ -1,15 +1,18 @@
-<<<<<<< HEAD
-# UI Module Roadmap
+# 🗺️ UI Module Roadmap
 
-## Module Progress Overview
-Overall Module Completion: 60%
-- Core Features: 75% complete
-- High Priority Features: 70% complete
-- Medium Priority Features: 50% complete
-- Low Priority Features: 30% complete
-- Technical Debt: 60% complete
+## 📊 Progress Overview
 
-## Technical Metrics Overview
+
+| Category | Progress | Details |
+|----------|----------|---------|
+| Core Components | 75% | Base, Form, Layout |
+| Theming System | 85% | Contract, Inheritance, CSS Integration |
+| Documentation | 60% | API, Guides, Examples |
+| PHPStan Levels | 55% | Target: Level 7 |
+| Test Coverage | 65% | Unit, Integration, E2E |
+| Accessibility | 70% | ARIA, Keyboard Nav |
+
+## 📈 Technical Metrics
 
 ### Code Quality
 * Maintainability Index: 85/100
@@ -44,43 +47,6 @@ Overall Module Completion: 60%
 * Security Test Coverage: 85%
 * Performance Test Coverage: 70%
 
-## Current Sprint Focus
-1. PHPStan Level 7 Compliance
-   - Fix return type declarations
-   - Add missing parameter types
-   - Complete property annotations
-   - Priority: High
-
-2. Code Quality Improvements
-   - Implement missing tests
-   - Reduce code duplication
-   - Priority: High
-
-3. Documentation
-   - Complete API documentation
-   - Update integration guides
-   - Priority: Medium
-
-## Technical Debt
-1. Code Quality
-   - Complete PHPStan fixes
-   - Improve test coverage
-   - Priority: High
-
-2. Documentation
-   - API documentation
-   - Integration guides
-   - Priority: Medium
-
-3. Performance
-   - Query optimization
-   - Cache implementation
-   - Priority: High
-=======
-# 🗺️ UI Module Roadmap
-
-## 📊 Progress Overview
-
 | Category | Progress |
 |----------|----------|
 | Core Components | 75% |
@@ -89,6 +55,7 @@ Overall Module Completion: 60%
 | PHPStan Levels | 55% |
 | Test Coverage | 65% |
 | Accessibility | 70% |
+ 80ec88ee9 (.)
 
 ## 🎯 Tasks & Progress
 
@@ -141,21 +108,67 @@ Overall Module Completion: 60%
 - [ ] PWA Support [docs/roadmap/pwa.md]
 - [x] Responsive Images [docs/roadmap/responsive_images.md]
 
+
+## 🔄 Sprint Planning
+
+### Current Sprint Focus
+1. PHPStan Level 7 Compliance
+   - Fix return type declarations
+   - Add missing parameter types
+   - Complete property annotations
+   - Priority: High
+
+2. Code Quality Improvements
+   - Implement missing tests
+   - Reduce code duplication
+   - Priority: High
+
+3. Documentation
+   - Complete API documentation
+   - Update integration guides
+   - Priority: Medium
+
+### Technical Debt
+1. Code Quality
+   - Complete PHPStan fixes
+   - Improve test coverage
+   - Priority: High
+
+2. Documentation
+   - API documentation
+   - Integration guides
+   - Priority: Medium
+
+3. Performance
+   - Query optimization
+   - Cache implementation
+   - Priority: High
+
+### Daily Tasks - Week 1 (Component System)
+
 ## 🔄 Daily Tasks
 
 ### Week 1 - Component System
+ 80ec88ee9 (.)
 1. ✅ Audit existing components
 2. ✅ Standardize component APIs
 3. 🏗️ Implement missing components
 4. 📝 Document component usage
 5. 🧪 Add component tests
 
+
+### Daily Tasks - Week 2 (Accessibility)
+
 ### Week 2 - Accessibility
+ 80ec88ee9 (.)
 1. ✅ ARIA implementation
 2. ✅ Keyboard navigation
 3. 🏗️ Screen reader optimization
 4. 📝 Accessibility documentation
 5. 🧪 A11y testing suite
 
+
+[Dettagli settimanali completi in docs/roadmap/weekly/] 
+
 [More details in docs/roadmap/weekly/week2.md] 
->>>>>>> origin/dev
+ 80ec88ee9 (.)

@@ -1,6 +1,4 @@
-<?php
-
-return array (
+<?php return array (
   'fields' => 
   array (
     'lavoratore' => 
@@ -19,21 +17,5 @@ return array (
     array (
       'label' => 'periodo',
     ),
-    'info' => 
-    array (
-      'label' => 'info',
-    ),
-    'diritto' => 
-    array (
-      'label' => 'diritto',
-    ),
-    'motivo/invio email' => 
-    array (
-      'label' => 'motivo/invio email',
-    ),
-    'motivo/invio_email' => 
-    array (
-      'label' => 'motivo/invio_email',
-    ),
   ),
-);
+);
