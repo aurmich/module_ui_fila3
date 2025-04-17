@@ -113,8 +113,3 @@ composer format        # Formatta il codice
 
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub. 
-
-## Collegamenti bidirezionali
-- [Documentazione dettagliata del modulo UI](modules/ui/index.md)
-- [Componenti Filament personalizzati](filament/custom_components.md)
-- [Analisi dell'interfaccia utente](frontend_structure.md) 
