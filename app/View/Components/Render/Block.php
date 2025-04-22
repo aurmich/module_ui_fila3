@@ -38,7 +38,11 @@ class Block extends Component
         }
 
         $view = $this->view;
+<<<<<<< HEAD
         if (! view()->exists(is_string($view) ? $view : (string) $view)) {
+=======
+        if (! view()->exists((string) $view)) {
+>>>>>>> 14e0cd5 (.)
             $message = 'view not exists ['.$view.'] ! <pre>'.print_r($this->block, true).'</pre>';
             $view_params = [
                 'title' => 'deprecated',

@@ -29,9 +29,13 @@ class TableLayoutToggleHeaderAction extends Action
             ->icon(fn ($livewire) => 'list' === $livewire->layoutView ? $this->list_icon : $this->grid_icon)
             ->action(
                 function ($livewire) {
+<<<<<<< HEAD
                     if ($livewire !== null) {
                         $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
                     }
+=======
+                    $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
+>>>>>>> 14e0cd5 (.)
                 }
             );
     }

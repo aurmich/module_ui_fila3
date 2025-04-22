@@ -22,10 +22,13 @@ class AddressField extends Forms\Components\Field
         parent::setUp();
 
         $this->afterStateHydrated(function (AddressField $component, ?Model $record) {
+<<<<<<< HEAD
             if ($record === null) {
                 return;
             }
 
+=======
+>>>>>>> 14e0cd5 (.)
             $data = [
                 'country' => null,
                 'street' => null,
@@ -33,6 +36,7 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
+<<<<<<< HEAD
 
             $relationship = $this->getRelationship();
             if (!$relationship) {
@@ -41,6 +45,10 @@ class AddressField extends Forms\Components\Field
 
             $address = $record->getRelationValue($relationship);
             if ($address !== null && is_object($address) && method_exists($address, 'toArray')) {
+=======
+            $address = $record?->getRelationValue($this->getRelationship());
+            if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+>>>>>>> 14e0cd5 (.)
                 $data = $address->toArray();
             }
 
@@ -61,6 +69,7 @@ class AddressField extends Forms\Components\Field
     {
         $state = $this->getState();
         $record = $this->getRecord();
+<<<<<<< HEAD
 
         if ($record === null) {
             return;
@@ -83,6 +92,20 @@ class AddressField extends Forms\Components\Field
         }
 
         $record->touch();
+=======
+        $relationship = $record?->{$this->getRelationship()}();
+
+        if (null === $relationship) {
+            return;
+        }
+        if ($address = $relationship->first()) {
+            $address->update($state);
+        } else {
+            $relationship->updateOrCreate($state);
+        }
+
+        $record?->touch();
+>>>>>>> 14e0cd5 (.)
     }
 
     public function getChildComponents(): array
@@ -93,17 +116,31 @@ class AddressField extends Forms\Components\Field
                     Forms\Components\Select::make('country')
                         ->searchable(),
                     // ->getSearchResultsUsing(fn (string $query) => Country::where('name', 'like', "%{$query}%")->pluck('name', 'id'))
+<<<<<<< HEAD
                     // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)->getAttribute('name')),
                 ]),
             Forms\Components\TextInput::make('street')
+=======
+                    // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)?->getAttribute('name')),
+                ]),
+            Forms\Components\TextInput::make('street')
+
+>>>>>>> 14e0cd5 (.)
                 ->maxLength(255),
             Forms\Components\Grid::make(3)
                 ->schema([
                     Forms\Components\TextInput::make('city')
                         ->maxLength(255),
                     Forms\Components\TextInput::make('state')
+<<<<<<< HEAD
                         ->maxLength(255),
                     Forms\Components\TextInput::make('zip')
+=======
+
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('zip')
+
+>>>>>>> 14e0cd5 (.)
                         ->maxLength(255),
                 ]),
         ];
