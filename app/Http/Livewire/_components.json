@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
 =======
@@ -13,6 +14,9 @@
 =======
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+[{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
+>>>>>>> e5a6481 (.)
 [
     {
         "name": "dark-mode-switcher",
@@ -29,9 +33,8 @@
         "ns": "Modules\\UI\\Http\\Livewire\\Toast"
     }
 ]
-<<<<<<< HEAD
-=======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e1394bd (.)
 =======
@@ -43,3 +46,5 @@
 =======
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+>>>>>>> e5a6481 (.)

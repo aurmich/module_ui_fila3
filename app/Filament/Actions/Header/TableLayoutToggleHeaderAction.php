@@ -40,18 +40,6 @@ class TableLayoutToggleHeaderAction extends Action
                     if ($livewire !== null) {
                         $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
                     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-                    if ($livewire !== null) {
-                        $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
-                    }
-=======
-                    $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
->>>>>>> 14e0cd5 (.)
->>>>>>> 57ac32d (.)
-=======
->>>>>>> 0080286 (.)
                 }
             );
     }

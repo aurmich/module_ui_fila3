@@ -4,16 +4,21 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Traits;
 =======
 namespace Modules\UI\app\Traits;
 >>>>>>> e1394bd (.)
 =======
-namespace Modules\UI\app\Traits;
 =======
+>>>>>>> e5a6481 (.)
+namespace Modules\UI\app\Traits;
 namespace Modules\UI\Traits;
+<<<<<<< HEAD
 >>>>>>> 57ac32d (.)
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+>>>>>>> e5a6481 (.)
 
 use Illuminate\Support\Facades\Session;
 use Modules\UI\Enums\TableLayout;

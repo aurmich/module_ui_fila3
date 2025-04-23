@@ -25,6 +25,7 @@ class AddressField extends Forms\Components\Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -41,10 +42,13 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+>>>>>>> e5a6481 (.)
             if ($record === null) {
                 return;
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,6 +71,8 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+>>>>>>> e5a6481 (.)
             $data = [
                 'country' => null,
                 'street' => null,
@@ -74,6 +80,7 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -93,6 +100,8 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+>>>>>>> e5a6481 (.)
 
             $relationship = $this->getRelationship();
             if (!$relationship) {
@@ -101,6 +110,7 @@ class AddressField extends Forms\Components\Field
 
             $address = $record->getRelationValue($relationship);
             if ($address !== null && is_object($address) && method_exists($address, 'toArray')) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -127,6 +137,8 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+>>>>>>> e5a6481 (.)
                 $data = $address->toArray();
             }
 
@@ -150,6 +162,7 @@ class AddressField extends Forms\Components\Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -170,6 +183,9 @@ class AddressField extends Forms\Components\Field
 
 >>>>>>> 57ac32d (.)
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+
+>>>>>>> e5a6481 (.)
         if ($record === null) {
             return;
         }
@@ -188,6 +204,7 @@ class AddressField extends Forms\Components\Field
             $address->update($state);
         } else {
             $relation->updateOrCreate($state);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -226,6 +243,11 @@ class AddressField extends Forms\Components\Field
 >>>>>>> 57ac32d (.)
 =======
 >>>>>>> 0080286 (.)
+=======
+        }
+
+        $record->touch();
+>>>>>>> e5a6481 (.)
     }
 
     public function getChildComponents(): array
@@ -236,6 +258,7 @@ class AddressField extends Forms\Components\Field
                     Forms\Components\Select::make('country')
                         ->searchable(),
                     // ->getSearchResultsUsing(fn (string $query) => Country::where('name', 'like', "%{$query}%")->pluck('name', 'id'))
+<<<<<<< HEAD
                     // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)->getAttribute('name')),
                 ]),
             Forms\Components\TextInput::make('street')
@@ -266,12 +289,18 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+                    // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)?->getAttribute('name')),
+                ]),
+            Forms\Components\TextInput::make('street')
+>>>>>>> e5a6481 (.)
                 ->maxLength(255),
             Forms\Components\Grid::make(3)
                 ->schema([
                     Forms\Components\TextInput::make('city')
                         ->maxLength(255),
                     Forms\Components\TextInput::make('state')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -307,6 +336,10 @@ class AddressField extends Forms\Components\Field
                     Forms\Components\TextInput::make('zip')
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('zip')
+>>>>>>> e5a6481 (.)
                         ->maxLength(255),
                 ]),
         ];

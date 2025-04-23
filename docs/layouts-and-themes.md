@@ -265,6 +265,7 @@ AdminLayout::make()
 
    - Centralizzare configurazioni 
 
+<<<<<<< HEAD
    - Centralizzare configurazioni 
  14e0cd5 (.)
 =======
@@ -292,3 +293,17 @@ AdminLayout::make()
  14e0cd5 (.)
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+
+
+   - Centralizzare configurazioni 
+
+   - Centralizzare configurazioni 
+ 14e0cd5 (.)
+ 57ac32d (.)
+
+
+   - Centralizzare configurazioni 
+ 14e0cd5 (.)
+ 0080286 (.)
+>>>>>>> e5a6481 (.)

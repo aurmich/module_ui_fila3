@@ -9,6 +9,7 @@ in app/Providers/Filament/AdminPanelProvider.php
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 add
 
@@ -24,10 +25,21 @@ add
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> e5a6481 (.)
 
->>>>>>> 0080286 (.)
+
 add
 
+
+
+
+ 0080286 (.)
+add
+
+add
+
+<<<<<<< HEAD
 add 
 <<<<<<< HEAD
 >>>>>>> 14e0cd5 (.)
@@ -39,6 +51,13 @@ add
  14e0cd5 (.)
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+ 14e0cd5 (.)
+ 57ac32d (.)
+
+ 14e0cd5 (.)
+ 0080286 (.)
+>>>>>>> e5a6481 (.)
 ->viteTheme('resources/css/filament/admin/theme.css')
 
 

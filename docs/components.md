@@ -241,6 +241,7 @@ PrintLayout::make()
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -253,6 +254,15 @@ PrintLayout::make()
 
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+
+
+
+
+
+
+ 0080286 (.)
+>>>>>>> e5a6481 (.)
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -277,6 +287,7 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  14e0cd5 (.)
 =======
@@ -295,6 +306,16 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
  14e0cd5 (.)
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+
+
+ 14e0cd5 (.)
+ 57ac32d (.)
+
+
+ 14e0cd5 (.)
+ 0080286 (.)
+>>>>>>> e5a6481 (.)
 ## Componenti Base
 
 ### Forms
@@ -457,6 +478,7 @@ php artisan vendor:publish --tag=ui-views
 
 ``` 
 
+<<<<<<< HEAD
 ``` 
  14e0cd5 (.)
 =======
@@ -484,3 +506,17 @@ php artisan vendor:publish --tag=ui-views
  14e0cd5 (.)
 >>>>>>> 0080286 (.)
 >>>>>>> f4d4f3b (fix: auto resolve conflict)
+=======
+
+
+``` 
+
+``` 
+ 14e0cd5 (.)
+ 57ac32d (.)
+
+
+``` 
+ 14e0cd5 (.)
+ 0080286 (.)
+>>>>>>> e5a6481 (.)
