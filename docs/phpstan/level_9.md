@@ -1,25 +1,8 @@
-# Rapporto PHPStan Livello 9 per il modulo UI
+# PHPStan Report - Livello 9
 
-Data analisi: 2025-04-15 22:01:31
+## Errori rilevati
+* /var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/UI/app/Http/Livewire/DarkModeSwitcher.php: Parameter #1 $view of function view expects view-string|null, string given. (line 29)
 
-## Riepilogo
+## Soluzioni proposte
 
-Trovati 1 errori al livello 9.
-
-## Errori e suggerimenti
-
-### File: `/var/www/html/saluteora/laravel/Modules/UI/app/Providers/UIServiceProvider.php`
-
-#### Linea 33: Parameter #2 $path of function module_path expects string, mixed given.
-
-**Suggerimento generale**: Rivedi il codice per assicurarti che:
-- Tutte le classi/interfacce utilizzate siano importate correttamente
-- I tipi siano dichiarati e utilizzati in modo coerente
-- Le variabili siano inizializzate prima dell'uso
-- I nomi di metodi e proprietà siano corretti
-
-## Risorse utili
-
-- [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
-- [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
-- [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+> TODO: descrivere soluzioni architetturali e funzionali
