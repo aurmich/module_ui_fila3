@@ -238,6 +238,37 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### DarkModeSwitcher
+```php
+// Livewire Component
+use Modules\Ui\Http\Livewire\DarkModeSwitcher;
+
+// In una blade template:
+<livewire:ui::dark-mode-switcher />
+```
+
+#### Caratteristiche
+- Toggle tema chiaro/scuro
+- Persistenza con cookie
+- Icone dinamiche per modalità chiaro/scuro
+- Compatibilità con Tailwind Dark Mode
+- Integrazione con Livewire 3
+
+#### View
+Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
+- Button per il toggle tra tema chiaro/scuro
+- Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
+- SVG icons per modalità chiara e scura
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 ## Componenti Base
 
 ### Forms
@@ -394,4 +425,16 @@ php artisan vendor:publish --tag=ui-config
 
 // Pubblicare views
 php artisan vendor:publish --tag=ui-views
+<<<<<<< HEAD
 ``` 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+``` 
+=======
+``` 
+>>>>>>> aurmich/dev
+=======
+``` 
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev

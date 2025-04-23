@@ -1,5 +1,10 @@
 # Layouts e Temi UI
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 ## Gestione conflitti e pulizia componenti hero
 
 ## Gestione conflitti azione icone (GetAllIconsAction)
@@ -24,6 +29,10 @@ Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferi
 
 ---
 
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 ## Layout System
 
 ### Grid System
@@ -283,4 +292,16 @@ AdminLayout::make()
 4. **Manutenibilità**
    - Documentare personalizzazioni
    - Seguire convenzioni di naming
+<<<<<<< HEAD
    - Centralizzare configurazioni 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   - Centralizzare configurazioni 
+=======
+   - Centralizzare configurazioni 
+>>>>>>> aurmich/dev
+=======
+   - Centralizzare configurazioni 
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev

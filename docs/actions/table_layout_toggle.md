@@ -30,7 +30,15 @@ interface HasTableLayout
 
 ## Utilizzo
 ```php
+<<<<<<< HEAD
 use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
+=======
+<<<<<<< HEAD
+use Modules\UI\ment\Actions\Table\TableLayoutToggleTableAction;
+=======
+use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 
 class MyListRecords extends ListRecords
 {
@@ -49,8 +57,23 @@ class MyListRecords extends ListRecords
 3. Gestire correttamente gli eventi di refresh
 4. Mantenere la persistenza dello stato
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 ## Collegamenti alla Documentazione
 - [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 
