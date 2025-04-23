@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\UI\Traits;
+=======
+namespace Modules\UI\app\Traits;
+>>>>>>> aurmich/dev
 
 use Illuminate\Support\Facades\Session;
 use Modules\UI\Enums\TableLayout;
