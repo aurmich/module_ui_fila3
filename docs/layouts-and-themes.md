@@ -259,8 +259,12 @@ AdminLayout::make()
 4. **Manutenibilità**
    - Documentare personalizzazioni
    - Seguire convenzioni di naming
+<<<<<<< HEAD
 
    - Centralizzare configurazioni 
 
    - Centralizzare configurazioni 
  14e0cd5 (.)
+=======
+   - Centralizzare configurazioni 
+>>>>>>> e1394bd (.)

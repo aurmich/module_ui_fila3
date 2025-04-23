@@ -238,6 +238,7 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
+<<<<<<< HEAD
 
 ### DarkModeSwitcher
 ```php
@@ -263,6 +264,8 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 
 
  14e0cd5 (.)
+=======
+>>>>>>> e1394bd (.)
 ## Componenti Base
 
 ### Forms
@@ -419,8 +422,12 @@ php artisan vendor:publish --tag=ui-config
 
 // Pubblicare views
 php artisan vendor:publish --tag=ui-views
+<<<<<<< HEAD
 
 ``` 
 
 ``` 
  14e0cd5 (.)
+=======
+``` 
+>>>>>>> e1394bd (.)
