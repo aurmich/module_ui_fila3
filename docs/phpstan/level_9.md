@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Rapporto PHPStan Livello 9 per il modulo UI
 
 Data analisi: 2025-04-15 22:01:31
@@ -24,13 +24,4 @@ Trovati 1 errori al livello 9.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
-=======
-# PHPStan Report - Livello 9
-
-## Errori rilevati
-* /var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/UI/app/Http/Livewire/DarkModeSwitcher.php: Parameter #1 $view of function view expects view-string|null, string given. (line 29)
-
-## Soluzioni proposte
-
-> TODO: descrivere soluzioni architetturali e funzionali
->>>>>>> aurmich/dev
+aurmich/dev
