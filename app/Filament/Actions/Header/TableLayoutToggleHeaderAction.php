@@ -2,15 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> aurmich/dev
 namespace Modules\UI\Filament\Actions\Header;
-=======
-namespace Modules\UI\app\Filament\Actions\Header;
->>>>>>> aurmich/dev
 
 use Filament\Actions\Action;
 
@@ -19,7 +11,6 @@ use Filament\Actions\Action;
  */
 class TableLayoutToggleHeaderAction extends Action
 {
-    // use NavigationActionLabelTrait;
     public string $list_icon = 'heroicon-o-list-bullet';
 
     public string $grid_icon = 'heroicon-o-squares-2x2';
@@ -29,15 +20,6 @@ class TableLayoutToggleHeaderAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->color('secondary')
-<<<<<<< HEAD
-            
-=======
-
->>>>>>> aurmich/dev
-            // ->label(trans('ui::'.static::getDefaultName().'.label'))
-            // ->tooltip(trans('setting::database_connection.actions.database-backup.tooltip'))
-            // ->icon(trans('setting::database_connection.actions.database-backup.icon'))
-            // ->icon($this->list_icon)
             ->icon(fn ($livewire) => 'list' === $livewire->layoutView ? $this->list_icon : $this->grid_icon)
             ->action(
                 function ($livewire) {
@@ -51,12 +33,5 @@ class TableLayoutToggleHeaderAction extends Action
     public static function getDefaultName(): ?string
     {
         return 'table-layout-toggle-header';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> aurmich/dev
-=======
->>>>>>> aurmich/dev
     }
 }

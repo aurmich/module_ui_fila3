@@ -4,14 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Ui\Http\Livewire;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\View\View;
->>>>>>> aurmich/dev
-=======
-use Illuminate\Contracts\View\View;
->>>>>>> aurmich/dev
 use Livewire\Component;
 
 class DarkModeSwitcher extends Component
@@ -31,15 +24,7 @@ class DarkModeSwitcher extends Component
         $this->dispatch('darkModeUpdated', ['darkMode' => $this->darkMode]);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function render()
-=======
     public function render(): View
->>>>>>> aurmich/dev
-=======
-    public function render(): View
->>>>>>> aurmich/dev
     {
         return view('ui::livewire.dark-mode.switcher');
     }

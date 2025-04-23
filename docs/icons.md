@@ -22,6 +22,15 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
    - Utilizzare il componente x-icon
    - Supporto per colori e dimensioni
 
+## Action GetAllIconsAction
+- Scopo: carica dinamicamente tutte le icone disponibili per un determinato contesto UI (es. form, table).
+- Parametri:
+  - `string $context`: contesto di utilizzo delle icone.
+- Ritorna: `array<string, array<string, mixed>>` una mappa di set di icone che include prefisso, nome e lista di icone.
+- Utilizzo: invocata da componenti Livewire o controller per popolare dropdown o palette di icone.
+
+[Classe GetAllIconsAction](/laravel/Modules/UI/app/Actions/Icon/GetAllIconsAction.php)
+
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema

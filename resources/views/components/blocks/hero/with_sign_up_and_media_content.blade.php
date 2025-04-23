@@ -101,11 +101,7 @@
             <h1>
               <span class="block text-base font-semibold text-gray-500 sm:text-lg lg:text-base xl:text-lg">Coming soon</span>
               <span class="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
-<<<<<<< HEAD
-                <span class="block text-gray-900">Data to enrich your</span>
-=======
                 <span class="block text-gray-900">Data to enrich your3</span>
->>>>>>> aurmich/dev
                 <span class="block text-indigo-600">online business</span>
               </span>
             </h1>
@@ -150,7 +146,3 @@
       </main>
     </div>
   </div>
-<<<<<<< HEAD
-  
-=======
->>>>>>> aurmich/dev
