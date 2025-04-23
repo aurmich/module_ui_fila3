@@ -4,20 +4,41 @@ declare(strict_types=1);
 
 namespace Modules\UI\Actions\Icon;
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 use BladeUI\Icons\Factory as IconFactory;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 class GetAllIconsAction
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
      * @return array
      */
     public function execute(string $context = 'form')
@@ -59,11 +80,26 @@ class GetAllIconsAction
             $set['icons'] = $icons;
 
             return $set;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
         });
 
         return $icons;
     }
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 }
