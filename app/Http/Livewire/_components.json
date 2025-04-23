@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
+=======
+<<<<<<< HEAD
+>>>>>>> f697886 (fix: auto resolve conflict)
 [
     {
         "name": "dark-mode-switcher",
@@ -17,4 +23,9 @@
 ]
 =======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
+<<<<<<< HEAD
 >>>>>>> e1394bd (.)
+=======
+>>>>>>> 14e0cd5 (.)
+>>>>>>> 57ac32d (.)
+>>>>>>> f697886 (fix: auto resolve conflict)
