@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Ui\Http\Livewire;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Illuminate\Contracts\View\View;
+>>>>>>> aurmich/dev
 =======
 use Illuminate\Contracts\View\View;
 >>>>>>> aurmich/dev
@@ -28,7 +32,11 @@ class DarkModeSwitcher extends Component
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function render()
+=======
+    public function render(): View
+>>>>>>> aurmich/dev
 =======
     public function render(): View
 >>>>>>> aurmich/dev

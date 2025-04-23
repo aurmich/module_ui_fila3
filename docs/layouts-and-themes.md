@@ -1,5 +1,32 @@
 # Layouts e Temi UI
 
+<<<<<<< HEAD
+=======
+## Gestione conflitti e pulizia componenti hero
+
+## Gestione conflitti azione icone (GetAllIconsAction)
+
+Nel file GetAllIconsAction.php è stato risolto un conflitto mantenendo una sola versione coerente e tipizzata della funzione execute. Sono stati rimossi duplicati e marcatori git, garantendo:
+- Robustezza e chiarezza della logica di recupero icone
+- Coerenza con le convenzioni PSR-12 e PHP 8.2+
+- Facilità di manutenzione futura
+
+Questa scelta evita ambiguità e possibili errori runtime nella gestione delle icone dinamiche.
+
+Per il ragionamento generale sulle strategie di risoluzione, vedi la [documentazione centrale](../../../../../../docs/risoluzione_conflitti_git.md).
+
+In caso di conflitti nei componenti hero (es. simple.blade.php), è fondamentale:
+- Rimuovere codice commentato o superfluo lasciato da template generici o da sviluppi temporanei.
+- Mantenere solo la versione corretta e validata dei contenuti (es. titoli, testi, markup).
+- Garantire che i componenti hero siano semplici, puliti e aderenti alle specifiche di design del progetto.
+
+**Decisione architetturale**: In simple.blade.php è stato rimosso un blocco di codice commentato relativo a header e menu di esempio, mantenendo solo la struttura effettivamente utilizzata e correggendo il titolo. Questa scelta assicura chiarezza, manutenibilità e coerenza visiva.
+
+Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../../docs/risoluzione_conflitti_git.md).
+
+---
+
+>>>>>>> aurmich/dev
 ## Layout System
 
 ### Grid System
@@ -260,7 +287,11 @@ AdminLayout::make()
    - Documentare personalizzazioni
    - Seguire convenzioni di naming
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Centralizzare configurazioni 
+=======
+   - Centralizzare configurazioni 
+>>>>>>> aurmich/dev
 =======
    - Centralizzare configurazioni 
 >>>>>>> aurmich/dev

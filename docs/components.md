@@ -239,6 +239,7 @@ PrintLayout::make()
 - No elementi UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -261,6 +262,8 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
 - SVG icons per modalità chiara e scura
 
+=======
+>>>>>>> aurmich/dev
 =======
 >>>>>>> aurmich/dev
 ## Componenti Base
@@ -420,7 +423,11 @@ php artisan vendor:publish --tag=ui-config
 // Pubblicare views
 php artisan vendor:publish --tag=ui-views
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
+=======
+``` 
+>>>>>>> aurmich/dev
 =======
 ``` 
 >>>>>>> aurmich/dev

@@ -293,7 +293,11 @@
       <div class="mx-auto w-full max-w-7xl pb-20 pt-16 text-center lg:py-48 lg:text-left">
         <div class="px-6 sm:px-8 lg:w-1/2 xl:pr-16">
           <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+<<<<<<< HEAD
             <span class="block xl:inline">Data to enrich your</span>
+=======
+            <span class="block xl:inline">Data to enrich your2</span>
+>>>>>>> aurmich/dev
             <span class="block text-indigo-600 xl:inline">online business</span>
           </h1>
           <p class="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
@@ -312,4 +316,7 @@
       </div>
     </main>
   </div>
+<<<<<<< HEAD
   
+=======
+>>>>>>> aurmich/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione dei Conflitti Git nel Modulo UI
 
 ## Panoramica
@@ -120,6 +121,68 @@ if ($address !== null && is_object($address) && method_exists($address, 'toArray
     $data = $address->toArray();
 }
 ```
+=======
+# Conflitti di Merge Risolti nel Modulo UI
+
+Questo documento descrive i conflitti di merge che sono stati risolti nel modulo UI, con particolare attenzione ai file critici e alle decisioni prese.
+
+> Per una panoramica completa della risoluzione dei conflitti in tutto il progetto, consulta il [documento principale sulla risoluzione dei conflitti](/docs/conflict_resolution_ui_tenant.md).
+
+## File con Conflitti Risolti
+
+### File PHP
+
+#### `app/Filament/Actions/Header/TableLayoutToggleHeaderAction.php`
+
+**Problema**: Conflitti di namespace e linee vuote
+**Soluzione**: Mantenuto il namespace `Modules\UI\app\Filament\Actions\Header` in linea con la struttura del modulo, rimossi i marker di conflitto e le linee vuote superflue.
+
+**Ragionamento**: Il namespace corretto deve seguire la struttura delle directory e rispettare le convenzioni di autoloading di Laravel e Composer.
+
+#### `app/Filament/Resources/Pages/BaseListRecords.php`
+
+**Problema**: Conflitti di namespace e import
+**Soluzione**: Mantenuto il namespace `Modules\UI\app\Filament\Resources\Pages` e il riferimento al trait `Modules\UI\app\Traits\TableLayoutTrait`.
+
+**Ragionamento**: La versione corretta riflette la struttura attuale del modulo e mantiene la consistenza con gli altri file.
+
+#### `app/Traits/TableLayoutTrait.php`
+
+**Problema**: Namespace in conflitto
+**Soluzione**: Mantenuto il namespace `Modules\UI\app\Traits` per coerenza con le altre decisioni.
+
+**Ragionamento**: Tutti i file del modulo UI nella directory `app/` devono utilizzare il namespace `Modules\UI\app\` per rispettare l'autoloading.
+
+### File di Documentazione
+
+#### `docs/actions/table_layout_toggle.md`
+
+**Problema**: Conflitti nei collegamenti e nei riferimenti
+**Soluzione**: Mantenuti tutti i collegamenti utili e risolti i riferimenti duplicati.
+
+**Ragionamento**: La documentazione deve essere completa e coerente, senza collegamenti duplicati o mancanti.
+
+## Decisioni Strategiche
+
+1. **Namespace Standardizzati**: Tutti i namespace sono stati standardizzati seguendo il pattern `Modules\{ModuleName}\app\{Subspace}` per riflettere l'effettiva struttura del codice.
+
+2. **Documentazione Aggiornata**: I collegamenti alla documentazione sono stati aggiornati per mantenere la coerenza in tutto il progetto.
+
+3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto SaluteOra.
+
+## Azioni Consigliate
+
+- Aggiornare qualsiasi riferimento ai vecchi namespace nel codice
+- Eseguire test per verificare che le funzionalità siano mantenute
+- Aggiornare la documentazione se necessario
+
+## Collegamenti
+
+- [Documentazione Principale UI](module_ui.md)
+- [Best Practices](best-practices.md)
+- [Test di Risoluzione Conflitti](test_conflicts_resolution.md)
+- [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
+>>>>>>> aurmich/dev
 
 ## Principi di Risoluzione Applicati
 
