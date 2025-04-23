@@ -4,6 +4,17 @@
 
 Il modulo UI fornisce componenti di interfaccia utente riutilizzabili, layout e utility per costruire interfacce web coerenti e visivamente accattivanti all'interno dell'applicazione. Basato su Tailwind CSS e integrato con Filament, offre un'esperienza utente moderna e reattiva.
 
+## Convenzioni di Namespace
+
+**IMPORTANTE**: Il modulo UI segue una convenzione specifica per i namespace dei componenti Filament:
+
+- Anche se i file si trovano fisicamente in `app/Filament/...`, il namespace corretto è `Modules\UI\Filament\...`
+- **NON** utilizzare `Modules\UI\app\Filament\...` anche se sembra la mappatura logica
+
+Per maggiori dettagli, consulta:
+- [Convenzioni di Namespace](../../../docs/rules/namespace_conventions.md)
+- [Risoluzione Conflitti](CONFLITTI_MERGE_RISOLTI.md)
+
 ## Analisi PHPStan
 
 Il modulo è stato analizzato con PHPStan per migliorare la qualità del codice:

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\UI\Filament\Actions\Header;
+namespace Modules\UI\app\Filament\Actions\Header;
 
 use Filament\Actions\Action;
 

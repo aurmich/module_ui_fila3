@@ -66,21 +66,73 @@ class TableLayoutToggleTableAction extends Action
 
 ### 2. TableLayoutToggleHeaderAction.php
 
-**Problema**: Conflitto nella gestione del livewire, con duplicazione del codice e verifiche sulla nullità di $livewire.
+**Problema**: Conflitto nella gestione del livewire, con duplicazione del codice e verifiche sulla nullità di $livewire, e conflitto nel namespace.
 
-**Soluzione**: Risolto mantenendo la versione più pulita che non duplica il codice e gestisce correttamente la verifica sulla nullità di $livewire.
+**Soluzione**: Risolto mantenendo la versione più pulita che non duplica il codice e gestisce correttamente la verifica sulla nullità di $livewire. È stato corretto il namespace da `Modules\UI\app\Filament\Actions\Header` a `Modules\UI\Filament\Actions\Header` per rimanere coerente con la struttura del modulo, nonostante il file si trovi fisicamente in `app/Filament/Actions/Header`.
 
 ```php
-->action(
-    function ($livewire) {
-        if ($livewire !== null) {
-            $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
+namespace Modules\UI\Filament\Actions\Header;
+
+use Filament\Actions\Action;
+
+class TableLayoutToggleHeaderAction extends Action
+{
+    // ...
+    ->action(
+        function ($livewire) {
+            if ($livewire !== null) {
+                $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
+            }
         }
-    }
-);
+    );
+    // ...
+}
 ```
 
-### 3. BaseListRecords.php
+**Ragionamento**: Il namespace corretto `Modules\UI\Filament\Actions\Header` segue le convenzioni di namespace utilizzate nel modulo UI, dove i componenti Filament sono tutti nel namespace `Modules\UI\Filament` anche se fisicamente si trovano nella cartella `app/Filament`. Questa convenzione è importante per mantenere la consistenza con il resto del progetto.
+
+### 3. GetAllIconsAction.php
+
+**Problema**: Conflitto nei marker git e nella documentazione del metodo `execute()`, con versioni che includevano commenti diversi e struttura del metodo leggermente differente.
+
+**Soluzione**: È stata mantenuta la versione con la documentazione più completa in italiano e con la struttura più chiara del metodo. I commenti sono stati preservati nella versione italiana più descrittiva.
+
+```php
+namespace Modules\UI\Actions\Icon;
+
+use BladeUI\Icons\Factory as IconFactory;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\File;
+use Spatie\QueueableAction\QueueableAction;
+
+class GetAllIconsAction
+{
+    use QueueableAction;
+
+    /**
+     * Restituisce la struttura completa delle icone disponibili per la UI.
+     *
+     * @param string $context
+     * @return array<string, array<string, mixed>>
+     */
+    public function execute(string $context = 'form'): array
+    {
+        $iconsFactory = App::make(IconFactory::class);
+        $icons = $iconsFactory->all();
+
+        $icons = Arr::map($icons, function (array $set, array|string $name) {
+            // ...implementazione del metodo
+        });
+
+        return $icons;
+    }
+}
+```
+
+**Ragionamento**: La documentazione in italiano con tipizzazione precisa dei parametri e del valore di ritorno migliora la comprensione del codice e facilita la manutenzione futura. Sono stati rimossi commenti non più necessari che facevano riferimento alla struttura interna degli array per mantenere il codice più pulito.
+
+### 4. BaseListRecords.php
 
 **Problema**: Conflitto nei namespace e nell'import del trait TableLayoutTrait.
 
@@ -98,7 +150,7 @@ abstract class BaseListRecords extends XotBaseListRecords
 }
 ```
 
-### 4. AddressField.php
+### 5. AddressField.php
 
 **Problema**: Conflitto complesso con multiple versioni in diverse parti del file, principalmente nelle verifiche di nullità e nella gestione delle relazioni.
 
@@ -121,7 +173,7 @@ if ($address !== null && is_object($address) && method_exists($address, 'toArray
 }
 ```
 
-### 5. TableLayoutTrait.php
+### 6. TableLayoutTrait.php
 
 **Problema**: Conflitto di namespace tra `Modules\UI\Traits` e `Modules\UI\app\Traits`, con incoerenze nella formattazione del codice e potenziali problemi di autoloading.
 
@@ -158,9 +210,10 @@ Nella risoluzione dei conflitti sono stati applicati i seguenti principi:
 
 1. **Tipizzazione Forte**: Mantenere e migliorare la tipizzazione dei parametri e dei valori di ritorno.
 2. **Gestione Null-Safety**: Preferire verifiche esplicite di nullità per prevenire errori a runtime.
-3. **Coerenza del Namespace**: Mantenere i namespace corretti che rispettano la struttura delle cartelle.
+3. **Coerenza del Namespace**: Mantenere i namespace corretti che rispettano le convenzioni del progetto, prestando particolare attenzione ai componenti Filament che utilizzano `Modules\UI\Filament\` come base del namespace anche se si trovano fisicamente nella cartella `app/Filament/`.
 4. **Rimozione di Duplicazioni**: Eliminare codice duplicato per migliorare la manutenibilità.
 5. **Compatibilità Livewire/Filament**: Assicurare il corretto funzionamento con i componenti Livewire e Filament.
+6. **Documentazione in Italiano**: Preservare la documentazione in italiano per mantenere la coerenza linguistica nel progetto.
 
 ## Verifica e Test
 
@@ -178,6 +231,14 @@ Per prevenire futuri conflitti nel modulo UI:
 3. **Verifiche di Nullità**: Utilizzare sempre verifiche esplicite per prevenire errori.
 4. **Utilizzo di Enum**: Preferire l'uso di enum tipi per valori predefiniti.
 5. **Tipizzazione Rigorosa**: Mantenere una tipizzazione rigorosa in tutti i file.
+6. **Namespace Coerenti**: Seguire le convenzioni di namespace del progetto, ricordando che i componenti Filament del modulo UI utilizzano il namespace `Modules\UI\Filament\` anche se fisicamente presenti nella cartella `app/Filament/`.
+
+## Regola Fondamentale per i Namespace
+
+Per evitare errori nei namespace, seguire queste linee guida:
+1. **Componenti Filament**: Usare sempre `Modules\UI\Filament\` come base del namespace, mai `Modules\UI\app\Filament\`.
+2. **Altri Componenti**: Per i componenti non-Filament, seguire la struttura PSR-4 standard con `Modules\UI\app\`.
+3. **In caso di dubbio**: Consultare la documentazione esistente nel modulo e rispettare le convenzioni lì stabilite.
 
 ## Collegamenti a Documentazione Correlata
 
@@ -185,5 +246,5 @@ Per prevenire futuri conflitti nel modulo UI:
 - [Components UI](components.md)
 - [Best Practices UI](best-practices.md)
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md) 
-
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
+- [Documentazione delle Icone](icons.md)
