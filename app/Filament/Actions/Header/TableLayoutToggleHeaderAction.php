@@ -21,15 +21,7 @@ class TableLayoutToggleHeaderAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->color('secondary')
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> e1394bd (.)
-=======
-
->>>>>>> f4d4f3b (fix: auto resolve conflict)
             // ->label(trans('ui::'.static::getDefaultName().'.label'))
             // ->tooltip(trans('setting::database_connection.actions.database-backup.tooltip'))
             // ->icon(trans('setting::database_connection.actions.database-backup.icon'))

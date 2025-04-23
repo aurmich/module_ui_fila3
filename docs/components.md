@@ -238,23 +238,23 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-=======
-<<<<<<< HEAD
->>>>>>> f697886 (fix: auto resolve conflict)
-=======
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> 0080286 (.)
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-=======
+
+
+
+
+
+
+ f697886 (fix: auto resolve conflict)
+
+
+
+
+
+ 0080286 (.)
+ f4d4f3b (fix: auto resolve conflict)
+
 
 
 
@@ -262,7 +262,7 @@ PrintLayout::make()
 
 
  0080286 (.)
->>>>>>> e5a6481 (.)
+ e5a6481 (.)
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -285,28 +285,18 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
 - SVG icons per modalità chiara e scura
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
+
 
  14e0cd5 (.)
-=======
->>>>>>> e1394bd (.)
-=======
-=======
->>>>>>> 14e0cd5 (.)
->>>>>>> 57ac32d (.)
->>>>>>> f697886 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 14e0cd5 (.)
->>>>>>> 57ac32d (.)
-=======
+
+ e1394bd (.)
+
 
  14e0cd5 (.)
->>>>>>> 0080286 (.)
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-=======
+ 57ac32d (.)
+ f697886 (fix: auto resolve conflict)
 
 
  14e0cd5 (.)
@@ -315,7 +305,17 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 
  14e0cd5 (.)
  0080286 (.)
->>>>>>> e5a6481 (.)
+ f4d4f3b (fix: auto resolve conflict)
+
+
+
+ 14e0cd5 (.)
+ 57ac32d (.)
+
+
+ 14e0cd5 (.)
+ 0080286 (.)
+ e5a6481 (.)
 ## Componenti Base
 
 ### Forms
@@ -472,41 +472,41 @@ php artisan vendor:publish --tag=ui-config
 
 // Pubblicare views
 php artisan vendor:publish --tag=ui-views
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
+
 
 ``` 
 
-<<<<<<< HEAD
-``` 
- 14e0cd5 (.)
-=======
-``` 
->>>>>>> e1394bd (.)
-=======
-=======
-
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-``` 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-``` 
-=======
-``` 
->>>>>>> 14e0cd5 (.)
->>>>>>> 57ac32d (.)
-<<<<<<< HEAD
->>>>>>> f697886 (fix: auto resolve conflict)
-=======
-=======
 
 ``` 
  14e0cd5 (.)
->>>>>>> 0080286 (.)
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-=======
+
+``` 
+ e1394bd (.)
+
+
+
+ f4d4f3b (fix: auto resolve conflict)
+``` 
+
+
+
+``` 
+
+``` 
+ 14e0cd5 (.)
+ 57ac32d (.)
+
+ f697886 (fix: auto resolve conflict)
+
+
+
+``` 
+ 14e0cd5 (.)
+ 0080286 (.)
+ f4d4f3b (fix: auto resolve conflict)
+
 
 
 ``` 
@@ -519,4 +519,4 @@ php artisan vendor:publish --tag=ui-views
 ``` 
  14e0cd5 (.)
  0080286 (.)
->>>>>>> e5a6481 (.)
+ e5a6481 (.)

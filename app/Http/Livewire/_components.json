@@ -1,22 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
-=======
-<<<<<<< HEAD
->>>>>>> f697886 (fix: auto resolve conflict)
-=======
-[{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 0080286 (.)
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-=======
-[{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
->>>>>>> e5a6481 (.)
 [
     {
         "name": "dark-mode-switcher",
@@ -34,17 +16,3 @@
     }
 ]
 [{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> e1394bd (.)
-=======
->>>>>>> 14e0cd5 (.)
->>>>>>> 57ac32d (.)
-<<<<<<< HEAD
->>>>>>> f697886 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 0080286 (.)
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-=======
->>>>>>> e5a6481 (.)

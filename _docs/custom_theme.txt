@@ -6,27 +6,6 @@ php artisan make:filament-theme admin
 add resources/css/filament/admin/theme.css entry to vite.config.js
 
 in app/Providers/Filament/AdminPanelProvider.php
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-add
-
-add 
- 14e0cd5 (.)
-=======
-add 
->>>>>>> e1394bd (.)
-=======
-=======
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-add 
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> e5a6481 (.)
 
 
 add
@@ -39,25 +18,11 @@ add
 
 add
 
-<<<<<<< HEAD
-add 
-<<<<<<< HEAD
->>>>>>> 14e0cd5 (.)
->>>>>>> 57ac32d (.)
-<<<<<<< HEAD
->>>>>>> f697886 (fix: auto resolve conflict)
-=======
-=======
- 14e0cd5 (.)
->>>>>>> 0080286 (.)
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-=======
  14e0cd5 (.)
  57ac32d (.)
 
  14e0cd5 (.)
  0080286 (.)
->>>>>>> e5a6481 (.)
 ->viteTheme('resources/css/filament/admin/theme.css')
 
 

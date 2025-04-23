@@ -259,41 +259,41 @@ AdminLayout::make()
 4. **Manutenibilità**
    - Documentare personalizzazioni
    - Seguire convenzioni di naming
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
+
 
    - Centralizzare configurazioni 
 
-<<<<<<< HEAD
-   - Centralizzare configurazioni 
- 14e0cd5 (.)
-=======
-   - Centralizzare configurazioni 
->>>>>>> e1394bd (.)
-=======
-=======
-
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-   - Centralizzare configurazioni 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-   - Centralizzare configurazioni 
-=======
-   - Centralizzare configurazioni 
->>>>>>> 14e0cd5 (.)
->>>>>>> 57ac32d (.)
-<<<<<<< HEAD
->>>>>>> f697886 (fix: auto resolve conflict)
-=======
-=======
 
    - Centralizzare configurazioni 
  14e0cd5 (.)
->>>>>>> 0080286 (.)
->>>>>>> f4d4f3b (fix: auto resolve conflict)
-=======
+
+   - Centralizzare configurazioni 
+ e1394bd (.)
+
+
+
+ f4d4f3b (fix: auto resolve conflict)
+   - Centralizzare configurazioni 
+
+
+
+   - Centralizzare configurazioni 
+
+   - Centralizzare configurazioni 
+ 14e0cd5 (.)
+ 57ac32d (.)
+
+ f697886 (fix: auto resolve conflict)
+
+
+
+   - Centralizzare configurazioni 
+ 14e0cd5 (.)
+ 0080286 (.)
+ f4d4f3b (fix: auto resolve conflict)
+
 
 
    - Centralizzare configurazioni 
@@ -306,4 +306,4 @@ AdminLayout::make()
    - Centralizzare configurazioni 
  14e0cd5 (.)
  0080286 (.)
->>>>>>> e5a6481 (.)
+ e5a6481 (.)
