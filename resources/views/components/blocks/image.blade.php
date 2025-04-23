@@ -10,8 +10,6 @@
     $src = $image ? Storage::url($image) : $url;
     if(!$src){
         $src = $model->media->first()?->getUrl();
-        $src = $model->media->first()?->getUrl();
-        $src = $model->media->first()->getUrl();
         // $src = $model->getFirstMedia()->getUrl();
     }
     $ratioClass = \Modules\UI\Filament\Blocks\Image::getRatioClass($ratio ?: '4-3');

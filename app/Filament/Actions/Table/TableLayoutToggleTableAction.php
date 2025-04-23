@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Modules\UI\app\Filament\Actions\Table;
 
 use Filament\Tables\Actions\Action;
-use Livewire\Component;
+use Illuminate\Support\Facades\Session;
 use Modules\UI\Enums\TableLayoutEnum;
+use Livewire\Component;
 
 interface HasTableLayout
 {
