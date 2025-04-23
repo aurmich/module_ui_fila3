@@ -9,8 +9,8 @@
 @php
     $src = $image ? Storage::url($image) : $url;
     if(!$src){
-<<<<<<< HEAD
         $src = $model->getMedia($img_uuid)->first()?->getUrl();
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         $src = $model->getMedia($img_uuid)->first()?->getUrl();
@@ -18,6 +18,8 @@
         $src = $model->getMedia($img_uuid)->first()->getUrl();
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+=======
+>>>>>>> 0080286 (.)
     }
     $ratioClass = \Modules\UI\Filament\Blocks\Image::getRatioClass($ratio ?: '4-3');
 @endphp

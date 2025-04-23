@@ -261,6 +261,7 @@ AdminLayout::make()
    - Seguire convenzioni di naming
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    - Centralizzare configurazioni 
 
@@ -270,7 +271,11 @@ AdminLayout::make()
    - Centralizzare configurazioni 
 >>>>>>> e1394bd (.)
 =======
+=======
+
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
    - Centralizzare configurazioni 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
    - Centralizzare configurazioni 
@@ -278,4 +283,12 @@ AdminLayout::make()
    - Centralizzare configurazioni 
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+<<<<<<< HEAD
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+=======
+
+   - Centralizzare configurazioni 
+ 14e0cd5 (.)
+>>>>>>> 0080286 (.)
+>>>>>>> f4d4f3b (fix: auto resolve conflict)

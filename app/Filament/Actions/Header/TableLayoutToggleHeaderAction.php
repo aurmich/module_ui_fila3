@@ -22,10 +22,14 @@ class TableLayoutToggleHeaderAction extends Action
         $this->translateLabel()
             ->color('secondary')
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> e1394bd (.)
+=======
+
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
             // ->label(trans('ui::'.static::getDefaultName().'.label'))
             // ->tooltip(trans('setting::database_connection.actions.database-backup.tooltip'))
             // ->icon(trans('setting::database_connection.actions.database-backup.icon'))
@@ -33,10 +37,10 @@ class TableLayoutToggleHeaderAction extends Action
             ->icon(fn ($livewire) => 'list' === $livewire->layoutView ? $this->list_icon : $this->grid_icon)
             ->action(
                 function ($livewire) {
-<<<<<<< HEAD
                     if ($livewire !== null) {
                         $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
                     }
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                     if ($livewire !== null) {
@@ -46,6 +50,8 @@ class TableLayoutToggleHeaderAction extends Action
                     $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+=======
+>>>>>>> 0080286 (.)
                 }
             );
     }

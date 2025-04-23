@@ -24,6 +24,7 @@ class AddressField extends Forms\Components\Field
         $this->afterStateHydrated(function (AddressField $component, ?Model $record) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -34,11 +35,17 @@ class AddressField extends Forms\Components\Field
 =======
 =======
 >>>>>>> 57ac32d (.)
+<<<<<<< HEAD
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 0080286 (.)
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
             if ($record === null) {
                 return;
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -54,7 +61,12 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+<<<<<<< HEAD
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 0080286 (.)
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
             $data = [
                 'country' => null,
                 'street' => null,
@@ -62,6 +74,7 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -74,7 +87,12 @@ class AddressField extends Forms\Components\Field
 =======
 =======
 >>>>>>> 57ac32d (.)
+<<<<<<< HEAD
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 0080286 (.)
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
 
             $relationship = $this->getRelationship();
             if (!$relationship) {
@@ -83,6 +101,7 @@ class AddressField extends Forms\Components\Field
 
             $address = $record->getRelationValue($relationship);
             if ($address !== null && is_object($address) && method_exists($address, 'toArray')) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -102,7 +121,12 @@ class AddressField extends Forms\Components\Field
             if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+<<<<<<< HEAD
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 0080286 (.)
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
                 $data = $address->toArray();
             }
 
@@ -125,10 +149,13 @@ class AddressField extends Forms\Components\Field
         $record = $this->getRecord();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -138,6 +165,8 @@ class AddressField extends Forms\Components\Field
 >>>>>>> e1394bd (.)
 =======
 =======
+=======
+>>>>>>> 0080286 (.)
 
 >>>>>>> 57ac32d (.)
 >>>>>>> f697886 (fix: auto resolve conflict)
@@ -170,6 +199,7 @@ class AddressField extends Forms\Components\Field
         }
 
         $record->touch();
+<<<<<<< HEAD
 =======
         $relationship = $record?->{$this->getRelationship()}();
 >>>>>>> 57ac32d (.)
@@ -194,6 +224,8 @@ class AddressField extends Forms\Components\Field
         $record?->touch();
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+=======
+>>>>>>> 0080286 (.)
     }
 
     public function getChildComponents(): array
@@ -204,12 +236,14 @@ class AddressField extends Forms\Components\Field
                     Forms\Components\Select::make('country')
                         ->searchable(),
                     // ->getSearchResultsUsing(fn (string $query) => Country::where('name', 'like', "%{$query}%")->pluck('name', 'id'))
-<<<<<<< HEAD
                     // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)->getAttribute('name')),
                 ]),
             Forms\Components\TextInput::make('street')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
 
 <<<<<<< HEAD
 >>>>>>> e1394bd (.)
@@ -226,7 +260,12 @@ class AddressField extends Forms\Components\Field
 
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+<<<<<<< HEAD
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 0080286 (.)
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
                 ->maxLength(255),
             Forms\Components\Grid::make(3)
                 ->schema([
@@ -235,10 +274,13 @@ class AddressField extends Forms\Components\Field
                     Forms\Components\TextInput::make('state')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         ->maxLength(255),
                     Forms\Components\TextInput::make('zip')
 =======
 =======
+=======
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
                         ->maxLength(255),
@@ -257,7 +299,14 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 14e0cd5 (.)
 >>>>>>> 57ac32d (.)
+<<<<<<< HEAD
 >>>>>>> f697886 (fix: auto resolve conflict)
+=======
+=======
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('zip')
+>>>>>>> 0080286 (.)
+>>>>>>> f4d4f3b (fix: auto resolve conflict)
                         ->maxLength(255),
                 ]),
         ];
