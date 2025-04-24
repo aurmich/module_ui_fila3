@@ -32,6 +32,7 @@ interface HasTableLayout
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
 =======
@@ -45,6 +46,9 @@ use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+use Modules\UI\ment\Actions\Table\TableLayoutToggleTableAction;
+>>>>>>> a675681 (.)
 
 class MyListRecords extends ListRecords
 {
@@ -63,6 +67,7 @@ class MyListRecords extends ListRecords
 3. Gestire correttamente gli eventi di refresh
 4. Mantenere la persistenza dello stato
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -94,4 +99,6 @@ class MyListRecords extends ListRecords
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a675681 (.)
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 

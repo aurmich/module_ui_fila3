@@ -23,6 +23,7 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
    - Supporto per colori e dimensioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -40,6 +41,8 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a675681 (.)
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema

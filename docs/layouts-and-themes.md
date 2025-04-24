@@ -1,6 +1,7 @@
 # Layouts e Temi UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -39,6 +40,8 @@ Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferi
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a675681 (.)
 ## Layout System
 
 ### Grid System
@@ -300,6 +303,7 @@ AdminLayout::make()
    - Seguire convenzioni di naming
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    - Centralizzare configurazioni 
 =======
@@ -317,3 +321,6 @@ AdminLayout::make()
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+   - Centralizzare configurazioni 
+>>>>>>> a675681 (.)

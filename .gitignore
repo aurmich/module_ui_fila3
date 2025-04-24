@@ -39,8 +39,11 @@ cache/
 *.exe
 *:Zone.Identifier
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 # File di log
 *.log
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a675681 (.)
