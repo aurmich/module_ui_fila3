@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-[{"name":"toast","class":"Toast","module":null,"path":null,"ns":"Modules\\UI\\Http\\Livewire\\Toast"}]
-=======
 [
     {
         "name": "dark-mode-switcher",
@@ -17,4 +14,3 @@
         "ns": "Modules\\UI\\Http\\Livewire\\Toast"
     }
 ]
->>>>>>> aurmich/dev
