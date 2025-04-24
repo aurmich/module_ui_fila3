@@ -11,10 +11,7 @@ use Filament\Actions\Action;
  */
 class TableLayoutToggleHeaderAction extends Action
 {
-<<<<<<< HEAD
     // use NavigationActionLabelTrait;
-=======
->>>>>>> aurmich/dev
     public string $list_icon = 'heroicon-o-list-bullet';
 
     public string $grid_icon = 'heroicon-o-squares-2x2';
@@ -24,14 +21,11 @@ class TableLayoutToggleHeaderAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->color('secondary')
-<<<<<<< HEAD
 
             // ->label(trans('ui::'.static::getDefaultName().'.label'))
             // ->tooltip(trans('setting::database_connection.actions.database-backup.tooltip'))
             // ->icon(trans('setting::database_connection.actions.database-backup.icon'))
             // ->icon($this->list_icon)
-=======
->>>>>>> aurmich/dev
             ->icon(fn ($livewire) => 'list' === $livewire->layoutView ? $this->list_icon : $this->grid_icon)
             ->action(
                 function ($livewire) {
