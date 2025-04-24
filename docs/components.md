@@ -240,6 +240,11 @@ PrintLayout::make()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -265,6 +270,10 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 =======
 >>>>>>> aurmich/dev
 =======
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 ## Componenti Base
 
@@ -424,10 +433,20 @@ php artisan vendor:publish --tag=ui-config
 php artisan vendor:publish --tag=ui-views
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+``` 
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
 ``` 
 =======
 ``` 
 >>>>>>> aurmich/dev
 =======
 ``` 
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev

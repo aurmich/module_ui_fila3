@@ -22,6 +22,11 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
    - Utilizzare il componente x-icon
    - Supporto per colori e dimensioni
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 ## Action GetAllIconsAction
 - Scopo: carica dinamicamente tutte le icone disponibili per un determinato contesto UI (es. form, table).
 - Parametri:
@@ -31,6 +36,10 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 
 [Classe GetAllIconsAction](/laravel/Modules/UI/app/Actions/Icon/GetAllIconsAction.php)
 
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema

@@ -2,6 +2,12 @@
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 ## Gestione conflitti e pulizia componenti hero
 
 ## Gestione conflitti azione icone (GetAllIconsAction)
@@ -26,6 +32,12 @@ Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferi
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 ## Layout System
 
@@ -288,10 +300,20 @@ AdminLayout::make()
    - Seguire convenzioni di naming
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+   - Centralizzare configurazioni 
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
    - Centralizzare configurazioni 
 =======
    - Centralizzare configurazioni 
 >>>>>>> aurmich/dev
 =======
    - Centralizzare configurazioni 
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
