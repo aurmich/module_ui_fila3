@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Blocks;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Builder\Block;
@@ -13,14 +12,6 @@ use Modules\Xot\Filament\Blocks\XotBaseBlock;
 class Heading extends XotBaseBlock
 {
     /*
-=======
-use Filament\Forms\Components\Builder\Block;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
-
-class Heading
-{
->>>>>>> aurmich/dev
     public static function make(
         string $name = 'heading',
         string $context = 'form',
@@ -44,7 +35,6 @@ class Heading
                 ]
             )->columns(2);
     }
-<<<<<<< HEAD
     */
     public static function getBlockSchema(): array
     {
@@ -64,6 +54,4 @@ class Heading
                 ->required(),
         ];
     }
-=======
->>>>>>> aurmich/dev
 }

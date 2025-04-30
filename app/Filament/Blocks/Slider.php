@@ -9,7 +9,6 @@ use Filament\Forms\Components\TextInput;
 use Modules\UI\Filament\Forms\Components\RadioImage;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 use Modules\Xot\Actions\View\GetViewsSiblingsAndSelfAction;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 class Slider extends XotBaseBlock
@@ -21,25 +20,6 @@ class Slider extends XotBaseBlock
 
         return [
 
-=======
-
-class Slider
-{
-    public static function make(
-        string $name = 'slider',
-        string $context = 'form',
-    ): Block {
-        // $view = 'ui::components.blocks.slider.v1';
-        // $views = app(GetViewsSiblingsAndSelfAction::class)->execute($view);
-        // dddx('a');
-        $options = app(GetViewBlocksOptionsByTypeAction::class)
-            ->execute('slider', true);
-
-        // dddx($options);
-        return Block::make($name)
-            ->schema(
-                [
->>>>>>> aurmich/dev
                     TextInput::make('method')
 
                         ->hint('Inserisci il nome del metodo da richiamare nel tema')
@@ -53,11 +33,6 @@ class Slider
                     RadioImage::make('view')
                         ->options($options),
                 ]
-<<<<<<< HEAD
         ;
-=======
-            )
-            ->columns(1);
->>>>>>> aurmich/dev
     }
 }

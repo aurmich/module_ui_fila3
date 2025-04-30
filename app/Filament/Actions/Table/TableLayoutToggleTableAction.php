@@ -2,11 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\UI\Filament\Actions\Table;
-=======
-namespace Modules\UI\app\Filament\Actions\Table;
->>>>>>> aurmich/dev
 
 use Filament\Tables\Actions\Action;
 use Illuminate\Support\Facades\Session;

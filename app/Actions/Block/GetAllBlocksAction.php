@@ -53,13 +53,10 @@ class GetAllBlocksAction
             }
         );
 
-<<<<<<< HEAD
         $blocks = Arr::where($blocks, function ($block) {
             return !in_array($block['name'], ['xot_base', 'xot_base_block']);
         });
 
-=======
->>>>>>> aurmich/dev
         return ComponentFileData::collection($blocks);
     }
 }

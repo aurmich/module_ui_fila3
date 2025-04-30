@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Blocks;
 
-<<<<<<< HEAD
 use Filament\Forms\Get;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
@@ -23,28 +22,6 @@ class ImageSpatie extends XotBaseBlock
     {
 
         return [
-=======
-use Filament\Forms\Components\Builder\Block;
-use Filament\Forms\Components\Hidden;
-use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Forms\Get;
-use Illuminate\Support\Str;
-use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
-use Spatie\MediaLibrary\HasMedia;
-use Webmozart\Assert\Assert;
-
-class ImageSpatie
-{
-    public static function make(
-        string $name = 'image_spatie',
-        string $context = 'form',
-    ): Block {
-        return Block::make($name)
-
-            ->schema([
->>>>>>> aurmich/dev
                 Hidden::make('img_uuid')
                     ->default(fn () => Str::uuid()->toString())
                     ->formatStateUsing(fn ($state) => $state ?? Str::uuid()->toString())
@@ -79,11 +56,6 @@ class ImageSpatie
                     ),
 
                 TextInput::make('caption'),
-<<<<<<< HEAD
             ];
-=======
-            ])
-            ->columns('form' === $context ? 2 : 1);
->>>>>>> aurmich/dev
     }
 }
