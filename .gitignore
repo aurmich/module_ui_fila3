@@ -38,6 +38,18 @@ cache/
 .php-cs-fixer.cache
 *.exe
 *:Zone.Identifier
+<<<<<<< HEAD
 
 # File di log
 *.log
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+# File di log
+*.log
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a675681 (.)
+>>>>>>> aurmich/dev

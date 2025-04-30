@@ -15,6 +15,10 @@ class GetAllIconsAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
      * Restituisce la struttura completa delle icone disponibili per la UI.
      *
      * @param string $context
@@ -25,17 +29,54 @@ class GetAllIconsAction
         $iconsFactory = App::make(IconFactory::class);
         $icons = $iconsFactory->all();
 
+<<<<<<< HEAD
+=======
+=======
+     * @return array
+     */
+    public function execute(string $context = 'form')
+    {
+        $iconsFactory = App::make(IconFactory::class);
+        $icons = $iconsFactory->all();
+        /*
+         *  "heroicons" => array:5 [▼
+         *   "prefix" => "heroicon"
+         *   "fallback" => ""
+         *   "class" => ""
+         *   "attributes" => []
+         *   "paths" => array:1 [▼
+         *      0 => "F:\var\www\_bases\base_broker_fila3\laravel\vendor\blade-ui-kit\blade-heroicons\src/../resources/svg"
+         *   ]
+        ]
+         */
+>>>>>>> a675681 (.)
+>>>>>>> aurmich/dev
         $icons = Arr::map($icons, function (array $set, array|string $name) {
             $set['name'] = $name;
             $icons = [];
 
             foreach ($set['paths'] as $path) {
                 foreach (File::allFiles($path) as $file) {
+<<<<<<< HEAD
                     // Ignora file che non sono SVG
+=======
+<<<<<<< HEAD
+                    // Ignora file che non sono SVG
+=======
+                    // Simply ignore files that aren't SVGs
+>>>>>>> a675681 (.)
+>>>>>>> aurmich/dev
                     if ('svg' !== $file->getExtension()) {
                         continue;
                     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+                    // $iconName = $this->getIconName($file, parentPath: $path, prefix: $prefix);
+>>>>>>> a675681 (.)
+>>>>>>> aurmich/dev
                     $iconName = str($file->getPathname())
                         ->after($path.DIRECTORY_SEPARATOR)
                         ->replace(DIRECTORY_SEPARATOR, '.')

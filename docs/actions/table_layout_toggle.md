@@ -31,13 +31,33 @@ interface HasTableLayout
 ## Utilizzo
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 use Modules\UI\ment\Actions\Table\TableLayoutToggleTableAction;
 =======
 use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
 >>>>>>> aurmich/dev
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+=======
+use Modules\UI\ment\Actions\Table\TableLayoutToggleTableAction;
+>>>>>>> a675681 (.)
 >>>>>>> aurmich/dev
 
 class MyListRecords extends ListRecords
@@ -58,11 +78,25 @@ class MyListRecords extends ListRecords
 4. Mantenere la persistenza dello stato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 ## Collegamenti alla Documentazione
@@ -70,10 +104,24 @@ class MyListRecords extends ListRecords
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a675681 (.)
 >>>>>>> aurmich/dev
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 

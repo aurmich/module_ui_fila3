@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Blocks;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
@@ -17,6 +18,19 @@ use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 class Hero extends XotBaseBlock
 {
     /*
+=======
+use Filament\Forms\Components\Builder\Block;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Modules\UI\Filament\Forms\Components\RadioImage;
+use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
+
+class Hero
+{
+>>>>>>> aurmich/dev
     public static function make(
         string $name = 'hero',
         string $context = 'form',
@@ -35,6 +49,17 @@ class Hero extends XotBaseBlock
                         // ->image()
                         ->directory('blocks')
                         ->preserveFilenames(),
+<<<<<<< HEAD
+=======
+                    /*
+                    RadioImage::make('view')
+                        ->options($options),
+                    // */
+                    /*
+                    Select::make('_tpl')
+                        ->options($views),
+                    //*/
+>>>>>>> aurmich/dev
                     Repeater::make('buttons')
                         ->schema([
                             TextInput::make('label')->required(),
@@ -45,6 +70,7 @@ class Hero extends XotBaseBlock
                 ]
             );
     }
+<<<<<<< HEAD
     */
 
 
@@ -65,4 +91,6 @@ class Hero extends XotBaseBlock
                 ->columns(3),
         ];
     }
+=======
+>>>>>>> aurmich/dev
 }

@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 # Conflitti di Merge Risolti nel Modulo UI
 
 Questo documento descrive i conflitti di merge che sono stati risolti nel modulo UI, con particolare attenzione ai file critici e alle decisioni prese.
@@ -60,6 +65,10 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md)
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 # Risoluzione dei Conflitti Git nel Modulo UI
 
 ## Panoramica
@@ -265,6 +274,12 @@ trait TableLayoutTrait
 ```
 
 Per maggiori dettagli sulla risoluzione di questo conflitto e sul contesto del sistema di layout delle tabelle, vedere [documentazione dedicata](risoluzione_conflitti_tablelayouttrait.md).
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 
 ## Principi di Risoluzione Applicati
@@ -274,14 +289,29 @@ Nella risoluzione dei conflitti sono stati applicati i seguenti principi:
 1. **Tipizzazione Forte**: Mantenere e migliorare la tipizzazione dei parametri e dei valori di ritorno.
 2. **Gestione Null-Safety**: Preferire verifiche esplicite di nullità per prevenire errori a runtime.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 3. **Coerenza del Namespace**: Mantenere i namespace corretti che rispettano la struttura delle cartelle.
 4. **Rimozione di Duplicazioni**: Eliminare codice duplicato per migliorare la manutenibilità.
 5. **Compatibilità Livewire/Filament**: Assicurare il corretto funzionamento con i componenti Livewire e Filament.
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 3. **Coerenza del Namespace**: Mantenere i namespace corretti che rispettano le convenzioni del progetto, prestando particolare attenzione ai componenti Filament che utilizzano `Modules\UI\Filament\` come base del namespace anche se si trovano fisicamente nella cartella `app/Filament/`.
 4. **Rimozione di Duplicazioni**: Eliminare codice duplicato per migliorare la manutenibilità.
 5. **Compatibilità Livewire/Filament**: Assicurare il corretto funzionamento con i componenti Livewire e Filament.
 6. **Documentazione in Italiano**: Preservare la documentazione in italiano per mantenere la coerenza linguistica nel progetto.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 
 ## Verifica e Test
@@ -302,6 +332,12 @@ Per prevenire futuri conflitti nel modulo UI:
 5. **Tipizzazione Rigorosa**: Mantenere una tipizzazione rigorosa in tutti i file.
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 6. **Namespace Coerenti**: Seguire le convenzioni di namespace del progetto, ricordando che i componenti Filament del modulo UI utilizzano il namespace `Modules\UI\Filament\` anche se fisicamente presenti nella cartella `app/Filament/`.
 
 ## Regola Fondamentale per i Namespace
@@ -310,6 +346,12 @@ Per evitare errori nei namespace, seguire queste linee guida:
 1. **Componenti Filament**: Usare sempre `Modules\UI\Filament\` come base del namespace, mai `Modules\UI\app\Filament\`.
 2. **Altri Componenti**: Per i componenti non-Filament, seguire la struttura PSR-4 standard con `Modules\UI\app\`.
 3. **In caso di dubbio**: Consultare la documentazione esistente nel modulo e rispettare le convenzioni lì stabilite.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 
 ## Collegamenti a Documentazione Correlata
@@ -319,7 +361,18 @@ Per evitare errori nei namespace, seguire queste linee guida:
 - [Best Practices UI](best-practices.md)
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 - [Documentazione delle Icone](icons.md)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+- [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
+- [Documentazione delle Icone](icons.md)
+>>>>>>> aurmich/dev
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
