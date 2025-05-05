@@ -174,3 +174,12 @@ Per gestire correttamente le route nei blocchi, seguire queste linee guida:
    - Verificare che la route esista prima di utilizzarla
    - Fornire un fallback per route non valide
    - Loggare eventuali errori di route
+
+## Collegamenti tra versioni di blocks.md
+* [blocks.md](laravel/Modules/Xot/docs/blocks.md)
+* [blocks.md](laravel/Modules/User/resources/views/docs/blocks.md)
+* [blocks.md](laravel/Modules/UI/docs/blocks.md)
+* [blocks.md](laravel/Modules/Cms/docs/blocks.md)
+* [blocks.md](laravel/Themes/One/docs/blocks.md)
+* [blocks.md](laravel/Themes/One/docs/components/blocks.md)
+

@@ -7,3 +7,7 @@ Questo file contiene i collegamenti alla documentazione UI che si trova nel modu
 ## Temi e Stili
 
 - [Compilazione Temi](../laravel/Modules/UI/docs/compilazione_temi.md) 
+## Collegamenti tra versioni di ui.md
+* [ui.md](laravel/Modules/Xot/docs/roadmap/bottlenecks/ui.md)
+* [ui.md](laravel/Modules/UI/docs/ui.md)
+

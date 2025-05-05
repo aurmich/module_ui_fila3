@@ -52,3 +52,15 @@
 - [Styling](packages/styling.md)
 - [Performance](packages/performance.md)
 - [Accessibilità](packages/accessibility.md) 
+
+## Collegamenti tra versioni di packages.md
+* [packages.md](laravel/Modules/Gdpr/docs/packages.md)
+* [packages.md](laravel/Modules/Notify/docs/packages.md)
+* [packages.md](laravel/Modules/Xot/docs/packages.md)
+* [packages.md](laravel/Modules/User/docs/packages.md)
+* [packages.md](laravel/Modules/UI/docs/packages.md)
+* [packages.md](laravel/Modules/Lang/docs/packages.md)
+* [packages.md](laravel/Modules/Job/docs/packages.md)
+* [packages.md](laravel/Modules/Media/docs/packages.md)
+* [packages.md](laravel/Modules/Tenant/docs/packages.md)
+

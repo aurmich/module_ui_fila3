@@ -1,7 +1,7 @@
 # Sistema di Blocchi
 
 ## Introduzione
-Il sistema di blocchi di SaluteOra è un'architettura modulare che permette di costruire pagine e componenti attraverso blocchi riutilizzabili. Ogni blocco è un componente Filament che genera una struttura JSON standardizzata e viene renderizzato attraverso un componente Blade dedicato.
+Il sistema di blocchi di il progetto è un'architettura modulare che permette di costruire pagine e componenti attraverso blocchi riutilizzabili. Ogni blocco è un componente Filament che genera una struttura JSON standardizzata e viene renderizzato attraverso un componente Blade dedicato.
 
 ## Architettura
 
@@ -101,4 +101,4 @@ public function render()
 - [Best Practices UI](ui-best-practices.md)
 
 ## Note
-Questa documentazione è parte del sistema di documentazione di SaluteOra. Per dettagli specifici sui singoli blocchi, consultare la documentazione dei rispettivi moduli. 
+Questa documentazione è parte del sistema di documentazione di il progetto. Per dettagli specifici sui singoli blocchi, consultare la documentazione dei rispettivi moduli. 

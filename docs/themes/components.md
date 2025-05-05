@@ -51,22 +51,29 @@ Il componente logo è uno degli elementi più importanti dell'interfaccia utente
 {{-- Logo nell'header --}}
 <x-blocks.logo 
     src="/images/logo.svg"
-    alt="SaluteOra"
+    alt="il progetto"
     size="h-12 w-auto"
 />
 
 {{-- Logo nel footer --}}
 <x-blocks.logo 
     src="/images/logo.svg"
-    alt="SaluteOra"
+    alt="il progetto"
     size="h-8 w-auto"
 />
 
 {{-- Logo con titolo --}}
 <x-blocks.logo 
     src="/images/logo.svg"
-    alt="SaluteOra"
-    title="SaluteOra"
+    alt="il progetto"
+    title="il progetto"
     description="La tua salute al primo posto"
 />
 ``` 
+
+## Collegamenti tra versioni di components.md
+* [components.md](laravel/Modules/UI/docs/components.md)
+* [components.md](laravel/Modules/UI/docs/themes/components.md)
+* [components.md](laravel/Modules/Cms/docs/components.md)
+* [components.md](laravel/Themes/One/docs/components.md)
+

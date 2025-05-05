@@ -28,3 +28,10 @@ I componenti UI definiti in questo modulo vengono utilizzati nel frontend attrav
 Questo documento è collegato bidirezionalmente con [ui-link.md](../../Cms/docs/ui-link.md) nel modulo Cms.
 
 > Aggiorna entrambi i riferimenti se modifichi la struttura dei componenti UI o aggiungi nuovi componenti utilizzati nel frontend.
+
+## Collegamenti tra versioni di cms-link.md
+* [cms-link.md](laravel/Modules/Xot/docs/cms-link.md)
+* [cms-link.md](laravel/Modules/User/docs/cms-link.md)
+* [cms-link.md](laravel/Modules/UI/docs/cms-link.md)
+* [cms-link.md](laravel/Modules/Lang/docs/cms-link.md)
+

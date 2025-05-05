@@ -38,3 +38,14 @@ Per maggiori dettagli sulla configurazione e l'implementazione, consultare la [d
 - [Documentazione del Tema One](/laravel/Themes/One/docs/README.md)
 - [Guida all'Implementazione dei Componenti](/laravel/Modules/Cms/docs/components/README.md)
 - [Linee Guida per il Web Design](/laravel/Modules/Cms/docs/webdesign/README.md) 
+
+## Collegamenti tra versioni di footer.md
+* [footer.md](docs/laravel-app/themes/one/components/footer.md)
+* [footer.md](docs/sections/footer.md)
+* [footer.md](laravel/Modules/UI/docs/components/footer.md)
+* [footer.md](laravel/Modules/Cms/docs/blocks/footer.md)
+* [footer.md](laravel/Modules/Cms/docs/themes/one/footer.md)
+* [footer.md](laravel/Modules/Cms/docs/components/footer.md)
+* [footer.md](laravel/Themes/One/docs/components/layouts/footer.md)
+* [footer.md](laravel/Themes/One/docs/sections/footer.md)
+

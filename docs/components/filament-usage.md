@@ -3,19 +3,19 @@
 Questo documento serve come punto di riferimento centrale per l'utilizzo dei componenti Filament in tutto il progetto.
 
 ## Principio Base
-SaluteOra utilizza Filament come starterkit sia per il backend che per il frontend. Tutti i componenti UI dovrebbero utilizzare i componenti Filament nativi quando possibile.
+il progetto utilizza Filament come starterkit sia per il backend che per il frontend. Tutti i componenti UI dovrebbero utilizzare i componenti Filament nativi quando possibile.
 
 ## Collegamenti alla Documentazione
 
 ### Documentazione Principale
-- [Best Practices Filament](/laravel/Modules/Cms/docs/best-practices/filament-components.md)
+- [Best Practices Components](../../../Cms/docs/best-practices/components.md)
 - [Documentazione Ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
-- [Guida ai Componenti UI](/laravel/Modules/Cms/docs/components/README.md)
+- [Guida all'Implementazione dei Componenti](../../../Cms/docs/components/README.md)
 
 ### Implementazioni di Riferimento
-- [Footer Component](/laravel/Themes/One/docs/components/layouts/footer.md)
-- [Navigation Component](/laravel/Themes/One/docs/components/layouts/navigation.md)
-- [Form Components](/laravel/Modules/Cms/docs/components/forms/README.md)
+- [Documentazione Dettagliata del Footer](../../../../Themes/One/docs/components/layouts/footer.md)
+- [Navigation Component](../../../../Themes/One/docs/components/layouts/navigation.md)
+- [Form Components](../../../Cms/docs/components/forms/README.md)
 
 ## Componenti Disponibili
 
@@ -116,6 +116,6 @@ it('uses filament button component as link correctly', function () {
 - Mantenere la coerenza nell'utilizzo dei componenti in tutto il progetto
 
 ## Vedi Anche
-- [Tema One Documentation](/laravel/Themes/One/docs/README.md)
-- [Filament Admin Panel](/laravel/Modules/Cms/docs/admin/filament.md)
-- [Testing Guidelines](/laravel/Modules/Cms/docs/testing/README.md) 
+- [Tema One Documentation](../../../../Themes/One/docs/README.md)
+- [Filament Admin Panel](../../../Cms/docs/admin/filament.md)
+- [Linee Guida per il Web Design](../../../Cms/docs/webdesign/README.md)

@@ -56,3 +56,8 @@
    - Configurare correttamente
    - Testare i permessi
    - Documentare le regole 
+
+## Collegamenti tra versioni di resources.md
+* [resources.md](docs/tecnico/filament/resources.md)
+* [resources.md](laravel/Modules/UI/docs/filament/resources.md)
+

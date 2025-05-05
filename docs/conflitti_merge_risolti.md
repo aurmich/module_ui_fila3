@@ -44,7 +44,7 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 
 2. **Documentazione Aggiornata**: I collegamenti alla documentazione sono stati aggiornati per mantenere la coerenza in tutto il progetto.
 
-3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto SaluteOra.
+3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto il progetto.
 
 ## Azioni Consigliate
 
@@ -94,3 +94,16 @@ Per prevenire futuri conflitti nel modulo UI:
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md)
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 - [Documentazione delle Icone](icons.md)
+
+## Collegamenti tra versioni di CONFLITTI_MERGE_RISOLTI.md
+* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/Gdpr/docs/CONFLITTI_MERGE_RISOLTI.md)
+* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/Xot/docs/CONFLITTI_MERGE_RISOLTI.md)
+* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/UI/docs/CONFLITTI_MERGE_RISOLTI.md)
+* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+
+
+## Collegamenti tra versioni di conflitti_merge_risolti.md
+* [conflitti_merge_risolti.md](../../Gdpr/docs/conflitti_merge_risolti.md)
+* [conflitti_merge_risolti.md](../../Xot/docs/conflitti_merge_risolti.md)
+* [conflitti_merge_risolti.md](../../Media/docs/conflitti_merge_risolti.md)
+

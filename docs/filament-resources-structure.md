@@ -1,7 +1,7 @@
 # Struttura delle Filament Resources
 
 ## Panoramica
-Questo documento descrive la struttura e l'organizzazione delle Filament Resources nel progetto SaluteOra, con particolare attenzione all'integrazione con il modulo Xot.
+Questo documento descrive la struttura e l'organizzazione delle Filament Resources nel progetto il progetto, con particolare attenzione all'integrazione con il modulo Xot.
 
 ## Struttura Base
 Le Filament Resources seguono una struttura gerarchica standardizzata:
