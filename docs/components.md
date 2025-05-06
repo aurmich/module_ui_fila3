@@ -408,14 +408,11 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
-<<<<<<< HEAD
-=======
 
 
 =======
 =======
 
->>>>>>> aurmich/dev
 
 ### DarkModeSwitcher
 ```php
@@ -604,19 +601,16 @@ php artisan vendor:publish --tag=ui-config
 
 // Pubblicare views
 php artisan vendor:publish --tag=ui-views
-<<<<<<< HEAD
 ``` 
 
 ---
 
-=======
 
 
 =======
 ``` 
 =======
 
->>>>>>> aurmich/dev
 
 ``` 
 =======

@@ -116,16 +116,6 @@ Il modulo Cms rileva automaticamente i temi nella directory `Themes/` e li regis
 
 Qualsiasi tentativo di implementare un service provider dedicato per i temi sarebbe ridondante e potrebbe causare conflitti con la gestione esistente implementata dal modulo Cms.
 
-## Conclusione
-
-La corretta separazione tra moduli e temi è essenziale per mantenere una struttura del progetto pulita e funzionale. Assicurarsi che tutti i temi siano posizionati nella directory `Themes` e che tutti i moduli funzionali siano nella directory `Modules`.
-
-# Struttura dei Temi
-
-## Panoramica
-
-Il sistema di temi permette una gestione flessibile e modulare dell'interfaccia utente. Ogni tema è una directory separata che contiene tutti i file necessari per il suo funzionamento.
-
 ## Struttura Directory
 
 ```
@@ -188,22 +178,10 @@ Il contenuto viene caricato dinamicamente attraverso:
 - Documentare tutte le personalizzazioni
 - Testare su diversi dispositivi
 - Seguire le convenzioni di naming
-- Mantenere il codice pulito e organizzato 
-
-### Versione Incoming
+- Mantenere il codice pulito e organizzato
 
 # Layouts e Temi UI
 
-<<<<<<< HEAD
-=======
-
-=======
-
-=======
-
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
 ## Gestione conflitti e pulizia componenti hero
 
 ## Gestione conflitti azione icone (GetAllIconsAction)
@@ -226,16 +204,6 @@ In caso di conflitti nei componenti hero (es. simple.blade.php), è fondamentale
 
 Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../../docs/risoluzione_conflitti_git.md).
 
----
-
-
-=======
-
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
->>>>>>> 3e75fd3 (.)
 ## Layout System
 
 ### Grid System
@@ -495,29 +463,4 @@ AdminLayout::make()
 4. **Manutenibilità**
    - Documentare personalizzazioni
    - Seguire convenzioni di naming
-<<<<<<< HEAD
    - Centralizzare configurazioni 
-
----
-
-=======
-
-
-=======
-   - Centralizzare configurazioni 
-=======
-
->>>>>>> aurmich/dev
-
-   - Centralizzare configurazioni 
-=======
-   - Centralizzare configurazioni 
->>>>>>> aurmich/dev
-=======
-   - Centralizzare configurazioni 
->>>>>>> aurmich/dev
-
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
->>>>>>> 3e75fd3 (.)

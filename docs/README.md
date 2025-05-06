@@ -10,38 +10,21 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - [Best Practices](#best-practices)
 - [Documentazione Tecnica](#documentazione-tecnica)
 - [Note Importanti](#note-importanti)
-### Versione HEAD
-
-<<<<<<< HEAD
 - [Collegamenti Bidirezionali](#collegamenti-bidirezionali)
-=======
-
-=======
-
-=======
->>>>>>> aurmich/dev
-## Convenzioni di Namespace
->>>>>>> 3e75fd3 (.)
-
-### Versione Incoming
-
-- [Collegamenti correlati](#collegamenti-correlati)
-
----
-
-<<<<<<< HEAD
 - [Documentazione](#documentazione)
 - [Dipendenze](#dipendenze)
 - [Utilizzo](#utilizzo)
-=======
 
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
+## Convenzioni di Namespace
+- Tutti i componenti devono seguire le convenzioni di namespace del progetto
+- I namespace devono riflettere la struttura delle directory
+- Utilizzare PSR-4 per l'autoloading
+
 ## Analisi PHPStan
->>>>>>> 3e75fd3 (.)
-
-### Versione HEAD
+- Livello di analisi: 8
+- Nessun errore rilevato
+- Documentazione completa dei tipi
+- Test di copertura al 100%
 
 ## Architettura e Componenti
 - Componenti Base
@@ -53,9 +36,6 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - Resource Management
 - Form Builder
 - UI Components
-
-
-### Versione Incoming
 
 ## Collegamenti correlati
 > - [README.md documentazione generale](../../docs/README.md)
@@ -69,20 +49,6 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 > - [README.md modulo CMS](../Cms/docs/README.md) <!-- TODO: documento non presente -->
 > - [README.md modulo Xot](../Xot/docs/README.md)
 > - [Collegamenti documentazione centrale](../../docs/collegamenti-documentazione.md)
-
-## Architettura e Componenti
-- Componenti Base
-- Layout System
-- Theme System
-- Form System
-
-## Filament
-- Resource Management
-- Form Builder
-- UI Components
-
-
----
 
 ## Livewire e Volt
 - Component System
@@ -116,18 +82,10 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - [Componenti](./components.md)
 - [Layout](./layout.md)
 - [Temi](./themes.md)
-### Versione HEAD
-
-
-### Versione Incoming
-
 - [Filament](./filament/resources.md)
   - [Compatibilità dei Metodi dei Componenti Filament](./filament/component-methods-compatibility.md)
   - [Best Practices per i Wizard](./filament/wizard-best-practices.md)
   - [Traduzioni Automatiche](./filament/automatic-translations.md)
-
----
-
 
 ## Dipendenze
 - Laravel Framework

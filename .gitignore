@@ -39,10 +39,10 @@ cache/
 *.exe
 *:Zone.Identifier
 
-<<<<<<< HEAD
 # Backup files
 *.bak
-=======
 # File di log
 *.log
->>>>>>> 3e75fd3 (.)
+-e 
+# PHPStan documentation
+docs/phpstan/

@@ -47,7 +47,7 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 
 2. **Documentazione Aggiornata**: I collegamenti alla documentazione sono stati aggiornati per mantenere la coerenza in tutto il progetto.
 
-3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto SaluteOra.
+3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto <nome progetto>.
 
 ## Azioni Consigliate
 
