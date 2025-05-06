@@ -96,10 +96,10 @@ Per prevenire futuri conflitti nel modulo UI:
 - [Documentazione delle Icone](icons.md)
 
 ## Collegamenti tra versioni di CONFLITTI_MERGE_RISOLTI.md
-* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/Gdpr/docs/CONFLITTI_MERGE_RISOLTI.md)
-* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/Xot/docs/CONFLITTI_MERGE_RISOLTI.md)
-* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/UI/docs/CONFLITTI_MERGE_RISOLTI.md)
-* [CONFLITTI_MERGE_RISOLTI.md](laravel/Modules/Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+* [CONFLITTI_MERGE_RISOLTI.md](../../../Gdpr/docs/CONFLITTI_MERGE_RISOLTI.md)
+* [CONFLITTI_MERGE_RISOLTI.md](../../../Xot/docs/CONFLITTI_MERGE_RISOLTI.md)
+* [CONFLITTI_MERGE_RISOLTI.md](../../../UI/docs/CONFLITTI_MERGE_RISOLTI.md)
+* [CONFLITTI_MERGE_RISOLTI.md](../../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 
 
 ## Collegamenti tra versioni di conflitti_merge_risolti.md

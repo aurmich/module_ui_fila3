@@ -242,9 +242,9 @@ class AdvancedForm extends Component
 - Breaking changes 
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](docs/tecnico/filament/best-practices.md)
-* [best-practices.md](laravel/Modules/Xot/docs/laraxot/best-practices.md)
-* [best-practices.md](laravel/Modules/UI/docs/best-practices.md)
-* [best-practices.md](laravel/Themes/One/docs/best-practices.md)
+* [best-practices.md](../../../Xot/docs/laraxot/best-practices.md)
+* [best-practices.md](../../../UI/docs/best-practices.md)
+* [best-practices.md](../../../../Themes/One/docs/best-practices.md)
 
 
 ### Versione Incoming

@@ -176,10 +176,10 @@ Per gestire correttamente le route nei blocchi, seguire queste linee guida:
    - Loggare eventuali errori di route
 
 ## Collegamenti tra versioni di blocks.md
-* [blocks.md](laravel/Modules/Xot/docs/blocks.md)
-* [blocks.md](laravel/Modules/User/resources/views/docs/blocks.md)
-* [blocks.md](laravel/Modules/UI/docs/blocks.md)
-* [blocks.md](laravel/Modules/Cms/docs/blocks.md)
-* [blocks.md](laravel/Themes/One/docs/blocks.md)
-* [blocks.md](laravel/Themes/One/docs/components/blocks.md)
+* [blocks.md](../../../Xot/docs/blocks.md)
+* [blocks.md](../../../User/docs/blocks.md)
+* [blocks.md](../../../UI/docs/blocks.md)
+* [blocks.md](../../../Cms/docs/blocks.md)
+* [blocks.md](../../../../Themes/One/docs/blocks.md)
+* [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 

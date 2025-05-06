@@ -11,14 +11,14 @@ laravel/Themes/One/resources/views/components/layouts/footer.blade.php
 ## Collegamenti alla Documentazione
 
 ### Documentazione Principale
-- [Documentazione Dettagliata del Footer](/laravel/Themes/One/docs/components/layouts/footer.md)
-- [Guida allo Stile del Tema One](/laravel/Themes/One/docs/style_guide.md)
+- [Documentazione Dettagliata del Footer](../../../../Themes/One/docs/components/layouts/footer.md)
+- [Guida allo Stile del Tema One](../../../../Themes/One/docs/style_guide.md)
 - [Sistema di Layout](/laravel/Themes/One/docs/design_system.md#layout)
 
 ### Best Practices e Linee Guida
-- [Best Practices Components](/laravel/Modules/Cms/docs/best-practices/components.md)
-- [Linee Guida Accessibilità](/laravel/Modules/Cms/docs/webdesign/accessibility.md)
-- [Performance Guidelines](/laravel/Modules/Cms/docs/best-practices/performance.md)
+- [Best Practices Components](../../../Cms/docs/best-practices/components.md)
+- [Linee Guida Accessibilità](../../../Cms/docs/webdesign/accessibility.md)
+- [Performance Guidelines](../../../Cms/docs/best-practices/performance.md)
 
 ## Configurazione
 La configurazione del footer è gestita attraverso:
@@ -26,7 +26,7 @@ La configurazione del footer è gestita attraverso:
 2. Social Links Config (`config/social.php`)
 3. ViewModels personalizzati
 
-Per maggiori dettagli sulla configurazione e l'implementazione, consultare la [documentazione dettagliata](/laravel/Themes/One/docs/components/layouts/footer.md).
+Per maggiori dettagli sulla configurazione e l'implementazione, consultare la [documentazione dettagliata](../../../../Themes/One/docs/components/layouts/footer.md).
 
 ## Note Importanti
 - Il footer è parte del tema One
@@ -35,17 +35,17 @@ Per maggiori dettagli sulla configurazione e l'implementazione, consultare la [d
 - È completamente responsivo
 
 ## Vedi Anche
-- [Documentazione del Tema One](/laravel/Themes/One/docs/README.md)
-- [Guida all'Implementazione dei Componenti](/laravel/Modules/Cms/docs/components/README.md)
-- [Linee Guida per il Web Design](/laravel/Modules/Cms/docs/webdesign/README.md) 
+- [Documentazione del Tema One](../../../../Themes/One/docs/README.md)
+- [Guida all'Implementazione dei Componenti](../../../Cms/docs/components/README.md)
+- [Linee Guida per il Web Design](../../../Cms/docs/webdesign/README.md) 
 
 ## Collegamenti tra versioni di footer.md
 * [footer.md](docs/laravel-app/themes/one/components/footer.md)
 * [footer.md](docs/sections/footer.md)
-* [footer.md](laravel/Modules/UI/docs/components/footer.md)
-* [footer.md](laravel/Modules/Cms/docs/blocks/footer.md)
-* [footer.md](laravel/Modules/Cms/docs/themes/one/footer.md)
-* [footer.md](laravel/Modules/Cms/docs/components/footer.md)
-* [footer.md](laravel/Themes/One/docs/components/layouts/footer.md)
-* [footer.md](laravel/Themes/One/docs/sections/footer.md)
+* [footer.md](../../../UI/docs/components/footer.md)
+* [footer.md](../../../Cms/docs/blocks/footer.md)
+* [footer.md](../../../Cms/docs/themes/one/footer.md)
+* [footer.md](../../../Cms/docs/components/footer.md)
+* [footer.md](../../../../Themes/One/docs/components/layouts/footer.md)
+* [footer.md](../../../../Themes/One/docs/sections/footer.md)
 

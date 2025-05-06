@@ -55,11 +55,11 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 
 - Livewire 
 ## Collegamenti tra versioni di readme.md
-* [readme.md](laravel/Modules/Gdpr/docs/readme.md)
-* [readme.md](laravel/Modules/UI/docs/readme.md)
-* [readme.md](laravel/Modules/Lang/docs/readme.md)
-* [readme.md](laravel/Modules/Activity/docs/readme.md)
-* [readme.md](laravel/Modules/Cms/docs/readme.md)
+* [readme.md](../../../Gdpr/docs/readme.md)
+* [readme.md](../../../UI/docs/readme.md)
+* [readme.md](../../../Lang/docs/readme.md)
+* [readme.md](../../../Activity/docs/readme.md)
+* [readme.md](../../../Cms/docs/readme.md)
 
 
 ### Versione Incoming

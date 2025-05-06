@@ -48,11 +48,11 @@ if ($livewire) {
 Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$livewire` non ha i metodi o le proprietà previste.
 
 ## Collegamenti tra versioni di PHPSTAN_FIXES.md
-* [PHPSTAN_FIXES.md](laravel/Modules/Xot/docs/phpstan/PHPSTAN_FIXES.md)
-* [PHPSTAN_FIXES.md](laravel/Modules/Xot/docs/PHPSTAN_FIXES.md)
-* [PHPSTAN_FIXES.md](laravel/Modules/User/docs/PHPSTAN_FIXES.md)
-* [PHPSTAN_FIXES.md](laravel/Modules/UI/docs/PHPSTAN_FIXES.md)
-* [PHPSTAN_FIXES.md](laravel/Modules/Media/docs/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../Xot/docs/phpstan/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../Xot/docs/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../User/docs/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../UI/docs/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../Media/docs/PHPSTAN_FIXES.md)
 
 
 ## Collegamenti tra versioni di phpstan_fixes.md

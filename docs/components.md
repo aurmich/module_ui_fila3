@@ -162,10 +162,10 @@ Il modulo UI fornisce un set completo di componenti riutilizzabili per costruire
 Questa documentazione fornisce una panoramica dei componenti disponibili. Per i dettagli completi, consultare la documentazione specifica nei moduli. 
 
 ## Collegamenti tra versioni di components.md
-* [components.md](laravel/Modules/UI/docs/components.md)
-* [components.md](laravel/Modules/UI/docs/themes/components.md)
-* [components.md](laravel/Modules/Cms/docs/components.md)
-* [components.md](laravel/Themes/One/docs/components.md)
+* [components.md](../../../UI/docs/components.md)
+* [components.md](../../../UI/docs/themes/components.md)
+* [components.md](../../../Cms/docs/components.md)
+* [components.md](../../../../Themes/One/docs/components.md)
 
 
 ### Versione Incoming
