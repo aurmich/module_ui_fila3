@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 📆 2025-04-24 08:39:41 - 🔧 Configurazione git di base...
 📆 2025-04-24 08:39:41 - ✅ Configurazione git completata
 📆 2025-04-24 10:29:58 - 🔧 Configurazione git di base...
@@ -51,3 +52,7 @@
 [0;32m✅ [2025-05-06 17:22:38] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-06 17:27:34] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-06 17:27:34] Configurazione git completata con successo[0m
+=======
+[0;34mℹ️ [2025-05-06 18:40:14] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-06 18:40:14] Configurazione git completata con successo[0m
+>>>>>>> 17644d6 (.)
