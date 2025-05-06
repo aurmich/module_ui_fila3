@@ -51,6 +51,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - TailwindCSS
 - Alpine.js
 - Filament
+<<<<<<< HEAD
 - Livewire 
 ## Collegamenti tra versioni di readme.md
 * [readme.md](laravel/Modules/Gdpr/docs/readme.md)
@@ -59,3 +60,6 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 * [readme.md](laravel/Modules/Activity/docs/readme.md)
 * [readme.md](laravel/Modules/Cms/docs/readme.md)
 
+=======
+- Livewire 
+>>>>>>> 3d9aa4f (.)

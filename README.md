@@ -78,3 +78,122 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👤 Author
 Marco Sottana
 Discover more of my work at marco76tv!
+<<<<<<< HEAD
+=======
+# 🎨 UI Module - Componenti Interfaccia
+
+[![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
+[![Laravel Version](https://img.shields.io/badge/Laravel-11.x-orange.svg)](https://laravel.com)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Code Quality](https://img.shields.io/badge/code%20quality-A+-brightgreen.svg)](.codeclimate.yml)
+[![Test Coverage](https://img.shields.io/badge/coverage-95%25-success.svg)](phpunit.xml.dist)
+[![UI Components](https://img.shields.io/badge/components-50+-brightgreen.svg)](docs/module_ui.md)
+[![Filament Version](https://img.shields.io/badge/Filament-3.x-purple.svg)](https://filamentphp.com)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/laraxot/module_ui)
+[![Downloads](https://img.shields.io/badge/downloads-1k+-blue.svg)](https://packagist.org/packages/laraxot/module_ui)
+[![Stars](https://img.shields.io/badge/stars-100+-yellow.svg)](https://github.com/laraxot/module_ui)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/laraxot/module_ui/main/docs/assets/ui-banner.png" alt="UI Module Banner" width="800">
+</div>
+
+## 🇮🇹 Italiano
+
+### 📝 Descrizione
+Il modulo UI fornisce un set completo di componenti di interfaccia utente riutilizzabili per applicazioni Laravel, basati su Filament e Blade.
+
+### ✨ Caratteristiche Principali
+- ✅ Componenti Blade riutilizzabili
+- ✅ Layouts predefiniti
+- ✅ Temi personalizzabili
+- ✅ Supporto multi-lingua
+- ✅ Componenti Filament
+- ✅ Widgets dashboard
+- ✅ Form personalizzati
+- ✅ Stili CSS moderni
+
+### 🚀 Installazione
+```bash
+composer require modules/ui
+php artisan module:enable UI
+php artisan ui:install
+```
+
+### 📚 Documentazione
+Consulta la [documentazione completa](docs/module_ui.md) per:
+- [Componenti](docs/components.md)
+- [Layouts](docs/layouts.md)
+- [Temi](docs/themes.md)
+
+## 🇬🇧 English
+
+### 📝 Description
+The UI module provides a complete set of reusable user interface components for Laravel applications, based on Filament and Blade.
+
+### ✨ Key Features
+- ✅ Reusable Blade components
+- ✅ Predefined layouts
+- ✅ Customizable themes
+- ✅ Multi-language support
+- ✅ Filament components
+- ✅ Dashboard widgets
+- ✅ Custom forms
+- ✅ Modern CSS styles
+
+### 🚀 Installation
+```bash
+composer require modules/ui
+php artisan module:enable UI
+php artisan ui:install
+```
+
+### 📚 Documentation
+Check out the [complete documentation](docs/module_ui.md) for:
+- [Components](docs/components.md)
+- [Layouts](docs/layouts.md)
+- [Themes](docs/themes.md)
+
+## 🇪🇸 Español
+
+### 📝 Descripción
+El módulo UI proporciona un conjunto completo de componentes de interfaz de usuario reutilizables para aplicaciones Laravel, basados en Filament y Blade.
+
+### ✨ Características Principales
+- ✅ Componentes Blade reutilizables
+- ✅ Layouts predefinidos
+- ✅ Temas personalizables
+- ✅ Soporte multi-idioma
+- ✅ Componentes Filament
+- ✅ Widgets de dashboard
+- ✅ Formularios personalizados
+- ✅ Estilos CSS modernos
+
+### 🚀 Instalación
+```bash
+composer require modules/ui
+php artisan module:enable UI
+php artisan ui:install
+```
+
+### 📚 Documentación
+Consulta la [documentación completa](docs/module_ui.md) para:
+- [Componentes](docs/components.md)
+- [Layouts](docs/layouts.md)
+- [Temas](docs/themes.md)
+
+## 🤝 Contribuire / Contributing / Contribuir
+
+Siamo aperti a contribuzioni! Consulta le nostre [linee guida per i contributori](.github/CONTRIBUTING.md).
+
+We are open to contributions! Check out our [contributor guidelines](.github/CONTRIBUTING.md).
+
+¡Estamos abiertos a contribuciones! Consulta nuestras [pautas para contribuidores](.github/CONTRIBUTING.md).
+
+## 📄 Licenza / License / Licencia
+
+Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
+
+This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
+
+Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+>>>>>>> 3d9aa4f (.)

@@ -237,6 +237,7 @@ class AdvancedForm extends Component
 - Descrizione chiara
 - Esempi di utilizzo
 - Configurazioni disponibili
+<<<<<<< HEAD
 - Breaking changes 
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](docs/tecnico/filament/best-practices.md)
@@ -244,3 +245,6 @@ class AdvancedForm extends Component
 * [best-practices.md](laravel/Modules/UI/docs/best-practices.md)
 * [best-practices.md](laravel/Themes/One/docs/best-practices.md)
 
+=======
+- Breaking changes 
+>>>>>>> 3d9aa4f (.)

@@ -52,6 +52,7 @@
 - [Styling](packages/styling.md)
 - [Performance](packages/performance.md)
 - [Accessibilità](packages/accessibility.md) 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di packages.md
 * [packages.md](laravel/Modules/Gdpr/docs/packages.md)
@@ -64,3 +65,5 @@
 * [packages.md](laravel/Modules/Media/docs/packages.md)
 * [packages.md](laravel/Modules/Tenant/docs/packages.md)
 
+=======
+>>>>>>> 3d9aa4f (.)

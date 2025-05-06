@@ -28,10 +28,18 @@ trait TableLayoutTrait
         $this->dispatch('$refresh');
         $this->resetTable();
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3d9aa4f (.)
     public function resetTable(): void
     {
         // Implementazione predefinita - le classi che usano questo trait dovrebbero sovrascrivere questo metodo
         $this->dispatch('reset-table');
     }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 3d9aa4f (.)

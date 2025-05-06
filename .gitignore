@@ -38,6 +38,9 @@ cache/
 .php-cs-fixer.cache
 *.exe
 *:Zone.Identifier
+<<<<<<< HEAD
 
 # File di log
 *.log
+=======
+>>>>>>> 3d9aa4f (.)
