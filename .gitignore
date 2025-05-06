@@ -38,3 +38,6 @@ cache/
 .php-cs-fixer.cache
 *.exe
 *:Zone.Identifier
+
+# Backup files
+*.bak
