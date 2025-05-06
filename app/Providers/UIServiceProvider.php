@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Providers;
 
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\Facades\Blade;
-use Modules\UI\Services\UIService;
-use Modules\Xot\Providers\XotBaseServiceProvider;
-
 use function Safe\realpath;
+use Modules\UI\Services\UIService;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Foundation\AliasLoader;
+
+use Modules\Xot\Providers\XotBaseServiceProvider;
+use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
 /**
  * ---.
@@ -29,11 +30,8 @@ class UIServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 
-        $relativePath = config('modules.paths.generator.component-view.path');
-        $components_path = module_path($this->name, $relativePath);
-
-        // $components_path = realpath(__DIR__.'/../resources/views/components');
-        Blade::anonymousComponentPath($components_path);
+        //$componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
+        //Blade::anonymousComponentPath($componentViewPath);
     }
 
     public function register(): void
