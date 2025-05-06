@@ -1,11 +1,33 @@
+<<<<<<< HEAD
 ### Versione HEAD
 
+=======
+
+
+=======
+
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+
+>>>>>>> aurmich/dev
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)
 # Rapporto PHPStan Livello 8 per il modulo UI
 
 Data analisi: 2025-04-15 22:01:25
 
 🎉 **Congratulazioni!** Nessun errore trovato a questo livello.
 
+<<<<<<< HEAD
 ## Collegamenti tra versioni di level_8.md
 * [level_8.md](../../../Chart/docs/phpstan/level_8.md)
 * [level_8.md](../../../Reporting/docs/phpstan/level_8.md)
@@ -225,3 +247,22 @@ class ComponentRegistry
 
 ---
 
+=======
+
+=======
+aurmich/dev
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+aurmich/dev
+>>>>>>> aurmich/dev
+=======
+aurmich/dev
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)

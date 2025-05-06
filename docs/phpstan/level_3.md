@@ -1,9 +1,31 @@
+<<<<<<< HEAD
+=======
+
+
+=======
+
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+
+>>>>>>> aurmich/dev
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)
 # Rapporto PHPStan Livello 3 per il modulo UI
 
 Data analisi: 2025-04-15 22:00:53
 
 🎉 **Congratulazioni!** Nessun errore trovato a questo livello.
 
+<<<<<<< HEAD
 ## Collegamenti tra versioni di level_3.md
 * [level_3.md](../../../Chart/docs/phpstan/level_3.md)
 * [level_3.md](../../../Reporting/docs/phpstan/level_3.md)
@@ -21,3 +43,22 @@ Data analisi: 2025-04-15 22:00:53
 * [level_3.md](../../../Patient/docs/phpstan/level_3.md)
 * [level_3.md](../../../Cms/docs/phpstan/level_3.md)
 
+=======
+
+=======
+aurmich/dev
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+aurmich/dev
+>>>>>>> aurmich/dev
+=======
+aurmich/dev
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)

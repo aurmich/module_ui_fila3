@@ -1,5 +1,26 @@
+<<<<<<< HEAD
 ### Versione HEAD
 
+=======
+
+
+=======
+
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+
+>>>>>>> aurmich/dev
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)
 # Rapporto PHPStan Livello 9 per il modulo UI
 
 Data analisi: 2025-04-15 22:01:31
@@ -26,6 +47,7 @@ Trovati 1 errori al livello 9.
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 
+<<<<<<< HEAD
 ## Collegamenti tra versioni di level_9.md
 * [level_9.md](../../../Chart/docs/phpstan/level_9.md)
 * [level_9.md](../../../Reporting/docs/phpstan/level_9.md)
@@ -207,3 +229,22 @@ When fixing UI PHPStan errors:
 
 ---
 
+=======
+
+=======
+aurmich/dev
+=======
+
+>>>>>>> aurmich/dev
+
+=======
+aurmich/dev
+>>>>>>> aurmich/dev
+=======
+aurmich/dev
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)

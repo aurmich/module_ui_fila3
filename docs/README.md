@@ -12,7 +12,16 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - [Note Importanti](#note-importanti)
 ### Versione HEAD
 
+<<<<<<< HEAD
 - [Collegamenti Bidirezionali](#collegamenti-bidirezionali)
+=======
+
+=======
+
+=======
+>>>>>>> aurmich/dev
+## Convenzioni di Namespace
+>>>>>>> 3e75fd3 (.)
 
 ### Versione Incoming
 
@@ -20,9 +29,17 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 
 ---
 
+<<<<<<< HEAD
 - [Documentazione](#documentazione)
 - [Dipendenze](#dipendenze)
 - [Utilizzo](#utilizzo)
+=======
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+## Analisi PHPStan
+>>>>>>> 3e75fd3 (.)
 
 ### Versione HEAD
 
