@@ -22,13 +22,6 @@ class AddressField extends Forms\Components\Field
         parent::setUp();
 
         $this->afterStateHydrated(function (AddressField $component, ?Model $record) {
-<<<<<<< HEAD
-            if ($record === null) {
-                return;
-            }
-
-=======
->>>>>>> 3d9aa4f (.)
             $data = [
                 'country' => null,
                 'street' => null,
@@ -36,19 +29,8 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
-<<<<<<< HEAD
-
-            $relationship = $this->getRelationship();
-            if (!$relationship) {
-                return;
-            }
-
-            $address = $record->getRelationValue($relationship);
-            if ($address !== null && is_object($address) && method_exists($address, 'toArray')) {
-=======
             $address = $record->getRelationValue($this->getRelationship());
             if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
->>>>>>> 3d9aa4f (.)
                 $data = $address->toArray();
             }
 
@@ -69,27 +51,6 @@ class AddressField extends Forms\Components\Field
     {
         $state = $this->getState();
         $record = $this->getRecord();
-<<<<<<< HEAD
-
-        if ($record === null) {
-            return;
-        }
-
-        $relationship = $this->getRelationship();
-        if (!$relationship) {
-            return;
-        }
-
-        $relation = $record->{$relationship}();
-        if (!$relation) {
-            return;
-        }
-
-        if ($address = $relation->first()) {
-            $address->update($state);
-        } else {
-            $relation->updateOrCreate($state);
-=======
         $relationship = $record->{$this->getRelationship()}();
 
         if (null === $relationship) {
@@ -99,7 +60,6 @@ class AddressField extends Forms\Components\Field
             $address->update($state);
         } else {
             $relationship->updateOrCreate($state);
->>>>>>> 3d9aa4f (.)
         }
 
         $record->touch();
@@ -116,25 +76,17 @@ class AddressField extends Forms\Components\Field
                     // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)->getAttribute('name')),
                 ]),
             Forms\Components\TextInput::make('street')
-<<<<<<< HEAD
-=======
 
->>>>>>> 3d9aa4f (.)
                 ->maxLength(255),
             Forms\Components\Grid::make(3)
                 ->schema([
                     Forms\Components\TextInput::make('city')
                         ->maxLength(255),
                     Forms\Components\TextInput::make('state')
-<<<<<<< HEAD
-                        ->maxLength(255),
-                    Forms\Components\TextInput::make('zip')
-=======
 
                         ->maxLength(255),
                     Forms\Components\TextInput::make('zip')
 
->>>>>>> 3d9aa4f (.)
                         ->maxLength(255),
                 ]),
         ];

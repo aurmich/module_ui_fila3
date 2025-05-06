@@ -11,31 +11,20 @@ use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 use Modules\Xot\Actions\View\GetViewsSiblingsAndSelfAction;
 use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
-<<<<<<< HEAD
-class Title extends XotBaseBlock
-{
-    public static function getBlockSchema(): array
-    {
-=======
 class Title // extends XotBaseBlock
 {public static function make(
     string $name = 'title',
     string $context = 'form',
 ): Block {
->>>>>>> 3d9aa4f (.)
     // $view = 'ui::components.blocks.title.v1';
     // $views = app(GetViewsSiblingsAndSelfAction::class)->execute($view);
 
     $options = app(GetViewBlocksOptionsByTypeAction::class)
         ->execute('title', false);
 
-<<<<<<< HEAD
-    return [
-=======
     return Block::make($name)
         ->schema(
             [
->>>>>>> 3d9aa4f (.)
                 TextInput::make('text')
                     ->required(),
 
@@ -52,11 +41,7 @@ class Title // extends XotBaseBlock
                 Select::make('view')
                     ->options($options),
             ]
-<<<<<<< HEAD
-        ;
-=======
         )
         ->columns('form' === $context ? 2 : 1);
->>>>>>> 3d9aa4f (.)
 }
 }

@@ -16,16 +16,6 @@ use Illuminate\Support\Str;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Spatie\MediaLibrary\HasMedia;
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Blocks\XotBaseBlock;
-
-class VideoSpatie extends XotBaseBlock
-{
-    public static function getBlockSchema(): array
-    {
-
-        return [
-=======
 
 class VideoSpatie
 {
@@ -36,7 +26,6 @@ class VideoSpatie
         return Block::make($name)
 
             ->schema([
->>>>>>> 3d9aa4f (.)
                 Hidden::make('img_uuid')
                     ->default(fn () => Str::uuid()->toString())
                     ->formatStateUsing(fn ($state) => $state ?? Str::uuid()->toString())
@@ -89,12 +78,8 @@ class VideoSpatie
                 // ->customProperties(fn(Forms\Get $get) => ['gallery_id' => $get('gallery_id')]),
 
                 // Forms\Components\SpatieMediaLibraryFileUpload::make('media_id')
-<<<<<<< HEAD
-            ];
-=======
             ])
             ->columns('form' === $context ? 2 : 1);
->>>>>>> 3d9aa4f (.)
     }
 
     public static function getRatios(): array

@@ -4,26 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Blocks;
 
-<<<<<<< HEAD
-use Filament\Forms\Get;
-use Illuminate\Support\Str;
-use Webmozart\Assert\Assert;
-use Spatie\MediaLibrary\HasMedia;
-use Filament\Forms\Components\Hidden;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Builder\Block;
-use Modules\Xot\Filament\Blocks\XotBaseBlock;
-use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
-use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
-
-class ImageSpatie extends XotBaseBlock
-{
-    public static function getBlockSchema(): array
-    {
-
-        return [
-=======
 use Filament\Forms\Components\Builder\Block;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
@@ -44,7 +24,6 @@ class ImageSpatie
         return Block::make($name)
 
             ->schema([
->>>>>>> 3d9aa4f (.)
                 Hidden::make('img_uuid')
                     ->default(fn () => Str::uuid()->toString())
                     ->formatStateUsing(fn ($state) => $state ?? Str::uuid()->toString())
@@ -79,11 +58,7 @@ class ImageSpatie
                     ),
 
                 TextInput::make('caption'),
-<<<<<<< HEAD
-            ];
-=======
             ])
             ->columns('form' === $context ? 2 : 1);
->>>>>>> 3d9aa4f (.)
     }
 }

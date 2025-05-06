@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-<?php return array (
-=======
 <?php
 
 return array (
->>>>>>> 3d9aa4f (.)
   'fields' => 
   array (
     'lavoratore' => 
@@ -23,10 +19,6 @@ return array (
     array (
       'label' => 'periodo',
     ),
-<<<<<<< HEAD
-  ),
-);
-=======
     'info' => 
     array (
       'label' => 'info',
@@ -45,4 +37,3 @@ return array (
     ),
   ),
 );
->>>>>>> 3d9aa4f (.)
