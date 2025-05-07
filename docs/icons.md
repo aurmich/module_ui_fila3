@@ -25,10 +25,7 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 ### Versione HEAD
 
 
-=======
 
-=======
->>>>>>> 3e75fd3 (.)
 ## Action GetAllIconsAction
 - Scopo: carica dinamicamente tutte le icone disponibili per un determinato contesto UI (es. form, table).
 - Parametri:
@@ -44,9 +41,6 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 
 ---
 
-=======
->>>>>>> aurmich/dev
->>>>>>> 3e75fd3 (.)
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema
