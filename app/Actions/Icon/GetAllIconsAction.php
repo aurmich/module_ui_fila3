@@ -15,13 +15,6 @@ class GetAllIconsAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4eb3395 (.)
-=======
->>>>>>> 9256606 (.)
      * @return array
      */
     public function execute(string $context = 'form')
@@ -39,66 +32,18 @@ class GetAllIconsAction
          *   ]
         ]
          */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 9256606 (.)
-     * Restituisce la struttura completa delle icone disponibili per la UI.
-     *
-     * @param string $context
-     * @return array<string, array<string, mixed>>
-     */
-    public function execute(string $context = 'form'): array
-    {
-        $iconsFactory = App::make(IconFactory::class);
-        $icons = $iconsFactory->all();
-
-<<<<<<< HEAD
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
-=======
- origin/dev
->>>>>>> 9256606 (.)
         $icons = Arr::map($icons, function (array $set, array|string $name) {
             $set['name'] = $name;
             $icons = [];
 
             foreach ($set['paths'] as $path) {
                 foreach (File::allFiles($path) as $file) {
-<<<<<<< HEAD
-<<<<<<< HEAD
                     // Simply ignore files that aren't SVGs
-=======
-<<<<<<< HEAD
-                    // Simply ignore files that aren't SVGs
-=======
-                    // Ignora file che non sono SVG
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
-=======
-                    // Simply ignore files that aren't SVGs
-                    // Ignora file che non sono SVG
- origin/dev
->>>>>>> 9256606 (.)
                     if ('svg' !== $file->getExtension()) {
                         continue;
                     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
                     // $iconName = $this->getIconName($file, parentPath: $path, prefix: $prefix);
-=======
-<<<<<<< HEAD
-                    // $iconName = $this->getIconName($file, parentPath: $path, prefix: $prefix);
-=======
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
-=======
-                    // $iconName = $this->getIconName($file, parentPath: $path, prefix: $prefix);
- origin/dev
->>>>>>> 9256606 (.)
                     $iconName = str($file->getPathname())
                         ->after($path.DIRECTORY_SEPARATOR)
                         ->replace(DIRECTORY_SEPARATOR, '.')

@@ -7,38 +7,7 @@
 
 Welcome to the **Fila3 UI Module**! This comprehensive user interface toolkit is designed to streamline the development of visually stunning and user-friendly applications. With a rich set of components and styles, you can create a polished and consistent look for your projects in no time!
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 9256606 (.)
 ## 📦 What’s Inside?
-=======
-<<<<<<< HEAD
-## 📦 What's Inside?
-=======
-## 📦 What’s Inside?
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
-
-### Versione Alternativa
-
-
-### Versione HEAD
-
-## 📦 What's Inside?
-
-### Versione Alternativa
-
-## 📦 What’s Inside?
-
----
-
-
----
-
 
 The Fila3 UI Module provides a wide array of features, including:
 
@@ -50,39 +19,7 @@ The Fila3 UI Module provides a wide array of features, including:
 ## 🌟 Key Features
 
 - **Component-Based Architecture**: Easily manage and reuse UI components across your application.
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **State Management Integration**: Effortlessly connect UI components to your application’s state management.
-=======
-<<<<<<< HEAD
-- **State Management Integration**: Effortlessly connect UI components to your application's state management.
-=======
-- **State Management Integration**: Effortlessly connect UI components to your application’s state management.
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-- **State Management Integration**: Effortlessly connect UI components to your application’s state management.
-
-### Versione Alternativa
-
-
-### Versione HEAD
-
-- **State Management Integration**: Effortlessly connect UI components to your application's state management.
-
-### Versione Alternativa
-
-- **State Management Integration**: Effortlessly connect UI components to your application’s state management.
-
----
-
-
----
-
->>>>>>> 9256606 (.)
 - **Dynamic Layouts**: Create flexible layouts that adapt to different screen sizes and orientations.
 - **Animations & Transitions**: Enhance user experience with smooth animations and transitions.
 - **Form Validation**: Simplify user input handling with built-in form validation features.
@@ -141,33 +78,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👤 Author
 Marco Sottana
 Discover more of my work at marco76tv!
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 9256606 (.)
 ### Versione HEAD
 
 
 ### Versione Incoming
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione Alternativa
-
-
-### Versione HEAD
-
-
----
-
->>>>>>> 9256606 (.)
 # 🎨 UI Module - Componenti Interfaccia
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -284,32 +199,6 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ---
 
-=======
-=======
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
----
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)

@@ -2,19 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\UI\Filament\Actions\Header;
-=======
-<<<<<<< HEAD
-namespace Modules\UI\Filament\Actions\Header;
-=======
-namespace Modules\UI\app\Filament\Actions\Header;
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
-=======
-namespace Modules\UI\Filament\Actions\Header;
->>>>>>> 9256606 (.)
 
 use Filament\Actions\Action;
 
@@ -33,17 +21,6 @@ class TableLayoutToggleHeaderAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->color('secondary')
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            
-=======
-=======
->>>>>>> 9256606 (.)
-
->>>>>>> origin/dev
->>>>>>> 4eb3395 (.)
             // ->label(trans('ui::'.static::getDefaultName().'.label'))
             // ->tooltip(trans('setting::database_connection.actions.database-backup.tooltip'))
             // ->icon(trans('setting::database_connection.actions.database-backup.icon'))

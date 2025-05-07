@@ -1,23 +1,5 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 9256606 (.)
 
 # Conflitti di Merge Risolti nel Modulo UI
 
@@ -65,24 +47,7 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 
 2. **Documentazione Aggiornata**: I collegamenti alla documentazione sono stati aggiornati per mantenere la coerenza in tutto il progetto.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto <nome progetto>.
-=======
-=======
-
-### Versione HEAD
-
-3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto <nome progetto>.
-
-### Versione Alternativa
-
->>>>>>> 9256606 (.)
-3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto SaluteOra.
->>>>>>> 4eb3395 (.)
-
----
-
 
 ## Azioni Consigliate
 
@@ -96,29 +61,8 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 - [Best Practices](best-practices.md)
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md)
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 >>>>>>> aurmich/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)
 # Risoluzione dei Conflitti Git nel Modulo UI
 
 ## Panoramica
@@ -325,33 +269,9 @@ trait TableLayoutTrait
 
 Per maggiori dettagli sulla risoluzione di questo conflitto e sul contesto del sistema di layout delle tabelle, vedere [documentazione dedicata](risoluzione_conflitti_tablelayouttrait.md).
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)
 
 ## Principi di Risoluzione Applicati
 
@@ -360,84 +280,21 @@ Nella risoluzione dei conflitti sono stati applicati i seguenti principi:
 1. **Tipizzazione Forte**: Mantenere e migliorare la tipizzazione dei parametri e dei valori di ritorno.
 2. **Gestione Null-Safety**: Preferire verifiche esplicite di nullità per prevenire errori a runtime.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 9256606 (.)
 
 3. **Coerenza del Namespace**: Mantenere i namespace corretti che rispettano la struttura delle cartelle.
 4. **Rimozione di Duplicazioni**: Eliminare codice duplicato per migliorare la manutenibilità.
 5. **Compatibilità Livewire/Filament**: Assicurare il corretto funzionamento con i componenti Livewire e Filament.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 >>>>>>> aurmich/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)
 3. **Coerenza del Namespace**: Mantenere i namespace corretti che rispettano le convenzioni del progetto, prestando particolare attenzione ai componenti Filament che utilizzano `Modules\UI\Filament\` come base del namespace anche se si trovano fisicamente nella cartella `app/Filament/`.
 4. **Rimozione di Duplicazioni**: Eliminare codice duplicato per migliorare la manutenibilità.
 5. **Compatibilità Livewire/Filament**: Assicurare il corretto funzionamento con i componenti Livewire e Filament.
 6. **Documentazione in Italiano**: Preservare la documentazione in italiano per mantenere la coerenza linguistica nel progetto.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)
 
 ## Verifica e Test
 
@@ -456,37 +313,10 @@ Per prevenire futuri conflitti nel modulo UI:
 4. **Utilizzo di Enum**: Preferire l'uso di enum tipi per valori predefiniti.
 5. **Tipizzazione Rigorosa**: Mantenere una tipizzazione rigorosa in tutti i file.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 =======
 
 =======
 >>>>>>> aurmich/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
-
-### Versione Alternativa
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)
 6. **Namespace Coerenti**: Seguire le convenzioni di namespace del progetto, ricordando che i componenti Filament del modulo UI utilizzano il namespace `Modules\UI\Filament\` anche se fisicamente presenti nella cartella `app/Filament/`.
 
 ## Regola Fondamentale per i Namespace
@@ -496,33 +326,9 @@ Per evitare errori nei namespace, seguire queste linee guida:
 2. **Altri Componenti**: Per i componenti non-Filament, seguire la struttura PSR-4 standard con `Modules\UI\app\`.
 3. **In caso di dubbio**: Consultare la documentazione esistente nel modulo e rispettare le convenzioni lì stabilite.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione HEAD
-
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
----
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)
 
 ## Collegamenti a Documentazione Correlata
 
@@ -531,14 +337,8 @@ Per evitare errori nei namespace, seguire queste linee guida:
 - [Best Practices UI](best-practices.md)
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md) 
 
-<<<<<<< HEAD
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 - [Documentazione delle Icone](icons.md)
-<<<<<<< HEAD
-
-- [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
-- [Documentazione delle Icone](icons.md)
-=======
 =======
 
 =======
@@ -546,35 +346,3 @@ Per evitare errori nei namespace, seguire queste linee guida:
 - [Documentazione delle Icone](icons.md)
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
->>>>>>> 4eb3395 (.)
-=======
-- [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
-- [Documentazione delle Icone](icons.md)
-
-### Versione HEAD
-
-
-- [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
-- [Documentazione delle Icone](icons.md)
-
-### Versione Alternativa
-
-
-### Versione Alternativa
-
-
-
-### Versione Alternativa
-
-- [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
-- [Documentazione delle Icone](icons.md)
-
----
-
-
----
-
-
----
-
->>>>>>> 9256606 (.)

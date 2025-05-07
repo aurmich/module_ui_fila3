@@ -69,13 +69,6 @@ If you'd like to customize the styling of the search results, Algolia exposes cu
 ---
 
 For more details, visit the [official Algolia DocSearch documentation.](https://community.algolia.com/docsearch/what-is-docsearch.html)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-### Versione HEAD
-
->>>>>>> 9256606 (.)
 ### Versione HEAD
 
 
@@ -92,14 +85,3 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> 4eb3395 (.)
-=======
-
-### Versione Alternativa
-
-
----
-
->>>>>>> 9256606 (.)
