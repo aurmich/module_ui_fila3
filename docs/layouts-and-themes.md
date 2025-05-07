@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione HEAD
 
 # Struttura dei Temi
@@ -181,6 +187,7 @@ Il contenuto viene caricato dinamicamente attraverso:
 - Seguire le convenzioni di naming
 - Mantenere il codice pulito e organizzato
 
+<<<<<<< HEAD
 # Layouts e Temi UI
 
 =======
@@ -197,6 +204,42 @@ Il contenuto viene caricato dinamicamente attraverso:
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> 4eb3395 (.)
+=======
+# Layouts e Temi UI
+
+
+### Versione Alternativa
+
+# Layouts e Temi UI
+
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
+
+### Versione Alternativa
+
+
+
+### Versione Alternativa
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Gestione conflitti e pulizia componenti hero
 
 ## Gestione conflitti azione icone (GetAllIconsAction)
@@ -220,6 +263,7 @@ In caso di conflitti nei componenti hero (es. simple.blade.php), è fondamentale
 Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../../docs/risoluzione_conflitti_git.md).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ---
 
@@ -232,6 +276,39 @@ Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferi
 >>>>>>> aurmich/dev
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+---
+
+
+
+### Versione Alternativa
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Layout System
 
 ### Grid System
@@ -492,6 +569,7 @@ AdminLayout::make()
    - Documentare personalizzazioni
    - Seguire convenzioni di naming
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Centralizzare configurazioni 
 =======
 <<<<<<< HEAD
@@ -504,13 +582,38 @@ AdminLayout::make()
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+### Versione HEAD
 
    - Centralizzare configurazioni 
-=======
+
+### Versione Alternativa
+
+
+### Versione HEAD
+>>>>>>> 9256606 (.)
+
    - Centralizzare configurazioni 
->>>>>>> aurmich/dev
-=======
+
+### Versione Alternativa
+
+
+
+
+### Versione Alternativa
+
    - Centralizzare configurazioni 
+
+### Versione Alternativa
+
+
+
+---
+
+
+   - Centralizzare configurazioni 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 
 =======
@@ -518,3 +621,35 @@ AdminLayout::make()
 >>>>>>> aurmich/dev
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+   - Centralizzare configurazioni 
+
+---
+
+
+### Versione Alternativa
+
+   - Centralizzare configurazioni 
+
+---
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)

@@ -31,6 +31,7 @@ interface HasTableLayout
 ## Utilizzo
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
 =======
 <<<<<<< HEAD
@@ -43,9 +44,41 @@ use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
 =======
 
 >>>>>>> aurmich/dev
-use Modules\UI\ment\Actions\Table\TableLayoutToggleTableAction;
 =======
+
+### Versione HEAD
+
 use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+use Modules\UI\App\Filament\Actions\Table\TableLayoutToggleTableAction;
+
+### Versione Alternativa
+
+
+
+
+### Versione Alternativa
+
+use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
+
+### Versione Alternativa
+
+
+
+---
+
+>>>>>>> 9256606 (.)
+use Modules\UI\ment\Actions\Table\TableLayoutToggleTableAction;
+
+### Versione Alternativa
+
+use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 
 =======
@@ -53,6 +86,27 @@ use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
 >>>>>>> aurmich/dev
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+---
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 
 class MyListRecords extends ListRecords
 {
@@ -72,6 +126,7 @@ class MyListRecords extends ListRecords
 4. Mantenere la persistenza dello stato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 
@@ -91,10 +146,61 @@ class MyListRecords extends ListRecords
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+[Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 
+
+### Versione Alternativa
+
+
+
+
+### Versione Alternativa
+
+
+### Versione Alternativa
+
+
+
+---
+
+
+
+### Versione Alternativa
+
+
+### Versione Alternativa
+
+
+---
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Collegamenti alla Documentazione
 - [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
 - [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 
 =======
@@ -114,3 +220,52 @@ class MyListRecords extends ListRecords
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione HEAD
+
+[Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 
+
+### Versione Alternativa
+
+
+
+
+---
+
+
+### Versione Alternativa
+
+
+---
+
+
+### Versione Alternativa
+
+
+### Versione Alternativa
+
+
+
+---
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+[Torna alla documentazione UI](/docs/modules/module_ui.md#actions) 
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)

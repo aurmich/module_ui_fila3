@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 return array (
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 9256606 (.)
 <?php
 
 return [
@@ -52,6 +55,7 @@ return [
         'deleted' => 'Record eliminato con successo',
     ],
 ];
+<<<<<<< HEAD
 =======
 <?php return array (
 >>>>>>> 4eb3395 (.)
@@ -97,3 +101,5 @@ return [
 );
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+>>>>>>> 9256606 (.)

@@ -106,6 +106,7 @@
                   </a>
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Data to enrich your online business</h1>
 =======
 <<<<<<< HEAD
@@ -114,6 +115,11 @@
                 <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Data to enrich your8 online business</h1>
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Data to enrich your online business</h1>
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Data to enrich your8 online business</h1>
+ origin/dev
+>>>>>>> 9256606 (.)
                 <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.</p>
                 <p class="mt-8 text-base font-semibold text-white sm:mt-10">Used by</p>
                 <div class="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
@@ -210,6 +216,7 @@
     </div>
   </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
 <<<<<<< HEAD
@@ -217,3 +224,7 @@
 =======
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+  
+ origin/dev
+>>>>>>> 9256606 (.)

@@ -33,6 +33,12 @@ return [
 $page->navigation
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione HEAD
 
 
@@ -50,5 +56,14 @@ $page->navigation
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 9256606 (.)

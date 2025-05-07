@@ -23,10 +23,17 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
    - Supporto per colori e dimensioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione HEAD
 
 
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -36,6 +43,31 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 =======
 >>>>>>> aurmich/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
+
+### Versione Alternativa
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Action GetAllIconsAction
 - Scopo: carica dinamicamente tutte le icone disponibili per un determinato contesto UI (es. form, table).
 - Parametri:
@@ -47,17 +79,44 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione Incoming
 
 
 ---
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema
@@ -69,4 +128,3 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 <x-heroicon-o-user class="w-6 h-6" />
 <i class="fa fa-user"></i>
 <x-icon name="custom-logo" class="w-8 h-8" />
-```

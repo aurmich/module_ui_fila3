@@ -32,8 +32,6 @@ class AddressField extends Forms\Components\Field
 >>>>>>> 4eb3395 (.)
 use Webmozart\Assert\Assert;
 
-// use Squire\Models\Country;
-
 class AddressField extends Forms\Components\Field
 {
     /** @var string|callable|null */
@@ -61,7 +59,11 @@ class AddressField extends Forms\Components\Field
                 return;
             }
 
+<<<<<<< HEAD
 >>>>>>> 4eb3395 (.)
+=======
+ 
+>>>>>>> 9256606 (.)
             $data = [
                 'country' => null,
                 'street' => null,
@@ -103,6 +105,7 @@ class AddressField extends Forms\Components\Field
         $state = $this->getState();
         $record = $this->getRecord();
 <<<<<<< HEAD
+<<<<<<< HEAD
         $relationship = $record->{$this->getRelationship()}();
 
         if (null === $relationship) {
@@ -118,6 +121,8 @@ class AddressField extends Forms\Components\Field
 =======
 
 >>>>>>> origin/dev
+=======
+>>>>>>> 9256606 (.)
         if ($record === null) {
             return;
         }
@@ -133,8 +138,12 @@ class AddressField extends Forms\Components\Field
         if (!$relation instanceof Relation) {
 =======
         $relation = $record->{$relationship}();
+<<<<<<< HEAD
         if (!$relation) {
 >>>>>>> origin/dev
+=======
+        if (!$relation instanceof Relation) {
+>>>>>>> 9256606 (.)
             return;
         }
 
@@ -144,7 +153,6 @@ class AddressField extends Forms\Components\Field
             $relation->updateOrCreate($state);
 >>>>>>> 4eb3395 (.)
         }
-
         $record->touch();
     }
 
@@ -165,8 +173,6 @@ class AddressField extends Forms\Components\Field
 =======
 >>>>>>> 4eb3395 (.)
                         ->searchable(),
-                    // ->getSearchResultsUsing(fn (string $query) => Country::where('name', 'like', "%{$query}%")->pluck('name', 'id'))
-                    // ->getOptionLabelUsing(fn ($value): ?string => Country::firstWhere('id', $value)->getAttribute('name')),
                 ]),
             Forms\Components\TextInput::make('street')
 <<<<<<< HEAD
@@ -225,11 +231,11 @@ class AddressField extends Forms\Components\Field
     public function getRelationship(): string
     {
         Assert::string($res = $this->evaluate($this->relationship) ?? $this->getName());
-
         return $res;
 <<<<<<< HEAD
 =======
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+    }
     }
 }

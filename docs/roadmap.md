@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione HEAD
 
 # Roadmap Modulo UI
@@ -212,7 +218,13 @@ Overall Module Completion: 60%
 - Technical Debt: 60% complete
 
 ## Technical Metrics Overview
+<<<<<<< HEAD
 =======
+=======
+
+### Versione Alternativa
+
+>>>>>>> 9256606 (.)
 # 🗺️ UI Module Roadmap
 
 ## 📊 Progress Overview
@@ -220,7 +232,19 @@ Overall Module Completion: 60%
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> origin/dev
+=======
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
+
+---
+
+>>>>>>> 9256606 (.)
 | Category | Progress | Details |
 |----------|----------|---------|
 | Core Components | 75% | Base, Form, Layout |
@@ -232,6 +256,9 @@ Overall Module Completion: 60%
 
 ## 📈 Technical Metrics
 >>>>>>> 4eb3395 (.)
+
+---
+
 
 ### Code Quality
 * Maintainability Index: 85/100
@@ -267,6 +294,12 @@ Overall Module Completion: 60%
 * Performance Test Coverage: 70%
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ## Current Sprint Focus
 1. PHPStan Level 7 Compliance
    - Fix return type declarations
@@ -303,10 +336,25 @@ Overall Module Completion: 60%
 
 ## 📊 Progress Overview
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 9256606 (.)
 | Category | Progress |
 |----------|----------|
 | Core Components | 75% |
@@ -316,12 +364,30 @@ Overall Module Completion: 60%
 | Test Coverage | 65% |
 | Accessibility | 70% |
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
  80ec88ee9 (.)
 
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione HEAD
+
+
+
+### Versione Alternativa
+
+ 80ec88ee9 (.)
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## 🎯 Tasks & Progress
 
 ### Component System Enhancement [75%]
@@ -376,12 +442,33 @@ Overall Module Completion: 60%
 <<<<<<< HEAD
 ## 🔄 Daily Tasks
 
+<<<<<<< HEAD
 ### Week 1 - Component System
 =======
 <<<<<<< HEAD
 =======
 
 >>>>>>> origin/dev
+=======
+### Versione HEAD
+
+## 🔄 Daily Tasks
+
+### Week 1 - Component System
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## 🔄 Sprint Planning
 
 ### Current Sprint Focus
@@ -421,12 +508,27 @@ Overall Module Completion: 60%
 <<<<<<< HEAD
 =======
 
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
 ## 🔄 Daily Tasks
 
 ### Week 1 - Component System
  80ec88ee9 (.)
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 1. ✅ Audit existing components
 2. ✅ Standardize component APIs
 3. 🏗️ Implement missing components
@@ -440,12 +542,35 @@ Overall Module Completion: 60%
 ### Daily Tasks - Week 2 (Accessibility)
 =======
 
+### Versione HEAD
+
+### Week 2 - Accessibility
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+### Daily Tasks - Week 2 (Accessibility)
+
+### Versione Alternativa
+
+
 ### Daily Tasks - Week 2 (Accessibility)
 
 ### Week 2 - Accessibility
  80ec88ee9 (.)
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 1. ✅ ARIA implementation
 2. ✅ Keyboard navigation
 3. 🏗️ Screen reader optimization
@@ -462,9 +587,35 @@ Overall Module Completion: 60%
 [Dettagli settimanali completi in docs/roadmap/weekly/] 
 =======
 
+### Versione HEAD
+
+[More details in docs/roadmap/weekly/week2.md] 
+
+---
+
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+[Dettagli settimanali completi in docs/roadmap/weekly/] 
+
+### Versione Alternativa
+
+
 [Dettagli settimanali completi in docs/roadmap/weekly/] 
 
 [More details in docs/roadmap/weekly/week2.md] 
  80ec88ee9 (.)
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)

@@ -21,6 +21,12 @@ Le seguenti modifiche sono state apportate per soddisfare PHPStan livello 9:
 ## Utilizzo
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 use Modules\UI\ment\Forms\Components\AddressField;
 =======
 <<<<<<< HEAD
@@ -29,6 +35,23 @@ use Modules\UI\App\Filament\Forms\Components\AddressField;
 use Modules\UI\ment\Forms\Components\AddressField;
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+use Modules\UI\App\Filament\Forms\Components\AddressField;
+
+### Versione Alternativa
+
+use Modules\UI\ment\Forms\Components\AddressField;
+
+---
+
+
+---
+
 
 AddressField::make('address')
     ->required()
@@ -44,6 +67,7 @@ AddressField::make('address')
 4. Testare con diversi formati di indirizzo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
 =======
 <<<<<<< HEAD
@@ -52,3 +76,26 @@ AddressField::make('address')
 [Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione HEAD
+
+[Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+[Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
+
+### Versione Alternativa
+
+[Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)

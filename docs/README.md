@@ -1,6 +1,12 @@
 # Modulo UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ## Introduzione
 Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riutilizzabili, layout e temi. Si integra con Filament, Livewire e Volt per offrire un'esperienza utente coerente e moderna.
 
@@ -464,16 +470,35 @@ class UserResource extends XotBaseResource
 
 ---
 
+<<<<<<< HEAD
 =======
+=======
+
+### Versione Alternativa
+
+>>>>>>> 9256606 (.)
 ## Descrizione
 
 Il modulo UI fornisce componenti di interfaccia utente riutilizzabili, layout e utility per costruire interfacce web coerenti e visivamente accattivanti all'interno dell'applicazione. Basato su Tailwind CSS e integrato con Filament, offre un'esperienza utente moderna e reattiva.
 
 
+<<<<<<< HEAD
 =======
 
 =======
 >>>>>>> aurmich/dev
+=======
+
+### Versione Alternativa
+
+
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Convenzioni di Namespace
 
 **IMPORTANTE**: Il modulo UI segue una convenzione specifica per i namespace dei componenti Filament:
@@ -486,9 +511,21 @@ Per maggiori dettagli, consulta:
 - [Risoluzione Conflitti](CONFLITTI_MERGE_RISOLTI.md)
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
+=======
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Analisi PHPStan
 
 Il modulo è stato analizzato con PHPStan per migliorare la qualità del codice:
@@ -562,4 +599,10 @@ Per utilizzare i componenti UI nel tuo progetto:
 
 - [Documentazione PHPStan generale](/docs/phpstan.md)
 - [Problemi e soluzioni PHPStan](/docs/phpstan/problemi_e_soluzioni.md) 
+<<<<<<< HEAD
 >>>>>>> 4eb3395 (.)
+=======
+
+---
+
+>>>>>>> 9256606 (.)

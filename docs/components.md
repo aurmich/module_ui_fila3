@@ -1,6 +1,12 @@
 # Componenti UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione HEAD
 
 ## Panoramica
@@ -171,8 +177,17 @@ Questa documentazione fornisce una panoramica dei componenti disponibili. Per i 
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Form Components
 
 ### CustomSelect
@@ -412,6 +427,7 @@ PrintLayout::make()
 - No elementi UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -425,6 +441,38 @@ PrintLayout::make()
 
 >>>>>>> aurmich/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione HEAD
+
+
+
+
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+
+### Versione Alternativa
+
+
+
+
+### Versione Alternativa
+
+
+### Versione Alternativa
+
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 
 ### DarkModeSwitcher
 ```php
@@ -449,6 +497,7 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - SVG icons per modalità chiara e scura
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 =======
@@ -461,6 +510,43 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 >>>>>>> aurmich/dev
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione HEAD
+
+
+
+### Versione Alternativa
+
+
+### Versione Alternativa
+
+
+---
+
+
+### Versione Alternativa
+
+
+---
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)
 ## Componenti Base
 
 ### Forms
@@ -618,6 +704,7 @@ php artisan vendor:publish --tag=ui-config
 // Pubblicare views
 php artisan vendor:publish --tag=ui-views
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 
 ---
@@ -642,13 +729,23 @@ php artisan vendor:publish --tag=ui-views
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+### Versione HEAD
 
 ``` 
-=======
+
+---
+
+
+>>>>>>> 9256606 (.)
+
 ``` 
->>>>>>> aurmich/dev
-=======
+
+
 ``` 
+``` 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 
 =======
@@ -656,3 +753,62 @@ php artisan vendor:publish --tag=ui-views
 >>>>>>> aurmich/dev
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+``` 
+
+
+### Versione Alternativa
+
+
+### Versione HEAD
+
+``` 
+
+### Versione Alternativa
+
+
+
+
+### Versione Alternativa
+
+``` 
+
+### Versione Alternativa
+
+
+
+---
+
+
+``` 
+
+### Versione Alternativa
+
+``` 
+
+---
+
+
+### Versione Alternativa
+
+``` 
+
+---
+
+
+
+### Versione Alternativa
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+>>>>>>> 9256606 (.)

@@ -3,10 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Traits;
 =======
 namespace Modules\UI\app\Traits;
 >>>>>>> 4eb3395 (.)
+=======
+namespace Modules\UI\Traits;
+>>>>>>> 9256606 (.)
 
 use Illuminate\Support\Facades\Session;
 use Modules\UI\Enums\TableLayout;
@@ -53,5 +57,9 @@ trait TableLayoutTrait
 } 
 =======
 }
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+>>>>>>> 9256606 (.)

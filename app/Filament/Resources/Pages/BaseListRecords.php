@@ -6,6 +6,7 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Resources\Pages;
 
 use Modules\UI\Traits\TableLayoutTrait;
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 namespace Modules\UI\app\Filament\Resources\Pages;
@@ -16,6 +17,8 @@ namespace Modules\UI\Filament\Resources\Pages;
 
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+>>>>>>> 9256606 (.)
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -31,5 +34,9 @@ abstract class BaseListRecords extends XotBaseListRecords
 =======
 
 }
+<<<<<<< HEAD
 >>>>>>> origin/dev
 >>>>>>> 4eb3395 (.)
+=======
+
+>>>>>>> 9256606 (.)

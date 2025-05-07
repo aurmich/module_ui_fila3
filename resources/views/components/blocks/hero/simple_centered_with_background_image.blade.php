@@ -1,4 +1,5 @@
-@props(['title', 'text', 'background'])
+{{-- Hero section centrata con immagine di sfondo e gradienti --}}
+@props(['title', 'text', 'background', 'buttons' => []])
 
 <div class="bg-gray-900">
     <div class="relative isolate overflow-hidden pt-14">
@@ -22,7 +23,7 @@
 			--}}
             <div class="text-center flex flex-col gap-8">
                 <h1 class="text-4xl font-bold tracking-tight text-white sm:text-4xl">{{ $title }}</h1>
-                <div class="mt-10 flex items-center  justify-center gap-x-12">
+                <div class="mt-10 flex items-center justify-center gap-x-12">
                     @foreach ($buttons as $btn)
                         <a href="{{ $btn['link'] }}" class="{{ $btn['class'] }}">{{ $btn['label'] }}</a>
                     @endforeach

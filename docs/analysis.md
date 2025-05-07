@@ -59,6 +59,12 @@ Modules/UI/
 - Security testing
 - Performance testing
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione HEAD
 
 
@@ -83,5 +89,14 @@ Modules/UI/
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+
+---
+
+>>>>>>> 9256606 (.)

@@ -52,6 +52,12 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - Alpine.js
 - Filament
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Versione HEAD
+
+>>>>>>> 9256606 (.)
 ### Versione HEAD
 
 - Livewire 
@@ -69,6 +75,16 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 
 ---
 
+<<<<<<< HEAD
 =======
 - Livewire 
 >>>>>>> 4eb3395 (.)
+=======
+
+### Versione Alternativa
+
+- Livewire 
+
+---
+
+>>>>>>> 9256606 (.)
