@@ -8,6 +8,7 @@ add resources/css/filament/admin/theme.css entry to vite.config.js
 in app/Providers/Filament/AdminPanelProvider.php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 add 
 =======
 =======
@@ -15,6 +16,8 @@ add
 >>>>>>> 9256606 (.)
 add
 >>>>>>> origin/dev
+=======
+>>>>>>> 8913555 (.)
 ->viteTheme('resources/css/filament/admin/theme.css')
 
 
