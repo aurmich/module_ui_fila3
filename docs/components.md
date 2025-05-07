@@ -1,5 +1,6 @@
 # Componenti UI
 
+<<<<<<< HEAD
 ### Versione HEAD
 
 ## Panoramica
@@ -170,6 +171,8 @@ Questa documentazione fornisce una panoramica dei componenti disponibili. Per i 
 
 ### Versione Incoming
 
+=======
+>>>>>>> 4eb3395 (.)
 ## Form Components
 
 ### CustomSelect
@@ -408,9 +411,20 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
+<<<<<<< HEAD
 
 
 
+=======
+<<<<<<< HEAD
+=======
+
+
+=======
+=======
+
+>>>>>>> aurmich/dev
+>>>>>>> 4eb3395 (.)
 
 ### DarkModeSwitcher
 ```php
@@ -434,7 +448,19 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
 - SVG icons per modalità chiara e scura
 
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> origin/dev
+>>>>>>> 4eb3395 (.)
 ## Componenti Base
 
 ### Forms
@@ -591,6 +617,7 @@ php artisan vendor:publish --tag=ui-config
 
 // Pubblicare views
 php artisan vendor:publish --tag=ui-views
+<<<<<<< HEAD
 ``` 
 
 ---
@@ -604,3 +631,28 @@ php artisan vendor:publish --tag=ui-views
 ``` 
 ``` 
 
+=======
+<<<<<<< HEAD
+``` 
+=======
+
+
+=======
+``` 
+=======
+
+>>>>>>> aurmich/dev
+
+``` 
+=======
+``` 
+>>>>>>> aurmich/dev
+=======
+``` 
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> origin/dev
+>>>>>>> 4eb3395 (.)

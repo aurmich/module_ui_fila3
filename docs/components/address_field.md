@@ -20,7 +20,15 @@ Le seguenti modifiche sono state apportate per soddisfare PHPStan livello 9:
 
 ## Utilizzo
 ```php
+<<<<<<< HEAD
 use Modules\UI\ment\Forms\Components\AddressField;
+=======
+<<<<<<< HEAD
+use Modules\UI\App\Filament\Forms\Components\AddressField;
+=======
+use Modules\UI\ment\Forms\Components\AddressField;
+>>>>>>> origin/dev
+>>>>>>> 4eb3395 (.)
 
 AddressField::make('address')
     ->required()
@@ -35,4 +43,12 @@ AddressField::make('address')
 3. Configurare correttamente i servizi di geocoding
 4. Testare con diversi formati di indirizzo
 
+<<<<<<< HEAD
 [Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
+=======
+<<<<<<< HEAD
+[Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
+=======
+[Torna alla documentazione UI](/docs/modules/module_ui.md#components) 
+>>>>>>> origin/dev
+>>>>>>> 4eb3395 (.)

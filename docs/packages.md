@@ -52,6 +52,7 @@
 - [Styling](packages/styling.md)
 - [Performance](packages/performance.md)
 - [Accessibilità](packages/accessibility.md) 
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -72,3 +73,5 @@
 
 ---
 
+=======
+>>>>>>> 4eb3395 (.)

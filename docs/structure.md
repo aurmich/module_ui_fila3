@@ -499,6 +499,7 @@ tests_old
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
@@ -518,3 +519,5 @@ tests_old
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
 
+=======
+>>>>>>> 4eb3395 (.)

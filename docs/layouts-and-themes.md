@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Versione HEAD
 
 # Struttura dei Temi
@@ -182,6 +183,20 @@ Il contenuto viene caricato dinamicamente attraverso:
 
 # Layouts e Temi UI
 
+=======
+# Layouts e Temi UI
+
+<<<<<<< HEAD
+=======
+
+=======
+
+=======
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 4eb3395 (.)
 ## Gestione conflitti e pulizia componenti hero
 
 ## Gestione conflitti azione icone (GetAllIconsAction)
@@ -204,6 +219,19 @@ In caso di conflitti nei componenti hero (es. simple.blade.php), è fondamentale
 
 Per ulteriori dettagli sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../../../docs/risoluzione_conflitti_git.md).
 
+<<<<<<< HEAD
+=======
+---
+
+
+=======
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> origin/dev
+>>>>>>> 4eb3395 (.)
 ## Layout System
 
 ### Grid System
@@ -463,4 +491,30 @@ AdminLayout::make()
 4. **Manutenibilità**
    - Documentare personalizzazioni
    - Seguire convenzioni di naming
+<<<<<<< HEAD
    - Centralizzare configurazioni 
+=======
+<<<<<<< HEAD
+   - Centralizzare configurazioni 
+=======
+
+
+=======
+   - Centralizzare configurazioni 
+=======
+
+>>>>>>> aurmich/dev
+
+   - Centralizzare configurazioni 
+=======
+   - Centralizzare configurazioni 
+>>>>>>> aurmich/dev
+=======
+   - Centralizzare configurazioni 
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> origin/dev
+>>>>>>> 4eb3395 (.)
