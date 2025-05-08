@@ -56,9 +56,34 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - UI Updates
 
 ## Best Practices
-- Component Design
-- State Management
-- Performance
+
+### Gestione delle Rotte e dei Controller
+
+1. **Non creare rotte manualmente**
+   - Non aggiungere rotte in `web.php` o altri file di routing
+   - Utilizzare Filament e Folio per la gestione automatica delle rotte
+   - Le rotte vengono generate automaticamente in base alle risorse e alle pagine
+
+2. **Non creare controller manualmente**
+   - Evitare la creazione manuale di controller
+   - Utilizzare Filament per la gestione delle risorse
+   - Utilizzare Folio per la gestione delle pagine
+   - I controller vengono generati automaticamente
+
+3. **Gestione delle Lingue**
+   - Utilizzare il componente `language-switcher` per il cambio lingua
+   - La localizzazione viene gestita automaticamente da Filament e Folio
+   - Non è necessario creare controller o rotte specifiche per la gestione delle lingue
+
+4. **Componenti Blade**
+   - Creare componenti Blade riutilizzabili
+   - Utilizzare i componenti per la gestione dell'UI
+   - I componenti possono essere utilizzati sia in Filament che in Folio
+
+5. **Documentazione**
+   - Documentare sempre i componenti e le loro funzionalità
+   - Includere esempi di utilizzo
+   - Specificare le dipendenze e i requisiti
 
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md)

@@ -8,11 +8,12 @@ use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Blade;
 use Modules\UI\Services\UIService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
+use Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider;
 
 use function Safe\realpath;
 
 /**
- * ---.
+ * Service Provider per il modulo UI.
  */
 class UIServiceProvider extends XotBaseServiceProvider
 {
@@ -23,7 +24,7 @@ class UIServiceProvider extends XotBaseServiceProvider
     protected string $module_ns = __NAMESPACE__;
 
     /**
-     * Undocumented function.
+     * Boot del service provider.
      */
     public function boot(): void
     {
@@ -34,13 +35,32 @@ class UIServiceProvider extends XotBaseServiceProvider
 
         // $components_path = realpath(__DIR__.'/../resources/views/components');
         Blade::anonymousComponentPath($components_path);
+
+        // Pubblica la configurazione di laravel-localization
+        $this->publishes([
+            __DIR__.'/../config/laravel-localization.php' => config_path('laravel-localization.php'),
+        ], 'config');
+
+        // Carica le traduzioni
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'ui');
     }
 
+    /**
+     * Registra i servizi del provider.
+     */
     public function register(): void
     {
         parent::register();
         // $loader = AliasLoader::getInstance();
         // $loader->alias('ui', UIService::class);
         // $this->registerBladeIcons(); //moved to XotBaseServiceProvider
+
+        // Registra il service provider di laravel-localization
+        $this->app->register(LaravelLocalizationServiceProvider::class);
+
+        // Carica la configurazione
+        $this->mergeConfigFrom(
+            __DIR__.'/../config/laravel-localization.php', 'laravel-localization'
+        );
     }
 }

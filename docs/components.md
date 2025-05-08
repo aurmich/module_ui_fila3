@@ -624,3 +624,101 @@ php artisan vendor:publish --tag=ui-views
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> 3e75fd3 (.)
+<<<<<<< HEAD
+=======
+
+## Best Practices
+
+### Gestione delle Rotte e dei Controller
+
+1. **Non creare rotte manualmente**
+   - Utilizzare Filament e Folio per la gestione automatica delle rotte
+   - Le rotte vengono generate automaticamente in base alle risorse e alle pagine
+   - Non aggiungere rotte in `web.php` o altri file di routing
+
+2. **Non creare controller manualmente**
+   - Utilizzare Filament per la gestione delle risorse
+   - Utilizzare Folio per la gestione delle pagine
+   - I controller vengono generati automaticamente
+
+3. **Componenti Blade**
+   - Creare componenti Blade riutilizzabili
+   - Utilizzare i componenti per la gestione dell'UI
+   - I componenti possono essere utilizzati sia in Filament che in Folio
+
+4. **Gestione delle Lingue**
+   - Utilizzare il componente `language-switcher` per il cambio lingua
+   - La localizzazione viene gestita automaticamente da Filament e Folio
+   - Non è necessario creare controller o rotte specifiche per la gestione delle lingue
+
+## Componenti Disponibili
+
+### Language Switcher
+
+```blade
+<x-ui::language-switcher />
+```
+
+Il componente gestisce automaticamente:
+- Cambio lingua
+- Persistenza della selezione
+- Traduzioni
+- UI/UX
+
+Non è necessario:
+- Creare controller
+- Aggiungere rotte
+- Gestire la logica di cambio lingua
+
+### User Menu
+
+```blade
+<x-ui::user-menu />
+```
+
+Il componente gestisce automaticamente:
+- Menu utente
+- Autenticazione
+- Profilo utente
+- Logout
+
+Non è necessario:
+- Creare controller
+- Aggiungere rotte
+- Gestire la logica di autenticazione
+
+## Utilizzo dei Componenti
+
+1. **Importazione**
+   ```blade
+   @php
+   use Modules\UI\View\Components\LanguageSwitcher;
+   @endphp
+   ```
+
+2. **Utilizzo**
+   ```blade
+   <x-ui::language-switcher />
+   ```
+
+3. **Personalizzazione**
+   ```blade
+   <x-ui::language-switcher
+       :languages="['it', 'en']"
+       :show-flags="true"
+       :show-names="true"
+   />
+   ```
+
+## Configurazione
+
+La configurazione viene gestita attraverso:
+- File di configurazione di Filament
+- File di configurazione di Folio
+- Configurazioni del modulo UI
+
+Non è necessario:
+- Modificare file di routing
+- Creare controller personalizzati
+- Gestire manualmente le rotte
+>>>>>>> 431fe0a (.)
