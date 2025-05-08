@@ -35,8 +35,8 @@ class TableLayoutToggleHeaderAction extends Action
             );
     }
 
-    public static function getDefaultName(): ?string
+    public static function getDefaultName(): string
     {
-        return 'table-layout-toggle-header';
+        return 'table_layout_toggle';
     }
 }

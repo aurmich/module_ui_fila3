@@ -29,6 +29,7 @@ class UIServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
 
         $relativePath = config('modules.paths.generator.component-view.path');
         $components_path = module_path($this->name, $relativePath);
@@ -43,6 +44,14 @@ class UIServiceProvider extends XotBaseServiceProvider
 
         // Carica le traduzioni
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'ui');
+=======
+        
+        // Rimuovo la registrazione manuale dei componenti Blade
+        // perché è già gestita da XotBaseServiceProvider
+        
+        // Registro solo le configurazioni specifiche del modulo
+        $this->registerConfig();
+>>>>>>> fa12eb3 (.)
     }
 
     /**
@@ -57,10 +66,18 @@ class UIServiceProvider extends XotBaseServiceProvider
 
         // Registra il service provider di laravel-localization
         $this->app->register(LaravelLocalizationServiceProvider::class);
+<<<<<<< HEAD
 
+=======
+        /*
+>>>>>>> fa12eb3 (.)
         // Carica la configurazione
         $this->mergeConfigFrom(
             __DIR__.'/../config/laravel-localization.php', 'laravel-localization'
         );
+<<<<<<< HEAD
+=======
+        */
+>>>>>>> fa12eb3 (.)
     }
 }
