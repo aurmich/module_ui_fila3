@@ -23,31 +23,31 @@
         </x-slot>
 
         @auth
-            <x-filament::dropdown.list.item :href="route('profile')" icon="heroicon-o-user">
-                {{ __('Profile') }}
+            <x-filament::dropdown.list.item tag="a" :href="route('profile')" icon="heroicon-o-user">
+                {{ __('ui::navigation.profile') }}
             </x-filament::dropdown.list.item>
-            
+
             <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
-            
+
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <x-filament::dropdown.list.item 
-                    href="{{ route('logout') }}"
+                <x-filament::dropdown.list.item
+                    tag="a"
+                    :href="route('logout')"
                     icon="heroicon-o-logout"
-                    :attributes="$attributes->class(['block w-full text-left'])"
-                    onclick="event.preventDefault(); this.closest('form').submit();"
+                    x-on:click.prevent="document.getElementById('logout-form').submit()"
                 >
-                    {{ __('Log Out') }}
+                    {{ __('ui::navigation.logout') }}
                 </x-filament::dropdown.list.item>
             </form>
         @else
-            <x-filament::dropdown.list.item :href="route('login')" icon="heroicon-o-login">
-                {{ __('Log in') }}
+            <x-filament::dropdown.list.item tag="a" :href="route('login')" icon="heroicon-o-login">
+                {{ __('ui::navigation.login') }}
             </x-filament::dropdown.list.item>
-            
+
             @if (Route::has('register'))
-                <x-filament::dropdown.list.item :href="route('register')" icon="heroicon-o-user-add">
-                    {{ __('Register') }}
+                <x-filament::dropdown.list.item tag="a" :href="route('register')" icon="heroicon-o-user-add">
+                    {{ __('ui::navigation.register') }}
                 </x-filament::dropdown.list.item>
             @endif
         @endauth

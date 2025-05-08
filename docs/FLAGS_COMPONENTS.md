@@ -73,110 +73,60 @@ I componenti SVG supportano tutti gli attributi HTML standard, inclusi:
 />
 ```
 
-## Implementazione nel Selettore di Lingue
+## Utilizzo dei Componenti Bandiera con Filament
 
-Per rendere il selettore di lingue nell'header più accattivante e visibile, è possibile utilizzare i componenti SVG delle bandiere al posto delle classi CSS `flag-icon`.
-
-### Componente Selettore di Lingua Migliorato
-
-File: `/laravel/Themes/One/resources/views/components/blocks/language-selector.blade.php`
+### Sintassi Corretta
+Le bandiere devono essere utilizzate come icone Filament:
 
 ```blade
-@props(['languages' => []])
+{{-- Per icone semplici --}}
+<x-filament::icon
+    :icon="'ui-flags.' . $flagCode"
+    class="h-5 w-5 text-gray-500 dark:text-gray-400"
+    :label="$flagCode"
+    aria-hidden="true"
+/>
 
-<div class="relative" x-data="{ open: false }">
-    <button 
-        @click="open = !open" 
-        @click.away="open = false"
-        class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-500"
-    >
-        @php
-            $currentLocale = app()->getLocale();
-            $currentFlag = $currentLocale === 'en' ? 'gb' : $currentLocale;
-        @endphp
-        
-        <div class="flex items-center justify-center w-6 h-6 overflow-hidden rounded-full border border-gray-200">
-            <x-dynamic-component :component="'ui-flags.' . $currentFlag" class="w-7 h-7 object-cover" />
-        </div>
-        
-        <span class="hidden md:inline">{{ $languages[$currentLocale]['name'] ?? ucfirst($currentLocale) }}</span>
-        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-        </svg>
-    </button>
-    
-    <div 
-        x-show="open" 
-        x-transition:enter="transition ease-out duration-100" 
-        x-transition:enter-start="transform opacity-0 scale-95" 
-        x-transition:enter-end="transform opacity-100 scale-100" 
-        x-transition:leave="transition ease-in duration-75" 
-        x-transition:leave-start="transform opacity-100 scale-100" 
-        x-transition:leave-end="transform opacity-0 scale-95" 
-        class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 divide-y divide-gray-100"
-    >
-        <div class="py-1">
-            @foreach($languages as $code => $language)
-                @php
-                    $flag = $code === 'en' ? 'gb' : $code;
-                @endphp
-                <a 
-                    href="{{ url($code . substr(request()->getRequestUri(), 3)) }}" 
-                    class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                    <div class="flex items-center justify-center w-6 h-6 overflow-hidden rounded-full border border-gray-200">
-                        <x-dynamic-component :component="'ui-flags.' . $flag" class="w-7 h-7 object-cover" />
-                    </div>
-                    {{ $language['name'] }}
-                </a>
-            @endforeach
-        </div>
-    </div>
-</div>
+{{-- Per pulsanti con icone --}}
+<x-filament::icon-button
+    :icon="'ui-flags.' . $flagCode"
+    class="h-5 w-5"
+    :label="$flagCode"
+    aria-hidden="true"
+/>
 ```
 
-### Aggiornamento del JSON dell'Header
+### Vantaggi dell'Uso dei Componenti Filament
+1. **Coerenza**: Mantiene lo stile del design system
+2. **Tema Scuro**: Gestione automatica del tema scuro
+3. **Accessibilità**: Componenti già ottimizzati per l'accessibilità
+4. **Manutenibilità**: Codice più pulito e standardizzato
 
-Per implementare il selettore di lingue migliorato, è necessario aggiornare il file JSON dell'header:
+### Implementazione nel Selettore di Lingue
+```blade
+<x-filament::dropdown>
+    <x-slot name="trigger">
+        <x-filament::icon-button
+            :icon="'ui-flags.' . $flagCode"
+            class="h-5 w-5"
+            :label="$flagCode"
+            aria-hidden="true"
+        />
+    </x-slot>
 
-```json
-{
-    "name": {
-        "it": "Selettore di Lingua",
-        "en": "Language Selector"
-    },
-    "type": "language-selector",
-    "data": {
-        "view": "pub_theme::components.blocks.language-selector",
-        "languages": [
-            {
-                "code": "it",
-                "name": "Italiano",
-                "flag": "it"
-            },
-            {
-                "code": "en",
-                "name": "English",
-                "flag": "gb"
-            },
-            {
-                "code": "fr",
-                "name": "Français",
-                "flag": "fr"
-            },
-            {
-                "code": "de",
-                "name": "Deutsch",
-                "flag": "de"
-            },
-            {
-                "code": "es",
-                "name": "Español",
-                "flag": "es"
-            }
-        ]
-    }
-}
+    <x-filament::dropdown.list>
+        @foreach($languages as $code => $language)
+            <x-filament::dropdown.list.item>
+                <x-filament::icon
+                    :icon="'ui-flags.' . $code"
+                    class="h-5 w-5 text-gray-500 dark:text-gray-400"
+                    :label="$code"
+                />
+                <span>{{ $language['name'] }}</span>
+            </x-filament::dropdown.list.item>
+        @endforeach
+    </x-filament::dropdown.list>
+</x-filament::dropdown>
 ```
 
 ## Vantaggi dell'Utilizzo dei Componenti SVG
@@ -198,6 +148,46 @@ Il modulo UI include bandiere per tutti i paesi ISO, tra cui:
 - `es.svg`: Spagna
 - `us.svg`: Stati Uniti
 - ... e molti altri
+
+## Gestione delle Proporzioni delle Bandiere
+
+### Proporzioni Originali
+Le bandiere SVG hanno proporzioni specifiche che devono essere rispettate:
+- Bandiere standard: rapporto 3:2 (es. Italia, Francia)
+- Bandiere speciali: rapporto 2:1 (es. Regno Unito)
+
+### Implementazione Corretta
+Per visualizzare correttamente le bandiere, è necessario:
+
+1. **Contenitore**:
+   ```blade
+   <div class="relative w-6 h-6 overflow-hidden rounded-full">
+   ```
+
+2. **Bandiera**:
+   ```blade
+   <x-dynamic-component
+       :component="'ui-flags.' . $flagCode"
+       class="w-6 h-4 absolute inset-0 object-contain"
+       aria-hidden="true"
+   />
+   ```
+
+### Note Importanti
+- Usare `object-contain` invece di `object-cover` per mantenere le proporzioni
+- Impostare l'altezza della bandiera a 2/3 della larghezza per il rapporto 3:2
+- Per bandiere con rapporto 2:1, usare altezza = larghezza/2
+
+### Esempio di Implementazione
+```blade
+<div class="relative w-6 h-6 overflow-hidden rounded-full ring-1 ring-gray-200">
+    <x-dynamic-component
+        :component="'ui-flags.' . $flagCode"
+        class="w-6 h-4 absolute inset-0 object-contain"
+        aria-hidden="true"
+    />
+</div>
+```
 
 ## Conclusione
 

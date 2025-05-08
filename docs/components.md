@@ -1008,13 +1008,6 @@ Non è necessario:
    <x-ui::language-switcher />
    ```
 
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
->>>>>>> 3e75fd3 (.)
-<<<<<<< HEAD
-=======
 
 ## Best Practices
 
@@ -1091,7 +1084,6 @@ Non è necessario:
    ```
 
 =======
->>>>>>> fa12eb3 (.)
 3. **Personalizzazione**
    ```blade
    <x-ui::language-switcher
@@ -1112,7 +1104,3 @@ Non è necessario:
 - Modificare file di routing
 - Creare controller personalizzati
 - Gestire manualmente le rotte
-<<<<<<< HEAD
->>>>>>> 431fe0a (.)
-=======
->>>>>>> fa12eb3 (.)
