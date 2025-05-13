@@ -1,3 +1,13 @@
+# AVVISO IMPORTANTE (2025-05-13)
+
+> **ATTENZIONE:** Tutti i componenti UI condivisi (come `logo.blade.php`) devono essere SEMPRE posizionati in `Modules/UI/resources/views/components/ui/` e MAI in `resources/views/components/`. Qualsiasi violazione di questa regola causa errori di rendering, override errati, problemi di modularità e manutenzione.
+>
+> **Errore riscontrato:** Il componente `logo.blade.php` era stato posizionato erroneamente in `resources/views/components/ui/` invece che in `Modules/UI/resources/views/components/ui/`.
+>
+> **Causa:** Dimenticanza della regola di modularità Laraxot: tutti i componenti Blade UI condivisi devono essere sempre nel modulo UI, mai nella root Laravel.
+>
+> **Soluzione:** Seguire SEMPRE la regola documentata qui sotto e aggiornata anche in README.md e nella root docs/links.md.
+
 # Gestione dei Percorsi e degli Asset in SaluteOra
 
 ## Collegamenti correlati
@@ -100,6 +110,31 @@ Il componente icon è implementato in:
 ```
 
 E include le definizioni SVG direttamente nel componente.
+
+## Regola sui Componenti Blade UI
+
+> **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
+>
+> `/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/`
+>
+> **MAI** in `resources/views/components/ui/` della root Laravel.
+
+### Motivazione
+- Garantisce la modularità e la possibilità di override a livello di modulo
+- Evita conflitti e duplicazioni tra moduli e root
+- Permette una gestione centralizzata e documentata dei componenti UI
+- Segue la filosofia Laraxot di separazione delle responsabilità
+
+### Esempio di errore e correzione
+
+**❌ Errato:**
+```
+/var/www/html/ptvx/laravel/resources/views/components/ui/logo.blade.php
+```
+**✅ Corretto:**
+```
+/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/logo.blade.php
+```
 
 ## Best Practices
 

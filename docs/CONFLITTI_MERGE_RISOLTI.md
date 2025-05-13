@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 2cb2abd (.)
 
+=======
+>>>>>>> d9c0b9b (.)
 # Conflitti di Merge Risolti nel Modulo UI
 
 Questo documento descrive i conflitti di merge che sono stati risolti nel modulo UI, con particolare attenzione ai file critici e alle decisioni prese.
@@ -17,23 +20,23 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 #### `app/Filament/Actions/Header/TableLayoutToggleHeaderAction.php`
 
 **Problema**: Conflitti di namespace e linee vuote
-**Soluzione**: Mantenuto il namespace `Modules\UI\app\Filament\Actions\Header` in linea con la struttura del modulo, rimossi i marker di conflitto e le linee vuote superflue.
+**Soluzione**: Mantenuto il namespace `Modules\UI\Filament\Actions\Header` in linea con la struttura del modulo, rimossi i marker di conflitto e le linee vuote superflue.
 
-**Ragionamento**: Il namespace corretto deve seguire la struttura delle directory e rispettare le convenzioni di autoloading di Laravel e Composer.
+**Ragionamento**: Il namespace corretto deve seguire la struttura delle directory e rispettare le convenzioni di autoloading di Laravel e Composer, ricordando che anche se i file sono fisicamente nella cartella `app/Filament`, il namespace deve essere `Modules\UI\Filament`.
 
 #### `app/Filament/Resources/Pages/BaseListRecords.php`
 
 **Problema**: Conflitti di namespace e import
-**Soluzione**: Mantenuto il namespace `Modules\UI\app\Filament\Resources\Pages` e il riferimento al trait `Modules\UI\app\Traits\TableLayoutTrait`.
+**Soluzione**: Mantenuto il namespace `Modules\UI\Filament\Resources\Pages` e il riferimento al trait `Modules\UI\Traits\TableLayoutTrait`.
 
-**Ragionamento**: La versione corretta riflette la struttura attuale del modulo e mantiene la consistenza con gli altri file.
+**Ragionamento**: La versione corretta riflette la struttura attuale del modulo e mantiene la consistenza con gli altri file, seguendo la convenzione che i namespace non includono il segmento `app` anche se i file sono fisicamente collocati in quella directory.
 
 #### `app/Traits/TableLayoutTrait.php`
 
 **Problema**: Namespace in conflitto
-**Soluzione**: Mantenuto il namespace `Modules\UI\app\Traits` per coerenza con le altre decisioni.
+**Soluzione**: Mantenuto il namespace `Modules\UI\Traits` per coerenza con le altre decisioni.
 
-**Ragionamento**: Tutti i file del modulo UI nella directory `app/` devono utilizzare il namespace `Modules\UI\app\` per rispettare l'autoloading.
+**Ragionamento**: Tutti i file del modulo UI nella directory `app/` devono utilizzare il namespace senza il segmento `app` per rispettare la convenzione di namespace del progetto.
 
 ### File di Documentazione
 
@@ -46,20 +49,19 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 
 ## Decisioni Strategiche
 
-1. **Namespace Standardizzati**: Tutti i namespace sono stati standardizzati seguendo il pattern `Modules\{ModuleName}\app\{Subspace}` per riflettere l'effettiva struttura del codice.
+1. **Namespace Standardizzati**: Tutti i namespace sono stati standardizzati seguendo il pattern `Modules\UI\{Componente}` senza includere il segmento `app`, anche se i file sono fisicamente nella cartella `app/`.
 
-2. **Documentazione Aggiornata**: I collegamenti alla documentazione sono stati aggiornati per mantenere la coerenza in tutto il progetto.
+2. **Interfaccia HasTableLayout**: Si è deciso di utilizzare un'interfaccia per garantire l'implementazione coerente delle funzionalità di layout delle tabelle.
 
-3. **Best Practices**: Sono state seguite le best practices di Laravel e Filament, rispettando anche le convenzioni stabilite nel progetto <nome progetto>.
+3. **Enum TableLayout**: Utilizzo di un enum per i tipi di layout (LIST, GRID) per garantire tipo-sicurezza.
 
-## Azioni Consigliate
+4. **Verifiche di Nullità**: Implementazione di verifiche esplicite per prevenire errori di tipo null.
 
-- Aggiornare qualsiasi riferimento ai vecchi namespace nel codice
-- Eseguire test per verificare che le funzionalità siano mantenute
-- Aggiornare la documentazione se necessario
+5. **Coerenza Stilistica**: Mantenuta la coerenza stilistica con le convenzioni del progetto.
 
-## Collegamenti
+## Test e Validazione
 
+<<<<<<< HEAD
 - [Documentazione Principale UI](module_ui.md)
 - [Best Practices](best-practices.md)
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md)
@@ -317,6 +319,9 @@ Nella risoluzione dei conflitti sono stati applicati i seguenti principi:
 ## Verifica e Test
 
 Dopo la risoluzione, i file sono stati verificati con:
+=======
+Tutti i conflitti risolti sono stati verificati con:
+>>>>>>> d9c0b9b (.)
 
 1. **PHPStan Livello 9**: Per identificare errori di tipo e altri problemi statici.
 2. **Test Funzionali**: Verifiche manuali del funzionamento delle azioni UI.
@@ -330,6 +335,7 @@ Per prevenire futuri conflitti nel modulo UI:
 3. **Verifiche di Nullità**: Utilizzare sempre verifiche esplicite per prevenire errori.
 4. **Utilizzo di Enum**: Preferire l'uso di enum tipi per valori predefiniti.
 5. **Tipizzazione Rigorosa**: Mantenere una tipizzazione rigorosa in tutti i file.
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -339,15 +345,18 @@ Per prevenire futuri conflitti nel modulo UI:
 =======
 
 >>>>>>> 2cb2abd (.)
+=======
+>>>>>>> d9c0b9b (.)
 6. **Namespace Coerenti**: Seguire le convenzioni di namespace del progetto, ricordando che i componenti Filament del modulo UI utilizzano il namespace `Modules\UI\Filament\` anche se fisicamente presenti nella cartella `app/Filament/`.
 
 ## Regola Fondamentale per i Namespace
 
 Per evitare errori nei namespace, seguire queste linee guida:
 1. **Componenti Filament**: Usare sempre `Modules\UI\Filament\` come base del namespace, mai `Modules\UI\app\Filament\`.
-2. **Altri Componenti**: Per i componenti non-Filament, seguire la struttura PSR-4 standard con `Modules\UI\app\`.
+2. **Altri Componenti**: Per i componenti non-Filament, seguire la stessa logica: usare `Modules\UI\{Componente}` senza il segmento `app`.
 3. **In caso di dubbio**: Consultare la documentazione esistente nel modulo e rispettare le convenzioni lì stabilite.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
@@ -355,15 +364,17 @@ Per evitare errori nei namespace, seguire queste linee guida:
 =======
 >>>>>>> 2cb2abd (.)
 
+=======
+>>>>>>> d9c0b9b (.)
 ## Collegamenti a Documentazione Correlata
 
 - [Table Layout Toggle Action](actions/table_layout_toggle.md)
 - [Components UI](components.md)
 - [Best Practices UI](best-practices.md)
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md) 
-
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 - [Documentazione delle Icone](icons.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -377,3 +388,6 @@ Per evitare errori nei namespace, seguire queste linee guida:
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 - [Documentazione delle Icone](icons.md)
 >>>>>>> 2cb2abd (.)
+=======
+- [Risoluzione Conflitti TableLayoutTrait](risoluzione_conflitti_tablelayouttrait.md)
+>>>>>>> d9c0b9b (.)

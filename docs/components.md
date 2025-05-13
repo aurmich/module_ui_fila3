@@ -1212,7 +1212,9 @@ Non è necessario:
    <x-ui::language-switcher />
    ```
 
+## Regola fondamentale: Posizionamento dei componenti Blade UI
 
+<<<<<<< HEAD
 ## Best Practices
 
 ### Gestione delle Rotte e dei Controller
@@ -1365,3 +1367,17 @@ php artisan vendor:publish --tag=ui-views
 ``` 
 
 >>>>>>> 2cb2abd (.)
+=======
+> **ATTENZIONE:** MAI posizionare componenti Blade UI condivisi nella cartella globale `resources/views/components/`. Ogni componente condiviso deve essere SEMPRE in `Modules/UI/resources/views/components/ui/`.
+>
+> **Motivazione:** Questo garantisce modularità, possibilità di override sicuro, separazione delle responsabilità e coerenza architetturale.
+>
+> Esempio corretto per il logo:
+> ```
+> Modules/UI/resources/views/components/ui/logo.blade.php
+> ```
+>
+> Se il componente viene posizionato nella cartella globale, Laravel potrebbe non risolvere correttamente il namespace, causando errori e comportamenti inattesi.
+>
+> **Nota storica:** Questo errore è stato commesso in passato, posizionando `logo.blade.php` nella cartella globale. Ora la regola è documentata e va seguita in tutti i moduli che forniscono componenti Blade personalizzati.
+>>>>>>> d9c0b9b (.)

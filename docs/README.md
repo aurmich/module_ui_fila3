@@ -1,3 +1,11 @@
+# AVVISO IMPORTANTE (2025-05-13)
+
+> **Errore riscontrato:** Il componente `logo.blade.php` era stato posizionato erroneamente in `resources/views/components/ui/` invece che in `Modules/UI/resources/views/components/ui/`.
+>
+> **Causa:** Dimenticanza della regola di modularità Laraxot: tutti i componenti Blade UI condivisi devono essere sempre nel modulo UI, mai nella root Laravel.
+>
+> **Soluzione:** Seguire SEMPRE la regola documentata in [PATHS_AND_ASSETS.md](./PATHS_AND_ASSETS.md) e aggiornata anche nella root docs/links.md.
+
 # Modulo UI
 
 ## Introduzione
@@ -499,6 +507,15 @@ class UserResource extends XotBaseResource
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+## Regola sui Componenti Blade UI
+
+> **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
+>
+> `/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/`
+>
+> **MAI** in `resources/views/components/ui/` della root Laravel.
+
+Consulta la [documentazione dettagliata sui path e gli asset](./PATHS_AND_ASSETS.md) per motivazione, esempi e best practices.
 
 ---
 

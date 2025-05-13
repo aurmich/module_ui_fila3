@@ -22,6 +22,7 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
    - Utilizzare il componente x-icon
    - Supporto per colori e dimensioni
 
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -33,6 +34,8 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 =======
 
 >>>>>>> 2cb2abd (.)
+=======
+>>>>>>> d9c0b9b (.)
 ## Action GetAllIconsAction
 - Scopo: carica dinamicamente tutte le icone disponibili per un determinato contesto UI (es. form, table).
 - Parametri:
@@ -42,6 +45,7 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 
 [Classe GetAllIconsAction](/laravel/Modules/UI/app/Actions/Icon/GetAllIconsAction.php)
 
+<<<<<<< HEAD
 
 ### Versione Incoming
 
@@ -54,6 +58,8 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 >>>>>>> 3e75fd3 (.)
 =======
 >>>>>>> 2cb2abd (.)
+=======
+>>>>>>> d9c0b9b (.)
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema
@@ -66,3 +72,8 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 <i class="fa fa-user"></i>
 <x-icon name="custom-logo" class="w-8 h-8" />
 ```
+
+## Collegamenti
+- [Componenti UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/components.md)
+- [Documentazione Filament](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/filament/README.md)
+- [Convenzioni di Naming](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/naming-conventions.md)
