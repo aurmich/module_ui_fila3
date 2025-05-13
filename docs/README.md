@@ -559,3 +559,20 @@ Consulta la [documentazione dettagliata sui path e gli asset](./PATHS_AND_ASSETS
 
 ---
 
+## Server MCP consigliati per UI
+
+Per il modulo UI, si consiglia di utilizzare i seguenti server MCP:
+
+- **sequential-thinking**: per orchestrare workflow di generazione componenti UI, brainstorming di design e automazione di processi di revisione UI.
+- **memory**: per mantenere una knowledge base di componenti, template, pattern di design e storico delle revisioni UI.
+- **filesystem**: per esportare/importare componenti, template o asset grafici.
+- **postgres**: se il modulo utilizza un database PostgreSQL per archiviare configurazioni UI, template o log di utilizzo.
+- **puppeteer**: per automatizzare test end-to-end, generazione di screenshot di componenti, esportazione PDF o scraping di UI da siti esterni.
+
+**Nota:**
+- Usa solo server MCP Node.js disponibili su npm e avviabili con `npx`.
+- Configura sempre gli argomenti obbligatori (es. directory per filesystem, stringa di connessione per postgres).
+- Non usare fetch, mysql o redis se non attivo.
+
+Per dettagli e best practice consulta la guida generale MCP nel workspace.
+
