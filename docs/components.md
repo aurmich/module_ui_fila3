@@ -1,11 +1,8 @@
 # Componenti UI
 
 ## Indice
-<<<<<<< HEAD
 
 ### Versione Dettagliata
-=======
->>>>>>> 9138ec4 (.)
 - [Panoramica](#panoramica)
 - [Componenti Filament](#componenti-filament)
   - [Componenti UI di Base](#componenti-ui-di-base)
@@ -21,10 +18,14 @@
 - [Traduzioni](#traduzioni)
 - [Temi e Stili](#temi-e-stili)
 - [Collegamenti](#collegamenti)
-<<<<<<< HEAD
 
 ### Versione Alternativa
-(vedi marker git, integrare eventuali dettagli tecnici aggiuntivi dalle versioni branch)
+- [Componenti Base](#componenti-base)
+- [Form Components](#form-components)
+- [Table Components](#table-components)
+- [Chart Components](#chart-components)
+- [Layout Components](#layout-components)
+- [Traduzioni](#traduzioni)
 
 ## Decisione Architetturale
 Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
@@ -33,8 +34,6 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 - [Torna a docs/links.md](../../../../docs/links.md)
 - [Vedi anche: UI/docs/README.md](./README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
-=======
->>>>>>> 9138ec4 (.)
 
 ## Panoramica
 Il modulo UI fornisce un set di componenti personalizzati che estendono i componenti base di Filament. Tutti i componenti sono progettati per essere accessibili, responsive e facilmente personalizzabili.
@@ -1001,8 +1000,6 @@ Non è necessario:
 ```blade
 <x-ui::user-menu />
 ```
-<<<<<<< HEAD
-=======
 
 Il componente gestisce automaticamente:
 - Menu utente
@@ -1028,7 +1025,6 @@ Non è necessario:
    ```blade
    <x-ui::language-switcher />
    ```
->>>>>>> 9138ec4 (.)
 
 Il componente gestisce automaticamente:
 - Menu utente
@@ -1036,8 +1032,6 @@ Il componente gestisce automaticamente:
 - Profilo utente
 - Logout
 
-<<<<<<< HEAD
-=======
 ## Best Practices
 
 ### Gestione delle Rotte e dei Controller
@@ -1092,24 +1086,10 @@ Il componente gestisce automaticamente:
 - Autenticazione
 - Profilo utente
 - Logout
-
->>>>>>> 9138ec4 (.)
 Non è necessario:
 - Creare controller
 - Aggiungere rotte
 - Gestire la logica di autenticazione
-<<<<<<< HEAD
-
-## Utilizzo dei Componenti
-
-1. **Importazione**
-   ```blade
-   @php
-   use Modules\UI\View\Components\LanguageSwitcher;
-   @endphp
-   ```
-
-2. **Utilizzo**
    ```blade
    <x-ui::language-switcher />
    ```

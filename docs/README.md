@@ -118,8 +118,6 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - Form Handling
 - UI Updates
 
-<<<<<<< HEAD
-=======
 ## Best Practices
 
 ### Gestione delle Rotte e dei Controller
@@ -149,8 +147,6 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
    - Documentare sempre i componenti e le loro funzionalità
    - Includere esempi di utilizzo
    - Specificare le dipendenze e i requisiti
-
->>>>>>> 9138ec4 (.)
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md)
 - [Bottlenecks](./bottlenecks.md)
