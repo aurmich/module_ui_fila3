@@ -1,8 +1,11 @@
 # Componenti UI
 
 ## Indice
+<<<<<<< HEAD
 
 ### Versione Dettagliata
+=======
+>>>>>>> 9138ec4 (.)
 - [Panoramica](#panoramica)
 - [Componenti Filament](#componenti-filament)
   - [Componenti UI di Base](#componenti-ui-di-base)
@@ -18,6 +21,7 @@
 - [Traduzioni](#traduzioni)
 - [Temi e Stili](#temi-e-stili)
 - [Collegamenti](#collegamenti)
+<<<<<<< HEAD
 
 ### Versione Alternativa
 (vedi marker git, integrare eventuali dettagli tecnici aggiuntivi dalle versioni branch)
@@ -29,6 +33,8 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 - [Torna a docs/links.md](../../../../docs/links.md)
 - [Vedi anche: UI/docs/README.md](./README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
+=======
+>>>>>>> 9138ec4 (.)
 
 ## Panoramica
 Il modulo UI fornisce un set di componenti personalizzati che estendono i componenti base di Filament. Tutti i componenti sono progettati per essere accessibili, responsive e facilmente personalizzabili.
@@ -995,6 +1001,8 @@ Non è necessario:
 ```blade
 <x-ui::user-menu />
 ```
+<<<<<<< HEAD
+=======
 
 Il componente gestisce automaticamente:
 - Menu utente
@@ -1006,6 +1014,91 @@ Non è necessario:
 - Creare controller
 - Aggiungere rotte
 - Gestire la logica di autenticazione
+
+## Utilizzo dei Componenti
+
+1. **Importazione**
+   ```blade
+   @php
+   use Modules\UI\View\Components\LanguageSwitcher;
+   @endphp
+   ```
+
+2. **Utilizzo**
+   ```blade
+   <x-ui::language-switcher />
+   ```
+>>>>>>> 9138ec4 (.)
+
+Il componente gestisce automaticamente:
+- Menu utente
+- Autenticazione
+- Profilo utente
+- Logout
+
+<<<<<<< HEAD
+=======
+## Best Practices
+
+### Gestione delle Rotte e dei Controller
+
+1. **Non creare rotte manualmente**
+   - Utilizzare Filament e Folio per la gestione automatica delle rotte
+   - Le rotte vengono generate automaticamente in base alle risorse e alle pagine
+   - Non aggiungere rotte in `web.php` o altri file di routing
+
+2. **Non creare controller manualmente**
+   - Utilizzare Filament per la gestione delle risorse
+   - Utilizzare Folio per la gestione delle pagine
+   - I controller vengono generati automaticamente
+
+3. **Componenti Blade**
+   - Creare componenti Blade riutilizzabili
+   - Utilizzare i componenti per la gestione dell'UI
+   - I componenti possono essere utilizzati sia in Filament che in Folio
+
+4. **Gestione delle Lingue**
+   - Utilizzare il componente `language-switcher` per il cambio lingua
+   - La localizzazione viene gestita automaticamente da Filament e Folio
+   - Non è necessario creare controller o rotte specifiche per la gestione delle lingue
+
+## Componenti Disponibili
+
+### Language Switcher
+
+```blade
+<x-ui::language-switcher />
+```
+
+Il componente gestisce automaticamente:
+- Cambio lingua
+- Persistenza della selezione
+- Traduzioni
+- UI/UX
+
+Non è necessario:
+- Creare controller
+- Aggiungere rotte
+- Gestire la logica di cambio lingua
+
+### User Menu
+
+```blade
+<x-ui::user-menu />
+```
+
+Il componente gestisce automaticamente:
+- Menu utente
+- Autenticazione
+- Profilo utente
+- Logout
+
+>>>>>>> 9138ec4 (.)
+Non è necessario:
+- Creare controller
+- Aggiungere rotte
+- Gestire la logica di autenticazione
+<<<<<<< HEAD
 
 ## Utilizzo dei Componenti
 
@@ -1039,6 +1132,40 @@ La configurazione viene gestita attraverso:
 - File di configurazione di Folio
 - Configurazioni del modulo UI
 
+=======
+
+## Utilizzo dei Componenti
+
+1. **Importazione**
+   ```blade
+   @php
+   use Modules\UI\View\Components\LanguageSwitcher;
+   @endphp
+   ```
+
+2. **Utilizzo**
+   ```blade
+   <x-ui::language-switcher />
+   ```
+
+=======
+3. **Personalizzazione**
+   ```blade
+   <x-ui::language-switcher
+       :languages="['it', 'en']"
+       :show-flags="true"
+       :show-names="true"
+   />
+   ```
+
+## Configurazione
+
+La configurazione viene gestita attraverso:
+- File di configurazione di Filament
+- File di configurazione di Folio
+- Configurazioni del modulo UI
+
+>>>>>>> 9138ec4 (.)
 Non è necessario:
 - Modificare file di routing
 - Creare controller personalizzati

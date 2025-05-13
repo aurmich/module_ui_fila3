@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AVVISO IMPORTANTE (2025-05-13)
 
 > **ATTENZIONE:** Tutti i componenti UI condivisi (come `logo.blade.php`) devono essere SEMPRE posizionati in `Modules/UI/resources/views/components/ui/` e MAI in `resources/views/components/`. Qualsiasi violazione di questa regola causa errori di rendering, override errati, problemi di modularità e manutenzione.
@@ -8,6 +9,8 @@
 >
 > **Soluzione:** Seguire SEMPRE la regola documentata qui sotto e aggiornata anche in README.md e nella root docs/links.md.
 
+=======
+>>>>>>> 9138ec4 (.)
 # Gestione dei Percorsi e degli Asset in SaluteOra
 
 ## Collegamenti correlati
@@ -111,6 +114,7 @@ Il componente icon è implementato in:
 
 E include le definizioni SVG direttamente nel componente.
 
+<<<<<<< HEAD
 ## Regola sui Componenti Blade UI
 
 > **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
@@ -136,6 +140,8 @@ E include le definizioni SVG direttamente nel componente.
 /var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/logo.blade.php
 ```
 
+=======
+>>>>>>> 9138ec4 (.)
 ## Best Practices
 
 1. **MAI utilizzare percorsi assoluti hardcoded** nei componenti Blade

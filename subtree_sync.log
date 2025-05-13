@@ -55,6 +55,7 @@
 [0;32m✅ [2025-05-06 18:40:14] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-06 21:19:38] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-06 21:19:38] Configurazione git completata con successo[0m
+<<<<<<< HEAD
 [0;34mℹ️ [2025-05-06 21:30:21] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-06 21:30:21] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-06 21:54:13] Configurazione avanzata git...[0m
@@ -86,3 +87,7 @@
 [0;32m✅ [2025-05-13 13:40:18] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-13 14:19:24] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 14:19:24] Configurazione git completata con successo[0m
+=======
+[0;34mℹ️ [2025-05-13 16:12:01] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-13 16:12:01] Configurazione git completata con successo[0m
+>>>>>>> 9138ec4 (.)
