@@ -47,9 +47,12 @@ class TableLayoutToggleTableAction extends Action
     {
         return $this->getTableLayout();
     }
+<<<<<<< HEAD
 
     public static function getDefaultName(): string
     {
         return 'table_layout_toggle';
     }
+=======
+>>>>>>> 2cb2abd (.)
 }

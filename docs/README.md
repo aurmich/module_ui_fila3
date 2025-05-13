@@ -27,11 +27,18 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - Test di copertura al 100%
 
 ## Architettura e Componenti
+<<<<<<< HEAD
 - [Componenti Base](./components/README.md)
 - [Layout System](./components/layout.md)
 - [Theme System](./themes/README.md)
 - [Form System](./forms/README.md)
 - [Blocks e Sezioni](./blocks/README.md)
+=======
+- Componenti Base
+- Layout System
+- Theme System
+- Form System
+>>>>>>> 2cb2abd (.)
 
 ## Filament
 - Resource Management
@@ -57,6 +64,7 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - UI Updates
 
 ## Best Practices
+<<<<<<< HEAD
 
 ### Gestione delle Rotte e dei Controller
 
@@ -85,6 +93,11 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
    - Documentare sempre i componenti e le loro funzionalità
    - Includere esempi di utilizzo
    - Specificare le dipendenze e i requisiti
+=======
+- Component Design
+- State Management
+- Performance
+>>>>>>> 2cb2abd (.)
 
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md)
