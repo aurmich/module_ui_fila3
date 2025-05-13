@@ -7,6 +7,7 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 - Custom SVG per icone specifiche
 
 ## Implementazione
+### Versione Dettagliata
 1. **Heroicons**
    - Utilizzare i componenti Blade
    - Supporto per stili solid/outline
@@ -22,20 +23,9 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
    - Utilizzare il componente x-icon
    - Supporto per colori e dimensioni
 
-<<<<<<< HEAD
-### Versione HEAD
+### Versione Alternativa
+(vedi marker git, integrare eventuali dettagli tecnici aggiuntivi dalle versioni branch)
 
-
-<<<<<<< HEAD
-=======
-
-=======
->>>>>>> 3e75fd3 (.)
-=======
-
->>>>>>> 2cb2abd (.)
-=======
->>>>>>> d9c0b9b (.)
 ## Action GetAllIconsAction
 - Scopo: carica dinamicamente tutte le icone disponibili per un determinato contesto UI (es. form, table).
 - Parametri:
@@ -45,26 +35,19 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 
 [Classe GetAllIconsAction](/laravel/Modules/UI/app/Actions/Icon/GetAllIconsAction.php)
 
-<<<<<<< HEAD
-
-### Versione Incoming
-
-
----
-
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
->>>>>>> 3e75fd3 (.)
-=======
->>>>>>> 2cb2abd (.)
-=======
->>>>>>> d9c0b9b (.)
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema
 - Usare Font Awesome per icone social/brand
 - Custom SVG solo per icone specifiche del progetto
+
+## Decisione Architetturale
+Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
+
+## Backlink
+- [Torna a docs/links.md](../../../../docs/links.md)
+- [Vedi anche: UI/docs/components.md](./components.md)
+- [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 
 ## Esempi
 ```blade

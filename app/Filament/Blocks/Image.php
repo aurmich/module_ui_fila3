@@ -53,7 +53,6 @@ class Image
             default => '',
         };
     }
-<<<<<<< HEAD
 
     public static function getFormSchema(): array
     {
@@ -67,6 +66,4 @@ class Image
                 ->maxLength(255),
         ];
     }
-=======
->>>>>>> 2cb2abd (.)
 }

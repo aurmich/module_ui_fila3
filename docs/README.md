@@ -8,10 +8,9 @@
 
 # Modulo UI
 
-## Introduzione
-Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riutilizzabili, layout e temi. Si integra con Filament, Livewire e Volt per offrire un'esperienza utente coerente e moderna.
-
 ## Indice
+
+### Versione Dettagliata
 - [Architettura e Componenti](#architettura-e-componenti)
 - [Filament](#filament)
 - [Livewire e Volt](#livewire-e-volt)
@@ -23,56 +22,15 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - [Dipendenze](#dipendenze)
 - [Utilizzo](#utilizzo)
 
-## Convenzioni di Namespace
-- Tutti i componenti devono seguire le convenzioni di namespace del progetto
-- I namespace devono riflettere la struttura delle directory
-- Utilizzare PSR-4 per l'autoloading
-
-## Analisi PHPStan
-- Livello di analisi: 8
-- Nessun errore rilevato
-- Documentazione completa dei tipi
-- Test di copertura al 100%
-
-## Architettura e Componenti
-<<<<<<< HEAD
-- [Componenti Base](./components/README.md)
-- [Layout System](./components/layout.md)
-- [Theme System](./themes/README.md)
-- [Form System](./forms/README.md)
-- [Blocks e Sezioni](./blocks/README.md)
-=======
+### Versione Alternativa
 - Componenti Base
 - Layout System
 - Theme System
 - Form System
->>>>>>> 2cb2abd (.)
-
-## Filament
-- Resource Management
-- Form Builder
-- UI Components
-
-## Collegamenti correlati
-> - [README.md documentazione generale](../../docs/README.md)
-> - [README.md toolkit bashscripts](../../bashscripts/docs/README.md)
-> - [README.md modulo GDPR](../Gdpr/docs/README.md)
-> - [README.md modulo Chart](../Chart/docs/README.md) <!-- TODO: documento non presente -->
-> - [README.md modulo Lang](../Lang/docs/README.md)
-> - [README.md modulo Dental](../Dental/docs/README.md) <!-- TODO: documento non presente -->
-> - [README.md modulo Reporting](../Reporting/docs/README.md) <!-- TODO: documento non presente -->
-> - [README.md modulo Tenant](../Tenant/docs/README.md)
-> - [README.md modulo CMS](../Cms/docs/README.md) <!-- TODO: documento non presente -->
-> - [README.md modulo Xot](../Xot/docs/README.md)
-> - [Collegamenti documentazione centrale](../../docs/collegamenti-documentazione.md)
-
-## Livewire e Volt
-- Component System
-- Form Handling
-- UI Updates
 
 ## Best Practices
-<<<<<<< HEAD
+
+### Versione Dettagliata
 
 ### Gestione delle Rotte e dei Controller
 
@@ -101,11 +59,64 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
    - Documentare sempre i componenti e le loro funzionalità
    - Includere esempi di utilizzo
    - Specificare le dipendenze e i requisiti
-=======
+
+### Versione Alternativa
 - Component Design
 - State Management
 - Performance
->>>>>>> 2cb2abd (.)
+
+## Decisione Architetturale
+Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
+
+## Backlink
+- [Torna a docs/links.md](../../../../docs/links.md)
+- [Vedi anche: Lang/docs/README.md](../../Lang/docs/README.md)
+- [Vedi anche: User/docs/README.md](../../User/docs/README.md)
+- [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
+
+## Introduzione
+Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riutilizzabili, layout e temi. Si integra con Filament, Livewire e Volt per offrire un'esperienza utente coerente e moderna.
+
+## Convenzioni di Namespace
+- Tutti i componenti devono seguire le convenzioni di namespace del progetto
+- I namespace devono riflettere la struttura delle directory
+- Utilizzare PSR-4 per l'autoloading
+
+## Analisi PHPStan
+- Livello di analisi: 8
+- Nessun errore rilevato
+- Documentazione completa dei tipi
+- Test di copertura al 100%
+
+## Architettura e Componenti
+- [Componenti Base](./components/README.md)
+- [Layout System](./components/layout.md)
+- [Theme System](./themes/README.md)
+- [Form System](./forms/README.md)
+- [Blocks e Sezioni](./blocks/README.md)
+
+## Filament
+- Resource Management
+- Form Builder
+- UI Components
+
+## Collegamenti correlati
+> - [README.md documentazione generale](../../docs/README.md)
+> - [README.md toolkit bashscripts](../../bashscripts/docs/README.md)
+> - [README.md modulo GDPR](../Gdpr/docs/README.md)
+> - [README.md modulo Chart](../Chart/docs/README.md) <!-- TODO: documento non presente -->
+> - [README.md modulo Lang](../Lang/docs/README.md)
+> - [README.md modulo Dental](../Dental/docs/README.md) <!-- TODO: documento non presente -->
+> - [README.md modulo Reporting](../Reporting/docs/README.md) <!-- TODO: documento non presente -->
+> - [README.md modulo Tenant](../Tenant/docs/README.md)
+> - [README.md modulo CMS](../Cms/docs/README.md) <!-- TODO: documento non presente -->
+> - [README.md modulo Xot](../Xot/docs/README.md)
+> - [Collegamenti documentazione centrale](../../docs/collegamenti-documentazione.md)
+
+## Livewire e Volt
+- Component System
+- Form Handling
+- UI Updates
 
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md)

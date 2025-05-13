@@ -7,7 +7,6 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Builder\Block;
 use Modules\Xot\Filament\Blocks\XotBaseBlock;
-<<<<<<< HEAD
 use Filament\Forms\Components\Forms;
 use Modules\Xot\Filament\Traits\TransTrait;
 
@@ -15,11 +14,6 @@ class Navigation extends XotBaseBlock
 {
     
 
-=======
-
-class Navigation extends XotBaseBlock
-{
->>>>>>> 2cb2abd (.)
     public static function getBlockSchema(): array
     {
         return [
@@ -38,7 +32,6 @@ class Navigation extends XotBaseBlock
                     ->minItems(1),
         ];
     }
-<<<<<<< HEAD
 
     public function getFormSchema(): array
     {
@@ -53,6 +46,4 @@ class Navigation extends XotBaseBlock
                 ]),
         ];
     }
-=======
->>>>>>> 2cb2abd (.)
 }

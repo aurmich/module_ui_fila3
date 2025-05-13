@@ -1,7 +1,8 @@
 # Componenti UI
 
-<<<<<<< HEAD
 ## Indice
+
+### Versione Dettagliata
 - [Panoramica](#panoramica)
 - [Componenti Filament](#componenti-filament)
   - [Componenti UI di Base](#componenti-ui-di-base)
@@ -17,6 +18,17 @@
 - [Traduzioni](#traduzioni)
 - [Temi e Stili](#temi-e-stili)
 - [Collegamenti](#collegamenti)
+
+### Versione Alternativa
+(vedi marker git, integrare eventuali dettagli tecnici aggiuntivi dalle versioni branch)
+
+## Decisione Architetturale
+Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
+
+## Backlink
+- [Torna a docs/links.md](../../../../docs/links.md)
+- [Vedi anche: UI/docs/README.md](./README.md)
+- [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 
 ## Panoramica
 Il modulo UI fornisce un set di componenti personalizzati che estendono i componenti base di Filament. Tutti i componenti sono progettati per essere accessibili, responsive e facilmente personalizzabili.
@@ -423,143 +435,10 @@ CustomDataTable::make()
             ]
         ]
     ])
-=======
-### Versione HEAD
-
-## Panoramica
-Il modulo UI fornisce un set completo di componenti riutilizzabili per costruire interfacce coerenti e accessibili.
-
-## Componenti Base
-
-### Button
-```php
-<x-ui.button
-    variant="primary|secondary|outline"
-    size="sm|md|lg"
-    :disabled="false"
->
-    Testo Pulsante
-</x-ui.button>
-```
-
-### Input
-```php
-<x-ui.input
-    type="text|email|password"
-    name="field_name"
-    label="Label Campo"
-    :error="$errors->first('field_name')"
-/>
-```
-
-### Select
-```php
-<x-ui.select
-    name="field_name"
-    label="Label Campo"
-    :options="$options"
-    :value="$selectedValue"
-/>
-```
-
-## Componenti Layout
-
-### Card
-```php
-<x-ui.card>
-    <x-slot name="header">
-        Header Card
-    </x-slot>
-    
-    Contenuto Card
-    
-    <x-slot name="footer">
-        Footer Card
-    </x-slot>
-</x-ui.card>
-```
-
-### Grid
-```php
-<x-ui.grid
-    cols="1 md:2 lg:3"
-    gap="4"
->
-    <div>Item 1</div>
-    <div>Item 2</div>
-    <div>Item 3</div>
-</x-ui.grid>
-```
-
-### Container
-```php
-<x-ui.container
-    size="sm|md|lg|xl"
-    padding="4"
->
-    Contenuto Container
-</x-ui.container>
-```
-
-## Componenti Form
-
-### Form Group
-```php
-<x-ui.form-group
-    label="Label Campo"
-    name="field_name"
-    :error="$errors->first('field_name')"
->
-    <x-ui.input name="field_name" />
-</x-ui.form-group>
-```
-
-### Checkbox
-```php
-<x-ui.checkbox
-    name="field_name"
-    label="Label Checkbox"
-    :checked="$isChecked"
-/>
-```
-
-### Radio
-```php
-<x-ui.radio
-    name="field_name"
-    label="Label Radio"
-    value="option_value"
-    :checked="$isSelected"
-/>
-```
-
-## Componenti Feedback
-
-### Alert
-```php
-<x-ui.alert
-    type="success|error|warning|info"
-    :dismissible="true"
->
-    Messaggio Alert
-</x-ui.alert>
-```
-
-### Toast
-```php
-<x-ui.toast
-    type="success|error"
-    :auto-close="true"
-    :duration="5000"
->
-    Messaggio Toast
-</x-ui.toast>
->>>>>>> 2cb2abd (.)
 ```
 
 ## Best Practices
 
-<<<<<<< HEAD
 ### 1. Utilizzo dei Componenti Filament
 
 #### Preferire i Componenti Filament
@@ -712,34 +591,6 @@ return [
 
 ## Note
 Questa documentazione fornisce una panoramica dettagliata dei componenti disponibili. Per i dettagli completi, consultare la documentazione specifica nei moduli e la documentazione ufficiale di Filament.
-=======
-1. **Riutilizzo**
-   - Preferire componenti standard
-   - Evitare duplicazione
-   - Mantenere coerenza
-
-2. **Accessibilità**
-   - Usare attributi ARIA
-   - Supportare keyboard
-   - Fornire feedback
-
-3. **Personalizzazione**
-   - Usare props per varianti
-   - Mantenere default sensati
-   - Documentare opzioni
-
-## Collegamenti Bidirezionali
-- [README](README.md)
-- [Design System](design-system.md)
-- [Layout](layouts-and-themes.md)
-
-## Vedi Anche
-- [Filament Components](../../Cms/docs/filament-components.md)
-- [Theme Components](../../Theme/docs/components.md)
-- [Form Components](form-components.md)
-## Note
-Questa documentazione fornisce una panoramica dei componenti disponibili. Per i dettagli completi, consultare la documentazione specifica nei moduli. 
->>>>>>> 2cb2abd (.)
 
 ## Collegamenti tra versioni di components.md
 * [components.md](../../../UI/docs/components.md)
@@ -747,10 +598,6 @@ Questa documentazione fornisce una panoramica dei componenti disponibili. Per i 
 * [components.md](../../../Cms/docs/components.md)
 * [components.md](../../../../Themes/One/docs/components.md)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2cb2abd (.)
 ### Versione Incoming
 
 ## Form Components
@@ -991,13 +838,6 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> 2cb2abd (.)
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -1020,36 +860,6 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
 - SVG icons per modalità chiara e scura
 
-<<<<<<< HEAD
-=======
-
-## Componenti Base
-
-### Forms
-```blade
-<x-ui::form>
-  <x-ui::input name="email" type="email" />
-  <x-ui::button type="submit">Invia</x-ui::button>
-</x-ui::form>
-```
-
-### Tables
-```blade
-<x-ui::table>
-  <x-ui::th>Nome</x-ui::th>
-  <x-ui::td>{{ $user->name }}</x-ui::td>
-</x-ui::table>
-```
-
-### Cards
-```blade
-<x-ui::card>
-  <x-ui::card-header>Titolo</x-ui::card-header>
-  <x-ui::card-body>Contenuto</x-ui::card-body>
-</x-ui::card>
-```
-
->>>>>>> 2cb2abd (.)
 ## Componenti Complessi
 
 ### Modal
@@ -1138,7 +948,6 @@ Modal::make('conferma')
 ```
 
 ## Best Practices
-<<<<<<< HEAD
 
 ### Gestione delle Rotte e dei Controller
 
@@ -1214,82 +1023,6 @@ Non è necessario:
 
 ## Regola fondamentale: Posizionamento dei componenti Blade UI
 
-<<<<<<< HEAD
-## Best Practices
-
-### Gestione delle Rotte e dei Controller
-
-1. **Non creare rotte manualmente**
-   - Utilizzare Filament e Folio per la gestione automatica delle rotte
-   - Le rotte vengono generate automaticamente in base alle risorse e alle pagine
-   - Non aggiungere rotte in `web.php` o altri file di routing
-
-2. **Non creare controller manualmente**
-   - Utilizzare Filament per la gestione delle risorse
-   - Utilizzare Folio per la gestione delle pagine
-   - I controller vengono generati automaticamente
-
-3. **Componenti Blade**
-   - Creare componenti Blade riutilizzabili
-   - Utilizzare i componenti per la gestione dell'UI
-   - I componenti possono essere utilizzati sia in Filament che in Folio
-
-4. **Gestione delle Lingue**
-   - Utilizzare il componente `language-switcher` per il cambio lingua
-   - La localizzazione viene gestita automaticamente da Filament e Folio
-   - Non è necessario creare controller o rotte specifiche per la gestione delle lingue
-
-## Componenti Disponibili
-
-### Language Switcher
-
-```blade
-<x-ui::language-switcher />
-```
-
-Il componente gestisce automaticamente:
-- Cambio lingua
-- Persistenza della selezione
-- Traduzioni
-- UI/UX
-
-Non è necessario:
-- Creare controller
-- Aggiungere rotte
-- Gestire la logica di cambio lingua
-
-### User Menu
-
-```blade
-<x-ui::user-menu />
-```
-
-Il componente gestisce automaticamente:
-- Menu utente
-- Autenticazione
-- Profilo utente
-- Logout
-
-Non è necessario:
-- Creare controller
-- Aggiungere rotte
-- Gestire la logica di autenticazione
-
-## Utilizzo dei Componenti
-
-1. **Importazione**
-   ```blade
-   @php
-   use Modules\UI\View\Components\LanguageSwitcher;
-   @endphp
-   ```
-
-2. **Utilizzo**
-   ```blade
-   <x-ui::language-switcher />
-   ```
-
-=======
 3. **Personalizzazione**
    ```blade
    <x-ui::language-switcher
@@ -1310,74 +1043,3 @@ Non è necessario:
 - Modificare file di routing
 - Creare controller personalizzati
 - Gestire manualmente le rotte
-=======
-1. Utilizzare i componenti esistenti invece di crearne di nuovi
-2. Mantenere la consistenza nelle props e negli slot
-3. Documentare eventuali modifiche o estensioni
-4. Testare la responsività su diversi dispositivi
-
-## Temi
-- I componenti supportano i temi tramite Tailwind
-- Utilizzare le classi di utility per personalizzazioni
-- Rispettare le variabili CSS definite nel tema 
-
-## Configurazione Globale
-
-### Tema
-```php
-// config/ui.php
-return [
-    'theme' => [
-        'colors' => [
-            'primary' => '#4CAF50',
-            'secondary' => '#2196F3',
-            'success' => '#4CAF50',
-            'danger' => '#F44336',
-            'warning' => '#FFC107'
-        ],
-        'fonts' => [
-            'base' => 'Inter',
-            'mono' => 'JetBrains Mono'
-        ]
-    ]
-];
-```
-
-### Personalizzazione
-```php
-// Pubblicare assets
-php artisan vendor:publish --tag=ui-assets
-
-// Pubblicare configurazione
-php artisan vendor:publish --tag=ui-config
-
-// Pubblicare views
-php artisan vendor:publish --tag=ui-views
-``` 
-
----
-
-
-
-``` 
-
-
-``` 
-``` 
-``` 
-
->>>>>>> 2cb2abd (.)
-=======
-> **ATTENZIONE:** MAI posizionare componenti Blade UI condivisi nella cartella globale `resources/views/components/`. Ogni componente condiviso deve essere SEMPRE in `Modules/UI/resources/views/components/ui/`.
->
-> **Motivazione:** Questo garantisce modularità, possibilità di override sicuro, separazione delle responsabilità e coerenza architetturale.
->
-> Esempio corretto per il logo:
-> ```
-> Modules/UI/resources/views/components/ui/logo.blade.php
-> ```
->
-> Se il componente viene posizionato nella cartella globale, Laravel potrebbe non risolvere correttamente il namespace, causando errori e comportamenti inattesi.
->
-> **Nota storica:** Questo errore è stato commesso in passato, posizionando `logo.blade.php` nella cartella globale. Ora la regola è documentata e va seguita in tutti i moduli che forniscono componenti Blade personalizzati.
->>>>>>> d9c0b9b (.)
