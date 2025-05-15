@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 return array (
   'fields' => 
   array (
@@ -27,26 +23,3 @@ return array (
     ),
   ),
 );
-<<<<<<< Updated upstream
-=======
-declare(strict_types=1);
-
-return [
-    'fields' => [
-        'text' => [
-            'label' => 'Testo',
-        ],
-        'level' => [
-            'label' => 'Grandezza',
-        ],
-        '_tpl' => [
-            'label' => '_tpl',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-    ],
-];
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes

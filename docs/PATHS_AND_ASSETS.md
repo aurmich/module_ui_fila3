@@ -8,7 +8,7 @@
 >
 > **Soluzione:** Seguire SEMPRE la regola documentata qui sotto e aggiornata anche in README.md e nella root docs/links.md.
 
-# Gestione dei Percorsi e degli Asset in SaluteOra
+# Gestione dei Percorsi e degli Asset 
 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -19,7 +19,7 @@
 
 ### Struttura delle Directory
 
-In SaluteOra, è fondamentale rispettare la struttura corretta delle directory per gli asset pubblici:
+, è fondamentale rispettare la struttura corretta delle directory per gli asset pubblici:
 
 ```
 /var/www/html/saluteora/

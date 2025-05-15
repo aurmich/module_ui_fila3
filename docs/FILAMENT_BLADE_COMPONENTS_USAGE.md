@@ -1,4 +1,4 @@
-# Utilizzo dei Componenti Blade di Filament in SaluteOra
+# Utilizzo dei Componenti Blade di Filament 
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -9,7 +9,7 @@
 
 ## Panoramica
 
-Questo documento descrive l'utilizzo corretto dei componenti Blade nativi di Filament in SaluteOra, con particolare attenzione alla sostituzione dei componenti personalizzati con quelli forniti da Filament.
+Questo documento descrive l'utilizzo corretto dei componenti Blade nativi di Filament , con particolare attenzione alla sostituzione dei componenti personalizzati con quelli forniti da Filament.
 
 ## Componenti Disponibili
 
@@ -182,7 +182,7 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
 
 3. **NON nidificare** elementi dropdown in modo errato - Rispettare la struttura gerarchica dei componenti Filament.
 
-## Gestione delle Rotte in SaluteOra
+## Gestione delle Rotte 
 
 ### Regole Fondamentali
 
@@ -220,4 +220,4 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
 
 ## Conclusione
 
-Utilizzando i componenti Blade nativi di Filament, possiamo garantire una maggiore coerenza visiva, una migliore manutenibilità del codice e un'esperienza utente più fluida in SaluteOra. Inoltre, possiamo beneficiare degli aggiornamenti e dei miglioramenti futuri di Filament senza dover modificare i nostri componenti personalizzati.
+Utilizzando i componenti Blade nativi di Filament, possiamo garantire una maggiore coerenza visiva, una migliore manutenibilità del codice e un'esperienza utente più fluida . Inoltre, possiamo beneficiare degli aggiornamenti e dei miglioramenti futuri di Filament senza dover modificare i nostri componenti personalizzati.

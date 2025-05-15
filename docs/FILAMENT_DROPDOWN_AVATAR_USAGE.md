@@ -1,4 +1,4 @@
-# Utilizzo dei Componenti Filament Dropdown e Avatar in SaluteOra
+# Utilizzo dei Componenti Filament Dropdown e Avatar 
 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -8,7 +8,7 @@
 
 ## Panoramica
 
-Questo documento descrive l'implementazione e l'utilizzo dei componenti dropdown e avatar di Filament in SaluteOra, con particolare attenzione alla gestione degli utenti e alle azioni correlate.
+Questo documento descrive l'implementazione e l'utilizzo dei componenti dropdown e avatar di Filament , con particolare attenzione alla gestione degli utenti e alle azioni correlate.
 
 ## Componente Avatar
 
@@ -36,7 +36,7 @@ Il componente `x-filament::avatar` è utilizzato per visualizzare l'immagine del
 
 ## Dropdown Utente con Alpine.js
 
-In SaluteOra, il dropdown utente è implementato utilizzando Alpine.js per la gestione degli stati e delle transizioni. Questo approccio è preferito rispetto all'utilizzo diretto di `x-filament::dropdown` quando si necessita di maggiore controllo sull'interattività e sull'aspetto del dropdown.
+, il dropdown utente è implementato utilizzando Alpine.js per la gestione degli stati e delle transizioni. Questo approccio è preferito rispetto all'utilizzo diretto di `x-filament::dropdown` quando si necessita di maggiore controllo sull'interattività e sull'aspetto del dropdown.
 
 ### Gestione degli Utenti Autenticati e Non Autenticati
 

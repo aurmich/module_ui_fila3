@@ -191,4 +191,4 @@ Per visualizzare correttamente le bandiere, è necessario:
 
 ## Conclusione
 
-L'utilizzo dei componenti SVG delle bandiere del modulo UI è il modo più efficace per rendere il selettore di lingue nell'header più accattivante e visibile. Questi componenti sono già integrati in SaluteOra e possono essere facilmente utilizzati in qualsiasi parte dell'applicazione.
+L'utilizzo dei componenti SVG delle bandiere del modulo UI è il modo più efficace per rendere il selettore di lingue nell'header più accattivante e visibile. Questi componenti sono già integrati  e possono essere facilmente utilizzati in qualsiasi parte dell'applicazione.

@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 # AVVISO IMPORTANTE (2025-05-13)
 
 > **Errore riscontrato:** Il componente `logo.blade.php` era stato posizionato erroneamente in `resources/views/components/ui/` invece che in `Modules/UI/resources/views/components/ui/`.
@@ -10,22 +6,11 @@
 >
 > **Soluzione:** Seguire SEMPRE la regola documentata in [PATHS_AND_ASSETS.md](./PATHS_AND_ASSETS.md) e aggiornata anche nella root docs/links.md.
 
-<<<<<<< Updated upstream
 # Modulo UI
 
 ## Indice
 
 ### Versione Dettagliata
-=======
-=======
->>>>>>> Stashed changes
-# Modulo UI
-
-## Introduzione
-Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riutilizzabili, layout e temi. Si integra con Filament, Livewire e Volt per offrire un'esperienza utente coerente e moderna.
-
-## Indice
->>>>>>> c6eb299 (.)
 - [Architettura e Componenti](#architettura-e-componenti)
 - [Filament](#filament)
 - [Livewire e Volt](#livewire-e-volt)
@@ -37,14 +22,6 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - [Dipendenze](#dipendenze)
 - [Utilizzo](#utilizzo)
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-### Versione Dettagliata
-- [Panoramica](#panoramica)
-- [Gestione delle Rotte e dei Controller](#gestione-delle-rotte-e-dei-controller)
-
->>>>>>> Stashed changes
 ### Versione Alternativa
 - Componenti Base
 - Layout System
@@ -53,11 +30,8 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 
 ## Best Practices
 
-<<<<<<< Updated upstream
 ### Versione Dettagliata
 
-=======
->>>>>>> Stashed changes
 ### Gestione delle Rotte e dei Controller
 
 1. **Non creare rotte manualmente**
@@ -100,14 +74,9 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 - [Vedi anche: User/docs/README.md](../../User/docs/README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 
-<<<<<<< Updated upstream
 ## Introduzione
 Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riutilizzabili, layout e temi. Si integra con Filament, Livewire e Volt per offrire un'esperienza utente coerente e moderna.
 
-=======
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes
 ## Convenzioni di Namespace
 - Tutti i componenti devono seguire le convenzioni di namespace del progetto
 - I namespace devono riflettere la struttura delle directory
@@ -120,24 +89,11 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - Test di copertura al 100%
 
 ## Architettura e Componenti
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 - [Componenti Base](./components/README.md)
 - [Layout System](./components/layout.md)
 - [Theme System](./themes/README.md)
 - [Form System](./forms/README.md)
 - [Blocks e Sezioni](./blocks/README.md)
-<<<<<<< Updated upstream
-=======
-- Componenti Base
-- Layout System
-- Theme System
-- Form System
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes
 
 ## Filament
 - Resource Management
@@ -162,9 +118,7 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - Form Handling
 - UI Updates
 
-<<<<<<< Updated upstream
 ## Best Practices
-<<<<<<< HEAD
 
 ### Gestione delle Rotte e dei Controller
 
@@ -193,14 +147,6 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
    - Documentare sempre i componenti e le loro funzionalità
    - Includere esempi di utilizzo
    - Specificare le dipendenze e i requisiti
-=======
-- Component Design
-- State Management
-- Performance
-
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md)
 - [Bottlenecks](./bottlenecks.md)
@@ -428,60 +374,75 @@ class UserResource extends XotBaseResource
 <div class="bg-background text-foreground">
 ```
 
-## Regola sui Componenti Blade UI
+## Dipendenze Principali
 
-> **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
->
-> `/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/`
->
-> **MAI** in `resources/views/components/ui/` della root Laravel.
+### Moduli
+- **User**: Componenti autenticazione
+- **Xot**: Componenti base
+- **Lang**: Traduzioni UI
 
-Consulta la [documentazione dettagliata sui path e gli asset](./PATHS_AND_ASSETS.md) per motivazione, esempi e best practices.
+### Pacchetti
+- Laravel Framework
+- Filament
+- Livewire
+- Tailwind CSS
 
-## Server MCP consigliati per UI
+## Roadmap
 
-Per il modulo UI, si consiglia di utilizzare i seguenti server MCP:
+### Prossime Feature
+1. Nuovi componenti UI
+2. Miglioramento temi
+3. Ottimizzazione performance
 
-- **sequential-thinking**: per orchestrare workflow di generazione componenti UI, brainstorming di design e automazione di processi di revisione UI.
-- **memory**: per mantenere una knowledge base di componenti, template, pattern di design e storico delle revisioni UI.
-- **filesystem**: per esportare/importare componenti, template o asset grafici.
-- **postgres**: se il modulo utilizza un database PostgreSQL per archiviare configurazioni UI, template o log di utilizzo.
-- **puppeteer**: per automatizzare test end-to-end, generazione di screenshot di componenti, esportazione PDF o scraping di UI da siti esterni.
+### Miglioramenti Pianificati
+1. Refactoring componenti
+2. Miglioramento accessibilità
+3. Ottimizzazione assets
 
-**Nota:**
-- Usa solo server MCP Node.js disponibili su npm e avviabili con `npx`.
-- Configura sempre gli argomenti obbligatori (es. directory per filesystem, stringa di connessione per postgres).
-- Non usare fetch, mysql o redis se non attivo.
+## Contribuire
 
-Per dettagli e best practice consulta la guida generale MCP nel workspace.
+### Setup Sviluppo
+1. Clona il repository
+2. Installa le dipendenze
+3. Configura l'ambiente
+4. Esegui i test
+
+### Convenzioni di Codice
+- Seguire PSR-12
+- Utilizzare type hints
+- Documentare il codice
+- Scrivere test unitari
+
+### Processo di Pull Request
+1. Crea un branch feature
+2. Implementa le modifiche
+3. Aggiungi i test
+4. Aggiorna la documentazione
+5. Crea la PR
+
+## Troubleshooting
+
+### Problemi Comuni
+1. Stili non applicati
+2. Componenti non renderizzati
+3. Temi non funzionanti
+
+### Soluzioni
+1. Verifica assets
+2. Controlla cache
+3. Consulta documentazione
 
 ## Riferimenti
 
-* [Filament](https://filamentphp.com)
-* [Livewire](https://laravel-livewire.com)
-* [Volt](https://livewire.laravel.com/docs/volt)
-* [Laravel](https://laravel.com)
-* [Tailwind](https://tailwindcss.com)
-* [Alpine](https://alpinejs.dev)
-* [Folio](https://laravel.com/docs/routing#folio)
+### Documentazione
+- [Laravel Blade](https://laravel.com/docs/12.x/blade)
+- [Filament](https://filamentphp.com/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
 
-## Link Utili
-* [Documentazione Laravel](https://laravel.com/docs)
-* [Documentazione Filament](https://filamentphp.com/docs)
-* [Documentazione Livewire](https://laravel-livewire.com/docs)
-* [Documentazione Volt](https://livewire.laravel.com/docs/volt)
-* [Documentazione Tailwind](https://tailwindcss.com/docs)
-* [Documentazione Alpine](https://alpinejs.dev/docs)
-
-## Documentazione Collegata
-* [README.md](laravel/Modules/Xot/docs/README.md)
-* [README.md](../../../User/docs/README.md)
-* [README.md](../../../Tenant/docs/README.md)
-* [README.md](laravel/vendor/mockery/mockery/docs/README.md)
-* [README.md](../../../Chart/docs/README.md)
-* [README.md](../../../Reporting/docs/README.md)
-* [README.md](../../../Gdpr/docs/phpstan/README.md)
-* [README.md](../../../Gdpr/docs/README.md)
+### Collegamenti Interni
+- [User Module](../User/docs/README.md)
+- [Xot Module](../Xot/docs/README.md)
+- [Lang Module](../Lang/docs/README.md)
 
 ## Changelog
 
@@ -585,9 +546,7 @@ Per dettagli e best practice consulta la guida generale MCP nel workspace.
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
-<<<<<<< Updated upstream
 
-<<<<<<< HEAD
 ## Regola sui Componenti Blade UI
 
 > **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
@@ -617,10 +576,3 @@ Per il modulo UI, si consiglia di utilizzare i seguenti server MCP:
 
 Per dettagli e best practice consulta la guida generale MCP nel workspace.
 
-=======
-
----
-
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes

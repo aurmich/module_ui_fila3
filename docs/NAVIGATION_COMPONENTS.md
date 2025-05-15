@@ -1,4 +1,4 @@
-# Componenti di Navigazione in SaluteOra
+# Componenti di Navigazione 
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -9,7 +9,7 @@
 
 ## Panoramica
 
-Questo documento descrive l'utilizzo corretto dei componenti di navigazione in SaluteOra, con particolare attenzione alla gestione condizionale dell'autenticazione e alla localizzazione.
+Questo documento descrive l'utilizzo corretto dei componenti di navigazione , con particolare attenzione alla gestione condizionale dell'autenticazione e alla localizzazione.
 
 ## Componenti Disponibili
 

@@ -10,49 +10,39 @@ use Modules\UI\Filament\Forms\Components\RadioImage;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 use Modules\Xot\Actions\View\GetViewsSiblingsAndSelfAction;
 
-/**
- * Classe per la gestione del blocco slider in Filament.
- * Permette di creare e configurare slider personalizzati con diverse opzioni di visualizzazione.
- */
 class Slider
 {
-    /**
-     * Crea un nuovo blocco slider.
-     *
-     * @param string $name Nome del blocco
-     * @param string $context Contesto di utilizzo
-     * @return Block Blocco slider configurato
-     */
     public static function make(
         string $name = 'slider',
         string $context = 'form',
     ): Block {
+        // $view = 'ui::components.blocks.slider.v1';
+        // $views = app(GetViewsSiblingsAndSelfAction::class)->execute($view);
+        // dddx('a');
         $options = app(GetViewBlocksOptionsByTypeAction::class)
             ->execute('slider', true);
 
+        // dddx($options);
         return Block::make($name)
             ->schema(
                 [
                     TextInput::make('method')
+
                         ->hint('Inserisci il nome del metodo da richiamare nel tema')
                         ->required(),
+
+                    // Select::make('_tpl')
+                    //     ->label('layout')
+                    //     ->options($options),
+                    // ->afterStateHydrated(static fn ($state, $set) => $state || $set('level', 'h2')),
+
                     RadioImage::make('view')
                         ->options($options),
                 ]
             )
             ->columns(1);
     }
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 
-=======
-
-    /**
-     * Restituisce lo schema del form per la configurazione dello slider.
-     *
-     * @return array<string, mixed> Schema del form
-     */
->>>>>>> Stashed changes
     public static function getFormSchema(): array
     {
         return [
@@ -65,9 +55,4 @@ class Slider
                 ->required(),
         ];
     }
-<<<<<<< Updated upstream
-=======
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes
 }

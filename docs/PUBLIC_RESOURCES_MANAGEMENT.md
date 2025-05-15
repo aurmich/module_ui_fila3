@@ -1,4 +1,4 @@
-# Gestione delle Risorse Pubbliche in SaluteOra
+# Gestione delle Risorse Pubbliche 
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -9,11 +9,11 @@
 
 ## Panoramica
 
-Questo documento descrive la corretta gestione delle risorse pubbliche (immagini, CSS, JavaScript, ecc.) in SaluteOra, con particolare attenzione alla struttura delle cartelle e alle best practices da seguire.
+Questo documento descrive la corretta gestione delle risorse pubbliche (immagini, CSS, JavaScript, ecc.) , con particolare attenzione alla struttura delle cartelle e alle best practices da seguire.
 
 ## Struttura delle Cartelle
 
-La struttura corretta per le risorse pubbliche in SaluteOra è la seguente:
+La struttura corretta per le risorse pubbliche  è la seguente:
 
 ```
 /var/www/html/saluteora/

@@ -1,4 +1,4 @@
-# Utilizzo dei Componenti Filament in SaluteOra
+# Utilizzo dei Componenti Filament 
 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -8,7 +8,7 @@
 
 ## Panoramica
 
-Questo documento descrive l'utilizzo corretto dei componenti Filament in SaluteOra, con particolare attenzione alle icone, avatar e altri elementi UI comuni.
+Questo documento descrive l'utilizzo corretto dei componenti Filament , con particolare attenzione alle icone, avatar e altri elementi UI comuni.
 
 ## Struttura dei Componenti Filament
 

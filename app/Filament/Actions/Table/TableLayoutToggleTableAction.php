@@ -47,18 +47,9 @@ class TableLayoutToggleTableAction extends Action
     {
         return $this->getTableLayout();
     }
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
 
     public static function getDefaultName(): string
     {
         return 'table_layout_toggle';
     }
-<<<<<<< Updated upstream
-=======
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes
 }

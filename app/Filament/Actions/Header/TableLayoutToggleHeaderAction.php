@@ -35,20 +35,8 @@ class TableLayoutToggleHeaderAction extends Action
             );
     }
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
     public static function getDefaultName(): string
     {
         return 'table_layout_toggle';
-=======
-    public static function getDefaultName(): ?string
-    {
-        return 'table-layout-toggle-header';
->>>>>>> c6eb299 (.)
-=======
-    public static function getDefaultName(): string
-    {
-        return 'table_layout_toggle';
->>>>>>> Stashed changes
     }
 }

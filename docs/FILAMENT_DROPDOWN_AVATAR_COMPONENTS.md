@@ -1,4 +1,4 @@
-# Componenti Dropdown, Avatar e Loading Indicator di Filament in SaluteOra
+# Componenti Dropdown, Avatar e Loading Indicator di Filament 
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -10,7 +10,7 @@
 
 ## Panoramica
 
-Questo documento descrive l'utilizzo corretto dei componenti Blade nativi di Filament per dropdown, avatar e indicatori di caricamento in SaluteOra. Questi componenti offrono un'interfaccia utente coerente e professionale, seguendo le convenzioni di design di Filament.
+Questo documento descrive l'utilizzo corretto dei componenti Blade nativi di Filament per dropdown, avatar e indicatori di caricamento . Questi componenti offrono un'interfaccia utente coerente e professionale, seguendo le convenzioni di design di Filament.
 
 ## Componente Dropdown
 
