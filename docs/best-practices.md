@@ -237,6 +237,7 @@ class AdvancedForm extends Component
 - Descrizione chiara
 - Esempi di utilizzo
 - Configurazioni disponibili
+<<<<<<< HEAD
 ### Versione HEAD
 
 - Breaking changes 
@@ -253,3 +254,6 @@ class AdvancedForm extends Component
 
 ---
 
+=======
+- Breaking changes 
+>>>>>>> 5512b9a (.)

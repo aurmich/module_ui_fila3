@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 Note: Using configuration file /var/www/html/_bases/base_quaeris_fila3_mono/laravel/phpstan.neon.
    0/308 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0%[1G[2K  20/308 [▓░░░░░░░░░░░░░░░░░░░░░░░░░░░]   6%[1G[2K 260/308 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  84%[1G[2K 308/308 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
 
+=======
+>>>>>>> 5396bf4 (.)
 {"totals":{"errors":0,"file_errors":0},"files":{},"errors":[]}

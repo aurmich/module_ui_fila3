@@ -30,7 +30,11 @@ interface HasTableLayout
 
 ## Utilizzo
 ```php
+<<<<<<< HEAD
 use Modules\UI\app\Filament\Actions\Table\TableLayoutToggleTableAction;
+=======
+use Modules\UI\ment\Actions\Table\TableLayoutToggleTableAction;
+>>>>>>> 5512b9a (.)
 
 class MyListRecords extends ListRecords
 {

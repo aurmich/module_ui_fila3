@@ -7,7 +7,21 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 - Custom SVG per icone specifiche
 
 ## Implementazione
+<<<<<<< HEAD
 ### Versione Dettagliata
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+### Versione Dettagliata
+=======
+>>>>>>> c6eb299 (.)
+=======
+### Versione Dettagliata
+>>>>>>> Stashed changes
+=======
+>>>>>>> 5512b9a (.)
+>>>>>>> 5396bf4 (.)
 1. **Heroicons**
    - Utilizzare i componenti Blade
    - Supporto per stili solid/outline
@@ -23,6 +37,12 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
    - Utilizzare il componente x-icon
    - Supporto per colori e dimensioni
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+>>>>>>> 5396bf4 (.)
 ### Versione Alternativa
 (vedi marker git, integrare eventuali dettagli tecnici aggiuntivi dalle versioni branch)
 
@@ -35,12 +55,38 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 
 [Classe GetAllIconsAction](/laravel/Modules/UI/app/Actions/Icon/GetAllIconsAction.php)
 
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+
+### Versione Incoming
+
+
+---
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)
+>>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> 5512b9a (.)
+>>>>>>> 5396bf4 (.)
 ## Best Practices
 - Mantenere consistenza nell'uso delle icone
 - Preferire Heroicons per UI di sistema
 - Usare Font Awesome per icone social/brand
 - Custom SVG solo per icone specifiche del progetto
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+>>>>>>> 5396bf4 (.)
 ## Decisione Architetturale
 Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
 
@@ -49,14 +95,45 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 - [Vedi anche: UI/docs/components.md](./components.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> 5512b9a (.)
+>>>>>>> 5396bf4 (.)
 ## Esempi
 ```blade
 <x-heroicon-o-user class="w-6 h-6" />
 <i class="fa fa-user"></i>
 <x-icon name="custom-logo" class="w-8 h-8" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> 5396bf4 (.)
 ```
 
 ## Collegamenti
 - [Componenti UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/components.md)
 - [Documentazione Filament](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/filament/README.md)
+<<<<<<< HEAD
 - [Convenzioni di Naming](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/naming-conventions.md)
+=======
+- [Convenzioni di Naming](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/naming-conventions.md)
+<<<<<<< Updated upstream
+=======
+```
+>>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes
+=======
+```
+>>>>>>> 5512b9a (.)
+>>>>>>> 5396bf4 (.)

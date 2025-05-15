@@ -1,5 +1,11 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+>>>>>>> 5396bf4 (.)
 return array (
   'fields' => 
   array (
@@ -21,3 +27,31 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 5512b9a (.)
+declare(strict_types=1);
+
+return [
+    'fields' => [
+        'caption' => [
+            'label' => 'caption',
+        ],
+        'image' => [
+            'label' => 'image',
+        ],
+        'img_uuid' => [
+            'label' => 'img_uuid',
+        ],
+    ],
+];
+<<<<<<< HEAD
+>>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> 5512b9a (.)
+>>>>>>> 5396bf4 (.)

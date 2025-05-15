@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> 5396bf4 (.)
 return array (
   'fields' => 
   array (
@@ -17,3 +25,28 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> 5512b9a (.)
+declare(strict_types=1);
+
+return [
+    'fields' => [
+        'newstate' => [
+            'label' => 'newstate',
+        ],
+        'pack' => [
+            'label' => 'pack',
+        ],
+    ],
+];
+<<<<<<< HEAD
+>>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> 5512b9a (.)
+>>>>>>> 5396bf4 (.)
