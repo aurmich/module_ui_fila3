@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AVVISO IMPORTANTE (2025-05-13)
 
 > **Errore riscontrato:** Il componente `logo.blade.php` era stato posizionato erroneamente in `resources/views/components/ui/` invece che in `Modules/UI/resources/views/components/ui/`.
@@ -11,6 +12,14 @@
 ## Indice
 
 ### Versione Dettagliata
+=======
+# Modulo UI
+
+## Introduzione
+Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riutilizzabili, layout e temi. Si integra con Filament, Livewire e Volt per offrire un'esperienza utente coerente e moderna.
+
+## Indice
+>>>>>>> c6eb299 (.)
 - [Architettura e Componenti](#architettura-e-componenti)
 - [Filament](#filament)
 - [Livewire e Volt](#livewire-e-volt)
@@ -22,6 +31,7 @@
 - [Dipendenze](#dipendenze)
 - [Utilizzo](#utilizzo)
 
+<<<<<<< HEAD
 ### Versione Alternativa
 - Componenti Base
 - Layout System
@@ -77,6 +87,8 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 ## Introduzione
 Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riutilizzabili, layout e temi. Si integra con Filament, Livewire e Volt per offrire un'esperienza utente coerente e moderna.
 
+=======
+>>>>>>> c6eb299 (.)
 ## Convenzioni di Namespace
 - Tutti i componenti devono seguire le convenzioni di namespace del progetto
 - I namespace devono riflettere la struttura delle directory
@@ -89,11 +101,18 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - Test di copertura al 100%
 
 ## Architettura e Componenti
+<<<<<<< HEAD
 - [Componenti Base](./components/README.md)
 - [Layout System](./components/layout.md)
 - [Theme System](./themes/README.md)
 - [Form System](./forms/README.md)
 - [Blocks e Sezioni](./blocks/README.md)
+=======
+- Componenti Base
+- Layout System
+- Theme System
+- Form System
+>>>>>>> c6eb299 (.)
 
 ## Filament
 - Resource Management
@@ -119,6 +138,7 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
 - UI Updates
 
 ## Best Practices
+<<<<<<< HEAD
 
 ### Gestione delle Rotte e dei Controller
 
@@ -147,6 +167,12 @@ Il modulo UI gestisce l'interfaccia utente del sistema, fornendo componenti riut
    - Documentare sempre i componenti e le loro funzionalità
    - Includere esempi di utilizzo
    - Specificare le dipendenze e i requisiti
+=======
+- Component Design
+- State Management
+- Performance
+
+>>>>>>> c6eb299 (.)
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md)
 - [Bottlenecks](./bottlenecks.md)
@@ -547,6 +573,7 @@ class UserResource extends XotBaseResource
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 ## Regola sui Componenti Blade UI
 
 > **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
@@ -576,3 +603,8 @@ Per il modulo UI, si consiglia di utilizzare i seguenti server MCP:
 
 Per dettagli e best practice consulta la guida generale MCP nel workspace.
 
+=======
+
+---
+
+>>>>>>> c6eb299 (.)

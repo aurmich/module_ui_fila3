@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @props(['user' => auth()->user()])
 
 <div class="relative">
@@ -53,3 +54,8 @@
         @endauth
     </x-filament::dropdown>
 </div>
+=======
+<div>
+  profile dropdown ui
+</div>
+>>>>>>> c6eb299 (.)

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -29,3 +30,26 @@ return array (
     ),
   ),
 );
+=======
+declare(strict_types=1);
+
+return [
+    'fields' => [
+        'version' => [
+            'label' => 'version',
+        ],
+        'subtitle' => [
+            'label' => 'subtitle',
+        ],
+        'title' => [
+            'label' => 'title',
+        ],
+        'image' => [
+            'label' => 'image',
+        ],
+        'gallery' => [
+            'label' => 'gallery',
+        ],
+    ],
+];
+>>>>>>> c6eb299 (.)

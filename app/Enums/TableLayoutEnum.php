@@ -88,13 +88,22 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         if (! method_exists($caller, 'getGridTableColumns')) {
             throw new \Exception('method getGridTableColumns not found in ['.get_class($caller).']');
         }
+<<<<<<< HEAD
         if (! method_exists($caller, 'getTableColumns')) {
             throw new \Exception('method getTableColumns not found in ['.get_class($caller).']');
+=======
+        if (! method_exists($caller, 'getListTableColumns')) {
+            throw new \Exception('method getListTableColumns not found in ['.get_class($caller).']');
+>>>>>>> c6eb299 (.)
         }
 
         $columns = $this->isGridLayout()
             ? $caller->getGridTableColumns()
+<<<<<<< HEAD
             : $caller->getTableColumns();
+=======
+            : $caller->getListTableColumns();
+>>>>>>> c6eb299 (.)
 
         Assert::isArray($columns);
 

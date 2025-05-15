@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Providers;
 
+<<<<<<< HEAD
 use function Safe\realpath;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Foundation\AliasLoader;
@@ -33,20 +34,41 @@ class UIServiceProvider extends XotBaseServiceProvider
      *
      * @var string
      */
+=======
+use Illuminate\Foundation\AliasLoader;
+use Illuminate\Support\Facades\Blade;
+use Modules\UI\Services\UIService;
+use Modules\Xot\Providers\XotBaseServiceProvider;
+
+use function Safe\realpath;
+
+/**
+ * ---.
+ */
+class UIServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = 'UI';
+
+>>>>>>> c6eb299 (.)
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
     /**
+<<<<<<< HEAD
      * Boot del service provider.
      *
      * Configura i componenti Blade e altre funzionalità del modulo UI.
      *
      * @return void
+=======
+     * Undocumented function.
+>>>>>>> c6eb299 (.)
      */
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
         
         // La registrazione dei Blade components modulari avviene tramite GetModulePathByGeneratorAction
         // per garantire la corretta risoluzione dei path secondo la struttura dei moduli
@@ -73,5 +95,21 @@ class UIServiceProvider extends XotBaseServiceProvider
     public function getComponentViewPath(): string
     {
         return app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
+=======
+
+        $relativePath = config('modules.paths.generator.component-view.path');
+        $components_path = module_path($this->name, $relativePath);
+
+        // $components_path = realpath(__DIR__.'/../resources/views/components');
+        Blade::anonymousComponentPath($components_path);
+    }
+
+    public function register(): void
+    {
+        parent::register();
+        // $loader = AliasLoader::getInstance();
+        // $loader->alias('ui', UIService::class);
+        // $this->registerBladeIcons(); //moved to XotBaseServiceProvider
+>>>>>>> c6eb299 (.)
     }
 }

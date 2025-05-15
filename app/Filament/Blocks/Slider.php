@@ -42,6 +42,7 @@ class Slider
             )
             ->columns(1);
     }
+<<<<<<< HEAD
 
     public static function getFormSchema(): array
     {
@@ -55,4 +56,6 @@ class Slider
                 ->required(),
         ];
     }
+=======
+>>>>>>> c6eb299 (.)
 }

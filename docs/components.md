@@ -1,5 +1,6 @@
 # Componenti UI
 
+<<<<<<< HEAD
 ## Indice
 
 ### Versione Dettagliata
@@ -440,10 +441,143 @@ CustomDataTable::make()
             ]
         ]
     ])
+=======
+### Versione HEAD
+
+## Panoramica
+Il modulo UI fornisce un set completo di componenti riutilizzabili per costruire interfacce coerenti e accessibili.
+
+## Componenti Base
+
+### Button
+```php
+<x-ui.button
+    variant="primary|secondary|outline"
+    size="sm|md|lg"
+    :disabled="false"
+>
+    Testo Pulsante
+</x-ui.button>
+```
+
+### Input
+```php
+<x-ui.input
+    type="text|email|password"
+    name="field_name"
+    label="Label Campo"
+    :error="$errors->first('field_name')"
+/>
+```
+
+### Select
+```php
+<x-ui.select
+    name="field_name"
+    label="Label Campo"
+    :options="$options"
+    :value="$selectedValue"
+/>
+```
+
+## Componenti Layout
+
+### Card
+```php
+<x-ui.card>
+    <x-slot name="header">
+        Header Card
+    </x-slot>
+    
+    Contenuto Card
+    
+    <x-slot name="footer">
+        Footer Card
+    </x-slot>
+</x-ui.card>
+```
+
+### Grid
+```php
+<x-ui.grid
+    cols="1 md:2 lg:3"
+    gap="4"
+>
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+</x-ui.grid>
+```
+
+### Container
+```php
+<x-ui.container
+    size="sm|md|lg|xl"
+    padding="4"
+>
+    Contenuto Container
+</x-ui.container>
+```
+
+## Componenti Form
+
+### Form Group
+```php
+<x-ui.form-group
+    label="Label Campo"
+    name="field_name"
+    :error="$errors->first('field_name')"
+>
+    <x-ui.input name="field_name" />
+</x-ui.form-group>
+```
+
+### Checkbox
+```php
+<x-ui.checkbox
+    name="field_name"
+    label="Label Checkbox"
+    :checked="$isChecked"
+/>
+```
+
+### Radio
+```php
+<x-ui.radio
+    name="field_name"
+    label="Label Radio"
+    value="option_value"
+    :checked="$isSelected"
+/>
+```
+
+## Componenti Feedback
+
+### Alert
+```php
+<x-ui.alert
+    type="success|error|warning|info"
+    :dismissible="true"
+>
+    Messaggio Alert
+</x-ui.alert>
+```
+
+### Toast
+```php
+<x-ui.toast
+    type="success|error"
+    :auto-close="true"
+    :duration="5000"
+>
+    Messaggio Toast
+</x-ui.toast>
+>>>>>>> c6eb299 (.)
 ```
 
 ## Best Practices
 
+<<<<<<< HEAD
 ### 1. Utilizzo dei Componenti Filament
 
 #### Preferire i Componenti Filament
@@ -596,6 +730,34 @@ return [
 
 ## Note
 Questa documentazione fornisce una panoramica dettagliata dei componenti disponibili. Per i dettagli completi, consultare la documentazione specifica nei moduli e la documentazione ufficiale di Filament.
+=======
+1. **Riutilizzo**
+   - Preferire componenti standard
+   - Evitare duplicazione
+   - Mantenere coerenza
+
+2. **Accessibilità**
+   - Usare attributi ARIA
+   - Supportare keyboard
+   - Fornire feedback
+
+3. **Personalizzazione**
+   - Usare props per varianti
+   - Mantenere default sensati
+   - Documentare opzioni
+
+## Collegamenti Bidirezionali
+- [README](README.md)
+- [Design System](design-system.md)
+- [Layout](layouts-and-themes.md)
+
+## Vedi Anche
+- [Filament Components](../../Cms/docs/filament-components.md)
+- [Theme Components](../../Theme/docs/components.md)
+- [Form Components](form-components.md)
+## Note
+Questa documentazione fornisce una panoramica dei componenti disponibili. Per i dettagli completi, consultare la documentazione specifica nei moduli. 
+>>>>>>> c6eb299 (.)
 
 ## Collegamenti tra versioni di components.md
 * [components.md](../../../UI/docs/components.md)
@@ -603,6 +765,10 @@ Questa documentazione fornisce una panoramica dettagliata dei componenti disponi
 * [components.md](../../../Cms/docs/components.md)
 * [components.md](../../../../Themes/One/docs/components.md)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c6eb299 (.)
 ### Versione Incoming
 
 ## Form Components
@@ -843,6 +1009,15 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
+<<<<<<< HEAD
+=======
+
+
+=======
+=======
+
+
+>>>>>>> c6eb299 (.)
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -865,6 +1040,44 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
 - SVG icons per modalità chiara e scura
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)
+## Componenti Base
+
+### Forms
+```blade
+<x-ui::form>
+  <x-ui::input name="email" type="email" />
+  <x-ui::button type="submit">Invia</x-ui::button>
+</x-ui::form>
+```
+
+### Tables
+```blade
+<x-ui::table>
+  <x-ui::th>Nome</x-ui::th>
+  <x-ui::td>{{ $user->name }}</x-ui::td>
+</x-ui::table>
+```
+
+### Cards
+```blade
+<x-ui::card>
+  <x-ui::card-header>Titolo</x-ui::card-header>
+  <x-ui::card-body>Contenuto</x-ui::card-body>
+</x-ui::card>
+```
+
+>>>>>>> c6eb299 (.)
 ## Componenti Complessi
 
 ### Modal
@@ -953,6 +1166,7 @@ Modal::make('conferma')
 ```
 
 ## Best Practices
+<<<<<<< HEAD
 
 ### Gestione delle Rotte e dei Controller
 
@@ -1150,3 +1364,70 @@ Non è necessario:
 - Modificare file di routing
 - Creare controller personalizzati
 - Gestire manualmente le rotte
+=======
+1. Utilizzare i componenti esistenti invece di crearne di nuovi
+2. Mantenere la consistenza nelle props e negli slot
+3. Documentare eventuali modifiche o estensioni
+4. Testare la responsività su diversi dispositivi
+
+## Temi
+- I componenti supportano i temi tramite Tailwind
+- Utilizzare le classi di utility per personalizzazioni
+- Rispettare le variabili CSS definite nel tema 
+
+## Configurazione Globale
+
+### Tema
+```php
+// config/ui.php
+return [
+    'theme' => [
+        'colors' => [
+            'primary' => '#4CAF50',
+            'secondary' => '#2196F3',
+            'success' => '#4CAF50',
+            'danger' => '#F44336',
+            'warning' => '#FFC107'
+        ],
+        'fonts' => [
+            'base' => 'Inter',
+            'mono' => 'JetBrains Mono'
+        ]
+    ]
+];
+```
+
+### Personalizzazione
+```php
+// Pubblicare assets
+php artisan vendor:publish --tag=ui-assets
+
+// Pubblicare configurazione
+php artisan vendor:publish --tag=ui-config
+
+// Pubblicare views
+php artisan vendor:publish --tag=ui-views
+``` 
+
+---
+
+
+
+=======
+``` 
+=======
+
+
+``` 
+=======
+``` 
+>>>>>>> aurmich/dev
+=======
+``` 
+>>>>>>> aurmich/dev
+
+=======
+>>>>>>> aurmich/dev
+>>>>>>> aurmich/dev
+>>>>>>> 3e75fd3 (.)
+>>>>>>> c6eb299 (.)
