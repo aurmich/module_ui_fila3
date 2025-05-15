@@ -1,14 +1,5 @@
 <?php
-
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
+declare(strict_types=1);
 return array (
   'fields' => 
   array (
@@ -38,40 +29,3 @@ return array (
     ),
   ),
 );
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> 5512b9a (.)
-declare(strict_types=1);
-
-return [
-    'fields' => [
-        'version' => [
-            'label' => 'version',
-        ],
-        'subtitle' => [
-            'label' => 'subtitle',
-        ],
-        'title' => [
-            'label' => 'title',
-        ],
-        'image' => [
-            'label' => 'image',
-        ],
-        'gallery' => [
-            'label' => 'gallery',
-        ],
-    ],
-];
-<<<<<<< HEAD
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes

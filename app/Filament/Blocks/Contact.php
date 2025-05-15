@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace Modules\UI\Filament\Blocks;
 
 use Filament\Forms\Components\Textarea;

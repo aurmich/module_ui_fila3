@@ -1,16 +1,5 @@
 # Componenti UI
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 ## Indice
 
 ### Versione Dettagliata
@@ -620,17 +609,6 @@ Questa documentazione fornisce una panoramica dettagliata dei componenti disponi
 
 ### CustomSelect
 ```php
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-// Dropdown Base
-<x-filament::dropdown>
-    <x-slot name="trigger">
-        <x-filament::button>
-            Open Menu
-        </x-filament::button>
-    </x-slot>
-=======
 CustomSelect::make('field_name')
     ->label('trans.key')
     ->relationship('relation', 'column')
@@ -655,237 +633,6 @@ MoneyInput::make('premio_lordo')
     ->step(0.01)
     ->minValue(0)
     ->required()
-```
-
-#### Caratteristiche
-- Formattazione automatica
-- Supporto multi valuta
-- Validazione numerica
-- Gestione decimali
-- Maschere di input
->>>>>>> Stashed changes
-
-### DateRangePicker
-```php
-use Modules\UI\Forms\Components\DateRangePicker;
-
-DateRangePicker::make('periodo')
-    ->displayFormat('d/m/Y')
-    ->minDate(today())
-    ->required()
-```
-
-#### Caratteristiche
-- Selezione range date
-- Formati personalizzabili
-- Localizzazione
-- Validazione range
-- Calendario popup
-
-### FileUpload
-```php
-use Modules\UI\Forms\Components\FileUpload;
-
-FileUpload::make('documento')
-    ->disk('s3')
-    ->directory('documenti')
-    ->acceptedFileTypes(['application/pdf'])
-    ->maxSize(5120) // 5MB
-```
-
-## Table Components
-
-<<<<<<< Updated upstream
-#### Input
-```php
-// Input Base
-<x-filament::input
-    type="text"
-    name="field_name"
-    :label="['label' => 'Input Label']"
-    :placeholder="['placeholder' => 'Input Placeholder']"
-/>
-
-// Input con Validazione
-<x-filament::input
-    type="email"
-    name="email"
-    :label="['label' => 'Email']"
-    :rules="['required', 'email']"
-    :error="$errors->first('email')"
-/>
-
-// Input con Maschera
-<x-filament::input
-    type="tel"
-    name="phone"
-    :label="['label' => 'Phone Number']"
-    :mask="['pattern' => '+39 999 999 9999']"
-/>
-
-// Input con Autocomplete
-<x-filament::input
-    type="text"
-    name="address"
-    :label="['label' => 'Address']"
-    :autocomplete="[
-        'source' => $addresses,
-        'minLength' => 3
-    ]"
-/>
-```
-
-#### Select
-```php
-// Select Base
-<x-filament::select
-    name="country"
-    :label="['label' => 'Country']"
-    :options="[
-        'it' => 'Italy',
-        'fr' => 'France',
-        'de' => 'Germany'
-    ]"
-/>
-
-// Select con Ricerca
-<x-filament::select
-    name="user"
-    :label="['label' => 'User']"
-    :options="$users"
-    :searchable="true"
-    :search-column="'name'"
-/>
-
-// Select Multipla
-<x-filament::select
-    name="roles"
-    :label="['label' => 'Roles']"
-    :options="$roles"
-    :multiple="true"
-    :max-items="3"
-/>
-
-// Select con Relazione
-<x-filament::select
-    name="department"
-    :label="['label' => 'Department']"
-    :relationship="[
-        'name' => 'department',
-        'label' => 'name',
-        'value' => 'id'
-    ]"
-/>
-```
-
-## Componenti Personalizzati
-
-### Form Components
-
-#### CustomSelect
-```php
-use Modules\UI\Forms\Components\CustomSelect;
-
-// Select Base con Relazione
-=======
-## Form Components
-
-### CustomSelect
-```php
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-CustomSelect::make('field_name')
-    ->label('trans.key')
-    ->relationship('relation', 'column')
-    ->searchable()
-    ->preload()
-    ->required()
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-// Select con Validazione Personalizzata
-CustomSelect::make('field_name')
-    ->label('trans.key')
-    ->relationship('relation', 'column')
-    ->rules([
-        'required',
-        'exists:table,id'
-    ])
-    ->validationMessages([
-        'required' => 'This field is required',
-        'exists' => 'Selected value is invalid'
-    ])
-
-// Select con Callback di Formattazione
-CustomSelect::make('field_name')
-    ->label('trans.key')
-    ->relationship('relation', 'column')
-    ->formatStateUsing(fn ($state) => strtoupper($state))
-    ->formatStateLabelUsing(fn ($state) => "Selected: {$state}")
->>>>>>> 5396bf4 (.)
-```
-
-#### Caratteristiche
-- Ricerca asincrona
-- Precaricamento opzionale
-- Supporto per relazioni multiple
-- Validazione integrata
-- Cache dei risultati
-
-### MoneyInput
-```php
-use Modules\UI\Forms\Components\MoneyInput;
-
-<<<<<<< HEAD
-=======
-// Input Base
-=======
-```
-
-#### Caratteristiche
-- Ricerca asincrona
-- Precaricamento opzionale
-- Supporto per relazioni multiple
-- Validazione integrata
-- Cache dei risultati
-
-### MoneyInput
-```php
-use Modules\UI\Forms\Components\MoneyInput;
-
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-MoneyInput::make('premio_lordo')
-    ->currency('EUR')
-    ->step(0.01)
-    ->minValue(0)
-    ->required()
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-// Input con Formattazione Personalizzata
-MoneyInput::make('premio_lordo')
-    ->currency('EUR')
-    ->formatStateUsing(fn ($state) => number_format($state, 2, ',', '.'))
-    ->parseStateUsing(fn ($state) => str_replace(['.', ','], ['', '.'], $state))
-
-// Input con Validazione Avanzata
-MoneyInput::make('premio_lordo')
-    ->currency('EUR')
-    ->rules([
-        'required',
-        'numeric',
-        'min:0',
-        'max:1000000'
-    ])
-    ->validationMessages([
-        'required' => 'Il premio è obbligatorio',
-        'min' => 'Il premio deve essere maggiore di 0',
-        'max' => 'Il premio non può superare 1.000.000'
-    ])
->>>>>>> 5396bf4 (.)
 ```
 
 #### Caratteristiche
@@ -929,60 +676,6 @@ FileUpload::make('documento')
 ```php
 use Modules\UI\Tables\Components\CustomDataTable;
 
-<<<<<<< HEAD
-=======
-// Tabella Base
-=======
-```
-
-#### Caratteristiche
-- Formattazione automatica
-- Supporto multi valuta
-- Validazione numerica
-- Gestione decimali
-- Maschere di input
-
-### DateRangePicker
-```php
-use Modules\UI\Forms\Components\DateRangePicker;
-
-DateRangePicker::make('periodo')
-    ->displayFormat('d/m/Y')
-    ->minDate(today())
-    ->required()
-```
-
-#### Caratteristiche
-- Selezione range date
-- Formati personalizzabili
-- Localizzazione
-- Validazione range
-- Calendario popup
-
-### FileUpload
-```php
-use Modules\UI\Forms\Components\FileUpload;
-
-FileUpload::make('documento')
-    ->disk('s3')
-    ->directory('documenti')
-    ->acceptedFileTypes(['application/pdf'])
-    ->maxSize(5120) // 5MB
-```
-
-## Table Components
-
-=======
->>>>>>> Stashed changes
-### CustomDataTable
-```php
-use Modules\UI\Tables\Components\CustomDataTable;
-
-<<<<<<< Updated upstream
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 CustomDataTable::make()
     ->paginated(true)
     ->searchable(['nome', 'email'])
@@ -991,68 +684,6 @@ CustomDataTable::make()
         'delete' => 'Elimina',
         'export' => 'Esporta'
     ])
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-```
-=======
-<<<<<<< HEAD
->>>>>>> 5396bf4 (.)
-
-#### Caratteristiche
-- Ordinamento colonne
-- Filtri avanzati
-- Azioni personalizzabili
-- Paginazione
-- Export dati
-
-### StatusBadge
-```php
-use Modules\UI\Tables\Components\StatusBadge;
-
-StatusBadge::make('stato')
-    ->colors([
-        'danger' => 'annullato',
-        'warning' => 'sospeso',
-        'success' => 'attivo'
-    ])
-```
-
-#### Caratteristiche
-- Colori dinamici
-- Icone integrate
-- Stati personalizzabili
-- Tooltips
-- Animazioni
-
-### ActionButtons
-```php
-use Modules\UI\Tables\Components\ActionButtons;
-
-ActionButtons::make()
-    ->actions([
-        'view' => [
-            'icon' => 'heroicon-o-eye',
-            'url' => fn ($record) => route('view', $record)
-        ],
-        'edit' => [
-            'icon' => 'heroicon-o-pencil',
-<<<<<<< HEAD
-            'url' => fn ($record) => route('edit', $record)
-=======
-            'url' => fn ($record) => route('edit', $record),
-            'color' => 'warning'
-        ],
-        'delete' => [
-            'icon' => 'heroicon-o-trash',
-            'url' => fn ($record) => route('delete', $record),
-            'color' => 'danger',
-            'confirm' => [
-                'title' => 'Are you sure?',
-                'description' => 'This action cannot be undone.'
-            ]
-=======
-=======
->>>>>>> Stashed changes
 ```
 
 #### Caratteristiche
@@ -1094,44 +725,16 @@ ActionButtons::make()
         'edit' => [
             'icon' => 'heroicon-o-pencil',
             'url' => fn ($record) => route('edit', $record)
-<<<<<<< Updated upstream
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
         ]
     ])
 ```
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-## Chart Components
-=======
-<<<<<<< HEAD
-### Chart Components
->>>>>>> 5396bf4 (.)
-
-### LineChart
-```php
-use Modules\UI\Charts\Components\LineChart;
-
-<<<<<<< HEAD
-=======
-// Grafico Base
-=======
-=======
->>>>>>> Stashed changes
 ## Chart Components
 
 ### LineChart
 ```php
 use Modules\UI\Charts\Components\LineChart;
 
-<<<<<<< Updated upstream
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 LineChart::make()
     ->datasets([
         [
@@ -1147,8 +750,6 @@ LineChart::make()
     ])
 ```
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 #### Caratteristiche
 - Dati dinamici
 - Zoom e pan
@@ -1160,32 +761,6 @@ LineChart::make()
 ```php
 use Modules\UI\Charts\Components\PieChart;
 
-=======
-<<<<<<< HEAD
-#### PieChart
-```php
-use Modules\UI\Charts\Components\PieChart;
-
-// Grafico Base
-=======
-=======
->>>>>>> Stashed changes
-#### Caratteristiche
-- Dati dinamici
-- Zoom e pan
-- Tooltips interattivi
-- Responsive
-- Temi personalizzabili
-
-### PieChart
-```php
-use Modules\UI\Charts\Components\PieChart;
-
-<<<<<<< Updated upstream
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 PieChart::make()
     ->datasets([
         [
@@ -1196,52 +771,6 @@ PieChart::make()
     ->labels(['A', 'B', 'C'])
 ```
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-#### Caratteristiche
-- Legenda interattiva
-- Animazioni
-- Doughnut mode
-- Labels personalizzabili
-- Export immagine
-=======
-<<<<<<< HEAD
-### Layout Components
->>>>>>> 5396bf4 (.)
-
-### StatsOverview
-```php
-use Modules\UI\Charts\Components\StatsOverview;
-
-StatsOverview::make()
-    ->stats([
-        [
-            'label' => 'Totale Polizze',
-            'value' => 1234,
-            'icon' => 'heroicon-o-document-text',
-            'color' => 'primary'
-        ],
-        [
-            'label' => 'Premi Totali',
-            'value' => '€ 123.456',
-            'icon' => 'heroicon-o-currency-euro',
-            'color' => 'success'
-        ]
-    ])
-```
-
-## Layout Components
-
-### AdminLayout
-```php
-use Modules\UI\Layouts\Components\AdminLayout;
-
-<<<<<<< HEAD
-=======
-// Layout Base
-=======
-=======
->>>>>>> Stashed changes
 #### Caratteristiche
 - Legenda interattiva
 - Animazioni
@@ -1276,11 +805,6 @@ StatsOverview::make()
 ```php
 use Modules\UI\Layouts\Components\AdminLayout;
 
-<<<<<<< Updated upstream
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 AdminLayout::make()
     ->title('Dashboard')
     ->breadcrumbs([
@@ -1290,8 +814,6 @@ AdminLayout::make()
     ->notifications(true)
 ```
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 #### Caratteristiche
 - Sidebar collassabile
 - Breadcrumbs
@@ -1303,32 +825,6 @@ AdminLayout::make()
 ```php
 use Modules\UI\Layouts\Components\PrintLayout;
 
-=======
-<<<<<<< HEAD
-#### PrintLayout
-```php
-use Modules\UI\Layouts\Components\PrintLayout;
-
-// Layout Base
-=======
-=======
->>>>>>> Stashed changes
-#### Caratteristiche
-- Sidebar collassabile
-- Breadcrumbs
-- Notifiche
-- Tema dark/light
-- Responsive
-
-### PrintLayout
-```php
-use Modules\UI\Layouts\Components\PrintLayout;
-
-<<<<<<< Updated upstream
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 PrintLayout::make()
     ->orientation('portrait')
     ->pageSize('a4')
@@ -1340,16 +836,6 @@ PrintLayout::make()
     ])
 ```
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 #### Caratteristiche
 - Ottimizzato per stampa
 - Header/footer personalizzabili
@@ -1357,22 +843,6 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
-=======
-=======
-
-
->>>>>>> c6eb299 (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -1395,55 +865,6 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
 - SVG icons per modalità chiara e scura
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> aurmich/dev
-
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
->>>>>>> 3e75fd3 (.)
-=======
->>>>>>> 5512b9a (.)
-## Componenti Base
-
-### Forms
-```blade
-<x-ui::form>
-  <x-ui::input name="email" type="email" />
-  <x-ui::button type="submit">Invia</x-ui::button>
-</x-ui::form>
-```
-
-### Tables
-```blade
-<x-ui::table>
-  <x-ui::th>Nome</x-ui::th>
-  <x-ui::td>{{ $user->name }}</x-ui::td>
-</x-ui::table>
-```
-
-### Cards
-```blade
-<x-ui::card>
-  <x-ui::card-header>Titolo</x-ui::card-header>
-  <x-ui::card-body>Contenuto</x-ui::card-body>
-</x-ui::card>
-```
-
-<<<<<<< HEAD
->>>>>>> c6eb299 (.)
-=======
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 ## Componenti Complessi
 
 ### Modal
@@ -1532,14 +953,6 @@ Modal::make('conferma')
 ```
 
 ## Best Practices
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes
 
 ### Gestione delle Rotte e dei Controller
 
@@ -1737,126 +1150,3 @@ Non è necessario:
 - Modificare file di routing
 - Creare controller personalizzati
 - Gestire manualmente le rotte
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 5512b9a (.)
-1. Utilizzare i componenti esistenti invece di crearne di nuovi
-2. Mantenere la consistenza nelle props e negli slot
-3. Documentare eventuali modifiche o estensioni
-4. Testare la responsività su diversi dispositivi
-<<<<<<< HEAD
-=======
-## Best Practices
->>>>>>> Stashed changes
-
-### Gestione delle Rotte e dei Controller
-
-1. **Non creare rotte manualmente**
-   - Utilizzare Filament e Folio per la gestione automatica delle rotte
-   - Le rotte vengono generate automaticamente in base alle risorse e alle pagine
-   - Non aggiungere rotte in `web.php` o altri file di routing
-
-2. **Non creare controller manualmente**
-   - Utilizzare Filament per la gestione delle risorse
-   - Utilizzare Folio per la gestione delle pagine
-   - I controller vengono generati automaticamente
-
-3. **Componenti Blade**
-   - Creare componenti Blade riutilizzabili
-   - Utilizzare i componenti per la gestione dell'UI
-   - I componenti possono essere utilizzati sia in Filament che in Folio
-
-4. **Gestione delle Lingue**
-   - Utilizzare il componente `language-switcher` per il cambio lingua
-   - La localizzazione viene gestita automaticamente da Filament e Folio
-   - Non è necessario creare controller o rotte specifiche per la gestione delle lingue
-
-## Traduzioni
-
-### Gestione delle Traduzioni
-
-1. **Utilizzare i file di traduzione**
-   - Creare file di traduzione per ogni componente
-   - Utilizzare le chiavi di traduzione nei componenti
-
-2. **Utilizzare il componente `language-switcher`**
-   - Il componente gestisce automaticamente il cambio lingua
-   - La localizzazione viene gestita automaticamente da Filament e Folio
-
-## Temi e Stili
-
-### Configurazione del Tema
-
-1. **Utilizzare il file di configurazione del tema**
-   - Creare un file di configurazione del tema in `config/ui.php`
-   - Definire le variabili di stile e layout
-
-<<<<<<< Updated upstream
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
->>>>>>> 3e75fd3 (.)
->>>>>>> c6eb299 (.)
-=======
-2. **Utilizzare le classi di utility**
-   - Utilizzare le classi di utility di Tailwind per personalizzare lo stile
-   - Utilizzare le classi di utility per definire lo stile dei componenti
-
-## Collegamenti
-- [README](README.md)
-- [Design System](design-system.md)
-- [Layout](layouts-and-themes.md)
-- [Filament Components](https://filamentphp.com/docs/3.x/support/blade-components/overview)
-- [Filament Forms](https://filamentphp.com/docs/3.x/forms/installation)
-- [Filament Tables](https://filamentphp.com/docs/3.x/tables/installation)
-
-## Note
-Questa documentazione fornisce una panoramica dettagliata dei componenti disponibili. Per i dettagli completi, consultare la documentazione specifica nei moduli e la documentazione ufficiale di Filament.
->>>>>>> Stashed changes
-=======
-
-## Temi
-- I componenti supportano i temi tramite Tailwind
-- Utilizzare le classi di utility per personalizzazioni
-- Rispettare le variabili CSS definite nel tema 
-
-## Configurazione Globale
-
-### Tema
-```php
-// config/ui.php
-return [
-    'theme' => [
-        'colors' => [
-            'primary' => '#4CAF50',
-            'secondary' => '#2196F3',
-            'success' => '#4CAF50',
-            'danger' => '#F44336',
-            'warning' => '#FFC107'
-        ],
-        'fonts' => [
-            'base' => 'Inter',
-            'mono' => 'JetBrains Mono'
-        ]
-    ]
-];
-```
-
-### Personalizzazione
-```php
-// Pubblicare assets
-php artisan vendor:publish --tag=ui-assets
-
-// Pubblicare configurazione
-php artisan vendor:publish --tag=ui-config
-
-// Pubblicare views
-php artisan vendor:publish --tag=ui-views
-``` 
->>>>>>> 5512b9a (.)
->>>>>>> 5396bf4 (.)
-=======
->>>>>>> Stashed changes

@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace Modules\UI\Actions;
 
 use Illuminate\Support\Facades\Auth;
