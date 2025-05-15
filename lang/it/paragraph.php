@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 return array (
   'fields' => 
@@ -17,6 +18,24 @@ return array (
       'label' => '_tpl',
     ),
     'view' => 
+=======
+return array (
+  'fields' =>
+  array (
+    'title' =>
+    array (
+      'label' => 'Titolo',
+    ),
+    'text' =>
+    array (
+      'label' => 'Testo',
+    ),
+    '_tpl' =>
+    array (
+      'label' => '_tpl',
+    ),
+    'view' =>
+>>>>>>> Stashed changes
     array (
       'label' => 'view',
       'description' => 'view',
@@ -25,6 +44,7 @@ return array (
     ),
   ),
 );
+<<<<<<< Updated upstream
 =======
 declare(strict_types=1);
 
@@ -45,3 +65,5 @@ return [
     ],
 ];
 >>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes

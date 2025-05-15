@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 # Conflitti di Merge Risolti nel Modulo UI
 
 ## Conflitti Risolti (2025-05-13)
@@ -63,7 +66,10 @@ Questa documentazione integra le informazioni sui conflitti risolti, fornendo de
 - [Vedi anche: Blog/docs/README.md](../../Blog/docs/README.md)
 - [Vedi anche: Cms/docs/README.md](../../Cms/docs/README.md)
 - [Vedi anche: Comment/docs/README.md](../../Comment/docs/README.md)
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
 =======
 
@@ -128,7 +134,6 @@ Questo documento descrive i conflitti di merge che sono stati risolti nel modulo
 - [Test di Risoluzione Conflitti](test_conflicts_resolution.md)
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 =======
->>>>>>> aurmich/dev
 # Risoluzione dei Conflitti Git nel Modulo UI
 
 ## Panoramica

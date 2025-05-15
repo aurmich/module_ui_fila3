@@ -1,6 +1,9 @@
 # Componenti UI
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 ## Indice
 
 ### Versione Dettagliata
@@ -35,6 +38,7 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 - [Torna a docs/links.md](../../../../docs/links.md)
 - [Vedi anche: UI/docs/README.md](./README.md)
 - [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
+<<<<<<< Updated upstream
 
 ## Panoramica
 Il modulo UI fornisce un set di componenti personalizzati che estendono i componenti base di Filament. Tutti i componenti sono progettati per essere accessibili, responsive e facilmente personalizzabili.
@@ -443,133 +447,131 @@ CustomDataTable::make()
     ])
 =======
 ### Versione HEAD
+=======
+>>>>>>> Stashed changes
 
 ## Panoramica
-Il modulo UI fornisce un set completo di componenti riutilizzabili per costruire interfacce coerenti e accessibili.
+Il modulo UI fornisce un set di componenti personalizzati che estendono i componenti base di Filament. Tutti i componenti sono progettati per essere accessibili, responsive e facilmente personalizzabili.
 
-## Componenti Base
+### Principi Fondamentali
+1. **Accessibilità**
+   - Supporto completo per ARIA
+   - Navigazione da tastiera
+   - Contrasto adeguato
+   - Test con screen reader
 
-### Button
+2. **Responsive Design**
+   - Layout fluido
+   - Breakpoints standard
+   - Mobile-first approach
+   - Touch-friendly
+
+3. **Performance**
+   - Lazy loading
+   - Bundle splitting
+   - Caching ottimizzato
+   - Asset optimization
+
+## Componenti Filament
+
+### Componenti UI di Base
+
+#### Avatar
 ```php
-<x-ui.button
-    variant="primary|secondary|outline"
-    size="sm|md|lg"
-    :disabled="false"
+// Avatar Base
+<x-filament::avatar
+    src="https://example.com/avatar.jpg"
+    alt="User Avatar"
+/>
+
+// Avatar con Fallback
+<x-filament::avatar
+    src="https://example.com/avatar.jpg"
+    alt="User Avatar"
+    fallback="JD"
+/>
+
+// Avatar con Badge
+<x-filament::avatar
+    src="https://example.com/avatar.jpg"
+    alt="User Avatar"
 >
-    Testo Pulsante
-</x-ui.button>
-```
-
-### Input
-```php
-<x-ui.input
-    type="text|email|password"
-    name="field_name"
-    label="Label Campo"
-    :error="$errors->first('field_name')"
-/>
-```
-
-### Select
-```php
-<x-ui.select
-    name="field_name"
-    label="Label Campo"
-    :options="$options"
-    :value="$selectedValue"
-/>
-```
-
-## Componenti Layout
-
-### Card
-```php
-<x-ui.card>
-    <x-slot name="header">
-        Header Card
+    <x-slot name="badge">
+        <x-filament::badge color="success">Online</x-filament::badge>
     </x-slot>
-    
-    Contenuto Card
-    
-    <x-slot name="footer">
-        Footer Card
-    </x-slot>
-</x-ui.card>
+</x-filament::avatar>
 ```
 
-### Grid
+#### Badge
 ```php
-<x-ui.grid
-    cols="1 md:2 lg:3"
-    gap="4"
+// Badge Base
+<x-filament::badge
+    color="success"
+    size="sm"
 >
-    <div>Item 1</div>
-    <div>Item 2</div>
-    <div>Item 3</div>
-</x-ui.grid>
-```
+    Badge Text
+</x-filament::badge>
 
-### Container
-```php
-<x-ui.container
-    size="sm|md|lg|xl"
-    padding="4"
+// Badge con Icona
+<x-filament::badge
+    color="warning"
+    icon="heroicon-o-exclamation"
 >
-    Contenuto Container
-</x-ui.container>
-```
+    Warning
+</x-filament::badge>
 
-## Componenti Form
-
-### Form Group
-```php
-<x-ui.form-group
-    label="Label Campo"
-    name="field_name"
-    :error="$errors->first('field_name')"
->
-    <x-ui.input name="field_name" />
-</x-ui.form-group>
-```
-
-### Checkbox
-```php
-<x-ui.checkbox
-    name="field_name"
-    label="Label Checkbox"
-    :checked="$isChecked"
-/>
-```
-
-### Radio
-```php
-<x-ui.radio
-    name="field_name"
-    label="Label Radio"
-    value="option_value"
-    :checked="$isSelected"
-/>
-```
-
-## Componenti Feedback
-
-### Alert
-```php
-<x-ui.alert
-    type="success|error|warning|info"
+// Badge Dismissible
+<x-filament::badge
+    color="info"
     :dismissible="true"
 >
-    Messaggio Alert
-</x-ui.alert>
+    Dismissible Badge
+</x-filament::badge>
 ```
 
-### Toast
+#### Breadcrumbs
 ```php
-<x-ui.toast
-    type="success|error"
-    :auto-close="true"
-    :duration="5000"
+// Breadcrumbs Base
+<x-filament::breadcrumbs
+    :items="[
+        ['label' => 'Home', 'url' => '/'],
+        ['label' => 'Current Page']
+    ]"
+/>
+
+// Breadcrumbs con Icone
+<x-filament::breadcrumbs
+    :items="[
+        ['label' => 'Home', 'url' => '/', 'icon' => 'heroicon-o-home'],
+        ['label' => 'Settings', 'url' => '/settings', 'icon' => 'heroicon-o-cog'],
+        ['label' => 'Profile']
+    ]"
+/>
+
+// Breadcrumbs Personalizzati
+<x-filament::breadcrumbs
+    :items="[
+        ['label' => 'Home', 'url' => '/', 'icon' => 'heroicon-o-home'],
+        ['label' => 'Settings', 'url' => '/settings', 'icon' => 'heroicon-o-cog'],
+        ['label' => 'Profile']
+    ]"
+    separator="/"
+    class="text-sm"
+/>
+```
+
+### Componenti per le Azioni
+
+#### Button
+```php
+// Button Base
+<x-filament::button
+    color="primary"
+    size="sm"
+    :disabled="false"
+    :loading="false"
 >
+<<<<<<< Updated upstream
     Messaggio Toast
 </x-ui.toast>
 >>>>>>> c6eb299 (.)
@@ -774,74 +776,244 @@ Questa documentazione fornisce una panoramica dei componenti disponibili. Per i 
 ## Form Components
 
 ### CustomSelect
+=======
+    Button Text
+</x-filament::button>
+
+// Button con Icona
+<x-filament::button
+    color="success"
+    icon="heroicon-o-save"
+    :loading="false"
+>
+    Save Changes
+</x-filament::button>
+
+// Button con Tooltip
+<x-filament::button
+    color="danger"
+    :tooltip="['text' => 'Delete this item', 'position' => 'top']"
+>
+    Delete
+</x-filament::button>
+
+// Button con Confirmation
+<x-filament::button
+    color="warning"
+    :confirm="[
+        'title' => 'Are you sure?',
+        'description' => 'This action cannot be undone.',
+        'confirmButtonText' => 'Yes, proceed',
+        'cancelButtonText' => 'No, cancel'
+    ]"
+>
+    Proceed
+</x-filament::button>
+```
+
+#### Dropdown
+>>>>>>> Stashed changes
 ```php
+// Dropdown Base
+<x-filament::dropdown>
+    <x-slot name="trigger">
+        <x-filament::button>
+            Open Menu
+        </x-filament::button>
+    </x-slot>
+
+    <x-filament::dropdown.item
+        icon="heroicon-o-pencil"
+        :href="route('edit')"
+    >
+        Edit
+    </x-filament::dropdown.item>
+
+    <x-filament::dropdown.separator />
+
+    <x-filament::dropdown.item
+        icon="heroicon-o-trash"
+        color="danger"
+        :href="route('delete')"
+    >
+        Delete
+    </x-filament::dropdown.item>
+</x-filament::dropdown>
+
+// Dropdown con Gruppi
+<x-filament::dropdown>
+    <x-filament::dropdown.group label="Account">
+        <x-filament::dropdown.item>Profile</x-filament::dropdown.item>
+        <x-filament::dropdown.item>Settings</x-filament::dropdown.item>
+    </x-filament::dropdown.group>
+
+    <x-filament::dropdown.group label="Actions">
+        <x-filament::dropdown.item>Logout</x-filament::dropdown.item>
+    </x-filament::dropdown.group>
+</x-filament::dropdown>
+```
+
+### Componenti per i Form
+
+#### Input
+```php
+// Input Base
+<x-filament::input
+    type="text"
+    name="field_name"
+    :label="['label' => 'Input Label']"
+    :placeholder="['placeholder' => 'Input Placeholder']"
+/>
+
+// Input con Validazione
+<x-filament::input
+    type="email"
+    name="email"
+    :label="['label' => 'Email']"
+    :rules="['required', 'email']"
+    :error="$errors->first('email')"
+/>
+
+// Input con Maschera
+<x-filament::input
+    type="tel"
+    name="phone"
+    :label="['label' => 'Phone Number']"
+    :mask="['pattern' => '+39 999 999 9999']"
+/>
+
+// Input con Autocomplete
+<x-filament::input
+    type="text"
+    name="address"
+    :label="['label' => 'Address']"
+    :autocomplete="[
+        'source' => $addresses,
+        'minLength' => 3
+    ]"
+/>
+```
+
+#### Select
+```php
+// Select Base
+<x-filament::select
+    name="country"
+    :label="['label' => 'Country']"
+    :options="[
+        'it' => 'Italy',
+        'fr' => 'France',
+        'de' => 'Germany'
+    ]"
+/>
+
+// Select con Ricerca
+<x-filament::select
+    name="user"
+    :label="['label' => 'User']"
+    :options="$users"
+    :searchable="true"
+    :search-column="'name'"
+/>
+
+// Select Multipla
+<x-filament::select
+    name="roles"
+    :label="['label' => 'Roles']"
+    :options="$roles"
+    :multiple="true"
+    :max-items="3"
+/>
+
+// Select con Relazione
+<x-filament::select
+    name="department"
+    :label="['label' => 'Department']"
+    :relationship="[
+        'name' => 'department',
+        'label' => 'name',
+        'value' => 'id'
+    ]"
+/>
+```
+
+## Componenti Personalizzati
+
+### Form Components
+
+#### CustomSelect
+```php
+use Modules\UI\Forms\Components\CustomSelect;
+
+// Select Base con Relazione
 CustomSelect::make('field_name')
     ->label('trans.key')
     ->relationship('relation', 'column')
     ->searchable()
     ->preload()
     ->required()
+
+// Select con Validazione Personalizzata
+CustomSelect::make('field_name')
+    ->label('trans.key')
+    ->relationship('relation', 'column')
+    ->rules([
+        'required',
+        'exists:table,id'
+    ])
+    ->validationMessages([
+        'required' => 'This field is required',
+        'exists' => 'Selected value is invalid'
+    ])
+
+// Select con Callback di Formattazione
+CustomSelect::make('field_name')
+    ->label('trans.key')
+    ->relationship('relation', 'column')
+    ->formatStateUsing(fn ($state) => strtoupper($state))
+    ->formatStateLabelUsing(fn ($state) => "Selected: {$state}")
 ```
 
-#### Caratteristiche
-- Ricerca asincrona
-- Precaricamento opzionale
-- Supporto per relazioni multiple
-- Validazione integrata
-- Cache dei risultati
-
-### MoneyInput
+#### MoneyInput
 ```php
 use Modules\UI\Forms\Components\MoneyInput;
 
+// Input Base
 MoneyInput::make('premio_lordo')
     ->currency('EUR')
     ->step(0.01)
     ->minValue(0)
     ->required()
+
+// Input con Formattazione Personalizzata
+MoneyInput::make('premio_lordo')
+    ->currency('EUR')
+    ->formatStateUsing(fn ($state) => number_format($state, 2, ',', '.'))
+    ->parseStateUsing(fn ($state) => str_replace(['.', ','], ['', '.'], $state))
+
+// Input con Validazione Avanzata
+MoneyInput::make('premio_lordo')
+    ->currency('EUR')
+    ->rules([
+        'required',
+        'numeric',
+        'min:0',
+        'max:1000000'
+    ])
+    ->validationMessages([
+        'required' => 'Il premio è obbligatorio',
+        'min' => 'Il premio deve essere maggiore di 0',
+        'max' => 'Il premio non può superare 1.000.000'
+    ])
 ```
 
-#### Caratteristiche
-- Formattazione automatica
-- Supporto multi valuta
-- Validazione numerica
-- Gestione decimali
-- Maschere di input
+### Table Components
 
-### DateRangePicker
-```php
-use Modules\UI\Forms\Components\DateRangePicker;
-
-DateRangePicker::make('periodo')
-    ->displayFormat('d/m/Y')
-    ->minDate(today())
-    ->required()
-```
-
-#### Caratteristiche
-- Selezione range date
-- Formati personalizzabili
-- Localizzazione
-- Validazione range
-- Calendario popup
-
-### FileUpload
-```php
-use Modules\UI\Forms\Components\FileUpload;
-
-FileUpload::make('documento')
-    ->disk('s3')
-    ->directory('documenti')
-    ->acceptedFileTypes(['application/pdf'])
-    ->maxSize(5120) // 5MB
-```
-
-## Table Components
-
-### CustomDataTable
+#### CustomDataTable
 ```php
 use Modules\UI\Tables\Components\CustomDataTable;
 
+// Tabella Base
 CustomDataTable::make()
     ->paginated(true)
     ->searchable(['nome', 'email'])
@@ -850,57 +1022,55 @@ CustomDataTable::make()
         'delete' => 'Elimina',
         'export' => 'Esporta'
     ])
-```
 
-#### Caratteristiche
-- Ordinamento colonne
-- Filtri avanzati
-- Azioni personalizzabili
-- Paginazione
-- Export dati
-
-### StatusBadge
-```php
-use Modules\UI\Tables\Components\StatusBadge;
-
-StatusBadge::make('stato')
-    ->colors([
-        'danger' => 'annullato',
-        'warning' => 'sospeso',
-        'success' => 'attivo'
+// Tabella con Filtri
+CustomDataTable::make()
+    ->filters([
+        'status' => [
+            'label' => 'Status',
+            'options' => [
+                'active' => 'Active',
+                'inactive' => 'Inactive'
+            ]
+        ],
+        'date_range' => [
+            'label' => 'Date Range',
+            'type' => 'date_range'
+        ]
     ])
-```
 
-#### Caratteristiche
-- Colori dinamici
-- Icone integrate
-- Stati personalizzabili
-- Tooltips
-- Animazioni
-
-### ActionButtons
-```php
-use Modules\UI\Tables\Components\ActionButtons;
-
-ActionButtons::make()
+// Tabella con Azioni Personalizzate
+CustomDataTable::make()
     ->actions([
         'view' => [
             'icon' => 'heroicon-o-eye',
-            'url' => fn ($record) => route('view', $record)
+            'url' => fn ($record) => route('view', $record),
+            'color' => 'primary'
         ],
         'edit' => [
             'icon' => 'heroicon-o-pencil',
-            'url' => fn ($record) => route('edit', $record)
+            'url' => fn ($record) => route('edit', $record),
+            'color' => 'warning'
+        ],
+        'delete' => [
+            'icon' => 'heroicon-o-trash',
+            'url' => fn ($record) => route('delete', $record),
+            'color' => 'danger',
+            'confirm' => [
+                'title' => 'Are you sure?',
+                'description' => 'This action cannot be undone.'
+            ]
         ]
     ])
 ```
 
-## Chart Components
+### Chart Components
 
-### LineChart
+#### LineChart
 ```php
 use Modules\UI\Charts\Components\LineChart;
 
+// Grafico Base
 LineChart::make()
     ->datasets([
         [
@@ -916,17 +1086,11 @@ LineChart::make()
     ])
 ```
 
-#### Caratteristiche
-- Dati dinamici
-- Zoom e pan
-- Tooltips interattivi
-- Responsive
-- Temi personalizzabili
-
-### PieChart
+#### PieChart
 ```php
 use Modules\UI\Charts\Components\PieChart;
 
+// Grafico Base
 PieChart::make()
     ->datasets([
         [
@@ -937,40 +1101,13 @@ PieChart::make()
     ->labels(['A', 'B', 'C'])
 ```
 
-#### Caratteristiche
-- Legenda interattiva
-- Animazioni
-- Doughnut mode
-- Labels personalizzabili
-- Export immagine
+### Layout Components
 
-### StatsOverview
-```php
-use Modules\UI\Charts\Components\StatsOverview;
-
-StatsOverview::make()
-    ->stats([
-        [
-            'label' => 'Totale Polizze',
-            'value' => 1234,
-            'icon' => 'heroicon-o-document-text',
-            'color' => 'primary'
-        ],
-        [
-            'label' => 'Premi Totali',
-            'value' => '€ 123.456',
-            'icon' => 'heroicon-o-currency-euro',
-            'color' => 'success'
-        ]
-    ])
-```
-
-## Layout Components
-
-### AdminLayout
+#### AdminLayout
 ```php
 use Modules\UI\Layouts\Components\AdminLayout;
 
+// Layout Base
 AdminLayout::make()
     ->title('Dashboard')
     ->breadcrumbs([
@@ -980,17 +1117,11 @@ AdminLayout::make()
     ->notifications(true)
 ```
 
-#### Caratteristiche
-- Sidebar collassabile
-- Breadcrumbs
-- Notifiche
-- Tema dark/light
-- Responsive
-
-### PrintLayout
+#### PrintLayout
 ```php
 use Modules\UI\Layouts\Components\PrintLayout;
 
+// Layout Base
 PrintLayout::make()
     ->orientation('portrait')
     ->pageSize('a4')
@@ -1002,6 +1133,7 @@ PrintLayout::make()
     ])
 ```
 
+<<<<<<< Updated upstream
 #### Caratteristiche
 - Ottimizzato per stampa
 - Header/footer personalizzabili
@@ -1369,65 +1501,71 @@ Non è necessario:
 2. Mantenere la consistenza nelle props e negli slot
 3. Documentare eventuali modifiche o estensioni
 4. Testare la responsività su diversi dispositivi
-
-## Temi
-- I componenti supportano i temi tramite Tailwind
-- Utilizzare le classi di utility per personalizzazioni
-- Rispettare le variabili CSS definite nel tema 
-
-## Configurazione Globale
-
-### Tema
-```php
-// config/ui.php
-return [
-    'theme' => [
-        'colors' => [
-            'primary' => '#4CAF50',
-            'secondary' => '#2196F3',
-            'success' => '#4CAF50',
-            'danger' => '#F44336',
-            'warning' => '#FFC107'
-        ],
-        'fonts' => [
-            'base' => 'Inter',
-            'mono' => 'JetBrains Mono'
-        ]
-    ]
-];
-```
-
-### Personalizzazione
-```php
-// Pubblicare assets
-php artisan vendor:publish --tag=ui-assets
-
-// Pubblicare configurazione
-php artisan vendor:publish --tag=ui-config
-
-// Pubblicare views
-php artisan vendor:publish --tag=ui-views
-``` 
-
----
-
-
-
 =======
-``` 
-=======
+## Best Practices
+>>>>>>> Stashed changes
 
+### Gestione delle Rotte e dei Controller
 
-``` 
-=======
-``` 
->>>>>>> aurmich/dev
-=======
-``` 
->>>>>>> aurmich/dev
+1. **Non creare rotte manualmente**
+   - Utilizzare Filament e Folio per la gestione automatica delle rotte
+   - Le rotte vengono generate automaticamente in base alle risorse e alle pagine
+   - Non aggiungere rotte in `web.php` o altri file di routing
 
+2. **Non creare controller manualmente**
+   - Utilizzare Filament per la gestione delle risorse
+   - Utilizzare Folio per la gestione delle pagine
+   - I controller vengono generati automaticamente
+
+3. **Componenti Blade**
+   - Creare componenti Blade riutilizzabili
+   - Utilizzare i componenti per la gestione dell'UI
+   - I componenti possono essere utilizzati sia in Filament che in Folio
+
+4. **Gestione delle Lingue**
+   - Utilizzare il componente `language-switcher` per il cambio lingua
+   - La localizzazione viene gestita automaticamente da Filament e Folio
+   - Non è necessario creare controller o rotte specifiche per la gestione delle lingue
+
+## Traduzioni
+
+### Gestione delle Traduzioni
+
+1. **Utilizzare i file di traduzione**
+   - Creare file di traduzione per ogni componente
+   - Utilizzare le chiavi di traduzione nei componenti
+
+2. **Utilizzare il componente `language-switcher`**
+   - Il componente gestisce automaticamente il cambio lingua
+   - La localizzazione viene gestita automaticamente da Filament e Folio
+
+## Temi e Stili
+
+### Configurazione del Tema
+
+1. **Utilizzare il file di configurazione del tema**
+   - Creare un file di configurazione del tema in `config/ui.php`
+   - Definire le variabili di stile e layout
+
+<<<<<<< Updated upstream
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
 >>>>>>> 3e75fd3 (.)
 >>>>>>> c6eb299 (.)
+=======
+2. **Utilizzare le classi di utility**
+   - Utilizzare le classi di utility di Tailwind per personalizzare lo stile
+   - Utilizzare le classi di utility per definire lo stile dei componenti
+
+## Collegamenti
+- [README](README.md)
+- [Design System](design-system.md)
+- [Layout](layouts-and-themes.md)
+- [Filament Components](https://filamentphp.com/docs/3.x/support/blade-components/overview)
+- [Filament Forms](https://filamentphp.com/docs/3.x/forms/installation)
+- [Filament Tables](https://filamentphp.com/docs/3.x/tables/installation)
+
+## Note
+Questa documentazione fornisce una panoramica dettagliata dei componenti disponibili. Per i dettagli completi, consultare la documentazione specifica nei moduli e la documentazione ufficiale di Filament.
+>>>>>>> Stashed changes

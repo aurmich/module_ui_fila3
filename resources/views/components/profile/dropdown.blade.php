@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 @props(['user' => auth()->user()])
 
 <div class="relative">
@@ -54,8 +57,11 @@
         @endauth
     </x-filament::dropdown>
 </div>
+<<<<<<< Updated upstream
 =======
 <div>
   profile dropdown ui
 </div>
 >>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes

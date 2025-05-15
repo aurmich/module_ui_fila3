@@ -53,7 +53,10 @@ class Image
             default => '',
         };
     }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 
     public static function getFormSchema(): array
     {
@@ -67,6 +70,9 @@ class Image
                 ->maxLength(255),
         ];
     }
+<<<<<<< Updated upstream
 =======
 >>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes
 }
