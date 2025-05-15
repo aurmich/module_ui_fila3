@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="h-10 w-auto"> 
 =======
@@ -21,3 +22,6 @@
 </svg>
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+<img src="{{ asset('images/logo.svg') }}" alt="Logo" class="h-10 w-auto"> 
+>>>>>>> Stashed changes

@@ -1,11 +1,14 @@
 <?php
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 return array (
   'fields' => 
   array (
@@ -30,6 +33,7 @@ return array (
     ),
   ),
 );
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
@@ -61,3 +65,5 @@ return [
 =======
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes

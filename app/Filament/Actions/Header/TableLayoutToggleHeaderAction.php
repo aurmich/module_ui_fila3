@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\UI\Filament\Actions\Header;
 
 use Filament\Actions\Action;
@@ -39,6 +38,7 @@ class TableLayoutToggleHeaderAction extends Action
     public static function getDefaultName(): string
     {
         return 'table_layout_toggle';
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -115,5 +115,7 @@ class TableLayoutToggleHeaderAction extends Action
             });
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
     }
 }

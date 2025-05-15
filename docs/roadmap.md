@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### Versione HEAD
 
 # Roadmap Modulo UI
@@ -212,23 +211,6 @@ Overall Module Completion: 60%
 - Technical Debt: 60% complete
 
 ## Technical Metrics Overview
-=======
-# 🗺️ UI Module Roadmap
-
-## 📊 Progress Overview
-
-
-| Category | Progress | Details |
-|----------|----------|---------|
-| Core Components | 75% | Base, Form, Layout |
-| Theming System | 85% | Contract, Inheritance, CSS Integration |
-| Documentation | 60% | API, Guides, Examples |
-| PHPStan Levels | 55% | Target: Level 7 |
-| Test Coverage | 65% | Unit, Integration, E2E |
-| Accessibility | 70% | ARIA, Keyboard Nav |
-
-## 📈 Technical Metrics
->>>>>>> 5512b9a (.)
 
 ### Code Quality
 * Maintainability Index: 85/100
@@ -263,7 +245,6 @@ Overall Module Completion: 60%
 * Security Test Coverage: 85%
 * Performance Test Coverage: 70%
 
-<<<<<<< HEAD
 ## Current Sprint Focus
 1. PHPStan Level 7 Compliance
    - Fix return type declarations
@@ -300,8 +281,6 @@ Overall Module Completion: 60%
 
 ## 📊 Progress Overview
 
-=======
->>>>>>> 5512b9a (.)
 | Category | Progress |
 |----------|----------|
 | Core Components | 75% |
@@ -310,10 +289,6 @@ Overall Module Completion: 60%
 | PHPStan Levels | 55% |
 | Test Coverage | 65% |
 | Accessibility | 70% |
-<<<<<<< HEAD
-=======
- 80ec88ee9 (.)
->>>>>>> 5512b9a (.)
 
 ## 🎯 Tasks & Progress
 
@@ -366,84 +341,23 @@ Overall Module Completion: 60%
 - [ ] PWA Support [docs/roadmap/pwa.md]
 - [x] Responsive Images [docs/roadmap/responsive_images.md]
 
-<<<<<<< HEAD
 ## 🔄 Daily Tasks
 
 ### Week 1 - Component System
-=======
-
-## 🔄 Sprint Planning
-
-### Current Sprint Focus
-1. PHPStan Level 7 Compliance
-   - Fix return type declarations
-   - Add missing parameter types
-   - Complete property annotations
-   - Priority: High
-
-2. Code Quality Improvements
-   - Implement missing tests
-   - Reduce code duplication
-   - Priority: High
-
-3. Documentation
-   - Complete API documentation
-   - Update integration guides
-   - Priority: Medium
-
-### Technical Debt
-1. Code Quality
-   - Complete PHPStan fixes
-   - Improve test coverage
-   - Priority: High
-
-2. Documentation
-   - API documentation
-   - Integration guides
-   - Priority: Medium
-
-3. Performance
-   - Query optimization
-   - Cache implementation
-   - Priority: High
-
-### Daily Tasks - Week 1 (Component System)
-
-## 🔄 Daily Tasks
-
-### Week 1 - Component System
- 80ec88ee9 (.)
->>>>>>> 5512b9a (.)
 1. ✅ Audit existing components
 2. ✅ Standardize component APIs
 3. 🏗️ Implement missing components
 4. 📝 Document component usage
 5. 🧪 Add component tests
 
-<<<<<<< HEAD
 ### Week 2 - Accessibility
-=======
-
-### Daily Tasks - Week 2 (Accessibility)
-
-### Week 2 - Accessibility
- 80ec88ee9 (.)
->>>>>>> 5512b9a (.)
 1. ✅ ARIA implementation
 2. ✅ Keyboard navigation
 3. 🏗️ Screen reader optimization
 4. 📝 Accessibility documentation
 5. 🧪 A11y testing suite
 
-<<<<<<< HEAD
 [More details in docs/roadmap/weekly/week2.md] 
 
 ---
 
-=======
-
-[Dettagli settimanali completi in docs/roadmap/weekly/] 
-
-[More details in docs/roadmap/weekly/week2.md] 
- 80ec88ee9 (.)
->>>>>>> 5512b9a (.)

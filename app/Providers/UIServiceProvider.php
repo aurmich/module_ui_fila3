@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\UI\Providers;
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 use function Safe\realpath;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Foundation\AliasLoader;
@@ -39,6 +42,7 @@ class UIServiceProvider extends XotBaseServiceProvider
      *
      * @var string
      */
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -93,11 +97,14 @@ class UIServiceProvider extends XotBaseServiceProvider
 
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
 
     /**
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -106,11 +113,14 @@ class UIServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> Stashed changes
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
      * Boot del service provider.
      *
      * Configura i componenti Blade e altre funzionalità del modulo UI.
      *
      * @return void
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
@@ -123,16 +133,21 @@ class UIServiceProvider extends XotBaseServiceProvider
      * Undocumented function.
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
      */
     public function boot(): void
     {
         parent::boot();
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
         
         // La registrazione dei Blade components modulari avviene tramite GetModulePathByGeneratorAction
         // per garantire la corretta risoluzione dei path secondo la struttura dei moduli
@@ -159,6 +174,7 @@ class UIServiceProvider extends XotBaseServiceProvider
     public function getComponentViewPath(): string
     {
         return app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -232,5 +248,7 @@ class UIServiceProvider extends XotBaseServiceProvider
         // $this->registerBladeIcons(); //moved to XotBaseServiceProvider
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
     }
 }

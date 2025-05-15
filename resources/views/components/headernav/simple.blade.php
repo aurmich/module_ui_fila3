@@ -1,10 +1,13 @@
 <header class="w-full">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
     <div class="relative z-20 flex items-center justify-between w-full h-12 px-6 mx-auto">
         <div x-data="{ mobileMenuOpen: false }" class="relative flex items-center md:space-x-2 text-neutral-800">
             <div class="relative z-50 flex items-center w-auto h-full">
@@ -48,6 +51,7 @@
                 :class="{ 'flex': mobileMenuOpen, 'hidden md:flex': !mobileMenuOpen }"
             >
                 <nav class="flex flex-col w-full p-6 space-y-2 bg-white md:p-0 md:flex-row md:space-x-2 md:space-y-0 md:w-auto md:bg-transparent">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -140,21 +144,27 @@
 =======
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
                     <x-ui.nav-link href="/">Home</x-ui.nav-link>
                     @foreach ($_theme->getMenu('headernav_right') as $item)
                         <x-ui.nav-link href="{{ $_theme->getMenuUrl($item) }}">{{ $item['title'] }}</x-ui.nav-link>
                     @endforeach
                 </nav>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
             </div>
         </div>
 
         {{-- Right Menu --}}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -175,18 +185,23 @@
         </div>
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
         <div class="relative z-50 flex items-stretch space-x-3 text-neutral-800">
             <livewire:lang.change></livewire:lang.change>
             <div x-data class="flex-shrink-0 hidden w-[38px] overflow-hidden rounded-full h-[38px] sm:block" x-cloak>
                 <x-ui.light-dark-switch></x-ui.light-dark-switch>
             </div>
             @auth
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
                 <x-filament::dropdown>
                     <x-slot name="trigger">
                         <button class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
@@ -225,6 +240,7 @@
                         </form>
                     </x-filament::dropdown.list>
                 </x-filament::dropdown>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -250,6 +266,8 @@
                 </div>
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
             @else
                 <div class="flex items-center w-auto">
                     <x-ui.button type="secondary" submit="true" tag="a" href="{{ route('login') }}">
@@ -262,6 +280,7 @@
                     </x-ui.button>
                 </div>
             @endauth
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -276,6 +295,8 @@
 
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
         </div>
     </div>
 </header>

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6,6 +7,8 @@
 =======
 >>>>>>> Stashed changes
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 # AVVISO IMPORTANTE (2025-05-13)
 
 > **Errore riscontrato:** Il componente `logo.blade.php` era stato posizionato erroneamente in `resources/views/components/ui/` invece che in `Modules/UI/resources/views/components/ui/`.
@@ -584,6 +587,7 @@ Per il modulo UI, si consiglia di utilizzare i seguenti server MCP:
 
 Per dettagli e best practice consulta la guida generale MCP nel workspace.
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -675,3 +679,5 @@ Per utilizzare i componenti UI nel tuo progetto:
 - [Problemi e soluzioni PHPStan](/docs/phpstan/problemi_e_soluzioni.md) 
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes

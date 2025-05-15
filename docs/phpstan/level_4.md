@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 =======
@@ -40,12 +39,3 @@ aurmich/dev
 =======
 >>>>>>> aurmich/dev
 >>>>>>> aurmich/dev
-=======
-# PHPStan Report - Livello 4
-
-## Errori rilevati
-
-## Soluzioni proposte
-
-> TODO: descrivere soluzioni architetturali e funzionali
->>>>>>> 5512b9a (.)

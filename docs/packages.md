@@ -52,7 +52,6 @@
 - [Styling](packages/styling.md)
 - [Performance](packages/performance.md)
 - [Accessibilità](packages/accessibility.md) 
-<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -73,5 +72,3 @@
 
 ---
 
-=======
->>>>>>> 5512b9a (.)

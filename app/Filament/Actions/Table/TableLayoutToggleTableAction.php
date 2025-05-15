@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\UI\Filament\Actions\Table;
 
 use Filament\Resources\Pages\ListRecords;
@@ -15,29 +14,10 @@ class TableLayoutToggleTableAction extends Action
 {
     use TableLayoutTrait;
 
-=======
-namespace Modules\UI\app\Filament\Actions\Table;
-
-use Filament\Tables\Actions\Action;
-use Illuminate\Support\Facades\Session;
-use Modules\UI\Enums\TableLayoutEnum;
-use Livewire\Component;
-
-interface HasTableLayout
-{
-    public function getLayoutView(): TableLayoutEnum;
-    public function setLayoutView(TableLayoutEnum $layout): void;
-    public function resetTable(): void;
-}
-
-class TableLayoutToggleTableAction extends Action
-{
->>>>>>> 5512b9a (.)
     protected function setUp(): void
     {
         parent::setUp();
 
-<<<<<<< HEAD
         $current = $this->getCurrentLayout();
 
         $this
@@ -72,6 +52,7 @@ class TableLayoutToggleTableAction extends Action
     {
         return 'table_layout_toggle';
     }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
@@ -104,4 +85,6 @@ class TableLayoutToggleTableAction extends Action
     }
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 }

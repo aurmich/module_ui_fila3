@@ -1,5 +1,6 @@
 # Componenti UI
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -8,6 +9,8 @@
 =======
 >>>>>>> Stashed changes
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 ## Indice
 
 ### Versione Dettagliata
@@ -617,6 +620,7 @@ Questa documentazione fornisce una panoramica dettagliata dei componenti disponi
 
 ### CustomSelect
 ```php
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 // Dropdown Base
@@ -626,40 +630,72 @@ Questa documentazione fornisce una panoramica dettagliata dei componenti disponi
             Open Menu
         </x-filament::button>
     </x-slot>
-
-    <x-filament::dropdown.item
-        icon="heroicon-o-pencil"
-        :href="route('edit')"
-    >
-        Edit
-    </x-filament::dropdown.item>
-
-    <x-filament::dropdown.separator />
-
-    <x-filament::dropdown.item
-        icon="heroicon-o-trash"
-        color="danger"
-        :href="route('delete')"
-    >
-        Delete
-    </x-filament::dropdown.item>
-</x-filament::dropdown>
-
-// Dropdown con Gruppi
-<x-filament::dropdown>
-    <x-filament::dropdown.group label="Account">
-        <x-filament::dropdown.item>Profile</x-filament::dropdown.item>
-        <x-filament::dropdown.item>Settings</x-filament::dropdown.item>
-    </x-filament::dropdown.group>
-
-    <x-filament::dropdown.group label="Actions">
-        <x-filament::dropdown.item>Logout</x-filament::dropdown.item>
-    </x-filament::dropdown.group>
-</x-filament::dropdown>
+=======
+CustomSelect::make('field_name')
+    ->label('trans.key')
+    ->relationship('relation', 'column')
+    ->searchable()
+    ->preload()
+    ->required()
 ```
 
-### Componenti per i Form
+#### Caratteristiche
+- Ricerca asincrona
+- Precaricamento opzionale
+- Supporto per relazioni multiple
+- Validazione integrata
+- Cache dei risultati
 
+### MoneyInput
+```php
+use Modules\UI\Forms\Components\MoneyInput;
+
+MoneyInput::make('premio_lordo')
+    ->currency('EUR')
+    ->step(0.01)
+    ->minValue(0)
+    ->required()
+```
+
+#### Caratteristiche
+- Formattazione automatica
+- Supporto multi valuta
+- Validazione numerica
+- Gestione decimali
+- Maschere di input
+>>>>>>> Stashed changes
+
+### DateRangePicker
+```php
+use Modules\UI\Forms\Components\DateRangePicker;
+
+DateRangePicker::make('periodo')
+    ->displayFormat('d/m/Y')
+    ->minDate(today())
+    ->required()
+```
+
+#### Caratteristiche
+- Selezione range date
+- Formati personalizzabili
+- Localizzazione
+- Validazione range
+- Calendario popup
+
+### FileUpload
+```php
+use Modules\UI\Forms\Components\FileUpload;
+
+FileUpload::make('documento')
+    ->disk('s3')
+    ->directory('documenti')
+    ->acceptedFileTypes(['application/pdf'])
+    ->maxSize(5120) // 5MB
+```
+
+## Table Components
+
+<<<<<<< Updated upstream
 #### Input
 ```php
 // Input Base
@@ -936,12 +972,17 @@ FileUpload::make('documento')
 
 ## Table Components
 
+=======
+>>>>>>> Stashed changes
 ### CustomDataTable
 ```php
 use Modules\UI\Tables\Components\CustomDataTable;
 
+<<<<<<< Updated upstream
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 CustomDataTable::make()
     ->paginated(true)
     ->searchable(['nome', 'email'])
@@ -950,6 +991,7 @@ CustomDataTable::make()
         'delete' => 'Elimina',
         'export' => 'Esporta'
     ])
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 ```
 =======
@@ -1009,6 +1051,8 @@ ActionButtons::make()
                 'description' => 'This action cannot be undone.'
             ]
 =======
+=======
+>>>>>>> Stashed changes
 ```
 
 #### Caratteristiche
@@ -1050,12 +1094,16 @@ ActionButtons::make()
         'edit' => [
             'icon' => 'heroicon-o-pencil',
             'url' => fn ($record) => route('edit', $record)
+<<<<<<< Updated upstream
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
         ]
     ])
 ```
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 ## Chart Components
 =======
@@ -1071,14 +1119,19 @@ use Modules\UI\Charts\Components\LineChart;
 =======
 // Grafico Base
 =======
+=======
+>>>>>>> Stashed changes
 ## Chart Components
 
 ### LineChart
 ```php
 use Modules\UI\Charts\Components\LineChart;
 
+<<<<<<< Updated upstream
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 LineChart::make()
     ->datasets([
         [
@@ -1094,6 +1147,7 @@ LineChart::make()
     ])
 ```
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 #### Caratteristiche
 - Dati dinamici
@@ -1114,6 +1168,8 @@ use Modules\UI\Charts\Components\PieChart;
 
 // Grafico Base
 =======
+=======
+>>>>>>> Stashed changes
 #### Caratteristiche
 - Dati dinamici
 - Zoom e pan
@@ -1125,8 +1181,11 @@ use Modules\UI\Charts\Components\PieChart;
 ```php
 use Modules\UI\Charts\Components\PieChart;
 
+<<<<<<< Updated upstream
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 PieChart::make()
     ->datasets([
         [
@@ -1137,6 +1196,7 @@ PieChart::make()
     ->labels(['A', 'B', 'C'])
 ```
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 #### Caratteristiche
 - Legenda interattiva
@@ -1180,6 +1240,8 @@ use Modules\UI\Layouts\Components\AdminLayout;
 =======
 // Layout Base
 =======
+=======
+>>>>>>> Stashed changes
 #### Caratteristiche
 - Legenda interattiva
 - Animazioni
@@ -1214,8 +1276,11 @@ StatsOverview::make()
 ```php
 use Modules\UI\Layouts\Components\AdminLayout;
 
+<<<<<<< Updated upstream
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 AdminLayout::make()
     ->title('Dashboard')
     ->breadcrumbs([
@@ -1225,6 +1290,7 @@ AdminLayout::make()
     ->notifications(true)
 ```
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 #### Caratteristiche
 - Sidebar collassabile
@@ -1245,6 +1311,8 @@ use Modules\UI\Layouts\Components\PrintLayout;
 
 // Layout Base
 =======
+=======
+>>>>>>> Stashed changes
 #### Caratteristiche
 - Sidebar collassabile
 - Breadcrumbs
@@ -1256,8 +1324,11 @@ use Modules\UI\Layouts\Components\PrintLayout;
 ```php
 use Modules\UI\Layouts\Components\PrintLayout;
 
+<<<<<<< Updated upstream
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 PrintLayout::make()
     ->orientation('portrait')
     ->pageSize('a4')
@@ -1269,6 +1340,7 @@ PrintLayout::make()
     ])
 ```
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1276,6 +1348,8 @@ PrintLayout::make()
 =======
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 #### Caratteristiche
 - Ottimizzato per stampa
 - Header/footer personalizzabili
@@ -1283,6 +1357,7 @@ PrintLayout::make()
 - Stili CSS print
 - No elementi UI
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1296,6 +1371,8 @@ PrintLayout::make()
 
 >>>>>>> c6eb299 (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 ### DarkModeSwitcher
 ```php
 // Livewire Component
@@ -1318,6 +1395,7 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 - Script per la gestione del cookie e l'applicazione della classe CSS `.dark`
 - SVG icons per modalità chiara e scura
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1364,6 +1442,8 @@ Il componente utilizza la vista `ui::livewire.dark-mode.switcher` che contiene:
 =======
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 ## Componenti Complessi
 
 ### Modal
@@ -1452,11 +1532,14 @@ Modal::make('conferma')
 ```
 
 ## Best Practices
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 
 ### Gestione delle Rotte e dei Controller
 
@@ -1654,6 +1737,7 @@ Non è necessario:
 - Modificare file di routing
 - Creare controller personalizzati
 - Gestire manualmente le rotte
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 =======
@@ -1774,3 +1858,5 @@ php artisan vendor:publish --tag=ui-views
 ``` 
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes

@@ -58,7 +58,6 @@ Modules/UI/
 - Integration tests with dependent modules
 - Security testing
 - Performance testing
-<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -83,5 +82,3 @@ Modules/UI/
 
 ---
 
-=======
->>>>>>> 5512b9a (.)

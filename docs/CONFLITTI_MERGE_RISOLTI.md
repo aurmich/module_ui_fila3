@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6,6 +7,8 @@
 =======
 >>>>>>> Stashed changes
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
 # Conflitti di Merge Risolti nel Modulo UI
 
 ## Conflitti Risolti (2025-05-13)
@@ -70,6 +73,7 @@ Questa documentazione integra le informazioni sui conflitti risolti, fornendo de
 - [Vedi anche: Blog/docs/README.md](../../Blog/docs/README.md)
 - [Vedi anche: Cms/docs/README.md](../../Cms/docs/README.md)
 - [Vedi anche: Comment/docs/README.md](../../Comment/docs/README.md)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
@@ -464,3 +468,5 @@ Per evitare errori nei namespace, seguire queste linee guida:
 =======
 >>>>>>> 5512b9a (.)
 >>>>>>> 5396bf4 (.)
+=======
+>>>>>>> Stashed changes
