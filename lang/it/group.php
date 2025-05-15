@@ -19,7 +19,6 @@ return array (
     array (
       'label' => 'periodo',
     ),
-<<<<<<< Updated upstream
     'info' => 
     array (
       'label' => 'info',
@@ -35,11 +34,6 @@ return array (
     'motivo/invio_email' => 
     array (
       'label' => 'motivo/invio_email',
-=======
-    'attributes' => 
-    array (
-      'label' => 'attributes',
->>>>>>> Stashed changes
     ),
   ),
 );
