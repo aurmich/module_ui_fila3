@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 return array (
   'fields' => 
   array (
@@ -12,6 +12,7 @@ return array (
       'label' => 'pack',
       'description' => 'pack',
       'helper_text' => 'pack',
+      'placeholder' => 'pack',
     ),
     'icon' => 
     array (

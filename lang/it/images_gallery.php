@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 return array (
   'fields' => 
   array (
@@ -20,14 +20,23 @@ return array (
     'title' => 
     array (
       'label' => 'title',
+      'description' => 'title',
+      'helper_text' => 'title',
+      'placeholder' => 'title',
     ),
     'image' => 
     array (
       'label' => 'image',
+      'placeholder' => 'image',
+      'helper_text' => 'image',
+      'description' => 'image',
     ),
     'gallery' => 
     array (
       'label' => 'gallery',
+      'placeholder' => 'gallery',
+      'helper_text' => 'gallery',
+      'description' => 'gallery',
     ),
   ),
 );

@@ -1,16 +1,21 @@
 <?php
-declare(strict_types=1);
+
 return array (
   'fields' => 
   array (
     'text' => 
     array (
       'label' => 'Testo',
+      'description' => 'text',
+      'placeholder' => 'text',
+      'helper_text' => 'text',
     ),
     'level' => 
     array (
       'label' => 'Grandezza',
       'description' => 'level',
+      'helper_text' => 'level',
+      'placeholder' => 'level',
     ),
     '_tpl' => 
     array (

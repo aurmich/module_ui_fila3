@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 return array (
   'fields' => 
   array (
@@ -20,6 +20,9 @@ return array (
     'img_uuid' => 
     array (
       'label' => 'img_uuid',
+      'description' => 'img_uuid',
+      'helper_text' => 'img_uuid',
+      'placeholder' => 'img_uuid',
     ),
   ),
 );
