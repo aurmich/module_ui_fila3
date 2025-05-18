@@ -10,6 +10,8 @@ return array (
     'pack' => 
     array (
       'label' => 'pack',
+      'description' => 'pack',
+      'helper_text' => 'pack',
     ),
     'icon' => 
     array (

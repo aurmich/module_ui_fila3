@@ -14,6 +14,8 @@ return array (
     array (
       'label' => 'image',
       'description' => 'image',
+      'helper_text' => 'image',
+      'placeholder' => 'image',
     ),
     'img_uuid' => 
     array (

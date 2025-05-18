@@ -14,6 +14,8 @@ return array (
     array (
       'label' => 'subtitle',
       'description' => 'subtitle',
+      'helper_text' => 'subtitle',
+      'placeholder' => 'subtitle',
     ),
     'title' => 
     array (

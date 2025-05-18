@@ -10,6 +10,8 @@ return array (
     'text' => 
     array (
       'label' => 'Testo',
+      'description' => 'text',
+      'helper_text' => 'text',
     ),
     '_tpl' => 
     array (

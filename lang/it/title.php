@@ -10,6 +10,7 @@ return array (
     'level' => 
     array (
       'label' => 'Grandezza',
+      'description' => 'level',
     ),
     '_tpl' => 
     array (
@@ -20,6 +21,7 @@ return array (
       'label' => 'view',
       'description' => 'view',
       'helper_text' => 'view',
+      'placeholder' => 'view',
     ),
   ),
 );
