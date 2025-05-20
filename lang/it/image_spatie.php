@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -26,3 +27,20 @@ return array (
     ),
   ),
 );
+=======
+declare(strict_types=1);
+
+return [
+    'fields' => [
+        'caption' => [
+            'label' => 'caption',
+        ],
+        'image' => [
+            'label' => 'image',
+        ],
+        'img_uuid' => [
+            'label' => 'img_uuid',
+        ],
+    ],
+];
+>>>>>>> 77f8368 (.)
