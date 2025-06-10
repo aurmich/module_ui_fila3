@@ -1,19 +1,8 @@
-<!--
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
+{{-- Refactored: Accepts dynamic props for title/subtitle --}}
 <div class="relative overflow-hidden bg-gray-800">
+{{-- Accepts dynamic props for title/subtitle --}}
     <div class="hidden sm:absolute sm:inset-0 sm:block" aria-hidden="true">
+{{-- Accepts dynamic props for title/subtitle --}}
       <svg class="absolute bottom-0 right-0 mb-48 translate-x-1/2 transform text-gray-700 lg:top-0 lg:mb-0 lg:mt-28 xl:translate-x-0 xl:transform-none" width="364" height="384" viewBox="0 0 364 384" fill="none">
         <defs>
           <pattern id="eab71dd9-9d7a-47bd-8044-256344ee00d0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -23,7 +12,8 @@
         <rect width="364" height="384" fill="url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)" />
       </svg>
     </div>
-    <div class="relative pb-16 pt-6 sm:pb-24">
+    <div class="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
+{{-- Accepts dynamic props for title/subtitle --}}
       <div>
         <nav class="relative mx-auto flex max-w-7xl items-center justify-between px-6" aria-label="Global">
           <div class="flex flex-1 items-center">
@@ -105,8 +95,8 @@
                     </svg>
                   </a>
                 </div>
-                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Data to enrich your online business</h1>
-                <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.</p>
+              <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">{{ $title }}</h1>
+              <p class="mt-6 text-lg leading-8 text-gray-300">{{ $subtitle }}</p>
                 <p class="mt-8 text-base font-semibold text-white sm:mt-10">Used by</p>
                 <div class="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                   <div class="flex flex-wrap items-start justify-between">
@@ -194,6 +184,7 @@
                 <div class="border-t-2 border-gray-200 bg-gray-50 px-6 py-6 sm:px-10">
                   <p class="text-xs leading-5 text-gray-500">By signing up, you agree to our <a href="#" class="font-medium text-gray-900 hover:underline">Terms</a>, <a href="#" class="font-medium text-gray-900 hover:underline">Data Policy</a> and <a href="#" class="font-medium text-gray-900 hover:underline">Cookies Policy</a>.</p>
                 </div>
+                {{-- Optionally: Add secondary CTA here if required --}}
               </div>
             </div>
           </div>
@@ -201,4 +192,4 @@
       </main>
     </div>
   </div>
-  
+

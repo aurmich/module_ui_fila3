@@ -31,25 +31,29 @@ Questa tabella mostra quali componenti Filament supportano quali metodi per le i
 
 ### `icon()`
 
-Il metodo `icon()` è tipicamente supportato dai componenti di layout e contenitore. Si utilizza così:
+Il metodo `icon()` è tipicamente supportato dai componenti di layout e contenitore:
 
 ```php
-Forms\Components\Section::make('Sezione')
+Forms\Components\Section::make('Informazioni Personali')
     ->icon('heroicon-o-user')
+    ->schema([
+        // componenti interni...
+    ])
 ```
 
 ### `prefixIcon()` e `suffixIcon()`
 
-I metodi `prefixIcon()` e `suffixIcon()` sono generalmente supportati dai componenti di input. Si utilizzano così:
+Questi metodi sono supportati principalmente dai componenti di input:
 
 ```php
-Forms\Components\TextInput::make('name')
-    ->prefixIcon('heroicon-o-user')
+Forms\Components\TextInput::make('email')
+    ->prefixIcon('heroicon-o-envelope')
+    ->suffixIcon('heroicon-o-check-circle')
 ```
 
-## Alternative per componenti che non supportano icone
+## Alternative per componenti senza supporto diretto
 
-Per i componenti che non supportano direttamente le icone (come FileUpload), ecco alcune alternative:
+Per componenti che non supportano direttamente le icone (come FileUpload), ecco alcune alternative:
 
 ### 1. Racchiudere in una Section
 
@@ -108,6 +112,6 @@ Forms\Components\TextInput::make('name')
 ## Riferimenti
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/fields/overview)
-- [API Components Filament](/var/www/html/base_saluteora/laravel/Modules/UI/docs/filament/components-api.md)
+- [API Components Filament](components-api.md)
 
 > **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.

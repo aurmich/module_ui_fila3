@@ -1,54 +1,4 @@
-# Gestione delle Risorse Pubbliche 
-
-## Indice
-- [Panoramica](#panoramica)
-- [Struttura delle Cartelle](#struttura-delle-cartelle)
-- [Tipi di Risorse](#tipi-di-risorse)
-- [Best Practices](#best-practices)
-- [Esempi di Utilizzo](#esempi-di-utilizzo)
-
-## Panoramica
-
-Questo documento descrive la corretta gestione delle risorse pubbliche (immagini, CSS, JavaScript, ecc.) , con particolare attenzione alla struttura delle cartelle e alle best practices da seguire.
-
-## Struttura delle Cartelle
-
-La struttura corretta per le risorse pubbliche  è la seguente:
-
-```
-/var/www/html/saluteora/
-├── public_html/           # Directory pubblica principale
-│   ├── images/            # Immagini pubbliche
-│   ├── css/               # File CSS
-│   ├── js/                # File JavaScript
-│   ├── fonts/             # Font
-│   └── assets/            # Altre risorse statiche
-└── laravel/               # Applicazione Laravel (NON contiene file pubblici)
-```
-
-> **IMPORTANTE**: MAI utilizzare `/var/www/html/saluteora/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di SaluteOra.
-
-## Tipi di Risorse
-
-### Immagini
-
-Le immagini devono essere posizionate in `/var/www/html/saluteora/public_html/images/` e organizzate in sottocartelle per tipologia:
-
-- `/images/avatars/` - Avatar utenti
-- `/images/logos/` - Loghi
-- `/images/icons/` - Icone
-- `/images/backgrounds/` - Sfondi
-
-### CSS e JavaScript
-
-I file CSS e JavaScript compilati devono essere posizionati in:
-
-- `/public_html/css/` - File CSS
-- `/public_html/js/` - File JavaScript
-
-### Font
-
-I font devono essere posizionati in `/public_html/fonts/` e organizzati per famiglia.
+# Gestione delle Risorse Pubbliche
 
 ## Best Practices
 
@@ -111,8 +61,8 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 ```blade
 <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')) }}">
     <img 
-        src="{{ asset('images/logos/saluteora-logo.svg') }}" 
-        alt="SaluteOra" 
+        src="{{ asset('images/logos/project-logo.svg') }}" 
+        alt="ProjectName" 
         class="h-8"
     >
 </a>
@@ -127,4 +77,4 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 
 ## Conclusione
 
-Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto SaluteOra.
+Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto.

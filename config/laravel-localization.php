@@ -32,11 +32,13 @@ return [
     | This is the configuration for the language detection.
     |
     */
-    'detect' => [
-        'browser' => true,
-        'session' => true,
-        'cookie' => true,
-    ],
+    'detectBrowserLanguage' => true,
+    'detectBrowserLanguageFromAcceptLanguage' => true,
+    'detectBrowserLanguageFromAcceptLanguageHeader' => true,
+    'detectBrowserLanguageFromSession' => true,
+    'detectBrowserLanguageFromCookie' => true,
+    'detectBrowserLanguageFromQueryString' => true,
+    'detectBrowserLanguageFromRoute' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -46,10 +48,24 @@ return [
     | This is the configuration for the language selection.
     |
     */
-    'selection' => [
-        'default' => 'it',
-        'fallback' => 'en',
-    ],
+    'hideDefaultLocaleInURL' => false,
+    'useAcceptLanguageHeader' => true,
+    'useSessionLocale' => true,
+    'useCookieLocale' => true,
+    'useQueryStringLocale' => true,
+    'useRouteLocale' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Language Redirect
+    |--------------------------------------------------------------------------
+    |
+    | This is the configuration for the language redirect.
+    |
+    */
+    'redirectToDefaultLocale' => true,
+    'redirectToNonLocalizedRoutes' => true,
+    'redirectToLocalizedRoutes' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -77,6 +93,10 @@ return [
         'middleware' => [
             'web',
             'localize',
+            'localizationRedirect',
+            'localeSessionRedirect',
+            'localeCookieRedirect',
+            'localeViewPath',
         ],
     ],
 ];

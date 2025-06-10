@@ -557,6 +557,24 @@ class UserResource extends XotBaseResource
 
 Consulta la [documentazione dettagliata sui path e gli asset](./PATHS_AND_ASSETS.md) per motivazione, esempi e best practices.
 
+## Attenzione ai Middleware di Localizzazione
+
+### Errore Critico
+Durante un refactoring è stato accidentalmente omesso l'inserimento dei middleware fondamentali per la localizzazione:
+- `localizationRedirect`
+- `localeSessionRedirect`
+- `localeCookieRedirect`
+
+Questa dimenticanza ha causato la rottura del sito e la perdita della funzionalità multilingua.
+
+### Come Prevenire
+- Verificare sempre la presenza di questi middleware nei gruppi di route e nei ServiceProvider.
+- Aggiornare la documentazione ogni volta che si modificano le rotte o la configurazione della localizzazione.
+- Implementare test automatici che simulino richieste multilingua.
+- Introdurre una checklist di controllo prima di ogni deploy.
+
+> **Nota:** La mancanza di questi middleware può compromettere l'intero sito. Seguire SEMPRE le regole di checklist e code review per evitare errori simili.
+
 ---
 
 ## Server MCP consigliati per UI
