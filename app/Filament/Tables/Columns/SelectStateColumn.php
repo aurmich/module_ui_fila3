@@ -7,12 +7,12 @@ namespace Modules\UI\Filament\Tables\Columns;
 use Exception;
 use Illuminate\Support\Arr;
 use Spatie\ModelStates\State;
-use Modules\<nome progetto>\Models\User;
+use Modules\SaluteOra\Models\User;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
-use Modules\<nome progetto>\States\User\UserState;
+use Modules\SaluteOra\States\User\UserState;
 
 class SelectStateColumn extends SelectColumn
 {

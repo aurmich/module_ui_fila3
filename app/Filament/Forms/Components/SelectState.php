@@ -6,11 +6,11 @@ namespace Modules\UI\Filament\Forms\Components;
 
 use Exception;
 use Spatie\ModelStates\State;
-use Modules\<nome progetto>\Models\User;
+use Modules\SaluteOra\Models\User;
 use Filament\Forms\Components\Select;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
-use Modules\<nome progetto>\States\User\UserState;
+use Modules\SaluteOra\States\User\UserState;
 
 class SelectState extends Select
 {
@@ -38,8 +38,8 @@ class SelectState extends Select
             */
             return array_combine($states, $states);
         });
-
+       
     }
 
-
+   
 }
