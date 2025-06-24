@@ -16,6 +16,11 @@ return array (
       'description' => 'content',
       'helper_text' => 'content',
       'placeholder' => 'content',
+<<<<<<< HEAD
+=======
+      'helper_text' => 'content',
+      'placeholder' => 'content',
+>>>>>>> ddceca0 (.)
     ),
   ),
 );

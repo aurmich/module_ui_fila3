@@ -9,6 +9,10 @@ return array (
       'description' => 'method',
       'helper_text' => 'method',
       'placeholder' => 'method',
+<<<<<<< HEAD
+=======
+      'placeholder' => 'method',
+>>>>>>> ddceca0 (.)
     ),
     '_tpl' => 
     array (
