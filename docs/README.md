@@ -12,6 +12,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - FileUpload: Upload file con preview e validazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
@@ -22,6 +23,11 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
 >>>>>>> df228b6 (.)
+=======
+- **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
+  - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
+  - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
+>>>>>>> 730cac7 (.)
 
 ### Tables
 - CustomDataTable: Tabella dati avanzata con ordinamento e filtri
