@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cf5bf8d (.)
         "coolsam/flatpickr": "^4.1",
@@ -55,6 +56,10 @@
 >>>>>>> 632ecbb (.)
 =======
 >>>>>>> 6bc16ad (.)
+=======
+        "coolsam/flatpickr": "^4.1",
+        "owenvoke/blade-fontawesome": "*"
+>>>>>>> df228b6 (.)
     },
     "repositories": [
         {

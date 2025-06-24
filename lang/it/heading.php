@@ -14,8 +14,11 @@ return array (
     array (
       'label' => 'content',
       'description' => 'content',
+<<<<<<< HEAD
       'helper_text' => 'content',
       'placeholder' => 'content',
+=======
+>>>>>>> df228b6 (.)
     ),
   ),
 );
