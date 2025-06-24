@@ -14,10 +14,13 @@ return array (
     array (
       'label' => 'alt',
       'description' => 'alt',
+      'helper_text' => 'alt',
+      'placeholder' => 'alt',
     ),
     'ratio' => 
     array (
       'label' => 'ratio',
+      'description' => 'ratio',
     ),
     'url' => 
     array (

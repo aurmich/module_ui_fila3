@@ -14,10 +14,13 @@ return array (
     array (
       'label' => 'class',
       'description' => 'class',
+      'helper_text' => 'class',
+      'placeholder' => 'class',
     ),
     'label' => 
     array (
       'label' => 'label',
+      'description' => 'label',
     ),
     'buttons' => 
     array (
