@@ -15,12 +15,6 @@ return array (
       'label' => 'video',
       'description' => 'video',
       'helper_text' => 'video',
-<<<<<<< HEAD
-=======
-      'description' => 'video',
-      'helper_text' => 'video',
-      'placeholder' => 'video',
->>>>>>> ddceca0 (.)
     ),
     'caption' => 
     array (
@@ -28,10 +22,6 @@ return array (
       'description' => 'caption',
       'helper_text' => 'caption',
       'placeholder' => 'caption',
-<<<<<<< HEAD
-=======
-      'placeholder' => 'caption',
->>>>>>> ddceca0 (.)
     ),
   ),
 );

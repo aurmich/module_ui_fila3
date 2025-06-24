@@ -16,22 +16,13 @@ return array (
       'description' => 'class',
       'helper_text' => 'class',
       'placeholder' => 'class',
-<<<<<<< HEAD
-=======
-      'helper_text' => 'class',
-      'placeholder' => 'class',
->>>>>>> ddceca0 (.)
     ),
     'label' => 
     array (
       'label' => 'label',
       'description' => 'label',
-<<<<<<< HEAD
-=======
-      'description' => 'label',
       'helper_text' => 'label',
       'placeholder' => 'label',
->>>>>>> ddceca0 (.)
     ),
     'buttons' => 
     array (
