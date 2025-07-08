@@ -26,11 +26,17 @@
         }
     },
     "require": {
+<<<<<<< HEAD
         "owenvoke/blade-fontawesome": "*",
         "saade/filament-fullcalendar": "^3.2"
     },
     "require_comment": {
         "coolsam/flatpickr": "*"
+=======
+        "coolsam/flatpickr": "^4.1",
+        "owenvoke/blade-fontawesome": "*",
+        "saade/filament-fullcalendar": "^3.2"
+>>>>>>> 8d6e67d (.)
     },
     "repositories": [
         {
