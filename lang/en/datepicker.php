@@ -1,70 +1,26 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> 30328c8 (.)
 return [
-    'previous_month' => 'Previous month',
-    'next_month' => 'Next month',
-    'today' => 'Today',
     'months' => [
-<<<<<<< HEAD
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December',
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December',
     ],
-    'weekdays' => [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
+    'days_short' => [
+        'mon' => 'Mon', 'tue' => 'Tue', 'wed' => 'Wed', 'thu' => 'Thu', 'fri' => 'Fri', 'sat' => 'Sat', 'sun' => 'Sun',
     ],
-    'weekdays_short' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-=======
-        '0' => 'January',
-        '1' => 'February',
-        '2' => 'March',
-        '3' => 'April',
-        '4' => 'May',
-        '5' => 'June',
-        '6' => 'July',
-        '7' => 'August',
-        '8' => 'September',
-        '9' => 'October',
-        '10' => 'November',
-        '11' => 'December',
+    'days_full' => [
+        'monday' => 'Monday', 'tuesday' => 'Tuesday', 'wednesday' => 'Wednesday', 'thursday' => 'Thursday', 'friday' => 'Friday', 'saturday' => 'Saturday', 'sunday' => 'Sunday',
     ],
-    'weekdays' => [
-        '0' => 'Sunday',
-        '1' => 'Monday',
-        '2' => 'Tuesday',
-        '3' => 'Wednesday',
-        '4' => 'Thursday',
-        '5' => 'Friday',
-        '6' => 'Saturday',
+    'today' => 'Today',
+    'select_date' => 'Select date',
+    'select_range' => 'Select range',
+    'navigation' => [
+        'previous_month' => 'Previous month',
+        'next_month' => 'Next month',
+        'today' => 'Today',
     ],
-    'weekdays_short' => [
-        '0' => 'Su',
-        '1' => 'Mo',
-        '2' => 'Tu',
-        '3' => 'We',
-        '4' => 'Th',
-        '5' => 'Fr',
-        '6' => 'Sa',
-    ],
->>>>>>> 30328c8 (.)
+    'no_dates_available' => 'No dates available',
+    'selected_date' => 'Selected date',
 ];
