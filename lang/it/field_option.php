@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return array (
   'actions' => 
   array (
@@ -53,14 +55,7 @@ return array (
       'label' => 'name',
       'description' => 'name',
       'helper_text' => 'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       'placeholder' => 'name',
->>>>>>> beb3f44 (.)
-=======
-      'placeholder' => 'name',
->>>>>>> 4ed4b1e (.)
     ),
   ),
   'navigation' => 
