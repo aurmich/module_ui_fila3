@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 4ed4b1e (.)
 return [
     'login' => [
         'title' => 'Sign in',
@@ -9,21 +14,30 @@ return [
         'forgot_password' => 'Forgot your password?',
         'submit' => 'Sign in',
         'or' => 'or',
+<<<<<<< HEAD
         'create_account' => 'create an account',
 <<<<<<< HEAD
         'link' => 'Accedi',
 =======
         'link' => 'Sign in',
 >>>>>>> beb3f44 (.)
+=======
+        'create_account' => 'Create an account',
+        'link' => 'Sign in',
+>>>>>>> 4ed4b1e (.)
     ],
     'register' => [
         'title' => 'Register',
         'submit' => 'Register',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'link' => 'Registrati',
 =======
         'link' => 'Register',
 >>>>>>> beb3f44 (.)
+=======
+        'link' => 'Register',
+>>>>>>> 4ed4b1e (.)
     ],
     'logout' => [
         'title' => 'Logout',
@@ -40,6 +54,7 @@ return [
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'profile' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'title' => 'Profilo',
         'settings' => 'Impostazioni',
@@ -67,6 +82,8 @@ return [
         'profile' => 'Profilo',
         'settings' => 'Impostazioni',
 =======
+=======
+>>>>>>> 4ed4b1e (.)
         'title' => 'Profile',
         'settings' => 'Settings',
         'information' => 'Profile Information',
@@ -92,6 +109,9 @@ return [
         'dashboard' => 'Dashboard',
         'profile' => 'Profile',
         'settings' => 'Settings',
+<<<<<<< HEAD
 >>>>>>> beb3f44 (.)
+=======
+>>>>>>> 4ed4b1e (.)
     ],
 ];

@@ -6,6 +6,9 @@ return [
     'fields' => [
         'monday' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4ed4b1e (.)
             'morning_from' => [
                 'label' => 'Monday morning from',
                 'placeholder' => '08:00',
@@ -157,6 +160,7 @@ return [
                 'label' => 'Sunday afternoon to',
                 'placeholder' => '18:00',
                 'help' => 'Closing time for Sunday afternoon',
+<<<<<<< HEAD
 =======
             'morning' => [
                 'label' => 'Monday Morning',
@@ -474,25 +478,35 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Sunday afternoon activities',
 >>>>>>> beb3f44 (.)
+=======
+>>>>>>> 4ed4b1e (.)
             ],
         ],
         'schedule' => [
             'label' => 'Schedule',
             'placeholder' => 'Configure opening hours',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Manage complete availability schedule',
 =======
             'helper_text' => 'Complete availability schedule management',
 >>>>>>> beb3f44 (.)
+=======
+            'help' => 'Manage complete availability schedule',
+>>>>>>> 4ed4b1e (.)
         ],
         'availability' => [
             'label' => 'Availability',
             'placeholder' => 'Set your availability',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Configure when you are available for appointments',
 =======
             'helper_text' => 'Configure when you are available for appointments',
 >>>>>>> beb3f44 (.)
+=======
+            'help' => 'Configure when you are available for appointments',
+>>>>>>> 4ed4b1e (.)
         ],
     ],
     'sections' => [

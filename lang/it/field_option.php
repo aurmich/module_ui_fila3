@@ -54,9 +54,13 @@ return array (
       'description' => 'name',
       'helper_text' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'placeholder' => 'name',
 >>>>>>> beb3f44 (.)
+=======
+      'placeholder' => 'name',
+>>>>>>> 4ed4b1e (.)
     ),
   ),
   'navigation' => 

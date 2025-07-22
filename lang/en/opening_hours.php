@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'instructions' => [
         'title' => 'Configurazione Orari',
@@ -56,6 +57,8 @@ return [
         'to_after_from' => 'L\'orario \"Alle\" deve essere successivo all\'orario \"Dalle\"',
         'time_sequence' => 'L\'orario di inizio deve essere precedente a quello di fine',
 =======
+=======
+>>>>>>> 4ed4b1e (.)
 declare(strict_types=1);
 
 return [
@@ -112,6 +115,9 @@ return [
         'from_before_to' => 'The "From" time must be before the "To" time',
         'to_after_from' => 'The "To" time must be after the "From" time',
         'time_sequence' => 'Start time must be before end time',
+<<<<<<< HEAD
 >>>>>>> beb3f44 (.)
+=======
+>>>>>>> 4ed4b1e (.)
     ],
 ];

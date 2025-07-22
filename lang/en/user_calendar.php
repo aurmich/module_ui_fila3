@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'months' => [
         'long' => [
@@ -31,6 +32,8 @@ return [
             '10' => 'Nov',
             '11' => 'Dic',
 =======
+=======
+>>>>>>> 4ed4b1e (.)
 declare(strict_types=1);
 
 return [
@@ -62,11 +65,15 @@ return [
             '9' => 'Oct',
             '10' => 'Nov',
             '11' => 'Dec',
+<<<<<<< HEAD
 >>>>>>> beb3f44 (.)
+=======
+>>>>>>> 4ed4b1e (.)
         ],
     ],
     'weekdays' => [
         'long' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             '0' => 'Domenica',
             '1' => 'Lunedì',
@@ -93,6 +100,8 @@ return [
             '4' => 'Gi',
             '5' => 'Ve',
 =======
+=======
+>>>>>>> 4ed4b1e (.)
             '0' => 'Sunday',
             '1' => 'Monday',
             '2' => 'Tuesday',
@@ -117,11 +126,15 @@ return [
             '3' => 'We',
             '4' => 'Th',
             '5' => 'Fr',
+<<<<<<< HEAD
 >>>>>>> beb3f44 (.)
+=======
+>>>>>>> 4ed4b1e (.)
             '6' => 'Sa',
         ],
     ],
     'buttons' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'previous' => 'Mese precedente',
         'next' => 'Mese successivo',
@@ -155,6 +168,8 @@ return [
             'helper_text' => 'Data e ora di fine dell\'evento',
             'description' => 'Data e ora di fine',
 =======
+=======
+>>>>>>> 4ed4b1e (.)
         'previous' => 'Previous month',
         'next' => 'Next month',
         'today' => 'Today',
@@ -186,11 +201,15 @@ return [
             'placeholder' => 'Select end date and time',
             'helper_text' => 'Event end date and time',
             'description' => 'End date and time',
+<<<<<<< HEAD
 >>>>>>> beb3f44 (.)
+=======
+>>>>>>> 4ed4b1e (.)
         ],
     ],
     'actions' => [
         'delete' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'label' => 'Elimina',
             'confirm' => 'Sei sicuro di voler eliminare questo evento?',
@@ -213,6 +232,8 @@ return [
         'date' => 'Inserisci una data valida',
         'after' => 'La data di fine deve essere successiva alla data di inizio',
 =======
+=======
+>>>>>>> 4ed4b1e (.)
             'label' => 'Delete',
             'confirm' => 'Are you sure you want to delete this event?',
             'success' => 'Event deleted successfully',
@@ -233,6 +254,9 @@ return [
         'required' => 'This field is required',
         'date' => 'Enter a valid date',
         'after' => 'End date must be after start date',
+<<<<<<< HEAD
 >>>>>>> beb3f44 (.)
+=======
+>>>>>>> 4ed4b1e (.)
     ],
 ];
