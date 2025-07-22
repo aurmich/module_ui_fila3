@@ -53,6 +53,10 @@ return array (
       'label' => 'name',
       'description' => 'name',
       'helper_text' => 'name',
+<<<<<<< HEAD
+=======
+      'placeholder' => 'name',
+>>>>>>> beb3f44 (.)
     ),
   ),
   'navigation' => 

@@ -10,12 +10,20 @@ return [
         'submit' => 'Sign in',
         'or' => 'or',
         'create_account' => 'create an account',
+<<<<<<< HEAD
         'link' => 'Accedi',
+=======
+        'link' => 'Sign in',
+>>>>>>> beb3f44 (.)
     ],
     'register' => [
         'title' => 'Register',
         'submit' => 'Register',
+<<<<<<< HEAD
         'link' => 'Registrati',
+=======
+        'link' => 'Register',
+>>>>>>> beb3f44 (.)
     ],
     'logout' => [
         'title' => 'Logout',
@@ -32,6 +40,7 @@ return [
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'profile' => [
+<<<<<<< HEAD
         'title' => 'Profilo',
         'settings' => 'Impostazioni',
         'information' => 'Informazioni Profilo',
@@ -57,5 +66,32 @@ return [
         'dashboard' => 'Dashboard',
         'profile' => 'Profilo',
         'settings' => 'Impostazioni',
+=======
+        'title' => 'Profile',
+        'settings' => 'Settings',
+        'information' => 'Profile Information',
+        'update_password' => 'Update Password',
+        'current_password' => 'Current Password',
+        'new_password' => 'New Password',
+        'confirm_password' => 'Confirm Password',
+        'save' => 'Save',
+        'update' => 'Update',
+    ],
+    'user_dropdown' => [
+        'manage_account' => 'Account Management',
+        'profile' => 'Profile',
+        'settings' => 'Settings',
+        'logout' => 'Logout',
+        'login_link' => 'Sign in',
+        'register_link' => 'Register',
+    ],
+    'navigation' => [
+        'open_menu' => 'Open main menu',
+        'close_menu' => 'Close main menu',
+        'home' => 'Home',
+        'dashboard' => 'Dashboard',
+        'profile' => 'Profile',
+        'settings' => 'Settings',
+>>>>>>> beb3f44 (.)
     ],
 ];
