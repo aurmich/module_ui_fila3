@@ -140,11 +140,7 @@ class InlineDatePicker extends DatePicker
     public function getEnabledDates(): Collection
     {
         $dates = $this->evaluate($this->enabledDates) ?? [];
-<<<<<<< HEAD
         /** @phpstan-ignore return.type, argument.templateType, argument.templateType */
-=======
-        /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
         return collect($dates)->map(function ($date): string {
             return Carbon::parse($date)->format('Y-m-d');
         });
@@ -173,11 +169,7 @@ class InlineDatePicker extends DatePicker
             $this->currentViewMonth = now()->format('Y-m');
         }
         
-<<<<<<< HEAD
         /** @phpstan-ignore method.nonObject */
-=======
-        /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
         $targetMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth)->startOfMonth();
         /** @phpstan-ignore-next-line */
         $firstDay = $targetMonth->copy()->startOfWeek(Carbon::MONDAY);
@@ -197,11 +189,7 @@ class InlineDatePicker extends DatePicker
                 $isSelected = false;
                 try {
                     $state = $this->getState();
-<<<<<<< HEAD
                     /** @phpstan-ignore argument.type */
-=======
-                    /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
                     $isSelected = $state && $currentDay->isSameDay(Carbon::parse($state));
                 } catch (\Throwable $e) {
                     $isSelected = false;
@@ -245,11 +233,7 @@ class InlineDatePicker extends DatePicker
         $monday = Carbon::now()->startOfWeek(Carbon::MONDAY);
         
         for ($i = 0; $i < 7; $i++) {
-<<<<<<< HEAD
             /** @phpstan-ignore property.nonObject */
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
             $weekdays[] = $monday->copy()->addDays($i)->locale(App::getLocale())->shortLocaleDayOfWeek[0];
         }
         

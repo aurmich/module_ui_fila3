@@ -220,11 +220,7 @@ class LocationSelector extends Group
     protected function getRegionOptions(): array
     {
         try {
-<<<<<<< HEAD
             /** @phpstan-ignore return.type */
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
             return Comune::select('regione')
                 ->distinct()
                 ->orderBy('regione->nome')
@@ -250,11 +246,7 @@ class LocationSelector extends Group
     protected function getProvinceOptions(string $region): array
     {
         try {
-<<<<<<< HEAD
             /** @phpstan-ignore return.type */
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
             return Comune::query()
                 ->where('regione->codice', $region)
                 ->select('provincia')
@@ -283,11 +275,7 @@ class LocationSelector extends Group
     protected function getCapOptions(string $region, string $province): array
     {
         try {
-<<<<<<< HEAD
             /** @phpstan-ignore return.type */
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
             return Comune::query()
                 ->where('regione->codice', $region)
                 ->where('provincia->codice', $province)
@@ -317,21 +305,13 @@ class LocationSelector extends Group
         $errors = [];
 
         // Verifica che se è selezionata una provincia, sia selezionata anche la regione
-<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
-=======
-        /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
         if (!empty($state[$this->provinceFieldName]) && empty($state[$this->regionFieldName])) {
             $errors[] = __('ui::location_selector.validation.region_required_for_province');
         }
 
         // Verifica che se è selezionato un CAP, siano selezionate regione e provincia
-<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
-=======
-        /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
         if (!empty($state[$this->capFieldName]) && (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
             $errors[] = __('ui::location_selector.validation.region_province_required_for_cap');
         }
@@ -347,11 +327,7 @@ class LocationSelector extends Group
     public function getGeographicData(): ?array
     {
         $state = $this->getState();
-<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
-        /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
         if (empty($state[$this->regionFieldName])) {
             return null;
         }
@@ -360,20 +336,12 @@ class LocationSelector extends Group
             $query = Comune::query()
                 ->where('regione->codice', $state[$this->regionFieldName]);
 
-<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
             if (!empty($state[$this->provinceFieldName])) {
                 $query->where('provincia->codice', $state[$this->provinceFieldName]);
             }
 
-<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
             if (!empty($state[$this->capFieldName])) {
                 $query->where('cap->0', $state[$this->capFieldName]);
             }
@@ -393,11 +361,7 @@ class LocationSelector extends Group
                     'code' => $comune->provincia['codice'] ?? null,
                     'name' => $comune->provincia['nome'] ?? null,
                 ],
-<<<<<<< HEAD
                 /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
-                /** @phpstan-ignore-next-line */
->>>>>>> 988693e (.)
                 'cap' => $state[$this->capFieldName] ?? null,
                 /** @phpstan-ignore-next-line */
                 'city' => $comune->nome ?? null,

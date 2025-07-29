@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> 988693e (.)
 return array (
   'actions' => 
   array (
@@ -58,10 +53,7 @@ return array (
       'label' => 'name',
       'description' => 'name',
       'helper_text' => 'name',
-<<<<<<< HEAD
       'placeholder' => 'name',
-=======
->>>>>>> 988693e (.)
     ),
   ),
   'navigation' => 
