@@ -26,9 +26,15 @@ class IconStateColumn extends IconColumn
     {
         parent::setUp();
         //$this->getStateUsing(fn() => true); // the column requires a state to be passed to it
+<<<<<<< HEAD
         $this->icon(fn($state): ?string => $state?->icon());
         $this->color(fn($state): ?string => $state?->color());
         $this->tooltip(fn($state): ?string => $state?->label());
+=======
+        $this->icon(fn($state): string => $state->icon());
+        $this->color(fn($state): string => $state->color());
+        $this->tooltip(fn($state): string => $state->label());
+>>>>>>> 988693e (.)
         //$this->label('aaa');
 
         $this->action(Action::make('change-state')
@@ -56,7 +62,11 @@ class IconStateColumn extends IconColumn
                             //$states=array_combine($states, $states);
                             $states=Arr::mapWithKeys($states,function($state) use ($record){
                                 $model=Str::of(class_basename($record))->slug()->toString();
+<<<<<<< HEAD
                                 /** @phpstan-ignore binaryOp.invalid */
+=======
+                                /** @phpstan-ignore-next-line */
+>>>>>>> 988693e (.)
                                 Assert::string($label=__('pub_theme::'.$model.'_states.'.$state.'.label'));
                                 return [$state=>$label];
                             });

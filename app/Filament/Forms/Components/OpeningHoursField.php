@@ -36,9 +36,15 @@ class OpeningHoursField extends Field
             Carbon::FRIDAY,
             Carbon::SATURDAY,
         ])->mapWithKeys(function ($day) {
+<<<<<<< HEAD
             /** @phpstan-ignore method.nonObject */
             $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
             /** @phpstan-ignore method.nonObject */
+=======
+            /** @phpstan-ignore-next-line */
+            $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
+            /** @phpstan-ignore-next-line */
+>>>>>>> 988693e (.)
             $dayLabel = ucfirst(Carbon::create()->startOfWeek()->addDays($day - 1)->isoFormat('dddd'));
             return [$dayKey => $dayLabel];
         });

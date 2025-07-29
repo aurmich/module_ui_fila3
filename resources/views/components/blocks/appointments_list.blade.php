@@ -55,7 +55,11 @@
                     <div class="mt-2 space-y-1">
                         <p class="text-sm text-gray-600">
                             <span class="font-medium">Data:</span> 
+<<<<<<< HEAD
                             {{ $appointment->starts_at->format('d/m/Y') }}
+=======
+                            {{ $appointment->date->format('d/m/Y') }}
+>>>>>>> 988693e (.)
                         </p>
                         <p class="text-sm text-gray-600">
                             <span class="font-medium">Orario:</span> 
