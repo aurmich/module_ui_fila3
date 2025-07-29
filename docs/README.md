@@ -53,8 +53,4 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - [Best Practices Filament](filament_best_practices.md)
 - [Componenti UI](components.md)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025* 
-=======
-*Ultimo aggiornamento: gennaio 2025* 
->>>>>>> aaf9326 (.)
