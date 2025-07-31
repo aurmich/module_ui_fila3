@@ -1,27 +1,27 @@
 <?php
 
 return array (
-  'fields' =>
+  'fields' => 
   array (
-    'text' =>
+    'text' => 
     array (
       'label' => 'Testo',
       'description' => 'text',
       'placeholder' => 'text',
       'helper_text' => 'text',
     ),
-    'level' =>
+    'level' => 
     array (
       'label' => 'Grandezza',
       'description' => 'level',
       'helper_text' => 'level',
       'placeholder' => 'level',
     ),
-    '_tpl' =>
+    '_tpl' => 
     array (
       'label' => '_tpl',
     ),
-    'view' =>
+    'view' => 
     array (
       'label' => 'view',
       'description' => 'view',
@@ -30,26 +30,3 @@ return array (
     ),
   ),
 );
-<<<<<<< Updated upstream
-=======
-declare(strict_types=1);
-
-return [
-    'fields' => [
-        'text' => [
-            'label' => 'Testo',
-        ],
-        'level' => [
-            'label' => 'Grandezza',
-        ],
-        '_tpl' => [
-            'label' => '_tpl',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-    ],
-];
->>>>>>> c6eb299 (.)
-=======
->>>>>>> Stashed changes

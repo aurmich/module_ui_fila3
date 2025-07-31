@@ -11,6 +11,36 @@ Data: Wed Apr 23 10:45:11 CEST 2025
 | 3 | ✅ Successo | Nessun errore |
 | 4 | ✅ Successo | Nessun errore |
 | 5 | ❌ Errore | Errore di esecuzione |
+
+## Correzioni PHPStan Applicate
+
+### Data: 2025-01-16
+
+#### File Corretti
+
+**1. RadioCollection.php - Cast sicuri**
+- **Problema**: `Cannot cast mixed to string` per `$state` e `$optionData`
+- **Soluzione**: Utilizzato controlli `is_string()` prima del cast
+- **Motivazione**: Gestione sicura dei cast da `mixed` a `string` per componenti form
+
+```php
+public function isOptionSelected($option): bool
+{
+    $state = $this->getState();
+    $currentValue = is_string($state) ? $state : (string) $state;
+    $optionData = data_get($option, $this->getValueKey());
+    $optionValue = is_string($optionData) ? $optionData : (string) $optionData;
+    
+    return $currentValue === $optionValue;
+}
+```
+
+#### Pattern di Correzione Utilizzati
+
+1. **Controlli is_string()**: Per validazione prima del cast
+2. **Cast sicuri**: Per gestione di valori `mixed` in componenti form
+3. **Type safety**: Per componenti Filament che gestiscono dati dinamici
+
 ## Collegamenti
 
 - [Report Generale](/docs/phpstan/README.md)
