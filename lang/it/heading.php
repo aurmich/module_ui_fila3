@@ -1,16 +1,16 @@
 <?php
 
 return array (
-  'fields' => 
+  'fields' =>
   array (
-    'level' => 
+    'level' =>
     array (
       'label' => 'level',
       'description' => 'level',
       'helper_text' => 'level',
       'placeholder' => 'level',
     ),
-    'content' => 
+    'content' =>
     array (
       'label' => 'content',
       'description' => 'content',
@@ -19,3 +19,20 @@ return array (
     ),
   ),
 );
+<<<<<<< Updated upstream
+=======
+declare(strict_types=1);
+
+return [
+    'fields' => [
+        'level' => [
+            'label' => 'level',
+        ],
+        'content' => [
+            'label' => 'content',
+        ],
+    ],
+];
+>>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes

@@ -35,7 +35,7 @@ class TableLayoutToggleTableAction extends Action
     {
         $currentLayout = $this->getCurrentLayout();
         $newLayout = $currentLayout->toggle();
-        
+
         $this->setTableLayout($newLayout);
 
         if ($livewire instanceof ListRecords) {
@@ -52,4 +52,9 @@ class TableLayoutToggleTableAction extends Action
     {
         return 'table_layout_toggle';
     }
+<<<<<<< Updated upstream
+=======
+>>>>>>> c6eb299 (.)
+=======
+>>>>>>> Stashed changes
 }
