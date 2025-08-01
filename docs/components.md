@@ -1,5 +1,6 @@
 # Componenti UI
 
+<<<<<<< HEAD
 ## Componenti Form Avanzati
 
 ### InlineDatePicker
@@ -221,6 +222,36 @@ I componenti SVG per le bandiere sono registrati automaticamente e possono esser
    - Mantenere le proporzioni originali (3:2)
    - Esempio: `class="w-6 h-4"`
 
+=======
+## Componenti SVG
+
+### Bandiere (Flags)
+
+I componenti SVG per le bandiere sono registrati automaticamente e possono essere utilizzati con il prefisso `ui-flags`. 
+
+#### Utilizzo
+```blade
+{{-- Bandiera italiana --}}
+<x-ui-flags.it class="w-6 h-4" />
+
+{{-- Bandiera inglese --}}
+<x-ui-flags.gb class="w-6 h-4" />
+```
+
+#### Caratteristiche
+- Registrazione automatica dei componenti
+- Supporto per tutte le bandiere del mondo
+- Dimensioni ottimizzate
+- Colori ufficiali
+- ViewBox corretto per il mantenimento delle proporzioni
+
+#### Best Practices
+1. **Dimensioni**
+   - Utilizzare classi Tailwind per le dimensioni
+   - Mantenere le proporzioni originali (3:2)
+   - Esempio: `class="w-6 h-4"`
+
+>>>>>>> df12eed (.)
 2. **Accessibilità**
    - Aggiungere attributi `aria-label` quando necessario
    - Fornire testo alternativo per screen reader
@@ -246,6 +277,7 @@ I componenti SVG per le bandiere sono registrati automaticamente e possono esser
 - [Documentazione SVG](./SVG.md)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Guida Componenti](./COMPONENTS_GUIDE.md) 
+<<<<<<< HEAD
 
 # Componenti UI - Documentazione Generale
 
@@ -381,3 +413,5 @@ Tutti i componenti UI condivisi devono essere posizionati in `Modules/UI/resourc
 - [UI Components Architecture](../README.md)
 
 *Documentazione aggiornata: Dicembre 2024* 
+=======
+>>>>>>> df12eed (.)
