@@ -26,7 +26,6 @@
         }
     },
     "require": {
-        "lara-zeus/bolt": "^3.0",
         "owenvoke/blade-fontawesome": "*",
         "saade/filament-fullcalendar": "^3.2"
     },

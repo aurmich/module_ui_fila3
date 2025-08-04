@@ -182,15 +182,7 @@ class LocationSelector extends Group
                 ->placeholder($this->placeholders['province'])
                 ->options(function (Get $get): array {
                     $region = $get($this->regionFieldName);
-<<<<<<< HEAD
-<<<<<<< HEAD
                     return is_string($region) ? $this->getProvinceOptions($region) : [];
-=======
-                    return $region ? $this->getProvinceOptions($region) : [];
->>>>>>> aurmich/dev
-=======
-                    return is_string($region) ? $this->getProvinceOptions($region) : [];
->>>>>>> 345f8677 (phpstan)
                 })
                 ->searchable($this->searchable)
                 ->required($this->required)
@@ -210,15 +202,7 @@ class LocationSelector extends Group
                 ->options(function (Get $get): array {
                     $region = $get($this->regionFieldName);
                     $province = $get($this->provinceFieldName);
-<<<<<<< HEAD
-<<<<<<< HEAD
                     return (is_string($region) && is_string($province)) ? $this->getCapOptions($region, $province) : [];
-=======
-                    return ($region && $province) ? $this->getCapOptions($region, $province) : [];
->>>>>>> aurmich/dev
-=======
-                    return (is_string($region) && is_string($province)) ? $this->getCapOptions($region, $province) : [];
->>>>>>> 345f8677 (phpstan)
                 })
                 ->searchable($this->searchable)
                 ->required($this->required)
@@ -236,14 +220,7 @@ class LocationSelector extends Group
     protected function getRegionOptions(): array
     {
         try {
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
             return Comune::select('regione')
                 ->distinct()
                 ->orderBy('regione->nome')
@@ -269,14 +246,7 @@ class LocationSelector extends Group
     protected function getProvinceOptions(string $region): array
     {
         try {
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
             return Comune::query()
                 ->where('regione->codice', $region)
                 ->select('provincia')
@@ -305,14 +275,7 @@ class LocationSelector extends Group
     protected function getCapOptions(string $region, string $province): array
     {
         try {
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
             return Comune::query()
                 ->where('regione->codice', $region)
                 ->where('provincia->codice', $province)
@@ -342,31 +305,14 @@ class LocationSelector extends Group
         $errors = [];
 
         // Verifica che se è selezionata una provincia, sia selezionata anche la regione
-<<<<<<< HEAD
-<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
-=======
->>>>>>> aurmich/dev
-=======
-        /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
         if (!empty($state[$this->provinceFieldName]) && empty($state[$this->regionFieldName])) {
             $errors[] = __('ui::location_selector.validation.region_required_for_province');
         }
 
         // Verifica che se è selezionato un CAP, siano selezionate regione e provincia
-<<<<<<< HEAD
-<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
         if (!empty($state[$this->capFieldName]) && (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
-=======
-        if (!empty($state[$this->capFieldName]) && 
-            (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
->>>>>>> aurmich/dev
-=======
-        /** @phpstan-ignore-next-line */
-        if (!empty($state[$this->capFieldName]) && (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
->>>>>>> 345f8677 (phpstan)
             $errors[] = __('ui::location_selector.validation.region_province_required_for_cap');
         }
 
@@ -381,15 +327,7 @@ class LocationSelector extends Group
     public function getGeographicData(): ?array
     {
         $state = $this->getState();
-<<<<<<< HEAD
-<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
-        
->>>>>>> aurmich/dev
-=======
-        /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
         if (empty($state[$this->regionFieldName])) {
             return null;
         }
@@ -398,26 +336,12 @@ class LocationSelector extends Group
             $query = Comune::query()
                 ->where('regione->codice', $state[$this->regionFieldName]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
             if (!empty($state[$this->provinceFieldName])) {
                 $query->where('provincia->codice', $state[$this->provinceFieldName]);
             }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
             if (!empty($state[$this->capFieldName])) {
                 $query->where('cap->0', $state[$this->capFieldName]);
             }
@@ -437,19 +361,9 @@ class LocationSelector extends Group
                     'code' => $comune->provincia['codice'] ?? null,
                     'name' => $comune->provincia['nome'] ?? null,
                 ],
-<<<<<<< HEAD
-<<<<<<< HEAD
                 /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
                 'cap' => $state[$this->capFieldName] ?? null,
                 /** @phpstan-ignore-next-line */
-=======
-                'cap' => $state[$this->capFieldName] ?? null,
->>>>>>> aurmich/dev
-=======
-                /** @phpstan-ignore-next-line */
-                'cap' => $state[$this->capFieldName] ?? null,
-                /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
                 'city' => $comune->nome ?? null,
             ];
         } catch (\Exception $e) {

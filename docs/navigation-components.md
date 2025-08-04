@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Componenti di Navigazione 
 
 ## Indice
@@ -29,38 +28,6 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
     'alignment' => 'right',
     'width' => '48',
     'contentClasses' => 'py-1 bg-white dark:bg-gray-800',
-=======
-# Componenti Navigazione
-
-## 🧭 Menu Principale
-
-### Navbar
-```html
-<nav class="navbar">
-  <div class="navbar-brand">
-    <a href="/">
-      <img src="logo.png" alt="Logo">
-    </a>
-  </div>
-  
-  <button class="navbar-toggler" aria-label="Menu">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="navbar-collapse">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button">
-          Servizi
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Servizio 1</a></li>
-          <li><a class="dropdown-item" href="#">Servizio 2</a></li>
-        </ul>
->>>>>>> aurmich/dev
       </li>
     </ul>
   </div>

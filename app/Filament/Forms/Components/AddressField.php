@@ -29,44 +29,16 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
-<<<<<<< HEAD
-<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
                 if ($relationship && $record?->relationLoaded($relationship)) {
-=======
-            
-            //if ($record && method_exists($record, 'getRelationValue')) {
-                $relationship = $this->getRelationship();
-<<<<<<< HEAD
-                if ($relationship && $record->relationLoaded($relationship)) {
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
-                if ($relationship && $record?->relationLoaded($relationship)) {
->>>>>>> 345f8677 (phpstan)
                     $address = $record->getRelationValue($relationship);
                     if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                         $data = $address->toArray();
                     }
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
             //}
-=======
-            $address = $record->getRelationValue($this->getRelationship());
-            if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
-                $data = $address->toArray();
-            }
-
-            $component->state($data);
->>>>>>> aurmich/dev
-=======
-            }
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
-            //}
->>>>>>> 345f8677 (phpstan)
         });
 
         $this->dehydrated(false);
@@ -94,15 +66,7 @@ class AddressField extends Forms\Components\Field
             $relationship->updateOrCreate($state);
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         $record?->touch();
-=======
-        $record->touch();
->>>>>>> aurmich/dev
-=======
-        $record?->touch();
->>>>>>> 345f8677 (phpstan)
     }
 
     public function getChildComponents(): array

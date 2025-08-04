@@ -53,10 +53,7 @@ Per correggere questa situazione, è necessario:
 4. Rigenerare l'autoloader
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Creare la directory Themes se non esiste
 mkdir -p /laravel/Themes
 
@@ -75,10 +72,7 @@ composer dump-autoload -o
 Quando si aggiunge un tema con git subtree, utilizzare il seguente formato:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Corretto
 git subtree add -P Themes/NomeTema git@repository:owner/theme.git branch --squash
 

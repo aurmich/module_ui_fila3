@@ -2,10 +2,6 @@
 
 ## Componenti Form Avanzati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### InlineDatePicker
 
 Componente Filament Form per la selezione di date con calendario inline sempre visibile e controllo granulare delle date selezionabili.
@@ -54,11 +50,6 @@ InlineDatePicker::make('date')
 
 [**📖 Documentazione Completa**](./components/inline-date-picker.md)
 
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### StudioCardSelector
 
 Componente Filament Form per la selezione di studi medici attraverso interfaccia card visuale.
@@ -101,10 +92,6 @@ StudioCardSelector::make('studio')
 
 ## Componenti Form Filament
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 ### RadioCollection
 
 Componente per la selezione mutuamente esclusiva con interfaccia card personalizzabile.
@@ -137,11 +124,6 @@ RadioCollection::make('selection')
 
 [**📖 Documentazione Filosofica Completa**](./components/radio-collection-component.md)
 
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 ### LocationSelector
 
 Componente per la selezione gerarchica di dati geografici (Regione → Provincia → CAP).
@@ -264,10 +246,6 @@ I componenti SVG per le bandiere sono registrati automaticamente e possono esser
 - [Documentazione SVG](./SVG.md)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Guida Componenti](./COMPONENTS_GUIDE.md) 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 
 # Componenti UI - Documentazione Generale
 
@@ -403,8 +381,3 @@ Tutti i componenti UI condivisi devono essere posizionati in `Modules/UI/resourc
 - [UI Components Architecture](../README.md)
 
 *Documentazione aggiornata: Dicembre 2024* 
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)

@@ -10,18 +10,12 @@ return [
         'submit' => 'Sign in',
         'or' => 'or',
         'create_account' => 'create an account',
-<<<<<<< HEAD
         'link' => 'Sign in',
-=======
->>>>>>> aurmich/dev
     ],
     'register' => [
         'title' => 'Register',
         'submit' => 'Register',
-<<<<<<< HEAD
         'link' => 'Register',
-=======
->>>>>>> aurmich/dev
     ],
     'logout' => [
         'title' => 'Logout',
@@ -37,7 +31,6 @@ return [
     ],
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-<<<<<<< HEAD
     'profile' => [
         'title' => 'Profile',
         'settings' => 'Settings',
@@ -65,6 +58,4 @@ return [
         'profile' => 'Profile',
         'settings' => 'Settings',
     ],
-=======
->>>>>>> aurmich/dev
 ];
