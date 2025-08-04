@@ -1,5 +1,7 @@
 # InlineDatePicker Component
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 ## Overview
 
 The InlineDatePicker is an advanced date selection component with multilingual support and intuitive navigation. Designed to provide an immediate and minimalist user experience, the component is fully integrated with Laravel's translation system.
@@ -24,6 +26,48 @@ The InlineDatePicker is an advanced date selection component with multilingual s
 - **Adaptive Layout**: Automatically adjusts to available space
 - **Touch Interactions**: Optimized for touch screens
 - **Theme Support**: Built-in light/dark theme support
+=======
+## Panoramica Fenomenologica
+=======
+## Overview
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+
+The InlineDatePicker is an advanced date selection component with multilingual support and intuitive navigation. Designed to provide an immediate and minimalist user experience, the component is fully integrated with Laravel's translation system.
+
+## Key Features
+
+### 🌐 **Multilingual Support**
+- **Centralized Translations**: Uses translation files for each supported language
+- **Month and Day Names**: Pulled from centralized translation files
+- **Navigation Labels**: Fully translatable and customizable
+- **Cultural Adaptability**: Respects local date display conventions
+- **Carbon Integration**: Uses Carbon for reliable date handling and localization
+
+### 🔄 **Enhanced Navigation**
+- **Bidirectional Controls**: Built-in previous/next month navigation
+- **Livewire Sync**: Seamless server-side state management
+- **Visual Feedback**: Immediate visual feedback during navigation
+- **Accessibility**: Keyboard navigable and screen reader friendly
+
+<<<<<<< HEAD
+### 🏛️ **Governance Democratica del Tempo**
+- **Trasparenza**: Tutti i controlli sono visibili e accessibili
+- **Accountability**: Ogni azione di navigazione è tracciabile
+- **Inclusività**: Design accessibile per tutti gli utenti
+- **Neutralità Tecnologica**: Nessun bias nelle funzionalità temporali
+
+### 🎨 **Estetica della Semplicità**
+- **Minimalismo Spirituale**: Eliminazione di elementi non essenziali
+- **Gestalt Design**: Percezione unificata del calendario come entità coesa
+- **Teoria del Colore**: Significati veicolati attraverso scelte cromatiche
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+### 📱 **Responsive Design**
+- **Compact Mode**: Optimized for mobile devices
+- **Adaptive Layout**: Automatically adjusts to available space
+- **Touch Interactions**: Optimized for touch screens
+- **Theme Support**: Built-in light/dark theme support
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
 ## Architettura Tecnica
 
@@ -34,6 +78,8 @@ The InlineDatePicker is an advanced date selection component with multilingual s
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Filament\Forms\Components;
 
 use Filament\Forms\Components\DatePicker;
@@ -51,6 +97,32 @@ use Carbon\Carbon;
 class InlineDatePicker extends DatePicker
 {
     // Proprietà e metodi...
+=======
+namespace Modules\\UI\\Filament\\Forms\\Components;
+=======
+namespace Modules\UI\Filament\Forms\Components;
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+
+use Filament\Forms\Components\DatePicker;
+use Carbon\Carbon;
+
+/**
+ * InlineDatePicker - Componente calendario inline con supporto multilingua
+ * 
+ * Estende il DatePicker standard con funzionalità avanzate:
+ * - Navigazione mese precedente/successivo
+ * - Supporto completo multilingua
+ * - Selezione date abilitate/disabilitate
+ * - Design responsivo e accessibile
+ */
+class InlineDatePicker extends DatePicker
+{
+<<<<<<< HEAD
+    // Architettura completa...
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+    // Proprietà e metodi...
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 }
 ```
 
@@ -123,6 +195,8 @@ InlineDatePicker::make('readonly_date')
     ->showNavigation(false);
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 ### Navigazione Temporale Avanzata - ARCHITETTURA CORRETTA ✅
 
 ### Architettura Frontend-Only (CORRETTA)
@@ -266,10 +340,174 @@ protected function getDateStepSchema(): array
         'appointment_date' => InlineDatePicker::make('appointment_date')
             ->enabledDates(['2025-06-05','2025-06-21'])
             ->currentViewMonth(now()->format('Y-m'))
+=======
+### Navigazione Temporale Avanzata - NUOVO 🚀
+=======
+### Navigazione Temporale Avanzata - ARCHITETTURA CORRETTA ✅
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+
+### Architettura Frontend-Only (CORRETTA)
+
+**Principio Fondamentale:** L'`InlineDatePicker` è un **componente Filament Form**, non un componente Livewire standalone. Pertanto, la navigazione deve essere gestita puramente frontend.
+
+#### Approccio Corretto ✅
+
+1. **Frontend JavaScript (Alpine.js)**:
+   ```javascript
+   // ✅ CORRETTO: Navigazione puramente frontend
+   previousMonth() {
+       this.navigateToMonth('prev');
+   },
+   
+   nextMonth() {
+       this.navigateToMonth('next');
+   },
+   
+   navigateToMonth(direction) {
+       const currentDate = new Date(this.currentViewMonth + '-01');
+       
+       if (direction === 'prev') {
+           currentDate.setMonth(currentDate.getMonth() - 1);
+       } else if (direction === 'next') {
+           currentDate.setMonth(currentDate.getMonth() + 1);
+       }
+       
+       this.currentViewMonth = currentDate.getFullYear() + '-' + 
+           String(currentDate.getMonth() + 1).padStart(2, '0');
+       
+       // Rigenera calendario localmente
+       this.regenerateCalendar();
+   }
+   ```
+
+2. **Backend PHP (InlineDatePicker)**:
+   ```php
+   // ✅ I metodi PHP esistono per compatibilità API
+   // Ma NON vengono chiamati dal frontend
+   public function previousMonth(): void
+   public function nextMonth(): void
+   ```
+
+#### Vantaggi dell'Approccio Frontend-Only
+
+1. **Performance**: Zero chiamate HTTP per navigazione
+2. **UX**: Navigazione istantanea senza latenza
+3. **Architettura**: Rispetta il pattern Filament Form Component
+4. **Semplicità**: Nessun accoppiamento con componenti Livewire contenitori
+5. **Riusabilità**: Funziona in qualsiasi form senza dipendenze esterne
+
+### Errore Architetturale Precedente ❌
+
+**Cosa NON fare:**
+```javascript
+// ❌ ERRATO: Chiamate Livewire da componente Form
+previousMonth() {
+    $wire.call('previousMonth'); // Chiamata al widget contenitore
+}
+```
+
+**Problemi:**
+- Accoppiamento tra componente e widget contenitore
+- Ogni widget che usa il componente deve implementare i metodi
+- Violazione del principio di responsabilità singola
+- Performance peggiore
+
+### Pattern Implementativo
+
+1. **InlineDatePicker.php** (Componente Form):
+   - Estende `DatePicker` di Filament
+   - Contiene logica PHP per configurazione iniziale
+   - Metodi `previousMonth/nextMonth` per compatibilità API
+
+2. **inline-date-picker.blade.php** (Vista):
+   - Logica Alpine.js per navigazione frontend
+   - Rigenerazione calendario JavaScript
+   - Nessuna chiamata `$wire.call()` per navigazione
+
+3. **Widget che lo usa**:
+   - Non deve implementare metodi di navigazione
+   - Si limita a configurare `enabledDates` e `currentViewMonth`
+   - Zero dipendenze da logica di navigazione
+
+### Implementazione Rigenerazione Frontend
+
+```javascript
+// Rigenera calendario per il nuovo mese
+regenerateCalendar() {
+    const [year, month] = this.currentViewMonth.split('-').map(Number);
+    this.calendarData = this.generateCalendarDataForMonth(year, month);
+},
+
+// Genera struttura calendario JavaScript
+generateCalendarDataForMonth(year, month) {
+    const firstDay = new Date(year, month - 1, 1);
+    const startDate = new Date(firstDay);
+    startDate.setDate(startDate.getDate() - firstDay.getDay() + 1);
+    
+    const weeks = [];
+    let currentDate = new Date(startDate);
+    
+    for (let week = 0; week < 6; week++) {
+        const weekDays = [];
+        for (let day = 0; day < 7; day++) {
+            const dateString = currentDate.toISOString().split('T')[0];
+            const isCurrentMonth = currentDate.getMonth() === month - 1;
+            
+            weekDays.push({
+                dateString: dateString,
+                datetime: dateString,
+                day: currentDate.getDate(),
+                isCurrentMonth: isCurrentMonth,
+                isToday: this.isToday(currentDate),
+                isSelected: this.selectedDate === dateString,
+                isEnabled: this.isDateEnabled(dateString) && isCurrentMonth,
+            });
+            
+            currentDate.setDate(currentDate.getDate() + 1);
+        }
+        weeks.push(weekDays);
+    }
+    
+    return {
+        weeks: weeks,
+        monthName: firstDay.toLocaleDateString('{{ app()->getLocale() }}', { month: 'long' }),
+        year: year,
+    };
+}
+```
+
+## Utilizzo nel Widget
+
+### Configurazione Corretta ✅
+
+```php
+protected function getDateStepSchema(): array
+{
+    return [
+<<<<<<< HEAD
+        // Controllo temporale per navigazione
+        'currentViewMonth' => $this->displayDate,
+        'previousMonth' => $this->displayDate->copy()->subMonth(),
+        'nextMonth' => $this->displayDate->copy()->addMonth(),
+        
+        // Metadati per sincronizzazione JavaScript
+        'monthYearLabel' => $this->displayDate->translatedFormat('F Y'),
+        'componentId' => $this->getId(),
+        'statePath' => $this->getStatePath(),
+        
+        // ... altri dati
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        'appointment_date' => InlineDatePicker::make('appointment_date')
+            ->enabledDates(['2025-06-05','2025-06-21'])
+            ->currentViewMonth(now()->format('Y-m'))
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
     ];
 }
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 ### Note Importanti
 
 1. **Il widget NON deve implementare `previousMonth/nextMonth`**
@@ -278,6 +516,56 @@ protected function getDateStepSchema(): array
 4. **Il mese di visualizzazione può essere inizializzato dal widget ma poi è autonomo**
 
 Questo approccio rispetta i principi SOLID e il pattern architetturale di Filament, garantendo componenti riusabili e disaccoppiati.
+=======
+### Integrazione con Form Wizard
+=======
+### Note Importanti
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+
+1. **Il widget NON deve implementare `previousMonth/nextMonth`**
+2. **La navigazione è completamente self-contained nel componente**
+3. **Le `enabledDates` sono rispettate durante la navigazione frontend**
+4. **Il mese di visualizzazione può essere inizializzato dal widget ma poi è autonomo**
+
+<<<<<<< HEAD
+```php
+use Filament\\Forms\\Components\\Wizard;
+use Modules\\UI\\Filament\\Forms\\Components\\InlineDatePicker;
+
+public function getFormSchema(): array
+{
+    return [
+        Wizard::make([
+            Wizard\\Step::make('date_selection')
+                ->label('Selezione Data')
+                ->schema([
+                    InlineDatePicker::make('appointment_date')
+                        ->label('Data Appuntamento')
+                        ->enabledDates(function () {
+                            return $this->getAvailableDates();
+                        })
+                        ->highlightColor('bg-blue-600 text-white')
+                        ->required()
+                        ->live() // Reattività per step successivi
+                        ->afterStateUpdated(function ($state, callable $set) {
+                            // Logica per aggiornare step successivi
+                            $this->updateAvailableTimeSlots($state, $set);
+                        }),
+                ]),
+                
+            Wizard\\Step::make('time_selection')
+                ->label('Selezione Orario')
+                ->schema([
+                    // Campi dipendenti dalla data selezionata
+                ]),
+        ])
+    ];
+}
+```
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+Questo approccio rispetta i principi SOLID e il pattern architetturale di Filament, garantendo componenti riusabili e disaccoppiati.
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
 
 ## Esempi di Utilizzo Avanzato
 
@@ -472,7 +760,19 @@ public function it_integrates_with_livewire_forms(): void
 ### Debug Mode
 
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Debug info rimosso per ambiente di produzione -->
+=======
+@if(config('app.debug'))
+    <div class=\"mt-4 p-3 bg-gray-100 dark:bg-gray-800 rounded text-xs\">
+        <div class=\"font-semibold text-gray-700 dark:text-gray-300\">Debug Info:</div>
+        <div class=\"text-gray-600 dark:text-gray-400\">
+            Selected: <span x-text=\"selectedDate\"></span><br>
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+<!-- Debug info rimosso per ambiente di produzione -->
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
             Enabled Dates: <span x-text=\"enabledDates.length\"></span><br>
             Current Month: <span x-text=\"currentMonth\"></span><br>
             Compact Mode: {{ $compactMode ? 'true' : 'false' }}<br>

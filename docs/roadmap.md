@@ -156,7 +156,10 @@
 - [Bottlenecks](bottlenecks.md)
 - [Best Practices](BEST-PRACTICES.md)
 - [Testing](testing.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ### Versione HEAD
 
 
@@ -278,7 +281,10 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🗺️ UI Module Roadmap
 
 ## 📊 Progress Overview

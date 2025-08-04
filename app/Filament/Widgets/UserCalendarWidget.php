@@ -1,7 +1,15 @@
 <?php
 namespace Modules\UI\Filament\Widgets;
 
+<<<<<<< HEAD
 
+=======
+// TEMPORARILY DISABLED FOR PHPSTAN ANALYSIS
+// Missing dependency: saade/filament-fullcalendar
+// Uncomment when dependency is installed
+
+/*
+>>>>>>> aurmich/dev
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use App\Filament\Resources\EventResource;
@@ -36,6 +44,7 @@ class UserCalendarWidget extends FullCalendarWidget
 
     public function getFormSchema(): array
     {
+<<<<<<< HEAD
         $action = $this->getActionName(__FUNCTION__);
         
         if (class_exists($action)) {
@@ -43,6 +52,12 @@ class UserCalendarWidget extends FullCalendarWidget
         }
         
         // Fallback schema
+=======
+
+        $action=$this->getActionName(__FUNCTION__);
+        return app($action)->execute();
+        
+>>>>>>> aurmich/dev
         return [
             TextInput::make('title'),
  
@@ -54,6 +69,7 @@ class UserCalendarWidget extends FullCalendarWidget
         ];
     }
 
+<<<<<<< HEAD
    
     /*
     protected function modalActions(): array
@@ -73,3 +89,11 @@ class UserCalendarWidget extends FullCalendarWidget
 
     
 }
+=======
+    public function onDateSelect(string $start, ?string $end, bool $allDay, ?array $view, ?array $resource): void
+    {
+      dd('test');
+    }
+}
+*/
+>>>>>>> aurmich/dev

@@ -12,7 +12,14 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
+<<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStatesContract;
+=======
+>>>>>>> aurmich/dev
+=======
+use Spatie\ModelStates\HasStatesContract;
+>>>>>>> 345f8677 (phpstan)
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectStateColumn extends SelectColumn
@@ -22,7 +29,15 @@ class SelectStateColumn extends SelectColumn
     {
         parent::setUp();
       //  $this->selectablePlaceholder(false);
+<<<<<<< HEAD
+<<<<<<< HEAD
         $this->options(function (Model&HasStatesContract $record ,$state): array {
+=======
+        $this->options(function (Model $record ,$state): array {
+>>>>>>> aurmich/dev
+=======
+        $this->options(function (Model&HasStatesContract $record ,$state): array {
+>>>>>>> 345f8677 (phpstan)
             $name=$this->getName();
             if($state==null){
 
@@ -43,9 +58,20 @@ class SelectStateColumn extends SelectColumn
         });
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
         $this->beforeStateUpdated(function (Model&HasStatesContract $record, $state) {
             $message='';
             /** @phpstan-ignore property.notFound */
+=======
+        $this->beforeStateUpdated(function (Model $record, $state) {
+            $message='';
+>>>>>>> aurmich/dev
+=======
+        $this->beforeStateUpdated(function (Model&HasStatesContract $record, $state) {
+            $message='';
+            /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
             $record->state->transitionTo($state,$message);
         });
 
@@ -55,4 +81,8 @@ class SelectStateColumn extends SelectColumn
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aurmich/dev

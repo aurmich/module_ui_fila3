@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> aurmich/dev
 return [
     'attributes' => [
         'external-link' => 'External link',
@@ -11,10 +16,18 @@ return [
         'created_at' => 'Created at',
         'updated_at' => 'Updated at',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
     'select-options' => [
         'same-tab' => 'Same tab',
         'new-tab' => 'New tab',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
     'items' => [
         'empty' => 'No items.',
         'add-item' => 'Add item',
@@ -24,8 +37,13 @@ return [
         'indent' => 'Indent',
         'dedent' => 'Dedent',
         'remove' => 'Remove',
+<<<<<<< HEAD
         'sorted' => 'Ordinato',
     ],
+=======
+    ],
+
+>>>>>>> aurmich/dev
     'items-modal' => [
         'title' => 'Item',
         'label' => 'Label',

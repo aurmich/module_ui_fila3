@@ -1,8 +1,11 @@
 # Componenti UI
 
-<<<<<<< HEAD
 ## Componenti Form Avanzati
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### InlineDatePicker
 
 Componente Filament Form per la selezione di date con calendario inline sempre visibile e controllo granulare delle date selezionabili.
@@ -51,6 +54,11 @@ InlineDatePicker::make('date')
 
 [**📖 Documentazione Completa**](./components/inline-date-picker.md)
 
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### StudioCardSelector
 
 Componente Filament Form per la selezione di studi medici attraverso interfaccia card visuale.
@@ -93,6 +101,10 @@ StudioCardSelector::make('studio')
 
 ## Componenti Form Filament
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 ### RadioCollection
 
 Componente per la selezione mutuamente esclusiva con interfaccia card personalizzabile.
@@ -125,6 +137,11 @@ RadioCollection::make('selection')
 
 [**📖 Documentazione Filosofica Completa**](./components/radio-collection-component.md)
 
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 ### LocationSelector
 
 Componente per la selezione gerarchica di dati geografici (Regione → Provincia → CAP).
@@ -222,36 +239,6 @@ I componenti SVG per le bandiere sono registrati automaticamente e possono esser
    - Mantenere le proporzioni originali (3:2)
    - Esempio: `class="w-6 h-4"`
 
-=======
-## Componenti SVG
-
-### Bandiere (Flags)
-
-I componenti SVG per le bandiere sono registrati automaticamente e possono essere utilizzati con il prefisso `ui-flags`. 
-
-#### Utilizzo
-```blade
-{{-- Bandiera italiana --}}
-<x-ui-flags.it class="w-6 h-4" />
-
-{{-- Bandiera inglese --}}
-<x-ui-flags.gb class="w-6 h-4" />
-```
-
-#### Caratteristiche
-- Registrazione automatica dei componenti
-- Supporto per tutte le bandiere del mondo
-- Dimensioni ottimizzate
-- Colori ufficiali
-- ViewBox corretto per il mantenimento delle proporzioni
-
-#### Best Practices
-1. **Dimensioni**
-   - Utilizzare classi Tailwind per le dimensioni
-   - Mantenere le proporzioni originali (3:2)
-   - Esempio: `class="w-6 h-4"`
-
->>>>>>> df12eed (.)
 2. **Accessibilità**
    - Aggiungere attributi `aria-label` quando necessario
    - Fornire testo alternativo per screen reader
@@ -278,6 +265,9 @@ I componenti SVG per le bandiere sono registrati automaticamente e possono esser
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Guida Componenti](./COMPONENTS_GUIDE.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 
 # Componenti UI - Documentazione Generale
 
@@ -413,5 +403,8 @@ Tutti i componenti UI condivisi devono essere posizionati in `Modules/UI/resourc
 - [UI Components Architecture](../README.md)
 
 *Documentazione aggiornata: Dicembre 2024* 
+<<<<<<< HEAD
 =======
->>>>>>> df12eed (.)
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
