@@ -1,49 +1,55 @@
-# Regola Critica: MAI Usare ->label() nella Documentazione
+# REGOLA CRITICA: MAI usare ->label()
 
 ## Data: 2025-01-06
 
-## REGOLA ASSOLUTA
-**MAI scrivere esempi con `->label()`, `->placeholder()`, o `->helperText()` nella documentazione**
+## ❌ ERRORE CRITICO - NON FARE MAI QUESTO
 
-## Motivazione
-- La documentazione serve come esempio per gli sviluppatori
-- Esempi sbagliati portano a implementazioni sbagliate
-- Il sistema di traduzioni automatico gestisce tutto
-- Coerenza con le convenzioni del progetto
-
-## Pattern Corretto per Documentazione
-
-### ✅ CORRETTO - Esempi nella Documentazione
 ```php
-// ✅ CORRETTO - Solo make() senza ->label()
+// ❌ ERRORE - Non usare mai ->label()
+TextColumn::make('name')->label('Nome')
+Action::make('save')->label('Salva')
+Select::make('status')->label('Stato')
+TextInput::make('email')->label('Email')
+```
+
+## ✅ CORRETTO - Sistema Traduzioni Automatico
+
+```php
+// ✅ CORRETTO - Usa il sistema di traduzioni automatico
 TextColumn::make('name')
-    ->searchable()
-    ->sortable(),
-
-TextInput::make('email')
-    ->required(),
-
+Action::make('save')
 Select::make('status')
-    ->options([
-        'active' => 'Active',
-        'inactive' => 'Inactive',
-    ]),
+TextInput::make('email')
 ```
 
-### ❌ ERRATO - Esempi nella Documentazione
-```php
-// ❌ MAI scrivere questo nella documentazione
-TextColumn::make('name')
-    ->label('Nome')  // VIETATO
-    ->placeholder('Inserisci nome')  // VIETATO
-    ->helperText('Nome completo')  // VIETATO
-```
+## Perché questa Regola è Critica
 
-## File di Traduzione Obbligatori
+### 1. Sistema Traduzioni Automatico
+- Il `LangServiceProvider` gestisce automaticamente le traduzioni
+- Le chiavi vengono generate automaticamente dal nome del campo
+- Struttura: `modulo::risorsa.fields.campo.label`
 
-### Struttura Corretta
+### 2. Centralizzazione
+- Tutte le traduzioni sono nei file `lang/`
+- Facile manutenzione e aggiornamento
+- Sincronizzazione automatica tra lingue
+
+### 3. Type Safety
+- Previene errori di digitazione nelle label
+- Controllo automatico delle traduzioni mancanti
+- PHPStan può verificare la presenza delle chiavi
+
+### 4. Performance
+- Nessun overhead di chiamate `__()` manuali
+- Cache delle traduzioni ottimizzata
+- Meno codice da mantenere
+
+## Implementazione Corretta
+
+### 1. Prima di usare un componente, implementa le traduzioni
+
 ```php
-// Modules/UI/lang/it/fields.php
+// File: Modules/User/lang/it/fields.php
 return [
     'name' => [
         'label' => 'Nome',
@@ -60,56 +66,70 @@ return [
 ];
 ```
 
-## Controllo Automatico
+### 2. Poi usa il componente senza ->label()
 
-Prima di pubblicare qualsiasi documentazione, verificare:
-
-- [ ] Nessun `->label()` negli esempi
-- [ ] Nessun `->placeholder()` negli esempi
-- [ ] Nessun `->helperText()` negli esempi
-- [ ] Tutti gli esempi usano solo `TextColumn::make('name')`
-- [ ] File di traduzione esistono e sono completi
-- [ ] Struttura espansa per tutti i campi
-
-## Penalità per Violazioni
-
-- **ERRORE CRITICO**: Esempi sbagliati nella documentazione
-- Rischio di perdita di coerenza
-- Difficoltà di manutenzione
-- Problemi di localizzazione
-- Violazione delle convenzioni del progetto
-
-## Esempi di Controllo
-
-### Controllo Automatico con grep
-```bash
-# Cerca ->label() nella documentazione
-grep -r "->label(" Modules/UI/docs/ --include="*.md"
-
-# Cerca ->placeholder() nella documentazione
-grep -r "->placeholder(" Modules/UI/docs/ --include="*.md"
-
-# Cerca ->helperText() nella documentazione
-grep -r "->helperText(" Modules/UI/docs/ --include="*.md"
+```php
+// ✅ CORRETTO
+TextColumn::make('name')
+TextColumn::make('email')
 ```
 
-### Controllo Manuale
-Prima di ogni commit di documentazione:
-1. Leggere tutti gli esempi di codice
-2. Verificare che non ci siano `->label()`
-3. Verificare che non ci siano `->placeholder()`
-4. Verificare che non ci siano `->helperText()`
-5. Verificare che tutti gli esempi usino solo `make()`
+## Esempi di Errori Comuni
 
-## Collegamenti
+### ❌ ERRORE - Label hardcoded
+```php
+TextColumn::make('user_name')->label('Nome Utente')
+```
 
-- [Translation Standards](../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../docs/filament_best_practices.md)
-- [UI Module Architecture](architecture_rules.md)
-- [Table Components](table-components.md)
+### ✅ CORRETTO - Traduzione automatica
+```php
+// Prima implementa in lang/it/fields.php
+'user_name' => [
+    'label' => 'Nome Utente',
+    // ...
+],
 
----
+// Poi usa senza ->label()
+TextColumn::make('user_name')
+```
 
-**ULTIMO AGGIORNAMENTO**: 2025-01-06
-**REGOLA CRITICA**: DA RICORDARE SEMPRE
-**PENALITÀ**: ERRORE CRITICO per violazioni 
+### ❌ ERRORE - Label in inglese
+```php
+TextColumn::make('status')->label('Status')
+```
+
+### ✅ CORRETTO - Traduzione italiana
+```php
+// Prima implementa in lang/it/fields.php
+'status' => [
+    'label' => 'Stato',
+    // ...
+],
+
+// Poi usa senza ->label()
+TextColumn::make('status')
+```
+
+## Checklist Pre-Implementazione
+
+### Prima di usare un componente Filament:
+- [ ] Implementare traduzioni in `lang/it/fields.php`
+- [ ] Implementare traduzioni in `lang/en/fields.php`
+- [ ] Implementare traduzioni in `lang/de/fields.php`
+- [ ] Verificare che le chiavi siano corrette
+- [ ] Testare che le traduzioni funzionino
+
+### Prima di committare:
+- [ ] Verificare che non ci siano `->label()` nel codice
+- [ ] Controllare che tutte le traduzioni siano implementate
+- [ ] Testare che le traduzioni funzionino correttamente
+
+## Memoria Permanente
+
+**RICORDA SEMPRE**: 
+- MAI usare `->label()` in componenti Filament
+- SEMPRE implementare traduzioni nei file `lang/`
+- SEMPRE sincronizzare IT/EN/DE
+- SEMPRE testare le traduzioni prima del commit
+
+*Ultimo aggiornamento: 2025-01-06*
