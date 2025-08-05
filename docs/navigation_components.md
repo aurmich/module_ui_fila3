@@ -28,7 +28,6 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
     'alignment' => 'right',
     'width' => '48',
     'contentClasses' => 'py-1 bg-white dark:bg-gray-800',
-<<<<<<< HEAD
 ])
 
 @php
@@ -49,46 +48,6 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
         </a>
         <a href="/{{ $locale }}/auth/register" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">
             {{ __('auth.register.title') }}
-=======
-      </li>
-    </ul>
-  </div>
-</nav>
-```
-
-## 📑 Breadcrumbs
-```html
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="/">Home</a>
-    </li>
-    <li class="breadcrumb-item">
-      <a href="/categoria">Categoria</a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page">
-      Pagina Corrente
-    </li>
-  </ol>
-</nav>
-```
-
-## 📱 Menu Mobile
-```html
-<div class="mobile-menu">
-  <div class="mobile-menu-header">
-    <button class="close-menu" aria-label="Chiudi menu">
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
-  
-  <nav class="mobile-menu-nav">
-    <ul>
-      <li class="active">
-        <a href="/">
-          <i class="fas fa-home"></i>
-          Home
->>>>>>> 7da17b2 (.)
         </a>
     </div>
 @endif
