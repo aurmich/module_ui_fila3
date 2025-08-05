@@ -156,7 +156,10 @@
 - [Bottlenecks](bottlenecks.md)
 - [Best Practices](BEST-PRACTICES.md)
 - [Testing](testing.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4acc626 (.)
 ### Versione HEAD
 
 
@@ -278,7 +281,10 @@ Overall Module Completion: 60%
    - Query optimization
    - Cache implementation
    - Priority: High
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4acc626 (.)
 # 🗺️ UI Module Roadmap
 
 ## 📊 Progress Overview

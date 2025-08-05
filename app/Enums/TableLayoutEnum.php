@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;
@@ -24,6 +25,19 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
     
     case LIST = 'list';
     case GRID = 'grid';
+=======
+use Illuminate\Support\Arr;
+use Webmozart\Assert\Assert;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasLabel;
+use Filament\Resources\Pages\ListRecords;
+
+enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
+{
+    case GRID = 'grid';
+    case LIST = 'list';
+>>>>>>> 4acc626 (.)
 
     public static function init(): self
     {
@@ -32,16 +46,29 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 
     public function getLabel(): string
     {
+<<<<<<< HEAD
         return $this->transClass(self::class, $this->value.'.label');
+=======
+        return $this->name;
+        // return trans('ui::corner-position.'.$this->value.'.label');
+>>>>>>> 4acc626 (.)
     }
 
     public function getColor(): string
     {
+<<<<<<< HEAD
         return $this->transClass(self::class, $this->value.'.color');
+=======
+        return match ($this) {
+            self::GRID => 'gray',
+            self::LIST => 'gray',
+        };
+>>>>>>> 4acc626 (.)
     }
 
     public function getIcon(): string
     {
+<<<<<<< HEAD
         return $this->transClass(self::class, $this->value.'.icon');
     }
 
@@ -58,14 +85,27 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
     public function getHelperText(): string
     {
         return $this->transClass(self::class, $this->value.'.helper_text');
+=======
+        return match ($this) {
+            self::LIST => 'heroicon-o-list-bullet',
+            self::GRID => 'heroicon-o-squares-2x2',
+        };
+>>>>>>> 4acc626 (.)
     }
 
     public function toggle(): self
     {
+<<<<<<< HEAD
         return match ($this) {
             self::LIST => self::GRID,
             self::GRID => self::LIST,
         };
+=======
+        // $res = self::LIST === $this ? self::GRID : self::LIST;
+        $res = self::GRID === $this ? self::LIST : self::GRID;
+
+        return $res;
+>>>>>>> 4acc626 (.)
     }
 
     public function isGridLayout(): bool
@@ -73,6 +113,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         return self::GRID === $this;
     }
 
+<<<<<<< HEAD
     public function isListLayout(): bool
     {
         return self::LIST === $this;
@@ -129,5 +170,51 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
             self::LIST => 'table-layout-list',
             self::GRID => 'table-layout-grid',
         };
+=======
+    /**
+     * Undocumented function.
+     *
+     * @return array<string, int|null>|null
+     */
+    public function getTableContentGrid(): ?array
+    {
+        $res = $this->isGridLayout()
+            ? [
+                'md' => 2,
+                'lg' => 3,
+                'xl' => 4,
+            ]
+            : null;
+
+        return $res;
+    }
+
+     /**
+     * Undocumented function.
+     *
+     * @return array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getTableColumns(): array
+    {
+        $trace = debug_backtrace();
+        /** @var ListRecords $caller */
+        $caller = Arr::get($trace, '1.object');
+
+        if (! method_exists($caller, 'getGridTableColumns')) {
+            throw new \Exception('method getGridTableColumns not found in ['.get_class($caller).']');
+        }
+        if (! method_exists($caller, 'getTableColumns')) {
+            throw new \Exception('method getTableColumns not found in ['.get_class($caller).']');
+        }
+
+        $columns = $this->isGridLayout()
+            ? $caller->getGridTableColumns()
+            /** @phpstan-ignore method.protected */
+            : $caller->getTableColumns();
+
+        Assert::isArray($columns);
+
+        return $columns;
+>>>>>>> 4acc626 (.)
     }
 }

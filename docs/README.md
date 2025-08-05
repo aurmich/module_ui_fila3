@@ -9,7 +9,10 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - Gestione orari di apertura
 - Componenti calendario
 - Utility di interfaccia
+<<<<<<< HEAD
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
+=======
+>>>>>>> 4acc626 (.)
 
 ## File di Traduzione
 
@@ -18,11 +21,15 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - `opening_hours_field.php` - **FIX COMPLETATO**: Traduzioni per i campi orari con sincronizzazione lingue
 - `user_calendar.php` - Traduzioni per il calendario utente
 - `components.php` - Traduzioni per i componenti UI
+<<<<<<< HEAD
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
+=======
+>>>>>>> 4acc626 (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
 - [Fix Traduzioni Opening Hours](opening_hours_translation_improvement.md) - Miglioramento traduzioni orari
+<<<<<<< HEAD
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
 
 ## Regole Critiche
@@ -77,11 +84,19 @@ public function getLabel(): string
 - Struttura: `modulo::risorsa.fields.campo.label`
 - **SEMPRE** implementare traduzioni nei file lang/ prima di usare i componenti
 
+=======
+
+## Regole Critiche
+
+>>>>>>> 4acc626 (.)
 ### Sincronizzazione Lingue
 - **TUTTI** i file `lang/en/` devono avere le stesse voci di `lang/it/`
 - **SEMPRE** confrontare file IT e EN prima di modifiche
 - **SEMPRE** aggiungere nuove voci in entrambe le lingue
+<<<<<<< HEAD
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
+=======
+>>>>>>> 4acc626 (.)
 
 ### Struttura Traduzioni
 - Struttura espansa obbligatoria per tutti i campi
@@ -100,6 +115,7 @@ public function getLabel(): string
 - PHPDoc completo per ogni componente
 - Organizzazione in sottocartelle logiche
 
+<<<<<<< HEAD
 ## Enums e Utilities
 
 ### TableLayoutEnum
@@ -179,15 +195,22 @@ docs/
 - [x] Documentazione aggiornata
 - [x] Struttura coerente in tutti i moduli
 
+=======
+>>>>>>> 4acc626 (.)
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/translation_standards_links.md)
 - [Regole Traduzioni](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 - [Componenti UI](components.md)
+<<<<<<< HEAD
 - [TableLayoutEnum Analysis](table_layout_enum_analysis.md)
 - [TableLayoutEnum Usage](table-layout-enum-usage.md)
 - **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
 *Ultimo aggiornamento: gennaio 2025*
+=======
+
+*Ultimo aggiornamento: gennaio 2025* 
+>>>>>>> 4acc626 (.)

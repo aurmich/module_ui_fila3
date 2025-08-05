@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -17,6 +18,21 @@ return [
             'help' => 'Informative Nachricht für die Auswahl',
             'description' => 'Nachrichtentext',
             'helper_text' => '',
+=======
+return [
+    'fields' => [
+        'state' => [
+            'label' => 'state',
+            'placeholder' => 'state',
+            'helper_text' => 'state',
+            'description' => 'state',
+        ],
+        'message' => [
+            'label' => 'message',
+            'placeholder' => 'message',
+            'helper_text' => 'message',
+            'description' => 'message',
+>>>>>>> 4acc626 (.)
         ],
     ],
 ];

@@ -119,4 +119,8 @@ function confirmCancel(appointmentId) {
     }
 }
 </script>
+<<<<<<< HEAD
 @endpush 
+=======
+@endpush 
+>>>>>>> 4acc626 (.)

@@ -88,4 +88,8 @@ class IconStateColumn extends IconColumn
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4acc626 (.)

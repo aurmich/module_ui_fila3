@@ -83,7 +83,10 @@ Tutti i campi ora seguono la struttura espansa con:
 
 ### Verifica Sincronizzazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4acc626 (.)
 # Controlla numero di voci
 wc -l laravel/Modules/UI/lang/it/opening_hours_field.php
 wc -l laravel/Modules/UI/lang/en/opening_hours_field.php
@@ -101,7 +104,10 @@ php -l laravel/Modules/UI/lang/en/opening_hours_field.php
 
 ### Script di Controllo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4acc626 (.)
 # Controlla file con meno voci in inglese
 for file in $(find laravel/Modules -path "*/lang/it" -name "*.php"); do
     en_file=$(echo $file | sed 's|/lang/it/|/lang/en/|')
@@ -135,3 +141,7 @@ done
 - **REGOLA CRITICA**: Sintassi moderna e tipizzazione stretta
 - **REGOLA CRITICA**: Controllo automatico con script
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: gennaio 2025* 
+>>>>>>> 4acc626 (.)

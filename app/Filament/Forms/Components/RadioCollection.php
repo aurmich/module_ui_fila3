@@ -5,9 +5,14 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Forms\Components;
 
 use Closure;
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Filament\Forms\Components\Field;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+use Filament\Forms\Components\Field;
+use Illuminate\Support\Collection;
+>>>>>>> 4acc626 (.)
 
 class RadioCollection extends Field
 {
@@ -83,11 +88,16 @@ class RadioCollection extends Field
      */
     public function isOptionSelected($option): bool
     {
+<<<<<<< HEAD
         $state = SafeStringCastAction::cast($this->getState());
         $currentValue = (string) $state;
         $optionData = data_get($option, $this->getValueKey());
         /** @phpstan-ignore-next-line */
         $optionValue = SafeStringCastAction::cast($optionData);
+=======
+        $currentValue = (string) $this->getState();
+        $optionValue = (string) data_get($option, $this->getValueKey());
+>>>>>>> 4acc626 (.)
         
         return $currentValue === $optionValue;
     }
