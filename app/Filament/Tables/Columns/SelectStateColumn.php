@@ -55,8 +55,4 @@ class SelectStateColumn extends SelectColumn
 
 
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4acc626 (.)

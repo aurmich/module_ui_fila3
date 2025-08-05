@@ -47,8 +47,4 @@ class SelectState extends Select
     }
 
    
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4acc626 (.)
