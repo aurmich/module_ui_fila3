@@ -114,13 +114,19 @@ TextColumn::make('status')
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Prima di usare un componente Filament:
+=======
+Prima di usare qualsiasi componente Filament:
+
+>>>>>>> b883666 (.)
 - [ ] Implementare traduzioni in `lang/it/fields.php`
 - [ ] Implementare traduzioni in `lang/en/fields.php`
 - [ ] Implementare traduzioni in `lang/de/fields.php`
-- [ ] Verificare che le chiavi siano corrette
-- [ ] Testare che le traduzioni funzionino
+- [ ] Verificare struttura espansa (label, placeholder, tooltip, helper_text)
+- [ ] Non usare mai `->label()` nel codice
 
+<<<<<<< HEAD
 ### Prima di committare:
 - [ ] Verificare che non ci siano `->label()` nel codice
 - [ ] Controllare che tutte le traduzioni siano implementate
@@ -136,6 +142,8 @@ Prima di usare qualsiasi componente Filament:
 - [ ] Verificare struttura espansa (label, placeholder, tooltip, helper_text)
 - [ ] Non usare mai `->label()` nel codice
 
+=======
+>>>>>>> b883666 (.)
 ## Verifica Automatica
 
 ### PHPStan Rule (Ideale)
@@ -172,13 +180,17 @@ rules:
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> b883666 (.)
 
 ## Memoria Permanente
 
 **RICORDA SEMPRE**: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - MAI usare `->label()` in componenti Filament
@@ -188,13 +200,18 @@ rules:
 =======
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> b883666 (.)
 - MAI `->label()` 
 - SEMPRE traduzioni nei file lang/
 - SEMPRE struttura espansa
 - SEMPRE sincronizzazione IT/EN/DE
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> b883666 (.)
 
 *Ultimo aggiornamento: 2025-01-06*

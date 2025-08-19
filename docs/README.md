@@ -196,6 +196,7 @@ class ListUsers extends ListRecords
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
 Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
@@ -277,6 +278,8 @@ docs/
 *Ultimo aggiornamento: gennaio 2025* 
 >>>>>>> 8a76661 (.)
 =======
+=======
+>>>>>>> b883666 (.)
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/translation_standards_links.md)
@@ -289,4 +292,7 @@ docs/
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
 *Ultimo aggiornamento: gennaio 2025* 
+<<<<<<< HEAD
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> b883666 (.)
