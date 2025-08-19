@@ -6,10 +6,7 @@ namespace Modules\UI\View\Components;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\Component;
-<<<<<<< HEAD
-=======
 use Illuminate\View\View;
->>>>>>> 8a76661 (.)
 use Modules\Xot\Actions\GetViewAction;
 
 // use Modules\Xot\View\Components\XotBaseComponent;
@@ -26,11 +23,7 @@ class Std extends Component
     ) {
     }
 
-<<<<<<< HEAD
-    public function render(): Renderable
-=======
     public function render(): View
->>>>>>> 8a76661 (.)
     {
         /**
          * @phpstan-var view-string

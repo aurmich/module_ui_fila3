@@ -21,12 +21,9 @@ class GetAllBlocksAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-=======
      * Execute the action to get all blocks.
      *
      * @param string $context The context for the blocks
->>>>>>> 8a76661 (.)
      * @return DataCollection<ComponentFileData>
      */
     public function execute(string $context = 'form'): DataCollection
@@ -37,31 +34,19 @@ class GetAllBlocksAction
 
         $blocks = Arr::map(
             $files,
-<<<<<<< HEAD
-            function (string $path) {
-                $path = realpath($path);
-                $class = app(GetClassNameByPathAction::class)->execute($path);
-
-=======
             function (string $path): array {
                 $path = realpath($path);
                 $class = app(GetClassNameByPathAction::class)->execute($path);
 
                 /** @var string $name */
->>>>>>> 8a76661 (.)
                 $name = Str::of(class_basename($class))->snake()->toString();
                 if (Str::endsWith($name, '_block')) {
                     $name = Str::before($name, '_block');
                 }
 
-<<<<<<< HEAD
-                $module = Str::of($class)
-                    ->between('Modules\\', '\Filament\\')
-=======
                 /** @var string $module */
                 $module = Str::of($class)
                     ->between('Modules\\', '\\Filament\\')
->>>>>>> 8a76661 (.)
                     ->toString();
 
                 return [

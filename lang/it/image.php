@@ -21,11 +21,8 @@ return array (
     array (
       'label' => 'ratio',
       'description' => 'ratio',
-<<<<<<< HEAD
-=======
       'helper_text' => 'ratio',
       'placeholder' => 'ratio',
->>>>>>> 8a76661 (.)
     ),
     'url' => 
     array (

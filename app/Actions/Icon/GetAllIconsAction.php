@@ -41,16 +41,12 @@ class GetAllIconsAction
             $set['name'] = $name;
             $icons = [];
 
-<<<<<<< HEAD
-            foreach ($set['paths'] as $path) {
-=======
             /** @var array<string> $paths */
             $paths = $set['paths'] ?? [];
             foreach ($paths as $path) {
                 if (!is_string($path)) {
                     continue;
                 }
->>>>>>> 8a76661 (.)
                 foreach (File::allFiles($path) as $file) {
                     // Simply ignore files that aren't SVGs
                     if ('svg' !== $file->getExtension()) {
@@ -58,23 +54,16 @@ class GetAllIconsAction
                     }
 
                     // $iconName = $this->getIconName($file, parentPath: $path, prefix: $prefix);
-<<<<<<< HEAD
-=======
                     /** @var string $iconName */
->>>>>>> 8a76661 (.)
                     $iconName = str($file->getPathname())
                         ->after($path.DIRECTORY_SEPARATOR)
                         ->replace(DIRECTORY_SEPARATOR, '.')
                         ->basename('.svg')
                         ->toString();
 
-<<<<<<< HEAD
-                    $icons[] = $set['prefix'].'-'.$iconName;
-=======
                     /** @var string $prefix */
                     $prefix = $set['prefix'] ?? '';
                     $icons[] = $prefix.'-'.$iconName;
->>>>>>> 8a76661 (.)
                 }
             }
             $set['icons'] = $icons;
