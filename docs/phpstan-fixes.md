@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ac0949f (.)
 # Correzioni PHPStan Livello 7 - Modulo UI
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo UI e le relative soluzioni implementate.
@@ -50,10 +53,13 @@ if ($livewire) {
 
 Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$livewire` non ha i metodi o le proprietà previste.
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> 5ac0949f (.)
 # UI Module - PHPStan Level 7 Fixes - Gennaio 2025
 
 ## 🔄 **Stato In Corso**
@@ -178,8 +184,12 @@ private function safeHtmlAttribute(mixed $value): string
 *Stato: 🔄 In Corso - ~2 errori PHPStan rimanenti*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7da17b2 (.)
 =======
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> 7da17b2 (.)
+>>>>>>> 5ac0949f (.)

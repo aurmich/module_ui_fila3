@@ -321,7 +321,10 @@ return array (
       'label' => 'active-icon',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5ac0949f (.)
     'refund_integrate-action' => 
     array (
       'label' => 'refund_integrate-action',
@@ -330,6 +333,9 @@ return array (
     array (
       'label' => 'refund_integrate-icon',
     ),
+<<<<<<< HEAD
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> 5ac0949f (.)
   ),
 );

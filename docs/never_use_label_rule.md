@@ -115,17 +115,23 @@ TextColumn::make('status')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Prima di usare un componente Filament:
 =======
 Prima di usare qualsiasi componente Filament:
 
 >>>>>>> b883666 (.)
+=======
+Prima di usare qualsiasi componente Filament:
+
+>>>>>>> 5ac0949f (.)
 - [ ] Implementare traduzioni in `lang/it/fields.php`
 - [ ] Implementare traduzioni in `lang/en/fields.php`
 - [ ] Implementare traduzioni in `lang/de/fields.php`
 - [ ] Verificare struttura espansa (label, placeholder, tooltip, helper_text)
 - [ ] Non usare mai `->label()` nel codice
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### Prima di committare:
 - [ ] Verificare che non ci siano `->label()` nel codice
@@ -144,6 +150,8 @@ Prima di usare qualsiasi componente Filament:
 
 =======
 >>>>>>> b883666 (.)
+=======
+>>>>>>> 5ac0949f (.)
 ## Verifica Automatica
 
 ### PHPStan Rule (Ideale)
@@ -181,15 +189,19 @@ rules:
 - [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
 =======
 >>>>>>> b883666 (.)
+=======
+>>>>>>> 5ac0949f (.)
 
 ## Memoria Permanente
 
 **RICORDA SEMPRE**: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -202,10 +214,13 @@ rules:
 >>>>>>> 64e34f5 (.)
 =======
 >>>>>>> b883666 (.)
+=======
+>>>>>>> 5ac0949f (.)
 - MAI `->label()` 
 - SEMPRE traduzioni nei file lang/
 - SEMPRE struttura espansa
 - SEMPRE sincronizzazione IT/EN/DE
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 8a76661 (.)
@@ -213,5 +228,7 @@ rules:
 >>>>>>> 64e34f5 (.)
 =======
 >>>>>>> b883666 (.)
+=======
+>>>>>>> 5ac0949f (.)
 
 *Ultimo aggiornamento: 2025-01-06*

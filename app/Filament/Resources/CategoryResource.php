@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ac0949f (.)
 namespace Modules\UI\Filament\Resources;
 
 use  LaraZeus\Bolt\Filament\Resources\CategoryResource as LaraZeusCategoryResource;
@@ -9,6 +12,7 @@ use  LaraZeus\Bolt\Filament\Resources\CategoryResource as LaraZeusCategoryResour
 
 class CategoryResource extends LaraZeusCategoryResource
 {
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -23,4 +27,6 @@ class CategoryResource extends BlogCategoryResource
 {
     // Inherit all functionality from Blog CategoryResource
 >>>>>>> b883666 (.)
+=======
+>>>>>>> 5ac0949f (.)
 }

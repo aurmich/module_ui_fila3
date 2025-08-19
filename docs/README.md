@@ -12,6 +12,7 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 7da17b2 (.)
@@ -21,6 +22,11 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 =======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 64e34f5 (.)
+=======
+=======
+- **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
+>>>>>>> 7da17b2 (.)
+>>>>>>> 5ac0949f (.)
 
 ## File di Traduzione
 
@@ -32,6 +38,7 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 7da17b2 (.)
@@ -41,6 +48,11 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 =======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 64e34f5 (.)
+=======
+=======
+- `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
+>>>>>>> 7da17b2 (.)
+>>>>>>> 5ac0949f (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
@@ -48,12 +60,18 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ac0949f (.)
 
 ## Regole Critiche
 
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 8a76661 (.)
+=======
+>>>>>>> 5ac0949f (.)
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
 
 ## Regole Critiche
@@ -116,11 +134,15 @@ public function getLabel(): string
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7da17b2 (.)
 =======
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> 7da17b2 (.)
+>>>>>>> 5ac0949f (.)
 ### Sincronizzazione Lingue
 - **TUTTI** i file `lang/en/` devono avere le stesse voci di `lang/it/`
 - **SEMPRE** confrontare file IT e EN prima di modifiche
@@ -128,6 +150,7 @@ public function getLabel(): string
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
 >>>>>>> 7da17b2 (.)
@@ -137,6 +160,11 @@ public function getLabel(): string
 =======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
 >>>>>>> 64e34f5 (.)
+=======
+=======
+- **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
+>>>>>>> 7da17b2 (.)
+>>>>>>> 5ac0949f (.)
 
 ### Struttura Traduzioni
 - Struttura espansa obbligatoria per tutti i campi
@@ -152,16 +180,22 @@ public function getLabel(): string
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ac0949f (.)
 
 ### Convenzioni
 - Nomi file in minuscolo
 - PHPDoc completo per ogni componente
 - Organizzazione in sottocartelle logiche
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> 5ac0949f (.)
 
 ### Convenzioni
 - Nomi file in minuscolo
@@ -197,6 +231,9 @@ class ListUsers extends ListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ac0949f (.)
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
 Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
@@ -252,6 +289,7 @@ docs/
 >>>>>>> 7da17b2 (.)
 
 =======
+<<<<<<< HEAD
 >>>>>>> 8a76661 (.)
 ## Collegamenti
 
@@ -280,19 +318,35 @@ docs/
 =======
 =======
 >>>>>>> b883666 (.)
+=======
+>>>>>>> c7de8d3daa (.)
+>>>>>>> 5ac0949f (.)
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/translation_standards_links.md)
 - [Regole Traduzioni](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 - [Componenti UI](components.md)
+<<<<<<< HEAD
+
+*Ultimo aggiornamento: gennaio 2025* 
+=======
 - [TableLayoutEnum Analysis](table_layout_enum_analysis.md)
 - [TableLayoutEnum Usage](table-layout-enum-usage.md)
 - **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025* 
 <<<<<<< HEAD
 >>>>>>> 64e34f5 (.)
 =======
 >>>>>>> b883666 (.)
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 7da17b2 (.)
+=======
+*Ultimo aggiornamento: gennaio 2025* 
+>>>>>>> c7de8d3daa (.)
+>>>>>>> 5ac0949f (.)
