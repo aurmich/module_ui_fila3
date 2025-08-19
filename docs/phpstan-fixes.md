@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # Correzioni PHPStan Livello 7 - Modulo UI
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo UI e le relative soluzioni implementate.
@@ -54,12 +57,18 @@ if ($livewire) {
 Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$livewire` non ha i metodi o le proprietà previste.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 =======
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 # UI Module - PHPStan Level 7 Fixes - Gennaio 2025
 
 ## 🔄 **Stato In Corso**
@@ -185,11 +194,17 @@ private function safeHtmlAttribute(mixed $value): string
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 >>>>>>> 7da17b2 (.)
 =======
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> 7da17b2 (.)
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

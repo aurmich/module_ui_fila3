@@ -1,46 +1,36 @@
 <?php
 
-return array (
-  'fields' => 
-  array (
-    'caption' => 
-    array (
+return array(
+  'fields' =>
+  array(
+    'caption' =>
+    array(
       'label' => 'caption',
       'description' => 'caption',
       'helper_text' => 'caption',
       'placeholder' => 'caption',
     ),
-    'alt' => 
-    array (
+    'alt' =>
+    array(
       'label' => 'alt',
       'description' => 'alt',
       'helper_text' => 'alt',
       'placeholder' => 'alt',
     ),
-    'ratio' => 
-    array (
+    'ratio' =>
+    array(
       'label' => 'ratio',
       'description' => 'ratio',
-<<<<<<< HEAD
-<<<<<<< HEAD
-      'helper_text' => 'ratio',
-      'placeholder' => 'ratio',
-=======
->>>>>>> 64e34f5 (.)
-=======
-      'helper_text' => 'ratio',
-      'placeholder' => 'ratio',
->>>>>>> b883666 (.)
     ),
-    'url' => 
-    array (
+    'url' =>
+    array(
       'label' => 'url',
       'description' => 'url',
       'helper_text' => 'url',
       'placeholder' => 'url',
     ),
-    'image' => 
-    array (
+    'image' =>
+    array(
       'label' => 'image',
       'description' => 'image',
       'helper_text' => 'image',

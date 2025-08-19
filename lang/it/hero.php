@@ -1,70 +1,62 @@
 <?php
 
-return array (
-  'fields' => 
-  array (
-    'link' => 
-    array (
+return array(
+  'fields' =>
+  array(
+    'link' =>
+    array(
       'label' => 'link',
       'description' => 'link',
       'helper_text' => 'link',
       'placeholder' => 'link',
     ),
-    'class' => 
-    array (
+    'class' =>
+    array(
       'label' => 'class',
       'description' => 'class',
       'helper_text' => 'class',
       'placeholder' => 'class',
     ),
-    'label' => 
-    array (
+    'label' =>
+    array(
       'label' => 'label',
       'description' => 'label',
       'helper_text' => 'label',
       'placeholder' => 'label',
     ),
-    'buttons' => 
-    array (
+    'buttons' =>
+    array(
       'label' => 'buttons',
       'description' => 'buttons',
       'helper_text' => 'buttons',
       'placeholder' => 'buttons',
     ),
-    '_tpl' => 
-    array (
+    '_tpl' =>
+    array(
       'label' => '_tpl',
     ),
-    'background' => 
-    array (
+    'background' =>
+    array(
       'label' => 'background',
       'description' => 'background',
       'helper_text' => 'background',
       'placeholder' => 'background',
     ),
-    'text' => 
-    array (
+    'text' =>
+    array(
       'label' => 'text',
       'description' => 'text',
       'helper_text' => 'text',
       'placeholder' => 'text',
     ),
-    'title' => 
-    array (
+    'title' =>
+    array(
       'label' => 'title',
       'description' => 'title',
       'helper_text' => 'title',
-<<<<<<< HEAD
-<<<<<<< HEAD
-      'placeholder' => 'title',
-=======
->>>>>>> 64e34f5 (.)
-=======
-      'placeholder' => 'title',
->>>>>>> b883666 (.)
     ),
-    'view' => 
-    array (
+    'view' =>
+    array(
       'label' => 'view',
     ),
   ),
