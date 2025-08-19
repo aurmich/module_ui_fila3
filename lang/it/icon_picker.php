@@ -6,6 +6,12 @@ return array (
     'newstate' => 
     array (
       'label' => 'newstate',
+<<<<<<< HEAD
+=======
+      'description' => 'newstate',
+      'helper_text' => 'newstate',
+      'placeholder' => 'newstate',
+>>>>>>> 8a76661 (.)
     ),
     'pack' => 
     array (

@@ -54,6 +54,10 @@ return array (
       'label' => 'title',
       'description' => 'title',
       'helper_text' => 'title',
+<<<<<<< HEAD
+=======
+      'placeholder' => 'title',
+>>>>>>> 8a76661 (.)
     ),
     'view' => 
     array (

@@ -10,9 +10,13 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - Componenti calendario
 - Utility di interfaccia
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 7da17b2 (.)
+=======
+- **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
+>>>>>>> 8a76661 (.)
 
 ## File di Traduzione
 
@@ -22,18 +26,25 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - `user_calendar.php` - Traduzioni per il calendario utente
 - `components.php` - Traduzioni per i componenti UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 7da17b2 (.)
+=======
+- `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
+>>>>>>> 8a76661 (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
 - [Fix Traduzioni Opening Hours](opening_hours_translation_improvement.md) - Miglioramento traduzioni orari
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Regole Critiche
 
 =======
+=======
+>>>>>>> 8a76661 (.)
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
 
 ## Regole Critiche
@@ -88,15 +99,22 @@ public function getLabel(): string
 - Struttura: `modulo::risorsa.fields.campo.label`
 - **SEMPRE** implementare traduzioni nei file lang/ prima di usare i componenti
 
+<<<<<<< HEAD
 >>>>>>> 7da17b2 (.)
+=======
+>>>>>>> 8a76661 (.)
 ### Sincronizzazione Lingue
 - **TUTTI** i file `lang/en/` devono avere le stesse voci di `lang/it/`
 - **SEMPRE** confrontare file IT e EN prima di modifiche
 - **SEMPRE** aggiungere nuove voci in entrambe le lingue
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
 >>>>>>> 7da17b2 (.)
+=======
+- **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
+>>>>>>> 8a76661 (.)
 
 ### Struttura Traduzioni
 - Struttura espansa obbligatoria per tutti i campi
@@ -110,12 +128,15 @@ public function getLabel(): string
 - **SEMPRE** in `Modules/UI/resources/views/components/ui/`
 - **MAI** nella root `resources/views/components/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Convenzioni
 - Nomi file in minuscolo
 - PHPDoc completo per ogni componente
 - Organizzazione in sottocartelle logiche
 =======
+=======
+>>>>>>> 8a76661 (.)
 
 ### Convenzioni
 - Nomi file in minuscolo
@@ -148,6 +169,7 @@ class ListUsers extends ListRecords
 }
 ```
 
+<<<<<<< HEAD
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
 Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
@@ -202,6 +224,8 @@ docs/
 - [x] Struttura coerente in tutti i moduli
 >>>>>>> 7da17b2 (.)
 
+=======
+>>>>>>> 8a76661 (.)
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/translation_standards_links.md)
@@ -209,13 +233,20 @@ docs/
 - [Best Practices Filament](filament_best_practices.md)
 - [Componenti UI](components.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 *Ultimo aggiornamento: gennaio 2025* 
 =======
+=======
+>>>>>>> 8a76661 (.)
 - [TableLayoutEnum Analysis](table_layout_enum_analysis.md)
 - [TableLayoutEnum Usage](table-layout-enum-usage.md)
 - **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 7da17b2 (.)
+=======
+*Ultimo aggiornamento: gennaio 2025* 
+>>>>>>> 8a76661 (.)

@@ -29,6 +29,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
     'width' => '48',
     'contentClasses' => 'py-1 bg-white dark:bg-gray-800',
 <<<<<<< HEAD
+<<<<<<< HEAD
 ])
 
 @php
@@ -50,6 +51,8 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
         <a href="/{{ $locale }}/auth/register" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">
             {{ __('auth.register.title') }}
 =======
+=======
+>>>>>>> 8a76661 (.)
       </li>
     </ul>
   </div>
@@ -88,6 +91,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
         <a href="/">
           <i class="fas fa-home"></i>
           Home
+<<<<<<< HEAD
 >>>>>>> 7da17b2 (.)
         </a>
     </div>
@@ -152,3 +156,116 @@ return [
    - Utilizzare i componenti Filament per icone e avatar: `<x-filament::icon>`, `<x-filament::avatar>`
    - Utilizzare i componenti Filament per i dropdown quando possibile
    - Utilizzare i separatori corretti nei dropdown (div con bordo, non componenti inesistenti)
+=======
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          Impostazioni
+        </a>
+        <ul class="submenu">
+          <li><a href="#">Profilo</a></li>
+          <li><a href="#">Sicurezza</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+```
+
+## 🎯 Paginazione
+```html
+<nav aria-label="Paginazione">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <span class="page-link">Precedente</span>
+    </li>
+    <li class="page-item active">
+      <span class="page-link">1</span>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">Successivo</a>
+    </li>
+  </ul>
+</nav>
+```
+
+## 🔗 Tabs
+```html
+<div class="tabs">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#tab1">
+        Tab 1
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#tab2">
+        Tab 2
+      </a>
+    </li>
+  </ul>
+  
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      Contenuto Tab 1
+    </div>
+    <div class="tab-pane" id="tab2">
+      Contenuto Tab 2
+    </div>
+  </div>
+</div>
+```
+
+## 🎨 Stili e Comportamenti
+
+### Dropdown
+```scss
+.dropdown {
+  position: relative;
+  
+  &-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    
+    &.show {
+      display: block;
+    }
+  }
+}
+```
+
+### Mobile Menu
+```scss
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  
+  &.show {
+    transform: translateX(0);
+  }
+}
+```
+
+## 🔗 Collegamenti
+- [Componenti Base](./base-components.md)
+- [Layout](./layout-components.md)
+- [Accessibilità](./standards/accessibility.md) 
+>>>>>>> 8a76661 (.)
