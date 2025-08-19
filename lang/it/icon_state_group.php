@@ -322,9 +322,12 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
     'refund_integrate-action' => 
     array (
       'label' => 'refund_integrate-action',
@@ -334,8 +337,11 @@ return array (
       'label' => 'refund_integrate-icon',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 64e34f5 (.)
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
   ),
 );

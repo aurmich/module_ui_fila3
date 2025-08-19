@@ -116,6 +116,7 @@ TextColumn::make('status')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Prima di usare un componente Filament:
 =======
 Prima di usare qualsiasi componente Filament:
@@ -140,6 +141,8 @@ Prima di usare qualsiasi componente Filament:
 =======
 =======
 >>>>>>> 64e34f5 (.)
+=======
+>>>>>>> 7494187 (.)
 Prima di usare qualsiasi componente Filament:
 
 - [ ] Implementare traduzioni in `lang/it/fields.php`
@@ -148,10 +151,13 @@ Prima di usare qualsiasi componente Filament:
 - [ ] Verificare struttura espansa (label, placeholder, tooltip, helper_text)
 - [ ] Non usare mai `->label()` nel codice
 
+<<<<<<< HEAD
 =======
 >>>>>>> b883666 (.)
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
 ## Verifica Automatica
 
 ### PHPStan Rule (Ideale)
@@ -190,6 +196,7 @@ rules:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8a76661 (.)
 =======
 >>>>>>> 64e34f5 (.)
@@ -197,10 +204,13 @@ rules:
 >>>>>>> b883666 (.)
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
 
 ## Memoria Permanente
 
 **RICORDA SEMPRE**: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -216,10 +226,13 @@ rules:
 >>>>>>> b883666 (.)
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
 - MAI `->label()` 
 - SEMPRE traduzioni nei file lang/
 - SEMPRE struttura espansa
 - SEMPRE sincronizzazione IT/EN/DE
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -230,5 +243,7 @@ rules:
 >>>>>>> b883666 (.)
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
 
 *Ultimo aggiornamento: 2025-01-06*

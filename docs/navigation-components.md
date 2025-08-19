@@ -32,6 +32,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5ac0949f (.)
 ])
@@ -62,6 +63,8 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 >>>>>>> 64e34f5 (.)
 =======
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
       </li>
     </ul>
   </div>

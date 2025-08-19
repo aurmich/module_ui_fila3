@@ -4,6 +4,7 @@ namespace Modules\UI\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5ac0949f (.)
 use Spatie\Translatable\HasTranslations;
@@ -39,13 +40,18 @@ class FieldOption extends BaseModel
 <<<<<<< HEAD
 }
 =======
+=======
+>>>>>>> 7494187 (.)
 use Modules\FormBuilder\Models\FieldOption as BaseFieldOption;
 
 class FieldOption extends BaseFieldOption
 {
     // Alias per Laravel
 }
+<<<<<<< HEAD
 >>>>>>> 64e34f5 (.)
 =======
 }
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)

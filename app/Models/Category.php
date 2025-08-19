@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5ac0949f (.)
 declare(strict_types=1);
@@ -19,6 +20,8 @@ class Category extends LaraZeusCategory
 <<<<<<< HEAD
 } 
 =======
+=======
+>>>>>>> 7494187 (.)
 namespace Modules\UI\Models;
 
 use Modules\FormBuilder\Models\Category as BaseCategory;
@@ -27,7 +30,10 @@ class Category extends BaseCategory
 {
     // Alias per soddisfare Laravel
 }
+<<<<<<< HEAD
 >>>>>>> 64e34f5 (.)
 =======
 } 
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)

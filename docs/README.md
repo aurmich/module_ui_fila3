@@ -13,6 +13,7 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 7da17b2 (.)
@@ -27,6 +28,9 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 7da17b2 (.)
 >>>>>>> 5ac0949f (.)
+=======
+- **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
+>>>>>>> 7494187 (.)
 
 ## File di Traduzione
 
@@ -39,6 +43,7 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 7da17b2 (.)
@@ -53,6 +58,9 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 7da17b2 (.)
 >>>>>>> 5ac0949f (.)
+=======
+- `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
+>>>>>>> 7494187 (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
@@ -61,6 +69,7 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5ac0949f (.)
 
@@ -82,6 +91,12 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 ## Regole Critiche
 
 >>>>>>> 64e34f5 (.)
+=======
+- [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
+
+## Regole Critiche
+
+>>>>>>> 7494187 (.)
 ### ❌ MAI usare ->label()
 ```php
 // ERRORE - Non fare mai questo
@@ -135,6 +150,7 @@ public function getLabel(): string
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7da17b2 (.)
 =======
 >>>>>>> 8a76661 (.)
@@ -143,6 +159,8 @@ public function getLabel(): string
 =======
 >>>>>>> 7da17b2 (.)
 >>>>>>> 5ac0949f (.)
+=======
+>>>>>>> 7494187 (.)
 ### Sincronizzazione Lingue
 - **TUTTI** i file `lang/en/` devono avere le stesse voci di `lang/it/`
 - **SEMPRE** confrontare file IT e EN prima di modifiche
@@ -151,6 +169,7 @@ public function getLabel(): string
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
 >>>>>>> 7da17b2 (.)
@@ -165,6 +184,9 @@ public function getLabel(): string
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
 >>>>>>> 7da17b2 (.)
 >>>>>>> 5ac0949f (.)
+=======
+- **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
+>>>>>>> 7494187 (.)
 
 ### Struttura Traduzioni
 - Struttura espansa obbligatoria per tutti i campi
@@ -203,6 +225,7 @@ public function getLabel(): string
 - Organizzazione in sottocartelle logiche
 
 ## Enums e Utilities
+<<<<<<< HEAD
 
 ### TableLayoutEnum
 - **Scopo**: Gestione layout tabelle Filament (lista/griglia)
@@ -350,3 +373,42 @@ docs/
 *Ultimo aggiornamento: gennaio 2025* 
 >>>>>>> c7de8d3daa (.)
 >>>>>>> 5ac0949f (.)
+=======
+
+### TableLayoutEnum
+- **Scopo**: Gestione layout tabelle Filament (lista/griglia)
+- **Funzionalità**: Toggle responsive, traduzioni, colori, icone
+- **Interfacce**: HasColor, HasIcon, HasLabel
+- **Pattern**: Strategy Pattern per colonne dinamiche
+- **Implementazione**: TransTrait con transClass()
+
+### Utilizzo TableLayoutEnum
+```php
+use Modules\UI\Enums\TableLayoutEnum;
+
+class ListUsers extends ListRecords
+{
+    protected TableLayoutEnum $layout = TableLayoutEnum::LIST;
+    
+    public function table(Table $table): Table
+    {
+        return $table
+            ->columns($this->getColumnsForLayout())
+            ->contentGrid($this->layout->getTableContentGrid());
+    }
+}
+```
+
+## Collegamenti
+
+- [Documentazione Root](../../../docs/translation_standards_links.md)
+- [Regole Traduzioni](translation_rules.md)
+- [Best Practices Filament](filament_best_practices.md)
+- [Componenti UI](components.md)
+- [TableLayoutEnum Analysis](table_layout_enum_analysis.md)
+- [TableLayoutEnum Usage](table-layout-enum-usage.md)
+- **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
+- **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
+
+*Ultimo aggiornamento: gennaio 2025* 
+>>>>>>> 7494187 (.)
