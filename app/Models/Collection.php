@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Modules\UI\Models;
@@ -13,3 +14,13 @@ class Collection extends LaraZeusCollection
 
     //public array $translatable = [];
 } 
+=======
+namespace Modules\UI\Models;
+
+use Modules\FormBuilder\Models\Collection as BaseCollection;
+
+class Collection extends BaseCollection
+{
+    // Alias per soddisfare Laravel
+}
+>>>>>>> 64e34f5 (.)

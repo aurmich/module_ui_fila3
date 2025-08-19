@@ -11,12 +11,16 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - Utility di interfaccia
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 7da17b2 (.)
 =======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 8a76661 (.)
+=======
+- **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
+>>>>>>> 64e34f5 (.)
 
 ## File di Traduzione
 
@@ -27,16 +31,21 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - `components.php` - Traduzioni per i componenti UI
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 7da17b2 (.)
 =======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 8a76661 (.)
+=======
+- `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
+>>>>>>> 64e34f5 (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
 - [Fix Traduzioni Opening Hours](opening_hours_translation_improvement.md) - Miglioramento traduzioni orari
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -49,6 +58,12 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 
 ## Regole Critiche
 
+=======
+- [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
+
+## Regole Critiche
+
+>>>>>>> 64e34f5 (.)
 ### ❌ MAI usare ->label()
 ```php
 // ERRORE - Non fare mai questo
@@ -100,21 +115,28 @@ public function getLabel(): string
 - **SEMPRE** implementare traduzioni nei file lang/ prima di usare i componenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7da17b2 (.)
 =======
 >>>>>>> 8a76661 (.)
+=======
+>>>>>>> 64e34f5 (.)
 ### Sincronizzazione Lingue
 - **TUTTI** i file `lang/en/` devono avere le stesse voci di `lang/it/`
 - **SEMPRE** confrontare file IT e EN prima di modifiche
 - **SEMPRE** aggiungere nuove voci in entrambe le lingue
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
 >>>>>>> 7da17b2 (.)
 =======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
 >>>>>>> 8a76661 (.)
+=======
+- **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
+>>>>>>> 64e34f5 (.)
 
 ### Struttura Traduzioni
 - Struttura espansa obbligatoria per tutti i campi
@@ -129,6 +151,7 @@ public function getLabel(): string
 - **MAI** nella root `resources/views/components/`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Convenzioni
 - Nomi file in minuscolo
@@ -137,6 +160,8 @@ public function getLabel(): string
 =======
 =======
 >>>>>>> 8a76661 (.)
+=======
+>>>>>>> 64e34f5 (.)
 
 ### Convenzioni
 - Nomi file in minuscolo
@@ -169,6 +194,7 @@ class ListUsers extends ListRecords
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
@@ -250,3 +276,17 @@ docs/
 =======
 *Ultimo aggiornamento: gennaio 2025* 
 >>>>>>> 8a76661 (.)
+=======
+## Collegamenti
+
+- [Documentazione Root](../../../docs/translation_standards_links.md)
+- [Regole Traduzioni](translation_rules.md)
+- [Best Practices Filament](filament_best_practices.md)
+- [Componenti UI](components.md)
+- [TableLayoutEnum Analysis](table_layout_enum_analysis.md)
+- [TableLayoutEnum Usage](table-layout-enum-usage.md)
+- **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
+- **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
+
+*Ultimo aggiornamento: gennaio 2025* 
+>>>>>>> 64e34f5 (.)

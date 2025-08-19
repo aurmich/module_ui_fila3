@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 7 - Modulo UI
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo UI e le relative soluzioni implementate.
@@ -51,6 +52,8 @@ Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$
 =======
 =======
 >>>>>>> 8a76661 (.)
+=======
+>>>>>>> 64e34f5 (.)
 # UI Module - PHPStan Level 7 Fixes - Gennaio 2025
 
 ## 🔄 **Stato In Corso**
@@ -174,6 +177,9 @@ private function safeHtmlAttribute(mixed $value): string
 *Ultimo aggiornamento: Gennaio 2025*
 *Stato: 🔄 In Corso - ~2 errori PHPStan rimanenti*
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7da17b2 (.)
 =======
 >>>>>>> 8a76661 (.)
+=======
+>>>>>>> 64e34f5 (.)

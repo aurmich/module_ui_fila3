@@ -2,6 +2,7 @@
 
 namespace Modules\UI\Models;
 
+<<<<<<< HEAD
 use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -33,3 +34,11 @@ class FieldOption extends BaseModel
         });
     }
 }
+=======
+use Modules\FormBuilder\Models\FieldOption as BaseFieldOption;
+
+class FieldOption extends BaseFieldOption
+{
+    // Alias per Laravel
+}
+>>>>>>> 64e34f5 (.)

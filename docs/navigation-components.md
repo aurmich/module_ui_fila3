@@ -30,6 +30,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
     'contentClasses' => 'py-1 bg-white dark:bg-gray-800',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ])
 
 @php
@@ -53,6 +54,8 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 =======
 =======
 >>>>>>> 8a76661 (.)
+=======
+>>>>>>> 64e34f5 (.)
       </li>
     </ul>
   </div>
