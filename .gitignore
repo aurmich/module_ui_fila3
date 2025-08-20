@@ -43,6 +43,10 @@ cache/
 *.bak
 # File di log
 *.log
--e 
 # PHPStan documentation
 docs/phpstan/
+_docs/
+*.old
+*.old1
+*.bak
+*.backup

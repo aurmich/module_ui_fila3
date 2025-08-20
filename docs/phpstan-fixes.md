@@ -24,12 +24,12 @@ Per risolvere i problemi di type safety nella classe `TableLayoutToggleTableActi
 protected function toggleLayout(mixed $livewire = null): void
 ```
 
-2. Aggiunti controlli `method_exists` e `property_exists` prima di chiamare metodi o accedere a proprietà sull'oggetto `$livewire`:
+2. Aggiunti controlli `method_exists` e `isset` prima di chiamare metodi o accedere a proprietà sull'oggetto `$livewire`:
 
 ```php
 if ($livewire) {
-    // Use property_exists to safely check if the property exists
-    if (property_exists($livewire, 'layoutView')) {
+    // Use isset to safely check if the property exists (for magic properties)
+    if (isset($livewire->layoutView)) {
         $livewire->layoutView = $newLayout;
     }
     

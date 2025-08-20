@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\UI\Data;
+namespace Modules\UI\Datas;
 
 use Spatie\LaravelData\Data;
 
