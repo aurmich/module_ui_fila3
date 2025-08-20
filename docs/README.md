@@ -8,32 +8,12 @@
 [![Design System](https://img.shields.io/badge/Design-System%20Ready-purple.svg)](https://designsystem.digital.gov/)
 [![Quality Score](https://img.shields.io/badge/Quality%20Score-97%25-brightgreen.svg)](https://github.com/laraxot/ui-module)
 
-<<<<<<< HEAD
 > **🚀 Modulo UI**: Sistema completo di componenti Blade, widget Filament e design system con traduzioni automatiche e layout responsive.
-=======
-## Funzionalità Principali
-- Componenti Blade riutilizzabili
-- Widget Filament personalizzati
-- Gestione orari di apertura
-- Componenti calendario
-- Utility di interfaccia
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
->>>>>>> 7da17b2 (.)
-=======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
->>>>>>> 8a76661 (.)
-=======
-- **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
->>>>>>> 64e34f5 (.)
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 ## 📋 **Panoramica**
 
-<<<<<<< HEAD
 Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo:
 
 - 🧩 **Componenti Blade** - Componenti riutilizzabili e modulari
@@ -42,53 +22,21 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
 - 🌐 **Traduzioni Automatiche** - Sistema traduzioni integrato
 - 🎯 **Design System** - Sistema design coerente
 - ⚡ **Performance Ottimizzata** - Componenti ottimizzati per velocità
-=======
-### Traduzioni Principali
-- `opening_hours.php` - Traduzioni per la gestione orari di apertura
-- `opening_hours_field.php` - **FIX COMPLETATO**: Traduzioni per i campi orari con sincronizzazione lingue
-- `user_calendar.php` - Traduzioni per il calendario utente
-- `components.php` - Traduzioni per i componenti UI
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
->>>>>>> 7da17b2 (.)
-=======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
->>>>>>> 8a76661 (.)
-=======
-- `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
->>>>>>> 64e34f5 (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
 - [Fix Traduzioni Opening Hours](opening_hours_translation_improvement.md) - Miglioramento traduzioni orari
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ## Regole Critiche
 
-=======
-=======
->>>>>>> 8a76661 (.)
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 ## ⚡ **Funzionalità Core**
 
-<<<<<<< HEAD
 ### 🧩 **Blade Components**
-=======
-=======
-- [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
-
-## Regole Critiche
-
->>>>>>> 64e34f5 (.)
 ### ❌ MAI usare ->label()
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 ```php
 // Componente riutilizzabile
 <x-ui.card>
@@ -141,57 +89,12 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
     {
         return $this->transClass(self::class, $this->value . '.label');
     }
-<<<<<<< HEAD
-=======
-
-    public function getColor(): string
-    {
-        return $this->transClass(self::class, $this->value . '.color');
-    }
-}
-```
-
-### ❌ MAI usa match() per traduzioni negli Enum
-```php
-// ❌ ERRORE - Non fare mai questo
-public function getLabel(): string
-{
-    return match ($this) {
-        self::LIST => __('ui::table-layout.list.label'),
-        self::GRID => __('ui::table-layout.grid.label'),
-    };
-}
-```
-
-### Sistema Traduzioni Automatico
-- Il LangServiceProvider gestisce automaticamente le traduzioni
-- Le chiavi vengono generate automaticamente dal nome del campo
-- Struttura: `modulo::risorsa.fields.campo.label`
-- **SEMPRE** implementare traduzioni nei file lang/ prima di usare i componenti
-
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7da17b2 (.)
-=======
->>>>>>> 8a76661 (.)
-=======
->>>>>>> 64e34f5 (.)
 ### Sincronizzazione Lingue
 - **TUTTI** i file `lang/en/` devono avere le stesse voci di `lang/it/`
 - **SEMPRE** confrontare file IT e EN prima di modifiche
 - **SEMPRE** aggiungere nuove voci in entrambe le lingue
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
->>>>>>> 7da17b2 (.)
-=======
 - **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
->>>>>>> 8a76661 (.)
-=======
-- **NUOVO**: Aggiungere sempre anche traduzioni tedesche (DE)
->>>>>>> 64e34f5 (.)
 
 ### Struttura Traduzioni
 - Struttura espansa obbligatoria per tutti i campi
@@ -204,19 +107,11 @@ public function getLabel(): string
 ### Posizionamento
 - **SEMPRE** in `Modules/UI/resources/views/components/ui/`
 - **MAI** nella root `resources/views/components/`
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ### Convenzioni
 - Nomi file in minuscolo
 - PHPDoc completo per ogni componente
 - Organizzazione in sottocartelle logiche
-=======
-=======
->>>>>>> 8a76661 (.)
-=======
->>>>>>> 64e34f5 (.)
 
 ### Convenzioni
 - Nomi file in minuscolo
@@ -239,7 +134,6 @@ use Modules\UI\Enums\TableLayoutEnum;
 class ListUsers extends ListRecords
 {
     protected TableLayoutEnum $layout = TableLayoutEnum::LIST;
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
     
     public function getTableContentGrid(): array
     {
@@ -251,11 +145,7 @@ class ListUsers extends ListRecords
 }
 ```
 
-<<<<<<< HEAD
 ## 🎯 **Stato Qualità - Gennaio 2025**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
 Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
@@ -308,37 +198,23 @@ docs/
 - [x] Nessun file .sh fuori da bashscripts/
 - [x] Documentazione aggiornata
 - [x] Struttura coerente in tutti i moduli
->>>>>>> 7da17b2 (.)
 
-=======
->>>>>>> 8a76661 (.)
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/translation_standards_links.md)
 - [Regole Traduzioni](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 - [Componenti UI](components.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 *Ultimo aggiornamento: gennaio 2025* 
-=======
-=======
->>>>>>> 8a76661 (.)
 - [TableLayoutEnum Analysis](table_layout_enum_analysis.md)
 - [TableLayoutEnum Usage](table-layout-enum-usage.md)
 - **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
->>>>>>> 7da17b2 (.)
-=======
 *Ultimo aggiornamento: gennaio 2025* 
->>>>>>> 8a76661 (.)
-=======
 ## Collegamenti
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)
 
 ### ✅ **PHPStan Level 9 Compliance**
 - **File Core Certificati**: 12/12 file core raggiungono Level 9
@@ -347,7 +223,6 @@ docs/
 - **Template Types**: Risolti tutti i problemi Collection generics
 - **Bugfix Recenti**: [S3Test Null ErrorCode Handling](s3test-bugfix-null-errorcode.md), [AwsTest Undefined Variable Fix](awstest-bugfix-undefined-variable.md), [S3Test Method Duplication Fix](s3test-method-duplication-bugfix.md), [PHPStan Level 10 Comprehensive Fixes](phpstan-level10-bugfixes-comprehensive.md)
 
-<<<<<<< HEAD
 ### ✅ **Translation Standards Compliance**
 - **Helper Text**: 100% corretti (vuoti quando uguali alla chiave)
 - **Localizzazione**: 100% valori tradotti appropriatamente
@@ -656,7 +531,3 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
 **🚀 Performance**: 97/100 score 
-=======
-*Ultimo aggiornamento: gennaio 2025* 
->>>>>>> 64e34f5 (.)
->>>>>>> 376bc0e6 (fix conflitti sync remote repo aurmich)

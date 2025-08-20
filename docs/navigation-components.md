@@ -28,9 +28,6 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
     'alignment' => 'right',
     'width' => '48',
     'contentClasses' => 'py-1 bg-white dark:bg-gray-800',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ])
 
 @php
@@ -51,11 +48,6 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
         </a>
         <a href="/{{ $locale }}/auth/register" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">
             {{ __('auth.register.title') }}
-=======
-=======
->>>>>>> 8a76661 (.)
-=======
->>>>>>> 64e34f5 (.)
       </li>
     </ul>
   </div>
@@ -94,8 +86,6 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
         <a href="/">
           <i class="fas fa-home"></i>
           Home
-<<<<<<< HEAD
->>>>>>> 7da17b2 (.)
         </a>
     </div>
 @endif
@@ -159,7 +149,6 @@ return [
    - Utilizzare i componenti Filament per icone e avatar: `<x-filament::icon>`, `<x-filament::avatar>`
    - Utilizzare i componenti Filament per i dropdown quando possibile
    - Utilizzare i separatori corretti nei dropdown (div con bordo, non componenti inesistenti)
-=======
         </a>
       </li>
       <li class="has-submenu">
@@ -271,4 +260,3 @@ return [
 - [Componenti Base](./base-components.md)
 - [Layout](./layout-components.md)
 - [Accessibilità](./standards/accessibility.md) 
->>>>>>> 8a76661 (.)
