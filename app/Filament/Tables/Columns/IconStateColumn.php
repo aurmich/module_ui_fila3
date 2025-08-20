@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
 use Spatie\ModelStates\HasStatesContract;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 class IconStateColumn extends IconColumn
 {
@@ -65,7 +66,7 @@ class IconStateColumn extends IconColumn
                     ->reactive(),
                 Textarea::make('message')
                 ->required(function(Get $get,$record){
-                    $newState=$get('state');
+                    $newState=app(SafeStringCastAction::class)->execute($get('state'));
                     $name=$this->getName();
                     $state=$record->getAttribute($name);
                     $states=$state::getStateMapping();
