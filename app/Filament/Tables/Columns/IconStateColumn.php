@@ -66,7 +66,11 @@ class IconStateColumn extends IconColumn
                     ->reactive(),
                 Textarea::make('message')
                 ->required(function(Get $get,$record){
+<<<<<<< HEAD
                     $newState=app(SafeStringCastAction::class)->execute($get('state'));
+=======
+                    $newState=$get('state');
+>>>>>>> 41f976e (.)
                     $name=$this->getName();
                     $state=$record->getAttribute($name);
                     $states=$state::getStateMapping();

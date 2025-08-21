@@ -320,12 +320,21 @@ return array(
     array(
       'label' => 'active-icon',
     ),
+<<<<<<< HEAD
     'refund_integrate-action' =>
     array(
       'label' => 'refund_integrate-action',
     ),
     'refund_integrate-icon' =>
     array(
+=======
+    'refund_integrate-action' => 
+    array (
+      'label' => 'refund_integrate-action',
+    ),
+    'refund_integrate-icon' => 
+    array (
+>>>>>>> 41f976e (.)
       'label' => 'refund_integrate-icon',
     ),
   ),

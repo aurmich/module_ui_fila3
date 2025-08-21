@@ -6,7 +6,6 @@ namespace Modules\UI\View\Components\Page;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\Component;
-use Illuminate\View\View;
 use Modules\Xot\Actions\GetViewAction;
 
 class WithSidebar extends Component
@@ -18,7 +17,7 @@ class WithSidebar extends Component
     ) {
     }
 
-    public function render(): View
+    public function render(): Renderable
     {
         /**
          * @phpstan-var view-string

@@ -9,12 +9,11 @@ declare(strict_types=1);
 namespace Modules\UI\Http\Livewire;
 
 use Illuminate\Contracts\View\View;
-use Illuminate\View\View as ViewView;
 use Livewire\Component;
 
 class Toast extends Component
 {
-    public function render(): ViewView
+    public function render(): View
     {
         $view = 'ui::livewire.toast';
         $view_params = [

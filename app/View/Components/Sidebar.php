@@ -7,7 +7,6 @@ namespace Modules\UI\View\Components;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\Component;
-use Illuminate\View\View;
 use Modules\Xot\Actions\GetViewAction;
 
 class Sidebar extends Component
@@ -21,7 +20,7 @@ class Sidebar extends Component
     /**
      * Get the view / contents that represent the component.
      */
-    public function render(): View
+    public function render(): Renderable
     {
         /**
          * @phpstan-var view-string

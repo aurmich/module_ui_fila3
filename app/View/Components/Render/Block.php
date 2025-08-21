@@ -47,14 +47,10 @@ class Block extends Component
 
             return view('ui::alert', $view_params);
         }
-        /** @var array<string, mixed> $view_params */
         $view_params = $this->block['data'] ?? [];
         Assert::string($view);
         if (! view()->exists($view)) {
             throw new \Exception('view not found ['.$view.']');
-        }
-        if (!is_array($view_params)) {
-            $view_params = [];
         }
 
         return view($view, $view_params);

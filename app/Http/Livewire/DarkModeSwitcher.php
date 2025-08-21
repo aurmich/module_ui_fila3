@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Ui\Http\Livewire;
 
 use Illuminate\Contracts\View\View;
-use Illuminate\View\View as ViewView;
 use Livewire\Component;
 
 class DarkModeSwitcher extends Component
@@ -25,7 +24,7 @@ class DarkModeSwitcher extends Component
         $this->dispatch('darkModeUpdated', ['darkMode' => $this->darkMode]);
     }
 
-    public function render(): ViewView
+    public function render(): View
     {
         return view('ui::livewire.dark-mode.switcher');
     }

@@ -1,11 +1,8 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Modules\UI\View\Components\Blocks\Hero;
 
 use Illuminate\View\Component;
-use Illuminate\View\View;
 
 class Simple extends Component
 {
@@ -14,7 +11,7 @@ class Simple extends Component
         //
     }
 
-    public function render(): View
+    public function render()
     {
         return view('ui::components.blocks.hero.simple');
     }
