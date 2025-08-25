@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo UI - Documentazione Consolidata
 
 ## 🎯 Panoramica
@@ -78,6 +79,33 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
 
 ## ⚡ **Funzionalità Core**
 
+=======
+# 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
+
+[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
+[![Filament 3.x](https://img.shields.io/badge/Filament-3.x-blue.svg)](https://filamentphp.com/)
+[![PHPStan Level 9](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
+[![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN%20%7C%20DE-green.svg)](https://laravel.com/docs/localization)
+[![Blade Components](https://img.shields.io/badge/Blade-Components%20Ready-orange.svg)](https://laravel.com/docs/blade)
+[![Design System](https://img.shields.io/badge/Design-System%20Ready-purple.svg)](https://designsystem.digital.gov/)
+[![Quality Score](https://img.shields.io/badge/Quality%20Score-97%25-brightgreen.svg)](https://github.com/laraxot/ui-module)
+
+> **🚀 Modulo UI**: Sistema completo di componenti Blade, widget Filament e design system con traduzioni automatiche e layout responsive.
+
+## 📋 **Panoramica**
+
+Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo:
+
+- 🧩 **Componenti Blade** - Componenti riutilizzabili e modulari
+- 🎨 **Widget Filament** - Widget personalizzati per admin panel
+- 📱 **Layout Responsive** - Sistema layout adattivo
+- 🌐 **Traduzioni Automatiche** - Sistema traduzioni integrato
+- 🎯 **Design System** - Sistema design coerente
+- ⚡ **Performance Ottimizzata** - Componenti ottimizzati per velocità
+
+## ⚡ **Funzionalità Core**
+
+>>>>>>> 51da2b43 (.)
 ### 🧩 **Blade Components**
 ```php
 // Componente riutilizzabile
@@ -459,4 +487,7 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
 **🚀 Performance**: 97/100 score 
+<<<<<<< HEAD
 >>>>>>> 41f976e (.)
+=======
+>>>>>>> 51da2b43 (.)

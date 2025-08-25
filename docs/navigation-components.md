@@ -29,6 +29,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
     'width' => '48',
     'contentClasses' => 'py-1 bg-white dark:bg-gray-800',
 <<<<<<< HEAD
+<<<<<<< HEAD
 ])
 
 @php
@@ -51,6 +52,8 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
             {{ __('auth.register.title') }}
 =======
 >>>>>>> 41f976e (.)
+=======
+>>>>>>> 51da2b43 (.)
       </li>
     </ul>
   </div>
@@ -89,6 +92,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
         <a href="/">
           <i class="fas fa-home"></i>
           Home
+<<<<<<< HEAD
 <<<<<<< HEAD
         </a>
     </div>
@@ -162,6 +166,15 @@ return [
           <i class="fas fa-cog"></i>
           Impostazioni
         </a>
+=======
+        </a>
+      </li>
+      <li class="has-submenu">
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          Impostazioni
+        </a>
+>>>>>>> 51da2b43 (.)
         <ul class="submenu">
           <li><a href="#">Profilo</a></li>
           <li><a href="#">Sicurezza</a></li>
@@ -266,7 +279,11 @@ return [
 - [Componenti Base](./base-components.md)
 - [Layout](./layout-components.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Accessibilità](./standards/accessibility.md) 
 =======
 - [Accessibilità](./standards/accessibility.md) 
 >>>>>>> 41f976e (.)
+=======
+- [Accessibilità](./standards/accessibility.md) 
+>>>>>>> 51da2b43 (.)
