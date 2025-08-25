@@ -68,6 +68,7 @@ class IconStateColumn extends IconColumn
                 ->required(function(Get $get,$record){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     $newState=app(SafeStringCastAction::class)->execute($get('state'));
 =======
                     $newState=$get('state');
@@ -75,6 +76,9 @@ class IconStateColumn extends IconColumn
 =======
                     $newState=$get('state');
 >>>>>>> 51da2b43 (.)
+=======
+                    $newState=$get('state');
+>>>>>>> 8727c5b (.)
                     $name=$this->getName();
                     $state=$record->getAttribute($name);
                     $states=$state::getStateMapping();

@@ -1,11 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8727c5b (.)
 # Modulo UI - Documentazione Consolidata
 
 ## 🎯 Panoramica
 Modulo base per tutti i componenti UI, interfacce e design system del sistema Laraxot.
 
 ## 📚 Documentazione Principale
+<<<<<<< HEAD
 
 ### **Core e Architettura**
 - [Architettura e Best Practices](core/architecture.md)
@@ -106,6 +110,81 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
 ## ⚡ **Funzionalità Core**
 
 >>>>>>> 51da2b43 (.)
+=======
+
+### **Core e Architettura**
+- [Architettura e Best Practices](core/architecture.md)
+- [Convenzioni di Naming](core/naming-conventions.md)
+- [Struttura Moduli](core/module-structure.md)
+- [Design System](core/design-system.md)
+
+### **Filament e UI**
+- [Best Practices Filament](filament/best-practices.md)
+- [Risorse e Relation Manager](filament/resources.md)
+- [Azioni e Componenti](filament/actions.md)
+- [Dashboard e Pagine](filament/dashboard.md)
+
+### **Sviluppo e Qualità**
+- [PHPStan e Analisi Statica](development/phpstan-guide.md)
+- [Testing e Best Practices](development/testing.md)
+- [Migrazioni e Database](development/migrations.md)
+- [Service Provider](development/service-providers.md)
+
+### **Integrazione e Utilità**
+- [Traduzioni e Localizzazione](utils/translations.md)
+- [Gestione Errori](utils/error-handling.md)
+- [Eventi e Code](utils/events.md)
+- [Sicurezza](utils/security.md)
+
+### **Template e Esempi**
+- [Template Classi Base](templates/base-classes.md)
+- [Template Service Provider](templates/service-provider.md)
+- [Template Filament](templates/filament.md)
+
+## 🚀 Quick Start
+
+1. **Estendi le classi base appropriate**
+2. **Segui le convenzioni di naming**
+3. **Utilizza i template standardizzati**
+4. **Rispetta le regole PHPStan**
+
+## 🔗 Collegamenti
+
+- [Documentazione Root](../../docs/)
+- [Best Practices Sistema](../../docs/core/best-practices.md)
+- [Convenzioni Sistema](../../docs/core/conventions.md)
+
+---
+
+**Ultimo aggiornamento:** Gennaio 2025  
+**Versione:** 2.0 - Consolidata DRY + KISS 
+=======
+# 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
+
+[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
+[![Filament 3.x](https://img.shields.io/badge/Filament-3.x-blue.svg)](https://filamentphp.com/)
+[![PHPStan Level 9](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
+[![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN%20%7C%20DE-green.svg)](https://laravel.com/docs/localization)
+[![Blade Components](https://img.shields.io/badge/Blade-Components%20Ready-orange.svg)](https://laravel.com/docs/blade)
+[![Design System](https://img.shields.io/badge/Design-System%20Ready-purple.svg)](https://designsystem.digital.gov/)
+[![Quality Score](https://img.shields.io/badge/Quality%20Score-97%25-brightgreen.svg)](https://github.com/laraxot/ui-module)
+
+> **🚀 Modulo UI**: Sistema completo di componenti Blade, widget Filament e design system con traduzioni automatiche e layout responsive.
+
+## 📋 **Panoramica**
+
+Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo:
+
+- 🧩 **Componenti Blade** - Componenti riutilizzabili e modulari
+- 🎨 **Widget Filament** - Widget personalizzati per admin panel
+- 📱 **Layout Responsive** - Sistema layout adattivo
+- 🌐 **Traduzioni Automatiche** - Sistema traduzioni integrato
+- 🎯 **Design System** - Sistema design coerente
+- ⚡ **Performance Ottimizzata** - Componenti ottimizzati per velocità
+
+## ⚡ **Funzionalità Core**
+
+>>>>>>> 8727c5b (.)
 ### 🧩 **Blade Components**
 ```php
 // Componente riutilizzabile
@@ -488,6 +567,10 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 **🌐 Translation Standards**: File traduzione certificati ✅  
 **🚀 Performance**: 97/100 score 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 41f976e (.)
 =======
 >>>>>>> 51da2b43 (.)
+=======
+>>>>>>> 41f976e (.)
+>>>>>>> 8727c5b (.)
