@@ -112,24 +112,56 @@ TextColumn::make('status')
 
 ## Checklist Pre-Implementazione
 
-### Prima di usare un componente Filament:
+Prima di usare qualsiasi componente Filament:
+
 - [ ] Implementare traduzioni in `lang/it/fields.php`
 - [ ] Implementare traduzioni in `lang/en/fields.php`
 - [ ] Implementare traduzioni in `lang/de/fields.php`
-- [ ] Verificare che le chiavi siano corrette
-- [ ] Testare che le traduzioni funzionino
+- [ ] Verificare struttura espansa (label, placeholder, tooltip, helper_text)
+- [ ] Non usare mai `->label()` nel codice
 
-### Prima di committare:
-- [ ] Verificare che non ci siano `->label()` nel codice
-- [ ] Controllare che tutte le traduzioni siano implementate
-- [ ] Testare che le traduzioni funzionino correttamente
+## Verifica Automatica
+
+### PHPStan Rule (Ideale)
+```php
+// Regola PHPStan per rilevare ->label()
+// Implementare in phpstan.neon
+rules:
+    - rule: Never use ->label() in Filament components
+```
+
+### Code Review Checklist
+- [ ] Nessun `->label()` nel codice
+- [ ] Tutte le traduzioni implementate
+- [ ] Struttura espansa completa
+- [ ] Sincronizzazione IT/EN/DE
+
+## Penalità per Violazioni
+
+### Livello 1 - Warning
+- Commento nel code review
+- Richiesta di correzione
+
+### Livello 2 - Blocco
+- Blocco del merge
+- Correzione obbligatoria
+
+### Livello 3 - Sanzione
+- Documentazione della violazione
+- Training obbligatorio
+
+## Collegamenti
+
+- [Translation Standards](../../../docs/translation-standards.md)
+- [Filament Best Practices](../../../docs/filament-best-practices.md)
+- [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
 
 ## Memoria Permanente
 
 **RICORDA SEMPRE**: 
-- MAI usare `->label()` in componenti Filament
-- SEMPRE implementare traduzioni nei file `lang/`
-- SEMPRE sincronizzare IT/EN/DE
-- SEMPRE testare le traduzioni prima del commit
+- MAI `->label()` 
+- SEMPRE traduzioni nei file lang/
+- SEMPRE struttura espansa
+- SEMPRE sincronizzazione IT/EN/DE
 
 *Ultimo aggiornamento: 2025-01-06*

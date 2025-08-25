@@ -83,6 +83,7 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
 
 ## ⚡ **Funzionalità Core**
 
+<<<<<<< HEAD
 =======
 # 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
 
@@ -185,6 +186,8 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
 ## ⚡ **Funzionalità Core**
 
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> f89ff0a (.)
 ### 🧩 **Blade Components**
 ```php
 // Componente riutilizzabile
@@ -568,9 +571,12 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 **🚀 Performance**: 97/100 score 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 41f976e (.)
 =======
 >>>>>>> 51da2b43 (.)
 =======
 >>>>>>> 41f976e (.)
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> f89ff0a (.)

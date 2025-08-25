@@ -31,6 +31,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8727c5b (.)
 ])
@@ -60,6 +61,8 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 >>>>>>> 51da2b43 (.)
 =======
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> f89ff0a (.)
       </li>
     </ul>
   </div>
@@ -98,6 +101,7 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
         <a href="/">
           <i class="fas fa-home"></i>
           Home
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -168,6 +172,8 @@ return [
    - Utilizzare i separatori corretti nei dropdown (div con bordo, non componenti inesistenti)
 =======
 >>>>>>> 41f976e (.)
+=======
+>>>>>>> f89ff0a (.)
         </a>
       </li>
       <li class="has-submenu">
@@ -290,6 +296,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8727c5b (.)
 - [Accessibilità](./standards/accessibility.md) 
@@ -302,3 +309,6 @@ return [
 >>>>>>> 51da2b43 (.)
 =======
 >>>>>>> 8727c5b (.)
+=======
+- [Accessibilità](./standards/accessibility.md) 
+>>>>>>> f89ff0a (.)
