@@ -1,108 +1,621 @@
-# Modulo UI - Componenti e Sistema di Design PTVX Fila3 Mono
+# Modulo UI - Sistema di Componenti e Interfacce Utente
 
 ## Panoramica
 
-Il modulo UI fornisce componenti, layout e sistema di design unificato per l'ecosistema PTVX Fila3 Mono, implementando i principi DRY, KISS, SOLID e robustezza.
+Il modulo UI fornisce un sistema completo di componenti, widget e interfacce utente per l'applicazione Laraxot PTVX. Include componenti Blade personalizzati, widget Filament avanzati e un sistema di design system coerente per tutte le interfacce dell'applicazione.
 
-## 🎯 Principi Fondamentali
+## Caratteristiche Principali
 
-### DRY (Don't Repeat Yourself)
-- **Centralizzazione**: Componenti UI condivisi tra moduli
-- **Riusabilità**: Pattern di design standardizzati
-- **Manutenibilità**: Aggiornamenti centralizzati
+- **Componenti Blade**: Componenti UI riutilizzabili e personalizzabili
+- **Widget Filament**: Widget avanzati per dashboard e pagine
+- **Design System**: Sistema di design coerente e scalabile
+- **FullCalendar Integration**: Widget calendario avanzato con FullCalendar
+- **Responsive Design**: Componenti ottimizzati per tutti i dispositivi
+- **Accessibilità**: Supporto completo per l'accessibilità web
 
-### KISS (Keep It Simple, Stupid)
-- **Struttura lineare**: Organizzazione intuitiva
-- **Naming coerente**: Convenzioni uniformi
-- **Navigazione semplice**: Massimo 3 livelli
+## Struttura del Modulo
 
-### SOLID
-- **Single Responsibility**: Ogni componente ha uno scopo specifico
-- **Open/Closed**: Estendibile senza modifiche
-- **Liskov Substitution**: Sottoclassi sostituibili
-- **Interface Segregation**: Interfacce specifiche
-- **Dependency Inversion**: Dipendenze da astrazioni
+```
+Modules/UI/
+├── app/
+│   ├── Filament/
+│   │   └── Widgets/
+│   │       ├── BaseCalendarWidget.php
+│   │       ├── StatsOverviewWidget.php
+│   │       └── ChartWidget.php
+│   ├── Services/
+│   │   └── ComponentService.php
+│   └── Providers/
+│       └── UIServiceProvider.php
+├── config/
+├── database/
+├── docs/
+├── resources/
+│   ├── views/
+│   │   └── components/
+│   │       └── ui/
+│   │           ├── button.blade.php
+│   │           ├── card.blade.php
+│   │           └── modal.blade.php
+│   ├── css/
+│   ├── js/
+│   └── svg/
+└── tests/
+```
 
-## 🏗️ Componenti Core
+## Componenti Principali
 
-### Sistema di Layout
-- [**Sistema Layout**](layout-system.md) - Strutture e griglie
-- [**Sistema Temi**](theme-system.md) - Personalizzazione e varianti
-- [**Componenti UI**](ui-components.md) - Elementi riutilizzabili
+### BaseCalendarWidget
 
-### Gestione Asset
-- [**Gestione Asset**](asset-management.md) - CSS, JS e risorse
-- [**Gestione Icone**](icon-management.md) - Icone e simboli
-- [**Personalizzazioni Filament**](filament-customizations.md) - Estensioni Filament
+Widget calendario avanzato che estende FullCalendar:
 
-### Configurazione
-- [**Configurazione**](configuration.md) - Impostazioni e personalizzazioni
-- [**Troubleshooting**](troubleshooting.md) - Risoluzione problemi comuni
+```php
+class BaseCalendarWidget extends FullCalendarWidget
+{
+    protected string $model = Event::class;
+    
+    protected function getFormSchema(): array
+    {
+        return [
+            Forms\Components\TextInput::make('title')
+                ->required(),
+            Forms\Components\DateTimePicker::make('start_date')
+                ->required(),
+            Forms\Components\DateTimePicker::make('end_date')
+                ->required(),
+        ];
+    }
+    
+    public function fetchEvents(array $fetchInfo): array
+    {
+        return Event::query()
+            ->where('start_date', '>=', $fetchInfo['start'])
+            ->where('end_date', '<=', $fetchInfo['end'])
+            ->get()
+            ->map(fn (Event $event) => [
+                'id' => $event->id,
+                'title' => $event->title,
+                'start' => $event->start_date,
+                'end' => $event->end_date,
+            ])
+            ->toArray();
+    }
+}
+```
 
-## 📚 Documentazione
+### Componenti Blade UI
 
-### Guide
-- [**Guide**](guides/) - Tutorial e esempi pratici
-- [**Esempi**](examples/) - Implementazioni di riferimento
-- [**Riferimento**](reference/) - API e metodi
+Componenti riutilizzabili per le interfacce:
 
-## 🚀 Quick Start
-
-### 1. Utilizzo Componenti
 ```blade
-{{-- Componente UI base --}}
-<x-ui::ui.button type="primary">
+{{-- resources/views/components/ui/button.blade.php --}}
+<button
+    {{ $attributes->merge([
+        'type' => 'button',
+        'class' => 'btn btn-' . ($variant ?? 'primary') . ' ' . ($size ?? 'md'),
+    ]) }}
+>
+    @if($icon)
+        <i class="icon icon-{{ $icon }}"></i>
+    @endif
+    
+    {{ $slot }}
+</button>
+```
+
+### Widget Statistiche
+
+Widget per visualizzare statistiche e metriche:
+
+```php
+class StatsOverviewWidget extends StatsOverviewWidget as BaseWidget
+{
+    protected function getStats(): array
+    {
+        return [
+            Stat::make('Utenti Totali', User::count())
+                ->description('3% incremento')
+                ->descriptionIcon('heroicon-m-arrow-trending-up')
+                ->color('success'),
+                
+            Stat::make('Ordini', Order::count())
+                ->description('2% decremento')
+                ->descriptionIcon('heroicon-m-arrow-trending-down')
+                ->color('danger'),
+        ];
+    }
+}
+```
+
+## Configurazione
+
+### Configurazione Base
+
+```php
+// config/ui.php
+return [
+    'components' => [
+        'prefix' => 'ui',
+        'namespace' => 'Modules\\UI\\View\\Components',
+    ],
+    
+    'widgets' => [
+        'enabled' => true,
+        'cache' => true,
+        'cache_ttl' => 3600,
+    ],
+    
+    'calendar' => [
+        'default_view' => 'dayGridMonth',
+        'locale' => 'it',
+        'timezone' => 'Europe/Rome',
+        'height' => 'auto',
+    ],
+];
+```
+
+### Environment Variables
+
+```env
+UI_DEBUG=false
+UI_CACHE_ENABLED=true
+UI_CALENDAR_DEFAULT_VIEW=dayGridMonth
+UI_CALENDAR_LOCALE=it
+UI_CALENDAR_TIMEZONE=Europe/Rome
+```
+
+## Utilizzo
+
+### Componenti Blade
+
+```blade
+{{-- Utilizzo componenti UI --}}
+<x-ui::ui.button variant="primary" size="lg">
     Salva Modifiche
 </x-ui::ui.button>
 
-{{-- Componente con varianti --}}
-<x-ui::ui.card variant="elevated">
+<x-ui::ui.card>
     <x-slot name="header">
         <h3>Titolo Card</h3>
     </x-slot>
     
     Contenuto della card
 </x-ui::ui.card>
+
+<x-ui::ui.modal id="example-modal">
+    <x-slot name="title">
+        Titolo Modal
+    </x-slot>
+    
+    Contenuto del modal
+</x-ui::ui.modal>
 ```
 
-### 2. Personalizzazione Tema
+### Widget Filament
+
 ```php
-// config/ui.php
-return [
-    'theme' => [
-        'primary_color' => '#3B82F6',
-        'secondary_color' => '#6B7280',
-        'font_family' => 'Inter, sans-serif',
-    ],
-];
+// In una pagina Filament
+protected function getHeaderWidgets(): array
+{
+    return [
+        \Modules\UI\Filament\Widgets\StatsOverviewWidget::class,
+    ];
+}
+
+protected function getFooterWidgets(): array
+{
+    return [
+        \Modules\UI\Filament\Widgets\BaseCalendarWidget::class,
+    ];
+}
 ```
 
-### 3. Registrazione Icone Custom
-```php
-// ServiceProvider
-use Filament\Support\Facades\FilamentIcon;
+### FullCalendar Integration
 
+```php
+// Configurazione calendario personalizzata
+class CustomCalendarWidget extends BaseCalendarWidget
+{
+    public function config(): array
+    {
+        return [
+            'firstDay' => 1,
+            'headerToolbar' => [
+                'left' => 'dayGridWeek,dayGridDay',
+                'center' => 'title',
+                'right' => 'prev,next today',
+            ],
+            'locale' => 'it',
+            'height' => '600px',
+        ];
+    }
+    
+    protected function getFormSchema(): array
+    {
+        return [
+            Forms\Components\TextInput::make('title')
+                ->required(),
+            Forms\Components\DateTimePicker::make('start_date')
+                ->required(),
+            Forms\Components\DateTimePicker::make('end_date')
+                ->required(),
+            Forms\Components\ColorPicker::make('color')
+                ->default('#3788d8'),
+        ];
+    }
+}
+```
+
+## Design System
+
+### Colori e Tema
+
+```css
+/* resources/css/ui.css */
+:root {
+    /* Colori primari */
+    --ui-primary: #3b82f6;
+    --ui-primary-dark: #1d4ed8;
+    --ui-primary-light: #93c5fd;
+    
+    /* Colori secondari */
+    --ui-secondary: #6b7280;
+    --ui-secondary-dark: #374151;
+    --ui-secondary-light: #d1d5db;
+    
+    /* Colori di stato */
+    --ui-success: #10b981;
+    --ui-warning: #f59e0b;
+    --ui-danger: #ef4444;
+    --ui-info: #3b82f6;
+}
+
+/* Componenti base */
+.btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+}
+
+.btn-primary {
+    @apply bg-ui-primary text-white hover:bg-ui-primary-dark;
+}
+
+.btn-secondary {
+    @apply bg-ui-secondary text-white hover:bg-ui-secondary-dark;
+}
+```
+
+### Tipografia
+
+```css
+/* Sistema tipografico */
+.text-heading-1 {
+    @apply text-4xl font-bold leading-tight;
+}
+
+.text-heading-2 {
+    @apply text-3xl font-semibold leading-tight;
+}
+
+.text-heading-3 {
+    @apply text-2xl font-semibold leading-tight;
+}
+
+.text-body {
+    @apply text-base leading-relaxed;
+}
+
+.text-caption {
+    @apply text-sm text-gray-600;
+}
+```
+
+### Spacing e Layout
+
+```css
+/* Sistema di spacing */
+.spacing-xs { @apply p-1; }
+.spacing-sm { @apply p-2; }
+.spacing-md { @apply p-4; }
+.spacing-lg { @apply p-6; }
+.spacing-xl { @apply p-8; }
+
+/* Layout utilities */
+.container-ui {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.grid-ui {
+    @apply grid gap-4 md:gap-6 lg:gap-8;
+}
+```
+
+## Best Practices
+
+### Naming Convention
+
+1. **Componenti**: Usare nomi descrittivi e chiari
+2. **Props**: Utilizzare nomi semantici per le proprietà
+3. **Slots**: Nomi chiari per gli slot dei componenti
+4. **CSS Classes**: Utilizzare prefissi per evitare conflitti
+
+### Struttura Componenti
+
+```blade
+{{-- Struttura standard componente --}}
+@props([
+    'variant' => 'primary',
+    'size' => 'md',
+    'disabled' => false,
+])
+
+<button
+    {{ $attributes->merge([
+        'type' => 'button',
+        'class' => $this->getClasses(),
+        'disabled' => $disabled,
+    ]) }}
+>
+    @if($icon)
+        <x-ui::ui.icon :name="$icon" />
+    @endif
+    
+    {{ $slot }}
+</button>
+```
+
+### Gestione Stati
+
+```php
+// Gestione stati nei componenti
+class Button extends Component
+{
+    public function getClasses(): string
+    {
+        return collect([
+            'btn',
+            "btn-{$this->variant}",
+            "btn-{$this->size}",
+            $this->disabled ? 'btn-disabled' : '',
+        ])->filter()->implode(' ');
+    }
+}
+```
+
+## Testing
+
+### Test Componenti
+
+```php
+// Test componenti Blade
+it('renders button with correct classes', function () {
+    $component = new \Modules\UI\View\Components\Button('primary', 'lg');
+    
+    $view = $component->render();
+    
+    expect($view)->toContain('btn btn-primary btn-lg');
+});
+
+// Test widget Filament
+it('displays calendar widget correctly', function () {
+    $widget = new BaseCalendarWidget();
+    
+    expect($widget->getFormSchema())->toHaveCount(3);
+    expect($widget->config())->toHaveKey('firstDay');
+});
+```
+
+### Test di Copertura
+
+```bash
+# Test unitari
+php artisan test Modules/UI/tests/Unit
+
+# Test feature
+php artisan test Modules/UI/tests/Feature
+
+# Test Pest
+./vendor/bin/pest Modules/UI/tests
+```
+
+## Performance
+
+### Ottimizzazioni
+
+1. **Lazy Loading**: Carica componenti solo quando necessario
+2. **Caching**: Cache dei widget e componenti
+3. **Minificazione**: CSS e JS ottimizzati per produzione
+4. **CDN**: Utilizzo di CDN per asset statici
+
+### Monitoring
+
+```php
+// Monitoraggio performance componenti
+$startTime = microtime(true);
+
+$component = new Button('primary');
+$rendered = $component->render();
+
+$endTime = microtime(true);
+$executionTime = $endTime - $startTime;
+
+Log::info('Component render time', [
+    'component' => 'Button',
+    'execution_time' => $executionTime,
+]);
+```
+
+## Sicurezza
+
+### Validazione Input
+
+```php
+// Validazione props componenti
+@props([
+    'variant' => 'primary',
+    'size' => 'md',
+])
+
+@php
+    $allowedVariants = ['primary', 'secondary', 'success', 'danger', 'warning'];
+    $allowedSizes = ['xs', 'sm', 'md', 'lg', 'xl'];
+    
+    $variant = in_array($variant, $allowedVariants) ? $variant : 'primary';
+    $size = in_array($size, $allowedSizes) ? $size : 'md';
+@endphp
+```
+
+### XSS Prevention
+
+```blade
+{{-- Escape automatico contenuti --}}
+<div class="content">
+    {{ $content }} {{-- Escape automatico --}}
+</div>
+
+{{-- Contenuto HTML sicuro --}}
+<div class="content">
+    {!! $safeHtml !!} {{-- Solo per contenuto sicuro --}}
+</div>
+```
+
+## Monitoraggio e Logging
+
+### Log Componenti
+
+```php
+// Log utilizzo componenti
+Log::info('Component rendered', [
+    'component' => 'Button',
+    'variant' => $variant,
+    'size' => $size,
+    'user_id' => auth()->id(),
+]);
+```
+
+### Metriche
+
+- Numero componenti renderizzati
+- Tempo di rendering
+- Utilizzo memoria
+- Errori componenti
+
+## Troubleshooting
+
+### Problemi Comuni
+
+1. **Componenti Non Trovati**
+   - Verificare namespace e autoloading
+   - Controllare registrazione ServiceProvider
+   - Verificare cache componenti
+
+2. **Widget Non Visualizzati**
+   - Controllare registrazione widget
+   - Verificare permessi utente
+   - Controllare configurazione Filament
+
+3. **Stili Non Applicati**
+   - Verificare compilazione asset
+   - Controllare import CSS
+   - Verificare cache browser
+
+### Debug
+
+```php
+// Debug componenti
+config(['ui.debug' => true]);
+
+// Debug widget
+config(['filament.debug' => true]);
+
+// Log dettagliato
+Log::debug('Component debug', [
+    'props' => $this->props,
+    'attributes' => $this->attributes,
+]);
+```
+
+## Integrazione con Altri Moduli
+
+### Registrazione Componenti
+
+```php
+// Nel ServiceProvider del modulo
 public function boot(): void
 {
-    FilamentIcon::register([
-        'ui-custom-icon' => Svg::make('custom-icon', __DIR__.'/../resources/svg/custom-icon.svg'),
+    parent::boot();
+    
+    // Registra componenti UI
+    Blade::componentNamespace('Modules\\UI\\View\\Components', 'ui');
+    
+    // Registra widget
+    Filament::registerWidgets([
+        \Modules\UI\Filament\Widgets\StatsOverviewWidget::class,
     ]);
 }
 ```
 
-## 🔗 Collegamenti
+### Utilizzo Cross-Module
 
-- [**Documentazione Principale**](../../../docs/README.md)
-- [**Modulo Xot**](../Xot/docs/README.md) - Fondamento architetturale
-- [**Best Practices**](../../../docs/best-practices/)
+```blade
+{{-- In qualsiasi modulo --}}
+<x-ui::ui.button variant="success">
+    Salva
+</x-ui::ui.button>
 
-## 📊 Metriche Qualità
+<x-ui::ui.card>
+    Contenuto
+</x-ui::ui.card>
+```
 
-- **PHPStan**: Livello 10 obbligatorio
-- **PSR-12**: Conformità completa
-- **Accessibilità**: WCAG 2.1 AA
-- **Responsività**: Mobile-first design
+## Roadmap
+
+### Funzionalità Future
+
+- [ ] Editor visuale componenti
+- [ ] Sistema di temi avanzato
+- [ ] Componenti animati
+- [ ] Supporto per dark mode
+- [ ] Componenti per mobile
+- [ ] Sistema di icone avanzato
+
+### Miglioramenti
+
+- [ ] Performance optimization
+- [ ] Advanced caching
+- [ ] Real-time updates
+- [ ] Analytics componenti
+- [ ] API REST per componenti
+
+## Contributi
+
+### Sviluppo
+
+1. Fork del repository
+2. Creazione branch feature
+3. Implementazione funzionalità
+4. Test completi
+5. Pull request con documentazione
+
+### Standard di Codice
+
+- PSR-12 coding standards
+- PHPStan livello 9+
+- Test coverage >90%
+- Documentazione PHPDoc completa
+
+## Licenza
+
+Questo modulo è rilasciato sotto la licenza MIT. Vedi il file LICENSE per i dettagli.
+
+## Supporto
+
+Per supporto tecnico o domande:
+
+- **Issues**: GitHub Issues
+- **Documentazione**: Questa documentazione
+- **Wiki**: Wiki del progetto
+- **Chat**: Canale Slack/Teams
 
 ---
 
-*Ultimo aggiornamento: giugno 2025*
+*Ultimo aggiornamento: {{ date('Y-m-d') }}*

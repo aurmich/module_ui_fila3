@@ -2,350 +2,158 @@
 
 declare(strict_types=1);
 
-=======
-=======
-=======
 return [
-  'fields' =>
-  [
-    'name' =>
-    [
-      'label' => 'name',
-    ),
-    'firs_name' =>
-    [
-      'label' => 'firs_name',
-    ),
-    'suspended' =>
-    [
-      'label' => 'suspended',
-    ),
-    'rejected' =>
-    [
-      'label' => 'rejected',
-    ),
-    'pending' =>
-    [
-      'label' => 'pending',
-    ),
-    'integration_requested' =>
-    [
-      'label' => 'integration_requested',
-    ),
-    'integration_completed' =>
-    [
-      'label' => 'integration_completed',
-    ),
-    'inactive' =>
-    [
-      'label' => 'inactive',
-    ),
-    'active' =>
-    [
-      'label' => 'active',
-    ),
-    'state' =>
-    [
-      'label' => 'state',
-    ),
-    'state-action' =>
-    [
-      'label' => 'state-action',
-    ),
-    'scheduled' =>
-    [
-      'label' => 'scheduled',
-    ),
-    'rescheduled' =>
-    [
-      'label' => 'rescheduled',
-    ),
-    'report_pending' =>
-    [
-      'label' => 'report_pending',
-    ),
-    'report_completed' =>
-    [
-      'label' => 'report_completed',
-    ),
-    'refund_to_integrate' =>
-    [
-      'label' => 'refund_to_integrate',
-    ),
-    'refund_pending' =>
-    [
-      'label' => 'refund_pending',
-    ),
-    'refund_completed' =>
-    [
-      'label' => 'refund_completed',
-    ),
-    'refund_accepted' =>
-    [
-      'label' => 'refund_accepted',
-    ),
-    'pro_bono' =>
-    [
-      'label' => 'pro_bono',
-    ),
-    'no_show' =>
-    [
-      'label' => 'no_show',
-    ),
-    'in_progress' =>
-    [
-      'label' => 'in_progress',
-    ),
-    'd27993a5-70e9-42c2-b961-9b00ffa459dc' =>
-    [
-      'label' => 'd27993a5-70e9-42c2-b961-9b00ffa459dc',
-    ),
-    '3d1badd5-ef88-4bdf-b652-1954049dd617' =>
-    [
-      'label' => '3d1badd5-ef88-4bdf-b652-1954049dd617',
-    ),
-    '65489aac-9238-454f-82eb-258680b5f036' =>
-    [
-      'label' => '65489aac-9238-454f-82eb-258680b5f036',
-    ),
-    'bb926046-0237-4da1-8b0e-d7b072c697be' =>
-    [
-      'label' => 'bb926046-0237-4da1-8b0e-d7b072c697be',
-    ),
-    '61c6d14e-59ec-4782-9dbc-a9560522a94e' =>
-    [
-      'label' => '61c6d14e-59ec-4782-9dbc-a9560522a94e',
-    ),
-    '3a4ee0c1-4991-41fa-bd92-926549f0c3f4' =>
-    [
-      'label' => '3a4ee0c1-4991-41fa-bd92-926549f0c3f4',
-    ),
-    'ab9bf71a-988f-4050-9a7e-9ea98037ce81' =>
-    [
-      'label' => 'ab9bf71a-988f-4050-9a7e-9ea98037ce81',
-    ),
-    '3933cf94-86f7-48ba-afd6-064b4fbd8758' =>
-    [
-      'label' => '3933cf94-86f7-48ba-afd6-064b4fbd8758',
-    ),
-    '3e01b53e-2101-4b5c-af81-d1885300de31' =>
-    [
-      'label' => '3e01b53e-2101-4b5c-af81-d1885300de31',
-    ),
-    '1b3dfa44-c5a5-4c4f-a7db-30a41f1fa87f' =>
-    [
-      'label' => '1b3dfa44-c5a5-4c4f-a7db-30a41f1fa87f',
-    ),
-    '1bbcccfd-c303-4f06-bd92-723fbc6faeeb' =>
-    [
-      'label' => '1bbcccfd-c303-4f06-bd92-723fbc6faeeb',
-    ),
-    'scheduled-action' =>
-    [
-      'label' => 'scheduled-action',
-    ),
-    'scheduled-icon' =>
-    [
-      'label' => 'scheduled-icon',
-    ),
-    'rescheduled-action' =>
-    [
-      'label' => 'rescheduled-action',
-    ),
-    'rescheduled-icon' =>
-    [
-      'label' => 'rescheduled-icon',
-    ),
-    'report_pending-action' =>
-    [
-      'label' => 'report_pending-action',
-    ),
-    'report_pending-icon' =>
-    [
-      'label' => 'report_pending-icon',
-    ),
-    'report_completed-action' =>
-    [
-      'label' => 'report_completed-action',
-    ),
-    'report_completed-icon' =>
-    [
-      'label' => 'report_completed-icon',
-    ),
-    'rejected-action' =>
-    [
-      'label' => 'rejected-action',
-    ),
-    'rejected-icon' =>
-    [
-      'label' => 'rejected-icon',
-    ),
-    'refund_to_integrate-action' =>
-    [
-      'label' => 'refund_to_integrate-action',
-    ),
-    'refund_to_integrate-icon' =>
-    [
-      'label' => 'refund_to_integrate-icon',
-    ),
-    'refund_pending-action' =>
-    [
-      'label' => 'refund_pending-action',
-    ),
-    'refund_pending-icon' =>
-    [
-      'label' => 'refund_pending-icon',
-    ),
-    'refund_completed-action' =>
-    [
-      'label' => 'refund_completed-action',
-    ),
-    'refund_completed-icon' =>
-    [
-      'label' => 'refund_completed-icon',
-    ),
-    'refund_accepted-action' =>
-    [
-      'label' => 'refund_accepted-action',
-    ),
-    'refund_accepted-icon' =>
-    [
-      'label' => 'refund_accepted-icon',
-    ),
-    'pro_bono-icon' =>
-    [
-      'label' => 'pro_bono-icon',
-    ),
-    'pending-icon' =>
-    [
-      'label' => 'pending-icon',
-    ),
-    'no_show-icon' =>
-    [
-      'label' => 'no_show-icon',
-    ),
-    'in_progress-icon' =>
-    [
-      'label' => 'in_progress-icon',
-    ),
-    'confirmed-icon' =>
-    [
-      'label' => 'confirmed-icon',
-    ),
-    'completed-icon' =>
-    [
-      'label' => 'completed-icon',
-    ),
-    'cancelled-icon' =>
-    [
-      'label' => 'cancelled-icon',
-    ),
-    'cancelled-action' =>
-    [
-      'label' => 'cancelled-action',
-    ),
-    'banned-icon' =>
-    [
-      'label' => 'banned-icon',
-    ),
-    'pro_bono-action' =>
-    [
-      'label' => 'pro_bono-action',
-    ),
-    'pending-action' =>
-    [
-      'label' => 'pending-action',
-    ),
-    'no_show-action' =>
-    [
-      'label' => 'no_show-action',
-    ),
-    'in_progress-action' =>
-    [
-      'label' => 'in_progress-action',
-    ),
-    'confirmed-action' =>
-    [
-      'label' => 'confirmed-action',
-    ),
-    'completed-action' =>
-    [
-      'label' => 'completed-action',
-    ),
-    'banned-action' =>
-    [
-      'label' => 'banned-action',
-    ),
-    'scheduled-visible' =>
-    [
-      'description' => 'scheduled-visible',
-      'label' => 'scheduled-visible',
-    ),
-    'rescheduled-visible' =>
-    [
-      'label' => 'rescheduled-visible',
-    ),
-    'suspended-action' =>
-    [
-      'label' => 'suspended-action',
-    ),
-    'suspended-icon' =>
-    [
-      'label' => 'suspended-icon',
-    ),
-    'integration_requested-action' =>
-    [
-      'label' => 'integration_requested-action',
-    ),
-    'integration_requested-icon' =>
-    [
-      'label' => 'integration_requested-icon',
-    ),
-    'integration_completed-action' =>
-    [
-      'label' => 'integration_completed-action',
-    ),
-    'integration_completed-icon' =>
-    [
-      'label' => 'integration_completed-icon',
-    ),
-    'inactive-action' =>
-    [
-      'label' => 'inactive-action',
-    ),
-    'inactive-icon' =>
-    [
-      'label' => 'inactive-icon',
-    ),
-    'active-action' =>
-    [
-      'label' => 'active-action',
-    ),
-    'active-icon' =>
-    [
-      'label' => 'active-icon',
-    ),
-    'refund_integrate-action' => 
-    [
-      'label' => 'refund_integrate-action',
-    ),
-    'refund_integrate-icon' => 
-    [
-    'refund_integrate-action' => 
-    [
-      'label' => 'refund_integrate-action',
-    ),
-    'refund_integrate-icon' => 
-    [
-      'label' => 'refund_integrate-icon',
-    ),
-=======
-      'label' => 'refund_integrate-icon',
-    ),
-    'icon_state_group' => [
-        'label' => 'Gruppo Icona Stato',
-        'placeholder' => 'Seleziona un gruppo di icone per lo stato',
-        'help' => 'Il gruppo di icone determina lo stile visuale per questo stato',
+    'fields' => [
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'first_name' => [
+            'label' => 'Nome',
+        ],
+        'suspended' => [
+            'label' => 'Sospeso',
+        ],
+        'rejected' => [
+            'label' => 'Rifiutato',
+        ],
+        'pending' => [
+            'label' => 'In attesa',
+        ],
+        'integration_requested' => [
+            'label' => 'Integrazione richiesta',
+        ],
+        'integration_completed' => [
+            'label' => 'Integrazione completata',
+        ],
+        'inactive' => [
+            'label' => 'Inattivo',
+        ],
+        'active' => [
+            'label' => 'Attivo',
+        ],
+        'state' => [
+            'label' => 'Stato',
+        ],
+        'state_action' => [
+            'label' => 'Azione stato',
+        ],
+        'scheduled' => [
+            'label' => 'Programmato',
+        ],
+        'rescheduled' => [
+            'label' => 'Riprogrammato',
+        ],
+        'report_pending' => [
+            'label' => 'Report in attesa',
+        ],
+        'report_completed' => [
+            'label' => 'Report completato',
+        ],
+        'refund_to_integrate' => [
+            'label' => 'Rimborso da integrare',
+        ],
+        'refund_pending' => [
+            'label' => 'Rimborso in attesa',
+        ],
+        'refund_completed' => [
+            'label' => 'Rimborso completato',
+        ],
+        'refund_accepted' => [
+            'label' => 'Rimborso accettato',
+        ],
+        'pro_bono' => [
+            'label' => 'Pro bono',
+        ],
+        'no_show' => [
+            'label' => 'Non presentato',
+        ],
+        'in_progress' => [
+            'label' => 'In corso',
+        ],
+        'd27993a5-70e9-42c2-b961-9b00ffa459dc' => [
+            'label' => 'UUID specifico',
+        ],
     ],
-  ),
-);
+    
+    'states' => [
+        'active' => [
+            'label' => 'Attivo',
+            'description' => 'Stato attivo del sistema',
+            'icon' => 'heroicon-o-check-circle',
+            'color' => 'success',
+        ],
+        'inactive' => [
+            'label' => 'Inattivo',
+            'description' => 'Stato inattivo del sistema',
+            'icon' => 'heroicon-o-x-circle',
+            'color' => 'danger',
+        ],
+        'pending' => [
+            'label' => 'In attesa',
+            'description' => 'Stato in attesa di approvazione',
+            'icon' => 'heroicon-o-clock',
+            'color' => 'warning',
+        ],
+        'suspended' => [
+            'label' => 'Sospeso',
+            'description' => 'Stato sospeso temporaneamente',
+            'icon' => 'heroicon-o-pause',
+            'color' => 'warning',
+        ],
+        'rejected' => [
+            'label' => 'Rifiutato',
+            'description' => 'Stato rifiutato',
+            'icon' => 'heroicon-o-x-mark',
+            'color' => 'danger',
+        ],
+    ],
+    
+    'actions' => [
+        'change_state' => [
+            'label' => 'Cambia stato',
+            'description' => 'Modifica lo stato corrente',
+            'success' => 'Stato modificato con successo',
+            'error' => 'Errore durante la modifica dello stato',
+        ],
+        'activate' => [
+            'label' => 'Attiva',
+            'description' => 'Attiva l\'elemento',
+            'success' => 'Elemento attivato con successo',
+        ],
+        'deactivate' => [
+            'label' => 'Disattiva',
+            'description' => 'Disattiva l\'elemento',
+            'success' => 'Elemento disattivato con successo',
+        ],
+        'suspend' => [
+            'label' => 'Sospendi',
+            'description' => 'Sospende temporaneamente l\'elemento',
+            'success' => 'Elemento sospeso con successo',
+        ],
+        'approve' => [
+            'label' => 'Approva',
+            'description' => 'Approva l\'elemento',
+            'success' => 'Elemento approvato con successo',
+        ],
+        'reject' => [
+            'label' => 'Rifiuta',
+            'description' => 'Rifiuta l\'elemento',
+            'success' => 'Elemento rifiutato con successo',
+        ],
+    ],
+    
+    'messages' => [
+        'state_changed' => 'Stato modificato da :old_state a :new_state',
+        'state_change_failed' => 'Impossibile modificare lo stato',
+        'invalid_transition' => 'Transizione di stato non valida',
+        'state_required' => 'Lo stato è obbligatorio',
+        'message_required' => 'Il messaggio è obbligatorio per questa transizione',
+    ],
+    
+    'validation' => [
+        'state_exists' => 'Lo stato selezionato non esiste',
+        'transition_allowed' => 'La transizione di stato non è consentita',
+        'message_min_length' => 'Il messaggio deve contenere almeno :min caratteri',
+        'message_max_length' => 'Il messaggio non può superare :max caratteri',
+    ],
+];

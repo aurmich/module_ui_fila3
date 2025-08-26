@@ -27,83 +27,76 @@ class IconStateColumn extends IconColumn
     protected function setUp(): void
     {
         parent::setUp();
-        //$this->getStateUsing(fn() => true); // the column requires a state to be passed to it
+        
+        // Configure the column with state-based icon, color, and tooltip
         $this->icon(fn($state): ?string => $state?->icon());
         $this->color(fn($state): ?string => $state?->color());
         $this->tooltip(fn($state): ?string => $state?->label());
-        //$this->label('aaa');
 
+        // Add action for changing state
         $this->action(Action::make('change-state')
             ->form([
                 Select::make('state')
                     ->options(
-                        function (Model&HasStatesContract $record ,string $state): array {
-
-                            $name=$this->getName();
-                            $state=$record->getAttribute($name);
-                            if($state==null){
-                                $states=Arr::wrap($record->getDefaultStateFor($name));
+                        function (Model&HasStatesContract $record, string $state): array {
+                            $name = $this->getName();
+                            $state = $record->getAttribute($name);
+                            
+                            if ($state == null) {
+                                $states = Arr::wrap($record->getDefaultStateFor($name));
                                 return array_combine($states, $states);
                             }
+                            
                             Assert::isInstanceOf($state, State::class);
                             
-                            try{
-                                $states=$state->transitionableStates();
-                            }catch(Exception $e){
-                                $states=$record->getStatesFor($name)->toArray();;
+                            try {
+                                $states = $state->transitionableStates();
+                            } catch (Exception $e) {
+                                $states = $record->getStatesFor($name)->toArray();
                             }
+                            
                             /** @phpstan-ignore-next-line */
-                            $states=Arr::mapWithKeys($states,function($state) use ($record){
-                                $model=Str::of(class_basename($record))->slug()->toString();
+                            $states = Arr::mapWithKeys($states, function($state) use ($record) {
+                                $model = Str::of(class_basename($record))->slug()->toString();
                                 /** @phpstan-ignore binaryOp.invalid */
-                                Assert::string($label=__('pub_theme::'.$model.'_states.'.$state.'.label'));
-                                return [$state=>$label];
+                                Assert::string($label = __('pub_theme::'.$model.'_states.'.$state.'.label'));
+                                return [$state => $label];
                             });
+                            
                             return $states;
                         }
                     )
                     ->required()
                     ->reactive(),
+                    
                 Textarea::make('message')
-                ->required(function(Get $get,$record){
-                    $newState=$get('state');
-=======
-                    $newState=$get('state');
-=======
-                    $newState=$get('state');
-=======
-                    $newState=app(SafeStringCastAction::class)->execute($get('state'));
-                    $name=$this->getName();
-                    $state=$record->getAttribute($name);
-                    $states=$state::getStateMapping();
-                    /** @var class-string<\Spatie\ModelStates\State> $newStateClass */
-                    $newStateClass=Arr::get($states, (string) $newState);
-                    if (!is_string($newStateClass) || !class_exists($newStateClass)) {
-                        return false;
-                    }
-                    $newStateInstance=new $newStateClass($record);
-                    return method_exists($newStateInstance, 'isMessageRequired') 
-                        ? $newStateInstance->isMessageRequired() 
-                        : false;
-                }),
+                    ->required(function(Get $get, $record) {
+                        $newState = app(SafeStringCastAction::class)->execute($get('state'));
+                        $name = $this->getName();
+                        $state = $record->getAttribute($name);
+                        $states = $state::getStateMapping();
+                        
+                        /** @var class-string<\Spatie\ModelStates\State> $newStateClass */
+                        $newStateClass = Arr::get($states, (string) $newState);
+                        
+                        if (!is_string($newStateClass) || !class_exists($newStateClass)) {
+                            return false;
+                        }
+                        
+                        $newStateInstance = new $newStateClass($record);
+                        return method_exists($newStateInstance, 'isMessageRequired') 
+                            ? $newStateInstance->isMessageRequired() 
+                            : false;
+                    }),
             ])
-            ->fillForm(function($record){
-                //dddx($record->state);//Modules\SaluteOra\States\User\Pending
+            ->fillForm(function($record) {
                 return [
                     'state' => $record->state::$name,
                 ];
             })
             ->action(function($record, $data) {
-                //dddx(['record'=>$record, 'data'=>$data]);
-                $record->state->transitionTo($data['state'],$data['message']);
-
+                $record->state->transitionTo($data['state'], $data['message']);
             })
         );
-
-
     }
-
-
-
-
 }
