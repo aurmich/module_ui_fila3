@@ -32,8 +32,11 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> 20c12a7 (.)
 ])
 
 @php
@@ -57,12 +60,17 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 =======
 >>>>>>> 41f976e (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 51da2b43 (.)
 =======
 >>>>>>> 8727c5b (.)
 =======
 >>>>>>> f89ff0a (.)
+=======
+=======
+>>>>>>> 51da2b43 (.)
+>>>>>>> 20c12a7 (.)
       </li>
     </ul>
   </div>
@@ -105,8 +113,11 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> 20c12a7 (.)
         </a>
     </div>
 @endif
@@ -172,8 +183,11 @@ return [
    - Utilizzare i separatori corretti nei dropdown (div con bordo, non componenti inesistenti)
 =======
 >>>>>>> 41f976e (.)
+<<<<<<< HEAD
 =======
 >>>>>>> f89ff0a (.)
+=======
+>>>>>>> 20c12a7 (.)
         </a>
       </li>
       <li class="has-submenu">
@@ -297,12 +311,16 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> 20c12a7 (.)
 - [Accessibilità](./standards/accessibility.md) 
 =======
 - [Accessibilità](./standards/accessibility.md) 
 >>>>>>> 41f976e (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 - [Accessibilità](./standards/accessibility.md) 
@@ -312,3 +330,8 @@ return [
 =======
 - [Accessibilità](./standards/accessibility.md) 
 >>>>>>> f89ff0a (.)
+=======
+=======
+- [Accessibilità](./standards/accessibility.md) 
+>>>>>>> 51da2b43 (.)
+>>>>>>> 20c12a7 (.)

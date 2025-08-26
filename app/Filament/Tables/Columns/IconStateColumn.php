@@ -69,6 +69,7 @@ class IconStateColumn extends IconColumn
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     $newState=app(SafeStringCastAction::class)->execute($get('state'));
 =======
                     $newState=$get('state');
@@ -79,6 +80,9 @@ class IconStateColumn extends IconColumn
 =======
                     $newState=$get('state');
 >>>>>>> 8727c5b (.)
+=======
+                    $newState=app(SafeStringCastAction::class)->execute($get('state'));
+>>>>>>> 20c12a7 (.)
                     $name=$this->getName();
                     $state=$record->getAttribute($name);
                     $states=$state::getStateMapping();

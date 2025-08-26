@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 vendor/
 node_modules/
@@ -63,3 +64,43 @@ docs/phpstan/
 # Other
 -e
 >>>>>>> f89ff0a (.)
+=======
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+cache/
+*.cache
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+build/
+dist/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*.backup
+*.bak
+>>>>>>> 20c12a7 (.)

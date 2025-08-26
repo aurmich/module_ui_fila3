@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace Modules\UI\Filament\Widgets;
 
 
@@ -6,13 +7,37 @@ use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use App\Filament\Resources\EventResource;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
+=======
+
+declare(strict_types=1);
+
+namespace Modules\UI\Filament\Widgets;
+
+use Filament\Notifications\Notification;
+use Illuminate\Support\Str;
+use Modules\Xot\Datas\XotData;
+use function Safe\class_alias;
+use App\Filament\Resources\EventResource;
+>>>>>>> 20c12a7 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\DateTimePicker;
 
+<<<<<<< HEAD
 class UserCalendarWidget extends FullCalendarWidget
 {
     use \Saade\FilamentFullCalendar\Widgets\Concerns\InteractsWithEvents;
+=======
+// Provide a local alias to avoid fatal when the package isn't installed during static analysis.
+if (class_exists(\Saade\FilamentFullCalendar\Widgets\FullCalendarWidget::class)) {
+    class_alias(\Saade\FilamentFullCalendar\Widgets\FullCalendarWidget::class, __NAMESPACE__.'\\_FullCalendarBase');
+} else {
+    abstract class _FullCalendarBase {}
+}
+
+class UserCalendarWidget extends _FullCalendarBase
+{
+>>>>>>> 20c12a7 (.)
     public string $type;
 
     
