@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
-use Illuminate\Support\Arr;
-use Webmozart\Assert\Assert;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;
+<<<<<<< HEAD
 use Filament\Resources\Pages\ListRecords;
+=======
+>>>>>>> be3ca71 (.)
 use Modules\Xot\Filament\Traits\TransTrait;
 
 /**
@@ -102,32 +103,41 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
             : null;
     }
 
+<<<<<<< HEAD
    /**
      * Undocumented function.
+=======
+    /**
+     * Get the appropriate table columns for this layout type.
+     *
+     * This method replaces the old debug_backtrace approach with explicit
+     * parameter passing for better type safety and testability.
+     *
+     * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $listColumns Columns for list layout
+     * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $gridColumns Columns for grid layout
+>>>>>>> be3ca71 (.)
      *
      * @return array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
      */
-    public function getTableColumns(): array
+    public function getTableColumns(array $listColumns, array $gridColumns): array
     {
-        $trace = debug_backtrace();
-        /** @var ListRecords $caller */
-        $caller = Arr::get($trace, '1.object');
+        return $this->isGridLayout() ? $gridColumns : $listColumns;
+    }
 
-        if (! method_exists($caller, 'getGridTableColumns')) {
-            throw new \Exception('method getGridTableColumns not found in ['.get_class($caller).']');
-        }
-        if (! method_exists($caller, 'getTableColumns')) {
-            throw new \Exception('method getTableColumns not found in ['.get_class($caller).']');
-        }
+    public static function getOptions(): array
+    {
+        return [
+            self::LIST->value => self::LIST->getLabel(),
+            self::GRID->value => self::GRID->getLabel(),
+        ];
+    }
 
-        $columns = $this->isGridLayout()
-            ? $caller->getGridTableColumns()
-            /** @phpstan-ignore method.protected */
-            : $caller->getTableColumns();
-
-        Assert::isArray($columns);
-
-        return $columns;
+    public function getContainerClasses(): string
+    {
+        return match ($this) {
+            self::LIST => 'table-layout-list',
+            self::GRID => 'table-layout-grid',
+        };
     }
 
     public static function getOptions(): array

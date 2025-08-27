@@ -49,25 +49,41 @@ class IconStateColumn extends IconColumn
                             
                             Assert::isInstanceOf($state, State::class);
                             
+<<<<<<< HEAD
                             try {
                                 $states = $state->transitionableStates();
                             } catch (Exception $e) {
                                 $states = $record->getStatesFor($name)->toArray();
+=======
+                            try{
+                                $states=$state->transitionableStates();
+                            }catch(Exception $e){
+                                $states=$record->getStatesFor($name)->toArray();;
+>>>>>>> be3ca71 (.)
                             }
                             
                             /** @phpstan-ignore-next-line */
+<<<<<<< HEAD
                             $states = Arr::mapWithKeys($states, function($state) use ($record) {
                                 $model = Str::of(class_basename($record))->slug()->toString();
+=======
+                            $states=Arr::mapWithKeys($states,function($state) use ($record){
+                                $model=Str::of(class_basename($record))->slug()->toString();
+>>>>>>> be3ca71 (.)
                                 /** @phpstan-ignore binaryOp.invalid */
                                 Assert::string($label = __('pub_theme::'.$model.'_states.'.$state.'.label'));
                                 return [$state => $label];
                             });
+<<<<<<< HEAD
                             
+=======
+>>>>>>> be3ca71 (.)
                             return $states;
                         }
                     )
                     ->required()
                     ->reactive(),
+<<<<<<< HEAD
                     
                 Textarea::make('message')
 <<<<<<< HEAD
@@ -104,6 +120,11 @@ class IconStateColumn extends IconColumn
 =======
                     $newState=$get('state');
 >>>>>>> 8727c5b (.)
+=======
+                Textarea::make('message')
+                ->required(function(Get $get,$record){
+                    $newState=$get('state');
+>>>>>>> be3ca71 (.)
                     $name=$this->getName();
                     $state=$record->getAttribute($name);
                     $states=$state::getStateMapping();
@@ -117,7 +138,10 @@ class IconStateColumn extends IconColumn
                         ? $newStateInstance->isMessageRequired() 
                         : false;
                 }),
+<<<<<<< HEAD
 >>>>>>> bbf3ab4 (.)
+=======
+>>>>>>> be3ca71 (.)
             ])
             ->fillForm(function($record) {
                 return [

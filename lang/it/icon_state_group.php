@@ -482,6 +482,7 @@ return array(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'refund_integrate-action' =>
     array(
       'label' => 'refund_integrate-action',
@@ -493,13 +494,18 @@ return array(
 >>>>>>> 51da2b43 (.)
 =======
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> be3ca71 (.)
     'refund_integrate-action' => 
     array (
       'label' => 'refund_integrate-action',
     ),
     'refund_integrate-icon' => 
     array (
+<<<<<<< HEAD
 >>>>>>> 41f976e (.)
+=======
+>>>>>>> be3ca71 (.)
       'label' => 'refund_integrate-icon',
     ),
   ),

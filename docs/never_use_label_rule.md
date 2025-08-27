@@ -115,6 +115,7 @@ TextColumn::make('status')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8727c5b (.)
 ### Prima di usare un componente Filament:
@@ -135,6 +136,8 @@ TextColumn::make('status')
 >>>>>>> 51da2b43 (.)
 =======
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> be3ca71 (.)
 Prima di usare qualsiasi componente Filament:
 
 - [ ] Implementare traduzioni in `lang/it/fields.php`
@@ -185,6 +188,7 @@ rules:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8727c5b (.)
 - MAI usare `->label()` in componenti Filament
@@ -198,6 +202,8 @@ rules:
 >>>>>>> 51da2b43 (.)
 =======
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> be3ca71 (.)
 - MAI `->label()` 
 - SEMPRE traduzioni nei file lang/
 - SEMPRE struttura espansa

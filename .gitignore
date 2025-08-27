@@ -31,6 +31,7 @@ docs/cache/
 *.log
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan documentation
 docs/phpstan/
 _docs/
@@ -57,3 +58,11 @@ docs/phpstan/
 -e
 >>>>>>> 8727c5b (.)
 >>>>>>> bbf3ab4 (.)
+=======
+
+# PHPStan documentation
+docs/phpstan/
+
+# Other
+-e
+>>>>>>> be3ca71 (.)
