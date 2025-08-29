@@ -17,6 +17,12 @@ return array (
     'view' => 
     array (
       'label' => 'view',
+<<<<<<< HEAD
+=======
+      'description' => 'view',
+      'helper_text' => 'view',
+      'placeholder' => 'view',
+>>>>>>> bddd5ac (.)
     ),
   ),
 );
