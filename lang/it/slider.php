@@ -18,11 +18,14 @@ return array (
     array (
       'label' => 'view',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'view',
       'helper_text' => 'view',
       'placeholder' => 'view',
 >>>>>>> bddd5ac (.)
+=======
+>>>>>>> 013b5e1 (.)
     ),
   ),
 );

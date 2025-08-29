@@ -16,9 +16,12 @@ return array (
       'description' => 'video',
       'helper_text' => 'video',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'placeholder' => 'video',
 >>>>>>> bddd5ac (.)
+=======
+>>>>>>> 013b5e1 (.)
     ),
     'caption' => 
     array (
