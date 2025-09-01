@@ -28,6 +28,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => 'ratio',
       'placeholder' => 'ratio',
 =======
@@ -36,13 +37,20 @@ return array (
 =======
 >>>>>>> 60908d2 (.)
 =======
+>>>>>>> a33e38b (.)
+=======
       'helper_text' => 'ratio',
       'placeholder' => 'ratio',
 >>>>>>> bddd5ac (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 60908d2 (.)
 =======
 >>>>>>> 60908d2 (.)
+=======
+=======
+>>>>>>> 013b5e1 (.)
+>>>>>>> a33e38b (.)
     ),
     'url' => 
     array (

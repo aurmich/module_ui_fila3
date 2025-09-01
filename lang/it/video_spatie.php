@@ -22,6 +22,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'video',
 =======
 >>>>>>> ddde66c (.)
@@ -35,6 +36,13 @@ return array (
       'placeholder' => 'video',
 >>>>>>> bddd5ac (.)
 >>>>>>> 60908d2 (.)
+=======
+=======
+      'placeholder' => 'video',
+>>>>>>> bddd5ac (.)
+=======
+>>>>>>> 013b5e1 (.)
+>>>>>>> a33e38b (.)
     ),
     'caption' => 
     array (

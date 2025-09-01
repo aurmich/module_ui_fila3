@@ -24,6 +24,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'view',
       'helper_text' => 'view',
       'placeholder' => 'view',
@@ -33,12 +34,19 @@ return array (
 =======
 >>>>>>> 60908d2 (.)
 =======
+>>>>>>> a33e38b (.)
+=======
       'description' => 'view',
       'helper_text' => 'view',
       'placeholder' => 'view',
 >>>>>>> bddd5ac (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 60908d2 (.)
+=======
+=======
+>>>>>>> 013b5e1 (.)
+>>>>>>> a33e38b (.)
     ),
   ),
 );

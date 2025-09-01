@@ -61,6 +61,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'title',
 =======
 >>>>>>> ddde66c (.)
@@ -74,6 +75,13 @@ return array (
       'placeholder' => 'title',
 >>>>>>> bddd5ac (.)
 >>>>>>> 60908d2 (.)
+=======
+=======
+      'placeholder' => 'title',
+>>>>>>> bddd5ac (.)
+=======
+>>>>>>> 013b5e1 (.)
+>>>>>>> a33e38b (.)
     ),
     'view' => 
     array (
