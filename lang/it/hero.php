@@ -55,9 +55,15 @@ return array (
       'description' => 'title',
       'helper_text' => 'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'title',
 =======
 >>>>>>> ddde66c (.)
+=======
+=======
+      'placeholder' => 'title',
+>>>>>>> bddd5ac (.)
+>>>>>>> 60908d2 (.)
     ),
     'view' => 
     array (

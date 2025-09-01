@@ -22,10 +22,17 @@ return array (
       'label' => 'ratio',
       'description' => 'ratio',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => 'ratio',
       'placeholder' => 'ratio',
 =======
 >>>>>>> ddde66c (.)
+=======
+=======
+      'helper_text' => 'ratio',
+      'placeholder' => 'ratio',
+>>>>>>> bddd5ac (.)
+>>>>>>> 60908d2 (.)
     ),
     'url' => 
     array (
