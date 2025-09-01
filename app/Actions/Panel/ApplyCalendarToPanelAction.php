@@ -5,9 +5,21 @@ declare(strict_types=1);
 namespace Modules\UI\Actions\Panel;
 
 use Filament\Panel;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
 use Spatie\QueueableAction\QueueableAction;
+=======
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Datas\MetatagData;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Config;
+use Spatie\QueueableAction\QueueableAction;
+use Modules\User\Filament\Pages\Tenancy\RegisterTenant;
+use Modules\User\Filament\Pages\Tenancy\EditTenantProfile;
+use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
+>>>>>>> 60908d2 (.)
 
 class ApplyCalendarToPanelAction
 {
@@ -18,6 +30,7 @@ class ApplyCalendarToPanelAction
         $timezone = Config::string('fullcalendar.localization.timezone', 'Europe/Rome');
         $locale = Config::string('fullcalendar.localization.locale', 'it');
         $calendarPlugin = FilamentFullCalendarPlugin::make()
+<<<<<<< HEAD
             ->selectable(true)
             ->editable(true)
             ->timezone($timezone)
@@ -34,6 +47,24 @@ class ApplyCalendarToPanelAction
         // Aggiungi licenza scheduler solo se presente e valida
         $licenseKey = config('fullcalendar.scheduler_license_key');
         if ($licenseKey && is_string($licenseKey) && ! empty(trim($licenseKey))) {
+=======
+        ->selectable(true)
+        ->editable(true)
+        ->timezone($timezone)
+        ->locale($locale)
+        ->plugins([
+            'dayGrid',
+            'timeGrid',
+            'list',
+            'interaction',
+            'multiMonth',
+            //'scrollGrid',//premium
+        ]);
+
+        // Aggiungi licenza scheduler solo se presente e valida
+        $licenseKey = config('fullcalendar.scheduler_license_key');
+        if ($licenseKey && is_string($licenseKey) && !empty(trim($licenseKey))) {
+>>>>>>> 60908d2 (.)
             $calendarPlugin->schedulerLicenseKey($licenseKey);
         }
 

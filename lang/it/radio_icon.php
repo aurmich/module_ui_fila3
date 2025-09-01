@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'fields' => [
         'newstate' => [
@@ -7,3 +8,14 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'newstate' => 
+    array (
+      'label' => 'newstate',
+    ),
+  ),
+);
+>>>>>>> 60908d2 (.)

@@ -8,7 +8,11 @@ return [
         'heading' => 'Test Configurazione AWS',
         'description' => 'Pagina per testare la configurazione di S3 e CloudFront',
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 60908d2 (.)
     'fields' => [
         'attachment' => [
             'label' => 'File di Test',
@@ -21,7 +25,11 @@ return [
             'helper_text' => 'Output dettagliato dei test di configurazione AWS',
         ],
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 60908d2 (.)
     'actions' => [
         'testCredentials' => [
             'label' => '🔐 Test Credenziali',
@@ -78,7 +86,11 @@ return [
             'error' => 'Errore nell\'invio dell\'email',
         ],
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 60908d2 (.)
     'notifications' => [
         's3_connection_tested' => 'Connessione S3 Testata',
         's3_permissions_tested' => 'Permessi S3 Testati',
@@ -95,7 +107,11 @@ return [
         'no_attachment' => '⚠️ Nessun allegato selezionato',
         'upload_file_first' => 'Carica prima un file per testare l\'invio email',
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 60908d2 (.)
     'debug' => [
         'run_tests_message' => 'Esegui i test per vedere i risultati...',
         'configuration_title' => '📋 Configurazione',
@@ -115,7 +131,11 @@ return [
         'complete' => '✅ Completo',
         'incomplete' => '❌ Incompleto',
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 60908d2 (.)
     'email' => [
         'subject' => 'Test Email con Allegato S3',
         'body' => 'Questa è una email di test inviata dal sistema S3Test con allegato caricato su S3 e servito tramite CloudFront.',

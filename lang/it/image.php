@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 60908d2 (.)
 return array (
   'fields' => 
   array (
@@ -24,15 +27,21 @@ return array (
       'description' => 'ratio',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => 'ratio',
       'placeholder' => 'ratio',
 =======
 >>>>>>> ddde66c (.)
 =======
 =======
+>>>>>>> 60908d2 (.)
+=======
       'helper_text' => 'ratio',
       'placeholder' => 'ratio',
 >>>>>>> bddd5ac (.)
+<<<<<<< HEAD
+>>>>>>> 60908d2 (.)
+=======
 >>>>>>> 60908d2 (.)
     ),
     'url' => 
@@ -51,6 +60,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 =======
 return [
     'fields' => [
@@ -85,3 +95,5 @@ return [
     ],
 ];
 >>>>>>> 7e9d7db (.)
+=======
+>>>>>>> 60908d2 (.)

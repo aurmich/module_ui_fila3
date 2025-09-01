@@ -19,7 +19,11 @@ class DarkModeSwitcher extends Component
 
     public function toggleDarkMode(): void
     {
+<<<<<<< HEAD
         $this->darkMode = ! $this->darkMode;
+=======
+        $this->darkMode = !$this->darkMode;
+>>>>>>> 60908d2 (.)
         // Use localStorage for dark mode persistence on the client side
         $this->dispatch('darkModeUpdated', ['darkMode' => $this->darkMode]);
     }

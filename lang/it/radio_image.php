@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'fields' => [
         'view' => [
@@ -7,3 +8,14 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+  ),
+);
+>>>>>>> 60908d2 (.)

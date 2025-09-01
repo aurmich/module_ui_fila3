@@ -17,7 +17,12 @@ class ThemeComposer
     }
 
     /**
+<<<<<<< HEAD
      * @param  string  $index
+=======
+     * @param string $index
+     *
+>>>>>>> 60908d2 (.)
      * @return \Illuminate\Config\Repository|\Illuminate\Contracts\Foundation\Application|mixed
      */
     public function metatag($index)

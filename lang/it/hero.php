@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 60908d2 (.)
 return array (
   'fields' => 
   array (
@@ -57,9 +60,15 @@ return array (
       'helper_text' => 'title',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'title',
 =======
 >>>>>>> ddde66c (.)
+=======
+=======
+      'placeholder' => 'title',
+>>>>>>> bddd5ac (.)
+>>>>>>> 60908d2 (.)
 =======
 =======
       'placeholder' => 'title',
@@ -72,6 +81,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 =======
 return [
     'fields' => [
@@ -125,3 +135,5 @@ return [
     ],
 ];
 >>>>>>> 7e9d7db (.)
+=======
+>>>>>>> 60908d2 (.)

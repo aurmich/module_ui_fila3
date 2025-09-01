@@ -15,4 +15,8 @@ class Simple extends Component
     {
         return view('ui::components.blocks.hero.simple');
     }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 60908d2 (.)

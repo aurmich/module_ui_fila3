@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 60908d2 (.)
 return array (
   'fields' => 
   array (
@@ -18,9 +21,15 @@ return array (
       'helper_text' => 'video',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'video',
 =======
 >>>>>>> ddde66c (.)
+=======
+=======
+      'placeholder' => 'video',
+>>>>>>> bddd5ac (.)
+>>>>>>> 60908d2 (.)
 =======
 =======
       'placeholder' => 'video',
@@ -36,6 +45,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 =======
 return [
     'fields' => [
@@ -59,3 +69,5 @@ return [
     ],
 ];
 >>>>>>> 7e9d7db (.)
+=======
+>>>>>>> 60908d2 (.)
