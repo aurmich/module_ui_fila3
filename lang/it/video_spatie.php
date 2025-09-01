@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -35,3 +36,26 @@ return array (
     ),
   ),
 );
+=======
+return [
+    'fields' => [
+        'img_uuid' => [
+            'label' => 'img_uuid',
+            'description' => 'img_uuid',
+            'helper_text' => 'img_uuid',
+            'placeholder' => 'img_uuid',
+        ],
+        'video' => [
+            'label' => 'video',
+            'description' => 'video',
+            'helper_text' => 'video',
+        ],
+        'caption' => [
+            'label' => 'caption',
+            'description' => 'caption',
+            'helper_text' => 'caption',
+            'placeholder' => 'caption',
+        ],
+    ],
+];
+>>>>>>> 7e9d7db (.)

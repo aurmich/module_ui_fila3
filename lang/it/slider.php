@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -34,3 +35,21 @@ return array (
     ),
   ),
 );
+=======
+return [
+    'fields' => [
+        'method' => [
+            'label' => 'method',
+            'description' => 'method',
+            'helper_text' => 'method',
+            'placeholder' => 'method',
+        ],
+        '_tpl' => [
+            'label' => '_tpl',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+    ],
+];
+>>>>>>> 7e9d7db (.)
