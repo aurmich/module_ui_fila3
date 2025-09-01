@@ -52,8 +52,8 @@ class RadioBadge extends Radio
         if (! enum_exists($this->options)) {
             return null;
         }
-
         $enumClass = $this->options;
+<<<<<<< HEAD
 <<<<<<< HEAD
         Assert::isInstanceOf($enumClass, BackedEnum::class);
 <<<<<<< HEAD
@@ -78,6 +78,9 @@ class RadioBadge extends Radio
         // Assert::isInstanceOf($enumClass, BackedEnum::class);
         Assert::true(is_a($enumClass, BackedEnum::class, true), sprintf('%s must be a BackedEnum', $enumClass));
 >>>>>>> d78306f (.)
+=======
+        Assert::isInstanceOf($enumClass, BackedEnum::class);
+>>>>>>> 4af699e (.)
         Assert::implementsInterface($enumClass,HasColor::class);
         Assert::implementsInterface($enumClass,HasIcon::class);
         $res = $enumClass::tryFrom($value);

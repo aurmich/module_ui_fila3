@@ -29,6 +29,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => 'ratio',
       'placeholder' => 'ratio',
 =======
@@ -51,6 +52,8 @@ return array (
 =======
 >>>>>>> 013b5e1 (.)
 >>>>>>> a33e38b (.)
+=======
+>>>>>>> 4af699e (.)
     ),
     'url' => 
     array (

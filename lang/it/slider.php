@@ -25,6 +25,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'view',
       'helper_text' => 'view',
       'placeholder' => 'view',
@@ -47,6 +48,8 @@ return array (
 =======
 >>>>>>> 013b5e1 (.)
 >>>>>>> a33e38b (.)
+=======
+>>>>>>> 4af699e (.)
     ),
   ),
 );
