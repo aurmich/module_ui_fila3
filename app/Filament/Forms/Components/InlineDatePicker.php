@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Forms\Components;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
+=======
+>>>>>>> 90e8530 (.)
 use Closure;
-use Filament\Forms\Components\DatePicker;
+use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\App;
+<<<<<<< HEAD
 
 =======
 use Closure;
@@ -20,15 +24,24 @@ use Filament\Forms\Components\DatePicker;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Actions\Concerns\InteractsWithActions;
 >>>>>>> 60908d2 (.)
+=======
+use Filament\Forms\Components\DatePicker;
+use Filament\Actions\Contracts\HasActions;
+use Filament\Actions\Concerns\InteractsWithActions;
+>>>>>>> 90e8530 (.)
 use function Safe\preg_match;
 
 /**
  * InlineDatePicker - Calendario inline minimalista e multilingua
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> 60908d2 (.)
+=======
+ * 
+>>>>>>> 90e8530 (.)
  * Principi:
  * - DRY: Don't Repeat Yourself - Codice senza duplicazioni
  * - KISS: Keep It Simple, Stupid - Semplicità sopra tutto
@@ -37,6 +50,7 @@ use function Safe\preg_match;
  */
 class InlineDatePicker extends DatePicker
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Date abilitate per la selezione.
@@ -47,6 +61,12 @@ class InlineDatePicker extends DatePicker
      * Date abilitate per la selezione.
      * 
 >>>>>>> 60908d2 (.)
+=======
+    
+    /**
+     * Date abilitate per la selezione.
+     * 
+>>>>>>> 90e8530 (.)
      * @var array<string>|Closure|null
      */
     protected array|Closure|null $enabledDates = null;
@@ -54,10 +74,15 @@ class InlineDatePicker extends DatePicker
     /**
      * Mese attualmente visualizzato (formato Y-m).
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * 
      * @var string
 >>>>>>> 60908d2 (.)
+=======
+     * 
+     * @var string
+>>>>>>> 90e8530 (.)
      */
     public string $currentViewMonth;
 
@@ -80,10 +105,14 @@ class InlineDatePicker extends DatePicker
         // Hydration/Dehydration del valore
         $this->afterStateHydrated(static function (self $component, $state): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 60908d2 (.)
+=======
+            
+>>>>>>> 90e8530 (.)
             if ($state) {
                 $date = Carbon::parse($state);
                 $component->currentViewMonth = $date->format('Y-m');
@@ -92,10 +121,14 @@ class InlineDatePicker extends DatePicker
 
         $this->dehydrateStateUsing(static function (self $component, $state) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 60908d2 (.)
+=======
+            
+>>>>>>> 90e8530 (.)
             return $state ? Carbon::parse($state)->format('Y-m-d') : null;
         });
     }
@@ -107,10 +140,14 @@ class InlineDatePicker extends DatePicker
     {
         $currentMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $currentMonth) {
 =======
         if(!$currentMonth){
 >>>>>>> 60908d2 (.)
+=======
+        if(!$currentMonth){
+>>>>>>> 90e8530 (.)
             return;
         }
         $this->currentViewMonth = $currentMonth->subMonthNoOverflow()->format('Y-m');
@@ -123,10 +160,14 @@ class InlineDatePicker extends DatePicker
     {
         $currentMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $currentMonth) {
 =======
         if(!$currentMonth){
 >>>>>>> 60908d2 (.)
+=======
+        if(!$currentMonth){
+>>>>>>> 90e8530 (.)
             return;
         }
         $this->currentViewMonth = $currentMonth->addMonthNoOverflow()->format('Y-m');
@@ -135,6 +176,7 @@ class InlineDatePicker extends DatePicker
     /**
      * Imposta le date abilitate.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param  array<string>|Closure  $dates
 =======
@@ -142,19 +184,28 @@ class InlineDatePicker extends DatePicker
      * @param array<string>|Closure $dates
      * @return static
 >>>>>>> 60908d2 (.)
+=======
+     * 
+     * @param array<string>|Closure $dates
+     * @return static
+>>>>>>> 90e8530 (.)
      */
     public function enabledDates(array|Closure $dates): static
     {
         $this->enabledDates = $dates;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 60908d2 (.)
+=======
+>>>>>>> 90e8530 (.)
         return $this;
     }
 
     /**
      * Imposta il mese corrente di visualizzazione.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @param  string  $month  Formato Y-m (es. '2025-06')
@@ -163,15 +214,24 @@ class InlineDatePicker extends DatePicker
      * @param string $month Formato Y-m (es. '2025-06')
      * @return static
 >>>>>>> 60908d2 (.)
+=======
+     * 
+     * @param string $month Formato Y-m (es. '2025-06')
+     * @return static
+>>>>>>> 90e8530 (.)
      */
     public function currentViewMonth(string $month): static
     {
         // ✅ Validazione robusta - fallback se vuoto o invalido
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (empty($month) || ! preg_match('/^\d{4}-\d{2}$/', $month)) {
 =======
         if (empty($month) || !preg_match('/^\d{4}-\d{2}$/', $month)) {
 >>>>>>> 60908d2 (.)
+=======
+        if (empty($month) || !preg_match('/^\d{4}-\d{2}$/', $month)) {
+>>>>>>> 90e8530 (.)
             $this->currentViewMonth = now()->format('Y-m');
         } else {
             // Verifica che sia una data valida
@@ -183,12 +243,19 @@ class InlineDatePicker extends DatePicker
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 90e8530 (.)
         return $this;
     }
 
+    
+
     /**
      * Ottiene le date abilitate risolte.
+<<<<<<< HEAD
      *
 =======
         
@@ -201,15 +268,21 @@ class InlineDatePicker extends DatePicker
      * Ottiene le date abilitate risolte.
      * 
 >>>>>>> 60908d2 (.)
+=======
+     * 
+>>>>>>> 90e8530 (.)
      * @return Collection<int, string>
      */
     public function getEnabledDates(): Collection
     {
         $dates = $this->evaluate($this->enabledDates) ?? [];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 60908d2 (.)
+=======
+>>>>>>> 90e8530 (.)
         /** @phpstan-ignore return.type, argument.templateType, argument.templateType */
         return collect($dates)->map(function ($date): string {
             return Carbon::parse($date)->format('Y-m-d');
@@ -219,11 +292,17 @@ class InlineDatePicker extends DatePicker
     /**
      * Verifica se una data è abilitata.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * 
      * @param string $date
      * @return bool
 >>>>>>> 60908d2 (.)
+=======
+     * 
+     * @param string $date
+     * @return bool
+>>>>>>> 90e8530 (.)
      */
     public function isDateEnabled(string $date): bool
     {
@@ -233,15 +312,20 @@ class InlineDatePicker extends DatePicker
     /**
      * Genera i dati del calendario per il mese corrente.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      * 
 >>>>>>> 60908d2 (.)
+=======
+     * 
+>>>>>>> 90e8530 (.)
      * @return array<string, mixed>
      */
     public function generateCalendarData(): array
     {
         // ✅ Validazione di sicurezza - assicura che currentViewMonth sia valido
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (empty($this->currentViewMonth) || ! preg_match('/^\d{4}-\d{2}$/', $this->currentViewMonth)) {
             $this->currentViewMonth = now()->format('Y-m');
@@ -253,22 +337,33 @@ class InlineDatePicker extends DatePicker
         }
         
 >>>>>>> 60908d2 (.)
+=======
+        if (empty($this->currentViewMonth) || !preg_match('/^\d{4}-\d{2}$/', $this->currentViewMonth)) {
+            $this->currentViewMonth = now()->format('Y-m');
+        }
+        
+>>>>>>> 90e8530 (.)
         /** @phpstan-ignore method.nonObject */
         $targetMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth)->startOfMonth();
         /** @phpstan-ignore-next-line */
         $firstDay = $targetMonth->copy()->startOfWeek(Carbon::MONDAY);
         $lastDay = $targetMonth->copy()->endOfMonth()->endOfWeek(Carbon::SUNDAY);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 90e8530 (.)
         $weeks = collect();
         $currentDay = $firstDay->copy();
-
+        
         while ($currentDay->lte($lastDay)) {
             $week = collect();
-
+            
             for ($i = 0; $i < 7; $i++) {
                 $isCurrentMonth = $currentDay->month === $targetMonth->month;
                 $isToday = $currentDay->isToday();
+<<<<<<< HEAD
 
 =======
         
@@ -283,6 +378,9 @@ class InlineDatePicker extends DatePicker
                 $isToday = $currentDay->isToday();
                 
 >>>>>>> 60908d2 (.)
+=======
+                
+>>>>>>> 90e8530 (.)
                 // Gestione sicura del controllo selezione
                 $isSelected = false;
                 try {
@@ -293,6 +391,7 @@ class InlineDatePicker extends DatePicker
                     $isSelected = false;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 $isEnabled = $this->isDateEnabled($currentDay->format('Y-m-d')) && $isCurrentMonth;
 
@@ -301,6 +400,11 @@ class InlineDatePicker extends DatePicker
                 $isEnabled = $this->isDateEnabled($currentDay->format('Y-m-d')) && $isCurrentMonth;
                 
 >>>>>>> 60908d2 (.)
+=======
+                
+                $isEnabled = $this->isDateEnabled($currentDay->format('Y-m-d')) && $isCurrentMonth;
+                
+>>>>>>> 90e8530 (.)
                 $week->push([
                     'dateString' => $currentDay->format('Y-m-d'),
                     'datetime' => $currentDay->format('Y-m-d'),
@@ -311,12 +415,17 @@ class InlineDatePicker extends DatePicker
                     'isEnabled' => $isEnabled,
                 ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 90e8530 (.)
                 $currentDay->addDay();
             }
-
+            
             $weeks->push($week->toArray());
         }
+<<<<<<< HEAD
 
 =======
                 
@@ -327,6 +436,9 @@ class InlineDatePicker extends DatePicker
         }
         
 >>>>>>> 60908d2 (.)
+=======
+        
+>>>>>>> 90e8530 (.)
         return [
             'weeks' => $weeks->toArray(),
             'month' => $targetMonth,
@@ -339,10 +451,14 @@ class InlineDatePicker extends DatePicker
     /**
      * Ottiene i giorni della settimana localizzati da Carbon.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      * 
 >>>>>>> 60908d2 (.)
+=======
+     * 
+>>>>>>> 90e8530 (.)
      * @return array<string>
      */
     protected function getLocalizedWeekdays(): array
@@ -350,39 +466,55 @@ class InlineDatePicker extends DatePicker
         $weekdays = [];
         $monday = Carbon::now()->startOfWeek(Carbon::MONDAY);
 <<<<<<< HEAD
-
-=======
-        
->>>>>>> 60908d2 (.)
-        for ($i = 0; $i < 7; $i++) {
-            /** @phpstan-ignore property.nonObject */
-            $weekdays[] = $monday->copy()->addDays($i)->locale(App::getLocale())->shortLocaleDayOfWeek[0];
-        }
 <<<<<<< HEAD
 
 =======
         
 >>>>>>> 60908d2 (.)
+=======
+        
+>>>>>>> 90e8530 (.)
+        for ($i = 0; $i < 7; $i++) {
+            /** @phpstan-ignore property.nonObject */
+            $weekdays[] = $monday->copy()->addDays($i)->locale(App::getLocale())->shortLocaleDayOfWeek[0];
+        }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 60908d2 (.)
+=======
+        
+>>>>>>> 90e8530 (.)
         return $weekdays;
     }
 
     /**
      * Ottiene i dati per la vista.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      * 
 >>>>>>> 60908d2 (.)
+=======
+     * 
+>>>>>>> 90e8530 (.)
      * @return array<string, mixed>
      */
     public function getViewData(): array
     {
         $calendarData = $this->generateCalendarData();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 60908d2 (.)
+=======
+        
+>>>>>>> 90e8530 (.)
         return array_merge(parent::getViewData(), [
             'calendarData' => $calendarData,
             'currentViewMonth' => $this->currentViewMonth,
@@ -395,7 +527,11 @@ class InlineDatePicker extends DatePicker
         ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 } 
 >>>>>>> 60908d2 (.)
+=======
+} 
+>>>>>>> 90e8530 (.)

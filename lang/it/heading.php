@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'fields' => [
         'level' => [
@@ -18,6 +19,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -37,4 +40,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 >>>>>>> 60908d2 (.)
+=======
+>>>>>>> 90e8530 (.)

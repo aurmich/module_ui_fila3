@@ -10,6 +10,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * RedirectWidget - Widget per gestire redirect verso URL specifici.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Questo widget è progettato per creare elementi UI (bottoni, link)
  * che reindirizzano l'utente verso URL specifici.
  *
@@ -18,6 +19,11 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * che reindirizzano l'utente verso URL specifici.
  * 
 >>>>>>> 60908d2 (.)
+=======
+ * Questo widget è progettato per creare elementi UI (bottoni, link) 
+ * che reindirizzano l'utente verso URL specifici.
+ * 
+>>>>>>> 90e8530 (.)
  * Utilizzo tipico in configurazioni JSON:
  * {
  *     "type": "widget",
@@ -61,10 +67,15 @@ class RedirectWidget extends XotBaseWidget
      */
     protected static string $view = 'ui::filament.widgets.redirect-widget';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
     
 >>>>>>> 60908d2 (.)
+=======
+    
+    
+>>>>>>> 90e8530 (.)
 
     /**
      * Implementazione richiesta da XotBaseWidget.
@@ -85,10 +96,14 @@ class RedirectWidget extends XotBaseWidget
     protected function getViewData(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 60908d2 (.)
+=======
+        
+>>>>>>> 90e8530 (.)
         return [
             'to' => $this->to,
             'label' => $this->label ?: 'Vai',
@@ -107,7 +122,11 @@ class RedirectWidget extends XotBaseWidget
         return true;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 } 
 >>>>>>> 60908d2 (.)
+=======
+} 
+>>>>>>> 90e8530 (.)

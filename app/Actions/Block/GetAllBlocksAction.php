@@ -10,20 +10,29 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\GetClassNameByPathAction;
 use Modules\Xot\Datas\ComponentFileData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 use function Safe\realpath;
 
 >>>>>>> 60908d2 (.)
+=======
+
+use function Safe\realpath;
+
+>>>>>>> 90e8530 (.)
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\realpath;
 
 =======
 >>>>>>> 60908d2 (.)
+=======
+>>>>>>> 90e8530 (.)
 class GetAllBlocksAction
 {
     use QueueableAction;

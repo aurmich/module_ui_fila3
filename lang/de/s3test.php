@@ -9,10 +9,14 @@ return [
         'description' => 'Seite zum Testen der S3 und CloudFront Konfiguration',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'fields' => [
         'attachment' => [
             'label' => 'Test Datei',
@@ -26,10 +30,14 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'actions' => [
         'testS3Connection' => [
             'label' => '🔍 S3 Verbindung Testen',
@@ -63,10 +71,14 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'notifications' => [
         'all_tests_completed' => 'Alle Tests abgeschlossen',
         's3_test_successful' => '✅ S3 und CloudFront Test erfolgreich abgeschlossen!',
@@ -74,10 +86,14 @@ return [
         'operations_completed' => 'Alle Operationen erfolgreich abgeschlossen',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'debug' => [
         'run_tests_message' => 'Tests ausführen um Ergebnisse zu sehen...',
         'configuration_title' => '📋 Konfiguration',

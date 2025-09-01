@@ -5,9 +5,13 @@ namespace Modules\UI\Filament\Blocks;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\DateTimePicker;
 >>>>>>> 60908d2 (.)
+=======
+use Filament\Forms\Components\DateTimePicker;
+>>>>>>> 90e8530 (.)
 use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 final class Contact extends XotBaseBlock
@@ -43,7 +47,11 @@ final class Contact extends XotBaseBlock
         return __('ui::blocks.contact.title');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 } 
 >>>>>>> 60908d2 (.)
+=======
+} 
+>>>>>>> 90e8530 (.)

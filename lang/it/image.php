@@ -2,8 +2,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60908d2 (.)
+=======
+>>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -25,6 +28,7 @@ return array (
     array (
       'label' => 'ratio',
       'description' => 'ratio',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,6 +58,8 @@ return array (
 >>>>>>> a33e38b (.)
 =======
 >>>>>>> 4af699e (.)
+=======
+>>>>>>> 90e8530 (.)
     ),
     'url' => 
     array (
@@ -71,6 +77,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 return [
@@ -108,3 +115,5 @@ return [
 >>>>>>> 7e9d7db (.)
 =======
 >>>>>>> 60908d2 (.)
+=======
+>>>>>>> 90e8530 (.)

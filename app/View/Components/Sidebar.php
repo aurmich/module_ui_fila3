@@ -15,11 +15,16 @@ class Sidebar extends Component
         public Collection $collection,
         // public string $tpl = 'v1'
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> 60908d2 (.)
+=======
+    ) {
+    }
+>>>>>>> 90e8530 (.)
 
     /**
      * Get the view / contents that represent the component.

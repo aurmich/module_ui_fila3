@@ -5,12 +5,17 @@ declare(strict_types=1);
 namespace Modules\UI\Enums;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 =======
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 >>>>>>> 60908d2 (.)
+=======
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasColor;
+>>>>>>> 90e8530 (.)
 use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Filament\Traits\TransTrait;
 
@@ -27,10 +32,14 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     case LIST = 'list';
     case GRID = 'grid';
 
@@ -80,19 +89,27 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
     public function isGridLayout(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this === self::GRID;
 =======
         return self::GRID === $this;
 >>>>>>> 60908d2 (.)
+=======
+        return self::GRID === $this;
+>>>>>>> 90e8530 (.)
     }
 
     public function isListLayout(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this === self::LIST;
 =======
         return self::LIST === $this;
 >>>>>>> 60908d2 (.)
+=======
+        return self::LIST === $this;
+>>>>>>> 90e8530 (.)
     }
 
     /**
@@ -123,6 +140,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
      * parameter passing for better type safety and testability.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>  $listColumns  Columns for list layout
      * @param  array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>  $gridColumns  Columns for grid layout
 =======
@@ -130,6 +148,11 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
      * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $gridColumns Columns for grid layout
      *
 >>>>>>> 60908d2 (.)
+=======
+     * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $listColumns Columns for list layout
+     * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $gridColumns Columns for grid layout
+     *
+>>>>>>> 90e8530 (.)
      * @return array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
      */
     public function getTableColumns(array $listColumns, array $gridColumns): array

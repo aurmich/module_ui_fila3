@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Pages\Page;
 >>>>>>> 60908d2 (.)
+=======
+use Filament\Pages\Page;
+>>>>>>> 90e8530 (.)
 use Modules\UI\Filament\Widgets;
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 

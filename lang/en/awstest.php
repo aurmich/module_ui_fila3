@@ -9,10 +9,14 @@ return [
         'description' => 'Page to test and diagnose complete AWS configuration',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'fields' => [
         'cloudfront_url' => [
             'label' => 'CloudFront Distribution URL',
@@ -31,10 +35,14 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'actions' => [
         'test_s3_connection' => [
             'label' => 'Test Basic Connection',
@@ -86,10 +94,14 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'sections' => [
         's3_connection_test' => [
             'label' => 'S3 Connection Test',
@@ -109,10 +121,14 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'tabs' => [
         'tests' => [
             'label' => 'Tests',
@@ -131,10 +147,14 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'notifications' => [
         's3_connection_successful' => 'S3 Connection Successful',
         's3_connection_failed' => 'S3 Connection Failed',
@@ -143,10 +163,14 @@ return [
         'full_diagnostic_completed' => 'Full Diagnostic Completed',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     'test_results' => [
         'status_success' => 'success',
         'status_error' => 'error',

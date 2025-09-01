@@ -31,7 +31,11 @@ return [
         'select_studio' => 'Premi spazio o invio per selezionare questo studio',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ]; 
 >>>>>>> 60908d2 (.)
+=======
+]; 
+>>>>>>> 90e8530 (.)

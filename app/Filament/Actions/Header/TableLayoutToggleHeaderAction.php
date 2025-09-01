@@ -26,6 +26,7 @@ class TableLayoutToggleHeaderAction extends Action
             // ->icon(trans('setting::database_connection.actions.database-backup.icon'))
             // ->icon($this->list_icon)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->icon(fn ($livewire) => $livewire->layoutView === 'list' ? $this->list_icon : $this->grid_icon)
             ->action(
                 function ($livewire) {
@@ -38,6 +39,13 @@ class TableLayoutToggleHeaderAction extends Action
                     if ($livewire !== null) {
                         $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
 >>>>>>> 60908d2 (.)
+=======
+            ->icon(fn ($livewire) => 'list' === $livewire->layoutView ? $this->list_icon : $this->grid_icon)
+            ->action(
+                function ($livewire) {
+                    if ($livewire !== null) {
+                        $livewire->layoutView = ('grid' === $livewire->layoutView ? 'list' : 'grid');
+>>>>>>> 90e8530 (.)
                     }
                 }
             );

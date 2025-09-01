@@ -16,7 +16,11 @@ class Simple extends Component
         return view('ui::components.blocks.hero.simple');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 } 
 >>>>>>> 60908d2 (.)
+=======
+} 
+>>>>>>> 90e8530 (.)

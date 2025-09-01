@@ -6,21 +6,29 @@ use Illuminate\View\Component;
 
 test('ui components can be rendered', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $component = new class extends Component
     {
 =======
     $component = new class extends Component {
 >>>>>>> 60908d2 (.)
+=======
+    $component = new class extends Component {
+>>>>>>> 90e8530 (.)
         public function render()
         {
             return view('ui::components.ui.button');
         }
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     expect($component)->toBeInstanceOf(Component::class);
 });
 
@@ -31,10 +39,14 @@ test('ui button component has correct attributes', function () {
         'disabled' => false,
     ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     expect($view->render())
         ->toContain('btn')
         ->toContain('btn-primary');
@@ -46,10 +58,14 @@ test('ui card component renders content', function () {
         'content' => 'Test Content',
     ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 60908d2 (.)
+=======
+    
+>>>>>>> 90e8530 (.)
     expect($view->render())
         ->toContain('Test Card')
         ->toContain('Test Content');

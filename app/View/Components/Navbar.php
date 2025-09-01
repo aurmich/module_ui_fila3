@@ -20,11 +20,16 @@ class Navbar extends Component
         // public bool $showAuthor = false,
         // public string $tpl = 'v1'
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> 60908d2 (.)
+=======
+    ) {
+    }
+>>>>>>> 90e8530 (.)
 
     public function render(): Renderable
     {

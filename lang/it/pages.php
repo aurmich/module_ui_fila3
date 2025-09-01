@@ -16,30 +16,42 @@ return [
                 'placeholder' => 'Inserisci l\'indirizzo email del destinatario',
                 'helper_text' => 'L\'email verrà inviata a questo indirizzo',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'description' => 'Indirizzo email del destinatario',
 =======
                 'description' => 'Indirizzo email del destinatario'
 >>>>>>> 60908d2 (.)
+=======
+                'description' => 'Indirizzo email del destinatario'
+>>>>>>> 90e8530 (.)
             ],
             'subject' => [
                 'label' => 'Oggetto',
                 'placeholder' => 'Inserisci l\'oggetto dell\'email',
                 'helper_text' => 'L\'oggetto apparirà nella casella di posta del destinatario',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'description' => 'Oggetto dell\'email',
 =======
                 'description' => 'Oggetto dell\'email'
 >>>>>>> 60908d2 (.)
+=======
+                'description' => 'Oggetto dell\'email'
+>>>>>>> 90e8530 (.)
             ],
             'body_html' => [
                 'label' => 'Contenuto',
                 'placeholder' => 'Inserisci il contenuto dell\'email',
                 'helper_text' => 'Il contenuto può includere formattazione HTML',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'description' => 'Contenuto dell\'email',
 =======
                 'description' => 'Contenuto dell\'email'
 >>>>>>> 60908d2 (.)
+=======
+                'description' => 'Contenuto dell\'email'
+>>>>>>> 90e8530 (.)
             ],
         ],
         'actions' => [
@@ -61,7 +73,11 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ]; 
 >>>>>>> 60908d2 (.)
+=======
+]; 
+>>>>>>> 90e8530 (.)

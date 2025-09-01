@@ -25,10 +25,14 @@ class Block extends Component
     ) {
         $view = Arr::get($this->block, 'data.view', null);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($view == null) {
 =======
         if (null == $view) {
 >>>>>>> 60908d2 (.)
+=======
+        if (null == $view) {
+>>>>>>> 90e8530 (.)
             $view = 'ui::empty';
         }
         Assert::string($view);

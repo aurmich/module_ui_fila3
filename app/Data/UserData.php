@@ -17,6 +17,7 @@ class UserData extends Data
         public array $permissions,
         public array $settings
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 }
 =======
@@ -24,3 +25,8 @@ class UserData extends Data
     }
 } 
 >>>>>>> 60908d2 (.)
+=======
+    ) {
+    }
+} 
+>>>>>>> 90e8530 (.)

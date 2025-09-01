@@ -15,15 +15,20 @@ return [
             'script' => 'Latn',
             'native' => 'Italiano',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'regional' => 'it_IT',
 =======
             'regional' => 'it_IT'
 >>>>>>> 60908d2 (.)
+=======
+            'regional' => 'it_IT'
+>>>>>>> 90e8530 (.)
         ],
         'en' => [
             'name' => 'English',
             'script' => 'Latn',
             'native' => 'English',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'regional' => 'en_GB',
         ],
@@ -31,6 +36,10 @@ return [
             'regional' => 'en_GB'
         ]
 >>>>>>> 60908d2 (.)
+=======
+            'regional' => 'en_GB'
+        ]
+>>>>>>> 90e8530 (.)
     ],
 
     /*
