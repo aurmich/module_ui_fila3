@@ -16,17 +16,6 @@ class UserData extends Data
         public ?string $role,
         public array $permissions,
         public array $settings
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ) {}
-}
-=======
     ) {
     }
 } 
->>>>>>> 60908d2 (.)
-=======
-    ) {
-    }
-} 
->>>>>>> 90e8530 (.)

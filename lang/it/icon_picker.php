@@ -1,26 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return [
-    'fields' => [
-        'newstate' => [
-            'label' => 'newstate',
-        ],
-        'pack' => [
-            'label' => 'pack',
-            'description' => 'pack',
-            'helper_text' => 'pack',
-            'placeholder' => 'pack',
-        ],
-        'icon' => [
-            'label' => 'icon',
-        ],
-    ],
-];
-=======
-=======
->>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -41,7 +20,3 @@ return array (
     ),
   ),
 );
-<<<<<<< HEAD
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)

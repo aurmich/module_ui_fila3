@@ -42,48 +42,6 @@ class OpeningHoursField extends Field
 
         foreach ($days as $dayKey => $dayLabel) {
             $schema[] = Placeholder::make($dayKey.'_label')
-<<<<<<< HEAD
-<<<<<<< HEAD
-                ->label('')
-                ->content($dayLabel)
-                ->extraAttributes(['class' => 'font-medium text-gray-900 dark:text-gray-100 text-center py-2'])
-                ->columnSpan(1);
-=======
-                    ->label('')
-                    ->content($dayLabel)
-                    ->extraAttributes(['class' => 'font-medium text-gray-900 dark:text-gray-100 text-center py-2'])
-                    ->columnSpan(1);
->>>>>>> 90e8530 (.)
-
-            $schema[] = TimePicker::make("$dayKey.morning_from")
-                            ->placeholder('08:00')
-                            ->seconds(false)
-                            ->minutesStep(15)
-                            ->nullable()
-                            ->live();
-
-            $schema[] = TimePicker::make("$dayKey.morning_to")
-                            ->placeholder('12:30')
-                            ->seconds(false)
-                            ->minutesStep(15)
-                            ->nullable()
-                            ->live();
-
-            $schema[] = TimePicker::make("$dayKey.afternoon_from")
-                            ->placeholder('15:00')
-                            ->seconds(false)
-                            ->minutesStep(15)
-                            ->nullable()
-                            ->live();
-
-            $schema[] = TimePicker::make("$dayKey.afternoon_to")
-<<<<<<< HEAD
-                ->placeholder('19:00')
-                ->seconds(false)
-                ->minutesStep(15)
-                ->nullable()
-                ->live();
-=======
                     ->label('')
                     ->content($dayLabel)
                     ->extraAttributes(['class' => 'font-medium text-gray-900 dark:text-gray-100 text-center py-2'])
@@ -111,17 +69,11 @@ class OpeningHoursField extends Field
                             ->live();
 
             $schema[] = TimePicker::make("$dayKey.afternoon_to")
-=======
->>>>>>> 90e8530 (.)
                             ->placeholder('19:00')
                             ->seconds(false)
                             ->minutesStep(15)
                             ->nullable()
                             ->live();
-<<<<<<< HEAD
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)
         }
 
         $this->schema($schema)->columns(5);

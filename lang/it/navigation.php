@@ -1,32 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return [
-    'fields' => [
-        'items' => [
-            'label' => 'items',
-            'placeholder' => 'items',
-            'helper_text' => 'items',
-            'description' => 'items',
-        ],
-        'label' => [
-            'label' => 'label',
-            'placeholder' => 'label',
-            'helper_text' => 'label',
-            'description' => 'label',
-        ],
-        'url' => [
-            'label' => 'url',
-            'placeholder' => 'url',
-            'helper_text' => 'url',
-            'description' => 'url',
-        ],
-    ],
-];
-=======
-=======
->>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -53,7 +26,3 @@ return array (
     ),
   ),
 );
-<<<<<<< HEAD
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)

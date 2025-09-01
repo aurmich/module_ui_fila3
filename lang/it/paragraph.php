@@ -1,35 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return [
-    'fields' => [
-        'title' => [
-            'label' => 'Titolo',
-            'description' => 'title',
-            'helper_text' => 'title',
-            'placeholder' => 'title',
-        ],
-        'text' => [
-            'label' => 'Testo',
-            'description' => 'text',
-            'helper_text' => 'text',
-            'placeholder' => 'text',
-        ],
-        '_tpl' => [
-            'label' => '_tpl',
-        ],
-        'view' => [
-            'label' => 'view',
-            'description' => 'view',
-            'helper_text' => 'view',
-            'placeholder' => 'view',
-        ],
-    ],
-];
-=======
-=======
->>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -60,7 +30,3 @@ return array (
     ),
   ),
 );
-<<<<<<< HEAD
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)

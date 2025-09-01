@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -28,38 +21,6 @@ return array (
     array (
       'label' => 'ratio',
       'description' => 'ratio',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      'helper_text' => 'ratio',
-      'placeholder' => 'ratio',
-=======
->>>>>>> ddde66c (.)
-=======
-=======
->>>>>>> 60908d2 (.)
-=======
->>>>>>> a33e38b (.)
-=======
-      'helper_text' => 'ratio',
-      'placeholder' => 'ratio',
->>>>>>> bddd5ac (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 60908d2 (.)
-=======
-=======
->>>>>>> 013b5e1 (.)
->>>>>>> a33e38b (.)
-=======
->>>>>>> 4af699e (.)
-=======
->>>>>>> 90e8530 (.)
     ),
     'url' => 
     array (
@@ -77,43 +38,3 @@ return array (
     ),
   ),
 );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-return [
-    'fields' => [
-        'caption' => [
-            'label' => 'caption',
-            'description' => 'caption',
-            'helper_text' => 'caption',
-            'placeholder' => 'caption',
-        ],
-        'alt' => [
-            'label' => 'alt',
-            'description' => 'alt',
-            'helper_text' => 'alt',
-            'placeholder' => 'alt',
-        ],
-        'ratio' => [
-            'label' => 'ratio',
-            'description' => 'ratio',
-        ],
-        'url' => [
-            'label' => 'url',
-            'description' => 'url',
-            'helper_text' => 'url',
-            'placeholder' => 'url',
-        ],
-        'image' => [
-            'label' => 'image',
-            'description' => 'image',
-            'helper_text' => 'image',
-            'placeholder' => 'image',
-        ],
-    ],
-];
->>>>>>> 7e9d7db (.)
-=======
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)

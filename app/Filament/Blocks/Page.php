@@ -21,12 +21,4 @@ final class Page extends XotBaseBlock
     {
         return __('ui::blocks.page.title');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
 } 
->>>>>>> 60908d2 (.)
-=======
-} 
->>>>>>> 90e8530 (.)

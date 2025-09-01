@@ -1,26 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-return [
-    'fields' => [
-        'level' => [
-            'label' => 'level',
-            'description' => 'level',
-            'helper_text' => 'level',
-            'placeholder' => 'level',
-        ],
-        'content' => [
-            'label' => 'content',
-            'description' => 'content',
-            'helper_text' => 'content',
-            'placeholder' => 'content',
-        ],
-    ],
-];
-=======
-=======
->>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -40,7 +19,3 @@ return array (
     ),
   ),
 );
-<<<<<<< HEAD
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)

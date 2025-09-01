@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)
 return array (
   'fields' => 
   array (
@@ -22,36 +15,6 @@ return array (
       'label' => 'video',
       'description' => 'video',
       'helper_text' => 'video',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      'placeholder' => 'video',
-=======
->>>>>>> ddde66c (.)
-=======
-=======
-      'placeholder' => 'video',
->>>>>>> bddd5ac (.)
->>>>>>> 60908d2 (.)
-=======
-=======
-      'placeholder' => 'video',
->>>>>>> bddd5ac (.)
->>>>>>> 60908d2 (.)
-=======
-=======
-      'placeholder' => 'video',
->>>>>>> bddd5ac (.)
-=======
->>>>>>> 013b5e1 (.)
->>>>>>> a33e38b (.)
-=======
->>>>>>> 4af699e (.)
-=======
->>>>>>> 90e8530 (.)
     ),
     'caption' => 
     array (
@@ -62,32 +25,3 @@ return array (
     ),
   ),
 );
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-return [
-    'fields' => [
-        'img_uuid' => [
-            'label' => 'img_uuid',
-            'description' => 'img_uuid',
-            'helper_text' => 'img_uuid',
-            'placeholder' => 'img_uuid',
-        ],
-        'video' => [
-            'label' => 'video',
-            'description' => 'video',
-            'helper_text' => 'video',
-        ],
-        'caption' => [
-            'label' => 'caption',
-            'description' => 'caption',
-            'helper_text' => 'caption',
-            'placeholder' => 'caption',
-        ],
-    ],
-];
->>>>>>> 7e9d7db (.)
-=======
->>>>>>> 60908d2 (.)
-=======
->>>>>>> 90e8530 (.)
