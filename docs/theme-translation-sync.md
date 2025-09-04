@@ -218,7 +218,7 @@ return [
 
 - [Theme Widget Translations](theme-widget-translations.md)
 - [Translation Helper Text Standards](translation-helper-text-standards.md)
-- [Modules/SaluteOra/docs/translation_quality_standards.md](../laravel/Modules/SaluteOra/docs/translation_quality_standards.md)
+- [Modules/SaluteOra/project_docs/translation_quality_standards.md](../laravel/Modules/SaluteOra/project_docs/translation_quality_standards.md)
 
 ---
 

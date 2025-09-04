@@ -107,7 +107,7 @@ Forms\Components\TextInput::make('name')
 
 ## Riferimenti
 
-- [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/fields/overview)
-- [API Components Filament](/var/www/html/base_saluteora/laravel/Modules/UI/docs/filament/components-api.md)
+- [Documentazione Filament Forms](https://filamentphp.com/project_docs/3.x/forms/fields/overview)
+- [API Components Filament](/var/www/html/base_saluteora/laravel/Modules/UI/project_docs/filament/components-api.md)
 
 > **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.

@@ -179,7 +179,7 @@ return [
 - [Form Components Guide](./form-components.md)
 
 ### Modulo SaluteOra
-- [Widget Analysis](../SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+- [Widget Analysis](../SaluteOra/project_docs/widgets/find-doctor-widget-studio-step-analysis.md)
 
 ---
 

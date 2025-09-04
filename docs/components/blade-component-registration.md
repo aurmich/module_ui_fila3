@@ -80,5 +80,5 @@ Il provider base gestisce automaticamente la registrazione di tutti i componenti
 
 ## Collegamenti correlati
 
-- [Documentazione Laravel Blade Components](https://laravel.com/docs/10.x/blade#components)
-- [Registrazione componenti in Laravel Blade](https://laravel.com/docs/10.x/blade#manually-registering-components)
+- [Documentazione Laravel Blade Components](https://laravel.com/project_docs/10.x/blade#components)
+- [Registrazione componenti in Laravel Blade](https://laravel.com/project_docs/10.x/blade#manually-registering-components)

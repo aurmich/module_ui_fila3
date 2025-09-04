@@ -69,7 +69,7 @@ Forms\Components\FileUpload::make('document')
 
 ## Riferimenti
 
-- [Documentazione Filament FileUpload](https://filamentphp.com/docs/3.x/forms/fields/file-upload)
-- [API Components Filament](/var/www/html/base_saluteora/laravel/Modules/UI/docs/filament/components-api.md)
+- [Documentazione Filament FileUpload](https://filamentphp.com/project_docs/3.x/forms/fields/file-upload)
+- [API Components Filament](/var/www/html/base_saluteora/laravel/Modules/UI/project_docs/filament/components-api.md)
 
 > **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.

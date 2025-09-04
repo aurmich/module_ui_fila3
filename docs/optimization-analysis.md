@@ -756,10 +756,10 @@ class ComponentUsageTracker
 
 ## 🔗 Collegamenti
 
-- [Blade Components Documentation](https://laravel.com/docs/blade#components)
-- [Filament UI Guidelines](https://filamentphp.com/docs/support/style-guide)
-- [Tailwind CSS Best Practices](https://tailwindcss.com/docs/reusing-styles)
-- [Component Design Patterns](../../../docs/component-design-patterns.md)
+- [Blade Components Documentation](https://laravel.com/project_docs/blade#components)
+- [Filament UI Guidelines](https://filamentphp.com/project_docs/support/style-guide)
+- [Tailwind CSS Best Practices](https://tailwindcss.com/project_docs/reusing-styles)
+- [Component Design Patterns](../../../project_docs/component-design-patterns.md)
 
 ---
 

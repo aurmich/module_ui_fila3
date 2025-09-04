@@ -249,7 +249,7 @@ Ecco un esempio completo di implementazione del dropdown utente utilizzando i co
 
 ## Risorse Utili
 
-- [Documentazione Dropdown di Filament](https://filamentphp.com/docs/3.x/support/blade-components/dropdown)
-- [Documentazione Avatar di Filament](https://filamentphp.com/docs/3.x/support/blade-components/avatar)
-- [Documentazione Loading Indicator di Filament](https://filamentphp.com/docs/3.x/support/blade-components/loading-indicator)
-- [Documentazione Icone di Filament](https://filamentphp.com/docs/3.x/support/icons)
+- [Documentazione Dropdown di Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/dropdown)
+- [Documentazione Avatar di Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/avatar)
+- [Documentazione Loading Indicator di Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/loading-indicator)
+- [Documentazione Icone di Filament](https://filamentphp.com/project_docs/3.x/support/icons)

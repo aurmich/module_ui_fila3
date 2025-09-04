@@ -56,9 +56,9 @@ La strategia adottata per la risoluzione dei conflitti si è basata sui seguenti
 Questa documentazione integra le informazioni sui conflitti risolti, fornendo dettagli sui problemi, le soluzioni adottate e le motivazioni, per mantenere la memoria storica delle scelte e facilitare la comprensione dell'evoluzione del sistema.
 
 ## Backlink
-- [Torna a docs/links.md](../../../../docs/links.md)
-- [Vedi anche: UI/docs/README.md](./README.md)
-- [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
-- [Vedi anche: Blog/docs/README.md](../../Blog/docs/README.md)
-- [Vedi anche: Cms/docs/README.md](../../Cms/docs/README.md)
-- [Vedi anche: Comment/docs/README.md](../../Comment/docs/README.md)
+- [Torna a docs/links.md](../../../../project_docs/links.md)
+- [Vedi anche: UI/project_docs/README.md](./README.md)
+- [Vedi anche: Xot/project_docs/README.md](../../Xot/project_docs/README.md)
+- [Vedi anche: Blog/project_docs/README.md](../../Blog/project_docs/README.md)
+- [Vedi anche: Cms/project_docs/README.md](../../Cms/project_docs/README.md)
+- [Vedi anche: Comment/project_docs/README.md](../../Comment/project_docs/README.md)

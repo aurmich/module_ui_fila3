@@ -59,5 +59,5 @@
 
 ## Collegamenti tra versioni di resources.md
 * [resources.md](docs/tecnico/filament/resources.md)
-* [resources.md](../../../UI/docs/filament/resources.md)
+* [resources.md](../../../UI/project_docs/filament/resources.md)
 

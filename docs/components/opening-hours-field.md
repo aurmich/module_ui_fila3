@@ -408,9 +408,9 @@ class Doctor extends BaseModel
 
 ## Collegamenti
 
-- [SaluteOra: Documentazione Opening Hours](../../SaluteOra/docs/opening-hours-filament-field.md)
+- [SaluteOra: Documentazione Opening Hours](../../SaluteOra/project_docs/opening-hours-filament-field.md)
 - [Spatie Opening Hours Library](https://github.com/spatie/opening-hours)
-- [Filament Custom Fields Documentation](https://filamentphp.com/docs/forms/fields/custom)
+- [Filament Custom Fields Documentation](https://filamentphp.com/project_docs/forms/fields/custom)
 
 ---
 

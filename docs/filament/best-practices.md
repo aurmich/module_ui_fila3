@@ -87,7 +87,7 @@ public function boot(): void
 
 ## Riferimenti
 
-- [Filament Forms](https://filamentphp.com/docs/3.x/forms/installation)
-- [Filament Tables](https://filamentphp.com/docs/3.x/tables/installation)
-- [Filament Blade Components](https://filamentphp.com/docs/3.x/support/blade-components)
+- [Filament Forms](https://filamentphp.com/project_docs/3.x/forms/installation)
+- [Filament Tables](https://filamentphp.com/project_docs/3.x/tables/installation)
+- [Filament Blade Components](https://filamentphp.com/project_docs/3.x/support/blade-components)
 - [PSR-4 Autoloading Standard](https://www.php-fig.org/psr/psr-4/)

@@ -140,8 +140,8 @@ new class extends Component
 ```
 
 ## Collegamenti Correlati
-- [Documentazione Folio](https://laravel.com/docs/folio)
-- [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
+- [Documentazione Folio](https://laravel.com/project_docs/folio)
+- [Documentazione Livewire Volt](https://livewire.laravel.com/project_docs/volt)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Regole Architetturali](./ARCHITECTURE_RULES.md) 

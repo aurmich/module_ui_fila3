@@ -181,8 +181,8 @@ I form Filament che utilizzano campi complessi, wizard multi-step o molti campi 
 
 ## Riferimenti alla Documentazione
 
-- [Documentazione ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
-- [Integrazione Filament nel modulo CMS](../../Cms/docs/filament-integration.md)
+- [Documentazione ufficiale Filament](https://filamentphp.com/project_docs/3.x/support/blade-components)
+- [Integrazione Filament nel modulo CMS](../../Cms/project_docs/filament-integration.md)
 - [Best practices per i componenti UI](../components/best-practices.md)
 
 ---
