@@ -28,7 +28,7 @@
     
     @if(empty($states))
         <span class="text-gray-400 text-xs italic">
-            {{ __('ui::components.state_icons.no_transitions') }}
+            {{ (string) __('ui::components.state_icons.no_transitions') }}
         </span>
     @else
         @foreach($states as $stateKey => $stateConfig)

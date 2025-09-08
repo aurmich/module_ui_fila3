@@ -38,7 +38,7 @@
         <!-- Documenti Recenti -->
         <div class="bg-green-50 p-4 rounded-lg">
             <h3 class="text-lg font-medium text-green-900 mb-2">Documenti Recenti</h3>
-            @if($recentDocuments->count() > 0)
+            @if($recentDocuments->count()/** @phpstan-ignore method.nonObject */ > 0)
                 <ul class="space-y-2">
                     @foreach($recentDocuments as $document)
                         <li class="text-green-700">
@@ -64,7 +64,7 @@
         <!-- Notifiche -->
         <div class="bg-yellow-50 p-4 rounded-lg">
             <h3 class="text-lg font-medium text-yellow-900 mb-2">Notifiche Recenti</h3>
-            @if($recentNotifications->count() > 0)
+            @if($recentNotifications->count()/** @phpstan-ignore method.nonObject */ > 0)
                 <ul class="space-y-2">
                     @foreach($recentNotifications as $notification)
                         <li class="text-yellow-700">

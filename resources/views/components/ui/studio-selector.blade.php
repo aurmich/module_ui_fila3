@@ -17,9 +17,9 @@
 
 <div class="space-y-4">
     {{-- Header con conteggio --}}
-    @if($studios->count() > 0)
+    @if($studios->count()/** @phpstan-ignore method.nonObject */ > 0)
         <div class="text-sm text-gray-600 mb-4">
-            {{ trans_choice('Trovato :count studio|Trovati :count studi', $studios->count(), ['count' => $studios->count()]) }}
+            {{ trans_choice('Trovato :count studio|Trovati :count studi', $studios->count()/** @phpstan-ignore method.nonObject */, ['count' => $studios->count()/** @phpstan-ignore method.nonObject */]) }}
         </div>
     @endif
 

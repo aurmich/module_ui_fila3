@@ -12,7 +12,7 @@
                     <div class="flex items-start space-x-2">
                         <x-heroicon-o-information-circle class="w-4 h-4 mt-0.5 flex-shrink-0" />
                         <div>
-                            <p class="font-medium">{{ __('ui::opening_hours.instructions.title') }}</p>
+                            <p class="font-medium">{{ (string) __('ui::opening_hours.instructions.title') }}</p>
                             <p class="text-xs mt-1">{{ $getHelperText() }}</p>
                         </div>
                     </div>
@@ -24,15 +24,15 @@
                 <div class="flex items-center space-x-4 text-xs">
                     <div class="flex items-center space-x-1">
                         <span class="text-green-600">✅</span>
-                        <span class="text-gray-600 dark:text-gray-400">{{ __('ui::opening_hours.legend.open') }}</span>
+                        <span class="text-gray-600 dark:text-gray-400">{{ (string) __('ui::opening_hours.legend.open') }}</span>
                     </div>
                     <div class="flex items-center space-x-1">
                         <span class="text-red-600">❌</span>
-                        <span class="text-gray-600 dark:text-gray-400">{{ __('ui::opening_hours.legend.closed') }}</span>
+                        <span class="text-gray-600 dark:text-gray-400">{{ (string) __('ui::opening_hours.legend.closed') }}</span>
                     </div>
                     <div class="flex items-center space-x-1">
                         <span class="text-gray-400">⏰</span>
-                        <span class="text-gray-600 dark:text-gray-400">{{ __('ui::opening_hours.legend.format') }}</span>
+                        <span class="text-gray-600 dark:text-gray-400">{{ (string) __('ui::opening_hours.legend.format') }}</span>
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@
 
             {{-- Note aggiuntive --}}
             <div class="text-xs text-gray-500 dark:text-gray-400 mt-4">
-                <p>{{ __('ui::opening_hours.notes.format_hint') }}</p>
-                <p>{{ __('ui::opening_hours.notes.empty_hint') }}</p>
+                <p>{{ (string) __('ui::opening_hours.notes.format_hint') }}</p>
+                <p>{{ (string) __('ui::opening_hours.notes.empty_hint') }}</p>
             </div>
         </div>
     </div>

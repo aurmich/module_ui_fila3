@@ -12,7 +12,7 @@
                     </div>
                 @endif
                 <div class="ml-2">
-                    {{ $user?->name ?? __('Guest') }}
+                    {{ $user?->name ?? (string) __('Guest') }}
                 </div>
                 <div class="ml-1">
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -24,7 +24,7 @@
 
         @auth
             <x-filament::dropdown.list.item tag="a" :href="route('profile')" icon="heroicon-o-user">
-                {{ __('ui::navigation.profile') }}
+                {{ (string) __('ui::navigation.profile') }}
             </x-filament::dropdown.list.item>
 
             <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
@@ -37,17 +37,17 @@
                     icon="heroicon-o-logout"
                     x-on:click.prevent="document.getElementById('logout-form').submit()"
                 >
-                    {{ __('ui::navigation.logout') }}
+                    {{ (string) __('ui::navigation.logout') }}
                 </x-filament::dropdown.list.item>
             </form>
         @else
             <x-filament::dropdown.list.item tag="a" :href="route('login')" icon="heroicon-o-login">
-                {{ __('ui::navigation.login') }}
+                {{ (string) __('ui::navigation.login') }}
             </x-filament::dropdown.list.item>
 
             @if (Route::has('register'))
                 <x-filament::dropdown.list.item tag="a" :href="route('register')" icon="heroicon-o-user-add">
-                    {{ __('ui::navigation.register') }}
+                    {{ (string) __('ui::navigation.register') }}
                 </x-filament::dropdown.list.item>
             @endif
         @endauth

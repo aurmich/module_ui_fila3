@@ -71,7 +71,7 @@
                             icon="heroicon-m-user"
                             :href="route('profile.show')"
                         >
-                            {{ __('Profile') }}
+                            {{ (string) __('Profile') }}
                         </x-filament::dropdown.list.item>
 
                         <x-filament::dropdown.list.item
@@ -79,7 +79,7 @@
                             icon="heroicon-m-cog"
                             :href="route('profile.show')"
                         >
-                            {{ __('Settings') }}
+                            {{ (string) __('Settings') }}
                         </x-filament::dropdown.list.item>
 
                         <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
@@ -90,7 +90,7 @@
                                 icon="heroicon-m-arrow-right-on-rectangle"
                                 type="submit"
                             >
-                                {{ __('Log Out') }}
+                                {{ (string) __('Log Out') }}
                             </x-filament::dropdown.list.item>
                         </form>
                     </x-filament::dropdown.list>

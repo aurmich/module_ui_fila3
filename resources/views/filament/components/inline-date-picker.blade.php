@@ -140,7 +140,7 @@
             x-bind:disabled="!calendar.hasPreviousMonth"
             x-bind:class="{ 'opacity-30 cursor-not-allowed': !calendar.hasPreviousMonth }"
             class="p-1 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            aria-label="{{ __('ui::datepicker.previous_month') }}"
+            aria-label="{{ (string) __('ui::datepicker.previous_month') }}"
         >
             <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -158,7 +158,7 @@
             x-bind:disabled="!calendar.hasNextMonth"
             x-bind:class="{ 'opacity-30 cursor-not-allowed': !calendar.hasNextMonth }"
             class="p-1 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            aria-label="{{ __('ui::datepicker.next_month') }}"
+            aria-label="{{ (string) __('ui::datepicker.next_month') }}"
         >
             <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
