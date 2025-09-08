@@ -1,12 +1,12 @@
 # Componenti SVG Bandiere nel Modulo UI
 
 ## Collegamenti correlati
-- [Documentazione centrale](/project_docs/README.md)
-- [Collegamenti documentazione](/project_docs/collegamenti-documentazione.md)
-- [Documentazione UI](/laravel/Modules/UI/project_docs/README.md)
-- [Documentazione sezioni](/project_docs/sections.md)
-- [Header: Lingua e Utente](/laravel/Themes/One/project_docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
-- [Implementazione CMS](/laravel/Modules/Cms/project_docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Documentazione UI](/laravel/Modules/UI/docs/README.md)
+- [Documentazione sezioni](/docs/sections.md)
+- [Header: Lingua e Utente](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
+- [Implementazione CMS](/laravel/Modules/Cms/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
 
 ## Panoramica
 

@@ -54,6 +54,6 @@ Un errore comune nell'utilizzo dei componenti Filament è dimenticare di specifi
 
 ## Collegamenti Correlati
 
-- [Documentazione Filament Dropdown](https://filamentphp.com/project_docs/3.x/support/blade-components/dropdown)
+- [Documentazione Filament Dropdown](https://filamentphp.com/docs/3.x/support/blade-components/dropdown)
 - [Best Practices UI](../best-practices.md)
 - [Component Methods Compatibility](../component-methods-compatibility.md) 

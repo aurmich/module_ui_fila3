@@ -72,8 +72,8 @@ Il componente logo è uno degli elementi più importanti dell'interfaccia utente
 ``` 
 
 ## Collegamenti tra versioni di components.md
-* [components.md](../../../UI/project_docs/components.md)
-* [components.md](../../../UI/project_docs/themes/components.md)
-* [components.md](../../../Cms/project_docs/components.md)
-* [components.md](../../../../Themes/One/project_docs/components.md)
+* [components.md](../../../UI/docs/components.md)
+* [components.md](../../../UI/docs/themes/components.md)
+* [components.md](../../../Cms/docs/components.md)
+* [components.md](../../../../Themes/One/docs/components.md)
 

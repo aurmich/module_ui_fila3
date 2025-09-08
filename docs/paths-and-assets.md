@@ -11,9 +11,9 @@
 # Gestione dei Percorsi e degli Asset 
 
 ## Collegamenti correlati
-- [README modulo UI](/laravel/Modules/UI/project_docs/README.md)
-- [Architettura Modulare](/laravel/Modules/UI/project_docs/ARCHITECTURE.md)
-- [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
+- [README modulo UI](/laravel/Modules/UI/docs/README.md)
+- [Architettura Modulare](/laravel/Modules/UI/docs/ARCHITECTURE.md)
+- [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Percorsi Corretti per gli Asset
 

@@ -27,6 +27,6 @@
     </div>
 @else
     <div class="p-4 text-gray-500 text-center">
-        {{ (string) __('ui::aws_test.no_results') }}
+        {{ __('ui::aws_test.no_results') }}
     </div>
 @endif

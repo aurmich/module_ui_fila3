@@ -40,8 +40,8 @@ public function getTableColumns(): array
 ### 2. Verificare la documentazione ufficiale
 
 Prima di implementare metodi personalizzati, verifica sempre la documentazione ufficiale di Filament per capire se un metodo dovrebbe essere statico o di istanza:
-- [Filament Tables Documentation](https://filamentphp.com/project_docs/3.x/tables/columns/getting-started)
-- [Filament Resources Documentation](https://filamentphp.com/project_docs/3.x/panels/resources/getting-started)
+- [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns/getting-started)
+- [Filament Resources Documentation](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
 
 ### 3. Se hai bisogno di funzionalità statiche
 

@@ -271,9 +271,9 @@ RadioCardSelector::make('item')
 
 ## 🔗 **Collegamenti**
 
-- [Widget FindDoctorAndAppointment](../../../../Modules/SaluteOra/project_docs/widgets/find-doctor-widget-studio-step-analysis.md)
+- [Widget FindDoctorAndAppointment](../../../../Modules/SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
 - [Componenti UI Overview](../components.md)
-- [Best Practices Filament](../../../../project_docs/filament-best-practices.md)
+- [Best Practices Filament](../../../../docs/filament-best-practices.md)
 
 ---
 

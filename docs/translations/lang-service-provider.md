@@ -142,6 +142,6 @@ public static function getFormSchema(): array
 
 ## Collegamenti Correlati
 
-- [Laravel Localization](https://laravel.com/project_docs/localization)
-- [Filament Forms](https://filamentphp.com/project_docs/forms)
-- [Best Practices Internazionalizzazione](../../../project_docs/i18n/best-practices.md) 
+- [Laravel Localization](https://laravel.com/docs/localization)
+- [Filament Forms](https://filamentphp.com/docs/forms)
+- [Best Practices Internazionalizzazione](../../../docs/i18n/best-practices.md) 

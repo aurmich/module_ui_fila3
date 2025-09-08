@@ -45,9 +45,9 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
 
 ## Backlink
-- [Torna a docs/links.md](../../../../project_docs/links.md)
-- [Vedi anche: UI/project_docs/components.md](./components.md)
-- [Vedi anche: Xot/project_docs/README.md](../../Xot/project_docs/README.md)
+- [Torna a docs/links.md](../../../../docs/links.md)
+- [Vedi anche: UI/docs/components.md](./components.md)
+- [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
 
 ## Esempi
 ```blade
@@ -57,6 +57,6 @@ Questa documentazione integra entrambe le versioni emerse dal conflitto per forn
 ```
 
 ## Collegamenti
-- [Componenti UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/project_docs/components.md)
-- [Documentazione Filament](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/project_docs/filament/README.md)
-- [Convenzioni di Naming](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/project_docs/naming-conventions.md)
+- [Componenti UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/components.md)
+- [Documentazione Filament](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/filament/README.md)
+- [Convenzioni di Naming](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/naming-conventions.md)

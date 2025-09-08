@@ -76,6 +76,6 @@ Il conflitto riguarda la logica di recupero e gestione dei dati geografici.
 
 - [filament-components-location-studio.md](filament-components-location-studio.md)
 - [components.md](components.md)
-- [Modules/UI/project_docs/](../project_docs/)
+- [Modules/UI/docs/](../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*

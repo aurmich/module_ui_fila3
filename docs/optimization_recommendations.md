@@ -92,7 +92,7 @@ Modulo riutilizzabile per componenti Blade, widget Filament e design system.
 
 #### Struttura Target per Components
 ```
-UI/project_docs/components/
+UI/docs/components/
 ├── README.md (overview componenti)
 ├── data-display/
 │   ├── data-table.md
@@ -180,10 +180,10 @@ class ComponentPerformanceMiddleware
 ### Pre-Implementazione
 ```bash
 # Verifica path hardcoded
-grep -r "saluteora" Modules/UI/project_docs/ --include="*.md" | wc -l
+grep -r "saluteora" Modules/UI/docs/ --include="*.md" | wc -l
 
 # Verifica lunghezza README
-wc -l Modules/UI/project_docs/README.md
+wc -l Modules/UI/docs/README.md
 ```
 
 ### Post-Implementazione
@@ -225,7 +225,7 @@ php artisan ui:accessibility-check
 
 ## Collegamenti
 
-- [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
+- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [Components Guide](components.md)
 - [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
 

@@ -124,6 +124,6 @@ Modules/UI/
 ### Collegamenti Correlati
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Filament](https://filamentphp.com/docs)
-- [Documentazione Folio](https://laravel.com/project_docs/folio)
+- [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Guida Componenti](./COMPONENTS_GUIDE.md) 

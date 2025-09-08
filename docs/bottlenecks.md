@@ -121,9 +121,9 @@
 ## Riferimenti
 
 ### Documentazione
-- [Laravel Performance](https://laravel.com/project_docs/12.x/performance)
-- [Laravel Cache](https://laravel.com/project_docs/12.x/cache)
-- [Laravel Queue](https://laravel.com/project_docs/12.x/queues)
+- [Laravel Performance](https://laravel.com/docs/12.x/performance)
+- [Laravel Cache](https://laravel.com/docs/12.x/cache)
+- [Laravel Queue](https://laravel.com/docs/12.x/queues)
 
 ### Collegamenti Interni
 - [Roadmap](roadmap.md)
@@ -136,26 +136,26 @@
 
 - [Testing](testing.md) 
 ## Collegamenti tra versioni di bottlenecks.md
-* [bottlenecks.md](../../../../bashscripts/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Xot/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Dental/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../User/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../User/project_docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
+* [bottlenecks.md](../../Chart/docs/bottlenecks.md)
+* [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
+* [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Xot/docs/bottlenecks.md)
+* [bottlenecks.md](../../Xot/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Xot/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../Dental/docs/bottlenecks.md)
+* [bottlenecks.md](../../User/docs/bottlenecks.md)
+* [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Lang/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Lang/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Job/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Media/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Media/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Activity/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Patient/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Cms/project_docs/bottlenecks.md)
+* [bottlenecks.md](../../Lang/docs/bottlenecks.md)
+* [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Media/docs/bottlenecks.md)
+* [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Activity/docs/bottlenecks.md)
+* [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 
 
 ---

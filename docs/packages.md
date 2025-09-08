@@ -3,14 +3,14 @@
 ## Pacchetti Utilizzati
 
 ### Core
-- [laraxot/module_xot_fila3](../Xot/project_docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [filament/filament](https://filamentphp.com) - Admin panel e componenti UI
 - [tailwindcss/tailwindcss](https://tailwindcss.com) - Framework CSS utility-first
 
 ### Componenti UI
-- [filament/forms](https://filamentphp.com/project_docs/forms) - Form builder
-- [filament/tables](https://filamentphp.com/project_docs/tables) - Tabelle avanzate
-- [filament/notifications](https://filamentphp.com/project_docs/notifications) - Sistema notifiche
+- [filament/forms](https://filamentphp.com/docs/forms) - Form builder
+- [filament/tables](https://filamentphp.com/docs/tables) - Tabelle avanzate
+- [filament/notifications](https://filamentphp.com/docs/notifications) - Sistema notifiche
 
 ## Pacchetti di Riferimento
 
@@ -56,15 +56,15 @@
 
 
 ## Collegamenti tra versioni di packages.md
-* [packages.md](../../../Gdpr/project_docs/packages.md)
-* [packages.md](../../../Notify/project_docs/packages.md)
-* [packages.md](../../../Xot/project_docs/packages.md)
-* [packages.md](../../../User/project_docs/packages.md)
-* [packages.md](../../../UI/project_docs/packages.md)
-* [packages.md](../../../Lang/project_docs/packages.md)
-* [packages.md](../../../Job/project_docs/packages.md)
-* [packages.md](../../../Media/project_docs/packages.md)
-* [packages.md](../../../Tenant/project_docs/packages.md)
+* [packages.md](../../../Gdpr/docs/packages.md)
+* [packages.md](../../../Notify/docs/packages.md)
+* [packages.md](../../../Xot/docs/packages.md)
+* [packages.md](../../../User/docs/packages.md)
+* [packages.md](../../../UI/docs/packages.md)
+* [packages.md](../../../Lang/docs/packages.md)
+* [packages.md](../../../Job/docs/packages.md)
+* [packages.md](../../../Media/docs/packages.md)
+* [packages.md](../../../Tenant/docs/packages.md)
 
 
 ### Versione Incoming

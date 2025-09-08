@@ -13,8 +13,8 @@
             window.dispatchEvent(new CustomEvent('notify', {
                 detail: {
                     type: 'success',
-                    title: @js((string) __('ui::studio_selector.messages.studio_selected_title')),
-                    body: @js((string) __('ui::studio_selector.messages.studio_selected_body')).replace(':studio_name', studioName)
+                    title: @js(__('ui::studio_selector.messages.studio_selected_title')),
+                    body: @js(__('ui::studio_selector.messages.studio_selected_body')).replace(':studio_name', studioName)
                 }
             }));
         }
@@ -24,18 +24,18 @@
     {{-- Titolo sezione --}}
     <div class="text-center">
         <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-            {{ (string) __('ui::studio_selector.studio_list.title') }}
+            {{ __('ui::studio_selector.studio_list.title') }}
         </h3>
         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-            {{ (string) __('ui::studio_selector.studio_list.subtitle') }}
+            {{ __('ui::studio_selector.studio_list.subtitle') }}
         </p>
     </div>
 
-    @if($studios && $studios->count()/** @phpstan-ignore method.nonObject */ > 0)
+    @if($studios && $studios->count() > 0)
         {{-- Contatore studi trovati --}}
         <div class="text-center">
             <p class="text-sm font-medium text-blue-600 dark:text-blue-400">
-                {{ (string) __('ui::studio_selector.studio_list.count_found', ['count' => $studios->count()/** @phpstan-ignore method.nonObject */]) }}
+                {{ __('ui::studio_selector.studio_list.count_found', ['count' => $studios->count()]) }}
             </p>
         </div>
 
@@ -60,7 +60,7 @@
                             {{-- Badge stato --}}
                             <div class="mt-2">
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">
-                                    {{ (string) __('ui::studio_selector.studio_list.active_label') }}
+                                    {{ __('ui::studio_selector.studio_list.active_label') }}
                                 </span>
                             </div>
                         </div>
@@ -134,10 +134,10 @@
                             class="w-full px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                         >
                             <span x-show="selectedStudioId == {{ $studio->id }}">
-                                {{ (string) __('ui::studio_selector.studio_list.actions.selected') }}
+                                {{ __('ui::studio_selector.studio_list.actions.selected') }}
                             </span>
                             <span x-show="selectedStudioId != {{ $studio->id }}">
-                                {{ (string) __('ui::studio_selector.studio_list.actions.select') }}
+                                {{ __('ui::studio_selector.studio_list.actions.select') }}
                             </span>
                         </button>
                     </div>
@@ -151,10 +151,10 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
             </svg>
             <h3 class="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">
-                {{ (string) __('ui::studio_selector.studio_list.empty_state.title') }}
+                {{ __('ui::studio_selector.studio_list.empty_state.title') }}
             </h3>
             <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                {{ (string) __('ui::studio_selector.studio_list.empty_state.description') }}
+                {{ __('ui::studio_selector.studio_list.empty_state.description') }}
             </p>
         </div>
     @endif

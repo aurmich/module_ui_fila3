@@ -492,11 +492,11 @@ class StudioCardSelectorTest extends DuskTestCase
 - [Accessibility Guidelines](../accessibility.md)
 
 ### Modulo SaluteOra
-- [Studio Models](../../SaluteOra/project_docs/models/studio-address-relationship.md)
-- [Widget Analysis](../../SaluteOra/project_docs/widgets/find-doctor-widget-studio-step-analysis.md)
+- [Studio Models](../../SaluteOra/docs/models/studio-address-relationship.md)
+- [Widget Analysis](../../SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
 
 ### External References
-- [Filament Form Components](https://filamentphp.com/project_docs/forms/fields)
+- [Filament Form Components](https://filamentphp.com/docs/forms/fields)
 - [Alpine.js Documentation](https://alpinejs.dev/)
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 

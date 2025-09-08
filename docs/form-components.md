@@ -286,8 +286,8 @@ form.addEventListener('submit', (e) => {
 - [Componenti Table](./table-components.md)
 - [Componenti Chart](./chart-components.md)
 - [Componenti Layout](./layout-components.md)
-- [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md) 
+- [Documentazione Frontend](../Cms/docs/frontend-architecture.md) 
 ## Collegamenti tra versioni di form-components.md
-* [form-components.md](../../../UI/project_docs/form-components.md)
-* [form-components.md](../../../UI/project_docs/roadmap/form-components.md)
+* [form-components.md](../../../UI/docs/form-components.md)
+* [form-components.md](../../../UI/docs/roadmap/form-components.md)
 

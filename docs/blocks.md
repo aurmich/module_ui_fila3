@@ -24,21 +24,21 @@ I blocchi sono componenti modulari e riutilizzabili che possono essere utilizzat
 
 ### Modulo CMS
 Il modulo CMS fornisce l'implementazione base dei blocchi:
-- [Documentazione Blocchi](../laravel/Modules/Cms/project_docs/blocks/content-blocks.md)
-- [Gestione Contenuti](../laravel/Modules/Cms/project_docs/content-storage.md)
-- [Implementazione Filament](../laravel/Modules/Cms/project_docs/filament-resources.md)
+- [Documentazione Blocchi](../laravel/Modules/Cms/docs/blocks/content-blocks.md)
+- [Gestione Contenuti](../laravel/Modules/Cms/docs/content-storage.md)
+- [Implementazione Filament](../laravel/Modules/Cms/docs/filament-resources.md)
 
 ### Modulo UI
 Il modulo UI fornisce i componenti visuali:
-- [Componenti UI](../laravel/Modules/UI/project_docs/components/README.md)
-- [Best Practices UI](../laravel/Modules/UI/project_docs/best-practices.md)
-- [Temi e Stili](../laravel/Modules/UI/project_docs/themes/README.md)
+- [Componenti UI](../laravel/Modules/UI/docs/components/README.md)
+- [Best Practices UI](../laravel/Modules/UI/docs/best-practices.md)
+- [Temi e Stili](../laravel/Modules/UI/docs/themes/README.md)
 
 ### Modulo Xot
 Il modulo Xot fornisce le funzionalità base:
-- [Architettura Blocchi](../laravel/Modules/Xot/project_docs/blocks/README.md)
-- [Convenzioni di Codice](../laravel/Modules/Xot/project_docs/code-standards.md)
-- [Best Practices](../laravel/Modules/Xot/project_docs/BEST-PRACTICES.md)
+- [Architettura Blocchi](../laravel/Modules/Xot/docs/blocks/README.md)
+- [Convenzioni di Codice](../laravel/Modules/Xot/docs/code-standards.md)
+- [Best Practices](../laravel/Modules/Xot/docs/BEST-PRACTICES.md)
 
 ## Categorie di Blocchi
 
@@ -176,10 +176,10 @@ Per gestire correttamente le route nei blocchi, seguire queste linee guida:
    - Loggare eventuali errori di route
 
 ## Collegamenti tra versioni di blocks.md
-* [blocks.md](../../../Xot/project_docs/blocks.md)
-* [blocks.md](../../../User/project_docs/blocks.md)
-* [blocks.md](../../../UI/project_docs/blocks.md)
-* [blocks.md](../../../Cms/project_docs/blocks.md)
-* [blocks.md](../../../../Themes/One/project_docs/blocks.md)
-* [blocks.md](../../../../Themes/One/project_docs/components/blocks.md)
+* [blocks.md](../../../Xot/docs/blocks.md)
+* [blocks.md](../../../User/docs/blocks.md)
+* [blocks.md](../../../UI/docs/blocks.md)
+* [blocks.md](../../../Cms/docs/blocks.md)
+* [blocks.md](../../../../Themes/One/docs/blocks.md)
+* [blocks.md](../../../../Themes/One/docs/components/blocks.md)
 

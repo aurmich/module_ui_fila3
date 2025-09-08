@@ -165,9 +165,9 @@ Il componente loading indicator di Filament mostra lo stato di caricamento:
 ```
 
 ## Collegamenti Correlati
-- [Documentazione Dropdown Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/dropdown)
-- [Documentazione Avatar Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/avatar)
-- [Documentazione Loading Indicator Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/loading-indicator)
+- [Documentazione Dropdown Filament](https://filamentphp.com/docs/3.x/support/blade-components/dropdown)
+- [Documentazione Avatar Filament](https://filamentphp.com/docs/3.x/support/blade-components/avatar)
+- [Documentazione Loading Indicator Filament](https://filamentphp.com/docs/3.x/support/blade-components/loading-indicator)
 
 ## Volt e Folio
 

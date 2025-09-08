@@ -71,4 +71,4 @@ class ReportingChartAssets extends Component
 
 - [XotBaseServiceProvider::registerBladeComponents()](../../Xot/app/Providers/XotBaseServiceProvider.php)
 - [RegisterBladeComponentsAction](../../Xot/app/Actions/Blade/RegisterBladeComponentsAction.php)
-- [Laravel Blade Components Documentation](https://laravel.com/project_docs/blade#components)
+- [Laravel Blade Components Documentation](https://laravel.com/docs/blade#components)

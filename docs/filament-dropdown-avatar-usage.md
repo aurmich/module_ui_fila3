@@ -1,10 +1,10 @@
 # Utilizzo dei Componenti Filament Dropdown e Avatar 
 
 ## Collegamenti correlati
-- [README modulo UI](/laravel/Modules/UI/project_docs/README.md)
-- [Utilizzo Componenti Filament](/laravel/Modules/UI/project_docs/FILAMENT_COMPONENTS_USAGE.md)
-- [Architettura Modulare](/project_docs/architettura-modulare.md)
-- [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
+- [README modulo UI](/laravel/Modules/UI/docs/README.md)
+- [Utilizzo Componenti Filament](/laravel/Modules/UI/docs/FILAMENT_COMPONENTS_USAGE.md)
+- [Architettura Modulare](/docs/architettura-modulare.md)
+- [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
 
@@ -272,8 +272,8 @@ Seguire queste convenzioni per le chiavi di traduzione:
 
 ## Riferimenti
 
-- [Documentazione Filament - Avatar](https://filamentphp.com/project_docs/3.x/support/blade-components/avatar)
-- [Documentazione Filament - Dropdown](https://filamentphp.com/project_docs/3.x/support/blade-components/dropdown)
-- [Documentazione Filament - Loading Indicator](https://filamentphp.com/project_docs/3.x/support/blade-components/loading-indicator)
+- [Documentazione Filament - Avatar](https://filamentphp.com/docs/3.x/support/blade-components/avatar)
+- [Documentazione Filament - Dropdown](https://filamentphp.com/docs/3.x/support/blade-components/dropdown)
+- [Documentazione Filament - Loading Indicator](https://filamentphp.com/docs/3.x/support/blade-components/loading-indicator)
 - [Heroicons](https://heroicons.com/)
 - [Tailwind CSS](https://tailwindcss.com/)

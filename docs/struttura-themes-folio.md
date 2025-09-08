@@ -162,6 +162,6 @@ config('theme.views_path') // Output: "Themes/One/resources/views"
 
 ## Link Utili
 
-- [Documentazione Laravel Folio](https://laravel.com/project_docs/folio)
+- [Documentazione Laravel Folio](https://laravel.com/docs/folio)
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - Configurazione Theme: `/laravel/config/theme.php`

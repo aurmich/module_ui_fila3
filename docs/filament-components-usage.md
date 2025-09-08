@@ -1,10 +1,10 @@
 # Utilizzo dei Componenti Filament 
 
 ## Collegamenti correlati
-- [README modulo UI](/laravel/Modules/UI/project_docs/README.md)
-- [Architettura Modulare](/project_docs/architettura-modulare.md)
-- [Percorsi e Asset](/laravel/Modules/UI/project_docs/PATHS_AND_ASSETS.md)
-- [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
+- [README modulo UI](/laravel/Modules/UI/docs/README.md)
+- [Architettura Modulare](/docs/architettura-modulare.md)
+- [Percorsi e Asset](/laravel/Modules/UI/docs/PATHS_AND_ASSETS.md)
+- [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
 
@@ -160,7 +160,7 @@ Filament fornisce un componente `x-filament::dropdown` che può essere utilizzat
 
 ## Riferimenti
 
-- [Documentazione Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/overview)
+- [Documentazione Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
 - [Heroicons](https://heroicons.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Laravel Blade](https://laravel.com/project_docs/10.x/blade)
+- [Laravel Blade](https://laravel.com/docs/10.x/blade)

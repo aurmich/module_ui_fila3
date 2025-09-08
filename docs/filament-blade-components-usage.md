@@ -215,8 +215,8 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
 ## Risorse Utili
 
 - [Documentazione Ufficiale di Filament](https://filamentphp.com/docs)
-- [Componenti Blade di Filament](https://filamentphp.com/project_docs/3.x/support/blade-components)
-- [Icone in Filament](https://filamentphp.com/project_docs/3.x/support/icons)
+- [Componenti Blade di Filament](https://filamentphp.com/docs/3.x/support/blade-components)
+- [Icone in Filament](https://filamentphp.com/docs/3.x/support/icons)
 
 ## Conclusione
 

@@ -8,14 +8,14 @@ il progetto utilizza Filament come starterkit sia per il backend che per il fron
 ## Collegamenti alla Documentazione
 
 ### Documentazione Principale
-- [Best Practices Components](../../../Cms/project_docs/best-practices/components.md)
-- [Documentazione Ufficiale Filament](https://filamentphp.com/project_docs/3.x/support/blade-components)
-- [Guida all'Implementazione dei Componenti](../../../Cms/project_docs/components/README.md)
+- [Best Practices Components](../../../Cms/docs/best-practices/components.md)
+- [Documentazione Ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
+- [Guida all'Implementazione dei Componenti](../../../Cms/docs/components/README.md)
 
 ### Implementazioni di Riferimento
-- [Documentazione Dettagliata del Footer](../../../../Themes/One/project_docs/components/layouts/footer.md)
-- [Navigation Component](../../../../Themes/One/project_docs/components/layouts/navigation.md)
-- [Form Components](../../../Cms/project_docs/components/forms/README.md)
+- [Documentazione Dettagliata del Footer](../../../../Themes/One/docs/components/layouts/footer.md)
+- [Navigation Component](../../../../Themes/One/docs/components/layouts/navigation.md)
+- [Form Components](../../../Cms/docs/components/forms/README.md)
 
 ## Componenti Disponibili
 
@@ -116,6 +116,6 @@ it('uses filament button component as link correctly', function () {
 - Mantenere la coerenza nell'utilizzo dei componenti in tutto il progetto
 
 ## Vedi Anche
-- [Tema One Documentation](../../../../Themes/One/project_docs/README.md)
-- [Filament Admin Panel](../../../Cms/project_docs/admin/filament.md)
-- [Linee Guida per il Web Design](../../../Cms/project_docs/webdesign/README.md)
+- [Tema One Documentation](../../../../Themes/One/docs/README.md)
+- [Filament Admin Panel](../../../Cms/docs/admin/filament.md)
+- [Linee Guida per il Web Design](../../../Cms/docs/webdesign/README.md)

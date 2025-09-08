@@ -95,13 +95,13 @@ Per migrare da componenti personalizzati a componenti Filament:
 
 ## Documentazione di riferimento
 
-- [Documentazione ufficiale Filament Blade Components](https://filamentphp.com/project_docs/3.x/support/blade-components)
-- [Dropdown](https://filamentphp.com/project_docs/3.x/support/blade-components/dropdown)
-- [Button](https://filamentphp.com/project_docs/3.x/support/blade-components/button)
-- [Card](https://filamentphp.com/project_docs/3.x/support/blade-components/card)
-- [Icon](https://filamentphp.com/project_docs/3.x/support/blade-components/icon)
-- [Modal](https://filamentphp.com/project_docs/3.x/support/blade-components/modal)
+- [Documentazione ufficiale Filament Blade Components](https://filamentphp.com/docs/3.x/support/blade-components)
+- [Dropdown](https://filamentphp.com/docs/3.x/support/blade-components/dropdown)
+- [Button](https://filamentphp.com/docs/3.x/support/blade-components/button)
+- [Card](https://filamentphp.com/docs/3.x/support/blade-components/card)
+- [Icon](https://filamentphp.com/docs/3.x/support/blade-components/icon)
+- [Modal](https://filamentphp.com/docs/3.x/support/blade-components/modal)
 
 ## Moduli correlati
 
-- [User](../../User/project_docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament
+- [User](../../User/docs/blade/using-filament-components.md) - Implementazione dei componenti profilo con Filament

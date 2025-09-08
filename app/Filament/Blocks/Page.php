@@ -12,13 +12,13 @@ final class Page extends XotBaseBlock
         return [
             RichEditor::make('content')
                 ->required()
-                ->label((string) __('ui::blocks.page.fields.content.label'))
-                ->helperText((string) __('ui::blocks.page.fields.content.helper_text')),
+                ->label(__('ui::blocks.page.fields.content.label'))
+                ->helperText(__('ui::blocks.page.fields.content.helper_text')),
         ];
     }
 
     public static function getTitle(): string
     {
-        return (string) __('ui::blocks.page.title');
+        return __('ui::blocks.page.title');
     }
-}
+} 
