@@ -9,6 +9,7 @@ use Modules\Blog\Filament\Resources\CategoryResource as BlogCategoryResource;
 /**
  * CategoryResource for UI module extending Blog CategoryResource.
  */
+<<<<<<< HEAD
 class CategoryResource
 {
 
@@ -18,3 +19,9 @@ class CategoryResource
 // {
 
 // }
+=======
+class CategoryResource extends BlogCategoryResource
+{
+
+}
+>>>>>>> 17ffe269 (.)
