@@ -6,7 +6,6 @@ namespace Modules\UI\Models;
 
 use Modules\FormBuilder\Models\FieldOption as BaseFieldOption;
 
-<<<<<<< HEAD
 /**
  * @property-read \Modules\Predict\Models\Profile|null $creator
  * @property-read mixed $translations
@@ -30,8 +29,6 @@ use Modules\FormBuilder\Models\FieldOption as BaseFieldOption;
  *
  * @mixin \Eloquent
  */
-=======
->>>>>>> 17ffe269 (.)
 class FieldOption extends BaseFieldOption
 {
     // Proxy alias to satisfy Laravel namespacing within UI module

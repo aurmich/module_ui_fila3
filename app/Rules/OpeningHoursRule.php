@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 // app/Rules/OpeningHoursRule.php
+
 namespace Modules\UI\Rules;
 
+use Carbon\Carbon;
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;
-use Carbon\Carbon;
-use Illuminate\Translation\PotentiallyTranslatedString;
 
 class OpeningHoursRule implements ValidationRule
 {
@@ -31,15 +31,14 @@ class OpeningHoursRule implements ValidationRule
         /*
         foreach ($days as $dayKey => $dayLabel) {
             $hours = $value[$dayKey];
-                
+
             foreach ($hours as $hourKey => $hour) {
                 if(is_string($hour) && $hour===''){
-                    
+
                     $fail("L'orario di {$hourKey} deve essere impostato per il {$dayLabel}.");
                 }
             }
         }
         */
-        
     }
 }
