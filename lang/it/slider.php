@@ -17,21 +17,6 @@ return array (
     'view' => 
     array (
       'label' => 'view',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      'description' => 'view',
-      'helper_text' => 'view',
-      'placeholder' => 'view',
->>>>>>> bddd5ac (.)
-=======
->>>>>>> 013b5e1 (.)
-=======
->>>>>>> a488b96 (.)
-=======
->>>>>>> d3fc412 (.)
     ),
   ),
 );

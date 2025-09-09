@@ -124,15 +124,7 @@ done
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Documentazione Root Traduzioni](../../../../docs/translation_standards_links.md)
-=======
-- [Documentazione Root Traduzioni](../../../../project_docs/translation_standards_links.md)
->>>>>>> d3fc412 (.)
-=======
-- [Documentazione Root Traduzioni](../../../../docs/translation_standards_links.md)
->>>>>>> ab33b51 (.)
 - [Regole Traduzioni UI](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 

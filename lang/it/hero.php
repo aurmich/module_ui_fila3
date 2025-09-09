@@ -54,19 +54,6 @@ return array (
       'label' => 'title',
       'description' => 'title',
       'helper_text' => 'title',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      'placeholder' => 'title',
->>>>>>> bddd5ac (.)
-=======
->>>>>>> 013b5e1 (.)
-=======
->>>>>>> a488b96 (.)
-=======
->>>>>>> d3fc412 (.)
     ),
     'view' => 
     array (

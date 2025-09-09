@@ -2,29 +2,12 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\UI\Tests\Unit\Enums;
-
-use Tests\TestCase;
-use Modules\UI\Enums\TableLayoutEnum;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\Layout\Stack;
-=======
-namespace Modules\UI\Tests\Unit\Enums\TableLayoutEnumTest;
-
-=======
->>>>>>> ab33b51 (.)
 namespace Modules\UI\Tests\Unit\Enums;
 
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
-<<<<<<< HEAD
->>>>>>> d3fc412 (.)
-=======
 use Tests\TestCase;
->>>>>>> ab33b51 (.)
 
 class TableLayoutEnumTest extends TestCase
 {
@@ -193,8 +176,4 @@ class TableLayoutEnumTest extends TestCase
         $this->assertNotEmpty($listIcon);
         $this->assertNotEmpty($gridIcon);
     }
-<<<<<<< HEAD
-} 
-=======
 }
->>>>>>> d3fc412 (.)
