@@ -514,5 +514,8 @@ describe('UI Business Logic Integration', function () {
         });
     });
 });
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 819632e (.)

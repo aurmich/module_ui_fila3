@@ -2,13 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\UI\Tests\Unit\Enums\TableLayoutEnumTest;
 
+=======
+>>>>>>> 819632e (.)
 namespace Modules\UI\Tests\Unit\Enums;
 
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
+<<<<<<< HEAD
+=======
+use Tests\TestCase;
+>>>>>>> 819632e (.)
 
 class TableLayoutEnumTest extends TestCase
 {

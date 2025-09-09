@@ -2,11 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\UI\Tests\Feature\CategoryTabsComponentTest;
 
 namespace Modules\UI\Tests\Feature;
 
 use Illuminate\Support\Facades\View;
+=======
+use Illuminate\Support\Facades\View;
+use Tests\TestCase;
+>>>>>>> 819632e (.)
 
 uses(TestCase::class);
 
