@@ -41,7 +41,7 @@
 #### Pattern di Correzione
 ```php
 // ❌ PROBLEMI ATTUALI (in documentazione)
-/var/www/html/saluteora/laravel/Modules/UI/
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
 https://api.saluteora.com/
 
 // ✅ SOLUZIONI

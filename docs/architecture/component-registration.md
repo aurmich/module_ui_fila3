@@ -72,5 +72,5 @@ Se hai bisogno di personalizzazioni nella registrazione dei componenti:
 
 ## Riferimenti
 
-- [XotBaseServiceProvider](/var/www/html/base_saluteora/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
-- [RegisterBladeComponentsAction](/var/www/html/base_saluteora/laravel/Modules/Xot/Actions/Blade/RegisterBladeComponentsAction.php)
+- [XotBaseServiceProvider](/var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
+- [RegisterBladeComponentsAction](/var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/Actions/Blade/RegisterBladeComponentsAction.php)

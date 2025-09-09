@@ -163,7 +163,7 @@ Lo script `ThemeTranslationSynchronizer` gestisce automaticamente:
 
 ### Comando Manuale
 ```bash
-cd /var/www/html/_bases/base_saluteora
+cd /var/www/html/_bases/base_techplanner_fila3_mono
 php bashscripts/translations/sync_theme_translations.php
 ```
 
