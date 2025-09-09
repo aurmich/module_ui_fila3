@@ -283,6 +283,7 @@ rules:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
 - [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
@@ -291,6 +292,11 @@ rules:
 - [Filament Best Practices](../../../project_docs/filament_best_practices.md)
 - [TransTrait Documentation](../../Xot/project_docs/trans_trait_usage.md)
 >>>>>>> d3fc412 (.)
+=======
+- [Translation Standards](../../../docs/translation_standards.md)
+- [Filament Best Practices](../../../docs/filament_best_practices.md)
+- [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
+>>>>>>> ab33b51 (.)
 
 ## Memoria Permanente
 

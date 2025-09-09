@@ -215,6 +215,9 @@
 - Documentazione aggiornata 
 ## Collegamenti tra versioni di bottlenecks.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ab33b51 (.)
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)
@@ -225,6 +228,7 @@
 * [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
+<<<<<<< HEAD
 =======
 * [bottlenecks.md](../../../Gdpr/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/project_docs/bottlenecks.md)
@@ -237,4 +241,6 @@
 * [bottlenecks.md](../../../Media/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Patient/project_docs/roadmap/bottlenecks.md)
 >>>>>>> d3fc412 (.)
+=======
+>>>>>>> ab33b51 (.)
 

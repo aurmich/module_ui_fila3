@@ -113,6 +113,7 @@ TextColumn::make('status')
 ## Checklist Pre-Implementazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8727c5b (.)
 =======
 >>>>>>> d3fc412 (.)
@@ -129,11 +130,19 @@ TextColumn::make('status')
 - [ ] Testare che le traduzioni funzionino correttamente
 Prima di usare qualsiasi componente Filament:
 
+=======
+### Prima di usare qualsiasi componente Filament:
+>>>>>>> ab33b51 (.)
 - [ ] Implementare traduzioni in `lang/it/fields.php`
 - [ ] Implementare traduzioni in `lang/en/fields.php`
 - [ ] Implementare traduzioni in `lang/de/fields.php`
 - [ ] Verificare struttura espansa (label, placeholder, tooltip, helper_text)
 - [ ] Non usare mai `->label()` nel codice
+
+### Prima di committare:
+- [ ] Verificare che non ci siano `->label()` nel codice
+- [ ] Controllare che tutte le traduzioni siano implementate
+- [ ] Testare che le traduzioni funzionino correttamente
 
 ## Verifica Automatica
 
@@ -168,6 +177,7 @@ rules:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation-standards.md)
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
@@ -176,17 +186,19 @@ rules:
 - [Filament Best Practices](../../../project_docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../project_docs/lang-service-provider.md)
 >>>>>>> d3fc412 (.)
+=======
+- [Translation Standards](../../../docs/translation-standards.md)
+- [Filament Best Practices](../../../docs/filament-best-practices.md)
+- [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
+>>>>>>> ab33b51 (.)
 
 ## Memoria Permanente
 
 **RICORDA SEMPRE**: 
 - MAI usare `->label()` in componenti Filament
 - SEMPRE implementare traduzioni nei file `lang/`
+- SEMPRE struttura espansa (label, placeholder, tooltip, helper_text)
 - SEMPRE sincronizzare IT/EN/DE
 - SEMPRE testare le traduzioni prima del commit
-- MAI `->label()` 
-- SEMPRE traduzioni nei file lang/
-- SEMPRE struttura espansa
-- SEMPRE sincronizzazione IT/EN/DE
 
 *Ultimo aggiornamento: 2025-01-06*

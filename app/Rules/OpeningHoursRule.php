@@ -6,6 +6,7 @@ namespace Modules\UI\Rules;
 
 use Closure;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Illuminate\Contracts\Validation\ValidationRule;
@@ -26,13 +27,25 @@ class OpeningHoursRule implements ValidationRule
         $days = app(GetDaysMappingAction::class)->execute();
 =======
 use Illuminate\Contracts\Validation\ValidationRule;
+=======
+>>>>>>> ab33b51 (.)
 use Carbon\Carbon;
+use Modules\Xot\Filament\Traits\TransTrait;
+use Illuminate\Contracts\Validation\ValidationRule;
+use Modules\UI\Actions\Datetime\GetDaysMappingAction;
 use Illuminate\Translation\PotentiallyTranslatedString;
+
+use function Safe\preg_match;
+
 
 class OpeningHoursRule implements ValidationRule
 {
+
+    use TransTrait;
+    
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
+<<<<<<< HEAD
         $days = collect([
             Carbon::MONDAY,
             Carbon::TUESDAY,
@@ -49,6 +62,10 @@ class OpeningHoursRule implements ValidationRule
             return [$dayKey => $dayLabel];
         })->toArray();
 >>>>>>> d3fc412 (.)
+=======
+       
+        $days = app(GetDaysMappingAction::class)->execute();
+>>>>>>> ab33b51 (.)
         /*
         foreach ($days as $dayKey => $dayLabel) {
             $hours = $value[$dayKey];
@@ -62,6 +79,9 @@ class OpeningHoursRule implements ValidationRule
         }
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ab33b51 (.)
         foreach ($days as $dayKey => $dayLabel) {
             /**@phpstan-ignore-next-line */
             $dayHours = $value[$dayKey] ?? [];
@@ -173,8 +193,11 @@ class OpeningHoursRule implements ValidationRule
     {
         return (bool) preg_match('/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/', $time);
     }
+<<<<<<< HEAD
 =======
         
     }
 >>>>>>> d3fc412 (.)
+=======
+>>>>>>> ab33b51 (.)
 }

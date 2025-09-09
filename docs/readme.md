@@ -10,9 +10,13 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - Componenti calendario
 - Utility di interfaccia
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 =======
 >>>>>>> d3fc412 (.)
+=======
+- **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
+>>>>>>> ab33b51 (.)
 
 ## File di Traduzione
 
@@ -22,14 +26,21 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - `user_calendar.php` - Traduzioni per il calendario utente
 - `components.php` - Traduzioni per i componenti UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 =======
 >>>>>>> d3fc412 (.)
+=======
+- `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
+>>>>>>> ab33b51 (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
 - [Fix Traduzioni Opening Hours](opening_hours_translation_improvement.md) - Miglioramento traduzioni orari
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ab33b51 (.)
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
 
 ## Regole Critiche
@@ -144,6 +155,9 @@ class ListUsers extends ListRecords
 - **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
+<<<<<<< HEAD
 =======
 >>>>>>> d3fc412 (.)
+=======
+>>>>>>> ab33b51 (.)
 *Ultimo aggiornamento: gennaio 2025* 

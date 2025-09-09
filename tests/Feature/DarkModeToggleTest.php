@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use function Pest\Laravel\{get};
 =======
@@ -10,6 +11,9 @@ namespace Modules\UI\Tests\Feature\DarkModeToggleTest;
 
 namespace Modules\UI\Tests\Feature;
 >>>>>>> d3fc412 (.)
+=======
+use Tests\TestCase;
+>>>>>>> ab33b51 (.)
 
 uses(TestCase::class);
 
@@ -61,9 +65,13 @@ test('kalshi hero component supports dark mode', function () {
     $heroPath = base_path('Themes/TwentyOne/resources/views/components/blocks/hero/kalshi-inspired.blade.php');
     $content = file_get_contents($heroPath);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 >>>>>>> d3fc412 (.)
+=======
+
+>>>>>>> ab33b51 (.)
     // Hero should have dark mode variants
     if (str_contains($content, 'from-slate-900')) {
         expect($content)->toContain('dark:from-slate-950');
@@ -190,9 +198,13 @@ test('gradient backgrounds work in dark mode', function () {
     $heroPath = base_path('Themes/TwentyOne/resources/views/components/blocks/hero/kalshi-inspired.blade.php');
     $content = file_get_contents($heroPath);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 >>>>>>> d3fc412 (.)
+=======
+
+>>>>>>> ab33b51 (.)
     // Hero gradients should have dark variants
     if (str_contains($content, 'bg-gradient-to-br')) {
         expect($content)->toContain('dark:from-') or
@@ -206,9 +218,13 @@ test('interactive elements have dark mode hover states', function () {
     $heroPath = base_path('Themes/TwentyOne/resources/views/components/blocks/hero/kalshi-inspired.blade.php');
     $content = file_get_contents($heroPath);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 >>>>>>> d3fc412 (.)
+=======
+
+>>>>>>> ab33b51 (.)
     // Buttons and links should have hover states
     if (str_contains($content, 'hover:')) {
         expect($content)->toContain('hover:') and expect($content)->toContain('transition');
@@ -222,9 +238,13 @@ test('border colors adapt to dark mode', function () {
     $heroPath = base_path('Themes/TwentyOne/resources/views/components/blocks/hero/kalshi-inspired.blade.php');
     $content = file_get_contents($heroPath);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 >>>>>>> d3fc412 (.)
+=======
+
+>>>>>>> ab33b51 (.)
     // Borders should have appropriate colors (may include white/10 for glassmorphism)
     if (str_contains($content, 'border-')) {
         expect($content)->toContain('border-white/10') or
@@ -240,9 +260,13 @@ test('backdrop effects work in dark mode', function () {
     $heroPath = base_path('Themes/TwentyOne/resources/views/components/blocks/hero/kalshi-inspired.blade.php');
     $content = file_get_contents($heroPath);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 >>>>>>> d3fc412 (.)
+=======
+
+>>>>>>> ab33b51 (.)
     // Should have backdrop blur and similar effects
     if (str_contains($content, 'backdrop-blur')) {
         expect($content)->toContain('bg-white/5') or

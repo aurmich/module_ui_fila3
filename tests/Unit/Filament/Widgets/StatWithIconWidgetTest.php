@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 use Modules\UI\Filament\Widgets\StatWithIconWidget;
@@ -15,15 +16,26 @@ namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 
 >>>>>>> d3fc412 (.)
+=======
+namespace Modules\UI\Tests\Unit\Filament\Widgets;
+
+use Filament\Widgets\Widget;
+use Modules\UI\Filament\Widgets\StatWithIconWidget;
+use Tests\TestCase;
+>>>>>>> ab33b51 (.)
 
 uses(TestCase::class);
 
 beforeEach(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->widget = new StatWithIconWidget();
 =======
 $this->widget = new StatWithIconWidget();
 >>>>>>> d3fc412 (.)
+=======
+    $this->widget = new StatWithIconWidget;
+>>>>>>> ab33b51 (.)
 });
 
 test('stat with icon widget extends filament widget', function () {

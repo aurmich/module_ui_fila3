@@ -128,10 +128,14 @@ cd /var/www/html/_bases/base_saluteora/laravel
 - [S3Test Null ErrorCode Handling](s3test-bugfix-null-errorcode.md) 
 - [AwsTest Undefined Variable Fix](awstest-bugfix-undefined-variable.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Media Module PHPStan Fixes](../Media/docs/phpstan_level10_fixes.md)
 =======
 - [Media Module PHPStan Fixes](../Media/project_docs/phpstan_level10_fixes.md)
 >>>>>>> d3fc412 (.)
+=======
+- [Media Module PHPStan Fixes](../Media/docs/phpstan_level10_fixes.md)
+>>>>>>> ab33b51 (.)
 
 ## Aggiornamento Continuo
 

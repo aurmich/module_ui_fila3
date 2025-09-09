@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\View;
 use Tests\TestCase;
 =======
@@ -12,6 +13,10 @@ namespace Modules\UI\Tests\Feature;
 
 use Illuminate\Support\Facades\View;
 >>>>>>> d3fc412 (.)
+=======
+use Illuminate\Support\Facades\View;
+use Tests\TestCase;
+>>>>>>> ab33b51 (.)
 
 uses(TestCase::class);
 

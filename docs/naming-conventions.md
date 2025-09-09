@@ -1,6 +1,7 @@
  
 ## Collegamenti tra versioni di naming-conventions.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [naming-conventions.md](../../../../docs/naming-conventions.md)
 * [naming-conventions.md](../../Xot/docs/naming-conventions.md)
 * [naming-conventions.md](../../Patient/docs/naming-conventions.md)
@@ -9,4 +10,9 @@
 * [naming-conventions.md](../../Xot/project_docs/naming-conventions.md)
 * [naming-conventions.md](../../Patient/project_docs/naming-conventions.md)
 >>>>>>> d3fc412 (.)
+=======
+* [naming-conventions.md](../../../../docs/naming-conventions.md)
+* [naming-conventions.md](../../Xot/docs/naming-conventions.md)
+* [naming-conventions.md](../../Patient/docs/naming-conventions.md)
+>>>>>>> ab33b51 (.)
 

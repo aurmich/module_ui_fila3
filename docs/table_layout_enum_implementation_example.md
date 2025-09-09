@@ -409,6 +409,7 @@ TextColumn::make('name')
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md)
 - [Usage Guide](table-layout-enum-usage.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../docs/filament_best_practices.md)
 - [Enum Translation Pattern](../../../docs/enum-translation-pattern.md)
@@ -417,5 +418,10 @@ TextColumn::make('name')
 - [Filament Best Practices](../../../project_docs/filament_best_practices.md)
 - [Enum Translation Pattern](../../../project_docs/enum-translation-pattern.md)
 >>>>>>> d3fc412 (.)
+=======
+- [Translation Standards](../../../docs/translation_standards.md)
+- [Filament Best Practices](../../../docs/filament_best_practices.md)
+- [Enum Translation Pattern](../../../docs/enum-translation-pattern.md)
+>>>>>>> ab33b51 (.)
 
 *Ultimo aggiornamento: 2025-01-27* 

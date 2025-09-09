@@ -7,6 +7,7 @@ namespace Modules\UI\Models;
 use Modules\FormBuilder\Models\Collection as BaseCollection;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /**
  * @property-read string $last_updated
@@ -31,6 +32,8 @@ use Modules\FormBuilder\Models\Collection as BaseCollection;
  * @mixin \Eloquent
  */
 >>>>>>> d3fc412 (.)
+=======
+>>>>>>> ab33b51 (.)
 class Collection extends BaseCollection
 {
     // Proxy alias to satisfy Laravel namespacing within UI module

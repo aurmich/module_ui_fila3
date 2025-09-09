@@ -7,6 +7,7 @@ namespace Modules\UI\Models;
 use Modules\FormBuilder\Models\FieldOption as BaseFieldOption;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /**
  * @property-read \Modules\Predict\Models\Profile|null $creator
@@ -32,6 +33,8 @@ use Modules\FormBuilder\Models\FieldOption as BaseFieldOption;
  * @mixin \Eloquent
  */
 >>>>>>> d3fc412 (.)
+=======
+>>>>>>> ab33b51 (.)
 class FieldOption extends BaseFieldOption
 {
     // Proxy alias to satisfy Laravel namespacing within UI module

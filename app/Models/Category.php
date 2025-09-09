@@ -7,6 +7,7 @@ namespace Modules\UI\Models;
 use Modules\FormBuilder\Models\Category as BaseCategory;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /**
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \LaraZeus\Bolt\Models\Form> $forms
@@ -37,6 +38,8 @@ use Modules\FormBuilder\Models\Category as BaseCategory;
  * @mixin \Eloquent
  */
 >>>>>>> d3fc412 (.)
+=======
+>>>>>>> ab33b51 (.)
 class Category extends BaseCategory
 {
     // Proxy alias to satisfy Laravel namespacing within UI module
