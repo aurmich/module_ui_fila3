@@ -92,4 +92,8 @@ Modules/
 ## Riferimenti
 - [Documentazione Ufficiale Laravel Modules](https://nwidart.com/laravel-modules/v6/introduction)
 - [PSR-4 Autoloading Standard](https://www.php-fig.org/psr/psr-4/)
+<<<<<<< HEAD
 - [Laravel Package Development](https://laravel.com/docs/package-development) 
+=======
+- [Laravel Package Development](https://laravel.com/project_docs/package-development) 
+>>>>>>> d3fc412 (.)

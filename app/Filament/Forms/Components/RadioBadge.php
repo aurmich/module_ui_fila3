@@ -31,6 +31,7 @@ class RadioBadge extends Radio
             return null;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         $enumClass = $this->options;
         
@@ -40,6 +41,10 @@ class RadioBadge extends Radio
         $enumClass = $this->options;
         Assert::isInstanceOf($enumClass, BackedEnum::class);
 >>>>>>> a488b96 (.)
+=======
+        $enumClass = $this->options;
+        Assert::isInstanceOf($enumClass, BackedEnum::class);
+>>>>>>> d3fc412 (.)
         Assert::implementsInterface($enumClass,HasColor::class);
         Assert::implementsInterface($enumClass,HasIcon::class);
         $res = $enumClass::tryFrom($value);

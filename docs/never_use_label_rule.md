@@ -112,7 +112,10 @@ TextColumn::make('status')
 
 ## Checklist Pre-Implementazione
 
+<<<<<<< HEAD
 >>>>>>> 8727c5b (.)
+=======
+>>>>>>> d3fc412 (.)
 ### Prima di usare un componente Filament:
 - [ ] Implementare traduzioni in `lang/it/fields.php`
 - [ ] Implementare traduzioni in `lang/en/fields.php`
@@ -164,9 +167,15 @@ rules:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation-standards.md)
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
+=======
+- [Translation Standards](../../../project_docs/translation-standards.md)
+- [Filament Best Practices](../../../project_docs/filament-best-practices.md)
+- [LangServiceProvider Documentation](../../../project_docs/lang-service-provider.md)
+>>>>>>> d3fc412 (.)
 
 ## Memoria Permanente
 

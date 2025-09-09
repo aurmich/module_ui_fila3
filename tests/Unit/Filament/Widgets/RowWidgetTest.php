@@ -2,11 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 use Modules\UI\Filament\Widgets\RowWidget;
 use Tests\TestCase;
 use Filament\Widgets\Widget;
+=======
+namespace Modules\UI\Tests\Unit\Filament\Widgets\RowWidgetTest;
+
+namespace Modules\UI\Tests\Unit\Filament\Widgets;
+
+use Filament\Widgets\Widget;
+use Modules\UI\Filament\Widgets\RowWidget;
+>>>>>>> d3fc412 (.)
 
 uses(TestCase::class);
 
@@ -33,6 +42,9 @@ test('row widget has proper properties', function () {
 
 test('row widget can render', function () {
     $view = $this->widget->render();
+<<<<<<< HEAD
     
+=======
+>>>>>>> d3fc412 (.)
     expect($view)->toBeInstanceOf(\Illuminate\Contracts\View\View::class);
 });

@@ -141,6 +141,11 @@ class RadioBadge extends Radio
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Filament HasColor Interface](https://filamentphp.com/docs/3.x/support/colors)
 - [Filament HasIcon Interface](https://filamentphp.com/docs/3.x/support/icons)
+=======
+- [Filament HasColor Interface](https://filamentphp.com/project_docs/3.x/support/colors)
+- [Filament HasIcon Interface](https://filamentphp.com/project_docs/3.x/support/icons)
+>>>>>>> d3fc412 (.)
 - [PHPStan Intersection Types](https://phpstan.org/writing-php-code/phpdoc-types#intersection-types) 
