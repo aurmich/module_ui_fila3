@@ -1,23 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-return [
-    'fields' => [
-        'newstate' => [
-            'label' => 'newstate',
-        ],
-        'pack' => [
-            'label' => 'pack',
-            'description' => 'pack',
-            'helper_text' => 'pack',
-            'placeholder' => 'pack',
-        ],
-        'icon' => [
-            'label' => 'icon',
-        ],
-    ],
-];
-=======
 return array (
   'fields' => 
   array (
@@ -38,4 +20,3 @@ return array (
     ),
   ),
 );
->>>>>>> 819632e (.)
