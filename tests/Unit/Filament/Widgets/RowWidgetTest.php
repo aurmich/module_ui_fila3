@@ -3,10 +3,15 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Tests\Unit\Filament\Widgets\RowWidgetTest;
 
 =======
 >>>>>>> 819632e (.)
+=======
+namespace Modules\UI\Tests\Unit\Filament\Widgets\RowWidgetTest;
+
+>>>>>>> e135428 (.)
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 use Filament\Widgets\Widget;

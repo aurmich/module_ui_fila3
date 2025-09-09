@@ -34,12 +34,9 @@ class MockCalendarWidget extends BaseCalendarWidget
     public function getFormSchema(): array
     {
         return [
-            \Filament\Forms\Components\TextInput::make('title')
-                ->required(),
-            \Filament\Forms\Components\DateTimePicker::make('start')
-                ->required(),
-            \Filament\Forms\Components\DateTimePicker::make('end')
-                ->required(),
+            \Filament\Forms\Components\TextInput::make('title')->required(),
+            \Filament\Forms\Components\DateTimePicker::make('start')->required(),
+            \Filament\Forms\Components\DateTimePicker::make('end')->required(),
         ];
     }
 }
@@ -424,7 +421,6 @@ describe('BaseCalendarWidget Performance', function () {
 
             public function fetchEvents(array $fetchInfo): array
             {
-                // Simulate complex query
                 $events = [];
                 $start = new DateTime($fetchInfo['start']);
                 $end = new DateTime($fetchInfo['end']);
@@ -453,7 +449,7 @@ describe('BaseCalendarWidget Performance', function () {
 
         $fetchInfo = [
             'start' => '2025-01-01T00:00:00',
-            'end' => '2025-12-31T23:59:59', // Full year
+            'end' => '2025-12-31T23:59:59',
         ];
 
         $startTime = microtime(true);
@@ -532,3 +528,4 @@ describe('BaseCalendarWidget Integration', function () {
         expect($events2)->toHaveCount(2);
     });
 });
+

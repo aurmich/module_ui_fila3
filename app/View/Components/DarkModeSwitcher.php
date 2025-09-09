@@ -11,6 +11,7 @@ use Modules\UI\Filament\Widgets\DarkModeSwitcherWidget;
 /**
  * Componente Blade per il Dark Mode Switcher.
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * Wrappa il DarkModeSwitcherWidget per l'uso nei temi tramite sintassi Blade.
 =======
@@ -19,6 +20,10 @@ use Modules\UI\Filament\Widgets\DarkModeSwitcherWidget;
  * 
  * @package Modules\UI\View\Components
 >>>>>>> 819632e (.)
+=======
+ *
+ * Wrappa il DarkModeSwitcherWidget per l'uso nei temi tramite sintassi Blade.
+>>>>>>> e135428 (.)
  */
 class DarkModeSwitcher extends Component
 {
@@ -33,10 +38,14 @@ class DarkModeSwitcher extends Component
     public function __construct()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->widget = new DarkModeSwitcherWidget;
 =======
         $this->widget = new DarkModeSwitcherWidget();
 >>>>>>> 819632e (.)
+=======
+        $this->widget = new DarkModeSwitcherWidget;
+>>>>>>> e135428 (.)
     }
 
     /**

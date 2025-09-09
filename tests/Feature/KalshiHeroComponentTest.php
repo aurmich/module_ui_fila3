@@ -3,12 +3,18 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e135428 (.)
 namespace Modules\UI\Tests\Feature\KalshiHeroComponentTest;
 
 namespace Modules\UI\Tests\Feature;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\View;
 =======
+=======
+>>>>>>> e135428 (.)
 use Illuminate\Support\Facades\View;
 use Tests\TestCase;
 >>>>>>> 819632e (.)

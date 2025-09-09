@@ -3,10 +3,15 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Tests\Unit\Enums\TableLayoutEnumTest;
 
 =======
 >>>>>>> 819632e (.)
+=======
+namespace Modules\UI\Tests\Unit\Enums\TableLayoutEnumTest;
+
+>>>>>>> e135428 (.)
 namespace Modules\UI\Tests\Unit\Enums;
 
 use Filament\Tables\Columns\Layout\Stack;

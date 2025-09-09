@@ -149,10 +149,14 @@
 
 ### Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel Blade](https://laravel.com/project_docs/12.x/blade)
 =======
 - [Laravel Blade](https://laravel.com/docs/12.x/blade)
 >>>>>>> 819632e (.)
+=======
+- [Laravel Blade](https://laravel.com/project_docs/12.x/blade)
+>>>>>>> e135428 (.)
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Livewire Documentation](https://livewire.laravel.com/docs)
 
@@ -182,6 +186,7 @@
 - [Architettura](./ARCHITECTURE.md)
 
 ## Collegamenti tra versioni di roadmap.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 * [roadmap.md](bashscripts/project_docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
@@ -217,6 +222,24 @@
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
 >>>>>>> 819632e (.)
+=======
+* [roadmap.md](bashscripts/project_docs/roadmap.md)
+* [roadmap.md](docs/roadmap.md)
+* [roadmap.md](../../../Gdpr/project_docs/roadmap.md)
+* [roadmap.md](../../../Notify/project_docs/roadmap.md)
+* [roadmap.md](../../../Xot/project_docs/roadmap.md)
+* [roadmap.md](../../../Dental/project_docs/roadmap.md)
+* [roadmap.md](../../../User/project_docs/roadmap.md)
+* [roadmap.md](../../../UI/project_docs/roadmap.md)
+* [roadmap.md](../../../Lang/project_docs/roadmap.md)
+* [roadmap.md](../../../Job/project_docs/roadmap.md)
+* [roadmap.md](../../../Media/project_docs/roadmap.md)
+* [roadmap.md](../../../Tenant/project_docs/roadmap.md)
+* [roadmap.md](../../../Activity/project_docs/roadmap.md)
+* [roadmap.md](../../../Patient/project_docs/roadmap.md)
+* [roadmap.md](../../../Cms/project_docs/roadmap.md)
+* [roadmap.md](../../../../Themes/One/project_docs/roadmap.md)
+>>>>>>> e135428 (.)
 
 
 ---

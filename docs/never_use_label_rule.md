@@ -176,6 +176,7 @@ rules:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Standards](../../../project_docs/translation-standards.md)
 - [Filament Best Practices](../../../project_docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../project_docs/lang-service-provider.md)
@@ -184,6 +185,11 @@ rules:
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
 >>>>>>> 819632e (.)
+=======
+- [Translation Standards](../../../project_docs/translation-standards.md)
+- [Filament Best Practices](../../../project_docs/filament-best-practices.md)
+- [LangServiceProvider Documentation](../../../project_docs/lang-service-provider.md)
+>>>>>>> e135428 (.)
 
 ## Memoria Permanente
 

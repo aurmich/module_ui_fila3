@@ -3,12 +3,17 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Tests\Unit\Filament\Widgets\StatWithIconWidgetTest;
 
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 
 =======
+=======
+namespace Modules\UI\Tests\Unit\Filament\Widgets\StatWithIconWidgetTest;
+
+>>>>>>> e135428 (.)
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 use Filament\Widgets\Widget;

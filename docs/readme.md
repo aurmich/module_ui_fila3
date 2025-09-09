@@ -10,9 +10,12 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - Componenti calendario
 - Utility di interfaccia
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
 >>>>>>> 819632e (.)
+=======
+>>>>>>> e135428 (.)
 
 ## File di Traduzione
 
@@ -22,13 +25,17 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - `user_calendar.php` - Traduzioni per il calendario utente
 - `components.php` - Traduzioni per i componenti UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
 >>>>>>> 819632e (.)
+=======
+>>>>>>> e135428 (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
 - [Fix Traduzioni Opening Hours](opening_hours_translation_improvement.md) - Miglioramento traduzioni orari
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
@@ -146,4 +153,6 @@ class ListUsers extends ListRecords
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
 >>>>>>> 819632e (.)
+=======
+>>>>>>> e135428 (.)
 *Ultimo aggiornamento: gennaio 2025* 
