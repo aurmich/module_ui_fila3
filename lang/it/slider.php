@@ -19,6 +19,7 @@ return array (
       'label' => 'view',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'view',
       'helper_text' => 'view',
@@ -26,6 +27,8 @@ return array (
 >>>>>>> bddd5ac (.)
 =======
 >>>>>>> 013b5e1 (.)
+=======
+>>>>>>> a488b96 (.)
     ),
   ),
 );
