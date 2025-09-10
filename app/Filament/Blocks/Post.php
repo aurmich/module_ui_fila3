@@ -2,9 +2,15 @@
 
 namespace Modules\UI\Filament\Blocks;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
+=======
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\TextInput;
+>>>>>>> d635998 (.)
 
 final class Post extends \Modules\Xot\Filament\Blocks\XotBaseBlock
 {
@@ -32,4 +38,8 @@ final class Post extends \Modules\Xot\Filament\Blocks\XotBaseBlock
     {
         return __('ui::blocks.post.title');
     }
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> d635998 (.)

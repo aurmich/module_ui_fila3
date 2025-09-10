@@ -6,6 +6,7 @@ namespace Modules\UI\Filament\Forms\Components;
 
 use Carbon\Carbon;
 use Filament\Forms\Components\Field;
+<<<<<<< HEAD
 use Filament\Forms\Components\TimePicker;
 use Filament\Forms\Components\Placeholder;
 use Modules\UI\Actions\Datetime\GetDaysMappingAction;
@@ -14,6 +15,13 @@ use Modules\UI\Actions\Datetime\GetDaysMappingAction;
 /**
  * --
  */
+=======
+use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\TimePicker;
+
+// use Squire\Models\Country;
+
+>>>>>>> d635998 (.)
 class OpeningHoursField extends Field
 {
     /**
@@ -24,6 +32,7 @@ class OpeningHoursField extends Field
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
         $days = app(GetDaysMappingAction::class)->execute();
 
         $schema = [];
@@ -102,5 +111,63 @@ class OpeningHoursField extends Field
             new \Modules\UI\Rules\OpeningHoursRule(),
 
         ]);
+=======
+
+        $days = collect([
+            Carbon::MONDAY,
+            Carbon::TUESDAY,
+            Carbon::WEDNESDAY,
+            Carbon::THURSDAY,
+            Carbon::FRIDAY,
+            Carbon::SATURDAY,
+        ])->mapWithKeys(function ($day) {
+            /** @phpstan-ignore method.nonObject */
+            $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
+            /** @phpstan-ignore method.nonObject */
+            $dayLabel = ucfirst(Carbon::create()->startOfWeek()->addDays($day - 1)->isoFormat('dddd'));
+
+            return [$dayKey => $dayLabel];
+        });
+
+        $schema = [];
+
+        foreach ($days as $dayKey => $dayLabel) {
+            $schema[] = Placeholder::make($dayKey.'_label')
+                ->label('')
+                ->content($dayLabel)
+                ->extraAttributes(['class' => 'font-medium text-gray-900 dark:text-gray-100 text-center py-2'])
+                ->columnSpan(1);
+
+            $schema[] = TimePicker::make("$dayKey.morning_from")
+                ->placeholder('08:00')
+                ->seconds(false)
+                ->minutesStep(15)
+                ->nullable()
+                ->live();
+
+            $schema[] = TimePicker::make("$dayKey.morning_to")
+                ->placeholder('12:30')
+                ->seconds(false)
+                ->minutesStep(15)
+                ->nullable()
+                ->live();
+
+            $schema[] = TimePicker::make("$dayKey.afternoon_from")
+                ->placeholder('15:00')
+                ->seconds(false)
+                ->minutesStep(15)
+                ->nullable()
+                ->live();
+
+            $schema[] = TimePicker::make("$dayKey.afternoon_to")
+                ->placeholder('19:00')
+                ->seconds(false)
+                ->minutesStep(15)
+                ->nullable()
+                ->live();
+        }
+
+        $this->schema($schema)->columns(5);
+>>>>>>> d635998 (.)
     }
 }

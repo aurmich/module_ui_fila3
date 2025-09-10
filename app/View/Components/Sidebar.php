@@ -14,8 +14,12 @@ class Sidebar extends Component
     public function __construct(
         public Collection $collection,
         // public string $tpl = 'v1'
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> d635998 (.)
 
     /**
      * Get the view / contents that represent the component.

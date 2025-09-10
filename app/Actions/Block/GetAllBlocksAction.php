@@ -9,13 +9,21 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\GetClassNameByPathAction;
 use Modules\Xot\Datas\ComponentFileData;
+<<<<<<< HEAD
 
 use function Safe\realpath;
 
+=======
+>>>>>>> d635998 (.)
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+=======
+use function Safe\realpath;
+
+>>>>>>> d635998 (.)
 class GetAllBlocksAction
 {
     use QueueableAction;

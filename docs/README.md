@@ -167,11 +167,14 @@ php artisan ui:test-components
 - [Architecture Rules](architecture_rules.md) - Regole architetturali
 - [Best Practices](best-practices.md) - Linee guida sviluppo
 
+<<<<<<< HEAD
 ### 🔗 **Collegamenti Moduli**
 - **[Xot Module](../Xot/docs/README.md)** - Framework core e convenzioni
 - **[User Module](../User/docs/README.md)** - Gestione utenti e autenticazione
 - **[Lang Module](../Lang/docs/README.md)** - Gestione traduzioni
 
+=======
+>>>>>>> d635998 (.)
 ### 🧩 **Componenti**
 - [Blade Components](blade-components.md) - Componenti Blade riutilizzabili
 - [Form Components](form-components.md) - Componenti form avanzati

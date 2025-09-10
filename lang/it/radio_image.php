@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -9,3 +10,12 @@ return array (
     ),
   ),
 );
+=======
+return [
+    'fields' => [
+        'view' => [
+            'label' => 'view',
+        ],
+    ],
+];
+>>>>>>> d635998 (.)

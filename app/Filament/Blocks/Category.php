@@ -32,4 +32,8 @@ final class Category extends XotBaseBlock
     {
         return __('ui::blocks.category.title');
     }
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> d635998 (.)

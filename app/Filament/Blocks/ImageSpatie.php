@@ -59,6 +59,10 @@ class ImageSpatie
 
                 TextInput::make('caption'),
             ])
+<<<<<<< HEAD
             ->columns('form' === $context ? 2 : 1);
+=======
+            ->columns($context === 'form' ? 2 : 1);
+>>>>>>> d635998 (.)
     }
 }

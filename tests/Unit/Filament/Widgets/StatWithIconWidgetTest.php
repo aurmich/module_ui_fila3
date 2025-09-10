@@ -6,7 +6,10 @@ namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 use Filament\Widgets\Widget;
 use Modules\UI\Filament\Widgets\StatWithIconWidget;
+<<<<<<< HEAD
 use Tests\TestCase;
+=======
+>>>>>>> d635998 (.)
 
 uses(TestCase::class);
 

@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\UI\Tests\Feature;
+
+>>>>>>> d635998 (.)
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
 use Modules\UI\Models\Asset;

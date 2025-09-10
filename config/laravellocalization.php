@@ -14,14 +14,23 @@ return [
             'name' => 'Italiano',
             'script' => 'Latn',
             'native' => 'Italiano',
+<<<<<<< HEAD
             'regional' => 'it_IT'
+=======
+            'regional' => 'it_IT',
+>>>>>>> d635998 (.)
         ],
         'en' => [
             'name' => 'English',
             'script' => 'Latn',
             'native' => 'English',
+<<<<<<< HEAD
             'regional' => 'en_GB'
         ]
+=======
+            'regional' => 'en_GB',
+        ],
+>>>>>>> d635998 (.)
     ],
 
     /*

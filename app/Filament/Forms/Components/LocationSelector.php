@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Forms\Components;
 
+<<<<<<< HEAD
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Modules\Geo\Models\Comune;
@@ -16,12 +17,28 @@ use Illuminate\Contracts\Support\Htmlable;
 /**
  * LocationSelector Component - Selezione geografica gerarchica
  * 
+=======
+use Filament\Forms\Components\Component;
+use Filament\Forms\Components\Group;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
+use Illuminate\Support\Facades\Log;
+use Modules\Geo\Models\Comune;
+
+/**
+ * LocationSelector Component - Selezione geografica gerarchica
+ *
+>>>>>>> d635998 (.)
  * Componente Filament per la selezione gerarchica di:
  * - Regione
  * - Provincia (dipendente da regione)
  * - CAP (dipendente da regione e provincia)
+<<<<<<< HEAD
  * 
  * @package Modules\UI\Filament\Forms\Components
+=======
+>>>>>>> d635998 (.)
  */
 class LocationSelector extends Group
 {
@@ -70,7 +87,11 @@ class LocationSelector extends Group
         // Imposta le label di default se non personalizzate
         $this->labels = array_merge([
             'region' => 'ui::location_selector.region.label',
+<<<<<<< HEAD
             'province' => 'ui::location_selector.province.label', 
+=======
+            'province' => 'ui::location_selector.province.label',
+>>>>>>> d635998 (.)
             'cap' => 'ui::location_selector.cap.label',
         ], $this->labels);
 
@@ -91,6 +112,10 @@ class LocationSelector extends Group
     public function regionField(string $fieldName): static
     {
         $this->regionFieldName = $fieldName;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
         return $this;
     }
 
@@ -100,6 +125,10 @@ class LocationSelector extends Group
     public function provinceField(string $fieldName): static
     {
         $this->provinceFieldName = $fieldName;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
         return $this;
     }
 
@@ -109,6 +138,10 @@ class LocationSelector extends Group
     public function capField(string $fieldName): static
     {
         $this->capFieldName = $fieldName;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
         return $this;
     }
 
@@ -118,6 +151,10 @@ class LocationSelector extends Group
     public function required(bool $condition = true): static
     {
         $this->required = $condition;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
         return $this;
     }
 
@@ -127,34 +164,60 @@ class LocationSelector extends Group
     public function searchable(bool $condition = true): static
     {
         $this->searchable = $condition;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
         return $this;
     }
 
     /**
      * Imposta label personalizzate.
+<<<<<<< HEAD
      * 
      * @param array<string, string> $labels
+=======
+     *
+     * @param  array<string, string>  $labels
+>>>>>>> d635998 (.)
      */
     public function labels(array $labels): static
     {
         $this->labels = array_merge($this->labels, $labels);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
         return $this;
     }
 
     /**
      * Imposta placeholder personalizzati.
+<<<<<<< HEAD
      * 
      * @param array<string, string> $placeholders
+=======
+     *
+     * @param  array<string, string>  $placeholders
+>>>>>>> d635998 (.)
      */
     public function placeholders(array $placeholders): static
     {
         $this->placeholders = array_merge($this->placeholders, $placeholders);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
         return $this;
     }
 
     /**
      * Genera lo schema dei componenti figlio.
+<<<<<<< HEAD
      * 
+=======
+     *
+>>>>>>> d635998 (.)
      * @return array<Component>
      */
     protected function getChildComponentsSchema(): array
@@ -174,7 +237,11 @@ class LocationSelector extends Group
                     $set($this->capFieldName, null);
                 })
                 ->helperText(__('ui::location_selector.region.help')
+<<<<<<< HEAD
             ),
+=======
+                ),
+>>>>>>> d635998 (.)
 
             // Campo Provincia
             Select::make($this->provinceFieldName)
@@ -182,18 +249,30 @@ class LocationSelector extends Group
                 ->placeholder($this->placeholders['province'])
                 ->options(function (Get $get): array {
                     $region = $get($this->regionFieldName);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
                     return is_string($region) ? $this->getProvinceOptions($region) : [];
                 })
                 ->searchable($this->searchable)
                 ->required($this->required)
                 ->live()
+<<<<<<< HEAD
                 ->disabled(fn (Get $get): bool => !$get($this->regionFieldName))
+=======
+                ->disabled(fn (Get $get): bool => ! $get($this->regionFieldName))
+>>>>>>> d635998 (.)
                 ->afterStateUpdated(function (Set $set) {
                     // Reset cap quando cambia la provincia
                     $set($this->capFieldName, null);
                 })
                 ->helperText(__('ui::location_selector.province.help')
+<<<<<<< HEAD
             ),
+=======
+                ),
+>>>>>>> d635998 (.)
 
             // Campo CAP
             Select::make($this->capFieldName)
@@ -202,19 +281,33 @@ class LocationSelector extends Group
                 ->options(function (Get $get): array {
                     $region = $get($this->regionFieldName);
                     $province = $get($this->provinceFieldName);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d635998 (.)
                     return (is_string($region) && is_string($province)) ? $this->getCapOptions($region, $province) : [];
                 })
                 ->searchable($this->searchable)
                 ->required($this->required)
+<<<<<<< HEAD
                 ->disabled(fn (Get $get): bool => !$get($this->regionFieldName) || !$get($this->provinceFieldName))
                 ->helperText(__('ui::location_selector.cap.help')
             ),
+=======
+                ->disabled(fn (Get $get): bool => ! $get($this->regionFieldName) || ! $get($this->provinceFieldName))
+                ->helperText(__('ui::location_selector.cap.help')
+                ),
+>>>>>>> d635998 (.)
         ];
     }
 
     /**
      * Ottiene le opzioni per il campo regione.
+<<<<<<< HEAD
      * 
+=======
+     *
+>>>>>>> d635998 (.)
      * @return array<string, string>
      */
     protected function getRegionOptions(): array
@@ -232,15 +325,24 @@ class LocationSelector extends Group
             Log::error('LocationSelector: Errore nel caricamento regioni', [
                 'error' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> d635998 (.)
             return [];
         }
     }
 
     /**
      * Ottiene le opzioni per il campo provincia basate sulla regione.
+<<<<<<< HEAD
      * 
      * @param string $region Codice regione
+=======
+     *
+     * @param  string  $region  Codice regione
+>>>>>>> d635998 (.)
      * @return array<string, string>
      */
     protected function getProvinceOptions(string $region): array
@@ -260,16 +362,26 @@ class LocationSelector extends Group
                 'region' => $region,
                 'error' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> d635998 (.)
             return [];
         }
     }
 
     /**
      * Ottiene le opzioni per il campo CAP basate su regione e provincia.
+<<<<<<< HEAD
      * 
      * @param string $region Codice regione
      * @param string $province Codice provincia
+=======
+     *
+     * @param  string  $region  Codice regione
+     * @param  string  $province  Codice provincia
+>>>>>>> d635998 (.)
      * @return array<string, string>
      */
     protected function getCapOptions(string $region, string $province): array
@@ -291,7 +403,11 @@ class LocationSelector extends Group
                 'province' => $province,
                 'error' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> d635998 (.)
             return [];
         }
     }
@@ -306,13 +422,21 @@ class LocationSelector extends Group
 
         // Verifica che se è selezionata una provincia, sia selezionata anche la regione
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
+<<<<<<< HEAD
         if (!empty($state[$this->provinceFieldName]) && empty($state[$this->regionFieldName])) {
+=======
+        if (! empty($state[$this->provinceFieldName]) && empty($state[$this->regionFieldName])) {
+>>>>>>> d635998 (.)
             $errors[] = __('ui::location_selector.validation.region_required_for_province');
         }
 
         // Verifica che se è selezionato un CAP, siano selezionate regione e provincia
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
+<<<<<<< HEAD
         if (!empty($state[$this->capFieldName]) && (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
+=======
+        if (! empty($state[$this->capFieldName]) && (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
+>>>>>>> d635998 (.)
             $errors[] = __('ui::location_selector.validation.region_province_required_for_cap');
         }
 
@@ -321,7 +445,11 @@ class LocationSelector extends Group
 
     /**
      * Ottiene i dati geografici completi basati sulla selezione corrente.
+<<<<<<< HEAD
      * 
+=======
+     *
+>>>>>>> d635998 (.)
      * @return array<string, mixed>|null
      */
     public function getGeographicData(): ?array
@@ -337,18 +465,30 @@ class LocationSelector extends Group
                 ->where('regione->codice', $state[$this->regionFieldName]);
 
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
+<<<<<<< HEAD
             if (!empty($state[$this->provinceFieldName])) {
+=======
+            if (! empty($state[$this->provinceFieldName])) {
+>>>>>>> d635998 (.)
                 $query->where('provincia->codice', $state[$this->provinceFieldName]);
             }
 
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
+<<<<<<< HEAD
             if (!empty($state[$this->capFieldName])) {
+=======
+            if (! empty($state[$this->capFieldName])) {
+>>>>>>> d635998 (.)
                 $query->where('cap->0', $state[$this->capFieldName]);
             }
 
             $comune = $query->first();
 
+<<<<<<< HEAD
             if (!$comune) {
+=======
+            if (! $comune) {
+>>>>>>> d635998 (.)
                 return null;
             }
 
@@ -371,8 +511,16 @@ class LocationSelector extends Group
                 'state' => $state,
                 'error' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
             
             return null;
         }
     }
 } 
+=======
+
+            return null;
+        }
+    }
+}
+>>>>>>> d635998 (.)

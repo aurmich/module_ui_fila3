@@ -29,6 +29,7 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
+<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
@@ -39,6 +40,18 @@ class AddressField extends Forms\Components\Field
                     }
                 }
             //}
+=======
+
+            // if ($record && method_exists($record, 'getRelationValue')) {
+            $relationship = $this->getRelationship();
+            if ($relationship && $record?->relationLoaded($relationship)) {
+                $address = $record->getRelationValue($relationship);
+                if ($address !== null && is_object($address) && method_exists($address, 'toArray')) {
+                    $data = $address->toArray();
+                }
+            }
+            // }
+>>>>>>> d635998 (.)
         });
 
         $this->dehydrated(false);
@@ -57,7 +70,11 @@ class AddressField extends Forms\Components\Field
         $record = $this->getRecord();
         $relationship = $record->{$this->getRelationship()}();
 
+<<<<<<< HEAD
         if (null === $relationship) {
+=======
+        if ($relationship === null) {
+>>>>>>> d635998 (.)
             return;
         }
         if ($address = $relationship->first()) {

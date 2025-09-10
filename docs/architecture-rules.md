@@ -145,7 +145,11 @@ class CustomMiddleware
 }
 
 // Non hardcodare percorsi delle risorse
+<<<<<<< HEAD
 <img src="/var/www/html/_bases/base_techplanner_fila3_mono/laravel/public/images/avatar.png">
+=======
+<img src="/var/www/html/saluteora/laravel/public/images/avatar.png">
+>>>>>>> d635998 (.)
 
 // Non duplicare la registrazione dei componenti
 Blade::component('ui::components.icon', 'ui.icon');

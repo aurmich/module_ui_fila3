@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -19,3 +20,21 @@ return array (
     ),
   ),
 );
+=======
+return [
+    'fields' => [
+        'level' => [
+            'label' => 'level',
+            'description' => 'level',
+            'helper_text' => 'level',
+            'placeholder' => 'level',
+        ],
+        'content' => [
+            'label' => 'content',
+            'description' => 'content',
+            'helper_text' => 'content',
+            'placeholder' => 'content',
+        ],
+    ],
+];
+>>>>>>> d635998 (.)

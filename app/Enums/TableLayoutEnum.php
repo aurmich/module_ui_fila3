@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
+=======
+use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasIcon;
+>>>>>>> d635998 (.)
 use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Filament\Traits\TransTrait;
 
@@ -21,7 +26,11 @@ use Modules\Xot\Filament\Traits\TransTrait;
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> d635998 (.)
     case LIST = 'list';
     case GRID = 'grid';
 
@@ -70,12 +79,20 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 
     public function isGridLayout(): bool
     {
+<<<<<<< HEAD
         return self::GRID === $this;
+=======
+        return $this === self::GRID;
+>>>>>>> d635998 (.)
     }
 
     public function isListLayout(): bool
     {
+<<<<<<< HEAD
         return self::LIST === $this;
+=======
+        return $this === self::LIST;
+>>>>>>> d635998 (.)
     }
 
     /**
@@ -105,9 +122,14 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
      * This method replaces the old debug_backtrace approach with explicit
      * parameter passing for better type safety and testability.
      *
+<<<<<<< HEAD
      * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $listColumns Columns for list layout
      * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $gridColumns Columns for grid layout
      *
+=======
+     * @param  array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>  $listColumns  Columns for list layout
+     * @param  array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>  $gridColumns  Columns for grid layout
+>>>>>>> d635998 (.)
      * @return array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
      */
     public function getTableColumns(array $listColumns, array $gridColumns): array

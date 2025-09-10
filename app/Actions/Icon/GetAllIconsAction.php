@@ -20,7 +20,11 @@ class GetAllIconsAction
     public function execute(string $context = 'form')
     {
         $iconsFactory = App::make(IconFactory::class);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> d635998 (.)
         // Uso reflection per accedere alle icone in modo sicuro
         try {
             $reflection = new \ReflectionClass($iconsFactory);
@@ -33,7 +37,11 @@ class GetAllIconsAction
         }
 
         // Verifica che $icons sia un array prima di usare Arr::map()
+<<<<<<< HEAD
         if (!is_array($icons)) {
+=======
+        if (! is_array($icons)) {
+>>>>>>> d635998 (.)
             return [];
         }
 
@@ -44,7 +52,11 @@ class GetAllIconsAction
             foreach ($set['paths'] as $path) {
                 foreach (File::allFiles($path) as $file) {
                     // Simply ignore files that aren't SVGs
+<<<<<<< HEAD
                     if ('svg' !== $file->getExtension()) {
+=======
+                    if ($file->getExtension() !== 'svg') {
+>>>>>>> d635998 (.)
                         continue;
                     }
 

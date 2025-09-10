@@ -2,7 +2,11 @@
 
 ## 📊 Panoramica Generale
 
+<<<<<<< HEAD
 Il modulo UI è il sistema di componenti e interfacce utente condivisi di , fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
+=======
+Il modulo UI è il sistema di componenti e interfacce utente condivisi di SaluteOra, fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
+>>>>>>> d635998 (.)
 
 ## 🏗️ Struttura Modelli e Componenti
 
@@ -229,6 +233,10 @@ Il modulo UI è il sistema di componenti e interfacce utente condivisi di , forn
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 1.0
 **Stato**: In Progress
+<<<<<<< HEAD
 **Responsabile**: Team Sviluppo 
+=======
+**Responsabile**: Team Sviluppo SaluteOra
+>>>>>>> d635998 (.)
 **Prossima Revisione**: Gennaio 2025
 

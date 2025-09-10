@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Struttura Themes e Folio in 
+=======
+# Struttura Themes e Folio in SaluteOra
+>>>>>>> d635998 (.)
 
 ## ⚠️ ATTENZIONE CRITICA
 
@@ -8,7 +12,11 @@
 
 ## Struttura del Progetto
 
+<<<<<<< HEAD
 Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+=======
+Il progetto SaluteOra utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+>>>>>>> d635998 (.)
 
 ```
 /laravel/

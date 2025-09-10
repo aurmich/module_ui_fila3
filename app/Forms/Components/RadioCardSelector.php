@@ -4,12 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\UI\Forms\Components;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Field;
 use Closure;
 
 /**
  * Radio Card Selector Component
  * 
+=======
+use Closure;
+use Filament\Forms\Components\Field;
+
+/**
+ * Radio Card Selector Component
+ *
+>>>>>>> d635998 (.)
  * Componente riutilizzabile per selezione tramite card radio.
  * Popola automaticamente un TextInput con il nome dell'elemento selezionato.
  */
@@ -22,6 +31,7 @@ class RadioCardSelector extends Field
      */
     protected array|Closure $cards = [];
 
+<<<<<<< HEAD
     /**
      * @var string|null
      */
@@ -45,13 +55,27 @@ class RadioCardSelector extends Field
     /**
      * @var string|null
      */
+=======
+    protected ?string $sectionTitle = null;
+
+    protected ?string $sectionSubtitle = null;
+
+    protected ?string $targetFieldName = null;
+
+    protected ?string $emptyStateTitle = null;
+
+>>>>>>> d635998 (.)
     protected ?string $emptyStateDescription = null;
 
     /**
      * Imposta le card disponibili per la selezione.
      *
+<<<<<<< HEAD
      * @param array<int, array<string, mixed>>|Closure $cards
      * @return static
+=======
+     * @param  array<int, array<string, mixed>>|Closure  $cards
+>>>>>>> d635998 (.)
      */
     public function cards(array|Closure $cards): static
     {
@@ -62,9 +86,12 @@ class RadioCardSelector extends Field
 
     /**
      * Imposta il titolo della sezione.
+<<<<<<< HEAD
      *
      * @param string|null $title
      * @return static
+=======
+>>>>>>> d635998 (.)
      */
     public function sectionTitle(?string $title): static
     {
@@ -75,9 +102,12 @@ class RadioCardSelector extends Field
 
     /**
      * Imposta il sottotitolo della sezione.
+<<<<<<< HEAD
      *
      * @param string|null $subtitle
      * @return static
+=======
+>>>>>>> d635998 (.)
      */
     public function sectionSubtitle(?string $subtitle): static
     {
@@ -88,9 +118,12 @@ class RadioCardSelector extends Field
 
     /**
      * Campo da popolare quando si seleziona una card.
+<<<<<<< HEAD
      *
      * @param string $fieldName
      * @return static
+=======
+>>>>>>> d635998 (.)
      */
     public function populatesField(string $fieldName): static
     {
@@ -101,9 +134,12 @@ class RadioCardSelector extends Field
 
     /**
      * Imposta il titolo dello stato vuoto.
+<<<<<<< HEAD
      *
      * @param string|null $title
      * @return static
+=======
+>>>>>>> d635998 (.)
      */
     public function emptyStateTitle(?string $title): static
     {
@@ -114,9 +150,12 @@ class RadioCardSelector extends Field
 
     /**
      * Imposta la descrizione dello stato vuoto.
+<<<<<<< HEAD
      *
      * @param string|null $description
      * @return static
+=======
+>>>>>>> d635998 (.)
      */
     public function emptyStateDescription(?string $description): static
     {
@@ -127,20 +166,30 @@ class RadioCardSelector extends Field
 
     /**
      * Ottiene le card per la visualizzazione.
+<<<<<<< HEAD
      *
      * 
+=======
+>>>>>>> d635998 (.)
      */
     public function getCards(): array
     {
         $result = $this->evaluate($this->cards);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> d635998 (.)
         return is_array($result) ? $result : [];
     }
 
     /**
      * Ottiene il titolo della sezione.
+<<<<<<< HEAD
      *
      * @return string|null
+=======
+>>>>>>> d635998 (.)
      */
     public function getSectionTitle(): ?string
     {
@@ -149,8 +198,11 @@ class RadioCardSelector extends Field
 
     /**
      * Ottiene il sottotitolo della sezione.
+<<<<<<< HEAD
      *
      * @return string|null
+=======
+>>>>>>> d635998 (.)
      */
     public function getSectionSubtitle(): ?string
     {
@@ -159,8 +211,11 @@ class RadioCardSelector extends Field
 
     /**
      * Ottiene il nome del campo target.
+<<<<<<< HEAD
      *
      * @return string|null
+=======
+>>>>>>> d635998 (.)
      */
     public function getTargetFieldName(): ?string
     {
@@ -169,8 +224,11 @@ class RadioCardSelector extends Field
 
     /**
      * Ottiene il titolo dello stato vuoto.
+<<<<<<< HEAD
      *
      * @return string|null
+=======
+>>>>>>> d635998 (.)
      */
     public function getEmptyStateTitle(): ?string
     {
@@ -179,11 +237,18 @@ class RadioCardSelector extends Field
 
     /**
      * Ottiene la descrizione dello stato vuoto.
+<<<<<<< HEAD
      *
      * @return string|null
+=======
+>>>>>>> d635998 (.)
      */
     public function getEmptyStateDescription(): ?string
     {
         return $this->emptyStateDescription;
     }
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> d635998 (.)

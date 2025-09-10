@@ -14,8 +14,12 @@ class WithSidebar extends Component
         // public Post $article,
         // public bool $showAuthor = false,
         public string $tpl = 'v1',
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> d635998 (.)
 
     public function render(): Renderable
     {
