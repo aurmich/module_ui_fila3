@@ -35,11 +35,7 @@ Questo documento descrive l'implementazione di una modale di conferma con textar
 
 ## Documentazione Correlata
 - [SelectStateColumn.md](./SelectStateColumn.md)
-<<<<<<< HEAD
-- [Filament Modals Documentation](https://filamentphp.com/docs/3.x/panels/modals)
-=======
 - [Filament Modals Documentation](https://filamentphp.com/project_docs/3.x/panels/modals)
->>>>>>> eb2d34b (.)
 - [State Management](./state-management.md)
 
 ## Note di Implementazione

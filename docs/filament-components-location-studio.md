@@ -2,11 +2,7 @@
 
 ## Overview
 
-<<<<<<< HEAD
-Questi componenti Filament sono stati creati per supportare la selezione geografica e la gestione degli studi odontoiatrici nel widget `FindDoctorAndAppointmentWidget` del modulo SaluteOra.
-=======
 Questi componenti Filament sono stati creati per supportare la selezione geografica e la gestione degli studi odontoiatrici nel widget `FindDoctorAndAppointmentWidget` del modulo .
->>>>>>> eb2d34b (.)
 
 ## Componenti Implementati
 
@@ -90,7 +86,7 @@ protected function getStudioStepSchema(): array
 {
     return [
         // Titolo step
-        View::make('saluteora::filament.widgets.studio-step-header')
+        View::make('<nome progetto>::filament.widgets.studio-step-header')
             ->viewData([
                 'studiosCount' => $this->getStudiosCount(),
                 'geographicArea' => $this->getGeographicAreaName(),
@@ -98,7 +94,7 @@ protected function getStudioStepSchema(): array
             ->visible(fn (): bool => $this->hasValidGeographicSelection()),
 
         // Pulsanti selezione studio
-        View::make('saluteora::filament.widgets.studio-selector')
+        View::make('<nome progetto>::filament.widgets.studio-selector')
             ->viewData([
                 'studios' => $this->getStudiosForSelectedArea(),
                 'selectedStudio' => $this->data['selected_studio'] ?? null,
@@ -107,8 +103,8 @@ protected function getStudioStepSchema(): array
 
         // TextInput per mostrare studio selezionato
         TextInput::make('selected_studio_name')
-            ->label(__('saluteora::widgets.find_doctor.fields.selected_studio.label'))
-            ->placeholder(__('saluteora::widgets.find_doctor.fields.selected_studio.placeholder'))
+            ->label(__('<nome progetto>::widgets.find_doctor.fields.selected_studio.label'))
+            ->placeholder(__('<nome progetto>::widgets.find_doctor.fields.selected_studio.placeholder'))
             ->readonly()
             ->visible(fn (): bool => !empty($this->data['selected_studio']))
             ->suffixIcon('heroicon-o-check-circle')

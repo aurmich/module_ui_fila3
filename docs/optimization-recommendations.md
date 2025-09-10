@@ -25,7 +25,7 @@
 ### ⚠️ AREE DI MIGLIORAMENTO
 
 #### 1. Riusabilità Path (IMPORTANTE)
-- **115+ occorrenze hardcoded** di "saluteora" in documentazione
+- **115+ occorrenze hardcoded** di "<nome progetto>" in documentazione
 - **Path assoluti** in esempi e guide
 - **Link interni** con riferimenti specifici al progetto
 
@@ -42,7 +42,7 @@
 ```php
 // ❌ PROBLEMI ATTUALI (in documentazione)
 /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-https://api.saluteora.com/
+https://api.<nome progetto>.com/
 
 // ✅ SOLUZIONI
 {{project_path}}/laravel/Modules/UI/
@@ -180,7 +180,7 @@ class ComponentPerformanceMiddleware
 ### Pre-Implementazione
 ```bash
 # Verifica path hardcoded
-grep -r "saluteora" Modules/UI/docs/ --include="*.md" | wc -l
+grep -r "<nome progetto>" Modules/UI/docs/ --include="*.md" | wc -l
 
 # Verifica lunghezza README
 wc -l Modules/UI/docs/README.md

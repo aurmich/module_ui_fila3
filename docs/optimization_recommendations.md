@@ -25,14 +25,14 @@
 ### ⚠️ AREE DI MIGLIORAMENTO
 
 #### 1. Riusabilità Path (IMPORTANTE)
-- **115+ occorrenze hardcoded** di "saluteora" in documentazione
+- **115+ occorrenze hardcoded** di "<nome progetto>" in documentazione
 - **Path assoluti** in esempi e guide
 - **Link interni** con riferimenti specifici al progetto
 
 #### 2. Documentazione Eccessiva
 - **README.md**: 407 righe (troppo denso)
 - **Informazioni duplicate** tra sezioni
-- **Esempi troppo specifici** per SaluteOra
+- **Esempi troppo specifici** per <nome progetto>
 
 ## 🔧 RACCOMANDAZIONI SPECIFICHE
 
@@ -41,8 +41,8 @@
 #### Pattern di Correzione
 ```php
 // ❌ PROBLEMI ATTUALI (in documentazione)
-/var/www/html/saluteora/laravel/Modules/UI/
-https://api.saluteora.com/
+/var/www/html/<nome progetto>/laravel/Modules/UI/
+https://api.<nome progetto>.com/
 
 // ✅ SOLUZIONI
 {{project_path}}/laravel/Modules/UI/
@@ -180,7 +180,7 @@ class ComponentPerformanceMiddleware
 ### Pre-Implementazione
 ```bash
 # Verifica path hardcoded
-grep -r "saluteora" Modules/UI/docs/ --include="*.md" | wc -l
+grep -r "<nome progetto>" Modules/UI/docs/ --include="*.md" | wc -l
 
 # Verifica lunghezza README
 wc -l Modules/UI/docs/README.md
