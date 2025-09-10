@@ -491,10 +491,10 @@ public function downloadDocument(Media $media): Response
 ## 🔗 Collegamenti e Riferimenti
 
 ### **Documentazione Correlata**
-- [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
+- [Spatie Media Library Official Docs](https://spatie.be/project_docs/laravel-medialibrary)
 - [Filament Plugin Documentation](https://filamentphp.com/plugins/filament-spatie-media-library)
 - [UI Components Docs](./filament-components-rules.md)
-- [ Models Architecture](../<nome modulo>/docs/models-architecture.md)
+- [Modulo Generico Models Architecture](../<nome modulo>/docs/models-architecture.md)
 
 ### **Repository e Risorse**
 - [GitHub Filament Plugin](https://github.com/filamentphp/spatie-laravel-media-library-plugin)

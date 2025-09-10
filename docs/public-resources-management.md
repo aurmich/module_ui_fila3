@@ -26,11 +26,7 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 └── laravel/               # Applicazione Laravel (NON contiene file pubblici)
 ```
 
-<<<<<<< HEAD
-> **IMPORTANTE**: MAI utilizzare `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di SaluteOra.
-=======
-> **IMPORTANTE**: MAI utilizzare `/var/www/html/saluteora/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di .
->>>>>>> 1485e9d (.)
+> **IMPORTANTE**: MAI utilizzare `/var/www/html/_bases/base_ptvx_fila3_mono/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di PTVX.
 
 ## Tipi di Risorse
 

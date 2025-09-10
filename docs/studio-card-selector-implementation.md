@@ -178,7 +178,7 @@ return [
 - [Components Overview](./components.md)
 - [Form Components Guide](./form-components.md)
 
-### Modulo 
+### Modulo Generico
 - [Widget Analysis](../<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
 
 ---

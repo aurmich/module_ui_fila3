@@ -494,11 +494,7 @@ public function downloadDocument(Media $media): Response
 - [Spatie Media Library Official Docs](https://spatie.be/project_docs/laravel-medialibrary)
 - [Filament Plugin Documentation](https://filamentphp.com/plugins/filament-spatie-media-library)
 - [UI Components Docs](./filament-components-rules.md)
-<<<<<<< HEAD
-- [SaluteOra Models Architecture](../SaluteOra/project_docs/models-architecture.md)
-=======
-- [ Models Architecture](../<nome modulo>/docs/models-architecture.md)
->>>>>>> 1485e9d (.)
+- [Modulo Generico Models Architecture](../<nome modulo>/docs/models-architecture.md)
 
 ### **Repository e Risorse**
 - [GitHub Filament Plugin](https://github.com/filamentphp/spatie-laravel-media-library-plugin)
