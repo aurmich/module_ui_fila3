@@ -8,7 +8,11 @@ Trovati 1 errori al livello 9.
 
 ## Errori e suggerimenti
 
+<<<<<<< HEAD
 ### File: `/var/www/html/saluteora/laravel/Modules/UI/app/Providers/UIServiceProvider.php`
+=======
+### File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Providers/UIServiceProvider.php`
+>>>>>>> eb2d34b (.)
 
 #### Linea 33: Parameter #2 $path of function module_path expects string, mixed given.
 

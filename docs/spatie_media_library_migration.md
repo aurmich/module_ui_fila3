@@ -74,7 +74,11 @@ FileUpload::make('logo_header') // Metatag
 **SCOPERTA CRUCIALE**: I modelli principali implementano già `HasMedia`!
 
 ```php
+<<<<<<< HEAD
 // BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
+=======
+// BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
+>>>>>>> eb2d34b (.)
 abstract class BaseModel extends Model implements HasMedia
 {
     use InteractsWithMedia;
@@ -219,7 +223,11 @@ class SpatieImageUpload
 #### 3.1 PatientResource - Priorità MASSIMA (Documenti Sensibili)
 
 ```php
+<<<<<<< HEAD
 // Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
+=======
+// Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
+>>>>>>> eb2d34b (.)
 
 // PRIMA (FileUpload standard)
 'health_card' => Forms\Components\FileUpload::make('health_card')
@@ -290,7 +298,11 @@ Schema::table('users', function (Blueprint $table) {
 ### **Media Collections Configuration**
 
 ```php
+<<<<<<< HEAD
 // Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
+=======
+// Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
+>>>>>>> eb2d34b (.)
 
 public function registerMediaCollections(): void
 {
@@ -339,7 +351,11 @@ public function registerMediaConversions(Media $media = null): void
 ### **Accessors per Backward Compatibility**
 
 ```php
+<<<<<<< HEAD
 // Modules/SaluteOra/app/Models/User.php - Accessors di transizione
+=======
+// Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
+>>>>>>> eb2d34b (.)
 
 /**
  * Accessor per compatibilità con codice esistente.
@@ -494,7 +510,11 @@ public function downloadDocument(Media $media): Response
 - [Spatie Media Library Official Docs](https://spatie.be/project_docs/laravel-medialibrary)
 - [Filament Plugin Documentation](https://filamentphp.com/plugins/filament-spatie-media-library)
 - [UI Components Docs](./filament-components-rules.md)
+<<<<<<< HEAD
 - [SaluteOra Models Architecture](../SaluteOra/project_docs/models-architecture.md)
+=======
+- [Modulo Generico Models Architecture](../<nome modulo>/docs/models-architecture.md)
+>>>>>>> eb2d34b (.)
 
 ### **Repository e Risorse**
 - [GitHub Filament Plugin](https://github.com/filamentphp/spatie-laravel-media-library-plugin)
@@ -526,4 +546,8 @@ public function downloadDocument(Media $media): Response
 
 *Ultimo aggiornamento: Dicembre 2024*  
 *Versione: 1.0*  
+<<<<<<< HEAD
 *Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x* 
+=======
+*Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x* 
+>>>>>>> eb2d34b (.)

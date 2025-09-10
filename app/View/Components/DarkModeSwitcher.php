@@ -13,7 +13,12 @@ use Modules\UI\Filament\Widgets\DarkModeSwitcherWidget;
  * 
  * Wrappa il DarkModeSwitcherWidget per l'uso nei temi tramite sintassi Blade.
  * 
+<<<<<<< HEAD
  * @package Modules\UI\View\Components
+=======
+ * @package Modules\UI\View\Components *
+ * Wrappa il DarkModeSwitcherWidget per l'uso nei temi tramite sintassi Blade.
+>>>>>>> eb2d34b (.)
  */
 class DarkModeSwitcher extends Component
 {
@@ -27,7 +32,11 @@ class DarkModeSwitcher extends Component
      */
     public function __construct()
     {
+<<<<<<< HEAD
         $this->widget = new DarkModeSwitcherWidget();
+=======
+        $this->widget = new DarkModeSwitcherWidget();        $this->widget = new DarkModeSwitcherWidget;
+>>>>>>> eb2d34b (.)
     }
 
     /**
@@ -36,12 +45,17 @@ class DarkModeSwitcher extends Component
     public function render(): View
     {
         // Verifica se il widget può essere visualizzato
+<<<<<<< HEAD
         if (!DarkModeSwitcherWidget::canView()) {
+=======
+        if (! DarkModeSwitcherWidget::canView()) {
+>>>>>>> eb2d34b (.)
             /** @var view-string $view */
             $view = 'ui::components.empty';
             return view($view);
         }
 
+<<<<<<< HEAD
         // Ottiene i dati dal widget usando il metodo pubblico getPlaceholderData()
         $viewData = $this->widget->getPlaceholderData();
 
@@ -49,5 +63,13 @@ class DarkModeSwitcher extends Component
         /** @var view-string $view */
         $view = 'ui::filament.widgets.dark-mode-switcher';
         return view($view, $viewData);
+=======
+        // Ottiene i dati pubblici dal widget
+        $viewData = $this->widget->getPublicViewData();
+
+        /** @var view-string $view */
+        $view = 'ui::components.dark-mode-switcher';
+        return \view($view, $viewData);
+>>>>>>> eb2d34b (.)
     }
 }

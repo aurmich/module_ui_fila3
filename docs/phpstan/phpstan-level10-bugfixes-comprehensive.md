@@ -95,7 +95,11 @@ public function getSpecifyDiseases(): array
 
 ### PHPStan Command
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_saluteora/laravel
+=======
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
+>>>>>>> eb2d34b (.)
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G
 ```
 

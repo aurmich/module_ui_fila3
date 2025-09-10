@@ -38,8 +38,13 @@ The `IconStateSplitColumn` is designed to display multiple state transition icon
 
 ```php
 use Modules\UI\Filament\Tables\Columns\IconStateSplitColumn;
+<<<<<<< HEAD
 use Modules\SaluteOra\States\Appointment\AppointmentState;
 use Modules\SaluteOra\Models\Appointment;
+=======
+use Modules\<nome modulo>\States\Appointment\AppointmentState;
+use Modules\<nome modulo>\Models\Appointment;
+>>>>>>> eb2d34b (.)
 
 // In your Filament resource table configuration
 'states' => IconStateSplitColumn::make()

@@ -136,7 +136,11 @@ Forms\Components\TextInput::make('studio_name')
     ->required()
 ```
 
+<<<<<<< HEAD
 ## 🎯 **Caso d'Uso: Studio Selector (SaluteOra)**
+=======
+## 🎯 **Caso d'Uso: Studio Selector ()**
+>>>>>>> eb2d34b (.)
 
 ### Implementazione nel Widget
 ```php
@@ -271,13 +275,21 @@ RadioCardSelector::make('item')
 
 ## 🔗 **Collegamenti**
 
+<<<<<<< HEAD
 - [Widget FindDoctorAndAppointment](../../../../Modules/SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
+- [Widget FindDoctorAndAppointment](../../../../Modules/<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> eb2d34b (.)
 - [Componenti UI Overview](../components.md)
 - [Best Practices Filament](../../../../docs/filament-best-practices.md)
 
 ---
 
+<<<<<<< HEAD
 **Autore**: Implementazione completata per SaluteOra widget
+=======
+**Autore**: Implementazione completata per  widget
+>>>>>>> eb2d34b (.)
 **Ultima modifica**: Gennaio 2025  
 **Versione**: 1.0.0
 **Status**: ✅ Production Ready 
