@@ -2,14 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Illuminate\Support\Facades\View;
 use Tests\TestCase;
-=======
-namespace Modules\UI\Tests\Feature;
-
-use Illuminate\Support\Facades\View;
->>>>>>> d635998 (.)
 
 uses(TestCase::class);
 

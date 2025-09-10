@@ -4,13 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Actions\Table;
 
-<<<<<<< HEAD
 use Modules\UI\Enums\TableLayoutEnum;
 use Illuminate\Support\Facades\Session;
-=======
-use Illuminate\Support\Facades\Session;
-use Modules\UI\Enums\TableLayoutEnum;
->>>>>>> d635998 (.)
 
 /**
  * Trait TableLayoutTrait

@@ -1,11 +1,8 @@
 # PHPStan Level 10 Comprehensive Bugfixes
 
 ## Problema Generale
-<<<<<<< HEAD
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, , UI, Xot.
-=======
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, SaluteOra, UI, Xot.
->>>>>>> d635998 (.)
 
 ## Moduli Interessati e Correzioni
 
@@ -61,11 +58,8 @@ $this->debugResults['file_operations'] = $this->getFileOperationsData();
 'private_key' => self::formatPrivateKey((string) env('CLOUDFRONT_PRIVATE_KEY', '')),
 ```
 
-<<<<<<< HEAD
 ### 🟢 ** Module** - Report Model  
-=======
 ### 🟢 **SaluteOra Module** - Report Model  
->>>>>>> d635998 (.)
 **Stato**: ✅ Corretto
 
 #### Report.php
@@ -96,22 +90,16 @@ public function getSpecifyDiseases(): array
 | UI         | S3Test.php                    | Method not found           | ✅ Fix |
 | UI         | en/s3test.php                 | Duplicate array key        | ✅ Fix |
 | Xot        | GetCloudFrontSignedUrlAction  | Parameter type mismatch    | ✅ Fix |
-<<<<<<< HEAD
 |   | Report.php                    | Missing return type        | ✅ Fix |
-=======
 | SaluteOra  | Report.php                    | Missing return type        | ✅ Fix |
->>>>>>> d635998 (.)
 | SaluteMo   | ListReports.php               | Invalid return type        | ⚠️ TBD |
 
 ## Verifica Post-Correzione
 
 ### PHPStan Command
 ```bash
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
-=======
 cd /var/www/html/_bases/base_saluteora/laravel
->>>>>>> d635998 (.)
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G
 ```
 

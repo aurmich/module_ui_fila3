@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -27,27 +26,3 @@ return array (
     ),
   ),
 );
-=======
-return [
-    'fields' => [
-        'items' => [
-            'label' => 'items',
-            'placeholder' => 'items',
-            'helper_text' => 'items',
-            'description' => 'items',
-        ],
-        'label' => [
-            'label' => 'label',
-            'placeholder' => 'label',
-            'helper_text' => 'label',
-            'description' => 'label',
-        ],
-        'url' => [
-            'label' => 'url',
-            'placeholder' => 'url',
-            'helper_text' => 'url',
-            'description' => 'url',
-        ],
-    ],
-];
->>>>>>> d635998 (.)

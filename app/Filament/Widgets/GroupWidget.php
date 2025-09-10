@@ -12,15 +12,8 @@ class GroupWidget extends XotBaseWidget
 
     protected static ?string $pollingInterval = null;
 
-<<<<<<< HEAD
     public function getFormSchema() :array {
         return [];
     }
 
-=======
-    public function getFormSchema(): array
-    {
-        return [];
-    }
->>>>>>> d635998 (.)
 }

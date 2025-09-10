@@ -15,31 +15,19 @@ return [
                 'label' => 'Destinatario',
                 'placeholder' => 'Inserisci l\'indirizzo email del destinatario',
                 'helper_text' => 'L\'email verrà inviata a questo indirizzo',
-<<<<<<< HEAD
                 'description' => 'Indirizzo email del destinatario'
-=======
-                'description' => 'Indirizzo email del destinatario',
->>>>>>> d635998 (.)
             ],
             'subject' => [
                 'label' => 'Oggetto',
                 'placeholder' => 'Inserisci l\'oggetto dell\'email',
                 'helper_text' => 'L\'oggetto apparirà nella casella di posta del destinatario',
-<<<<<<< HEAD
                 'description' => 'Oggetto dell\'email'
-=======
-                'description' => 'Oggetto dell\'email',
->>>>>>> d635998 (.)
             ],
             'body_html' => [
                 'label' => 'Contenuto',
                 'placeholder' => 'Inserisci il contenuto dell\'email',
                 'helper_text' => 'Il contenuto può includere formattazione HTML',
-<<<<<<< HEAD
                 'description' => 'Contenuto dell\'email'
-=======
-                'description' => 'Contenuto dell\'email',
->>>>>>> d635998 (.)
             ],
         ],
         'actions' => [
@@ -60,8 +48,4 @@ return [
             'email_sent_error' => 'Errore durante l\'invio dell\'email',
         ],
     ],
-<<<<<<< HEAD
 ]; 
-=======
-];
->>>>>>> d635998 (.)

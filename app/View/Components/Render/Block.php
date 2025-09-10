@@ -24,11 +24,7 @@ class Block extends Component
         public string $tpl = '',
     ) {
         $view = Arr::get($this->block, 'data.view', null);
-<<<<<<< HEAD
         if (null == $view) {
-=======
-        if ($view == null) {
->>>>>>> d635998 (.)
             $view = 'ui::empty';
         }
         Assert::string($view);

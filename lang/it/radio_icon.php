@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -10,12 +9,3 @@ return array (
     ),
   ),
 );
-=======
-return [
-    'fields' => [
-        'newstate' => [
-            'label' => 'newstate',
-        ],
-    ],
-];
->>>>>>> d635998 (.)

@@ -6,10 +6,7 @@ namespace Modules\UI\Filament\Actions\Table;
 
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Actions\Action;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Session;
-=======
->>>>>>> d635998 (.)
 use Modules\UI\Enums\TableLayout;
 use Modules\UI\Traits\TableLayoutTrait;
 
@@ -32,21 +29,13 @@ class TableLayoutToggleTableAction extends Action
     }
 
     /**
-<<<<<<< HEAD
      * @param \Filament\Resources\Pages\ListRecords|null $livewire
-=======
-     * @param  \Filament\Resources\Pages\ListRecords|null  $livewire
->>>>>>> d635998 (.)
      */
     protected function toggleLayout($livewire): void
     {
         $currentLayout = $this->getCurrentLayout();
         $newLayout = $currentLayout->toggle();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> d635998 (.)
         $this->setTableLayout($newLayout);
 
         if ($livewire instanceof ListRecords) {

@@ -11,11 +11,7 @@ enum TableLayout: string
 
     public function getLabel(): string
     {
-<<<<<<< HEAD
         return match($this) {
-=======
-        return match ($this) {
->>>>>>> d635998 (.)
             self::LIST => 'List View',
             self::GRID => 'Grid View',
         };
@@ -23,11 +19,7 @@ enum TableLayout: string
 
     public function getColor(): string
     {
-<<<<<<< HEAD
         return match($this) {
-=======
-        return match ($this) {
->>>>>>> d635998 (.)
             self::LIST => 'primary',
             self::GRID => 'secondary',
         };
@@ -35,11 +27,7 @@ enum TableLayout: string
 
     public function getIcon(): string
     {
-<<<<<<< HEAD
         return match($this) {
-=======
-        return match ($this) {
->>>>>>> d635998 (.)
             self::LIST => 'heroicon-o-list-bullet',
             self::GRID => 'heroicon-o-squares-2x2',
         };
@@ -47,11 +35,7 @@ enum TableLayout: string
 
     public function toggle(): self
     {
-<<<<<<< HEAD
         return match($this) {
-=======
-        return match ($this) {
->>>>>>> d635998 (.)
             self::LIST => self::GRID,
             self::GRID => self::LIST,
         };

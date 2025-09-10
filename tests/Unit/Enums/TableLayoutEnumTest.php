@@ -7,10 +7,7 @@ namespace Modules\UI\Tests\Unit\Enums;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
-<<<<<<< HEAD
 use Tests\TestCase;
-=======
->>>>>>> d635998 (.)
 
 class TableLayoutEnumTest extends TestCase
 {

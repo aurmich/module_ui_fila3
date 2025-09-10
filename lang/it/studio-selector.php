@@ -30,8 +30,4 @@ return [
         'selected_studio' => 'Studio selezionato',
         'select_studio' => 'Premi spazio o invio per selezionare questo studio',
     ],
-<<<<<<< HEAD
 ]; 
-=======
-];
->>>>>>> d635998 (.)

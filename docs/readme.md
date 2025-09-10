@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -66,7 +65,6 @@ class UserCalendarWidget extends XotBaseWidget
 ### 📱 **TableLayoutEnum System**
 ```php
 // Sistema layout tabelle responsive
-=======
 # Modulo UI - Documentazione
 
 ## Panoramica
@@ -112,22 +110,17 @@ Action::make('save')
 // ✅ CORRETTO - Implementazione Enum con TransTrait
 use Modules\Xot\Filament\Traits\TransTrait;
 
->>>>>>> d635998 (.)
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
     
-<<<<<<< HEAD
     case LIST = 'list';
     case GRID = 'grid';
     
-=======
->>>>>>> d635998 (.)
     public function getLabel(): string
     {
         return $this->transClass(self::class, $this->value . '.label');
     }
-<<<<<<< HEAD
     
     public function getTableContentGrid(): array
     {
@@ -135,17 +128,14 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
             self::LIST => ['md' => 1],
             self::GRID => ['md' => 2, 'lg' => 3],
         };
-=======
 
     public function getColor(): string
     {
         return $this->transClass(self::class, $this->value . '.color');
->>>>>>> d635998 (.)
     }
 }
 ```
 
-<<<<<<< HEAD
 ## 🎯 **Stato Qualità - Gennaio 2025**
 
 ### ✅ **PHPStan Level 9 Compliance**
@@ -370,7 +360,6 @@ class DataTableComponent extends Component
             'columns' => $this->columns,
             'layout' => $this->layout,
         ]);
-=======
 ### ❌ MAI usa match() per traduzioni negli Enum
 ```php
 // ❌ ERRORE - Non fare mai questo
@@ -434,12 +423,10 @@ class ListUsers extends ListRecords
         return $table
             ->columns($this->getColumnsForLayout())
             ->contentGrid($this->layout->getTableContentGrid());
->>>>>>> d635998 (.)
     }
 }
 ```
 
-<<<<<<< HEAD
 ## 🐛 **Troubleshooting**
 
 ### **Problemi Comuni**
@@ -536,7 +523,6 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
 **🚀 Performance**: 97/100 score 
-=======
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/translation_standards_links.md)
@@ -549,4 +535,3 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
 *Ultimo aggiornamento: gennaio 2025* 
->>>>>>> d635998 (.)

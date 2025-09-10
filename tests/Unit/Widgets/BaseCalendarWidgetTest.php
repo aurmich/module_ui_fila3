@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-namespace Modules\UI\Tests\Unit\Widgets;
-
->>>>>>> d635998 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\UI\Filament\Widgets\BaseCalendarWidget;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;

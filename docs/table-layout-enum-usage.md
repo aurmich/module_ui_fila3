@@ -1,6 +1,5 @@
 # TableLayoutEnum Usage Guide
 
-<<<<<<< HEAD
 ## Nuovo Approccio (Corretto)
 
 Dopo la correzione del problema di visibilità, il metodo `getTableColumns()` ora richiede parametri espliciti invece di usare debug_backtrace.
@@ -9,7 +8,6 @@ Dopo la correzione del problema di visibilità, il metodo `getTableColumns()` or
 
 ```php
 use Modules\UI\Enums\TableLayoutEnum;
-=======
 ## Overview
 
 The `TableLayoutEnum` provides standardized layout options for Filament tables and data grids, allowing users to toggle between list and grid views with appropriate styling and column configurations.
@@ -76,7 +74,6 @@ use Filament\Tables\Table;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Support\Enums\FontWeight;
->>>>>>> d635998 (.)
 
 class ListUsers extends ListRecords
 {
@@ -91,13 +88,11 @@ class ListUsers extends ListRecords
     {
         return $table
             ->columns($this->getColumnsForLayout())
-<<<<<<< HEAD
             ->contentGrid($this->layout->getTableContentGrid());
     }
     
     /**
      * Restituisce le colonne appropriate per il layout corrente
-=======
             ->contentGrid($this->layout->getTableContentGrid())
             ->extraAttributes([
                 'class' => $this->layout->getContainerClasses(),
@@ -106,12 +101,10 @@ class ListUsers extends ListRecords
     
     /**
      * Get appropriate columns for current layout.
->>>>>>> d635998 (.)
      */
     protected function getColumnsForLayout(): array
     {
         $listColumns = [
-<<<<<<< HEAD
             Tables\Columns\TextColumn::make('name'),
             Tables\Columns\TextColumn::make('email'),
             Tables\Columns\TextColumn::make('created_at'),
@@ -123,7 +116,6 @@ class ListUsers extends ListRecords
                     ->weight(FontWeight::Bold),
                 Tables\Columns\TextColumn::make('email'),
             ]),
-=======
             Tables\Columns\TextColumn::make('name')
                 ->searchable()
                 ->sortable(),
@@ -145,39 +137,31 @@ class ListUsers extends ListRecords
                     ->dateTime()
                     ->size('sm'),
             ])->space(2),
->>>>>>> d635998 (.)
         ];
         
         return $this->layout->getTableColumns($listColumns, $gridColumns);
     }
     
     /**
-<<<<<<< HEAD
      * Toggle del layout tramite action
-=======
      * Layout toggle action.
->>>>>>> d635998 (.)
      */
     protected function getHeaderActions(): array
     {
         return [
             Action::make('toggleLayout')
-<<<<<<< HEAD
                 ->icon($this->layout->getIcon())
                 ->action(function () {
                     $this->layout = $this->layout->toggle();
-=======
                 ->action(function () {
                     $this->layout = $this->layout->toggle();
                     $this->resetTable();
->>>>>>> d635998 (.)
                 }),
         ];
     }
 }
 ```
 
-<<<<<<< HEAD
 ### Vantaggi del nuovo approccio:
 
 1. **Type Safety**: Non usa più reflection o debug_backtrace
@@ -190,7 +174,6 @@ class ListUsers extends ListRecords
 Il metodo `getTableColumns()` ora richiede due parametri:
 - `$listColumns`: Array delle colonne per layout lista
 - `$gridColumns`: Array delle colonne per layout griglia 
-=======
 ### Advantages of the New Approach
 
 1. **Type Safety**: No longer uses reflection or debug_backtrace
@@ -301,4 +284,3 @@ $columns = $this->layout->getTableColumns($listColumns, $gridColumns);
 - [Table Components](table-components.md)
 - [HasXotTable Trait](../../Xot/docs/has-xot-table.md)
 - [Root Documentation: UI Components](../../../docs/components/ui-components.md)
->>>>>>> d635998 (.)
