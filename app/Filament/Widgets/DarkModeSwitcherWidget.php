@@ -53,4 +53,16 @@ class DarkModeSwitcherWidget extends XotBaseWidget
             'darkMode' => $this->darkMode,
         ]);
     }
+
+    /**
+     * Ottiene i dati pubblici per la vista.
+     *
+     * @return array<string, mixed>
+     */
+    public function getPublicViewData(): array
+    {
+        return [
+            'darkMode' => $this->darkMode,
+        ];
+    }
 }

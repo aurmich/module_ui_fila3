@@ -7,10 +7,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\SaluteOra\Filament\Forms;
+namespace Modules\<nome modulo>\Filament\Forms;
 
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
-use Modules\SaluteOra\Models\Appointment;
+use Modules\<nome modulo>\Models\Appointment;
 use Carbon\Carbon;
 
 class AppointmentBookingForm

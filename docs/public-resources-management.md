@@ -26,7 +26,11 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 └── laravel/               # Applicazione Laravel (NON contiene file pubblici)
 ```
 
+<<<<<<< HEAD
 > **IMPORTANTE**: MAI utilizzare `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di SaluteOra.
+=======
+> **IMPORTANTE**: MAI utilizzare `/var/www/html/saluteora/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di .
+>>>>>>> 1485e9d (.)
 
 ## Tipi di Risorse
 
@@ -112,7 +116,7 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')) }}">
     <img 
         src="{{ asset('images/logos/saluteora-logo.svg') }}" 
-        alt="SaluteOra" 
+        alt="" 
         class="h-8"
     >
 </a>
@@ -127,4 +131,4 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 
 ## Conclusione
 
-Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto SaluteOra.
+Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto .

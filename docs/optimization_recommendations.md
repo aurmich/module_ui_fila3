@@ -32,7 +32,7 @@
 #### 2. Documentazione Eccessiva
 - **README.md**: 407 righe (troppo denso)
 - **Informazioni duplicate** tra sezioni
-- **Esempi troppo specifici** per SaluteOra
+- **Esempi troppo specifici** per 
 
 ## 🔧 RACCOMANDAZIONI SPECIFICHE
 

@@ -14,14 +14,26 @@ class GetUserDataAction
     {
         $user = Auth::user();
 
+        if (!$user) {
+            return new UserData(
+                id: 0,
+                name: 'Guest',
+                email: '',
+                avatar: null,
+                role: null,
+                permissions: [],
+                settings: []
+            );
+        }
+
         return new UserData(
-            id: $user->id,
-            name: $user->name,
-            email: $user->email,
-            avatar: $user->avatar,
-            role: $user->role,
-            permissions: $user->permissions,
-            settings: $user->settings
+            id: (int) $user->id,
+            name: $user->name ?? '',
+            email: $user->email ?? '',
+            avatar: $user->avatar ?? null,
+            role: $user->role ?? null,
+            permissions: $user->permissions->toArray(),
+            settings: $user->settings ?? []
         );
     }
 } 
