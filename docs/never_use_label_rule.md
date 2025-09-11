@@ -113,7 +113,6 @@ TextColumn::make('status')
 ## Checklist Pre-Implementazione
 
 ### Prima di usare qualsiasi componente Filament:
-<<<<<<< HEAD
 - [ ] Implementare traduzioni in `lang/it/fields.php`
 - [ ] Implementare traduzioni in `lang/en/fields.php`
 - [ ] Implementare traduzioni in `lang/de/fields.php`
@@ -132,8 +131,6 @@ TextColumn::make('status')
 - [ ] Testare che le traduzioni funzionino correttamente
 Prima di usare qualsiasi componente Filament:
 
-=======
->>>>>>> 19c1e3a7 (.)
 - [ ] Implementare traduzioni in `lang/it/fields.php`
 - [ ] Implementare traduzioni in `lang/en/fields.php`
 - [ ] Implementare traduzioni in `lang/de/fields.php`
@@ -187,11 +184,8 @@ rules:
 - MAI usare `->label()` in componenti Filament
 - SEMPRE implementare traduzioni nei file `lang/`
 - SEMPRE struttura espansa (label, placeholder, tooltip, helper_text)
-<<<<<<< HEAD
 - SEMPRE sincronizzare IT/EN/DE
 - SEMPRE testare le traduzioni prima del commit
-=======
->>>>>>> 19c1e3a7 (.)
 - SEMPRE sincronizzare IT/EN/DE
 - SEMPRE testare le traduzioni prima del commit
 

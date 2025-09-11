@@ -61,8 +61,8 @@ Il modulo UI fornisce i seguenti blocchi per la costruzione delle pagine:
    - Supporto multilingua con chiavi per ogni lingua
 
 2. **Rendering**
-   - Il tema One (`/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Themes/One`) gestisce il rendering
-   - Il tema One (`/var/www/html/saluteora/laravel/Themes/One`) gestisce il rendering
+   - Il tema One (`../Themes/One`) gestisce il rendering
+   - Il tema One (`../Themes/One`) gestisce il rendering
    - I componenti sono caricati dinamicamente dal modulo UI
    - Il layout è gestito da `x-layouts.marketing`
 
