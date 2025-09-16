@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies and packages
 /vendor/
 /node_modules/
@@ -61,11 +62,38 @@ Homestead.json
 *.exe
 *:Zone.Identifier
 .DS_Store
+=======
+# Dependencies
+vendor/
+node_modules/
+package-lock.json
+composer.lock
+
+# Build and compiled files
+/build
+cache/
+docs/cache/
+
+# Cache and temporary files
+*.cache
+*.lock
+*.phar
+*.exe
+*:Zone.Identifier
+.php-cs-fixer.cache
+
+# Git related
+.git-rewrite/
+.git-blame-ignore-revs
+
+# Backup files
+>>>>>>> dae2c05 (.)
 *.old
 *.old1
 *.backup
 *.backup.*
 *.bak
+<<<<<<< HEAD
 *.new
 
 # Documentation and cache
@@ -76,3 +104,28 @@ cache/
 # Development tools
 .windsurf/
 .cursor/
+=======
+
+# File di log
+*.log
+
+# PHPStan documentation
+docs/phpstan/
+
+# Old directories
+resources/views/Components_old
+database/Migrations_old
+database/Seeders_old
+database/Factories_old
+database_old
+
+# Other
+-e
+
+# Old directories to ignore
+resources/views/Components_old
+database/Migrations_old
+database/Seeders_old
+database/Factories_old
+database_old
+>>>>>>> dae2c05 (.)
