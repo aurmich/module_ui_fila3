@@ -12,7 +12,11 @@ class Heading
 {
     public static function make(
         string $name = 'heading',
+<<<<<<< HEAD
         string $context = 'form',
+=======
+        string $_context = 'form',
+>>>>>>> 5de0558 (.)
     ): Block {
         return Block::make($name)
             ->schema(

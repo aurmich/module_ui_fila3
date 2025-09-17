@@ -14,6 +14,10 @@ class Navigation extends XotBaseBlock
 {
     
 
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 5de0558 (.)
     public static function getBlockSchema(): array
     {
         return [

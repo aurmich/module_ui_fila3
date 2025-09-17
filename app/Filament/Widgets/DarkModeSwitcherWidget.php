@@ -38,6 +38,10 @@ class DarkModeSwitcherWidget extends XotBaseWidget
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 5de0558 (.)
     public function getFormSchema(): array
     {
         return [];

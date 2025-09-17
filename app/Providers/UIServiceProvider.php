@@ -44,6 +44,10 @@ class UIServiceProvider extends XotBaseServiceProvider
      *
      * @return void
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 5de0558 (.)
     public function boot(): void
     {
         parent::boot();
@@ -59,6 +63,10 @@ class UIServiceProvider extends XotBaseServiceProvider
      *
      * @return void
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 5de0558 (.)
     public function register(): void
     {
         parent::register();

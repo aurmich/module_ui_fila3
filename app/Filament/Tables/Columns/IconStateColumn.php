@@ -18,7 +18,10 @@ use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
 use Spatie\ModelStates\HasStatesContract;
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
+=======
+>>>>>>> 5de0558 (.)
 
 class IconStateColumn extends IconColumn
 {
@@ -80,6 +83,7 @@ class IconStateColumn extends IconColumn
                         : false;
                 }),
             ])
+<<<<<<< HEAD
             ->fillForm(function($record){
                 // Generic state handling - project-specific state classes should be injected
                 return [
@@ -95,6 +99,15 @@ class IconStateColumn extends IconColumn
                     ->title('Stato aggiornato a '.$label)
                     ->success()
                     ->send();
+=======
+            ->fillForm(fn($record)=> [
+                    'state' => $record->state::$name,
+                ])
+            ->action(function($record, $data) {
+                //dddx(['record'=>$record, 'data'=>$data]);
+                $record->state->transitionTo($data['state'],$data['message']);
+
+>>>>>>> 5de0558 (.)
             })
         );
 

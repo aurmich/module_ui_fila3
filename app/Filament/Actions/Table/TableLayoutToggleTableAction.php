@@ -25,7 +25,11 @@ class TableLayoutToggleTableAction extends Action
             ->tooltip($current->getLabel())
             ->color($current->getColor())
             ->icon($current->getIcon())
+<<<<<<< HEAD
             ->action(fn ($livewire) => $this->toggleLayout($livewire));
+=======
+            ->action($this->toggleLayout(...));
+>>>>>>> 5de0558 (.)
     }
 
     /**

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'fields' => 
   array (
@@ -9,10 +10,22 @@ return array (
     ),
     'pack' => 
     array (
+=======
+return  [
+  'fields' => 
+   [
+    'newstate' => 
+     [
+      'label' => 'newstate',
+    ],
+    'pack' => 
+     [
+>>>>>>> 5de0558 (.)
       'label' => 'pack',
       'description' => 'pack',
       'helper_text' => 'pack',
       'placeholder' => 'pack',
+<<<<<<< HEAD
     ),
     'icon' => 
     array (
@@ -20,3 +33,12 @@ return array (
     ),
   ),
 );
+=======
+    ],
+    'icon' => 
+     [
+      'label' => 'icon',
+    ],
+  ],
+];
+>>>>>>> 5de0558 (.)

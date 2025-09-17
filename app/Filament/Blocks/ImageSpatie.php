@@ -25,7 +25,11 @@ class ImageSpatie
 
             ->schema([
                 Hidden::make('img_uuid')
+<<<<<<< HEAD
                     ->default(fn () => Str::uuid()->toString())
+=======
+                    ->default(Str::uuid()->toString(...))
+>>>>>>> 5de0558 (.)
                     ->formatStateUsing(fn ($state) => $state ?? Str::uuid()->toString())
                 // ->live()
                 ,
@@ -46,7 +50,11 @@ class ImageSpatie
                     // ->rules(Rule::dimensions()->maxWidth(600)->maxHeight(800))
                     ->collection(fn (Get $get) => $get('img_uuid'))
                     ->afterStateUpdated(
+<<<<<<< HEAD
                         function (HasForms $livewire, SpatieMediaLibraryFileUpload $component, TemporaryUploadedFile $state, Get $get, HasMedia $record) {
+=======
+                        function (HasForms $_livewire, SpatieMediaLibraryFileUpload $_component, TemporaryUploadedFile $state, Get $get, HasMedia $record) {
+>>>>>>> 5de0558 (.)
                             // Call to an undefined method Filament\Forms\Contracts\HasForms::validateOnly().
                             // $livewire->validateOnly($component->getStatePath());
                             Assert::string($collection_name = $get('img_uuid'), '['.__LINE__.']['.class_basename(__CLASS__).']');
