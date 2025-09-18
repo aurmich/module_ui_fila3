@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE UI - .GITIGNORE
 # ==============================================
@@ -56,6 +57,8 @@ lerna-debug.log*
 =======
 =======
 >>>>>>> 6bc9d1d9 (.)
+=======
+>>>>>>> a04e673e (.)
 # Dependencies and packages
 /vendor/
 /node_modules/
@@ -207,7 +210,10 @@ Homestead.json
 *:Zone.Identifier
 .DS_Store
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a04e673e (.)
 # Dependencies
 vendor/
 node_modules/
@@ -232,7 +238,10 @@ docs/cache/
 .git-blame-ignore-revs
 
 # Backup files
+<<<<<<< HEAD
 >>>>>>> 6bc9d1d9 (.)
+=======
+>>>>>>> a04e673e (.)
 *.old
 *.old1
 *.backup
@@ -249,8 +258,11 @@ cache/
 .windsurf/
 .cursor/
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5de0558 (.)
 =======
+=======
+>>>>>>> a04e673e (.)
 
 # File di log
 *.log
@@ -274,4 +286,7 @@ database/Migrations_old
 database/Seeders_old
 database/Factories_old
 database_old
+<<<<<<< HEAD
 >>>>>>> 6bc9d1d9 (.)
+=======
+>>>>>>> a04e673e (.)

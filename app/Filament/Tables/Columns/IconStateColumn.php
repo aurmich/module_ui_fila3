@@ -84,9 +84,20 @@ class IconStateColumn extends IconColumn
                     'state' => $record->state::$name,
                 ])
             ->action(function($record, $data) {
+<<<<<<< HEAD
                 //dddx(['record'=>$record, 'data'=>$data]);
                 $record->state->transitionTo($data['state'],$data['message']);
 
+=======
+                $state=$data['state'];
+                $model=Str::of(class_basename($record))->slug()->toString();
+                Assert::string($label=__('pub_theme::'.$model.'_states.'.$state.'.label'));
+                $record->state->transitionTo($data['state'],$data['message']);
+                Notification::make()
+                    ->title('Stato aggiornato a '.$label)
+                    ->success()
+                    ->send();
+>>>>>>> a04e673e (.)
             })
         );
 
