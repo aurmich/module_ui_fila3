@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE UI - .GITIGNORE
 # ==============================================
@@ -53,6 +54,8 @@ lerna-debug.log*
 # LARAVEL SPECIFIC
 # ==============================================
 =======
+=======
+>>>>>>> 6bc9d1d9 (.)
 # Dependencies and packages
 /vendor/
 /node_modules/
@@ -203,6 +206,33 @@ Homestead.json
 *.exe
 *:Zone.Identifier
 .DS_Store
+<<<<<<< HEAD
+=======
+# Dependencies
+vendor/
+node_modules/
+package-lock.json
+composer.lock
+
+# Build and compiled files
+/build
+cache/
+docs/cache/
+
+# Cache and temporary files
+*.cache
+*.lock
+*.phar
+*.exe
+*:Zone.Identifier
+.php-cs-fixer.cache
+
+# Git related
+.git-rewrite/
+.git-blame-ignore-revs
+
+# Backup files
+>>>>>>> 6bc9d1d9 (.)
 *.old
 *.old1
 *.backup
@@ -218,4 +248,30 @@ cache/
 # Development tools
 .windsurf/
 .cursor/
+<<<<<<< HEAD
 >>>>>>> 5de0558 (.)
+=======
+
+# File di log
+*.log
+
+# PHPStan documentation
+docs/phpstan/
+
+# Old directories
+resources/views/Components_old
+database/Migrations_old
+database/Seeders_old
+database/Factories_old
+database_old
+
+# Other
+-e
+
+# Old directories to ignore
+resources/views/Components_old
+database/Migrations_old
+database/Seeders_old
+database/Factories_old
+database_old
+>>>>>>> 6bc9d1d9 (.)

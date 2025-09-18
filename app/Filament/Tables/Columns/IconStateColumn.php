@@ -19,9 +19,13 @@ use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
 use Spatie\ModelStates\HasStatesContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 =======
 >>>>>>> 5de0558 (.)
+=======
+use Filament\Notifications\Notification;
+>>>>>>> 6bc9d1d9 (.)
 
 class IconStateColumn extends IconColumn
 {
@@ -99,6 +103,7 @@ class IconStateColumn extends IconColumn
                     ->title('Stato aggiornato a '.$label)
                     ->success()
                     ->send();
+<<<<<<< HEAD
 =======
             ->fillForm(fn($record)=> [
                     'state' => $record->state::$name,
@@ -108,6 +113,8 @@ class IconStateColumn extends IconColumn
                 $record->state->transitionTo($data['state'],$data['message']);
 
 >>>>>>> 5de0558 (.)
+=======
+>>>>>>> 6bc9d1d9 (.)
             })
         );
 
