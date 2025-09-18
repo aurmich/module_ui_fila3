@@ -16,10 +16,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'UI';
 
-<<<<<<< HEAD
-=======
     #[\Override]
->>>>>>> 5de0558 (.)
     public function panel(Panel $panel): Panel
     {
         $panel=parent::panel($panel);

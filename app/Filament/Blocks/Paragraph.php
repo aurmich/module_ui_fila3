@@ -16,11 +16,7 @@ class Paragraph
 {
     public static function make(
         string $name = 'paragraph',
-<<<<<<< HEAD
-        string $context = 'form',
-=======
         string $_context = 'form',
->>>>>>> 5de0558 (.)
     ): Block {
         // $view = 'ui::components.blocks.paragraph.v1';
         // $views = app(GetViewsSiblingsAndSelfAction::class)->execute($view);

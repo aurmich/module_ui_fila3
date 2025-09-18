@@ -29,25 +29,11 @@ uses(TestCase::class)
 |
 */
 
-<<<<<<< HEAD
-expect()->extend('toBeComponent', function () {
-    return $this->toBeInstanceOf(\Modules\UI\Models\Component::class);
-});
-
-expect()->extend('toBeTheme', function () {
-    return $this->toBeInstanceOf(\Modules\UI\Models\Theme::class);
-});
-
-expect()->extend('toBeAsset', function () {
-    return $this->toBeInstanceOf(\Modules\UI\Models\Asset::class);
-});
-=======
 expect()->extend('toBeComponent', fn () => $this->toBeInstanceOf(\Modules\UI\Models\Component::class));
 
 expect()->extend('toBeTheme', fn () => $this->toBeInstanceOf(\Modules\UI\Models\Theme::class));
 
 expect()->extend('toBeAsset', fn () => $this->toBeInstanceOf(\Modules\UI\Models\Asset::class));
->>>>>>> 5de0558 (.)
 
 /*
 |--------------------------------------------------------------------------

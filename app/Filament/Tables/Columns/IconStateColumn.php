@@ -18,14 +18,7 @@ use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
 use Spatie\ModelStates\HasStatesContract;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Notifications\Notification;
-=======
->>>>>>> 5de0558 (.)
-=======
-use Filament\Notifications\Notification;
->>>>>>> 6bc9d1d9 (.)
 
 class IconStateColumn extends IconColumn
 {
@@ -87,24 +80,6 @@ class IconStateColumn extends IconColumn
                         : false;
                 }),
             ])
-<<<<<<< HEAD
-            ->fillForm(function($record){
-                // Generic state handling - project-specific state classes should be injected
-                return [
-                    'state' => $record->state::$name,
-                ];
-            })
-            ->action(function($record, $data) {
-                $state=$data['state'];
-                $model=Str::of(class_basename($record))->slug()->toString();
-                Assert::string($label=__('pub_theme::'.$model.'_states.'.$state.'.label'));
-                $record->state->transitionTo($data['state'],$data['message']);
-                Notification::make()
-                    ->title('Stato aggiornato a '.$label)
-                    ->success()
-                    ->send();
-<<<<<<< HEAD
-=======
             ->fillForm(fn($record)=> [
                     'state' => $record->state::$name,
                 ])
@@ -112,9 +87,6 @@ class IconStateColumn extends IconColumn
                 //dddx(['record'=>$record, 'data'=>$data]);
                 $record->state->transitionTo($data['state'],$data['message']);
 
->>>>>>> 5de0558 (.)
-=======
->>>>>>> 6bc9d1d9 (.)
             })
         );
 

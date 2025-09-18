@@ -1,16 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-return array (
-  'fields' => 
-  array (
-    'view' => 
-    array (
-      'label' => 'view',
-    ),
-  ),
-);
-=======
 return  [
   'fields' => 
    [
@@ -20,4 +9,3 @@ return  [
     ],
   ],
 ];
->>>>>>> 5de0558 (.)
