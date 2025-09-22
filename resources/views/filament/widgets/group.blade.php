@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <x-filament-widgets::widget>
     <x-filament::section collapsible icon="{{ $icon }}">
         <x-slot name="description">

@@ -27,8 +27,13 @@ class IconPicker extends TextInput
 
         $this->suffixAction(
             \Filament\Forms\Components\Actions\Action::make('icon')
+<<<<<<< HEAD
                 ->icon(fn(null|string $state) => $state)
                 // ->modalContent(fn ($record) => view('ui::filament.forms.components.icon-picker', ['record' => $record]))
+=======
+                ->icon(fn (?string $state) => $state)
+            // ->modalContent(fn ($record) => view('ui::filament.forms.components.icon-picker', ['record' => $record]))
+>>>>>>> d3fc412d (.)
                 ->form([
                     Select::make('pack')
                         ->options($packs)
@@ -37,6 +42,7 @@ class IconPicker extends TextInput
                     RadioIcon::make('newstate')
                         ->options(function (Get $get) use ($icons): array {
                             $pack = $get('pack');
+<<<<<<< HEAD
                             if (!is_string($pack)) {
                                 return [];
                             }
@@ -45,6 +51,13 @@ class IconPicker extends TextInput
                                 $opts = Arr::get($icons, $key, []),
                                 '[' . __LINE__ . '][' . class_basename($this) . ']',
                             );
+=======
+                            if (! is_string($pack)) {
+                                return [];
+                            }
+                            $key = $pack.'.icons';
+                            Assert::isArray($opts = Arr::get($icons, $key, []), '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> d3fc412d (.)
                             $opts = array_combine($opts, $opts);
 
                             return $opts;
@@ -54,7 +67,11 @@ class IconPicker extends TextInput
                 ])
                 ->action(function (array $data, Set $set) {
                     $set('icon', $data['newstate']);
+<<<<<<< HEAD
                 }),
+=======
+                })
+>>>>>>> d3fc412d (.)
         );
     }
 }

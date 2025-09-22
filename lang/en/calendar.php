@@ -7,6 +7,7 @@ return [
     'next_month' => 'Next month',
     'today' => 'Today',
     'months' => [
+<<<<<<< HEAD
         'January',
         'February',
         'March',
@@ -28,6 +29,13 @@ return [
         'Thursday',
         'Friday',
         'Saturday',
+=======
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December',
+    ],
+    'weekdays' => [
+        'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
+>>>>>>> d3fc412d (.)
     ],
     'weekdays_short' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 ];

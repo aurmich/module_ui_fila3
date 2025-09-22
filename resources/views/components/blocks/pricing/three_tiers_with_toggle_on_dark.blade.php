@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 {{-- Requires js --}}
 <div class="bg-gray-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -166,3 +169,7 @@ declare(strict_types=1);
       </div>
     </div>
   </div>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d3fc412d (.)

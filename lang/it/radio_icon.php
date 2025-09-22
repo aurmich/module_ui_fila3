@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
@@ -10,3 +11,14 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'newstate' => 
+    array (
+      'label' => 'newstate',
+    ),
+  ),
+);
+>>>>>>> d3fc412d (.)

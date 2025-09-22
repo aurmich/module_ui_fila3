@@ -13,10 +13,18 @@ return [
         'created_at' => 'Creado',
         'updated_at' => 'Actualizado',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3fc412d (.)
     'select-options' => [
         'same-tab' => 'Misma pestaña',
         'new-tab' => 'Nueva pestaña',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3fc412d (.)
     'items' => [
         'empty' => 'No hay ítems.',
         'add-item' => 'Agregar ítem',
@@ -27,6 +35,10 @@ return [
         'dedent' => 'Desindentar',
         'remove' => 'Remover',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3fc412d (.)
     'items-modal' => [
         'title' => 'Ítem',
         'label' => 'Etiqueta',

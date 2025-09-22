@@ -136,7 +136,11 @@ Forms\Components\TextInput::make('studio_name')
     ->required()
 ```
 
+<<<<<<< HEAD
 ## 🎯 **Caso d'Uso: Studio Selector ()**
+=======
+## 🎯 **Caso d'Uso: Studio Selector (SaluteOra)**
+>>>>>>> d3fc412d (.)
 
 ### Implementazione nel Widget
 ```php
@@ -145,12 +149,21 @@ protected function getStudioStepSchema(): array
 {
     return [
         \Modules\UI\Forms\Components\RadioCardSelector::make('selected_studio')
+<<<<<<< HEAD
             ->sectionTitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.title'))
             ->sectionSubtitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.subtitle'))
             ->cards(fn (Get $get) => $this->getStudioCards($get))
             ->populatesField('selected_studio_name')
             ->emptyStateTitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.empty_state.title'))
             ->emptyStateDescription(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.empty_state.description'))
+=======
+            ->sectionTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.title'))
+            ->sectionSubtitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.subtitle'))
+            ->cards(fn (Get $get) => $this->getStudioCards($get))
+            ->populatesField('selected_studio_name')
+            ->emptyStateTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.title'))
+            ->emptyStateDescription(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.description'))
+>>>>>>> d3fc412d (.)
             ->required()
             ->columnSpanFull(),
             
@@ -271,13 +284,21 @@ RadioCardSelector::make('item')
 
 ## 🔗 **Collegamenti**
 
+<<<<<<< HEAD
 - [Widget FindDoctorAndAppointment](../../../../Modules/<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
+- [Widget FindDoctorAndAppointment](../../../../Modules/SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> d3fc412d (.)
 - [Componenti UI Overview](../components.md)
 - [Best Practices Filament](../../../../docs/filament-best-practices.md)
 
 ---
 
+<<<<<<< HEAD
 **Autore**: Implementazione completata per  widget
+=======
+**Autore**: Implementazione completata per SaluteOra widget
+>>>>>>> d3fc412d (.)
 **Ultima modifica**: Gennaio 2025  
 **Versione**: 1.0.0
 **Status**: ✅ Production Ready 

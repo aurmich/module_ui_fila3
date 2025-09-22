@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 {{--
     Studio Selector Component - Selezione semplice studio con pulsanti
     
@@ -137,4 +140,8 @@ declare(strict_types=1);
             </div>
         </div>
     @endif
+<<<<<<< HEAD
 </div>
+=======
+</div> 
+>>>>>>> d3fc412d (.)

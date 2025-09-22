@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 @props([
     'title' => 'title 1',
     'description' => 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
@@ -110,3 +113,7 @@ declare(strict_types=1);
       </div>
     </div>
   </div>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d3fc412d (.)

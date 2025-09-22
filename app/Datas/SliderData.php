@@ -9,6 +9,7 @@ use Spatie\LaravelData\Data;
 class SliderData extends Data
 {
     public function __construct(
+<<<<<<< HEAD
         public null|string $desktop_thumbnail,
         public null|string $mobile_thumbnail,
         public null|string $desktop_thumbnail_webp,
@@ -18,6 +19,17 @@ class SliderData extends Data
         public null|string $short_description,
         public null|string $description,
         public null|string $action_text,
+=======
+        public ?string $desktop_thumbnail,
+        public ?string $mobile_thumbnail,
+        public ?string $desktop_thumbnail_webp,
+        public ?string $mobile_thumbnail_webp,
+        public ?string $link,
+        public ?string $title,
+        public ?string $short_description,
+        public ?string $description,
+        public ?string $action_text,
+>>>>>>> d3fc412d (.)
     ) {
         $this->short_description = $this->description;
     }

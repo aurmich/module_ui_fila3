@@ -2,12 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\UI\Tests\Unit\Enums\TableLayoutEnumTest;
+
+>>>>>>> d3fc412d (.)
 namespace Modules\UI\Tests\Unit\Enums;
 
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
+<<<<<<< HEAD
 use Tests\TestCase;
+=======
+>>>>>>> d3fc412d (.)
 
 class TableLayoutEnumTest extends TestCase
 {
@@ -16,8 +24,13 @@ class TableLayoutEnumTest extends TestCase
      */
     public function test_enum_values(): void
     {
+<<<<<<< HEAD
         static::assertSame('list', TableLayoutEnum::LIST->value);
         static::assertSame('grid', TableLayoutEnum::GRID->value);
+=======
+        $this->assertEquals('list', TableLayoutEnum::LIST->value);
+        $this->assertEquals('grid', TableLayoutEnum::GRID->value);
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -26,7 +39,11 @@ class TableLayoutEnumTest extends TestCase
     public function test_default_layout(): void
     {
         $default = TableLayoutEnum::init();
+<<<<<<< HEAD
         static::assertSame(TableLayoutEnum::LIST, $default);
+=======
+        $this->assertEquals(TableLayoutEnum::LIST, $default);
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -37,8 +54,13 @@ class TableLayoutEnumTest extends TestCase
         $list = TableLayoutEnum::LIST;
         $grid = TableLayoutEnum::GRID;
 
+<<<<<<< HEAD
         static::assertSame($grid, $list->toggle());
         static::assertSame($list, $grid->toggle());
+=======
+        $this->assertEquals($grid, $list->toggle());
+        $this->assertEquals($list, $grid->toggle());
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -49,11 +71,19 @@ class TableLayoutEnumTest extends TestCase
         $list = TableLayoutEnum::LIST;
         $grid = TableLayoutEnum::GRID;
 
+<<<<<<< HEAD
         static::assertTrue($list->isListLayout());
         static::assertFalse($list->isGridLayout());
 
         static::assertTrue($grid->isGridLayout());
         static::assertFalse($grid->isListLayout());
+=======
+        $this->assertTrue($list->isListLayout());
+        $this->assertFalse($list->isGridLayout());
+
+        $this->assertTrue($grid->isGridLayout());
+        $this->assertFalse($grid->isListLayout());
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -64,12 +94,21 @@ class TableLayoutEnumTest extends TestCase
         $grid = TableLayoutEnum::GRID;
         $config = $grid->getTableContentGrid();
 
+<<<<<<< HEAD
         static::assertIsArray($config);
         static::assertArrayHasKey('sm', $config);
         static::assertArrayHasKey('md', $config);
         static::assertArrayHasKey('lg', $config);
         static::assertArrayHasKey('xl', $config);
         static::assertArrayHasKey('2xl', $config);
+=======
+        $this->assertIsArray($config);
+        $this->assertArrayHasKey('sm', $config);
+        $this->assertArrayHasKey('md', $config);
+        $this->assertArrayHasKey('lg', $config);
+        $this->assertArrayHasKey('xl', $config);
+        $this->assertArrayHasKey('2xl', $config);
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -94,11 +133,19 @@ class TableLayoutEnumTest extends TestCase
 
         // Test list layout
         $result = $list->getTableColumns($listColumns, $gridColumns);
+<<<<<<< HEAD
         static::assertSame($listColumns, $result);
 
         // Test grid layout
         $result = $grid->getTableColumns($listColumns, $gridColumns);
         static::assertSame($gridColumns, $result);
+=======
+        $this->assertEquals($listColumns, $result);
+
+        // Test grid layout
+        $result = $grid->getTableColumns($listColumns, $gridColumns);
+        $this->assertEquals($gridColumns, $result);
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -108,11 +155,19 @@ class TableLayoutEnumTest extends TestCase
     {
         $options = TableLayoutEnum::getOptions();
 
+<<<<<<< HEAD
         static::assertIsArray($options);
         static::assertArrayHasKey('list', $options);
         static::assertArrayHasKey('grid', $options);
         static::assertSame(TableLayoutEnum::LIST, $options['list']);
         static::assertSame(TableLayoutEnum::GRID, $options['grid']);
+=======
+        $this->assertIsArray($options);
+        $this->assertArrayHasKey('list', $options);
+        $this->assertArrayHasKey('grid', $options);
+        $this->assertEquals(TableLayoutEnum::LIST, $options['list']);
+        $this->assertEquals(TableLayoutEnum::GRID, $options['grid']);
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -126,10 +181,17 @@ class TableLayoutEnumTest extends TestCase
         $listClasses = $list->getContainerClasses();
         $gridClasses = $grid->getContainerClasses();
 
+<<<<<<< HEAD
         static::assertIsString($listClasses);
         static::assertIsString($gridClasses);
         static::assertNotEmpty($listClasses);
         static::assertNotEmpty($gridClasses);
+=======
+        $this->assertIsString($listClasses);
+        $this->assertIsString($gridClasses);
+        $this->assertNotEmpty($listClasses);
+        $this->assertNotEmpty($gridClasses);
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -144,10 +206,17 @@ class TableLayoutEnumTest extends TestCase
         $listLabel = $list->getLabel();
         $gridLabel = $grid->getLabel();
 
+<<<<<<< HEAD
         static::assertIsString($listLabel);
         static::assertIsString($gridLabel);
         static::assertNotEmpty($listLabel);
         static::assertNotEmpty($gridLabel);
+=======
+        $this->assertIsString($listLabel);
+        $this->assertIsString($gridLabel);
+        $this->assertNotEmpty($listLabel);
+        $this->assertNotEmpty($gridLabel);
+>>>>>>> d3fc412d (.)
     }
 
     /**
@@ -162,18 +231,32 @@ class TableLayoutEnumTest extends TestCase
         $listColor = $list->getColor();
         $gridColor = $grid->getColor();
 
+<<<<<<< HEAD
         static::assertIsString($listColor);
         static::assertIsString($gridColor);
         static::assertNotEmpty($listColor);
         static::assertNotEmpty($gridColor);
+=======
+        $this->assertIsString($listColor);
+        $this->assertIsString($gridColor);
+        $this->assertNotEmpty($listColor);
+        $this->assertNotEmpty($gridColor);
+>>>>>>> d3fc412d (.)
 
         // Test icons
         $listIcon = $list->getIcon();
         $gridIcon = $grid->getIcon();
 
+<<<<<<< HEAD
         static::assertIsString($listIcon);
         static::assertIsString($gridIcon);
         static::assertNotEmpty($listIcon);
         static::assertNotEmpty($gridIcon);
+=======
+        $this->assertIsString($listIcon);
+        $this->assertIsString($gridIcon);
+        $this->assertNotEmpty($listIcon);
+        $this->assertNotEmpty($gridIcon);
+>>>>>>> d3fc412d (.)
     }
 }

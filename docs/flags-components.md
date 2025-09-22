@@ -10,14 +10,20 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Il modulo UI di  include una vasta collezione di SVG di bandiere nazionali che possono essere utilizzati come componenti Blade. Questi componenti sono autoregistrati e possono essere facilmente integrati in qualsiasi parte dell'applicazione, incluso il selettore di lingue nell'header.
+=======
+>>>>>>> d3fc412d (.)
 Il modulo UI di SaluteOra include una vasta collezione di SVG di bandiere nazionali che possono essere utilizzati come componenti Blade. Questi componenti sono autoregistrati e possono essere facilmente integrati in qualsiasi parte dell'applicazione, incluso il selettore di lingue nell'header.
 
 ## Struttura dei Componenti Bandiera
 
 I file SVG delle bandiere sono archiviati in:
 ```
+<<<<<<< HEAD
 /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/resources/svg/flags/
+=======
+>>>>>>> d3fc412d (.)
 /var/www/html/saluteora/laravel/Modules/UI/resources/svg/flags/
 ```
 
@@ -137,7 +143,10 @@ Le bandiere devono essere utilizzate come icone Filament:
 2. **Personalizzazione**: Facile da personalizzare con classi CSS
 3. **Prestazioni**: Gli SVG sono leggeri e non richiedono richieste HTTP aggiuntive
 4. **Accessibilità**: Possibilità di aggiungere attributi di accessibilità
+<<<<<<< HEAD
 5. **Coerenza**: Utilizzo di componenti nativi di 
+=======
+>>>>>>> d3fc412d (.)
 5. **Coerenza**: Utilizzo di componenti nativi di SaluteOra
 
 ## Bandiere Disponibili

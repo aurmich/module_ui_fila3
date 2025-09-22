@@ -15,6 +15,7 @@ use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 
 class Hero
 {
+<<<<<<< HEAD
     public static function make(string $name = 'hero', string $_context = 'form'): Block
     {
         $options = app(GetViewBlocksOptionsByTypeAction::class)->execute('hero', true);
@@ -44,5 +45,42 @@ class Hero
                 ])
                 ->columns(3),
         ]);
+=======
+    public static function make(
+        string $name = 'hero',
+        string $context = 'form',
+    ): Block {
+        $options = app(GetViewBlocksOptionsByTypeAction::class)
+            ->execute('hero', true);
+
+        // ---------------
+        return Block::make($name)
+            ->schema(
+                [
+                    TextInput::make('title'),
+                    RichEditor::make('text'),
+                    FileUpload::make('background')
+                        // ->acceptedFileTypes(['application/pdf'])
+                        // ->image()
+                        ->directory('blocks')
+                        ->preserveFilenames(),
+                    /*
+                    RadioImage::make('view')
+                        ->options($options),
+                    // */
+                    /*
+                    Select::make('_tpl')
+                        ->options($views),
+                    //*/
+                    Repeater::make('buttons')
+                        ->schema([
+                            TextInput::make('label')->required(),
+                            TextInput::make('class'),
+                            TextInput::make('link'),
+                        ])
+                        ->columns(3),
+                ]
+            );
+>>>>>>> d3fc412d (.)
     }
 }

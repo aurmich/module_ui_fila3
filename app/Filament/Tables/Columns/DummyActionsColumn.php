@@ -6,6 +6,7 @@ namespace Modules\UI\Filament\Tables\Columns;
 
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Columns\Column;
+<<<<<<< HEAD
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -13,6 +14,17 @@ use Filament\Tables\Columns\ViewColumn;
 
 class DummyActionsColumn extends ColumnGroup
 {
+=======
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ViewColumn;
+use Filament\Tables\Columns\ColumnGroup;
+
+class DummyActionsColumn extends ColumnGroup
+{
+    
+
+>>>>>>> d3fc412d (.)
     protected array $actions = [];
 
     public function actions(array $actions): static
@@ -31,6 +43,7 @@ class DummyActionsColumn extends ColumnGroup
     {
         parent::setUp();
         $this->wrapHeader(true);
+<<<<<<< HEAD
 
         $this->extraHeaderAttributes(['class' => 'hidden no-header-group', 'style' => 'display: none']);
         $this->columns([
@@ -54,6 +67,32 @@ class DummyActionsColumn extends ColumnGroup
                     ->action(function () {
                         dddx('Azione prova eseguita2!');
                     })),
+=======
+        
+        $this->extraHeaderAttributes(['class' => 'hidden no-header-group','style' => 'display: none']); 
+        $this->columns([
+            IconColumn::make('uno')
+            ->label('')
+            ->default(false)
+            ->boolean()
+            ->extraCellAttributes(['class' => 'px-0'])
+            ->action(Action::make('uno-action')
+                ->label('Prova Action')
+                
+                ->action(function () {
+                    dddx('Azione prova eseguita1!');
+                })),
+            IconColumn::make('due')
+            ->label('')
+            ->default(true)
+            ->boolean()
+            ->extraCellAttributes(['class' => 'px-0'])
+            ->action(Action::make('due-action')
+                ->label('Prova Action')
+                ->action(function () {
+                    dddx('Azione prova eseguita2!');
+                })),
+>>>>>>> d3fc412d (.)
         ]);
     }
 }

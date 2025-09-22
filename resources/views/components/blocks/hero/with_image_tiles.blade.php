@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -124,3 +127,7 @@ declare(strict_types=1);
       </div>
     </main>
   </div>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d3fc412d (.)

@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 {{-- Radio Card Selector Component --}}
 @php
     $cards = $getCards();
@@ -149,4 +152,8 @@ declare(strict_types=1);
             </p>
         </div>
     @endif
+<<<<<<< HEAD
 </div>
+=======
+</div> 
+>>>>>>> d3fc412d (.)

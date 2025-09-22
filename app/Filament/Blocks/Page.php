@@ -1,8 +1,11 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
+=======
+>>>>>>> d3fc412d (.)
 namespace Modules\UI\Filament\Blocks;
 
 use Filament\Forms\Components\RichEditor;
@@ -24,4 +27,8 @@ final class Page extends XotBaseBlock
     {
         return __('ui::blocks.page.title');
     }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> d3fc412d (.)

@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 @props(['data'])
 
 <section class="text-gray-600 body-font">
@@ -44,4 +47,8 @@ declare(strict_types=1);
         </div>
       </div>
     </div>
+<<<<<<< HEAD
   </section>
+=======
+  </section>
+>>>>>>> d3fc412d (.)

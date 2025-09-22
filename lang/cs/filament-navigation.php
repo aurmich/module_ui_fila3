@@ -13,10 +13,18 @@ return [
         'created_at' => 'Vytvořeno',
         'updated_at' => 'Upraveno',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3fc412d (.)
     'select-options' => [
         'same-tab' => 'Ve stejném okně',
         'new-tab' => 'V novém okně',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3fc412d (.)
     'items' => [
         'empty' => 'Žádné položky',
         'add-item' => 'Přidat položku',
@@ -27,6 +35,10 @@ return [
         'dedent' => 'Oddělit',
         'remove' => 'Odstranit',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3fc412d (.)
     'items-modal' => [
         'title' => 'Nová položka',
         'label' => 'Název',

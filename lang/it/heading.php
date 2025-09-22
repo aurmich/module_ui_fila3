@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
@@ -19,3 +20,24 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'level' => 
+    array (
+      'label' => 'level',
+      'description' => 'level',
+      'helper_text' => 'level',
+      'placeholder' => 'level',
+    ),
+    'content' => 
+    array (
+      'label' => 'content',
+      'description' => 'content',
+      'helper_text' => 'content',
+      'placeholder' => 'content',
+    ),
+  ),
+);
+>>>>>>> d3fc412d (.)

@@ -1,8 +1,11 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
+=======
+>>>>>>> d3fc412d (.)
 return [
     'login' => [
         'title' => 'Sign in',

@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 {{-- Studio Selector Component - Card cliccabili per selezione studio --}}
 <div 
     x-data="{
@@ -163,4 +166,8 @@ declare(strict_types=1);
             </p>
         </div>
     @endif
+<<<<<<< HEAD
 </div>
+=======
+</div> 
+>>>>>>> d3fc412d (.)

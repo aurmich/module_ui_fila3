@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 {{--
     Studio Card Component - Visualizzazione informazioni studio odontoiatrico
     
@@ -268,4 +271,8 @@ declare(strict_types=1);
             @endforeach
         </div>
     @endif
+<<<<<<< HEAD
 </div>
+=======
+</div> 
+>>>>>>> d3fc412d (.)

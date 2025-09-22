@@ -17,6 +17,7 @@ use Webmozart\Assert\Assert;
 
 class ImageSpatie
 {
+<<<<<<< HEAD
     public static function make(string $name = 'image_spatie', string $context = 'form'): Block
     {
         return Block::make($name)
@@ -25,6 +26,21 @@ class ImageSpatie
                     ->default(Str::uuid()->toString(...))
                     ->formatStateUsing(fn($state) => $state ?? Str::uuid()->toString()),
                 // ->live()
+=======
+    public static function make(
+        string $name = 'image_spatie',
+        string $context = 'form',
+    ): Block {
+        return Block::make($name)
+
+            ->schema([
+                Hidden::make('img_uuid')
+                    ->default(fn () => Str::uuid()->toString())
+                    ->formatStateUsing(fn ($state) => $state ?? Str::uuid()->toString())
+                // ->live()
+                ,
+
+>>>>>>> d3fc412d (.)
                 SpatieMediaLibraryFileUpload::make('image')
                     ->live()
                     ->hiddenLabel()
@@ -39,6 +55,7 @@ class ImageSpatie
                     ->openable()
                     ->downloadable()
                     // ->rules(Rule::dimensions()->maxWidth(600)->maxHeight(800))
+<<<<<<< HEAD
                     ->collection(fn(Get $get) => $get('img_uuid'))
                     ->afterStateUpdated(function (
                         HasForms $_livewire,
@@ -55,6 +72,21 @@ class ImageSpatie
                         );
                         $res = $record->addMedia($state)->withResponsiveImages()->toMediaCollection($collection_name);
                     }),
+=======
+                    ->collection(fn (Get $get) => $get('img_uuid'))
+                    ->afterStateUpdated(
+                        function (HasForms $livewire, SpatieMediaLibraryFileUpload $component, TemporaryUploadedFile $state, Get $get, HasMedia $record) {
+                            // Call to an undefined method Filament\Forms\Contracts\HasForms::validateOnly().
+                            // $livewire->validateOnly($component->getStatePath());
+                            Assert::string($collection_name = $get('img_uuid'), '['.__LINE__.']['.class_basename(__CLASS__).']');
+                            $res = $record
+                                ->addMedia($state)
+                                ->withResponsiveImages()
+                                ->toMediaCollection($collection_name);
+                        }
+                    ),
+
+>>>>>>> d3fc412d (.)
                 TextInput::make('caption'),
             ])
             ->columns('form' === $context ? 2 : 1);

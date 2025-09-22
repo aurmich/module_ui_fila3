@@ -70,10 +70,13 @@ return [
 ## Audit Immediato Richiesto
 ```bash
 # Cerca tutti i ->label() nel modulo UI
+<<<<<<< HEAD
 grep -r "->label(" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
 
 # Cerca in tutti i file Filament
 find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/ -name "*.php" -exec grep -l "->label(" {} \;
+=======
+>>>>>>> d3fc412d (.)
 grep -r "->label(" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/
 
 # Cerca in tutti i file Filament

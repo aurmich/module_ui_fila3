@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE UI - .GITIGNORE
 # ==============================================
@@ -162,3 +163,42 @@ design_notes.txt
 *.fila2
 laravel
 public_html
+=======
+# Dependencies
+vendor/
+node_modules/
+package-lock.json
+composer.lock
+
+# Build and compiled files
+/build
+cache/
+docs/cache/
+
+# Cache and temporary files
+*.cache
+*.lock
+*.phar
+*.exe
+*:Zone.Identifier
+.php-cs-fixer.cache
+
+# Git related
+.git-rewrite/
+.git-blame-ignore-revs
+
+# Backup files
+*.old
+*.old1
+*.backup
+*.bak
+
+# File di log
+*.log
+
+# PHPStan documentation
+docs/phpstan/
+
+# Other
+-e
+>>>>>>> d3fc412d (.)

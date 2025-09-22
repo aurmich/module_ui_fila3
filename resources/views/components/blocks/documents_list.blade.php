@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 @props(['title' => 'Documenti'])
 
 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -100,4 +103,8 @@ declare(strict_types=1);
             {{ $documents->links() }}
         </div>
     @endif
+<<<<<<< HEAD
 </div>
+=======
+</div> 
+>>>>>>> d3fc412d (.)

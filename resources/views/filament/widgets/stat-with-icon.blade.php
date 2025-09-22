@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <x-filament-widgets::widget>
     <x-filament::section collapsible>
         <x-filament::grid lg='2'>
@@ -57,3 +60,7 @@ declare(strict_types=1);
     </x-filament-widgets::widget>
 
 --}}
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3fc412d (.)

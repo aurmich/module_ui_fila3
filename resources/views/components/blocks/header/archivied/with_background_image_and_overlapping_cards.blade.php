@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <div class="bg-white">
     <!-- Header -->
     <div class="relative bg-gray-800 pb-32">
@@ -65,3 +68,7 @@ declare(strict_types=1);
       </div>
     </section>
   </div>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d3fc412d (.)

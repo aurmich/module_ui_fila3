@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Tables\Columns;
 
+<<<<<<< HEAD
 use Closure;
 use Filament\Notifications\Notification;
 use Filament\Support\Enums\ActionSize;
@@ -21,13 +22,37 @@ use Webmozart\Assert\Assert;
 /**
  * IconStateSplitColumn - Enhanced state transition column with compact grid layout
  *
+=======
+
+use Closure;
+use Livewire\Attributes\On;
+use Webmozart\Assert\Assert;
+use Filament\Tables\Actions\Action;
+use Filament\Tables\Columns\Column;
+use Filament\Support\Enums\ActionSize;
+use Filament\Support\Enums\FontWeight;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Illuminate\Database\Eloquent\Model;
+use Filament\Notifications\Notification;
+use Modules\Xot\Contracts\StateContract;
+use Filament\Tables\Columns\Layout\Split;
+
+/**
+ * IconStateSplitColumn - Enhanced state transition column with compact grid layout
+ * 
+>>>>>>> d3fc412d (.)
  * This column displays state transition icons in a compact grid layout with:
  * - Optimized space usage with responsive grid
  * - Enhanced tooltips and visual feedback
  * - Smooth animations and hover effects
  * - Proper error handling and notifications
  * - Mobile-friendly design
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> d3fc412d (.)
  * @package Modules\UI\Filament\Tables\Columns
  */
 class IconStateSplitColumn extends Column
@@ -35,10 +60,20 @@ class IconStateSplitColumn extends Column
     protected string $view = 'ui::filament.tables.columns.icon-state-split';
     protected string $stateClass = '';
     protected string $modelClass = '';
+<<<<<<< HEAD
 
     /**
      * Configure the state class and model class for this column
      *
+=======
+    
+
+   
+   
+    /**
+     * Configure the state class and model class for this column
+     * 
+>>>>>>> d3fc412d (.)
      * @param string $stateClass The state machine class (e.g., AppointmentState::class)
      * @param string $modelClass The model class (e.g., Appointment::class)
      * @return static
@@ -47,7 +82,11 @@ class IconStateSplitColumn extends Column
     {
         $this->stateClass = $stateClass;
         $this->modelClass = $modelClass;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d3fc412d (.)
         return $this;
     }
 
@@ -55,7 +94,11 @@ class IconStateSplitColumn extends Column
     {
         $states = $this->stateClass::getStateMapping()->toArray();
         $record = $this->getRecord();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d3fc412d (.)
         $result = [];
         foreach ($states as $stateKey => $stateClass) {
             try {
@@ -73,11 +116,16 @@ class IconStateSplitColumn extends Column
                 continue;
             }
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d3fc412d (.)
         return $result;
     }
 
     public function canTransitionTo(int|string $recordId, string $stateClass): bool
+<<<<<<< HEAD
     {
         $record = $this->modelClass::find($recordId);
 
@@ -89,6 +137,19 @@ class IconStateSplitColumn extends Column
             return false;
         }
 
+=======
+    {  
+        $record = $this->modelClass::find($recordId);
+        
+        if (!$record) {
+            return false;
+        }
+        
+        if (!$record->state) {
+            return false;
+        }
+        
+>>>>>>> d3fc412d (.)
         return $record->state->canTransitionTo($stateClass);
     }
 
@@ -107,44 +168,70 @@ class IconStateSplitColumn extends Column
 
     /**
      * Restituisce le azioni per gli stati
+<<<<<<< HEAD
      *
+=======
+     * 
+>>>>>>> d3fc412d (.)
      * @return array<string, \Filament\Tables\Actions\Action>
      */
     public function getStateActions(): array
     {
         $record = $this->getRecord();
         $states = $this->getRecordStates();
+<<<<<<< HEAD
 
         $actions = [];
 
+=======
+        
+        $actions = [];
+        
+>>>>>>> d3fc412d (.)
         // Aggiungi azione di test
         $actions['prova'] = \Filament\Tables\Actions\Action::make('prova')
             ->icon('heroicon-m-plus')
             ->color('primary')
             ->tooltip('Test Prova')
             ->action(function () use ($record) {
+<<<<<<< HEAD
                 $recordId = $record && isset($record->id) ? ((string) $record->id) : 'N/A';
+=======
+                $recordId = $record && isset($record->id) ? (string) $record->id : 'N/A';
+>>>>>>> d3fc412d (.)
                 \Filament\Notifications\Notification::make()
                     ->title('Prova funziona!')
                     ->body('Record ID: ' . $recordId)
                     ->success()
                     ->send();
             });
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d3fc412d (.)
         // Aggiungi azioni per gli stati
         foreach ($states as $stateKey => $state) {
             $recordId = $record && isset($record->id) ? $record->id : null;
             if ($recordId !== null && $this->canTransitionTo($recordId, $state['class']::class)) {
+<<<<<<< HEAD
                 $actions["transition_to_{$stateKey}"] = \Filament\Tables\Actions\Action::make(
                     "transition_to_{$stateKey}",
                 )
+=======
+                $actions["transition_to_{$stateKey}"] = \Filament\Tables\Actions\Action::make("transition_to_{$stateKey}")
+>>>>>>> d3fc412d (.)
                     ->icon($state['icon'])
                     ->color($state['color'])
                     ->label($state['label'])
                     ->action(fn() => $this->transitionState($recordId, $state['class']::class));
             }
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d3fc412d (.)
         return $actions;
     }
 
@@ -166,6 +253,7 @@ class IconStateSplitColumn extends Column
     {
         try {
             $record = $this->modelClass::find($recordId);
+<<<<<<< HEAD
 
             if (!$record) {
                 throw new \Exception('Record non trovato');
@@ -174,11 +262,25 @@ class IconStateSplitColumn extends Column
             // Esegui la transizione
             $record->state->transitionTo($stateClass);
 
+=======
+            
+            if (!$record) {
+                throw new \Exception('Record non trovato');
+            }
+            
+            // Esegui la transizione
+            $record->state->transitionTo($stateClass);
+            
+>>>>>>> d3fc412d (.)
             \Filament\Notifications\Notification::make()
                 ->title('Transizione Completata')
                 ->body('Lo stato è stato cambiato con successo.')
                 ->success()
                 ->send();
+<<<<<<< HEAD
+=======
+                
+>>>>>>> d3fc412d (.)
         } catch (\Exception $e) {
             \Filament\Notifications\Notification::make()
                 ->title('Errore Transizione')
@@ -187,4 +289,8 @@ class IconStateSplitColumn extends Column
                 ->send();
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d3fc412d (.)

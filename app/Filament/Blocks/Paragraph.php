@@ -14,6 +14,7 @@ use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 
 class Paragraph
 {
+<<<<<<< HEAD
     public static function make(string $name = 'paragraph', string $_context = 'form'): Block
     {
         // $view = 'ui::components.blocks.paragraph.v1';
@@ -28,5 +29,28 @@ class Paragraph
             // RadioImage::make('view')
             //    ->options($options),
         ]);
+=======
+    public static function make(
+        string $name = 'paragraph',
+        string $context = 'form',
+    ): Block {
+        // $view = 'ui::components.blocks.paragraph.v1';
+        // $views = app(GetViewsSiblingsAndSelfAction::class)->execute($view);
+
+        $options = app(GetViewBlocksOptionsByTypeAction::class)
+            ->execute('paragraph', false);
+
+        return Block::make($name)
+            ->schema(
+                [
+                    TextInput::make('title'),
+                    RichEditor::make('text'),
+                    Select::make('view')
+                        ->options($options),
+                    // RadioImage::make('view')
+                    //    ->options($options),
+                ]
+            );
+>>>>>>> d3fc412d (.)
     }
 }

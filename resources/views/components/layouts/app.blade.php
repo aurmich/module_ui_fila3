@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <x-layouts.main>
     
     <x-ui.app.header />
@@ -22,4 +25,8 @@ declare(strict_types=1);
         </div>
     </div>
 
+<<<<<<< HEAD
 </x-layouts.main>
+=======
+</x-layouts.main>
+>>>>>>> d3fc412d (.)

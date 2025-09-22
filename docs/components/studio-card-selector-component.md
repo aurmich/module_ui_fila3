@@ -284,7 +284,11 @@ private function getStudiosForLocation(Get $get): Collection
         return collect();
     }
     
+<<<<<<< HEAD
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+=======
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+>>>>>>> d3fc412d (.)
         $q->where('postal_code', $cap)
           ->where('administrative_area_level_3', $province)
           ->where('administrative_area_level_2', $region);
@@ -491,9 +495,15 @@ class StudioCardSelectorTest extends DuskTestCase
 - [Form Components Guide](../form-components.md)
 - [Accessibility Guidelines](../accessibility.md)
 
+<<<<<<< HEAD
 ### Modulo 
 - [Studio Models](../../<nome modulo>/docs/models/studio-address-relationship.md)
 - [Widget Analysis](../../<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
+### Modulo SaluteOra
+- [Studio Models](../../SaluteOra/docs/models/studio-address-relationship.md)
+- [Widget Analysis](../../SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> d3fc412d (.)
 
 ### External References
 - [Filament Form Components](https://filamentphp.com/docs/forms/fields)

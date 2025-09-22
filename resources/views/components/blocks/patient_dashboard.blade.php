@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 @props(['title' => 'Area Personale'])
 
 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -110,4 +113,8 @@ declare(strict_types=1);
             <span class="text-gray-700">Notifiche</span>
         </a>
     </div>
+<<<<<<< HEAD
 </div>
+=======
+</div> 
+>>>>>>> d3fc412d (.)

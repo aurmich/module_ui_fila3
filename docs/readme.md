@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -65,6 +66,8 @@ class UserCalendarWidget extends XotBaseWidget
 ### 📱 **TableLayoutEnum System**
 ```php
 // Sistema layout tabelle responsive
+=======
+>>>>>>> d3fc412d (.)
 # Modulo UI - Documentazione
 
 ## Panoramica
@@ -76,7 +79,10 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - Gestione orari di apertura
 - Componenti calendario
 - Utility di interfaccia
+<<<<<<< HEAD
 - **TableLayoutEnum**: Sistema di layout per tabelle Filament (lista/griglia)
+=======
+>>>>>>> d3fc412d (.)
 
 ## File di Traduzione
 
@@ -85,11 +91,15 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 - `opening_hours_field.php` - **FIX COMPLETATO**: Traduzioni per i campi orari con sincronizzazione lingue
 - `user_calendar.php` - Traduzioni per il calendario utente
 - `components.php` - Traduzioni per i componenti UI
+<<<<<<< HEAD
 - `table-layout.php` - **NUOVO**: Traduzioni per TableLayoutEnum (IT/EN/DE)
+=======
+>>>>>>> d3fc412d (.)
 
 ### Fix Implementati
 - [Fix Traduzioni Opening Hours Field](opening_hours_translation_fix.md) - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue IT/EN
 - [Fix Traduzioni Opening Hours](opening_hours_translation_improvement.md) - Miglioramento traduzioni orari
+<<<<<<< HEAD
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md) - **NUOVO**: Documentazione completa enum layout tabelle
 
 ## Regole Critiche
@@ -534,4 +544,6 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 - **[REGOLA CRITICA: MAI usare ->label()](never_use_label_rule.md)**
 - **[REGOLA CRITICA: SEMPRE usa transClass()](transclass_rule.md)**
 
+=======
+>>>>>>> d3fc412d (.)
 *Ultimo aggiornamento: gennaio 2025* 

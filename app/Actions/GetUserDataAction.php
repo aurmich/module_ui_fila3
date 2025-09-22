@@ -1,8 +1,11 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 
+=======
+>>>>>>> d3fc412d (.)
 namespace Modules\UI\Actions;
 
 use Illuminate\Support\Facades\Auth;
@@ -13,6 +16,7 @@ class GetUserDataAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function execute(): null|UserData
     {
         $user = Auth::user();
@@ -32,3 +36,20 @@ class GetUserDataAction
         );
     }
 }
+=======
+    public function execute(): UserData
+    {
+        $user = Auth::user();
+
+        return new UserData(
+            id: $user->id,
+            name: $user->name,
+            email: $user->email,
+            avatar: $user->avatar,
+            role: $user->role,
+            permissions: $user->permissions,
+            settings: $user->settings
+        );
+    }
+} 
+>>>>>>> d3fc412d (.)

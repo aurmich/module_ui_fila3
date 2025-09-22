@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <div class="bg-white px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24">
     <div class="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
       <div>
@@ -100,3 +103,7 @@ declare(strict_types=1);
       </div>
     </div>
   </div>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d3fc412d (.)

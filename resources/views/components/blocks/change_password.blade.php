@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 @props(['title' => 'Cambia Password'])
 
 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -125,4 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
     password.addEventListener('input', checkPassword);
 });
 </script>
+<<<<<<< HEAD
 @endpush
+=======
+@endpush 
+>>>>>>> d3fc412d (.)

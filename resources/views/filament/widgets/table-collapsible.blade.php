@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <x-filament::widget>
     <x-filament::section collapsible collapsed wire:key="section-{{ $guid }}">
         <x-slot name="heading">

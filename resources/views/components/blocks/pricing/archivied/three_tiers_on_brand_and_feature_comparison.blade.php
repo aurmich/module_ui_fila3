@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <div class="bg-gray-50">
     <div class="relative bg-indigo-600">
       <!-- Overlapping background -->
@@ -1166,3 +1169,7 @@ declare(strict_types=1);
       </div>
     </section>
   </div>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d3fc412d (.)

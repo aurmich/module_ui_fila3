@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 <section class="container p-6 mx-auto">
 	<div id="heroslider" x-data="heroslider" class="relative w-full">
 		<button type="button" @click="swiper.slidePrev()" class="absolute z-10 grid rounded-full place-items-center start-6 top-[40%] size-10 bg-white/50 hover:bg-white/60">
@@ -41,4 +44,8 @@ declare(strict_types=1);
 			<x-heroicon-o-chevron-right class="size-6"/>
 		</button>
 	</div>
+<<<<<<< HEAD
 </section>
+=======
+</section>
+>>>>>>> d3fc412d (.)

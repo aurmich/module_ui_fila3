@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 {{-- resources/views/forms/components/radio-collection.blade.php --}}
 <x-dynamic-component :component="$getFieldWrapperView()" :field="$field">
     <div class="space-y-2">
@@ -46,4 +49,8 @@ declare(strict_types=1);
             </div>
         @enderror
     </div>
+<<<<<<< HEAD
 </x-dynamic-component>
+=======
+</x-dynamic-component>
+>>>>>>> d3fc412d (.)

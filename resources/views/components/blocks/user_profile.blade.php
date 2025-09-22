@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> d3fc412d (.)
 @props(['title' => 'Profilo Utente'])
 
 <div class="bg-white p-6 rounded-lg shadow-md">

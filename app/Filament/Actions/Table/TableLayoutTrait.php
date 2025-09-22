@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Actions\Table;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Session;
 use Modules\UI\Enums\TableLayoutEnum;
+=======
+use Modules\UI\Enums\TableLayoutEnum;
+use Illuminate\Support\Facades\Session;
+>>>>>>> d3fc412d (.)
 
 /**
  * Trait TableLayoutTrait
@@ -21,7 +26,11 @@ trait TableLayoutTrait
         $sessionKey = "table_layout_{$identifier}";
         $layout = Session::get($sessionKey);
 
+<<<<<<< HEAD
         if ($layout && in_array($layout, TableLayoutEnum::values(), strict: true)) {
+=======
+        if ($layout && in_array($layout, TableLayoutEnum::values())) {
+>>>>>>> d3fc412d (.)
             return TableLayoutEnum::from($layout);
         }
 
