@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎨 **UI Module** - Sistema Avanzato Componenti Interfaccia
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -44,51 +43,6 @@ Il modulo **UI** è il cuore dell'interfaccia utente dell'applicazione, fornendo
     layout="grid"
     responsive="true"
 />
-=======
-# Modulo UI - Sistema di Componenti e Interfacce Utente
-
-## Panoramica
-
-Il modulo UI fornisce un sistema completo di componenti, widget e interfacce utente per l'applicazione Laraxot PTVX. Include componenti Blade personalizzati, widget Filament avanzati e un sistema di design system coerente per tutte le interfacce dell'applicazione.
-
-## Caratteristiche Principali
-
-- **Componenti Blade**: Componenti UI riutilizzabili e personalizzabili
-- **Widget Filament**: Widget avanzati per dashboard e pagine
-- **Design System**: Sistema di design coerente e scalabile
-- **FullCalendar Integration**: Widget calendario avanzato con FullCalendar
-- **Responsive Design**: Componenti ottimizzati per tutti i dispositivi
-- **Accessibilità**: Supporto completo per l'accessibilità web
-
-## Struttura del Modulo
-
-```
-Modules/UI/
-├── app/
-│   ├── Filament/
-│   │   └── Widgets/
-│   │       ├── BaseCalendarWidget.php
-│   │       ├── StatsOverviewWidget.php
-│   │       └── ChartWidget.php
-│   ├── Services/
-│   │   └── ComponentService.php
-│   └── Providers/
-│       └── UIServiceProvider.php
-├── config/
-├── database/
-├── docs/
-├── resources/
-│   ├── views/
-│   │   └── components/
-│   │       └── ui/
-│   │           ├── button.blade.php
-│   │           ├── card.blade.php
-│   │           └── modal.blade.php
-│   ├── css/
-│   ├── js/
-│   └── svg/
-└── tests/
->>>>>>> 17ffe269 (.)
 ```
 
 ## Componenti Principali
@@ -682,7 +636,6 @@ Per supporto tecnico o domande:
 
 ---
 
-<<<<<<< HEAD
 ### 🏆 **Achievements**
 
 - **🏅 PHPStan Level 9**: File core certificati ✅
@@ -708,6 +661,3 @@ Per supporto tecnico o domande:
 **🐛 PHPStan Level 9**: File core certificati ✅  
 **🌐 Translation Standards**: File traduzione certificati ✅  
 **🚀 Performance**: 97/100 score 
-=======
-*Ultimo aggiornamento: {{ date('Y-m-d') }}*
->>>>>>> 17ffe269 (.)

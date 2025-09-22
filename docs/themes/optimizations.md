@@ -36,7 +36,11 @@ return [
             'name' => 'Default Theme',
             'description' => 'Clean and modern default theme',
             'version' => '1.0.0',
+<<<<<<< HEAD
             'author' => '<nome progetto> Team',
+=======
+            'author' => 'SaluteOra Team',
+>>>>>>> 2e2df281 (.)
             'supports' => ['dark_mode', 'rtl', 'responsive'],
             'config_file' => 'themes/one/tailwind.config.js',
             'css_entry' => 'themes/one/app.css',
@@ -46,7 +50,11 @@ return [
             'name' => 'Healthcare Theme',
             'description' => 'Specialized theme for healthcare applications',
             'version' => '1.0.0',
+<<<<<<< HEAD
             'author' => '<nome progetto> Team',
+=======
+            'author' => 'SaluteOra Team',
+>>>>>>> 2e2df281 (.)
             'supports' => ['dark_mode', 'accessibility', 'medical_icons'],
             'config_file' => 'themes/two/tailwind.config.js',
             'css_entry' => 'themes/two/app.css',

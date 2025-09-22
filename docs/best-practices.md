@@ -243,6 +243,7 @@ class AdvancedForm extends Component
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](docs/tecnico/filament/best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [best-practices.md](../../../Xot/project_docs/laraxot/best-practices.md)
 * [best-practices.md](../../../UI/project_docs/best-practices.md)
 * [best-practices.md](../../../../Themes/One/project_docs/best-practices.md)
@@ -251,6 +252,11 @@ class AdvancedForm extends Component
 * [best-practices.md](../../../UI/docs/best-practices.md)
 * [best-practices.md](../../../../Themes/One/docs/best-practices.md)
 >>>>>>> d3fc412d (.)
+=======
+* [best-practices.md](../../../Xot/docs/laraxot/best-practices.md)
+* [best-practices.md](../../../UI/docs/best-practices.md)
+* [best-practices.md](../../../../Themes/One/docs/best-practices.md)
+>>>>>>> 2e2df281 (.)
 
 
 ### Versione Incoming

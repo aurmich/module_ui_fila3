@@ -14,6 +14,7 @@ Il metodo `icon()` **NON esiste** sul componente `Filament\Forms\Components\File
 
 ## Best Practice
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Consultare sempre la [documentazione ufficiale Filament](https://filamentphp.com/project_docs/3.x/forms/fields/file-upload) prima di usare metodi non standard.
 - Seguire la tabella di compatibilità dei metodi nei componenti Filament (vedi doc di modulo Patient e Xot).
 
@@ -24,6 +25,8 @@ Il metodo `icon()` **NON esiste** sul componente `Filament\Forms\Components\File
 ## Collegamenti tra versioni di filament-error-fileupload-icon.md
 * [filament-error-fileupload-icon.md](../../Patient/project_docs/filament-error-fileupload-icon.md)
 =======
+=======
+>>>>>>> 2e2df281 (.)
 - Consultare sempre la [documentazione ufficiale Filament](https://filamentphp.com/docs/3.x/forms/fields/file-upload) prima di usare metodi non standard.
 - Seguire la tabella di compatibilità dei metodi nei componenti Filament (vedi doc di modulo Patient e Xot).
 
@@ -33,5 +36,8 @@ Il metodo `icon()` **NON esiste** sul componente `Filament\Forms\Components\File
 
 ## Collegamenti tra versioni di filament-error-fileupload-icon.md
 * [filament-error-fileupload-icon.md](../../Patient/docs/filament-error-fileupload-icon.md)
+<<<<<<< HEAD
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
 

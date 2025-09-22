@@ -75,10 +75,14 @@ FileUpload::make('logo_header') // Metatag
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 =======
 // BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 >>>>>>> d3fc412d (.)
+=======
+// BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
+>>>>>>> 2e2df281 (.)
 abstract class BaseModel extends Model implements HasMedia
 {
     use InteractsWithMedia;
@@ -224,10 +228,14 @@ class SpatieImageUpload
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
 =======
 // Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
 >>>>>>> d3fc412d (.)
+=======
+// Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
+>>>>>>> 2e2df281 (.)
 
 // PRIMA (FileUpload standard)
 'health_card' => Forms\Components\FileUpload::make('health_card')
@@ -239,12 +247,17 @@ class SpatieImageUpload
 // DOPO (SpatieMediaLibraryFileUpload)  
 'health_card' => \Modules\UI\Filament\Components\SpatieDocumentUpload::forHealthCard()
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->label(trans('<nome progetto>::patients.fields.health_card.label'))
     ->helperText(trans('<nome progetto>::patients.fields.health_card.help')),
 =======
     ->label(trans('saluteora::patients.fields.health_card.label'))
     ->helperText(trans('saluteora::patients.fields.health_card.help')),
 >>>>>>> d3fc412d (.)
+=======
+    ->label(trans('saluteora::patients.fields.health_card.label'))
+    ->helperText(trans('saluteora::patients.fields.health_card.help')),
+>>>>>>> 2e2df281 (.)
 ```
 
 #### 3.2 UI Blocks - Standardizzazione Architettura
@@ -304,10 +317,14 @@ Schema::table('users', function (Blueprint $table) {
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
 =======
 // Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
 >>>>>>> d3fc412d (.)
+=======
+// Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
+>>>>>>> 2e2df281 (.)
 
 public function registerMediaCollections(): void
 {
@@ -357,10 +374,14 @@ public function registerMediaConversions(Media $media = null): void
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
 =======
 // Modules/SaluteOra/app/Models/User.php - Accessors di transizione
 >>>>>>> d3fc412d (.)
+=======
+// Modules/SaluteOra/app/Models/User.php - Accessors di transizione
+>>>>>>> 2e2df281 (.)
 
 /**
  * Accessor per compatibilità con codice esistente.
@@ -390,10 +411,14 @@ public function getCertificationsAttribute(): array
     @if($patient->hasMedia('tessere_sanitarie'))
         <div class="document-preview">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
 =======
             <h4>{{ __('saluteora::patients.health_card') }}</h4>
 >>>>>>> d3fc412d (.)
+=======
+            <h4>{{ __('saluteora::patients.health_card') }}</h4>
+>>>>>>> 2e2df281 (.)
             <img src="{{ $patient->getFirstMediaUrl('tessere_sanitarie', 'thumbnail') }}" 
                  alt="Tessera Sanitaria"
                  class="w-full h-32 object-cover rounded">
@@ -401,10 +426,14 @@ public function getCertificationsAttribute(): array
                target="_blank" 
                class="text-blue-600 text-sm">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 {{ __('<nome progetto>::common.view_document') }}
 =======
                 {{ __('saluteora::common.view_document') }}
 >>>>>>> d3fc412d (.)
+=======
+                {{ __('saluteora::common.view_document') }}
+>>>>>>> 2e2df281 (.)
             </a>
         </div>
     @endif
@@ -412,10 +441,14 @@ public function getCertificationsAttribute(): array
     @if($patient->hasMedia('certificazioni_isee'))
         <div class="document-preview">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
 =======
             <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
 >>>>>>> d3fc412d (.)
+=======
+            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
+>>>>>>> 2e2df281 (.)
             <div class="bg-red-100 h-32 flex items-center justify-center rounded">
                 <i class="fas fa-file-pdf text-red-600 text-3xl"></i>
             </div>
@@ -423,10 +456,14 @@ public function getCertificationsAttribute(): array
                target="_blank"
                class="text-blue-600 text-sm">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 {{ __('<nome progetto>::common.download_pdf') }}
 =======
                 {{ __('saluteora::common.download_pdf') }}
 >>>>>>> d3fc412d (.)
+=======
+                {{ __('saluteora::common.download_pdf') }}
+>>>>>>> 2e2df281 (.)
             </a>
         </div>
     @endif
@@ -529,16 +566,22 @@ public function downloadDocument(Media $media): Response
 
 ### **Documentazione Correlata**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Spatie Media Library Official Docs](https://spatie.be/project_docs/laravel-medialibrary)
 - [Filament Plugin Documentation](https://filamentphp.com/plugins/filament-spatie-media-library)
 - [UI Components Docs](./filament-components-rules.md)
 - [Modulo Generico Models Architecture](../<nome modulo>/docs/models-architecture.md)
 =======
+=======
+>>>>>>> 2e2df281 (.)
 - [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
 - [Filament Plugin Documentation](https://filamentphp.com/plugins/filament-spatie-media-library)
 - [UI Components Docs](./filament-components-rules.md)
 - [SaluteOra Models Architecture](../SaluteOra/docs/models-architecture.md)
+<<<<<<< HEAD
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
 
 ### **Repository e Risorse**
 - [GitHub Filament Plugin](https://github.com/filamentphp/spatie-laravel-media-library-plugin)
@@ -571,7 +614,11 @@ public function downloadDocument(Media $media): Response
 *Ultimo aggiornamento: Dicembre 2024*  
 *Versione: 1.0*  
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x* 
 =======
 *Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x* 
 >>>>>>> d3fc412d (.)
+=======
+*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x* 
+>>>>>>> 2e2df281 (.)

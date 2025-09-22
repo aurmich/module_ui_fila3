@@ -22,10 +22,14 @@ laravel/Modules/Cms/
 ### Tipi di Blocchi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **[NavigationBlock](../laravel/Modules/Cms/project_docs/blocks/navigation-block.md)**
 =======
 1. **[NavigationBlock](../laravel/Modules/Cms/docs/blocks/navigation-block.md)**
 >>>>>>> d3fc412d (.)
+=======
+1. **[NavigationBlock](../laravel/Modules/Cms/docs/blocks/navigation-block.md)**
+>>>>>>> 2e2df281 (.)
    - Gestione menu di navigazione
    - Header e footer
    - Menu multilivello
@@ -101,10 +105,14 @@ public function render()
 
 ## Links
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Blocchi](../laravel/Modules/Cms/project_docs/blocks/)
 =======
 - [Documentazione Blocchi](../laravel/Modules/Cms/docs/blocks/)
 >>>>>>> d3fc412d (.)
+=======
+- [Documentazione Blocchi](../laravel/Modules/Cms/docs/blocks/)
+>>>>>>> 2e2df281 (.)
 - [Gestione Contenuti](content-management.md)
 - [Best Practices UI](ui-best-practices.md)
 

@@ -26,17 +26,25 @@ Se serve un’icona, usare solo i metodi previsti dalla documentazione Filament.
 
 **Collegamento bidirezionale:**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Questo errore si è manifestato nel modulo Patient: vedere [Patient/project_docs/filament-error-fileupload-prefixicon.md](../../Patient/project_docs/filament-error-fileupload-prefixicon.md)
 =======
 - Questo errore si è manifestato nel modulo Patient: vedere [Patient/docs/filament-error-fileupload-prefixicon.md](../../Patient/docs/filament-error-fileupload-prefixicon.md)
 >>>>>>> d3fc412d (.)
+=======
+- Questo errore si è manifestato nel modulo Patient: vedere [Patient/docs/filament-error-fileupload-prefixicon.md](../../Patient/docs/filament-error-fileupload-prefixicon.md)
+>>>>>>> 2e2df281 (.)
 
 **Questa regola è parte delle convenzioni UI trasversali a tutti i moduli.**
 
 ## Collegamenti tra versioni di filament-error-fileupload-prefixicon.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [filament-error-fileupload-prefixicon.md](../../Patient/project_docs/filament-error-fileupload-prefixicon.md)
 =======
 * [filament-error-fileupload-prefixicon.md](../../Patient/docs/filament-error-fileupload-prefixicon.md)
 >>>>>>> d3fc412d (.)
+=======
+* [filament-error-fileupload-prefixicon.md](../../Patient/docs/filament-error-fileupload-prefixicon.md)
+>>>>>>> 2e2df281 (.)
 

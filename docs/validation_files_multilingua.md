@@ -2,7 +2,11 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 I file `validation.php` contengono i messaggi di validazione specifici del modulo UI e devono esistere per tutte le lingue supportate dal progetto <nome progetto>.
+=======
+I file `validation.php` contengono i messaggi di validazione specifici del modulo UI e devono esistere per tutte le lingue supportate dal progetto SaluteOra.
+>>>>>>> 2e2df281 (.)
 
 ## Struttura File Validation
 

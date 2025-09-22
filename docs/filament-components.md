@@ -53,23 +53,33 @@
 ## Note Importanti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. La documentazione dei componenti UI deve essere in `Modules/UI/project_docs/`
 =======
 1. La documentazione dei componenti UI deve essere in `Modules/UI/docs/`
 >>>>>>> d3fc412d (.)
+=======
+1. La documentazione dei componenti UI deve essere in `Modules/UI/docs/`
+>>>>>>> 2e2df281 (.)
 2. Mantenere collegamenti bidirezionali aggiornati
 3. Seguire le convenzioni di naming del progetto
 4. Aggiornare la documentazione quando vengono aggiunti nuovi componenti 
 ## Collegamenti tra versioni di filament-components.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 * [filament-components.md](../../User/project_docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/project_docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/project_docs/filament-components.md)
 * [filament-components.md](../../../project_docs/rules/filament-components.md)
 =======
+=======
+>>>>>>> 2e2df281 (.)
 * [filament-components.md](../../User/docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/docs/best-practices/filament-components.md)
 * [filament-components.md](../../Cms/docs/filament-components.md)
 * [filament-components.md](../../../docs/rules/filament-components.md)
+<<<<<<< HEAD
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
 

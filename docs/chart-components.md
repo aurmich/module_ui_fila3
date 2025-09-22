@@ -138,7 +138,11 @@ class UserStats extends Component
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md) 
 =======
 - [Documentazione Frontend](../Cms/docs/frontend-architecture.md) 
 >>>>>>> d3fc412d (.)
+=======
+- [Documentazione Frontend](../Cms/docs/frontend-architecture.md) 
+>>>>>>> 2e2df281 (.)

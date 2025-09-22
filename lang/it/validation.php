@@ -11,4 +11,8 @@ return [
         'missing_opening_time' => 'Se specifichi l\'orario di chiusura del :session per :day, devi specificare anche quello di apertura.',
         'opening_before_closing' => 'L\'orario di apertura del :session per :day deve essere precedente a quello di chiusura.',
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 2e2df281 (.)

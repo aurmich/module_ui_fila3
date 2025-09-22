@@ -17,7 +17,7 @@ return [
     
     'headers' => [
         'day' => 'Giorno',
-        'morning' => 'Mattina',
+        'morning' => 'Mattino',
         'afternoon' => 'Pomeriggio',
     ],
     
@@ -51,14 +51,18 @@ return [
 =======
     
     'periods' => [
-        'morning' => 'Mattina',
+        'morning' => 'Mattino',
         'afternoon' => 'Pomeriggio',
         'evening' => 'Sera',
     ],
     
     'labels' => [
+<<<<<<< HEAD
         'morning' => 'Mattina',
 >>>>>>> d3fc412d (.)
+=======
+        'morning' => 'Mattino',
+>>>>>>> 2e2df281 (.)
         'afternoon' => 'Pomeriggio',
         'from' => 'Dalle',
         'to' => 'Alle',
@@ -79,8 +83,8 @@ return [
     ],
     
     'placeholders' => [
-        'morning_hours' => 'Orario mattutino',
-        'afternoon_hours' => 'Orario pomeridiano',
+        'morning_hours' => 'Orari del mattino',
+        'afternoon_hours' => 'Orari del pomeriggio',
     ],
     
 >>>>>>> d3fc412d (.)
@@ -100,6 +104,9 @@ return [
         'to_after_from' => 'L\'orario "Alle" deve essere successivo all\'orario "Dalle"',
         'time_sequence' => 'L\'orario di inizio deve essere precedente a quello di fine',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2e2df281 (.)
         'morning_before_afternoon' => 'Per :day, l\'orario di chiusura del mattino deve essere precedente all\'apertura del pomeriggio.',
         'missing_closing_time' => 'Se specifichi l\'orario di apertura del :session  :day, devi specificare anche quello di chiusura.',
         'missing_opening_time' => 'Se specifichi l\'orario di chiusura del :session  :day, devi specificare anche quello di apertura.',

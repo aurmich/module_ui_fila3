@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 62dd6032 (.)
@@ -23,6 +24,8 @@ use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Collection;
 >>>>>>> 17ffe269 (.)
+=======
+>>>>>>> 2e2df281 (.)
 
 // Mock class per testare il BaseCalendarWidget
 class MockCalendarWidget extends BaseCalendarWidget
@@ -60,18 +63,6 @@ class MockCalendarWidget extends BaseCalendarWidget
     public function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
-            \Filament\Forms\Components\TextInput::make('title')->required(),
-            \Filament\Forms\Components\DateTimePicker::make('start')->required(),
-            \Filament\Forms\Components\DateTimePicker::make('end')->required(),
-=======
-            \Filament\Forms\Components\TextInput::make('title')
-                ->required(),
-            \Filament\Forms\Components\DateTimePicker::make('start')
-                ->required(),
-            \Filament\Forms\Components\DateTimePicker::make('end')
-                ->required(),
->>>>>>> 17ffe269 (.)
         ];
     }
 }
@@ -229,48 +220,6 @@ describe('BaseCalendarWidget Event Management', function () {
         expect($events)->toBeArray();
         expect($events)->toHaveCount(0);
     });
-<<<<<<< HEAD
-=======
-
-    it('handles large event lists efficiently', function () {
-        $widget = new class extends BaseCalendarWidget {
-            public string $model = MockEventModel::class;
-            
-            public function fetchEvents(array $fetchInfo): array
-            {
-                $events = [];
-                for ($i = 1; $i <= 1000; $i++) {
-                    $events[] = [
-                        'id' => $i,
-                        'title' => "Event {$i}",
-                        'start' => "2025-01-01T{$i}:00:00",
-                        'end' => "2025-01-01T" . ($i + 1) . ":00:00",
-                        'color' => '#3B82F6',
-                    ];
-                }
-                return $events;
-            }
-            
-            public function getFormSchema(): array
-            {
-                return [];
-            }
-        };
-        
-        $fetchInfo = [
-            'start' => '2025-01-01T00:00:00',
-            'end' => '2025-01-31T23:59:59',
-        ];
-        
-        $startTime = microtime(true);
-        $events = $widget->fetchEvents($fetchInfo);
-        $endTime = microtime(true);
-        $executionTime = $endTime - $startTime;
-        
-        expect($events)->toHaveCount(1000);
-        expect($executionTime)->toBeLessThan(1.0); // Dovrebbe essere veloce
-    });
->>>>>>> 17ffe269 (.)
 });
 
 describe('BaseCalendarWidget Form Schema', function () {
@@ -297,193 +246,6 @@ describe('BaseCalendarWidget Form Schema', function () {
         expect($titleField)->not->toBeNull();
         expect($titleField->isRequired())->toBeTrue();
     });
-<<<<<<< HEAD
-=======
-
-    it('has start date field with required validation', function () {
-        $formSchema = $this->widget->getFormSchema();
-        
-        $startField = collect($formSchema)->first(fn($field) => $field->getName() === 'start');
-        
-        expect($startField)->not->toBeNull();
-        expect($startField->isRequired())->toBeTrue();
-    });
-
-    it('has end date field with required validation', function () {
-        $formSchema = $this->widget->getFormSchema();
-        
-        $endField = collect($formSchema)->first(fn($field) => $field->getName() === 'end');
-        
-        expect($endField)->not->toBeNull();
-        expect($endField->isRequired())->toBeTrue();
-    });
-});
-
-describe('BaseCalendarWidget Calendar Options', function () {
-    it('can set first day of week', function () {
-        $this->widget->firstDay(1); // Monday
-        
-        expect($this->widget->firstDay)->toBe(1);
-    });
-
-    it('can set business hours', function () {
-        $businessHours = [
-            'dow' => [1, 2, 3, 4, 5], // Monday to Friday
-            'start' => '09:00',
-            'end' => '17:00',
-        ];
-        
-        $this->widget->businessHours($businessHours);
-        
-        expect($this->widget->businessHours)->toBe($businessHours);
-    });
-
-    it('can set header toolbar configuration', function () {
-        $headerToolbar = [
-            'left' => 'prev,next today',
-            'center' => 'title',
-            'right' => 'dayGridMonth,timeGridWeek,timeGridDay',
-        ];
-        
-        $this->widget->headerToolbar($headerToolbar);
-        
-        expect($this->widget->headerToolbar)->toBe($headerToolbar);
-    });
-
-    it('can set footer toolbar configuration', function () {
-        $footerToolbar = [
-            'left' => 'prev,next today',
-            'center' => 'title',
-            'right' => 'dayGridMonth,timeGridWeek,timeGridDay',
-        ];
-        
-        $this->widget->footerToolbar($footerToolbar);
-        
-        expect($this->widget->footerToolbar)->toBe($footerToolbar);
-    });
-
-    it('can set button text customization', function () {
-        $buttonText = [
-            'today' => 'Oggi',
-            'month' => 'Mese',
-            'week' => 'Settimana',
-            'day' => 'Giorno',
-        ];
-        
-        $this->widget->buttonText($buttonText);
-        
-        expect($this->widget->buttonText)->toBe($buttonText);
-    });
-
-    it('can set day names', function () {
-        $dayNames = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
-        
-        $this->widget->dayNames($dayNames);
-        
-        expect($this->widget->dayNames)->toBe($dayNames);
-    });
-
-    it('can set month names', function () {
-        $monthNames = [
-            'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
-            'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'
-        ];
-        
-        $this->widget->monthNames($monthNames);
-        
-        expect($this->widget->monthNames)->toBe($monthNames);
-    });
-});
-
-describe('BaseCalendarWidget Event Handling', function () {
-    it('can handle event click', function () {
-        $eventClickHandler = "function(info) { console.log('Event clicked:', info.event.title); }";
-        
-        $this->widget->eventClick($eventClickHandler);
-        
-        expect($this->widget->eventClick)->toBe($eventClickHandler);
-    });
-
-    it('can handle event mount', function () {
-        $eventMountHandler = "function(info) { info.el.style.backgroundColor = info.event.backgroundColor; }";
-        
-        $this->widget->eventDidMount($eventMountHandler);
-        
-        expect($this->widget->eventDidMount)->toBe($eventMountHandler);
-    });
-
-    it('can handle event unmount', function () {
-        $eventUnmountHandler = "function(info) { console.log('Event unmounted:', info.event.title); }";
-        
-        $this->widget->eventDidUnmount($eventUnmountHandler);
-        
-        expect($this->widget->eventDidUnmount)->toBe($eventUnmountHandler);
-    });
-
-    it('can handle date click', function () {
-        $dateClickHandler = "function(info) { console.log('Date clicked:', info.dateStr); }";
-        
-        $this->widget->dateClick($dateClickHandler);
-        
-        expect($this->widget->dateClick)->toBe($dateClickHandler);
-    });
-
-    it('can handle date selection', function () {
-        $selectHandler = "function(info) { console.log('Date range selected:', info.startStr, 'to', info.endStr); }";
-        
-        $this->widget->select($selectHandler);
-        
-        expect($this->widget->select)->toBe($selectHandler);
-    });
-});
-
-describe('BaseCalendarWidget Validation', function () {
-    it('validates event data structure', function () {
-        $fetchInfo = [
-            'start' => '2025-01-01T00:00:00',
-            'end' => '2025-01-31T23:59:59',
-        ];
-        
-        $events = $this->widget->fetchEvents($fetchInfo);
-        
-        foreach ($events as $event) {
-            expect($event['id'])->toBeInt();
-            expect($event['title'])->toBeString();
-            expect($event['start'])->toBeString();
-            expect($event['end'])->toBeString();
-            expect($event['color'])->toBeString();
-        }
-    });
-
-    it('validates date format in events', function () {
-        $fetchInfo = [
-            'start' => '2025-01-01T00:00:00',
-            'end' => '2025-01-31T23:59:59',
-        ];
-        
-        $events = $this->widget->fetchEvents($fetchInfo);
-        
-        foreach ($events as $event) {
-            // Validate ISO 8601 date format
-            expect($event['start'])->toMatch('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/');
-            expect($event['end'])->toMatch('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/');
-        }
-    });
-
-    it('validates color format in events', function () {
-        $fetchInfo = [
-            'start' => '2025-01-01T00:00:00',
-            'end' => '2025-01-31T23:59:59',
-        ];
-        
-        $events = $this->widget->fetchEvents($fetchInfo);
-        
-        foreach ($events as $event) {
-            // Validate hex color format
-            expect($event['color'])->toMatch('/^#[0-9A-Fa-f]{6}$/');
-        }
-    });
->>>>>>> 17ffe269 (.)
 });
 
 describe('BaseCalendarWidget Performance', function () {
@@ -493,10 +255,6 @@ describe('BaseCalendarWidget Performance', function () {
             
             public function fetchEvents(array $fetchInfo): array
             {
-<<<<<<< HEAD
-=======
-                // Simulate complex query
->>>>>>> 17ffe269 (.)
                 $events = [];
                 $start = new DateTime($fetchInfo['start']);
                 $end = new DateTime($fetchInfo['end']);
@@ -524,14 +282,11 @@ describe('BaseCalendarWidget Performance', function () {
         
         $fetchInfo = [
             'start' => '2025-01-01T00:00:00',
-<<<<<<< HEAD
-            'end' => '2025-12-31T23:59:59',
-        ];
-        
         $startTime = microtime(true);
         $events = $widget->fetchEvents($fetchInfo);
         $endTime = microtime(true);
         $executionTime = $endTime - $startTime;
+<<<<<<< HEAD
         
         expect($events)->toHaveCount(100);
         expect($executionTime)->toBeLessThan(1.0);
@@ -1031,6 +786,8 @@ $widget = new class extends BaseCalendarWidget {
 =======
         
 >>>>>>> 17ffe269 (.)
+=======
+>>>>>>> 2e2df281 (.)
         expect($events)->toHaveCount(100); // Limited to 100 for performance
         expect($executionTime)->toBeLessThan(1.0); // Dovrebbe essere veloce
     });
@@ -1040,31 +797,16 @@ $widget = new class extends BaseCalendarWidget {
             'start' => '2025-01-01T00:00:00',
             'end' => '2025-01-31T23:59:59',
         ];
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 17ffe269 (.)
         // First fetch
         $startTime = microtime(true);
         $events1 = $this->widget->fetchEvents($fetchInfo);
         $endTime = microtime(true);
         $firstFetchTime = $endTime - $startTime;
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 17ffe269 (.)
         // Second fetch (should be cached)
         $startTime = microtime(true);
         $events2 = $this->widget->fetchEvents($fetchInfo);
         $endTime = microtime(true);
         $secondFetchTime = $endTime - $startTime;
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 17ffe269 (.)
         expect($events1)->toBe($events2);
         expect($secondFetchTime)->toBeLessThanOrEqual($firstFetchTime);
     });
@@ -1075,6 +817,7 @@ describe('BaseCalendarWidget Integration', function () {
         $widgets = [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             new MockCalendarWidget(),
             new class extends BaseCalendarWidget {
                 public string $model = MockEventModel::class;
@@ -1089,26 +832,18 @@ describe('BaseCalendarWidget Integration', function () {
                 public string $model = MockEventModel::class;
                 
 >>>>>>> 17ffe269 (.)
+=======
+>>>>>>> 2e2df281 (.)
                 public function fetchEvents(array $fetchInfo): array
                 {
                     return [];
                 }
-<<<<<<< HEAD
-
-=======
-                
->>>>>>> 17ffe269 (.)
                 public function getFormSchema(): array
                 {
                     return [];
                 }
             },
         ];
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 17ffe269 (.)
         foreach ($widgets as $widget) {
             expect($widget)->toBeInstanceOf(BaseCalendarWidget::class);
             expect($widget)->toHaveMethod('fetchEvents');
@@ -1119,6 +854,7 @@ describe('BaseCalendarWidget Integration', function () {
     it('maintains consistent behavior across instances', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $widget1 = new MockCalendarWidget();
         $widget2 = new MockCalendarWidget();
 =======
@@ -1131,11 +867,14 @@ describe('BaseCalendarWidget Integration', function () {
         $widget2 = new MockCalendarWidget();
         
 >>>>>>> 17ffe269 (.)
+=======
+>>>>>>> 2e2df281 (.)
         $fetchInfo = [
             'start' => '2025-01-01T00:00:00',
             'end' => '2025-01-31T23:59:59',
         ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1152,6 +891,8 @@ describe('BaseCalendarWidget Integration', function () {
         
 >>>>>>> 17ffe269 (.)
 >>>>>>> 62dd6032 (.)
+=======
+>>>>>>> 2e2df281 (.)
         expect($events1)->toBe($events2);
         expect($events1)->toHaveCount(2);
         expect($events2)->toHaveCount(2);
@@ -1159,6 +900,7 @@ describe('BaseCalendarWidget Integration', function () {
 });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> d3fc412d (.)
@@ -1167,3 +909,5 @@ describe('BaseCalendarWidget Integration', function () {
 =======
 >>>>>>> 17ffe269 (.)
 >>>>>>> 62dd6032 (.)
+=======
+>>>>>>> 2e2df281 (.)

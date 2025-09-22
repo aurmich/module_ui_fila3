@@ -17,9 +17,12 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/_bases/base_techplanner_fila3_mono/
 =======
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
 /var/www/html/saluteora/
 ├── public_html/           # Directory pubblica principale
 │   ├── images/            # Immagini pubbliche
@@ -31,9 +34,12 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **IMPORTANTE**: MAI utilizzare `/var/www/html/_bases/base_ptvx_fila3_mono/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di PTVX.
 =======
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
 > **IMPORTANTE**: MAI utilizzare `/var/www/html/saluteora/laravel/public/` per i file pubblici. Questa cartella non è accessibile via web nel setup di SaluteOra.
 
 ## Tipi di Risorse
@@ -41,9 +47,12 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 ### Immagini
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Le immagini devono essere posizionate in `/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/` e organizzate in sottocartelle per tipologia:
 =======
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
 Le immagini devono essere posizionate in `/var/www/html/saluteora/public_html/images/` e organizzate in sottocartelle per tipologia:
 
 - `/images/avatars/` - Avatar utenti
@@ -124,10 +133,13 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 <a href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')) }}">
     <img 
 <<<<<<< HEAD
+<<<<<<< HEAD
         src="{{ asset('images/logos/<nome progetto>-logo.svg') }}" 
         alt="" 
 =======
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
         src="{{ asset('images/logos/saluteora-logo.svg') }}" 
         alt="SaluteOra" 
         class="h-8"
@@ -145,7 +157,10 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto .
 =======
 >>>>>>> d3fc412d (.)
+=======
+>>>>>>> 2e2df281 (.)
 Seguendo queste linee guida per la gestione delle risorse pubbliche, si garantisce che tutte le risorse siano correttamente accessibili via web e organizzate in modo coerente, facilitando la manutenzione e l'evoluzione del progetto SaluteOra.
