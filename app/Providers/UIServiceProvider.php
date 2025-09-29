@@ -4,22 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\UI\Providers;
 
-<<<<<<< HEAD
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\Facades\Blade;
-use Modules\UI\Services\UIService;
-use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-use Modules\Xot\Providers\XotBaseServiceProvider;
-
-use function Safe\realpath;
-=======
 use function Safe\realpath;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Foundation\AliasLoader;
 use Modules\UI\Services\UIService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
->>>>>>> d3fc412d (.)
 
 /**
  * Service Provider per il modulo UI.
@@ -54,9 +44,6 @@ class UIServiceProvider extends XotBaseServiceProvider
      *
      * @return void
      */
-<<<<<<< HEAD
-    
-=======
     public function boot(): void
     {
         parent::boot();
@@ -66,24 +53,18 @@ class UIServiceProvider extends XotBaseServiceProvider
         // $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
         // Blade::anonymousComponentPath($componentViewPath);
     }
->>>>>>> d3fc412d (.)
 
     /**
      * Registra i servizi del provider.
      *
      * @return void
      */
-<<<<<<< HEAD
-    
-
-=======
     public function register(): void
     {
         parent::register();
         // AliasLoader e BladeIcons sono gestiti a livello di XotBaseServiceProvider
     }
     
->>>>>>> d3fc412d (.)
     /**
      * Restituisce il percorso delle viste dei componenti UI.
      *

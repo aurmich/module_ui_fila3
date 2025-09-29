@@ -16,20 +16,12 @@ class TestChartWidget extends ChartWidget
     public string $type = 'line';
 
     // protected static ?string $heading = 'Blog Posts';
-<<<<<<< HEAD
-    protected static null|string $pollingInterval = null;
-=======
     protected static ?string $pollingInterval = null;
->>>>>>> d3fc412d (.)
 
     // danger, gray, info, primary, success or warning
     protected static string $color = 'info';
 
-<<<<<<< HEAD
-    public function getDescription(): null|string
-=======
     public function getDescription(): ?string
->>>>>>> d3fc412d (.)
     {
         return 'The number of blog posts published per month.';
     }
@@ -43,11 +35,7 @@ class TestChartWidget extends ChartWidget
         return [
             'datasets' => [
                 [
-<<<<<<< HEAD
-                    'label' => 'Blog posts created ' . $this->qid,
-=======
                     'label' => 'Blog posts created '.$this->qid,
->>>>>>> d3fc412d (.)
                     'data' => [0, 10, 5, 2, 21, 32, 45, 74, 65, 45, 77, 89],
                     'backgroundColor' => '#36A2EB',
                     'borderColor' => '#9BD0F5',
@@ -65,18 +53,6 @@ class TestChartWidget extends ChartWidget
     protected function getOptions(): RawJs
     {
         return RawJs::make(<<<'JS'
-<<<<<<< HEAD
-            {
-                scales: {
-                    y: {
-                        ticks: {
-                            callback: (value) => '€' + value,
-                        },
-                    },
-                },
-            }
-        JS);
-=======
         {
             scales: {
                 y: {
@@ -87,6 +63,5 @@ class TestChartWidget extends ChartWidget
             },
         }
     JS);
->>>>>>> d3fc412d (.)
     }
 }

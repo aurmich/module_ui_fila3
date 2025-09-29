@@ -1,53 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-
-return [
-    'months' => [
-        'long' => [
-            'Gennaio',
-            'Febbraio',
-            'Marzo',
-            'Aprile',
-            'Maggio',
-            'Giugno',
-            'Luglio',
-            'Agosto',
-            'Settembre',
-            'Ottobre',
-            'Novembre',
-            'Dicembre',
-        ],
-        'short' => [
-            'Gen',
-            'Feb',
-            'Mar',
-            'Apr',
-            'Mag',
-            'Giu',
-            'Lug',
-            'Ago',
-            'Set',
-            'Ott',
-            'Nov',
-            'Dic',
-        ],
-    ],
-    'weekdays' => [
-        'long' => [
-            'Domenica',
-            'Lunedì',
-            'Martedì',
-            'Mercoledì',
-            'Giovedì',
-            'Venerdì',
-            'Sabato',
-        ],
-        'short' => ['Dom', 'Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab'],
-        'min' => ['Do', 'Lu', 'Ma', 'Me', 'Gi', 'Ve', 'Sa'],
-=======
 return [
     'months' => [
         'long' => [
@@ -65,7 +17,6 @@ return [
         ],
         'short' => ['Dom', 'Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab'],
         'min' => ['Do', 'Lu', 'Ma', 'Me', 'Gi', 'Ve', 'Sa']
->>>>>>> d3fc412d (.)
     ],
     'buttons' => [
         'previous' => 'Mese precedente',
@@ -73,21 +24,13 @@ return [
         'today' => 'Oggi',
         'cancel' => 'Annulla',
         'save' => 'Salva',
-<<<<<<< HEAD
-        'close' => 'Chiudi',
-=======
         'close' => 'Chiudi'
->>>>>>> d3fc412d (.)
     ],
     'labels' => [
         'today' => 'Oggi',
         'all_day' => 'Tutto il giorno',
         'no_events' => 'Nessun evento programmato',
-<<<<<<< HEAD
-        'loading' => 'Caricamento in corso...',
-=======
         'loading' => 'Caricamento in corso...'
->>>>>>> d3fc412d (.)
     ],
     'fields' => [
         'title' => [
@@ -125,20 +68,11 @@ return [
             'label' => 'Nuovo evento',
             'success' => 'Evento creato con successo',
             'error' => 'Errore durante la creazione dell\'evento',
-<<<<<<< HEAD
-        ],
-=======
         ]
->>>>>>> d3fc412d (.)
     ],
     'validation' => [
         'required' => 'Questo campo è obbligatorio',
         'date' => 'Inserisci una data valida',
-<<<<<<< HEAD
-        'after' => 'La data di fine deve essere successiva alla data di inizio',
-    ],
-=======
         'after' => 'La data di fine deve essere successiva alla data di inizio'
     ]
->>>>>>> d3fc412d (.)
 ];

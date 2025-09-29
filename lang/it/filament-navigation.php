@@ -13,18 +13,12 @@ return [
         'created_at' => 'Data di creazione',
         'updated_at' => 'Data di aggiornamento',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'select-options' => [
         'same-tab' => 'Stessa scheda',
         'new-tab' => 'Nuova scheda',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'items' => [
         'empty' => 'Nessuna voce di menù.',
         'add-item' => 'Aggiungi voce di menù',
@@ -36,10 +30,7 @@ return [
         'remove' => 'Rimuovi',
         'sorted' => 'Ordinato',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'items-modal' => [
         'title' => 'Voce di menù',
         'label' => 'Etichetta',

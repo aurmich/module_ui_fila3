@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 <x-dynamic-component
     :component="$getFieldWrapperView()"
     :field="$field"
@@ -57,8 +49,4 @@ declare(strict_types=1);
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-</x-dynamic-component>
-=======
 </x-dynamic-component> 
->>>>>>> d3fc412d (.)

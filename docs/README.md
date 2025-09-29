@@ -170,21 +170,17 @@ UI_CALENDAR_TIMEZONE=Europe/Rome
 
 ### Componenti Blade
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### 🔗 **Collegamenti Moduli**
 - **[Xot Module](../Xot/docs/README.md)** - Framework core e convenzioni
 - **[User Module](../User/docs/README.md)** - Gestione utenti e autenticazione
 - **[Lang Module](../Lang/docs/README.md)** - Gestione traduzioni
 
-=======
->>>>>>> d3fc412d (.)
 ### 🧩 **Componenti**
 - [Blade Components](blade-components.md) - Componenti Blade riutilizzabili
 - [Form Components](form-components.md) - Componenti form avanzati
 - [Table Components](table-components.md) - Componenti tabella
 - [Navigation Components](navigation-components.md) - Componenti navigazione
-=======
+
 ```blade
 {{-- Utilizzo componenti UI --}}
 <x-ui::ui.button variant="primary" size="lg">

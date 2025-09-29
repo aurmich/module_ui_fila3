@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 @props(['text', 'level'])
 
 <div class="py-4">
@@ -32,8 +24,4 @@ declare(strict_types=1);
             </article>
         </div>
     {{-- </template> --}}
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> d3fc412d (.)

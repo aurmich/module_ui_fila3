@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 <div class="bg-white">
     {{--
     <header>
@@ -248,7 +240,4 @@ declare(strict_types=1);
       <!-- More main page content here... -->
     </main>
   </div>
-<<<<<<< HEAD
-=======
   
->>>>>>> d3fc412d (.)

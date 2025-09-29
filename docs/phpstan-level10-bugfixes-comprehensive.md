@@ -1,10 +1,7 @@
 # PHPStan Level 10 Comprehensive Bugfixes
 
 ## Problema Generale
-<<<<<<< HEAD
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, , UI, Xot.
-=======
->>>>>>> d3fc412d (.)
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, SaluteOra, UI, Xot.
 
 ## Moduli Interessati e Correzioni
@@ -61,10 +58,7 @@ $this->debugResults['file_operations'] = $this->getFileOperationsData();
 'private_key' => self::formatPrivateKey((string) env('CLOUDFRONT_PRIVATE_KEY', '')),
 ```
 
-<<<<<<< HEAD
 ### 🟢 ** Module** - Report Model  
-=======
->>>>>>> d3fc412d (.)
 ### 🟢 **SaluteOra Module** - Report Model  
 **Stato**: ✅ Corretto
 
@@ -96,10 +90,7 @@ public function getSpecifyDiseases(): array
 | UI         | S3Test.php                    | Method not found           | ✅ Fix |
 | UI         | en/s3test.php                 | Duplicate array key        | ✅ Fix |
 | Xot        | GetCloudFrontSignedUrlAction  | Parameter type mismatch    | ✅ Fix |
-<<<<<<< HEAD
 |   | Report.php                    | Missing return type        | ✅ Fix |
-=======
->>>>>>> d3fc412d (.)
 | SaluteOra  | Report.php                    | Missing return type        | ✅ Fix |
 | SaluteMo   | ListReports.php               | Invalid return type        | ⚠️ TBD |
 
@@ -107,10 +98,7 @@ public function getSpecifyDiseases(): array
 
 ### PHPStan Command
 ```bash
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
-=======
->>>>>>> d3fc412d (.)
 cd /var/www/html/_bases/base_saluteora/laravel
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G
 ```
@@ -143,11 +131,7 @@ cd /var/www/html/_bases/base_saluteora/laravel
 - [S3Test Method Duplication Fix](s3test-method-duplication-bugfix.md)
 - [S3Test Null ErrorCode Handling](s3test-bugfix-null-errorcode.md) 
 - [AwsTest Undefined Variable Fix](awstest-bugfix-undefined-variable.md)
-<<<<<<< HEAD
 - [Media Module PHPStan Fixes](../Media/docs/phpstan_level10_fixes.md)
-=======
-- [Media Module PHPStan Fixes](../Media/project_docs/phpstan_level10_fixes.md)
->>>>>>> d3fc412d (.)
 
 ## Aggiornamento Continuo
 

@@ -136,15 +136,7 @@ Forms\Components\TextInput::make('studio_name')
     ->required()
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## 🎯 **Caso d'Uso: Studio Selector ()**
-=======
-## 🎯 **Caso d'Uso: Studio Selector (SaluteOra)**
->>>>>>> d3fc412d (.)
-=======
-## 🎯 **Caso d'Uso: Studio Selector (SaluteOra)**
->>>>>>> 2e2df281 (.)
 
 ### Implementazione nel Widget
 ```php
@@ -153,27 +145,12 @@ protected function getStudioStepSchema(): array
 {
     return [
         \Modules\UI\Forms\Components\RadioCardSelector::make('selected_studio')
-<<<<<<< HEAD
-<<<<<<< HEAD
             ->sectionTitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.title'))
             ->sectionSubtitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.subtitle'))
             ->cards(fn (Get $get) => $this->getStudioCards($get))
             ->populatesField('selected_studio_name')
             ->emptyStateTitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.empty_state.title'))
             ->emptyStateDescription(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.empty_state.description'))
-=======
-=======
->>>>>>> 2e2df281 (.)
-            ->sectionTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.title'))
-            ->sectionSubtitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.subtitle'))
-            ->cards(fn (Get $get) => $this->getStudioCards($get))
-            ->populatesField('selected_studio_name')
-            ->emptyStateTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.title'))
-            ->emptyStateDescription(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.description'))
-<<<<<<< HEAD
->>>>>>> d3fc412d (.)
-=======
->>>>>>> 2e2df281 (.)
             ->required()
             ->columnSpanFull(),
             
@@ -294,29 +271,13 @@ RadioCardSelector::make('item')
 
 ## 🔗 **Collegamenti**
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Widget FindDoctorAndAppointment](../../../../Modules/<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
-=======
-- [Widget FindDoctorAndAppointment](../../../../Modules/SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
->>>>>>> d3fc412d (.)
-=======
-- [Widget FindDoctorAndAppointment](../../../../Modules/SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
->>>>>>> 2e2df281 (.)
 - [Componenti UI Overview](../components.md)
 - [Best Practices Filament](../../../../docs/filament-best-practices.md)
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Autore**: Implementazione completata per  widget
-=======
-**Autore**: Implementazione completata per SaluteOra widget
->>>>>>> d3fc412d (.)
-=======
-**Autore**: Implementazione completata per SaluteOra widget
->>>>>>> 2e2df281 (.)
 **Ultima modifica**: Gennaio 2025  
 **Versione**: 1.0.0
 **Status**: ✅ Production Ready 

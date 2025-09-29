@@ -4,20 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Feature;
 
-<<<<<<< HEAD
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Livewire\Livewire;
-use Modules\UI\Filament\Widgets\GroupWidget;
-use Modules\UI\Filament\Widgets\HeroWidget;
-use Modules\UI\Filament\Widgets\OverlookWidget;
-use Modules\UI\Filament\Widgets\RedirectWidget;
-use Modules\UI\Filament\Widgets\RowWidget;
-use Modules\UI\Filament\Widgets\StatsOverviewWidget;
-use Modules\UI\Filament\Widgets\StatWithIconWidget;
-use Modules\UI\Filament\Widgets\TestChartWidget;
-use Modules\UI\Filament\Widgets\UserCalendarWidget;
-use Tests\TestCase;
-=======
 use Modules\UI\Filament\Widgets\RowWidget;
 use Modules\UI\Filament\Widgets\StatWithIconWidget;
 use Modules\UI\Filament\Widgets\OverlookWidget;
@@ -30,7 +16,6 @@ use Modules\UI\Filament\Widgets\UserCalendarWidget;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
->>>>>>> d3fc412d (.)
 
 class WidgetBusinessLogicTest extends TestCase
 {
@@ -45,11 +30,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(RowWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
         $this->assertIsArray($widget->getColumns());
@@ -64,11 +45,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(StatWithIconWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
         $this->assertIsString($widget->getIcon());
@@ -84,11 +61,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(OverlookWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
         $this->assertIsString($widget->getDescription());
@@ -103,11 +76,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(HeroWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
         $this->assertIsString($widget->getSubheading());
@@ -120,21 +89,12 @@ class WidgetBusinessLogicTest extends TestCase
         $widget = new TestChartWidget();
 
         // Act & Assert
-<<<<<<< HEAD
-        static::assertNotNull($widget);
-        static::assertInstanceOf(TestChartWidget::class, $widget);
-
-        // Verifica che il widget abbia le proprietà necessarie
-        static::assertIsString($widget->getHeading());
-        static::assertIsString($widget->getDescription());
-=======
         $this->assertNotNull($widget);
         $this->assertInstanceOf(TestChartWidget::class, $widget);
         
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
         $this->assertIsString($widget->getDescription());
->>>>>>> d3fc412d (.)
     }
 
     /** @test */
@@ -146,11 +106,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(StatsOverviewWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
     }
@@ -164,11 +120,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(GroupWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
     }
@@ -182,11 +134,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(RedirectWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
         $this->assertIsString($widget->getDescription());
@@ -201,11 +149,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget);
         $this->assertInstanceOf(UserCalendarWidget::class, $widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget abbia le proprietà necessarie
         $this->assertIsString($widget->getHeading());
     }
@@ -235,11 +179,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget gestisca dati vuoti senza errori
         $this->assertIsString($widget->getHeading());
     }
@@ -252,11 +192,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget sia compatibile con Livewire
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -285,11 +221,7 @@ class WidgetBusinessLogicTest extends TestCase
         // Act & Assert
         $this->assertNotNull($widget->getHeading());
         $this->assertNotNull($widget->getSubheading());
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che le proprietà richieste non siano vuote
         $this->assertNotEmpty($widget->getHeading());
         $this->assertNotEmpty($widget->getSubheading());
@@ -318,11 +250,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti comportamento responsive
         $this->assertIsArray($widget->getColumns());
     }
@@ -335,11 +263,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti funzionalità interattive
         $this->assertTrue(method_exists($widget, 'getData'));
     }
@@ -352,11 +276,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget gestisca stati di errore
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -369,11 +289,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget gestisca stati di caricamento
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -386,11 +302,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget gestisca stati vuoti
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -403,11 +315,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti azioni personalizzate
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -420,11 +328,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti aggiornamento dati
         $this->assertTrue(method_exists($widget, 'getData'));
     }
@@ -437,11 +341,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti eventi personalizzati
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -454,11 +354,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti funzionalità di accessibilità
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -471,11 +367,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti internazionalizzazione
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -488,11 +380,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti personalizzazione tema
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -505,11 +393,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti ottimizzazioni performance
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -522,11 +406,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti funzionalità di sicurezza
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -539,11 +419,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti logging e monitoring
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -556,11 +432,7 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti backup e recovery
         $this->assertTrue(method_exists($widget, 'render'));
     }
@@ -573,16 +445,9 @@ class WidgetBusinessLogicTest extends TestCase
 
         // Act & Assert
         $this->assertNotNull($widget);
-<<<<<<< HEAD
-
-=======
         
->>>>>>> d3fc412d (.)
         // Verifica che il widget supporti funzionalità di scalabilità
         $this->assertTrue(method_exists($widget, 'render'));
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)

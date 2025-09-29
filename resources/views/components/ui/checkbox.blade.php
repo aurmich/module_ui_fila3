@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 @props([
     'label' => null,
     'name' => null,
@@ -22,8 +14,4 @@ declare(strict_types=1);
         </span>
         <span>{{ $label ?? '' }}</span>
     </label>
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> d3fc412d (.)

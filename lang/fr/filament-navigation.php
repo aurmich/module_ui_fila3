@@ -13,18 +13,12 @@ return [
         'created_at' => 'Créé le',
         'updated_at' => 'Màj le',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'select-options' => [
         'same-tab' => 'Même fenêtre',
         'new-tab' => 'Nouvelle fenêtre',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'items' => [
         'empty' => 'pas d\'élément',
         'add-item' => 'Ajouter un élément',
@@ -35,10 +29,7 @@ return [
         'dedent' => 'Désindenter',
         'remove' => 'Supprimer',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'items-modal' => [
         'title' => 'Élément',
         'label' => 'Label',

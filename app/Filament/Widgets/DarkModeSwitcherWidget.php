@@ -11,11 +11,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class DarkModeSwitcherWidget extends XotBaseWidget
 {
-<<<<<<< HEAD
-    public null|array $data = [];
-=======
     public ?array $data = [];
->>>>>>> d3fc412d (.)
 
     protected static string $view = 'ui::filament.widgets.dark-mode-switcher';
 
@@ -28,11 +24,7 @@ class DarkModeSwitcherWidget extends XotBaseWidget
 
     public function toggleDarkMode(): void
     {
-<<<<<<< HEAD
-        $this->darkMode = !$this->darkMode;
-=======
         $this->darkMode = ! $this->darkMode;
->>>>>>> d3fc412d (.)
 
         // Set cookie for persistence
         Cookie::queue('dark_mode', $this->darkMode ? 'true' : 'false', 60 * 24 * 30);
@@ -46,10 +38,6 @@ class DarkModeSwitcherWidget extends XotBaseWidget
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> d3fc412d (.)
     public function getFormSchema(): array
     {
         return [];

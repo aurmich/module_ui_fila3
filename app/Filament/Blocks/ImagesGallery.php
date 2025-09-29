@@ -12,27 +12,17 @@ use Filament\Forms\Components\TextInput;
 
 class ImagesGallery
 {
-<<<<<<< HEAD
-    public static function make(string $name = 'images_gallery', string $context = 'form'): Block
-    {
-=======
     public static function make(
         string $name = 'images_gallery',
         string $context = 'form',
     ): Block {
->>>>>>> d3fc412d (.)
         return Block::make($name)
             ->schema([
                 Repeater::make('gallery')
                     ->schema([
                         SpatieMediaLibraryFileUpload::make('image')
-<<<<<<< HEAD
-                            // ->image()
-                            // ->maxSize(5000)
-=======
                         // ->image()
                         // ->maxSize(5000)
->>>>>>> d3fc412d (.)
                             ->multiple()
                             ->enableReordering()
                             ->openable()
@@ -42,11 +32,6 @@ class ImagesGallery
                             // ->conversion('thumbnail')
                             ->disk('uploads')
                             ->directory('photos'),
-<<<<<<< HEAD
-                        TextInput::make('title')->columnSpanFull(),
-                        TextInput::make('subtitle')->columnSpanFull(),
-                        Select::make('version')
-=======
 
                         TextInput::make('title')
                             ->columnSpanFull(),
@@ -56,19 +41,13 @@ class ImagesGallery
 
                         Select::make('version')
 
->>>>>>> d3fc412d (.)
                             ->required()
                             ->options([
                                 'v1' => 'versione 1',
                                 'v2' => 'versione 2',
                             ]),
-<<<<<<< HEAD
-                    ])
-                    ->columnSpanFull(),
-=======
                     ])->columnSpanFull(),
 
->>>>>>> d3fc412d (.)
                 // FileUpload::make('image')
                 //     ,
                 // SpatieMediaLibraryFileUpload::make('image')
@@ -83,15 +62,6 @@ class ImagesGallery
                 //         // ->conversion('thumbnail')
                 //     ->disk('uploads')
                 //     ->directory('photos'),
-<<<<<<< HEAD
-                // TextInput::make('url')
-                //     ,
-                // Select::make('ratio')
-                //     ->options(static::getRatios())
-                //     ->afterStateHydrated(static fn ($state, $set) => $state || $set('ratio', '4-3')),
-                // TextInput::make('alt')
-                //     ->columnSpanFull(),
-=======
 
                 // TextInput::make('url')
                 //     ,
@@ -103,7 +73,6 @@ class ImagesGallery
                 // TextInput::make('alt')
                 //     ->columnSpanFull(),
 
->>>>>>> d3fc412d (.)
                 // TextInput::make('caption')
                 //     ->columnSpanFull(),
             ])

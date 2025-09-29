@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 @props(['name'])
 
 @if ($menu = \App\Models\Menu::whereName($name)->first())

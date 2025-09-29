@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 @props(['title', 'subtitle', 'image', 'cta_text', 'cta_link'])
 
 <section class="relative bg-white overflow-hidden">
@@ -35,8 +27,4 @@ declare(strict_types=1);
             <img class="absolute inset-0 w-full h-full object-cover" src="{{ $image }}" alt="Hero background">
         </div>
     </div>
-<<<<<<< HEAD
-</section>
-=======
 </section> 
->>>>>>> d3fc412d (.)

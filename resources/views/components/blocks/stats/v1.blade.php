@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 @props(['title', 'stats'])
 
 <section class="bg-indigo-700">
@@ -28,8 +20,4 @@ declare(strict_types=1);
             @endforeach
         </dl>
     </div>
-<<<<<<< HEAD
-</section>
-=======
 </section> 
->>>>>>> d3fc412d (.)

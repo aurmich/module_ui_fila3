@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 {{-- resources/views/forms/components/radio-collection-item.blade.php --}}
 {{-- Template di esempio per un item - personalizzalo secondo le tue esigenze --}}
 <div class="flex items-center">
@@ -30,8 +22,4 @@ declare(strict_types=1);
             </div>
         @endif
     </div>
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> d3fc412d (.)

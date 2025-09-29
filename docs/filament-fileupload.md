@@ -89,8 +89,6 @@ return [
    - Segui le convenzioni di naming
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Translation System](../../Lang/project_docs/translation-system.md)
 - [Form Components](../../Patient/project_docs/filament-form-components.md)
 - [Best Practices](../../Xot/project_docs/filament-best-practices.md)
@@ -98,18 +96,3 @@ return [
 ## Vedi Anche
 - [Filament File Upload](https://filamentphp.com/project_docs/forms/fields/file-upload)
 - [Laravel File Storage](https://laravel.com/project_docs/filesystem) 
-=======
-=======
->>>>>>> 2e2df281 (.)
-- [Translation System](../../Lang/docs/translation-system.md)
-- [Form Components](../../Patient/docs/filament-form-components.md)
-- [Best Practices](../../Xot/docs/filament-best-practices.md)
-
-## Vedi Anche
-- [Filament File Upload](https://filamentphp.com/docs/forms/fields/file-upload)
-<<<<<<< HEAD
-- [Laravel File Storage](https://laravel.com/docs/filesystem) 
->>>>>>> d3fc412d (.)
-=======
-- [Laravel File Storage](https://laravel.com/docs/filesystem) 
->>>>>>> 2e2df281 (.)

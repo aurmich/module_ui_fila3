@@ -2,15 +2,7 @@
 
 ## Overview
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 Questi componenti Filament sono stati creati per supportare la selezione geografica e la gestione degli studi odontoiatrici nel widget `FindDoctorAndAppointmentWidget` del modulo .
-=======
-Questi componenti Filament sono stati creati per supportare la selezione geografica e la gestione degli studi odontoiatrici nel widget `FindDoctorAndAppointmentWidget` del modulo SaluteOra.
->>>>>>> d3fc412d (.)
-=======
-Questi componenti Filament sono stati creati per supportare la selezione geografica e la gestione degli studi odontoiatrici nel widget `FindDoctorAndAppointmentWidget` del modulo SaluteOra.
->>>>>>> 2e2df281 (.)
 
 ## Componenti Implementati
 
@@ -94,15 +86,7 @@ protected function getStudioStepSchema(): array
 {
     return [
         // Titolo step
-<<<<<<< HEAD
-<<<<<<< HEAD
         View::make('<nome progetto>::filament.widgets.studio-step-header')
-=======
-        View::make('saluteora::filament.widgets.studio-step-header')
->>>>>>> d3fc412d (.)
-=======
-        View::make('saluteora::filament.widgets.studio-step-header')
->>>>>>> 2e2df281 (.)
             ->viewData([
                 'studiosCount' => $this->getStudiosCount(),
                 'geographicArea' => $this->getGeographicAreaName(),
@@ -110,15 +94,7 @@ protected function getStudioStepSchema(): array
             ->visible(fn (): bool => $this->hasValidGeographicSelection()),
 
         // Pulsanti selezione studio
-<<<<<<< HEAD
-<<<<<<< HEAD
         View::make('<nome progetto>::filament.widgets.studio-selector')
-=======
-        View::make('saluteora::filament.widgets.studio-selector')
->>>>>>> d3fc412d (.)
-=======
-        View::make('saluteora::filament.widgets.studio-selector')
->>>>>>> 2e2df281 (.)
             ->viewData([
                 'studios' => $this->getStudiosForSelectedArea(),
                 'selectedStudio' => $this->data['selected_studio'] ?? null,
@@ -127,18 +103,8 @@ protected function getStudioStepSchema(): array
 
         // TextInput per mostrare studio selezionato
         TextInput::make('selected_studio_name')
-<<<<<<< HEAD
-<<<<<<< HEAD
             ->label(__('<nome progetto>::widgets.find_doctor.fields.selected_studio.label'))
             ->placeholder(__('<nome progetto>::widgets.find_doctor.fields.selected_studio.placeholder'))
-=======
-            ->label(__('saluteora::widgets.find_doctor.fields.selected_studio.label'))
-            ->placeholder(__('saluteora::widgets.find_doctor.fields.selected_studio.placeholder'))
->>>>>>> d3fc412d (.)
-=======
-            ->label(__('saluteora::widgets.find_doctor.fields.selected_studio.label'))
-            ->placeholder(__('saluteora::widgets.find_doctor.fields.selected_studio.placeholder'))
->>>>>>> 2e2df281 (.)
             ->readonly()
             ->visible(fn (): bool => !empty($this->data['selected_studio']))
             ->suffixIcon('heroicon-o-check-circle')

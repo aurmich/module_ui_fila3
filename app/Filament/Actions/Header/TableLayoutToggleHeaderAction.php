@@ -25,14 +25,6 @@ class TableLayoutToggleHeaderAction extends Action
             // ->tooltip(trans('setting::database_connection.actions.database-backup.tooltip'))
             // ->icon(trans('setting::database_connection.actions.database-backup.icon'))
             // ->icon($this->list_icon)
-<<<<<<< HEAD
-            ->icon(fn($livewire) => 'list' === $livewire->layoutView ? $this->list_icon : $this->grid_icon)
-            ->action(function ($livewire) {
-                if ($livewire !== null) {
-                    $livewire->layoutView = 'grid' === $livewire->layoutView ? 'list' : 'grid';
-                }
-            });
-=======
             ->icon(fn ($livewire) => 'list' === $livewire->layoutView ? $this->list_icon : $this->grid_icon)
             ->action(
                 function ($livewire) {
@@ -41,7 +33,6 @@ class TableLayoutToggleHeaderAction extends Action
                     }
                 }
             );
->>>>>>> d3fc412d (.)
     }
 
     public static function getDefaultName(): string

@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 <div class="bg-gray-900">
     <div class="px-6 pt-12 lg:px-8 lg:pt-20">
       <div class="text-center">
@@ -198,7 +190,4 @@ declare(strict_types=1);
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-=======
   
->>>>>>> d3fc412d (.)

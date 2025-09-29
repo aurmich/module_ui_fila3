@@ -13,18 +13,12 @@ return [
         'created_at' => 'Создано в',
         'updated_at' => 'Изменено в',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'select-options' => [
         'same-tab' => 'Этой вкладке',
         'new-tab' => 'Новой вкладке',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'items' => [
         'empty' => 'Нет элементов',
         'add-item' => 'Добавить элемент',
@@ -35,10 +29,7 @@ return [
         'dedent' => 'Dedent',
         'remove' => 'Удалить',
     ],
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
     'items-modal' => [
         'title' => 'Элемент',
         'label' => 'Название',

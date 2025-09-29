@@ -19,12 +19,8 @@ class Logo extends Component
         // public Post $article,
         // public bool $showAuthor = false,
         public string $tpl = 'v1',
-<<<<<<< HEAD
-    ) {}
-=======
     ) {
     }
->>>>>>> d3fc412d (.)
 
     public function render(): Renderable
     {

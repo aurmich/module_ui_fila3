@@ -12,14 +12,6 @@ class UserData extends Data
         public int $id,
         public string $name,
         public string $email,
-<<<<<<< HEAD
-        public null|string $avatar,
-        public null|string $role,
-        public array $permissions,
-        public array $settings,
-    ) {}
-}
-=======
         public ?string $avatar,
         public ?string $role,
         public array $permissions,
@@ -27,4 +19,3 @@ class UserData extends Data
     ) {
     }
 } 
->>>>>>> d3fc412d (.)

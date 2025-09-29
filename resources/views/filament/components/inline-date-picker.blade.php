@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 <div
     x-data="{
         selectedDate: $wire.entangle('{{ $getStatePath() }}').defer,

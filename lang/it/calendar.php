@@ -5,19 +5,6 @@ declare(strict_types=1);
 return [
     'months' => [
         '0' => 'Gennaio',
-<<<<<<< HEAD
-        '1' => 'Febbraio',
-        '2' => 'Marzo',
-        '3' => 'Aprile',
-        '4' => 'Maggio',
-        '5' => 'Giugno',
-        '6' => 'Luglio',
-        '7' => 'Agosto',
-        '8' => 'Settembre',
-        '9' => 'Ottobre',
-        '10' => 'Novembre',
-        '11' => 'Dicembre',
-=======
         '1' => 'Febbraio', 
         '2' => 'Marzo', 
         '3' => 'Aprile', 
@@ -29,7 +16,6 @@ return [
         '9' => 'Ottobre', 
         '10' => 'Novembre', 
         '11' => 'Dicembre'
->>>>>>> d3fc412d (.)
     ],
     'days_short' => [
         'mon' => 'Lun',

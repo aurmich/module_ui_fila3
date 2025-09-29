@@ -341,24 +341,24 @@ $logout = function () {
 ## Componenti di Autenticazione
 
 ### User Dropdown
-- Utilizzare `x-navigation.user-dropdown` per utenti autenticati
+- Utilizzare `x-blocks.navigation.user-dropdown` per utenti autenticati
 - Struttura standard:
   ```blade
-  <x-navigation.user-dropdown :user="auth()->user()">
+  <x-blocks.navigation.user-dropdown :user="auth()->user()">
       <x-slot name="trigger">
           <x-filament::avatar
               src="{{ $user->profile_photo_url }}"
               alt="{{ $user->name }}"
           />
       </x-slot>
-  </x-navigation.user-dropdown>
+  </x-blocks.navigation.user-dropdown>
   ```
 
 ### Login Buttons
-- Utilizzare `x-navigation.login-buttons` per utenti non autenticati
+- Utilizzare `x-blocks.navigation.login-buttons` per utenti non autenticati
 - Struttura standard:
   ```blade
-  <x-navigation.login-buttons>
+  <x-blocks.navigation.login-buttons>
       <x-ui.button
           href="{{ route('login') }}"
           color="primary"
@@ -372,7 +372,7 @@ $logout = function () {
       >
           {{ __('auth.register.link') }}
       </x-ui.button>
-  </x-navigation.login-buttons>
+  </x-blocks.navigation.login-buttons>
   ```
 
 ### Gestione dello Stato
@@ -380,9 +380,9 @@ $logout = function () {
 - Esempio:
   ```blade
   @auth
-      <x-navigation.user-dropdown :user="auth()->user()" />
+      <x-blocks.navigation.user-dropdown :user="auth()->user()" />
   @else
-      <x-navigation.login-buttons />
+      <x-blocks.navigation.login-buttons />
   @endauth
   ```
 

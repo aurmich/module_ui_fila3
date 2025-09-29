@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 <div class="relative bg-white">
     <div class="absolute inset-0" aria-hidden="true">
       <div class="absolute inset-y-0 right-0 w-1/2 bg-indigo-700"></div>
@@ -130,7 +122,4 @@ declare(strict_types=1);
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-=======
   
->>>>>>> d3fc412d (.)

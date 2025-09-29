@@ -20,21 +20,6 @@ class PasswordStrengthField extends TextInput
 
     public function evaluateStrength(): static
     {
-<<<<<<< HEAD
-        $this->afterStateUpdated(function (string $_state) {
-            // $zxcvbn = new Zxcvbn();
-            // $result = $zxcvbn->passwordStrength($state);
-            // Ottieni il punteggio della password (da 0 a 4)
-            // $score = $result['score'];
-            /*
-             * // Puoi gestire la logica in base al punteggio qui (opzionale)
-             * if ($score < 3) {
-             * $this->warning('La tua password è troppo debole!');
-             * } else {
-             * $this->info('La tua password è abbastanza forte.');
-             * }
-             */
-=======
         $this->afterStateUpdated(function (string $state) {
             // $zxcvbn = new Zxcvbn();
             // $result = $zxcvbn->passwordStrength($state);
@@ -50,7 +35,6 @@ class PasswordStrengthField extends TextInput
             }
                 */
 
->>>>>>> d3fc412d (.)
             // $this->state(['passwordStrengthScore' => $score]);
         });
 

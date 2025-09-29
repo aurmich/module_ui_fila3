@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 {{-- 
     Componente separatore per dropdown di Filament 
     Questo componente aggiunge una linea di separazione visiva all'interno dei dropdown.

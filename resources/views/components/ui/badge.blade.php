@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 @props([
     'background' => 'bg-blue-600',
     'color' => 'text-white'
@@ -13,8 +5,4 @@ declare(strict_types=1);
 
 <span class="{{ $background }} {{ $color }} relative flex items-center text-xs font-semibold pl-2 pr-2.5 py-1 rounded-full">
     {{ $slot }}
-<<<<<<< HEAD
 </span>
-=======
-</span>
->>>>>>> d3fc412d (.)

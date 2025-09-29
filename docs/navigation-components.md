@@ -15,9 +15,9 @@ Questo documento descrive l'utilizzo corretto dei componenti di navigazione , co
 
 ### Componenti di Navigazione Principali
 
-- `<x-navigation.user-dropdown>` - Dropdown utente (visualizzato solo per utenti autenticati)
-- `<x-navigation.login-buttons>` - Pulsanti di login/registrazione (visualizzati solo per utenti non autenticati)
-- `<x-navigation.language-switcher>` - Selettore della lingua
+- `<x-blocks.navigation.user-dropdown>` - Dropdown utente (visualizzato solo per utenti autenticati)
+- `<x-blocks.navigation.login-buttons>` - Pulsanti di login/registrazione (visualizzati solo per utenti non autenticati)
+- `<x-blocks.navigation.language-switcher>` - Selettore della lingua
 
 ## Gestione dell'Autenticazione
 

@@ -7,7 +7,7 @@ Il componente logo è uno degli elementi più importanti dell'interfaccia utente
 ### Utilizzo
 
 ```blade
-<x-logo 
+<x-blocks.logo 
     src="/path/to/logo.svg"
     alt="Nome Azienda"
     size="h-12 w-auto"  // Dimensione predefinita
@@ -49,21 +49,21 @@ Il componente logo è uno degli elementi più importanti dell'interfaccia utente
 
 ```blade
 {{-- Logo nell'header --}}
-<x-logo 
+<x-blocks.logo 
     src="/images/logo.svg"
     alt="il progetto"
     size="h-12 w-auto"
 />
 
 {{-- Logo nel footer --}}
-<x-logo 
+<x-blocks.logo 
     src="/images/logo.svg"
     alt="il progetto"
     size="h-8 w-auto"
 />
 
 {{-- Logo con titolo --}}
-<x-logo 
+<x-blocks.logo 
     src="/images/logo.svg"
     alt="il progetto"
     title="il progetto"

@@ -13,9 +13,6 @@ class RadioIcon extends Radio
      */
     protected string $view = 'ui::filament.forms.components.radio-icon';
 
-<<<<<<< HEAD
-    
-=======
     protected function setUp(): void
     {
         parent::setUp();
@@ -38,5 +35,4 @@ class RadioIcon extends Radio
         );
         */
     }
->>>>>>> d3fc412d (.)
 }

@@ -11,15 +11,6 @@ class QrReader extends Field
     protected string $view = 'ui::filament.forms.components.field.qr-reader';
 
     /*
-<<<<<<< HEAD
-     * public static function make($livewire): static
-     * {
-     * $result = app(static::class, ['livewire' => $livewire]);
-     * $result->configure();
-     * return $result;
-     * }
-     */
-=======
     public static function make($livewire): static
     {
         $result = app(static::class, ['livewire' => $livewire]);
@@ -27,5 +18,4 @@ class QrReader extends Field
         return $result;
     }
     */
->>>>>>> d3fc412d (.)
 }

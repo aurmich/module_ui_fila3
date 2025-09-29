@@ -13,9 +13,6 @@ class RadioImage extends Radio
      */
     protected string $view = 'ui::filament.forms.components.radio-image';
 
-<<<<<<< HEAD
-    
-=======
     protected function setUp(): void
     {
         parent::setUp();
@@ -38,5 +35,4 @@ class RadioImage extends Radio
         );
         */
     }
->>>>>>> d3fc412d (.)
 }

@@ -1,11 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-
-=======
->>>>>>> d3fc412d (.)
 return [
     'navigation' => [
         'fields' => [
@@ -59,8 +53,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-];
-=======
 ]; 
->>>>>>> d3fc412d (.)

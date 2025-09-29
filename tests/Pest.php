@@ -5,45 +5,6 @@ declare(strict_types=1);
 namespace Modules\UI\Tests;
 
 /*
-<<<<<<< HEAD
- * |--------------------------------------------------------------------------
- * | Test Case
- * |--------------------------------------------------------------------------
- * |
- * | Il TestCase di default per tutti i test del modulo UI.
- * | Estende il TestCase specifico del modulo che fornisce il setup necessario.
- * |
- */
-
-uses(TestCase::class)->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)->in('Feature', 'Unit');
-
-/*
- * |--------------------------------------------------------------------------
- * | Expectations
- * |--------------------------------------------------------------------------
- * |
- * | Aspettative globali per il modulo UI.
- * | Quando definisci expectation globali, saranno disponibili
- * | in tutti i test del modulo.
- * |
- */
-
-expect()->extend('toBeComponent', fn() => $this->toBeInstanceOf(\Modules\UI\Models\Component::class));
-
-expect()->extend('toBeTheme', fn() => $this->toBeInstanceOf(\Modules\UI\Models\Theme::class));
-
-expect()->extend('toBeAsset', fn() => $this->toBeInstanceOf(\Modules\UI\Models\Asset::class));
-
-/*
- * |--------------------------------------------------------------------------
- * | Functions
- * |--------------------------------------------------------------------------
- * |
- * | Funzioni helper globali per i test del modulo UI.
- * | Queste funzioni saranno disponibili in tutti i test.
- * |
- */
-=======
 |--------------------------------------------------------------------------
 | Test Case
 |--------------------------------------------------------------------------
@@ -89,7 +50,6 @@ expect()->extend('toBeAsset', function () {
 | Queste funzioni saranno disponibili in tutti i test.
 |
 */
->>>>>>> d3fc412d (.)
 
 function createTheme(array $attributes = []): \Modules\UI\Models\Theme
 {

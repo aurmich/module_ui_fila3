@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 <section class="bg-indigo-800">
     <div class="mx-auto max-w-7xl md:grid md:grid-cols-2 md:px-6 lg:px-8">
       <div class="px-6 py-12 md:flex md:flex-col md:border-r md:border-indigo-900 md:py-16 md:pl-0 md:pr-10 lg:pr-16">
@@ -58,7 +50,4 @@ declare(strict_types=1);
       </div>
     </div>
   </section>
-<<<<<<< HEAD
-=======
   
->>>>>>> d3fc412d (.)

@@ -68,16 +68,6 @@ Se vedi un'etichetta come `FIX:modulo::fields.nome_campo.label`, significa che i
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Implementazione del LangServiceProvider](../Lang/app/Providers/LangServiceProvider.php)
 - [AutoLabelAction](../Lang/app/Actions/Filament/AutoLabelAction.php)
-=======
-- [Implementazione del LangServiceProvider](/var/www/html/base_saluteora/laravel/Modules/Lang/app/Providers/LangServiceProvider.php)
-- [AutoLabelAction](/var/www/html/base_saluteora/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php)
->>>>>>> d3fc412d (.)
-=======
-- [Implementazione del LangServiceProvider](/var/www/html/base_saluteora/laravel/Modules/Lang/app/Providers/LangServiceProvider.php)
-- [AutoLabelAction](/var/www/html/base_saluteora/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php)
->>>>>>> 2e2df281 (.)
 - [Documentazione Filament sui Form](https://filamentphp.com/docs/3.x/forms/fields/getting-started)

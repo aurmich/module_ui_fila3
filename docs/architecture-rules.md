@@ -145,13 +145,7 @@ class CustomMiddleware
 }
 
 // Non hardcodare percorsi delle risorse
-<<<<<<< HEAD
-<<<<<<< HEAD
 <img src="/var/www/html/_bases/base_techplanner_fila3_mono/laravel/public/images/avatar.png">
-=======
->>>>>>> d3fc412d (.)
-=======
->>>>>>> 2e2df281 (.)
 <img src="/var/www/html/saluteora/laravel/public/images/avatar.png">
 
 // Non duplicare la registrazione dei componenti
@@ -403,7 +397,6 @@ class UIServiceProvider extends XotBaseServiceProvider
 ## Gestione dell'Autenticazione
 
 ### Componenti
-<<<<<<< HEAD
 - Utilizzare `x-blocks.navigation.user-dropdown` per utenti autenticati
 - Utilizzare `x-blocks.navigation.login-buttons` per utenti non autenticati
 - Struttura standard:
@@ -412,16 +405,6 @@ class UIServiceProvider extends XotBaseServiceProvider
       <x-blocks.navigation.user-dropdown :user="auth()->user()" />
   @else
       <x-blocks.navigation.login-buttons />
-=======
-- Utilizzare `x-navigation.user-dropdown` per utenti autenticati
-- Utilizzare `x-navigation.login-buttons` per utenti non autenticati
-- Struttura standard:
-  ```blade
-  @auth
-      <x-navigation.user-dropdown :user="auth()->user()" />
-  @else
-      <x-navigation.login-buttons />
->>>>>>> 2e2df281 (.)
   @endauth
   ```
 

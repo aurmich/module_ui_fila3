@@ -19,15 +19,6 @@ use Webmozart\Assert\Assert;
 
 class VideoSpatie
 {
-<<<<<<< HEAD
-    public static function make(string $name = 'video_spatie', string $context = 'form'): Block
-    {
-        return Block::make($name)
-            ->schema([
-                Hidden::make('img_uuid')
-                    ->default(Str::uuid()->toString(...))
-                    ->formatStateUsing(fn($state) => $state ?? Str::uuid()->toString())
-=======
     public static function make(
         string $name = 'video_spatie',
         string $context = 'form',
@@ -38,7 +29,6 @@ class VideoSpatie
                 Hidden::make('img_uuid')
                     ->default(fn () => Str::uuid()->toString())
                     ->formatStateUsing(fn ($state) => $state ?? Str::uuid()->toString())
->>>>>>> d3fc412d (.)
                     ->live(),
                 // ->required(),
 
@@ -51,46 +41,12 @@ class VideoSpatie
                     ->panelAspectRatio('2:1')
                     ->maxSize(502400)
                     ->disk('local')
-<<<<<<< HEAD
-=======
 
->>>>>>> d3fc412d (.)
                     ->preserveFilenames()
                     ->openable()
                     ->previewable()
                     ->downloadable()
                     // ->rules(Rule::dimensions()->maxWidth(600)->maxHeight(800))
-<<<<<<< HEAD
-                    ->collection(fn(Get $get) => $get('img_uuid'))
-                    ->afterStateUpdated(function (
-                        HasForms $_livewire,
-                        SpatieMediaLibraryFileUpload $_component,
-                        TemporaryUploadedFile $state,
-                        Get $get,
-                        HasMedia $record,
-                    ) {
-                        // Call to an undefined method Filament\Forms\Contracts\HasForms::validateOnly().
-                        // $livewire->validateOnly($component->getStatePath());
-                        Assert::string(
-                            $collection_name = $get('img_uuid'),
-                            '[' . __LINE__ . '][' . class_basename(__CLASS__) . ']',
-                        );
-                        $res = $record->addMedia($state)->withResponsiveImages()->toMediaCollection($collection_name);
-                    }),
-                /*
-                 * Select::make('ratio')
-                 * ->options(static::getRatios())
-                 * ->afterStateHydrated(static fn ($state, $set) => $state || $set('ratio', '4-3')),
-                 *
-                 * TextInput::make('alt')
-                 * ->columnSpanFull(),
-                 */
-                TextInput::make('caption'),
-                // ->columnSpanFull()
-                // Filament\Forms\Components\SpatieMediaLibraryFileUpload::whereCustomProperties does not exist.
-                // ->whereCustomProperties(fn(Forms\Get $get) => ['gallery_id' => $get('gallery_id')])
-                // ->customProperties(fn(Forms\Get $get) => ['gallery_id' => $get('gallery_id')]),
-=======
                     ->collection(fn (Get $get) => $get('img_uuid'))
                     ->afterStateUpdated(
                         function (HasForms $livewire, SpatieMediaLibraryFileUpload $component, TemporaryUploadedFile $state, Get $get, HasMedia $record) {
@@ -121,7 +77,6 @@ class VideoSpatie
 
                 // ->customProperties(fn(Forms\Get $get) => ['gallery_id' => $get('gallery_id')]),
 
->>>>>>> d3fc412d (.)
                 // Forms\Components\SpatieMediaLibraryFileUpload::make('media_id')
             ])
             ->columns('form' === $context ? 2 : 1);

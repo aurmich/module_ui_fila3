@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 <x-filament-panels::page>
     <form wire:submit="submit" class="space-y-6">
         {{ $this->form }}

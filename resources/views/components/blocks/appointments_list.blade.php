@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-
-?>
-=======
->>>>>>> d3fc412d (.)
 @props(['title' => 'Appuntamenti'])
 
 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -127,8 +119,4 @@ function confirmCancel(appointmentId) {
     }
 }
 </script>
-<<<<<<< HEAD
-@endpush
-=======
 @endpush 
->>>>>>> d3fc412d (.)

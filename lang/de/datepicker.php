@@ -1,11 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-
-=======
->>>>>>> d3fc412d (.)
 return [
     'previous_month' => 'Mese precedente',
     'next_month' => 'Mese successivo',

@@ -2,10 +2,7 @@
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto .
-=======
->>>>>>> d3fc412d (.)
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto SaluteOra.
 
 ## Struttura File di Traduzione
@@ -63,10 +60,7 @@ Le traduzioni del tema utilizzano il namespace `pub_theme::`:
 
 ### Namespace Alternativi
 - `pub_theme::` - Per traduzioni del tema attivo
-<<<<<<< HEAD
 - `<nome progetto>::` - Per traduzioni del modulo 
-=======
->>>>>>> d3fc412d (.)
 - `saluteora::` - Per traduzioni del modulo SaluteOra
 - `ui::` - Per traduzioni del modulo UI
 
@@ -171,10 +165,7 @@ Lo script `ThemeTranslationSynchronizer` gestisce automaticamente:
 
 ### Comando Manuale
 ```bash
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_techplanner_fila3_mono
-=======
->>>>>>> d3fc412d (.)
 cd /var/www/html/_bases/base_saluteora
 php bashscripts/translations/sync_theme_translations.php
 ```

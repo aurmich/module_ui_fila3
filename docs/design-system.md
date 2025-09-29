@@ -131,12 +131,4 @@ Il design system definisce gli standard visivi e di interazione per garantire co
 ## Vedi Anche
 - [Tailwind Config](../config/tailwind.config.js)
 - [Theme Config](../config/theme.php)
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Filament UI](../../Cms/project_docs/filament-components.md) 
-=======
-- [Filament UI](../../Cms/docs/filament-components.md) 
->>>>>>> d3fc412d (.)
-=======
-- [Filament UI](../../Cms/docs/filament-components.md) 
->>>>>>> 2e2df281 (.)
